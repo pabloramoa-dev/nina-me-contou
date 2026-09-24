@@ -1,0 +1,35 @@
+name: Vigia da fila
+
+# Todo dia confere se há pelo menos 3 episódios completos prontos.
+# Se não houver, abre um aviso (issue) pedindo roteiros novos.
+
+on:
+  schedule:
+    - cron: "0 11 * * *"    # 08:00 Brasília
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  vigiar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - id: f
+        run: python -m src.fila --resumo | tail -2 >> $GITHUB_OUTPUT
+      - name: Avisar reserva baixa
+        if: steps.f.outputs.reserva_baixa == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const abertas = await github.rest.issues.listForRepo({owner: context.repo.owner, repo: context.repo.repo, state: 'open', labels: 'fila'});
+            if (abertas.data.length) return;
+            await github.rest.issues.create({owner: context.repo.owner, repo: context.repo.repo, labels: ['fila'],
+              title: 'Fila da Nina acabando: só ${{ steps.f.outputs.prontos }} episódio(s) pronto(s)',
+              body: 'Peça ao Claude um lote novo de roteiros (skill nina-historias) e suba os JSON em episodios/. O estúdio renderiza sozinho.'});

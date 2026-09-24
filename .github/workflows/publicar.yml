@@ -1,0 +1,64 @@
+name: Publicar Reel
+
+on:
+  schedule:
+    - cron: "0 15 * * *"    # 12:00 Brasília — parte 1
+    - cron: "0 23 * * *"    # 20:00 Brasília — parte 2
+  workflow_dispatch:
+    inputs:
+      horario:
+        description: "almoco = parte 1 · noite = parte 2"
+        type: choice
+        options: [almoco, noite]
+        default: almoco
+      dry_run:
+        description: "Ensaio: valida tudo e NÃO publica"
+        type: boolean
+        default: true
+
+concurrency:
+  group: nina-publicacao
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - run: pip install -r requirements.txt
+
+      - name: Qual horário?
+        id: h
+        run: |
+          if [ -n "${{ inputs.horario }}" ]; then echo "h=${{ inputs.horario }}" >> $GITHUB_OUTPUT
+          elif [ "${{ github.event.schedule }}" = "0 15 * * *" ]; then echo "h=almoco" >> $GITHUB_OUTPUT
+          else echo "h=noite" >> $GITHUB_OUTPUT; fi
+
+      - name: Publicar
+        env:
+          IG_USER_ID_NINA: ${{ secrets.IG_USER_ID_NINA }}
+          IG_ACCESS_TOKEN_NINA: ${{ secrets.IG_ACCESS_TOKEN_NINA }}
+          RAW_BASE_URL: ${{ vars.RAW_BASE_URL }}
+          GRAPH_API_VERSION: ${{ vars.GRAPH_API_VERSION }}
+          PUBLICAR_ATIVO: ${{ vars.PUBLICAR_ATIVO }}
+          DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && (inputs.dry_run && 'true' || 'false') || 'false' }}
+        run: python -m src.publicar --horario ${{ steps.h.outputs.h }}
+
+      - name: Registrar no histórico
+        if: success()
+        run: |
+          git config user.name "nina-bot"
+          git config user.email "actions@github.com"
+          git add conteudo/publicados.json
+          git diff --cached --quiet && exit 0
+          git commit -m "publicado: ${{ steps.h.outputs.h }} [skip ci]"
+          git pull --rebase
+          git push

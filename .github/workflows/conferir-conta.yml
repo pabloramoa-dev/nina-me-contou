@@ -1,0 +1,28 @@
+name: Conferir a conta e o token
+
+on:
+  workflow_dispatch:
+
+jobs:
+  conferir:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Conferir
+        env:
+          IG_USER_ID_NINA: ${{ secrets.IG_USER_ID_NINA }}
+          IG_ACCESS_TOKEN_NINA: ${{ secrets.IG_ACCESS_TOKEN_NINA }}
+          RAW_BASE_URL: ${{ vars.RAW_BASE_URL }}
+          GRAPH_API_VERSION: ${{ vars.GRAPH_API_VERSION }}
+        run: |
+          python - <<'PY'
+          import json
+          from src import config
+          from src.instagram import Publicador
+          cfg = config.carregar()
+          print(json.dumps(Publicador(cfg).conferir_conta(), ensure_ascii=False, indent=1))
+          PY

@@ -1,0 +1,80 @@
+name: Produzir episódios
+
+# Renderiza todo episódio de episodios/ que ainda não tem MP4 em reels/
+# e grava o MP4 + a capa no repositório. Nada é publicado aqui.
+
+on:
+  push:
+    branches: [main]
+    paths: ["episodios/**"]
+  workflow_dispatch:
+    inputs:
+      limite:
+        description: "Máximo de partes nesta execução"
+        default: "8"
+
+concurrency:
+  group: nina-estudio
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  produzir:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Dependências de sistema
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg pkg-config libcairo2-dev libpango1.0-dev espeak-ng fonts-dejavu-core
+          mkdir -p ~/.fonts
+          for p in Bold Regular; do
+            curl -sSL -o ~/.fonts/Poppins-$p.ttf "https://github.com/google/fonts/raw/main/ofl/poppins/Poppins-$p.ttf"
+          done
+          fc-cache -f
+
+      - name: Pacotes Python
+        run: |
+          SETUPTOOLS_USE_DISTUTILS=stdlib pip install --no-build-isolation srt || true
+          pip install -r requirements-estudio.txt
+
+      - name: Modelo de voz (Kokoro) em cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/dvh_kokoro
+          key: kokoro-v1.0
+
+      - name: Renderizar pendentes
+        run: |
+          LIM="${{ inputs.limite || '8' }}"
+          n=0
+          for f in $(python motor/pendentes.py); do
+            [ "$n" -ge "$LIM" ] && break
+            echo "::group::$f"
+            python motor/produzir.py "$f" --publicar-em reels
+            echo "::endgroup::"
+            n=$((n+1))
+            git add reels/
+          done
+          echo "renderizados=$n"
+
+      - name: Conferir a fila
+        run: python -m src.fila
+
+      - name: Gravar no repositório
+        run: |
+          git config user.name "nina-bot"
+          git config user.email "actions@github.com"
+          git add reels/
+          git diff --cached --quiet && exit 0
+          git commit -m "estúdio: episódios renderizados [skip ci]"
+          git pull --rebase
+          git push
