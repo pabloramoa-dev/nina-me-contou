@@ -1,0 +1,28 @@
+{
+  "id": "ep001-p1",
+  "ep": 1,
+  "parte": 1,
+  "titulo": "O PERSONAL DAS SEIS",
+  "temporada": "Academia",
+  "cenario": "tarde",
+  "batidas": [
+    {"fala": "Ela descobriu tudo por causa de uma catraca de academia.", "expr": "ironica", "arte": ["titulo"], "destaque": ["catraca"]},
+    {"fala": "Essa chegou no meu direct. Quem mandou foi a Juliana, trinta e um anos, casada há seis com o Diego.", "tela": "Quem mandou foi a Juliana, 31 anos, casada há 6 com o Diego.", "expr": "neutra", "arte": ["direct", "JULIANA, 31"], "destaque": ["Juliana"]},
+    {"fala": "Me segue, que essa história tem duas partes e a segunda é pior.", "expr": "ironica", "arte": ["seguir"], "destaque": ["segue"]},
+    {"fala": "O Diego inventou de virar fitness. Todo dia, cinco e meia da manhã, pé na rua.", "tela": "O Diego inventou de virar fitness. Todo dia, 5h30 da manhã, pé na rua.", "expr": "neutra", "arte": ["relogio", "05:30"], "destaque": ["5h30"]},
+    {"fala": "Contratou até personal. Um tal de Bruno. Treino às seis em ponto.", "tela": "Contratou até personal. Um tal de Bruno. Treino às 6 em ponto.", "expr": "ironica", "arte": ["cracha", "PERSONAL BRUNO"], "destaque": ["Bruno."]},
+    {"fala": "A Juliana achou lindo. Marido acordando cedo, cuidando da saúde.", "expr": "neutra", "arte": ["haltere"], "destaque": ["lindo."]},
+    {"fala": "Até o dia em que ele esqueceu o celular em casa, e apitou uma notificação do aplicativo da academia.", "tela": "Até o dia em que ele esqueceu o celular em casa… e apitou uma notificação do app da academia.", "expr": "desconfiada", "arte": ["notificacao", "Academia: check-in às 07:42"], "destaque": ["notificação"]},
+    {"fala": "Check-in: sete e quarenta e dois.", "tela": "Check-in: 7h42.", "expr": "chocada", "arte": null, "zoom": true, "destaque": ["7h42."]},
+    {"fala": "Só que ele saía de casa às cinco e meia. E a academia só abre às sete.", "tela": "Só que ele saía às 5h30. E a academia só abre às 7.", "expr": "desconfiada", "arte": ["manchete", "ABRE ÀS 7H"], "destaque": ["7."]},
+    {"fala": "Então onde é que o Diego passava uma hora e meia, toda manhã?", "expr": "desconfiada", "arte": ["interrogacao"], "destaque": ["onde"]},
+    {"fala": "Ela não falou nada. Esperou a segunda-feira.", "expr": "neutra", "arte": ["calendario", "SEGUNDA"], "destaque": ["segunda-feira."]},
+    {"fala": "Cinco e meia, ele saiu. Cinco e trinta e cinco, ela pegou emprestado o carro da vizinha.", "tela": "5h30, ele saiu. 5h35, ela pegou emprestado o carro da vizinha.", "expr": "desconfiada", "arte": ["carro"], "destaque": ["vizinha."]},
+    {"fala": "Ele não virou pra academia. Virou pro lado contrário. Pro bairro onde ela cresceu.", "expr": "desconfiada", "arte": ["mapa"], "destaque": ["cresceu."]},
+    {"fala": "E parou na frente de uma casa que a Juliana conhecia de olhos fechados.", "expr": "chocada", "arte": ["porta", "14"], "destaque": ["casa"]},
+    {"fala": "Porque foi ali que ela passou a infância inteira.", "expr": "triste", "arte": null, "zoom": true, "destaque": ["infância"]},
+    {"fala": "Quem abriu o portão, eu conto na parte dois. E você, já desconfia de quem é?", "expr": "ironica", "arte": ["manchete_v", "CONTINUA NA PARTE 2"], "destaque": ["parte", "dois."]}
+  ],
+  "fim": "CONTINUA NA PARTE 2",
+  "legenda_post": "Ela descobriu tudo por causa de uma catraca de academia. 🏋️\n\nO marido saía às 5h30 pro treino com o personal… mas a academia só abre às 7. Quem abriu o portão daquela casa? A resposta tá na PARTE 2, que já tá no perfil.\n\nVocê já desconfia de quem é? Me conta aqui embaixo. 👇\n\nMe manda a sua história no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em causo de família.\n\n#traição #históriadetraição #relacionamento #casamento #storytime #historiasreais #desabafo #fofoca #ninaconta"
+}

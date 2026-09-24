@@ -1,0 +1,160 @@
+{
+ "id": "ep005-p2",
+ "ep": 5,
+ "parte": 2,
+ "titulo": "O PORTÃO DA GARAGEM",
+ "temporada": "Vizinhança",
+ "cenario": "noite",
+ "batidas": [
+  {
+   "fala": "Se você caiu aqui agora, volta na parte um. O controle está lá.",
+   "expr": "ironica",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "parte",
+    "um."
+   ]
+  },
+  {
+   "fala": "A Cláudia fechou o portão. Voltou pra casa. E esperou na sala, no escuro.",
+   "expr": "neutra",
+   "arte": [
+    "porta"
+   ],
+   "destaque": [
+    "escuro."
+   ]
+  },
+  {
+   "fala": "Me segue antes, que amanhã tem outra.",
+   "expr": "ironica",
+   "arte": [
+    "seguir"
+   ],
+   "destaque": [
+    "segue"
+   ]
+  },
+  {
+   "fala": "O Sérgio chegou meia-noite e meia. Com uma sacola de farmácia vazia.",
+   "expr": "ironica",
+   "arte": [
+    "relogio",
+    "00:30"
+   ],
+   "destaque": [
+    "vazia."
+   ],
+   "tela": "O Sérgio chegou 0h30. Com uma sacola de farmácia vazia."
+  },
+  {
+   "fala": "Ela não perguntou nada. Ficou com o controle.",
+   "expr": "desconfiada",
+   "arte": null,
+   "destaque": [
+    "controle."
+   ]
+  },
+  {
+   "fala": "No dia seguinte, o grupo do condomínio apitou.",
+   "expr": "neutra",
+   "arte": [
+    "notificacao",
+    "Grupo do condomínio"
+   ],
+   "destaque": [
+    "grupo"
+   ]
+  },
+  {
+   "fala": "Era a Vera: gente, o Jorge desembarca sexta. Vamos fazer um churrasco de boas-vindas?",
+   "expr": "chocada",
+   "arte": [
+    "conversa",
+    "O Jorge desembarca sexta! Churrasco de boas-vindas?"
+   ],
+   "destaque": [
+    "sexta."
+   ]
+  },
+  {
+   "fala": "E marcou todo mundo. Inclusive a Cláudia. Inclusive o Sérgio.",
+   "expr": "brava",
+   "arte": null,
+   "destaque": [
+    "Sérgio."
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "O Jorge, o marido da Vera, é um homem que a Cláudia conhece faz quinze anos.",
+   "expr": "triste",
+   "arte": [
+    "foto",
+    "VIZINHOS"
+   ],
+   "destaque": [
+    "quinze",
+    "anos."
+   ],
+   "tela": "O Jorge, o marido da Vera, é um homem que a Cláudia conhece faz 15 anos."
+  },
+  {
+   "fala": "Ajudou a carregar a mudança dela. Foi padrinho do batizado do filho dela.",
+   "expr": "triste",
+   "arte": [
+    "alianca",
+    "PADRINHO"
+   ],
+   "destaque": [
+    "padrinho"
+   ]
+  },
+  {
+   "fala": "E o churrasco é sábado. Na garagem da Vera.",
+   "expr": "ironica",
+   "arte": [
+    "calendario",
+    "SÁBADO"
+   ],
+   "destaque": [
+    "garagem"
+   ]
+  },
+  {
+   "fala": "A Cláudia ainda está com o controle do portão na bolsa.",
+   "expr": "desconfiada",
+   "arte": [
+    "mala"
+   ],
+   "destaque": [
+    "controle"
+   ]
+  },
+  {
+   "fala": "E me perguntou uma coisa.",
+   "expr": "neutra",
+   "arte": [
+    "interrogacao"
+   ],
+   "destaque": [
+    "perguntou"
+   ]
+  },
+  {
+   "fala": "Ela conta pro Jorge antes do churrasco? Ou deixa o churrasco acontecer e fala na frente do condomínio inteiro? Me conta aqui.",
+   "expr": "ironica",
+   "arte": [
+    "manchete_v",
+    "ANTES OU NO CHURRASCO?"
+   ],
+   "destaque": [
+    "churrasco?"
+   ]
+  }
+ ],
+ "fim": "SEGUE A NINA",
+ "legenda_post": "O marido da vizinha desembarca sexta. E o churrasco é sábado. 🍷\n\nSe você caiu aqui agora, assiste a PARTE 1 primeiro.\n\nEla conta pro Jorge antes ou fala no churrasco na frente de todo mundo? Me conta nos comentários. 👇\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em causo de família.\n\n#traição #vizinha #condomínio #casamento #storytime #históriadetraição #desabafo #fofoca #ninamecontou"
+}

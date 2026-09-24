@@ -1,0 +1,170 @@
+{
+ "id": "ep003-p1",
+ "ep": 3,
+ "parte": 1,
+ "titulo": "O CRACHÁ DE VISITANTE",
+ "temporada": "Trabalho",
+ "cenario": "tarde",
+ "batidas": [
+  {
+   "fala": "Ele achou um crachá de visitante no bolso do casaco dela. Com data de sábado.",
+   "expr": "ironica",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "sábado."
+   ]
+  },
+  {
+   "fala": "Essa quem me mandou foi um homem. O Marcos, trinta e cinco anos, casado com a Renata há nove.",
+   "expr": "neutra",
+   "arte": [
+    "direct",
+    "MARCOS, 35"
+   ],
+   "destaque": [
+    "Marcos,"
+   ],
+   "tela": "Essa quem me mandou foi um homem. O Marcos, 35 anos, casado com a Renata há 9."
+  },
+  {
+   "fala": "Me segue, porque essa história tem duas partes e um final que eu nunca vi.",
+   "expr": "ironica",
+   "arte": [
+    "seguir"
+   ],
+   "destaque": [
+    "segue,"
+   ]
+  },
+  {
+   "fala": "Naquele sábado a Renata tinha passado o dia na casa da mãe. Foi o que ela disse.",
+   "expr": "neutra",
+   "arte": [
+    "calendario",
+    "SÁBADO"
+   ],
+   "destaque": [
+    "mãe."
+   ]
+  },
+  {
+   "fala": "Só que o crachá era de um prédio comercial no centro. Visitante. Sala mil duzentos e quatro.",
+   "expr": "desconfiada",
+   "arte": [
+    "cracha",
+    "VISITANTE SALA 1204"
+   ],
+   "destaque": [
+    "1204."
+   ],
+   "tela": "Só que o crachá era de um prédio comercial no centro. Visitante. Sala 1204."
+  },
+  {
+   "fala": "Prédio comercial. Num sábado. Quem trabalha em prédio comercial num sábado?",
+   "expr": "ironica",
+   "arte": [
+    "interrogacao"
+   ],
+   "destaque": [
+    "sábado?"
+   ]
+  },
+  {
+   "fala": "O Marcos não perguntou nada. Guardou o crachá na carteira.",
+   "expr": "neutra",
+   "arte": null,
+   "destaque": [
+    "carteira."
+   ]
+  },
+  {
+   "fala": "Na segunda, ele pediu a tarde de folga e foi até o prédio.",
+   "expr": "desconfiada",
+   "arte": [
+    "carro"
+   ],
+   "destaque": [
+    "prédio."
+   ]
+  },
+  {
+   "fala": "Olhou o painel das salas no elevador. Mil duzentos e quatro.",
+   "expr": "desconfiada",
+   "arte": [
+    "porta",
+    "1204"
+   ],
+   "destaque": [
+    "1204."
+   ],
+   "tela": "Olhou o painel das salas no elevador. 1204."
+  },
+  {
+   "fala": "E ali estava o nome da empresa. Uma consultoria.",
+   "expr": "chocada",
+   "arte": null,
+   "destaque": [
+    "consultoria."
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "A consultoria do chefe da Renata. O mesmo chefe que tinha jantado na casa deles no Natal.",
+   "expr": "brava",
+   "arte": [
+    "manchete",
+    "O CHEFE"
+   ],
+   "destaque": [
+    "Natal."
+   ]
+  },
+  {
+   "fala": "O Marcos desceu, sentou no carro e ficou ali. Parado.",
+   "expr": "triste",
+   "arte": [
+    "carro"
+   ],
+   "destaque": [
+    "Parado."
+   ]
+  },
+  {
+   "fala": "Foi quando o celular vibrou. Uma mensagem de um número que ele não conhecia.",
+   "expr": "desconfiada",
+   "arte": [
+    "notificacao",
+    "Número desconhecido"
+   ],
+   "destaque": [
+    "não",
+    "conhecia."
+   ]
+  },
+  {
+   "fala": "Oi, Marcos. Acho que a gente precisa conversar. Aqui é a mulher do Otávio.",
+   "expr": "chocada",
+   "arte": null,
+   "destaque": [
+    "Otávio."
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "O que ela queria com ele, eu conto na parte dois.",
+   "expr": "ironica",
+   "arte": [
+    "manchete_v",
+    "CONTINUA NA PARTE 2"
+   ],
+   "destaque": [
+    "parte",
+    "dois."
+   ]
+  }
+ ],
+ "fim": "CONTINUA NA PARTE 2",
+ "legenda_post": "Um crachá de visitante no bolso dela. Com data de sábado. 🏢\n\nEla disse que estava na casa da mãe. O crachá dizia sala 1204. E aí chegou uma mensagem que ele não esperava. PARTE 2 no perfil.\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em causo de família.\n\n#traição #chefe #trabalho #casamento #storytime #históriadetraição #desabafo #fofoca #ninamecontou"
+}

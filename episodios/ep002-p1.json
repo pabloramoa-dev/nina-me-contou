@@ -1,0 +1,169 @@
+{
+ "id": "ep002-p1",
+ "ep": 2,
+ "parte": 1,
+ "titulo": "A PULSEIRA VIP",
+ "temporada": "Noite",
+ "cenario": "tarde",
+ "batidas": [
+  {
+   "fala": "Ela achou a pulseira quando foi tirar a roupa da máquina de lavar.",
+   "expr": "ironica",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "pulseira"
+   ]
+  },
+  {
+   "fala": "Quem me mandou foi a Tatiane, vinte e oito anos, noiva do Rodrigo. Casamento marcado pra daqui a três semanas.",
+   "expr": "neutra",
+   "arte": [
+    "direct",
+    "TATIANE, 28"
+   ],
+   "destaque": [
+    "três",
+    "semanas."
+   ],
+   "tela": "Quem me mandou foi a Tatiane, 28 anos, noiva do Rodrigo. Casamento daqui a 3 semanas."
+  },
+  {
+   "fala": "Me segue, que essa tem duas partes, e a segunda você não vai acreditar.",
+   "expr": "ironica",
+   "arte": [
+    "seguir"
+   ],
+   "destaque": [
+    "segue,"
+   ]
+  },
+  {
+   "fala": "Uma pulseira de balada. Rosa neon. Escrito VIP.",
+   "expr": "desconfiada",
+   "arte": [
+    "pulseira",
+    "VIP"
+   ],
+   "destaque": [
+    "VIP."
+   ]
+  },
+  {
+   "fala": "No sábado, o Rodrigo tinha dito que ia virar a noite fazendo inventário no estoque da loja.",
+   "expr": "desconfiada",
+   "arte": [
+    "relogio",
+    "23:00"
+   ],
+   "destaque": [
+    "estoque"
+   ]
+  },
+  {
+   "fala": "Estoque não dá pulseira VIP. Pelo menos nenhum que eu conheça.",
+   "expr": "ironica",
+   "arte": null,
+   "destaque": [
+    "VIP."
+   ]
+  },
+  {
+   "fala": "Ela pesquisou o nome da casa noturna que estava apagadinho na pulseira.",
+   "expr": "neutra",
+   "arte": [
+    "celular",
+    "Club Aurora"
+   ],
+   "destaque": [
+    "pesquisou"
+   ]
+  },
+  {
+   "fala": "E foi olhar as fotos que a própria balada posta toda segunda-feira.",
+   "expr": "desconfiada",
+   "arte": [
+    "foto",
+    "SÁBADO"
+   ],
+   "destaque": [
+    "fotos"
+   ]
+  },
+  {
+   "fala": "Foto dezessete. Camarote. Lá estava o Rodrigo.",
+   "expr": "chocada",
+   "arte": null,
+   "destaque": [
+    "Rodrigo."
+   ],
+   "tela": "Foto 17. Camarote. Lá estava o Rodrigo.",
+   "zoom": true
+  },
+  {
+   "fala": "Com a mão na cintura de uma mulher de vestido verde, de costas pra câmera.",
+   "expr": "brava",
+   "arte": [
+    "interrogacao"
+   ],
+   "destaque": [
+    "verde,"
+   ]
+  },
+  {
+   "fala": "De costas. Só dava pra ver o cabelo preso e uma tatuagem pequena no ombro.",
+   "expr": "desconfiada",
+   "arte": null,
+   "destaque": [
+    "tatuagem"
+   ]
+  },
+  {
+   "fala": "E a Tatiane conhecia aquela tatuagem. Uma andorinha.",
+   "expr": "chocada",
+   "arte": [
+    "manchete",
+    "UMA ANDORINHA"
+   ],
+   "destaque": [
+    "andorinha."
+   ]
+  },
+  {
+   "fala": "Ela já tinha visto aquela andorinha. Três vezes. Todas na mesma semana.",
+   "expr": "desconfiada",
+   "arte": [
+    "calendario",
+    "ESSA SEMANA"
+   ],
+   "destaque": [
+    "mesma",
+    "semana."
+   ]
+  },
+  {
+   "fala": "Em todas as reuniões de preparação do casamento.",
+   "expr": "triste",
+   "arte": null,
+   "destaque": [
+    "casamento."
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "De quem era a andorinha, eu conto na parte dois. Chuta aqui nos comentários.",
+   "expr": "ironica",
+   "arte": [
+    "manchete_v",
+    "CONTINUA NA PARTE 2"
+   ],
+   "destaque": [
+    "parte",
+    "dois."
+   ]
+  }
+ ],
+ "fim": "CONTINUA NA PARTE 2",
+ "legenda_post": "Ela achou a pulseira na máquina de lavar. Rosa neon. Escrito VIP. 💃\n\nO noivo disse que ia virar a noite no estoque… mas estoque não dá pulseira de camarote. De quem era a andorinha no ombro? PARTE 2 no perfil.\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em causo de família.\n\n#traição #noivado #casamento #balada #storytime #históriadetraição #desabafo #fofoca #ninamecontou"
+}

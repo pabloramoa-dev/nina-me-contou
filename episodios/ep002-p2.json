@@ -1,0 +1,169 @@
+{
+ "id": "ep002-p2",
+ "ep": 2,
+ "parte": 2,
+ "titulo": "A PULSEIRA VIP",
+ "temporada": "Noite",
+ "cenario": "noite",
+ "batidas": [
+  {
+   "fala": "Se você caiu aqui agora, volta na parte um. A andorinha está lá.",
+   "expr": "ironica",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "parte",
+    "um."
+   ]
+  },
+  {
+   "fala": "A Tatiane passou a noite olhando pra foto dezessete, dando zoom no ombro da mulher.",
+   "expr": "neutra",
+   "arte": [
+    "foto",
+    "FOTO 17"
+   ],
+   "destaque": [
+    "foto",
+    "dezessete,"
+   ],
+   "tela": "A Tatiane passou a noite olhando a foto 17, dando zoom no ombro da mulher."
+  },
+  {
+   "fala": "Me segue antes, que amanhã tem outra dessas.",
+   "expr": "ironica",
+   "arte": [
+    "seguir"
+   ],
+   "destaque": [
+    "segue"
+   ]
+  },
+  {
+   "fala": "No dia seguinte tinha reunião marcada. Degustação do bufê.",
+   "expr": "neutra",
+   "arte": [
+    "cafe"
+   ],
+   "destaque": [
+    "bufê."
+   ]
+  },
+  {
+   "fala": "E quem abriu a porta do espaço de eventos foi a cerimonialista. A Bianca.",
+   "expr": "desconfiada",
+   "arte": [
+    "porta"
+   ],
+   "destaque": [
+    "Bianca."
+   ]
+  },
+  {
+   "fala": "Cabelo preso. Blusa de alcinha.",
+   "expr": "desconfiada",
+   "arte": null,
+   "destaque": [
+    "alcinha."
+   ]
+  },
+  {
+   "fala": "E uma andorinha no ombro.",
+   "expr": "chocada",
+   "arte": null,
+   "destaque": [
+    "andorinha"
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "A mulher que estava organizando o casamento dela estava organizando também o noivo.",
+   "expr": "brava",
+   "arte": [
+    "alianca",
+    "3 SEMANAS"
+   ],
+   "destaque": [
+    "noivo."
+   ]
+  },
+  {
+   "fala": "A Tatiane provou os salgadinhos, sorriu e escolheu o bolo de nozes.",
+   "expr": "ironica",
+   "arte": [
+    "presente"
+   ],
+   "destaque": [
+    "sorriu"
+   ]
+  },
+  {
+   "fala": "Sem falar nada. Nenhuma palavra.",
+   "expr": "neutra",
+   "arte": null,
+   "destaque": [
+    "Nenhuma"
+   ]
+  },
+  {
+   "fala": "Na saída, a Bianca abraçou ela e disse: fica tranquila, vai ser o dia mais lindo da sua vida.",
+   "expr": "desconfiada",
+   "arte": [
+    "conversa",
+    "Fica tranquila, vai ser o dia mais lindo da sua vida."
+   ],
+   "destaque": [
+    "mais",
+    "lindo"
+   ]
+  },
+  {
+   "fala": "O casamento continua marcado. Três semanas. Tudo pago.",
+   "expr": "triste",
+   "arte": [
+    "extrato",
+    "BUFÊ · PAGO"
+   ],
+   "destaque": [
+    "Tudo",
+    "pago."
+   ],
+   "tela": "O casamento continua marcado. 3 semanas. Tudo pago."
+  },
+  {
+   "fala": "E ela me perguntou uma coisa que eu não soube responder.",
+   "expr": "neutra",
+   "arte": [
+    "interrogacao"
+   ],
+   "destaque": [
+    "responder."
+   ]
+  },
+  {
+   "fala": "Ela cancela tudo agora? Ou deixa a Bianca organizar o casamento até o fim, e fala no altar?",
+   "expr": "ironica",
+   "arte": [
+    "manchete_v",
+    "CANCELA OU NO ALTAR?"
+   ],
+   "destaque": [
+    "altar?"
+   ]
+  },
+  {
+   "fala": "Me conta aqui nos comentários o que você faria.",
+   "expr": "ironica",
+   "arte": [
+    "manchete",
+    "E VOCÊ?"
+   ],
+   "destaque": [
+    "comentários"
+   ]
+  }
+ ],
+ "fim": "SEGUE A NINA",
+ "legenda_post": "A andorinha no ombro era de quem ela menos esperava. 🍷\n\nSe você caiu aqui agora, assiste a PARTE 1 primeiro.\n\nE agora: ela cancela tudo ou deixa a cerimonialista organizar até o fim e fala no altar? Me conta nos comentários. 👇\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em causo de família.\n\n#traição #noivado #casamento #balada #storytime #históriadetraição #desabafo #fofoca #ninamecontou"
+}

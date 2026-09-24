@@ -1,0 +1,165 @@
+{
+ "id": "ep004-p1",
+ "ep": 4,
+ "parte": 1,
+ "titulo": "OS QUILÔMETROS DO CAIO",
+ "temporada": "Casais",
+ "cenario": "tarde",
+ "batidas": [
+  {
+   "fala": "Ele descobriu tudo por um aplicativo de corrida.",
+   "expr": "ironica",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "corrida."
+   ]
+  },
+  {
+   "fala": "Quem me escreveu foi o Rafael, vinte e nove anos. Dois anos de namoro com o Caio.",
+   "expr": "neutra",
+   "arte": [
+    "direct",
+    "RAFAEL, 29"
+   ],
+   "destaque": [
+    "Rafael,"
+   ],
+   "tela": "Quem me escreveu foi o Rafael, 29 anos. 2 anos de namoro com o Caio."
+  },
+  {
+   "fala": "Me segue, que essa tem duas partes.",
+   "expr": "ironica",
+   "arte": [
+    "seguir"
+   ],
+   "destaque": [
+    "segue,"
+   ]
+  },
+  {
+   "fala": "O Caio corria toda terça e quinta. Dez quilômetros, sempre depois do trabalho.",
+   "expr": "neutra",
+   "arte": [
+    "haltere"
+   ],
+   "destaque": [
+    "terça",
+    "quinta."
+   ],
+   "tela": "O Caio corria toda terça e quinta. 10 km, sempre depois do trabalho."
+  },
+  {
+   "fala": "O Rafael achava o máximo. Até curtia as corridas no aplicativo.",
+   "expr": "neutra",
+   "arte": [
+    "celular",
+    "Corrida: 10,2 km"
+   ],
+   "destaque": [
+    "curtia"
+   ]
+  },
+  {
+   "fala": "Até que um dia ele reparou no tempo. Dez quilômetros em uma hora e cinquenta.",
+   "expr": "desconfiada",
+   "arte": [
+    "relogio",
+    "1:50"
+   ],
+   "destaque": [
+    "uma",
+    "hora",
+    "e",
+    "cinquenta."
+   ],
+   "tela": "Até que um dia ele reparou no tempo. 10 km em 1h50."
+  },
+  {
+   "fala": "Isso não é corrida. Isso é caminhada com parada.",
+   "expr": "ironica",
+   "arte": null,
+   "destaque": [
+    "parada."
+   ]
+  },
+  {
+   "fala": "Ele abriu o mapa da corrida. E viu uma pausa.",
+   "expr": "desconfiada",
+   "arte": [
+    "mapa"
+   ],
+   "destaque": [
+    "pausa."
+   ]
+  },
+  {
+   "fala": "Quarenta minutos parado. No mesmo ponto. Toda terça. Toda quinta.",
+   "expr": "chocada",
+   "arte": null,
+   "destaque": [
+    "Quarenta",
+    "minutos"
+   ],
+   "tela": "40 minutos parado. No mesmo ponto. Toda terça. Toda quinta.",
+   "zoom": true
+  },
+  {
+   "fala": "Rua das Acácias, cento e dezoito.",
+   "expr": "desconfiada",
+   "arte": [
+    "porta",
+    "118"
+   ],
+   "destaque": [
+    "118."
+   ],
+   "tela": "Rua das Acácias, 118."
+  },
+  {
+   "fala": "O Rafael conhecia esse endereço. Já tinha deixado um presente de aniversário ali.",
+   "expr": "chocada",
+   "arte": [
+    "presente"
+   ],
+   "destaque": [
+    "presente"
+   ]
+  },
+  {
+   "fala": "Dois anos atrás. Logo no começo do namoro.",
+   "expr": "triste",
+   "arte": [
+    "calendario",
+    "2 ANOS ATRÁS"
+   ],
+   "destaque": [
+    "começo"
+   ]
+  },
+  {
+   "fala": "A pedido do próprio Caio.",
+   "expr": "brava",
+   "arte": null,
+   "destaque": [
+    "Caio."
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "Quem mora na Rua das Acácias, eu conto na parte dois. E você, já sabe?",
+   "expr": "ironica",
+   "arte": [
+    "manchete_v",
+    "CONTINUA NA PARTE 2"
+   ],
+   "destaque": [
+    "parte",
+    "dois."
+   ]
+  }
+ ],
+ "fim": "CONTINUA NA PARTE 2",
+ "legenda_post": "O namorado corria 10 km toda terça e quinta. Em 1h50. 🏃\n\nNo mapa, uma pausa de 40 minutos no mesmo endereço. E o Rafael conhecia aquele endereço. PARTE 2 no perfil.\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em causo de família.\n\n#traição #namoro #casal #corrida #storytime #históriadetraição #desabafo #fofoca #ninamecontou"
+}

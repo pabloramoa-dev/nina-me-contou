@@ -1,0 +1,167 @@
+{
+ "id": "ep004-p2",
+ "ep": 4,
+ "parte": 2,
+ "titulo": "OS QUILÔMETROS DO CAIO",
+ "temporada": "Casais",
+ "cenario": "noite",
+ "batidas": [
+  {
+   "fala": "Se você chegou agora, volta na parte um. O mapa está lá.",
+   "expr": "ironica",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "parte",
+    "um."
+   ]
+  },
+  {
+   "fala": "Na Rua das Acácias, cento e dezoito, mora o Henrique. O ex do Caio.",
+   "expr": "neutra",
+   "arte": [
+    "porta",
+    "118"
+   ],
+   "destaque": [
+    "ex"
+   ],
+   "tela": "Na Rua das Acácias, 118, mora o Henrique. O ex do Caio."
+  },
+  {
+   "fala": "Antes de continuar, me segue. Amanhã tem outra.",
+   "expr": "ironica",
+   "arte": [
+    "seguir"
+   ],
+   "destaque": [
+    "segue."
+   ]
+  },
+  {
+   "fala": "O Caio sempre disse que eles eram só amigos. Que o fim tinha sido tranquilo.",
+   "expr": "desconfiada",
+   "arte": [
+    "foto",
+    "SÓ AMIGOS"
+   ],
+   "destaque": [
+    "só",
+    "amigos."
+   ]
+  },
+  {
+   "fala": "O Rafael foi até lá numa quinta. Parou o carro do outro lado da rua.",
+   "expr": "desconfiada",
+   "arte": [
+    "carro"
+   ],
+   "destaque": [
+    "quinta."
+   ]
+  },
+  {
+   "fala": "Sete e dez, o Caio chegou correndo. Tocou o interfone. A porta abriu.",
+   "expr": "chocada",
+   "arte": [
+    "relogio",
+    "19:10"
+   ],
+   "destaque": [
+    "porta",
+    "abriu."
+   ],
+   "tela": "19h10, o Caio chegou correndo. Tocou o interfone. A porta abriu."
+  },
+  {
+   "fala": "Quarenta minutos depois, saiu. Correndo de novo. Pra fechar os dez quilômetros.",
+   "expr": "ironica",
+   "arte": [
+    "relogio",
+    "19:50"
+   ],
+   "destaque": [
+    "dez",
+    "quilômetros."
+   ],
+   "tela": "40 minutos depois, saiu. Correndo de novo. Pra fechar os 10 km."
+  },
+  {
+   "fala": "No sábado, chegou um envelope na casa do Rafael e do Caio.",
+   "expr": "neutra",
+   "arte": [
+    "presente",
+    "CONVITE"
+   ],
+   "destaque": [
+    "envelope"
+   ]
+  },
+  {
+   "fala": "Um convite de casamento. Do Henrique.",
+   "expr": "chocada",
+   "arte": null,
+   "destaque": [
+    "Henrique."
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "O Henrique vai casar no mês que vem. E convidou os dois.",
+   "expr": "desconfiada",
+   "arte": [
+    "alianca",
+    "MÊS QUE VEM"
+   ],
+   "destaque": [
+    "os",
+    "dois."
+   ]
+  },
+  {
+   "fala": "O Caio olhou o convite e disse: que bom, né? Ele merece ser feliz.",
+   "expr": "ironica",
+   "arte": [
+    "conversa",
+    "Que bom, né? Ele merece ser feliz."
+   ],
+   "destaque": [
+    "merece"
+   ]
+  },
+  {
+   "fala": "O Rafael não falou nada. Guardou o print do mapa.",
+   "expr": "triste",
+   "arte": [
+    "mapa"
+   ],
+   "destaque": [
+    "print"
+   ]
+  },
+  {
+   "fala": "E agora ele me perguntou o que fazer com isso.",
+   "expr": "neutra",
+   "arte": [
+    "interrogacao"
+   ],
+   "destaque": [
+    "fazer"
+   ]
+  },
+  {
+   "fala": "Ele vai no casamento e fala com o noivo? Ou confronta o Caio antes? Me diz aqui nos comentários.",
+   "expr": "ironica",
+   "arte": [
+    "manchete_v",
+    "VAI OU NÃO VAI?"
+   ],
+   "destaque": [
+    "comentários."
+   ]
+  }
+ ],
+ "fim": "SEGUE A NINA",
+ "legenda_post": "Um convite de casamento chegou pelo correio. 🍷\n\nSe você caiu aqui agora, assiste a PARTE 1 primeiro.\n\nEle vai no casamento e fala com o noivo, ou confronta o namorado antes? Me conta nos comentários. 👇\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em causo de família.\n\n#traição #namoro #casal #corrida #storytime #históriadetraição #desabafo #fofoca #ninamecontou"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "ep001-p2",
+  "ep": 1,
+  "parte": 2,
+  "titulo": "O PERSONAL DAS SEIS",
+  "temporada": "Academia",
+  "cenario": "noite",
+  "batidas": [
+    {"fala": "Se você caiu aqui agora, volta e assiste a parte um. Essa história não perdoa.", "expr": "ironica", "arte": ["titulo"], "destaque": ["parte", "um."]},
+    {"fala": "A Juliana estava parada na frente da casa onde cresceu. Às cinco e quarenta da manhã.", "tela": "A Juliana estava parada na frente da casa onde cresceu. Às 5h40 da manhã.", "expr": "neutra", "arte": ["porta", "14"], "destaque": ["5h40"]},
+    {"fala": "Hoje quem mora lá é a irmã caçula dela. A Paula.", "expr": "desconfiada", "arte": ["foto", "AS IRMÃS"], "destaque": ["Paula."]},
+    {"fala": "E antes de eu continuar: me segue, porque amanhã tem outra.", "expr": "ironica", "arte": ["seguir"], "destaque": ["segue,"]},
+    {"fala": "O portão abriu. E quem saiu pra receber o Diego foi a Paula. De pijama.", "expr": "chocada", "arte": null, "zoom": true, "destaque": ["pijama."]},
+    {"fala": "A mesma irmã que foi madrinha do casamento deles.", "expr": "triste", "arte": ["alianca", "MADRINHA"], "destaque": ["madrinha"]},
+    {"fala": "E o personal Bruno? Existia, sim. E recebia cem reais por semana.", "tela": "E o personal Bruno? Existia, sim. E recebia R$ 100 por semana.", "expr": "ironica", "arte": ["extrato", "PIX · BRUNO · R$ 100"], "destaque": ["R$", "100"]},
+    {"fala": "Pra mandar foto de treino, que o Diego postava como se fosse dele.", "expr": "brava", "arte": ["celular", "foto_treino.jpg"], "destaque": ["postava"]},
+    {"fala": "O treino das seis era um álibi. Com comprovante de pix.", "tela": "O treino das 6 era um álibi. Com comprovante de Pix.", "expr": "chocada", "arte": null, "zoom": true, "destaque": ["álibi."]},
+    {"fala": "A Juliana voltou pra casa, sentou na cozinha e ficou olhando a caneca do casamento.", "expr": "triste", "arte": ["caneca", "2019"], "destaque": ["caneca"]},
+    {"fala": "Às oito da manhã, o celular dela vibrou. Era a Paula.", "tela": "Às 8h da manhã, o celular dela vibrou. Era a Paula.", "expr": "desconfiada", "arte": ["notificacao", "Paula: tá acordada?"], "destaque": ["Paula."]},
+    {"fala": "Ju, precisamos conversar. É sobre o Diego.", "expr": "chocada", "arte": ["conversa", "Ju, precisamos conversar. É sobre o Diego."], "destaque": ["Diego."]},
+    {"fala": "A Paula não sabe que a Juliana viu tudo.", "expr": "desconfiada", "arte": null, "zoom": true, "destaque": ["tudo."]},
+    {"fala": "Ela me perguntou o que fazer. E eu vou perguntar pra vocês.", "expr": "neutra", "arte": ["manchete", "E AGORA?"], "destaque": ["vocês."]},
+    {"fala": "Ela vai nessa conversa fingindo que não sabe de nada? Me conta aqui nos comentários.", "expr": "ironica", "arte": ["manchete_v", "VAI OU NÃO VAI?"], "destaque": ["comentários."]}
+  ],
+  "fim": "SEGUE A NINA",
+  "legenda_post": "O treino das seis era um álibi… com comprovante de Pix. 🍷\n\nSe você caiu aqui agora, assiste a PARTE 1 primeiro.\n\nE agora: a Juliana vai nessa conversa com a irmã fingindo que não sabe de nada? Ou chega com o print na mão? Me conta nos comentários. 👇\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em causo de família.\n\n#traição #históriadetraição #irmã #cunhada #casamento #storytime #desabafo #fofoca #ninaconta"
+}

@@ -1,0 +1,160 @@
+{
+ "id": "ep005-p1",
+ "ep": 5,
+ "parte": 1,
+ "titulo": "O PORTÃO DA GARAGEM",
+ "temporada": "Vizinhança",
+ "cenario": "tarde",
+ "batidas": [
+  {
+   "fala": "Ela apertou o controle do portão e abriu a garagem errada.",
+   "expr": "ironica",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "garagem",
+    "errada."
+   ]
+  },
+  {
+   "fala": "Quem me mandou foi a Cláudia, quarenta e dois anos, casada com o Sérgio há quinze.",
+   "expr": "neutra",
+   "arte": [
+    "direct",
+    "CLÁUDIA, 42"
+   ],
+   "destaque": [
+    "Cláudia,"
+   ],
+   "tela": "Quem me mandou foi a Cláudia, 42 anos, casada com o Sérgio há 15."
+  },
+  {
+   "fala": "Me segue, que essa é em duas partes e o condomínio inteiro participa.",
+   "expr": "ironica",
+   "arte": [
+    "seguir"
+   ],
+   "destaque": [
+    "segue,"
+   ]
+  },
+  {
+   "fala": "O Sérgio trocou o carro de vaga. Disse que a vaga antiga era muito apertada.",
+   "expr": "neutra",
+   "arte": [
+    "carro"
+   ],
+   "destaque": [
+    "vaga."
+   ]
+  },
+  {
+   "fala": "Ele pegou emprestada uma vaga coberta. Na garagem da casa do lado.",
+   "expr": "desconfiada",
+   "arte": [
+    "porta"
+   ],
+   "destaque": [
+    "casa",
+    "do",
+    "lado."
+   ]
+  },
+  {
+   "fala": "A casa da Vera. A vizinha do marido embarcado, que passa trinta dias no mar.",
+   "expr": "desconfiada",
+   "arte": [
+    "mala",
+    "30 DIAS"
+   ],
+   "destaque": [
+    "embarcado,"
+   ],
+   "tela": "A casa da Vera. A vizinha do marido embarcado, que passa 30 dias no mar."
+  },
+  {
+   "fala": "Tudo combinado, tudo educado. A Vera até mandou um bolo de agradecimento.",
+   "expr": "ironica",
+   "arte": [
+    "presente",
+    "OBRIGADA!"
+   ],
+   "destaque": [
+    "bolo"
+   ]
+  },
+  {
+   "fala": "Um dia a Cláudia pegou o controle do Sérgio pra tirar o carro dela.",
+   "expr": "neutra",
+   "arte": null,
+   "destaque": [
+    "controle"
+   ]
+  },
+  {
+   "fala": "Eram onze da noite. O Sérgio tinha dito que ia na farmácia.",
+   "expr": "desconfiada",
+   "arte": [
+    "relogio",
+    "23:00"
+   ],
+   "destaque": [
+    "farmácia."
+   ],
+   "tela": "Eram 23h. O Sérgio tinha dito que ia na farmácia."
+  },
+  {
+   "fala": "Ela apertou o botão errado. E o portão da Vera começou a subir.",
+   "expr": "chocada",
+   "arte": null,
+   "destaque": [
+    "Vera"
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "O carro do Sérgio estava lá dentro. Motor ainda quente.",
+   "expr": "desconfiada",
+   "arte": [
+    "carro"
+   ],
+   "destaque": [
+    "quente."
+   ]
+  },
+  {
+   "fala": "Farmácia não fica dentro da garagem da vizinha.",
+   "expr": "ironica",
+   "arte": null,
+   "destaque": [
+    "farmácia"
+   ]
+  },
+  {
+   "fala": "E a luz da sala da Vera, que sempre apaga às dez, estava acesa.",
+   "expr": "chocada",
+   "arte": [
+    "manchete",
+    "LUZ ACESA"
+   ],
+   "destaque": [
+    "acesa."
+   ]
+  },
+  {
+   "fala": "O que a Cláudia fez com aquele controle na mão, eu conto na parte dois.",
+   "expr": "ironica",
+   "arte": [
+    "manchete_v",
+    "CONTINUA NA PARTE 2"
+   ],
+   "destaque": [
+    "parte",
+    "dois."
+   ]
+  }
+ ],
+ "fim": "CONTINUA NA PARTE 2",
+ "legenda_post": "Ela apertou o controle do portão e abriu a garagem da vizinha. 🚗\n\nO marido tinha ido na farmácia. O carro dele estava lá dentro, com o motor quente. PARTE 2 no perfil.\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em causo de família.\n\n#traição #vizinha #condomínio #casamento #storytime #históriadetraição #desabafo #fofoca #ninamecontou"
+}

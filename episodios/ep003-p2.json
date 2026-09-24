@@ -1,0 +1,163 @@
+{
+ "id": "ep003-p2",
+ "ep": 3,
+ "parte": 2,
+ "titulo": "O CRACHÁ DE VISITANTE",
+ "temporada": "Trabalho",
+ "cenario": "noite",
+ "batidas": [
+  {
+   "fala": "Se você chegou agora, volta na parte um. O crachá explica tudo.",
+   "expr": "ironica",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "parte",
+    "um."
+   ]
+  },
+  {
+   "fala": "A mensagem era da Luciana. A esposa do Otávio, o chefe da Renata.",
+   "expr": "neutra",
+   "arte": [
+    "conversa",
+    "Aqui é a mulher do Otávio."
+   ],
+   "destaque": [
+    "Luciana."
+   ]
+  },
+  {
+   "fala": "Me segue antes de continuar, que amanhã tem mais.",
+   "expr": "ironica",
+   "arte": [
+    "seguir"
+   ],
+   "destaque": [
+    "segue"
+   ]
+  },
+  {
+   "fala": "Os dois marcaram um café. Numa padaria bem longe de tudo.",
+   "expr": "neutra",
+   "arte": [
+    "cafe"
+   ],
+   "destaque": [
+    "café."
+   ]
+  },
+  {
+   "fala": "A Luciana chegou com uma pasta. Dentro, tudo organizado por data.",
+   "expr": "desconfiada",
+   "arte": [
+    "extrato",
+    "SALA 1204 · SÁBADOS"
+   ],
+   "destaque": [
+    "pasta."
+   ]
+  },
+  {
+   "fala": "Recibos, horários, fotos do carro da Renata na garagem do prédio.",
+   "expr": "chocada",
+   "arte": [
+    "foto",
+    "GARAGEM"
+   ],
+   "destaque": [
+    "garagem"
+   ]
+  },
+  {
+   "fala": "Ela desconfiava fazia oito meses. Oito meses juntando prova.",
+   "expr": "chocada",
+   "arte": null,
+   "destaque": [
+    "oito",
+    "meses."
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "E aí ela fez uma proposta que o Marcos não esperava.",
+   "expr": "desconfiada",
+   "arte": null,
+   "destaque": [
+    "proposta"
+   ]
+  },
+  {
+   "fala": "Daqui a quinze dias tem a festa de fim de ano da empresa. Os dois casais foram convidados.",
+   "expr": "ironica",
+   "arte": [
+    "presente",
+    "FESTA"
+   ],
+   "destaque": [
+    "festa"
+   ],
+   "tela": "Daqui a 15 dias tem a festa de fim de ano da empresa. Os dois casais foram convidados."
+  },
+  {
+   "fala": "A Luciana quer ir. Quer que o Marcos vá também. E quer entregar a pasta na frente de todo mundo.",
+   "expr": "brava",
+   "arte": [
+    "carimbo",
+    "NA FRENTE DE TODOS"
+   ],
+   "destaque": [
+    "todo",
+    "mundo."
+   ]
+  },
+  {
+   "fala": "O Marcos não sabe se quer fazer isso. Nove anos de casamento.",
+   "expr": "triste",
+   "arte": [
+    "alianca",
+    "9 ANOS"
+   ],
+   "destaque": [
+    "Nove",
+    "anos"
+   ],
+   "tela": "O Marcos não sabe se quer fazer isso. 9 anos de casamento."
+  },
+  {
+   "fala": "E a Renata ainda não sabe de nada. Continua indo pra mãe dela aos sábados.",
+   "expr": "ironica",
+   "arte": [
+    "calendario",
+    "SÁBADO"
+   ],
+   "destaque": [
+    "sábados."
+   ]
+  },
+  {
+   "fala": "Então ele me perguntou. E eu passo pra vocês.",
+   "expr": "neutra",
+   "arte": [
+    "interrogacao"
+   ],
+   "destaque": [
+    "vocês."
+   ]
+  },
+  {
+   "fala": "Ele vai na festa com a Luciana, ou conversa com a Renata antes, sozinho? Me conta aqui embaixo.",
+   "expr": "ironica",
+   "arte": [
+    "manchete_v",
+    "FESTA OU CONVERSA?"
+   ],
+   "destaque": [
+    "festa"
+   ]
+  }
+ ],
+ "fim": "SEGUE A NINA",
+ "legenda_post": "Oito meses juntando prova. E uma festa de fim de ano marcada. 🍷\n\nSe você caiu aqui agora, assiste a PARTE 1 primeiro.\n\nEle vai na festa com a Luciana ou conversa com a esposa antes? Me conta nos comentários. 👇\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em causo de família.\n\n#traição #chefe #trabalho #casamento #storytime #históriadetraição #desabafo #fofoca #ninamecontou"
+}
