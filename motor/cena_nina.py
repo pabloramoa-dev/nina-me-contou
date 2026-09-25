@@ -42,13 +42,45 @@ def _linhas(txt, larg=27):
     return out
 
 
+def _marcas_linha(linha, destaque):
+    """Destaques seguros para o t2c do Manim.
+
+    Palavras destacadas vizinhas viram uma frase só ("casa do lado."), e cada
+    chave só entra se TODAS as ocorrências dela na linha forem palavras
+    inteiras e não se sobrepuserem a outra chave — senão o Manim quebra com
+    "Ambiguous style" (ex.: "do" dentro de "lado").
+    """
+    alvo = {d for d in (destaque or ()) if d}
+    palavras = linha.split()
+    frases, atual = [], []
+    for w in palavras:
+        if w in alvo:
+            atual.append(w)
+        elif atual:
+            frases.append(" ".join(atual)); atual = []
+    if atual:
+        frases.append(" ".join(atual))
+    ocupado, marcas = [], {}
+    for k in sorted(set(frases), key=len, reverse=True):
+        spans, i = [], linha.find(k)
+        while i != -1:
+            spans.append((i, i + len(k)))
+            i = linha.find(k, i + 1)
+        def inteira(a, b):
+            return (a == 0 or linha[a - 1] == " ") and (b == len(linha) or linha[b] == " ")
+        if not spans or not all(inteira(a, b) for a, b in spans):
+            continue
+        todos = ocupado + spans
+        if any(a < d and c < b for n, (a, b) in enumerate(todos) for (c, d) in todos[n + 1:]):
+            continue
+        ocupado += spans
+        marcas[k] = AMARELO
+    return marcas
+
+
 def legenda(txt, destaque=()):
-    marcas = {}
-    for d in destaque or ():
-        if d and d in txt:
-            marcas[d] = AMARELO
     linhas = VGroup(*[Text(l, font=V.FONTE, weight=BOLD, font_size=36, color=WHITE,
-                           t2c={k: v for k, v in marcas.items() if k in l})
+                           t2c=_marcas_linha(l, destaque))
                       for l in _linhas(txt)]).arrange(DOWN, buff=0.12)
     if linhas.width > 7.0:
         linhas.scale(7.0 / linhas.width)
