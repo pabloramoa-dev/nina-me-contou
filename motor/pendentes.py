@@ -1,7 +1,11 @@
-"""Lista os episódios (JSON) que ainda não têm MP4 em reels/."""
-import os, sys, glob
+"""Lista os episódios (JSON) que precisam ir pro estúdio: sem MP4 em reels/
+ou com MP4 feito a partir de uma versão antiga do roteiro."""
+import glob, os, sys
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, RAIZ)
+from src import fila  # noqa: E402
+
 for f in sorted(glob.glob(os.path.join(RAIZ, "episodios", "ep*-p*.json"))):
     ep = os.path.splitext(os.path.basename(f))[0]
-    if not os.path.exists(os.path.join(RAIZ, "reels", ep + ".mp4")):
-        print(f)
+    if fila.desatualizado(ep):
+        print(os.path.relpath(f, RAIZ) if "--rel" in sys.argv else f)

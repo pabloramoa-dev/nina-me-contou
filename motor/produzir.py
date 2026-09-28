@@ -39,10 +39,18 @@ def main():
     ap.add_argument("--publicar-em", default=None, help="copia MP4 + capa.jpg para esta pasta (ex.: reels)")
     a = ap.parse_args()
 
-    ep_path = os.path.abspath(a.episodio)
-    ep = json.load(open(ep_path, encoding="utf-8"))
+    ep_json = os.path.abspath(a.episodio)
+    sys.path.insert(0, MOTOR)
+    from cta import garantir_cta
+    ep = garantir_cta(json.load(open(ep_json, encoding="utf-8")))   # CTA de seguir sempre no final
     pasta = os.path.join(RAIZ, "saida", ep["id"])
+    ep_path = os.path.join(pasta, "ep.json")
+    novo = json.dumps(ep, ensure_ascii=False, indent=1)
+    if os.path.exists(ep_path) and open(ep_path, encoding="utf-8").read() != novo:
+        shutil.rmtree(pasta)          # roteiro mudou: refaz tudo
     os.makedirs(pasta, exist_ok=True)
+    with open(ep_path, "w", encoding="utf-8") as f:
+        f.write(novo)
     P = lambda n: os.path.join(pasta, n)
     quer = lambda e: a.so in (None, e)
     env = dict(os.environ, EPISODIO=ep_path, PASTA=pasta)
@@ -94,6 +102,12 @@ def main():
         os.makedirs(dest, exist_ok=True)
         shutil.copy(final, os.path.join(dest, ep["id"] + ".mp4"))
         Image.open(P("capa.png")).convert("RGB").save(os.path.join(dest, ep["id"] + "-capa.jpg"), quality=90)
+        from story import fazer_story
+        fazer_story(final, os.path.join(dest, ep["id"] + "-story.mp4"))
+        sys.path.insert(0, RAIZ)
+        from src.fila import assinatura
+        with open(os.path.join(dest, ep["id"] + ".hash"), "w") as f:
+            f.write(assinatura(ep["id"]) + "\n")
 
     if quer("post"):
         with open(P("legenda.txt"), "w", encoding="utf-8") as f:
