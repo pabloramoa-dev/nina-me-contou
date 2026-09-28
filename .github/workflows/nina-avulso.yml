@@ -1,0 +1,62 @@
+name: Nina - video avulso respeito
+on:
+  push:
+    branches: ["video/nina-respeito-20260928"]
+    paths: ["avulsos/**", ".github/workflows/nina-avulso.yml"]
+permissions:
+  contents: write
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Instalar dependencias
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg pkg-config libcairo2-dev libpango1.0-dev espeak-ng fonts-dejavu-core
+          mkdir -p ~/.fonts
+          for p in Bold Regular; do
+            curl -fsSL -o ~/.fonts/Poppins-$p.ttf "https://github.com/google/fonts/raw/main/ofl/poppins/Poppins-$p.ttf"
+          done
+          fc-cache -f
+          pip install -r requirements-estudio.txt
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/dvh_kokoro
+          key: kokoro-v1.0
+      - name: Preparar selo de video avulso
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path("motor/cena_nina.py")
+          s = p.read_text()
+          s = s.replace('f"NINA CONTA · EP {EP[\'ep\']:02d} · PARTE {EP[\'parte\']}"', '"NINA ME CONTOU"')
+          s = s.replace('NL.trocar_expressao(self, p, "ironica")', 'NL.trocar_expressao(self, p, "neutra")')
+          p.write_text(s)
+          PY
+      - name: Gerar video
+        run: python motor/produzir.py avulsos/nina-respeito.json
+      - name: Validar MP4
+        run: |
+          ffprobe -v error -show_entries stream=codec_name,width,height -show_entries format=duration -of json saida/nina-respeito/nina-respeito.mp4
+          ffmpeg -v error -i saida/nina-respeito/nina-respeito.mp4 -f null -
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Nina_O_Mundo_Da_Voltas
+          path: |
+            saida/nina-respeito/nina-respeito.mp4
+            saida/nina-respeito/segs.json
+          retention-days: 14
+      - name: Salvar video na branch avulsa
+        run: |
+          mkdir -p avulsos/prontos
+          cp saida/nina-respeito/nina-respeito.mp4 avulsos/prontos/Nina_O_Mundo_Da_Voltas.mp4
+          git config user.name "nina-bot"
+          git config user.email "actions@github.com"
+          git add avulsos/prontos/Nina_O_Mundo_Da_Voltas.mp4
+          git commit -m "Video avulso Nina: O mundo da voltas [skip ci]"
+          git push
