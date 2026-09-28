@@ -1,0 +1,156 @@
+{
+ "id": "ep008-p1",
+ "ep": 8,
+ "parte": 1,
+ "titulo": "A ENCOMENDA ERRADA",
+ "temporada": "Vizinhança",
+ "cenario": "tarde",
+ "batidas": [
+  {
+   "fala": "O entregador tocou a campainha errada. E ela abriu um pacote que não era pra ela.",
+   "expr": "ironica",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "pacote"
+   ]
+  },
+  {
+   "fala": "Quem me mandou foi a Simone, quarenta e cinco anos, casada com o Alberto há vinte.",
+   "expr": "neutra",
+   "arte": [
+    "direct",
+    "SIMONE, 45"
+   ],
+   "destaque": [
+    "Simone,"
+   ],
+   "tela": "Quem me mandou foi a Simone, 45 anos, casada com o Alberto há 20."
+  },
+  {
+   "fala": "A Simone mora numa vila. Seis casas, um portão só, todo mundo se conhece.",
+   "expr": "neutra",
+   "arte": [
+    "porta",
+    "VILA · 6 CASAS"
+   ],
+   "destaque": [
+    "Seis",
+    "casas,"
+   ],
+   "tela": "A Simone mora numa vila. 6 casas, um portão só, todo mundo se conhece."
+  },
+  {
+   "fala": "Numa terça, o entregador deixou uma caixa na porta dela. Ela abriu sem nem olhar a etiqueta.",
+   "expr": "neutra",
+   "arte": [
+    "presente",
+    "CAIXA"
+   ],
+   "destaque": [
+    "sem",
+    "nem",
+    "olhar"
+   ]
+  },
+  {
+   "fala": "Dentro, um vestido vermelho. Tamanho P. E um cartão.",
+   "expr": "desconfiada",
+   "arte": [
+    "presente",
+    "TAM. P"
+   ],
+   "destaque": [
+    "vermelho."
+   ]
+  },
+  {
+   "fala": "A Simone veste G. E não compra vermelho desde mil novecentos e noventa e nove.",
+   "expr": "ironica",
+   "arte": null,
+   "destaque": [
+    "vermelho"
+   ],
+   "tela": "A Simone veste G. E não compra vermelho desde 1999."
+  },
+  {
+   "fala": "Aí ela olhou a etiqueta. Destinatário: Alberto. O marido dela.",
+   "expr": "chocada",
+   "arte": [
+    "carimbo",
+    "ALBERTO"
+   ],
+   "destaque": [
+    "Alberto."
+   ]
+  },
+  {
+   "fala": "Mas o endereço era da casa quatro. Não da casa dois.",
+   "expr": "desconfiada",
+   "arte": [
+    "porta",
+    "CASA 4"
+   ],
+   "destaque": [
+    "casa",
+    "quatro."
+   ]
+  },
+  {
+   "fala": "Na casa quatro mora a Denise. Divorciada, simpática, sempre de unha feita.",
+   "expr": "desconfiada",
+   "arte": null,
+   "destaque": [
+    "Denise."
+   ]
+  },
+  {
+   "fala": "E o cartão dizia: pro nosso sábado. Com um coração desenhado à mão.",
+   "expr": "chocada",
+   "arte": [
+    "conversa",
+    "Pro nosso sábado. ♥"
+   ],
+   "destaque": [
+    "nosso",
+    "sábado."
+   ]
+  },
+  {
+   "fala": "Sábado. O dia em que o Alberto joga bola com os amigos. Faz doze anos.",
+   "expr": "brava",
+   "arte": [
+    "calendario",
+    "SÁBADO"
+   ],
+   "destaque": [
+    "joga",
+    "bola"
+   ],
+   "tela": "Sábado. O dia em que o Alberto joga bola com os amigos. Faz 12 anos."
+  },
+  {
+   "fala": "A Simone fechou a caixa. Colou a fita de volta, bem direitinho.",
+   "expr": "ironica",
+   "arte": null,
+   "destaque": [
+    "direitinho."
+   ]
+  },
+  {
+   "fala": "E o que ela fez com esse vestido, eu conto na parte dois.",
+   "expr": "ironica",
+   "arte": [
+    "manchete_v",
+    "CONTINUA NA PARTE 2"
+   ],
+   "destaque": [
+    "parte",
+    "dois."
+   ]
+  }
+ ],
+ "fim": "CONTINUA NA PARTE 2",
+ "legenda_post": "O entregador errou a casa. E ela abriu um pacote com o nome do MARIDO e o endereço da vizinha. 📦\n\nDentro, um vestido vermelho tamanho P e um cartão: \"pro nosso sábado\". PARTE 2 no perfil.\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em causo de família.\n\n#traição #vizinha #casamento #encomenda #storytime #históriadetraição #desabafo #fofoca #ninamecontou"
+}

@@ -1,0 +1,146 @@
+{
+ "id": "ep008-p2",
+ "ep": 8,
+ "parte": 2,
+ "titulo": "A ENCOMENDA ERRADA",
+ "temporada": "Vizinhança",
+ "cenario": "noite",
+ "batidas": [
+  {
+   "fala": "Se você caiu aqui agora, volta na parte um. O vestido vermelho está lá.",
+   "expr": "ironica",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "parte",
+    "um."
+   ]
+  },
+  {
+   "fala": "A Simone pegou a caixa, atravessou a vila e tocou na casa quatro.",
+   "expr": "neutra",
+   "arte": [
+    "porta",
+    "CASA 4"
+   ],
+   "destaque": [
+    "casa",
+    "quatro."
+   ]
+  },
+  {
+   "fala": "A Denise abriu. De unha feita. E a Simone sorriu: chegou isso aqui pra você, veio lá em casa por engano.",
+   "expr": "ironica",
+   "arte": [
+    "conversa",
+    "Chegou isso pra você. Veio lá em casa por engano."
+   ],
+   "destaque": [
+    "engano."
+   ]
+  },
+  {
+   "fala": "A Denise viu o nome na etiqueta e ficou branca.",
+   "expr": "chocada",
+   "arte": null,
+   "destaque": [
+    "branca."
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "Obrigada, Simone. É uma encomenda do grupo de compras. Eu uso o nome de quem estiver perto.",
+   "expr": "desconfiada",
+   "arte": [
+    "conversa",
+    "Eu uso o nome de quem estiver perto."
+   ],
+   "destaque": [
+    "perto."
+   ]
+  },
+  {
+   "fala": "Desculpa esfarrapada. Mas a Simone agradeceu e voltou pra casa.",
+   "expr": "ironica",
+   "arte": null,
+   "destaque": [
+    "esfarrapada."
+   ]
+  },
+  {
+   "fala": "No sábado, o Alberto saiu de chuteira na mão, como sempre. Às duas da tarde.",
+   "expr": "neutra",
+   "arte": [
+    "relogio",
+    "14:00"
+   ],
+   "destaque": [
+    "chuteira"
+   ],
+   "tela": "No sábado, o Alberto saiu de chuteira na mão, como sempre. Às 14h."
+  },
+  {
+   "fala": "A Simone ficou na janela. Viu o carro dele dar a volta no quarteirão.",
+   "expr": "desconfiada",
+   "arte": [
+    "carro"
+   ],
+   "destaque": [
+    "volta"
+   ]
+  },
+  {
+   "fala": "E vinte minutos depois, a Denise saiu pelo portão da vila. De vestido vermelho.",
+   "expr": "chocada",
+   "arte": null,
+   "destaque": [
+    "vermelho."
+   ],
+   "tela": "E 20 minutos depois, a Denise saiu pelo portão da vila. De vestido vermelho.",
+   "zoom": true
+  },
+  {
+   "fala": "A chuteira do Alberto voltou limpinha. Sem um grão de terra.",
+   "expr": "ironica",
+   "arte": null,
+   "destaque": [
+    "limpinha."
+   ]
+  },
+  {
+   "fala": "E agora vem a parte difícil. Domingo tem o aniversário da neta. Na casa da Simone. A vila inteira convidada.",
+   "expr": "triste",
+   "arte": [
+    "presente",
+    "DOMINGO · ANIVERSÁRIO"
+   ],
+   "destaque": [
+    "vila",
+    "inteira"
+   ]
+  },
+  {
+   "fala": "Inclusive a Denise.",
+   "expr": "brava",
+   "arte": null,
+   "destaque": [
+    "Denise."
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "Ela desconvida a Denise? Ou deixa ela vir e espera pra ver se ela aparece de vermelho? Me conta aqui.",
+   "expr": "ironica",
+   "arte": [
+    "manchete_v",
+    "DESCONVIDA OU ESPERA?"
+   ],
+   "destaque": [
+    "vermelho?"
+   ]
+  }
+ ],
+ "fim": "SEGUE A NINA",
+ "legenda_post": "Ela devolveu o pacote pessoalmente. E no sábado, ficou na janela. 🍷\n\nSe você caiu aqui agora, assiste a PARTE 1 primeiro.\n\nDesconvida a vizinha do aniversário ou espera pra ver se ela aparece de vermelho? Me conta nos comentários. 👇\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em causo de família.\n\n#traição #vizinha #casamento #encomenda #storytime #históriadetraição #desabafo #fofoca #ninamecontou"
+}
