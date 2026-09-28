@@ -1,0 +1,154 @@
+{
+ "id": "ep009-p1",
+ "ep": 9,
+ "parte": 1,
+ "titulo": "O PERFUME DA MELHOR AMIGA",
+ "temporada": "Amizade",
+ "cenario": "tarde",
+ "batidas": [
+  {
+   "fala": "A melhor amiga dela apareceu com perfume novo. E o perfume tinha cheiro de casa.",
+   "expr": "ironica",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "cheiro",
+    "de",
+    "casa."
+   ]
+  },
+  {
+   "fala": "Quem me mandou foi a Carol, vinte e nove anos, namorando o Lucas há quatro.",
+   "expr": "neutra",
+   "arte": [
+    "direct",
+    "CAROL, 29"
+   ],
+   "destaque": [
+    "Carol,"
+   ],
+   "tela": "Quem me mandou foi a Carol, 29 anos, namorando o Lucas há 4."
+  },
+  {
+   "fala": "A melhor amiga dela é a Thaís. Amiga desde a escola. Madrinha de tudo.",
+   "expr": "neutra",
+   "arte": [
+    "coracao",
+    "AMIGAS DESDE 2009"
+   ],
+   "destaque": [
+    "Thaís."
+   ]
+  },
+  {
+   "fala": "Num sábado, a Thaís chegou pra um café. Abraçou a Carol. E a Carol travou.",
+   "expr": "desconfiada",
+   "arte": [
+    "cafe"
+   ],
+   "destaque": [
+    "travou."
+   ]
+  },
+  {
+   "fala": "Aquele cheiro. Amadeirado, meio doce. Ela conhecia aquele cheiro de olhos fechados.",
+   "expr": "desconfiada",
+   "arte": [
+    "perfume"
+   ],
+   "destaque": [
+    "Aquele",
+    "cheiro."
+   ]
+  },
+  {
+   "fala": "Era o perfume que ela tinha dado pro Lucas. No aniversário de namoro.",
+   "expr": "chocada",
+   "arte": [
+    "presente",
+    "4 ANOS DE NAMORO"
+   ],
+   "destaque": [
+    "Lucas."
+   ]
+  },
+  {
+   "fala": "Um perfume importado, masculino, que ela parcelou em seis vezes.",
+   "expr": "ironica",
+   "arte": [
+    "extrato",
+    "PERFUME · 6X"
+   ],
+   "destaque": [
+    "seis",
+    "vezes."
+   ],
+   "tela": "Um perfume importado, masculino, que ela parcelou em 6 vezes."
+  },
+  {
+   "fala": "Ela perguntou, rindo: amiga, que perfume é esse? A Thaís disse: ah, peguei o do meu irmão.",
+   "expr": "desconfiada",
+   "arte": [
+    "conversa",
+    "Peguei o do meu irmão."
+   ],
+   "destaque": [
+    "irmão."
+   ]
+  },
+  {
+   "fala": "A Thaís tem um irmão. Mora em Portugal. Faz três anos.",
+   "expr": "ironica",
+   "arte": [
+    "mala",
+    "PORTUGAL"
+   ],
+   "destaque": [
+    "Portugal."
+   ],
+   "tela": "A Thaís tem um irmão. Mora em Portugal. Faz 3 anos."
+  },
+  {
+   "fala": "Quando a Thaís foi embora, a Carol foi direto no banheiro. Abriu o armário do Lucas.",
+   "expr": "neutra",
+   "arte": [
+    "porta"
+   ],
+   "destaque": [
+    "armário"
+   ]
+  },
+  {
+   "fala": "O frasco estava lá. Mas pela metade. E ela lembrava muito bem: semana passada estava quase cheio.",
+   "expr": "chocada",
+   "arte": null,
+   "destaque": [
+    "metade."
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "O Lucas usa uma borrifada por dia. Uma.",
+   "expr": "desconfiada",
+   "arte": null,
+   "destaque": [
+    "Uma."
+   ]
+  },
+  {
+   "fala": "Quem gastou o resto do perfume, eu conto na parte dois.",
+   "expr": "ironica",
+   "arte": [
+    "manchete_v",
+    "CONTINUA NA PARTE 2"
+   ],
+   "destaque": [
+    "parte",
+    "dois."
+   ]
+  }
+ ],
+ "fim": "CONTINUA NA PARTE 2",
+ "legenda_post": "A melhor amiga apareceu com perfume novo. E o cheiro era o perfume que ela deu pro NAMORADO. 🌸\n\nO frasco em casa estava pela metade. E ele só usa uma borrifada por dia. PARTE 2 no perfil.\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em causo de família.\n\n#traição #melhoramiga #namoro #amizade #storytime #históriadetraição #desabafo #fofoca #ninamecontou"
+}

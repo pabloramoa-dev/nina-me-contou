@@ -1,0 +1,149 @@
+{
+ "id": "ep010-p2",
+ "ep": 10,
+ "parte": 2,
+ "titulo": "OPEN BAR",
+ "temporada": "Noite",
+ "cenario": "noite",
+ "batidas": [
+  {
+   "fala": "Se você caiu aqui agora, volta na parte um. A comanda está lá.",
+   "expr": "ironica",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "parte",
+    "um."
+   ]
+  },
+  {
+   "fala": "No rodapé da comanda, a garçonete tinha escrito: mesa sete, Bruno e Kátia, aniversário.",
+   "expr": "chocada",
+   "arte": [
+    "conversa",
+    "Mesa 7 · Bruno e Kátia · aniversário"
+   ],
+   "destaque": [
+    "Kátia,"
+   ],
+   "tela": "No rodapé da comanda: mesa 7, Bruno e Kátia, aniversário."
+  },
+  {
+   "fala": "Kátia. A supervisora do Bruno. A que liga lá em casa pra passar a escala.",
+   "expr": "brava",
+   "arte": [
+    "cracha",
+    "SUPERVISORA"
+   ],
+   "destaque": [
+    "supervisora"
+   ]
+  },
+  {
+   "fala": "E a que só bebe caipirinha de morango sem açúcar. A Letícia sabia disso por um motivo.",
+   "expr": "desconfiada",
+   "arte": null,
+   "destaque": [
+    "morango"
+   ]
+  },
+  {
+   "fala": "No churrasco de fim de ano da empresa, foi a própria Letícia que fez os drinks. E a Kátia pediu três.",
+   "expr": "ironica",
+   "arte": [
+    "cafe"
+   ],
+   "destaque": [
+    "própria",
+    "Letícia"
+   ]
+  },
+  {
+   "fala": "E a escala? A Letícia pediu pra ver a escala do mês. Com a desculpa do plano de saúde.",
+   "expr": "neutra",
+   "arte": [
+    "calendario",
+    "ESCALA DO MÊS"
+   ],
+   "destaque": [
+    "escala"
+   ]
+  },
+  {
+   "fala": "Na sexta do bar, o Bruno estava de folga. A escala dizia: folga.",
+   "expr": "chocada",
+   "arte": null,
+   "destaque": [
+    "folga."
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "E quem assinava a escala era a Kátia.",
+   "expr": "brava",
+   "arte": [
+    "carimbo",
+    "ASS.: KÁTIA"
+   ],
+   "destaque": [
+    "Kátia."
+   ]
+  },
+  {
+   "fala": "Ou seja: a chefe dava folga pra ele. E ele dizia em casa que estava de plantão.",
+   "expr": "ironica",
+   "arte": [
+    "manchete",
+    "FOLGA ≠ PLANTÃO"
+   ],
+   "destaque": [
+    "plantão."
+   ]
+  },
+  {
+   "fala": "A Letícia não falou nada. Mas separou a fatura. E marcou os cento e oitenta e sete reais de amarelo.",
+   "expr": "neutra",
+   "arte": [
+    "extrato",
+    "R$ 187"
+   ],
+   "destaque": [
+    "amarelo."
+   ],
+   "tela": "A Letícia não falou nada. Mas separou a fatura. E marcou os R$ 187 de amarelo."
+  },
+  {
+   "fala": "Semana que vem é o jantar de fim de ano da empresa. Os cônjuges estão convidados.",
+   "expr": "desconfiada",
+   "arte": [
+    "calendario",
+    "JANTAR DA EMPRESA"
+   ],
+   "destaque": [
+    "cônjuges"
+   ]
+  },
+  {
+   "fala": "E a Kátia vai estar lá. Pedindo caipirinha de morango.",
+   "expr": "ironica",
+   "arte": null,
+   "destaque": [
+    "morango."
+   ]
+  },
+  {
+   "fala": "Ela vai no jantar e entrega a fatura pra Kátia pagar a parte dela? Ou resolve antes, em casa? Me conta aqui.",
+   "expr": "ironica",
+   "arte": [
+    "manchete_v",
+    "NO JANTAR OU EM CASA?"
+   ],
+   "destaque": [
+    "fatura"
+   ]
+  }
+ ],
+ "fim": "SEGUE A NINA",
+ "legenda_post": "O nome no rodapé da comanda era de quem assinava a escala dele. 🍷\n\nSe você caiu aqui agora, assiste a PARTE 1 primeiro.\n\nEla entrega a fatura no jantar da empresa ou resolve em casa? Me conta nos comentários. 👇\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em causo de família.\n\n#traição #plantão #casamento #fatura #storytime #históriadetraição #desabafo #fofoca #ninamecontou"
+}

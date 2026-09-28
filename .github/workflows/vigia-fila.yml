@@ -1,11 +1,11 @@
 name: Vigia da fila
 
-# Todo dia confere se há pelo menos 3 episódios completos prontos.
+# Todo dia confere se há pelo menos 4 episódios completos prontos (2 dias de postagem).
 # Se não houver, abre um aviso (issue) pedindo roteiros novos.
 
 on:
   schedule:
-    - cron: "0 11 * * *"    # 08:00 Brasília
+    - cron: "30 9 * * *"    # 06:30 Brasília (antes da 1ª postagem)
   workflow_dispatch:
 
 permissions:

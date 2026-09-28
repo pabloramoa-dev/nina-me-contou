@@ -1,15 +1,19 @@
 name: Publicar Reel
 
 on:
+  # 4 vídeos por dia, em sequência (parte 1 → parte 2 → próximo episódio).
+  # 8h e 20h também vão pros Stories. Minuto 7 = fora do pico do GitHub (menos atraso).
   schedule:
-    - cron: "0 15 * * *"    # 12:00 Brasília — parte 1
-    - cron: "0 23 * * *"    # 20:00 Brasília — parte 2
+    - cron: "7 11 * * *"    # 08:07 Brasília — Reel + Story
+    - cron: "7 15 * * *"    # 12:07 Brasília — Reel
+    - cron: "7 19 * * *"    # 16:07 Brasília — Reel
+    - cron: "7 23 * * *"    # 20:07 Brasília — Reel + Story
   workflow_dispatch:
     inputs:
       horario:
-        description: "almoco = parte 1 · noite = parte 2"
+        description: "manha/noite = Reel + Story · almoco/tarde = só Reel"
         type: choice
-        options: [almoco, noite]
+        options: [manha, almoco, tarde, noite]
         default: almoco
       dry_run:
         description: "Ensaio: valida tudo e NÃO publica"
@@ -38,9 +42,13 @@ jobs:
       - name: Qual horário?
         id: h
         run: |
-          if [ -n "${{ inputs.horario }}" ]; then echo "h=${{ inputs.horario }}" >> $GITHUB_OUTPUT
-          elif [ "${{ github.event.schedule }}" = "0 15 * * *" ]; then echo "h=almoco" >> $GITHUB_OUTPUT
-          else echo "h=noite" >> $GITHUB_OUTPUT; fi
+          case "${{ inputs.horario || github.event.schedule }}" in
+            manha|"7 11 * * *")  h=manha ;;
+            almoco|"7 15 * * *") h=almoco ;;
+            tarde|"7 19 * * *")  h=tarde ;;
+            *)                   h=noite ;;
+          esac
+          echo "h=$h" >> $GITHUB_OUTPUT
 
       - name: Publicar
         env:

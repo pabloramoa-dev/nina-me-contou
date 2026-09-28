@@ -1,17 +1,21 @@
 name: Produzir episódios
 
-# Renderiza todo episódio de episodios/ que ainda não tem MP4 em reels/
-# e grava o MP4 + a capa no repositório. Nada é publicado aqui.
+# Renderiza todo episódio de episodios/ que ainda não tem MP4 em reels/ (ou que
+# teve o roteiro editado depois do render) e grava MP4 + capa + versão Story.
+# Cada parte roda numa máquina própria, em paralelo. Nada é publicado aqui.
+# Todo vídeo sai com o CTA de seguir no FINAL (motor/cta.py).
 
 on:
   push:
     branches: [main]
-    paths: ["episodios/**"]
+    paths: ["episodios/**", "motor/**"]
+  schedule:
+    - cron: "40 4 * * *"    # 01:40 Brasília — rede de segurança para o que ficou pra trás
   workflow_dispatch:
     inputs:
       limite:
         description: "Máximo de partes nesta execução"
-        default: "8"
+        default: "20"
 
 concurrency:
   group: nina-estudio
@@ -21,9 +25,34 @@ permissions:
   contents: write
 
 jobs:
-  produzir:
+  listar:
     runs-on: ubuntu-latest
-    timeout-minutes: 180
+    outputs:
+      lista: ${{ steps.l.outputs.lista }}
+      qtd: ${{ steps.l.outputs.qtd }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - id: l
+        run: |
+          LIM="${{ inputs.limite || '20' }}"
+          python motor/pendentes.py --rel | head -n "$LIM" > /tmp/p.txt
+          cat /tmp/p.txt
+          echo "lista=$(python -c "import json;print(json.dumps(open('/tmp/p.txt').read().split()))")" >> $GITHUB_OUTPUT
+          echo "qtd=$(wc -l < /tmp/p.txt)" >> $GITHUB_OUTPUT
+
+  renderizar:
+    needs: listar
+    if: needs.listar.outputs.qtd != '0'
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix:
+        episodio: ${{ fromJson(needs.listar.outputs.lista) }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -52,23 +81,35 @@ jobs:
           path: ~/.cache/dvh_kokoro
           key: kokoro-v1.0
 
-      - name: Renderizar pendentes
+      - name: Renderizar
+        id: r
         run: |
-          LIM="${{ inputs.limite || '8' }}"
-          n=0
-          for f in $(python motor/pendentes.py); do
-            [ "$n" -ge "$LIM" ] && break
-            echo "::group::$f"
-            python motor/produzir.py "$f" --publicar-em reels
-            echo "::endgroup::"
-            n=$((n+1))
-            git add reels/
-          done
-          echo "renderizados=$n"
+          python motor/produzir.py "${{ matrix.episodio }}" --publicar-em saida_reels
+          echo "id=$(basename '${{ matrix.episodio }}' .json)" >> $GITHUB_OUTPUT
 
+      - uses: actions/upload-artifact@v4
+        with:
+          name: reel-${{ steps.r.outputs.id }}
+          path: saida_reels/
+          retention-days: 3
+
+  gravar:
+    needs: renderizar
+    if: always() && needs.renderizar.result != 'skipped'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: reel-*
+          merge-multiple: true
+          path: reels/
       - name: Conferir a fila
-        run: python -m src.fila
-
+        run: python -m src.fila || true
       - name: Gravar no repositório
         run: |
           git config user.name "nina-bot"
@@ -76,5 +117,5 @@ jobs:
           git add reels/
           git diff --cached --quiet && exit 0
           git commit -m "estúdio: episódios renderizados [skip ci]"
-          git pull --rebase
-          git push
+          for i in 1 2 3; do git pull --rebase && git push && exit 0; sleep 5; done
+          exit 1

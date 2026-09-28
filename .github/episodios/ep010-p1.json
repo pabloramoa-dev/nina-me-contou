@@ -1,0 +1,161 @@
+{
+ "id": "ep010-p1",
+ "ep": 10,
+ "parte": 1,
+ "titulo": "OPEN BAR",
+ "temporada": "Noite",
+ "cenario": "tarde",
+ "batidas": [
+  {
+   "fala": "Quatorze drinks. Numa noite só. Na fatura do cartão conjunto.",
+   "expr": "ironica",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "Quatorze",
+    "drinks."
+   ]
+  },
+  {
+   "fala": "Quem me mandou foi a Letícia, trinta e quatro anos, casada com o Bruno, que é vigilante noturno.",
+   "expr": "neutra",
+   "arte": [
+    "direct",
+    "LETÍCIA, 34"
+   ],
+   "destaque": [
+    "vigilante"
+   ],
+   "tela": "Quem me mandou foi a Letícia, 34 anos, casada com o Bruno, vigilante noturno."
+  },
+  {
+   "fala": "O Bruno trabalha de plantão. Doze por trinta e seis. Numa empresa de segurança.",
+   "expr": "neutra",
+   "arte": [
+    "relogio",
+    "12 × 36"
+   ],
+   "destaque": [
+    "plantão."
+   ],
+   "tela": "O Bruno trabalha de plantão. 12 por 36. Numa empresa de segurança."
+  },
+  {
+   "fala": "E a Letícia é quem cuida das contas da casa. Planilha, tudo anotado.",
+   "expr": "neutra",
+   "arte": [
+    "extrato",
+    "CONTAS DA CASA"
+   ],
+   "destaque": [
+    "Planilha,"
+   ]
+  },
+  {
+   "fala": "No fim do mês, chegou a fatura do cartão que os dois dividem.",
+   "expr": "desconfiada",
+   "arte": [
+    "extrato",
+    "FATURA"
+   ],
+   "destaque": [
+    "fatura"
+   ]
+  },
+  {
+   "fala": "Sexta-feira, uma e quarenta da manhã. Bar Lua Nova. Cento e oitenta e sete reais.",
+   "expr": "chocada",
+   "arte": [
+    "extrato",
+    "BAR LUA NOVA · R$ 187"
+   ],
+   "destaque": [
+    "Bar",
+    "Lua",
+    "Nova."
+   ],
+   "tela": "Sexta-feira, 1h40 da manhã. Bar Lua Nova. R$ 187."
+  },
+  {
+   "fala": "Sexta-feira, uma e quarenta. O Bruno estava de plantão. Guardando um galpão.",
+   "expr": "brava",
+   "arte": [
+    "calendario",
+    "SEXTA · PLANTÃO"
+   ],
+   "destaque": [
+    "plantão."
+   ],
+   "tela": "Sexta-feira, 1h40. O Bruno estava de plantão. Guardando um galpão."
+  },
+  {
+   "fala": "A Letícia ligou pro bar. Pediu o detalhe da comanda. Disse que era pra declarar no imposto.",
+   "expr": "ironica",
+   "arte": [
+    "celular",
+    "Bar Lua Nova"
+   ],
+   "destaque": [
+    "imposto."
+   ]
+  },
+  {
+   "fala": "E a moça mandou a foto da comanda. Quatorze drinks. Todos iguais.",
+   "expr": "desconfiada",
+   "arte": [
+    "foto",
+    "COMANDA · 14 DRINKS"
+   ],
+   "destaque": [
+    "Todos",
+    "iguais."
+   ],
+   "tela": "E a moça mandou a foto da comanda. 14 drinks. Todos iguais."
+  },
+  {
+   "fala": "Caipirinha de morango. Sem açúcar.",
+   "expr": "chocada",
+   "arte": null,
+   "destaque": [
+    "morango."
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "O Bruno odeia morango. Mas a Letícia conhecia alguém que só bebe isso.",
+   "expr": "desconfiada",
+   "arte": null,
+   "destaque": [
+    "morango."
+   ]
+  },
+  {
+   "fala": "E na comanda, no rodapé, a garçonete tinha anotado o nome da mesa.",
+   "expr": "desconfiada",
+   "arte": [
+    "carimbo",
+    "MESA 7"
+   ],
+   "destaque": [
+    "nome",
+    "da",
+    "mesa."
+   ]
+  },
+  {
+   "fala": "Que nome estava lá, eu conto na parte dois.",
+   "expr": "ironica",
+   "arte": [
+    "manchete_v",
+    "CONTINUA NA PARTE 2"
+   ],
+   "destaque": [
+    "parte",
+    "dois."
+   ]
+  }
+ ],
+ "fim": "CONTINUA NA PARTE 2",
+ "legenda_post": "14 drinks numa noite só. Na fatura do cartão CONJUNTO. Numa sexta em que ele estava de plantão. 🍹\n\nE a comanda tinha um nome anotado no rodapé. PARTE 2 no perfil.\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em causo de família.\n\n#traição #plantão #casamento #fatura #storytime #históriadetraição #desabafo #fofoca #ninamecontou"
+}
