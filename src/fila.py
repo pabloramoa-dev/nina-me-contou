@@ -3,13 +3,17 @@
 Regras
 - Episódio = par epNNN-p1 + epNNN-p2. Só entra na fila quando OS DOIS MP4 e as
   DUAS capas existem em reels/ (nunca publicar parte 1 sem a 2 pronta).
-- Horário "almoco" (12h): publica a parte 1 do menor episódio ainda não publicado.
-- Horário "noite" (20h): publica a parte 2 do episódio cuja parte 1 já saiu e a 2 não.
-  Se não há parte 2 pendente, não publica nada (a noite é sempre a continuação).
+- 4 horários por dia (8h, 12h, 16h, 20h), sempre em sequência:
+  se há uma parte 2 cuja parte 1 já saiu, ela vem primeiro; senão, sai a parte 1
+  do menor episódio completo ainda não publicado. Na prática:
+  8h = parte 1 · 12h = parte 2 · 16h = parte 1 · 20h = parte 2 (2 episódios/dia).
+- Um vídeo só está "pronto" se foi renderizado a partir da versão ATUAL do roteiro
+  (reels/<id>.hash). Roteiro editado = volta pro estúdio antes de publicar.
 - Nunca publica o mesmo id duas vezes (ledger publicados.json).
 """
 from __future__ import annotations
 
+import hashlib
 import json
 import re
 import subprocess
@@ -42,8 +46,26 @@ def carregar_ep(ep_id: str) -> dict:
     return json.loads((config.EPISODIOS / f"{ep_id}.json").read_text(encoding="utf-8"))
 
 
+def assinatura(ep_id: str) -> str:
+    """Impressão digital do roteiro (JSON canônico) — muda a cada edição."""
+    ep = carregar_ep(ep_id)
+    bruto = json.dumps(ep, ensure_ascii=False, sort_keys=True).encode("utf-8")
+    return hashlib.sha1(bruto).hexdigest()[:16]
+
+
+def desatualizado(ep_id: str) -> bool:
+    """True se o MP4 não existe ou foi feito com outra versão do roteiro.
+    Vídeos antigos sem .hash só voltam pro estúdio se ainda não foram publicados."""
+    if not (config.REELS / f"{ep_id}.mp4").exists():
+        return True
+    h = config.REELS / f"{ep_id}.hash"
+    if h.exists():
+        return h.read_text().strip() != assinatura(ep_id)
+    return ep_id not in ids_publicados()
+
+
 def pronto(ep_id: str) -> bool:
-    return (config.REELS / f"{ep_id}.mp4").exists() and (config.REELS / f"{ep_id}-capa.jpg").exists()
+    return (config.REELS / f"{ep_id}-capa.jpg").exists() and not desatualizado(ep_id)
 
 
 def episodios() -> list[int]:
@@ -59,14 +81,14 @@ def completos_prontos() -> list[int]:
     return [n for n in episodios() if pronto(f"ep{n:03d}-p1") and pronto(f"ep{n:03d}-p2")]
 
 
-def proximo(horario: str) -> str | None:
+def proximo(horario: str | None = None) -> str | None:
+    """Próximo vídeo da sequência (o horário não muda a ordem, só os Stories)."""
     feitos = ids_publicados()
-    if horario == "noite":
-        for n in episodios():
-            p1, p2 = f"ep{n:03d}-p1", f"ep{n:03d}-p2"
-            if p1 in feitos and p2 not in feitos and pronto(p2):
-                return p2
-        return None
+    for n in episodios():
+        p1, p2 = f"ep{n:03d}-p1", f"ep{n:03d}-p2"
+        if p1 in feitos and p2 not in feitos:
+            # continuação pendente: sai antes de qualquer episódio novo
+            return p2 if pronto(p2) else None
     for n in completos_prontos():
         p1 = f"ep{n:03d}-p1"
         if p1 not in feitos:

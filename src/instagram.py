@@ -56,6 +56,16 @@ class Publicador:
         self._checar(r)
         return r.json()["id"]
 
+    def criar_container_story(self, url_video: str) -> str:
+        """Story de vídeo (máx. 60 s; Stories não têm legenda)."""
+        r = requests.post(
+            f"{self.cfg.base_conta}/media",
+            data={"media_type": "STORIES", "video_url": url_video, "access_token": self.cfg.ig_token},
+            timeout=TIMEOUT,
+        )
+        self._checar(r)
+        return r.json()["id"]
+
     # -- carrossel -----------------------------------------------------------
     def criar_item_carrossel(self, url_imagem: str) -> str:
         """Cada imagem vira um container filho, sem legenda própria."""
