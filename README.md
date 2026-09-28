@@ -1,19 +1,24 @@
 # Nina Me Contou — piloto automático
 
 Canal @ninamecontou (Instagram). Histórias FICCIONAIS de traição contadas pela
-Nina, em duas partes: **parte 1 às 12h, parte 2 às 20h** (horário de Brasília).
+Nina, em duas partes. **4 vídeos por dia: 8h, 12h, 16h e 20h** (horário de Brasília),
+sempre em sequência — 8h parte 1, 12h parte 2, 16h parte 1, 20h parte 2 (2 episódios/dia).
+Os vídeos das **8h e das 20h também vão para os Stories**. Todo vídeo termina com o
+CTA de seguir pra não perder a continuação (`motor/cta.py`).
 
 ## Como funciona
 
 1. Você (ou o Claude) põe roteiros novos em `episodios/` — sempre em par:
    `epNNN-p1.json` + `epNNN-p2.json`.
-2. O workflow **Produzir episódios** roda sozinho a cada push em `episodios/`:
-   gera voz (Kokoro), lip sync, vídeo (Manim) e capa, e grava em `reels/`.
-3. O workflow **Publicar Reel** roda às 12h e às 20h:
-   - 12h: parte 1 do próximo episódio completo (as duas partes já renderizadas);
-   - 20h: a parte 2 do episódio que saiu ao meio-dia.
+2. O workflow **Produzir episódios** roda sozinho a cada push em `episodios/`
+   (uma máquina por parte, em paralelo): gera voz (Kokoro), lip sync, vídeo
+   (Manim), capa e a versão Story (≤59 s, mantendo o CTA final), e grava em `reels/`.
+   Roteiro editado depois do render volta sozinho pro estúdio (`reels/<id>.hash`).
+3. O workflow **Publicar Reel** roda às 8h, 12h, 16h e 20h e publica o próximo da
+   sequência: continuação pendente primeiro, depois a parte 1 do próximo episódio
+   completo. Às 8h e às 20h publica também o Story.
    Nunca publica o mesmo vídeo duas vezes (`conteudo/publicados.json`).
-4. **Vigia da fila** (8h): se houver menos de 3 episódios prontos, abre um aviso.
+4. **Vigia da fila** (6h30): se houver menos de 4 episódios prontos (2 dias), abre um aviso.
 5. **Renovar a credencial** (segunda, 5h): renova o token de 60 dias sozinho.
 
 ## Configuração (uma vez)
@@ -33,7 +38,7 @@ O repositório precisa ser **público** (o Instagram baixa o vídeo pelo link ra
 
 ## Testar antes de ligar
 
-Actions → **Publicar Reel** → Run workflow → horário `almoco`, ensaio marcado.
+Actions → **Publicar Reel** → Run workflow → horário `manha`, ensaio marcado.
 O log mostra qual episódio sairia, o link do vídeo e da capa, sem publicar.
 
 História de ficção, inspirada em causo de família.

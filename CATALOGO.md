@@ -12,7 +12,9 @@ trans, sogra, vizinho.
 - **A 1ª batida** abre com o gancho e o objeto banal da descoberta.
 - **A 2ª batida** apresenta quem mandou a história (cartão `direct` com nome e
   idade inventados).
-- **A 3ª batida** é o CTA de seguir.
+- **O CTA de seguir vai SÓ no final**, como última fala ("Me segue pra não perder a
+  continuação"). O motor (`motor/cta.py`) garante isso sozinho: tira qualquer
+  "me segue" do meio e acrescenta o CTA no fim de todo vídeo.
 - **A expressão da Nina reage** à história: é o que dá personalidade a ela.
 - **1 em cada ~10 episódios** é história da própria Nina (selo "DA NINA").
   Esses episódios constroem o mistério da personagem: por que ela coleciona
@@ -29,7 +31,8 @@ trans, sogra, vizinho.
 | Termina em | revelação prestes a acontecer | escolha em aberto + pergunta nos comentários |
 | Abre com | gancho | "Se você caiu aqui agora, volta na parte 1" |
 
-Publicação: parte 1 às 12h e parte 2 às 20h do mesmo dia. Na grade, as cores
+Publicação: 4 vídeos por dia — 8h parte 1, 12h parte 2, 16h parte 1, 20h parte 2
+(2 episódios por dia). Os das 8h e das 20h também vão para os Stories. Na grade, as cores
 alternam laranja e roxo: quem chega no perfil vê os pares.
 
 ## Regras que valem para todas as temporadas
@@ -118,4 +121,6 @@ banheiro da balada, hotel, casa de praia, igreja, obra, hospital, plantão) ×
 ## Acervo de objetos já usados (não repetir)
 
 playlist · senha do streaming · carregador · conta de luz · histórico de mapas ·
-**check-in do app da academia (EP01)** · **Pix para o personal (EP01)**
+**check-in do app da academia (EP01)** · **Pix para o personal (EP01)** ·
+garrafinha de outra academia (EP06) · xícaras lavadas juntas (EP07) · encomenda com endereço da vizinha (EP08) ·
+perfume dado de presente (EP09) · comanda do bar na fatura conjunta (EP10) · alianças no porta-luvas (EP11)
