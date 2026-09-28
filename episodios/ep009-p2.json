@@ -1,0 +1,155 @@
+{
+ "id": "ep009-p2",
+ "ep": 9,
+ "parte": 2,
+ "titulo": "O PERFUME DA MELHOR AMIGA",
+ "temporada": "Amizade",
+ "cenario": "noite",
+ "batidas": [
+  {
+   "fala": "Se você caiu aqui agora, volta na parte um. O perfume está lá.",
+   "expr": "ironica",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "parte",
+    "um."
+   ]
+  },
+  {
+   "fala": "A Carol fez uma coisa simples. Marcou o nível do frasco com uma caneta.",
+   "expr": "neutra",
+   "arte": [
+    "perfume"
+   ],
+   "destaque": [
+    "caneta."
+   ]
+  },
+  {
+   "fala": "Segunda: igual. Terça: igual. Quarta, dia do futebol do Lucas: o nível desceu.",
+   "expr": "desconfiada",
+   "arte": [
+    "calendario",
+    "QUARTA"
+   ],
+   "destaque": [
+    "desceu."
+   ]
+  },
+  {
+   "fala": "Futebol. Que termina às dez. O Lucas chegou meia-noite, de banho tomado.",
+   "expr": "ironica",
+   "arte": [
+    "relogio",
+    "00:00"
+   ],
+   "destaque": [
+    "banho",
+    "tomado."
+   ],
+   "tela": "Futebol termina às 22h. O Lucas chegou meia-noite, de banho tomado."
+  },
+  {
+   "fala": "E na quinta de manhã, a Thaís postou uma foto no story. Espelho do elevador. Legenda: noite boa.",
+   "expr": "chocada",
+   "arte": [
+    "celular",
+    "Noite boa ✨"
+   ],
+   "destaque": [
+    "noite",
+    "boa."
+   ]
+  },
+  {
+   "fala": "No fundo da foto, no reflexo do espelho, um braço segurando a porta.",
+   "expr": "desconfiada",
+   "arte": [
+    "foto",
+    "REFLEXO"
+   ],
+   "destaque": [
+    "braço"
+   ]
+  },
+  {
+   "fala": "Com um relógio. Pulseira de couro marrom, fecho quebrado, preso com fita.",
+   "expr": "chocada",
+   "arte": null,
+   "destaque": [
+    "fita."
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "A Carol tinha colado aquela fita. Com as próprias mãos. No relógio do Lucas.",
+   "expr": "brava",
+   "arte": [
+    "relogio",
+    "FECHO COM FITA"
+   ],
+   "destaque": [
+    "próprias",
+    "mãos."
+   ]
+  },
+  {
+   "fala": "Ela não mandou mensagem pra ninguém. Tirou print. Guardou.",
+   "expr": "neutra",
+   "arte": [
+    "celular",
+    "PRINT SALVO"
+   ],
+   "destaque": [
+    "print."
+   ]
+  },
+  {
+   "fala": "E agora vem o detalhe. Mês que vem é o aniversário da Carol.",
+   "expr": "desconfiada",
+   "arte": [
+    "presente",
+    "MÊS QUE VEM"
+   ],
+   "destaque": [
+    "aniversário"
+   ]
+  },
+  {
+   "fala": "E quem está organizando a festa surpresa, junto com o Lucas, é a Thaís.",
+   "expr": "ironica",
+   "arte": [
+    "manchete",
+    "FESTA SURPRESA"
+   ],
+   "destaque": [
+    "Thaís."
+   ]
+  },
+  {
+   "fala": "Ela me perguntou o que fazer.",
+   "expr": "neutra",
+   "arte": [
+    "interrogacao"
+   ],
+   "destaque": [
+    "fazer."
+   ]
+  },
+  {
+   "fala": "Ela finge que não sabe e vai na festa? Ou devolve a surpresa e mostra o print pra todo mundo lá? Me conta aqui.",
+   "expr": "ironica",
+   "arte": [
+    "manchete_v",
+    "FINGE OU DEVOLVE?"
+   ],
+   "destaque": [
+    "surpresa"
+   ]
+  }
+ ],
+ "fim": "SEGUE A NINA",
+ "legenda_post": "Ela marcou o nível do frasco com caneta. E na quarta, desceu. 🍷\n\nSe você caiu aqui agora, assiste a PARTE 1 primeiro.\n\nEla finge que não sabe na festa surpresa ou mostra o print lá? Me conta nos comentários. 👇\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em causo de família.\n\n#traição #melhoramiga #namoro #amizade #storytime #históriadetraição #desabafo #fofoca #ninamecontou"
+}

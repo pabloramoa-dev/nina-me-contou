@@ -1,0 +1,151 @@
+{
+ "id": "ep006-p1",
+ "ep": 6,
+ "parte": 1,
+ "titulo": "A GARRAFINHA",
+ "temporada": "Academia",
+ "cenario": "tarde",
+ "batidas": [
+  {
+   "fala": "A garrafinha de água dele voltou do treino com o nome de outra academia.",
+   "expr": "ironica",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "outra",
+    "academia."
+   ]
+  },
+  {
+   "fala": "Quem me mandou foi a Juliana, trinta e um anos, casada com o Diego há seis.",
+   "expr": "neutra",
+   "arte": [
+    "direct",
+    "JULIANA, 31"
+   ],
+   "destaque": [
+    "Juliana,"
+   ],
+   "tela": "Quem me mandou foi a Juliana, 31 anos, casada com o Diego há 6."
+  },
+  {
+   "fala": "O Diego treina todo dia depois do trabalho. Na academia do bairro, a duas quadras de casa.",
+   "expr": "neutra",
+   "arte": [
+    "haltere"
+   ],
+   "destaque": [
+    "duas",
+    "quadras"
+   ]
+  },
+  {
+   "fala": "Ela até foi com ele uma vez. Achou pequena, abafada, mas tudo bem.",
+   "expr": "ironica",
+   "arte": null,
+   "destaque": [
+    "abafada,"
+   ]
+  },
+  {
+   "fala": "Numa segunda, ela foi lavar a garrafinha dele. Uma rosa, de plástico duro.",
+   "expr": "desconfiada",
+   "arte": [
+    "caneca",
+    "GARRAFINHA"
+   ],
+   "destaque": [
+    "rosa,"
+   ]
+  },
+  {
+   "fala": "E embaixo, num adesivo, estava escrito: Studio Equilíbrio. Unidade Centro.",
+   "expr": "chocada",
+   "arte": [
+    "manchete",
+    "STUDIO EQUILÍBRIO"
+   ],
+   "destaque": [
+    "Studio",
+    "Equilíbrio."
+   ]
+  },
+  {
+   "fala": "Unidade Centro. Do outro lado da cidade. Quarenta minutos de ônibus.",
+   "expr": "desconfiada",
+   "arte": [
+    "mapa",
+    "40 MIN"
+   ],
+   "destaque": [
+    "outro",
+    "lado"
+   ],
+   "tela": "Unidade Centro. Do outro lado da cidade. 40 minutos de ônibus."
+  },
+  {
+   "fala": "E o Diego nunca teve garrafinha rosa. Ele só usa aquela preta, amassada.",
+   "expr": "ironica",
+   "arte": null,
+   "destaque": [
+    "preta,"
+   ]
+  },
+  {
+   "fala": "Ela perguntou, com jeitinho. Ele disse: ah, peguei emprestada de alguém no treino.",
+   "expr": "desconfiada",
+   "arte": [
+    "conversa",
+    "Peguei emprestada de alguém no treino."
+   ],
+   "destaque": [
+    "alguém"
+   ]
+  },
+  {
+   "fala": "Alguém. Na academia do bairro. Com garrafinha de outra academia.",
+   "expr": "ironica",
+   "arte": [
+    "interrogacao"
+   ],
+   "destaque": [
+    "Alguém."
+   ]
+  },
+  {
+   "fala": "A Juliana abriu o Instagram do tal studio. E foi rolando as fotos.",
+   "expr": "neutra",
+   "arte": [
+    "celular",
+    "@studio.equilibrio"
+   ],
+   "destaque": [
+    "rolando"
+   ]
+  },
+  {
+   "fala": "Na terceira foto, uma turma de funcional. E no canto, de boné, o Diego.",
+   "expr": "chocada",
+   "arte": null,
+   "destaque": [
+    "Diego."
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "Quem estava do lado dele, eu conto na parte dois. Chuta aí.",
+   "expr": "ironica",
+   "arte": [
+    "manchete_v",
+    "CONTINUA NA PARTE 2"
+   ],
+   "destaque": [
+    "parte",
+    "dois."
+   ]
+  }
+ ],
+ "fim": "CONTINUA NA PARTE 2",
+ "legenda_post": "A garrafinha dele voltou do treino com o nome de OUTRA academia. 🏋️\n\nDo outro lado da cidade. Na turma das 7. E numa foto, de boné, o marido. PARTE 2 no perfil.\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em causo de família.\n\n#traição #academia #casamento #treino #storytime #históriadetraição #desabafo #fofoca #ninamecontou"
+}

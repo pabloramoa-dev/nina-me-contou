@@ -1,0 +1,157 @@
+{
+ "id": "ep007-p1",
+ "ep": 7,
+ "parte": 1,
+ "titulo": "A COLEGA DO CAFÉ",
+ "temporada": "Trabalho",
+ "cenario": "tarde",
+ "batidas": [
+  {
+   "fala": "Duas xícaras. Sempre lavadas juntas. Sempre guardadas juntas.",
+   "expr": "ironica",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "Duas",
+    "xícaras."
+   ]
+  },
+  {
+   "fala": "Essa quem me mandou foi a Patrícia, trinta e oito anos. Ela trabalha na mesma firma que o marido, o Fábio.",
+   "expr": "neutra",
+   "arte": [
+    "direct",
+    "PATRÍCIA, 38"
+   ],
+   "destaque": [
+    "mesma",
+    "firma"
+   ],
+   "tela": "Quem me mandou foi a Patrícia, 38 anos. Trabalha na mesma firma que o marido, o Fábio."
+  },
+  {
+   "fala": "Setores diferentes, andares diferentes. Ela no terceiro, ele no quinto.",
+   "expr": "neutra",
+   "arte": [
+    "cracha",
+    "ANDAR 5"
+   ],
+   "destaque": [
+    "quinto."
+   ]
+  },
+  {
+   "fala": "Um dia a máquina de café do terceiro andar quebrou. Ela subiu pro quinto.",
+   "expr": "neutra",
+   "arte": [
+    "cafe"
+   ],
+   "destaque": [
+    "quinto."
+   ]
+  },
+  {
+   "fala": "Na copa, no escorredor, tinha uma caneca que ela conhecia. A caneca do Fábio. Do time dele.",
+   "expr": "desconfiada",
+   "arte": [
+    "caneca",
+    "DO FÁBIO"
+   ],
+   "destaque": [
+    "caneca",
+    "do",
+    "Fábio."
+   ]
+  },
+  {
+   "fala": "E do lado, encostada nela, uma xícara branca com um batom na borda.",
+   "expr": "desconfiada",
+   "arte": [
+    "batom"
+   ],
+   "destaque": [
+    "batom"
+   ]
+  },
+  {
+   "fala": "Até aí, tudo bem. Copa é de todo mundo.",
+   "expr": "ironica",
+   "arte": null,
+   "destaque": [
+    "todo",
+    "mundo."
+   ]
+  },
+  {
+   "fala": "Só que ela subiu no dia seguinte. E no outro. E as duas estavam sempre lá. Juntas.",
+   "expr": "desconfiada",
+   "arte": [
+    "calendario",
+    "3 DIAS SEGUIDOS"
+   ],
+   "destaque": [
+    "Juntas."
+   ]
+  },
+  {
+   "fala": "A faxineira do andar, a dona Neide, viu ela olhando e comentou baixinho.",
+   "expr": "neutra",
+   "arte": null,
+   "destaque": [
+    "dona",
+    "Neide,"
+   ]
+  },
+  {
+   "fala": "Essas duas aí? Eles lavam juntos todo dia às três. É o café dos dois.",
+   "expr": "chocada",
+   "arte": [
+    "conversa",
+    "Eles lavam juntos todo dia às 3. É o café dos dois."
+   ],
+   "destaque": [
+    "café",
+    "dos",
+    "dois."
+   ],
+   "tela": "Essas duas aí? Eles lavam juntos todo dia às 3. É o café dos dois."
+  },
+  {
+   "fala": "O café dos dois. O Fábio nem toma café. Pelo menos em casa, nunca tomou.",
+   "expr": "ironica",
+   "arte": null,
+   "destaque": [
+    "nunca"
+   ]
+  },
+  {
+   "fala": "No dia seguinte, às três em ponto, a Patrícia subiu pro quinto andar.",
+   "expr": "desconfiada",
+   "arte": [
+    "relogio",
+    "15:00"
+   ],
+   "destaque": [
+    "três",
+    "em",
+    "ponto,"
+   ],
+   "tela": "No dia seguinte, às 15h em ponto, a Patrícia subiu pro quinto andar."
+  },
+  {
+   "fala": "Quem estava lavando a xícara do batom, eu conto na parte dois.",
+   "expr": "ironica",
+   "arte": [
+    "manchete_v",
+    "CONTINUA NA PARTE 2"
+   ],
+   "destaque": [
+    "parte",
+    "dois."
+   ]
+  }
+ ],
+ "fim": "CONTINUA NA PARTE 2",
+ "legenda_post": "Duas xícaras. Sempre lavadas juntas. Sempre às 3 da tarde. ☕\n\nE uma delas era a caneca do marido dela, que nem toma café. PARTE 2 no perfil.\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em causo de família.\n\n#traição #trabalho #firma #colegadetrabalho #storytime #históriadetraição #desabafo #fofoca #ninamecontou"
+}
