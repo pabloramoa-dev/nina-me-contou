@@ -1,5 +1,6 @@
 import json, os
 D = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "episodios")
+# CTA de seguir: NÃO escreva batida "me segue" — o motor/cta.py põe o CTA no final sozinho.
 AVISO = "História de ficção, inspirada em causo de família."
 DM = "Tem uma história assim? Me manda no direct — eu conto sem nome e sem rosto."
 
