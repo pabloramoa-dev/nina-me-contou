@@ -1,0 +1,100 @@
+{
+  "id": "nina-respeito",
+  "ep": 1,
+  "parte": 2,
+  "titulo": "O MUNDO DÁ VOLTAS",
+  "cenario": "tarde",
+  "batidas": [
+    {
+      "fala": "Quem te despreza hoje pode ser a mesma pessoa",
+      "expr": "triste",
+      "arte": [
+        "manchete",
+        "QUEM TE DESPREZA HOJE"
+      ],
+      "zoom": false
+    },
+    {
+      "fala": "que amanhã vai precisar de você.",
+      "expr": "neutra",
+      "arte": null,
+      "zoom": true
+    },
+    {
+      "fala": "E é justamente por isso que eu nunca vejo vantagem em humilhar ninguém.",
+      "expr": "neutra",
+      "arte": [
+        "manchete",
+        "RESPEITO"
+      ],
+      "zoom": false
+    },
+    {
+      "fala": "A vida é imprevisível.",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete",
+        "A VIDA É IMPREVISÍVEL"
+      ],
+      "zoom": false
+    },
+    {
+      "fala": "Ninguém sabe onde vai estar daqui alguns anos.",
+      "expr": "neutra",
+      "arte": [
+        "calendario",
+        "AMANHÃ"
+      ],
+      "zoom": false
+    },
+    {
+      "fala": "Hoje você pode tá por cima.",
+      "expr": "neutra",
+      "arte": [
+        "manchete",
+        "HOJE"
+      ],
+      "zoom": false
+    },
+    {
+      "fala": "Amanhã pode precisar de uma mão estendida.",
+      "expr": "triste",
+      "arte": [
+        "coracao"
+      ],
+      "zoom": false
+    },
+    {
+      "fala": "Então trate as pessoas com respeito,",
+      "expr": "neutra",
+      "arte": [
+        "manchete",
+        "TRATE COM RESPEITO"
+      ],
+      "zoom": false
+    },
+    {
+      "fala": "mesmo quando elas não fizerem o mesmo.",
+      "expr": "neutra",
+      "arte": null,
+      "zoom": true
+    },
+    {
+      "fala": "Porque o mundo dá voltas,",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete",
+        "O MUNDO DÁ VOLTAS"
+      ],
+      "zoom": false
+    },
+    {
+      "fala": "e o tempo não costuma esquecer nada.",
+      "expr": "neutra",
+      "arte": null,
+      "zoom": true
+    }
+  ],
+  "fim": "O RESPEITO FICA.",
+  "legenda_post": "O mundo dá voltas. Trate as pessoas com respeito."
+}
