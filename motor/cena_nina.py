@@ -3,7 +3,7 @@ Uso (feito pelo produzir.py):
   EPISODIO=episodios/ep001-p1.json PASTA=saida/ep001-p1 manim --fps 24 cena_nina.py Episodio
   EPISODIO=...  manim -s cena_nina.py Capa        (capa 1080x1920 do Reel)
 """
-import os, sys, json
+import os, sys, json, base64
 AQUI = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, AQUI)
 from manim import *
@@ -96,10 +96,41 @@ def selo_topo():
     return VGroup(fb, t.move_to(fb)).move_to([0, 6.55, 0])
 
 
+def _imagem_do_repo(rel):
+    """Carrega imagem normal ou .b64 versionada no repositório.
+
+    O .b64 permite manter assets binários pequenos usando apenas o Contents API.
+    O arquivo decodificado fica na pasta temporária do episódio.
+    """
+    src = os.path.normpath(os.path.join(AQUI, "..", rel))
+    if not os.path.isfile(src):
+        raise FileNotFoundError(src)
+    if src.endswith(".b64"):
+        os.makedirs(PASTA, exist_ok=True)
+        nome = os.path.basename(src[:-4])
+        dst = os.path.join(PASTA, nome)
+        if not os.path.exists(dst):
+            bruto = open(src, encoding="ascii").read().strip()
+            with open(dst, "wb") as f:
+                f.write(base64.b64decode(bruto))
+        src = dst
+    img = ImageMobject(src)
+    if img.width > 6.9:
+        img.scale(6.9 / img.width)
+    if img.height > 5.0:
+        img.scale(5.0 / img.height)
+    moldura = RoundedRectangle(width=img.width + 0.18, height=img.height + 0.18,
+                               corner_radius=0.08, stroke_color="#111111", stroke_width=8,
+                               fill_color="#f4ead7", fill_opacity=1)
+    return Group(moldura, img.move_to(moldura)).move_to([0, 3.45, 0])
+
+
 def montar_arte(arte):
     if not arte:
         return None
     tipo, arg = arte[0], (arte[1] if len(arte) > 1 else None)
+    if tipo == "imagem":
+        return _imagem_do_repo(arg)
     if tipo == "titulo":
         m = O.titulo(arg or EP["titulo"], None, EP["parte"])
     else:
