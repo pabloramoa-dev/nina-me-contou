@@ -1,0 +1,38 @@
+name: Nina - video de vendas isolado
+on:
+  push:
+    branches: [lab/nina-vendas-curso-20260929]
+permissions:
+  contents: read
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Instalar dependencias
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg pkg-config libcairo2-dev libpango1.0-dev espeak-ng fonts-dejavu-core
+          pip install -r requirements-estudio.txt
+          mkdir -p ~/.local/share/fonts
+          curl -fLsS -o ~/.local/share/fonts/Poppins-Bold.ttf https://raw.githubusercontent.com/google/fonts/main/ofl/poppins/Poppins-Bold.ttf
+          fc-cache -f
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/dvh_kokoro
+          key: kokoro-v1.0
+      - name: Renderizar anuncio
+        run: python motor/produzir.py vendas.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Nina_Vendas_Curso
+          path: |
+            saida/Nina_Vendas_Curso/Nina_Vendas_Curso.mp4
+            saida/Nina_Vendas_Curso/capa.png
+            saida/Nina_Vendas_Curso/legenda.txt
+            vendas.json
+          retention-days: 14

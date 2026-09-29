@@ -1,0 +1,110 @@
+{
+  "id": "Nina_Vendas_Curso",
+  "ep": 1,
+  "parte": 2,
+  "titulo": "SEU PERSONAGEM\nSUA IDEIA",
+  "cenario": "tarde",
+  "batidas": [
+    {
+      "fala": "Você quer divulgar seu negócio, mas trava quando precisa aparecer na câmera?",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete",
+        "SEM APARECER"
+      ],
+      "zoom": true
+    },
+    {
+      "fala": "Então olha pra mim. Eu sou a Nina. Sou um exemplo do que esse motor consegue produzir.",
+      "expr": "ironica",
+      "arte": [
+        "manchete",
+        "EU SOU A NINA"
+      ],
+      "zoom": false
+    },
+    {
+      "fala": "E se um personagem apresentasse seus produtos, explicasse seus serviços ou contasse suas histórias?",
+      "expr": "neutra",
+      "arte": [
+        "manchete",
+        "SUA IDEIA EM VÍDEO"
+      ],
+      "zoom": false
+    },
+    {
+      "fala": "Você começa com o motor pronto, personagens de exemplo e os arquivos organizados.",
+      "expr": "neutra",
+      "arte": [
+        "manchete",
+        "MOTOR + PERSONAGENS"
+      ],
+      "zoom": false
+    },
+    {
+      "fala": "Recebe também os prompts e as aulas para aprender cada etapa, desde a conta no GitHub.",
+      "expr": "ironica",
+      "arte": [
+        "manchete",
+        "PROMPTS + PASSO A PASSO"
+      ],
+      "zoom": false
+    },
+    {
+      "fala": "Mesmo começando do zero, você aprende a copiar a base, gerar um vídeo e personalizar.",
+      "expr": "neutra",
+      "arte": [
+        "manchete",
+        "COPIE • TESTE • PERSONALIZE"
+      ],
+      "zoom": false
+    },
+    {
+      "fala": "Quer mudar a roupa, o cenário ou a fala? Aprende a pedir ajuda ao Claude ou ao ChatGPT.",
+      "expr": "ironica",
+      "arte": [
+        "manchete",
+        "VOCÊ PEDE. A IA AJUDA."
+      ],
+      "zoom": false
+    },
+    {
+      "fala": "Sem precisar escrever código. Com uma base funcionando e um caminho para seguir.",
+      "expr": "neutra",
+      "arte": [
+        "manchete",
+        "BASE PRONTA PARA ADAPTAR"
+      ],
+      "zoom": true
+    },
+    {
+      "fala": "Depois, baixa o vídeo para publicar no Instagram, no YouTube ou no TikTok.",
+      "expr": "neutra",
+      "arte": [
+        "manchete",
+        "CRIE. BAIXE. PUBLIQUE."
+      ],
+      "zoom": false
+    },
+    {
+      "fala": "A automação das postagens é uma etapa opcional, vendida separadamente.",
+      "expr": "neutra",
+      "arte": [
+        "manchete",
+        "AUTOMAÇÃO É OPCIONAL"
+      ],
+      "zoom": false
+    },
+    {
+      "fala": "Sua próxima ideia pode ganhar uma voz e um rosto. Mande QUERO CRIAR no direct e conheça o curso.",
+      "expr": "ironica",
+      "arte": [
+        "manchete",
+        "DIRECT: QUERO CRIAR"
+      ],
+      "zoom": true
+    }
+  ],
+  "fim": "MANDE QUERO CRIAR",
+  "legenda_post": "Aprenda a produzir vídeos com personagens a partir de um motor pronto, com arquivos, prompts e aulas para iniciantes. Mande QUERO CRIAR no direct para saber mais. Automação de postagens vendida separadamente. O uso das ferramentas está sujeito aos respectivos planos e limites."
+}

@@ -90,7 +90,7 @@ def legenda(txt, destaque=()):
 
 
 def selo_topo():
-    t = Text(f"NINA CONTA · EP {EP['ep']:02d} · PARTE {EP['parte']}", font=V.FONTE, weight=BOLD,
+    t = Text("CRIE VÍDEOS COM PERSONAGENS", font=V.FONTE, weight=BOLD,
              font_size=40, color="#111111").scale(0.62)
     fb = V.recorte(t.width + 0.4, t.height + 0.26, cor="recorte", semente=17, girar=-0.02)
     return VGroup(fb, t.move_to(fb)).move_to([0, 6.55, 0])
@@ -197,3 +197,4 @@ class Capa(Scene):
         if sel.width > 7.3:
             sel.scale(7.3 / sel.width)
         self.add(sel.move_to([0, 2.2, 0]))
+
