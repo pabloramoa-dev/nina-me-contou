@@ -1,0 +1,32 @@
+{
+  "id": "ep013-p1",
+  "ep": 13,
+  "parte": 1,
+  "titulo": "OLHOS DE ÁGUIA",
+  "temporada": "Desafios visuais",
+  "cenario": "tarde",
+  "batidas": [
+    {
+      "fala": "Só quem tem olhos de águia vai descobrir!",
+      "expr": "ironica",
+      "arte": ["titulo", "OLHOS DE ÁGUIA"],
+      "destaque": ["olhos", "águia", "descobrir"]
+    },
+    {
+      "fala": "Essa sala parece totalmente dos anos setenta. Mas tem um objeto aí que só surgiu nos anos dois mil e vinte.",
+      "tela": "UM objeto é dos anos 2020.",
+      "expr": "desconfiada",
+      "arte": null,
+      "destaque": ["UM", "anos 2020"]
+    },
+    {
+      "fala": "No final eu vou deixar a imagem em tela cheia. Olha cada detalhe e comenta qual objeto você encontrou.",
+      "tela": "Olhe bem e comente sua resposta.",
+      "expr": "ironica",
+      "arte": null,
+      "destaque": ["tela cheia", "comenta"]
+    }
+  ],
+  "fim": "QUAL É O OBJETO?",
+  "legenda_post": "SÓ QUEM TEM OLHOS DE ÁGUIA VAI DESCOBRIR! 🦅👀\n\nA cena parece dos anos 70, mas existe UM objeto que só surgiu nos anos 2020.\n\nAchou? Comenta antes de olhar as respostas. 👇\n\n#desafio #quiz #olhosdeaguia #anos70 #curiosidades #desafiovisual #ninamecontou"
+}
