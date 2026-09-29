@@ -1,0 +1,39 @@
+{
+  "id": "ep012-p1",
+  "ep": 12,
+  "parte": 1,
+  "titulo": "QUAL OBJETO NÃO EXISTIA?",
+  "temporada": "Desafios visuais",
+  "cenario": "tarde",
+  "batidas": [
+    {
+      "fala": "Quero ver quem tem olho bom de verdade.",
+      "expr": "ironica",
+      "arte": ["titulo", "DESAFIO DOS ANOS 70"],
+      "destaque": ["olho", "bom"]
+    },
+    {
+      "fala": "Olha bem essa sala. Quase tudo pertence aos anos setenta. Mas tem um objeto aí que não poderia estar nessa época.",
+      "tela": "Quase tudo é dos anos 70. Mas UM objeto não poderia estar aí.",
+      "expr": "desconfiada",
+      "arte": ["imagem", "assets/desafio_anos70.jpg.b64"],
+      "destaque": ["UM", "objeto"]
+    },
+    {
+      "fala": "Eu não vou te dar pista. Pausa o vídeo se precisar e olha cada detalhe.",
+      "tela": "Sem pista. Pausa se precisar e olha cada detalhe.",
+      "expr": "desconfiada",
+      "arte": null,
+      "destaque": ["Pausa", "detalhe."]
+    },
+    {
+      "fala": "Quem consegue descobrir qual é o objeto? Escreve a sua resposta nos comentários antes de olhar o que os outros responderam.",
+      "tela": "Qual é o objeto? Comenta antes de olhar as respostas.",
+      "expr": "ironica",
+      "arte": null,
+      "destaque": ["Qual", "objeto?", "Comenta"]
+    }
+  ],
+  "fim": "QUAL É O OBJETO?",
+  "legenda_post": "DESAFIO DOS ANOS 70 👀\n\nEssa sala parece totalmente dos anos 70, mas existe UM objeto na imagem que não poderia estar ali porque só apareceu depois.\n\nVocê consegue descobrir qual é? Comenta antes de olhar as respostas. 👇\n\n#desafio #quiz #anos70 #nostalgia #curiosidades #desafiovisual #ninaconta"
+}
