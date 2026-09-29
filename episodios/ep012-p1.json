@@ -16,7 +16,7 @@
       "fala": "Olha bem essa sala. Quase tudo pertence aos anos setenta. Mas tem um objeto aí que não poderia estar nessa época.",
       "tela": "Quase tudo é dos anos 70. Mas UM objeto não poderia estar aí.",
       "expr": "desconfiada",
-      "arte": ["imagem", "assets/desafio_anos70.jpg.b64"],
+      "arte": ["imagem", "assets/desafio_anos70_small.jpg.b64"],
       "destaque": ["UM", "objeto"]
     },
     {
