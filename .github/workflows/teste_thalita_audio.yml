@@ -1,0 +1,34 @@
+name: Teste audio Nina Thalita
+on:
+  push:
+    branches: ['test/nina-francisca']
+    paths: ['.github/workflows/teste_thalita_audio.yml']
+permissions:
+  contents: read
+jobs:
+  audio:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install edge-tts
+      - name: Gerar voz Thalita
+        run: |
+          python - <<'PY'
+          import asyncio
+          import edge_tts
+          texto=("Nina me contou uma coisa curiosa. Ela achou que era apenas um café esquecido na mesa, "
+                 "até perceber que o nome escrito no copo não era o dela. Às vezes, a verdade não bate na porta. "
+                 "Ela fica bem na sua frente, esperando você enxergar.")
+          async def main():
+              await edge_tts.Communicate(texto, 'pt-BR-ThalitaNeural', rate='-6%').save('thalita.mp3')
+          asyncio.run(main())
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: nina-thalita-audio
+          path: thalita.mp3
+          retention-days: 7
