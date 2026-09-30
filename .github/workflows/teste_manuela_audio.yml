@@ -14,20 +14,31 @@ jobs:
         with:
           python-version: '3.11'
       - run: pip install edge-tts
-      - name: Gerar voz Manuela
+      - name: Conferir catálogo e gerar Manuela
         run: |
           python - <<'PY'
-          import asyncio
+          import asyncio, json
           import edge_tts
           texto=("Nina me contou uma coisa curiosa. Ela achou que era apenas um café esquecido na mesa, "
                  "até perceber que o nome escrito no copo não era o dela. Às vezes, a verdade não bate na porta. "
                  "Ela fica bem na sua frente, esperando você enxergar.")
           async def main():
+              vozes=await edge_tts.list_voices()
+              pt=[v for v in vozes if v.get('Locale')=='pt-BR']
+              open('pt-br-voices.json','w',encoding='utf-8').write(json.dumps(pt,ensure_ascii=False,indent=2))
+              names=[v.get('ShortName') for v in pt]
+              print('PT-BR:', names)
+              if 'pt-BR-ManuelaNeural' not in names:
+                  print('MANUELA_NOT_EXPOSED_BY_EDGE')
+                  return
               await edge_tts.Communicate(texto, 'pt-BR-ManuelaNeural', rate='-6%').save('manuela.mp3')
           asyncio.run(main())
           PY
       - uses: actions/upload-artifact@v4
         with:
-          name: nina-manuela-audio
-          path: manuela.mp3
+          name: nina-manuela-check
+          path: |
+            pt-br-voices.json
+            manuela.mp3
+          if-no-files-found: warn
           retention-days: 7
