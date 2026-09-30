@@ -2,7 +2,7 @@ name: Validar Nina HyperFrames
 on:
   push:
     branches: [main, feature/hyperframes-production]
-    paths: ['motor/**', 'src/fila.py', 'video/**', 'tests/**', 'tools/teste_hyperframes.py', '.github/**']
+    paths: ['motor/**', 'src/fila.py', 'video/**', 'tests/**', 'tools/teste_hyperframes.py', '.github/**', 'requirements-estudio.txt']
   workflow_dispatch:
 permissions:
   contents: read
@@ -14,7 +14,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: pip install pytest numpy Pillow soundfile
+      - run: pip install pytest numpy Pillow soundfile edge-tts==7.2.8
       - run: python -m pytest -q tests
       - run: python -m compileall -q motor src tools/teste_hyperframes.py
   render:
@@ -30,11 +30,7 @@ jobs:
       - run: sudo apt-get update -qq && sudo apt-get install -y ffmpeg pkg-config libcairo2-dev libpango1.0-dev espeak-ng fonts-dejavu-core
       - run: pip install -r requirements-estudio.txt
       - uses: ./.github/actions/setup-hyperframes
-      - uses: actions/cache@v4
-        with:
-          path: ~/.cache/dvh_kokoro
-          key: kokoro-v1.0
-      - name: Gerar vídeo, capa e Story sem publicar
+      - name: Gerar vídeo, capa e Story com Thalita sem publicar
         run: |
           python tools/teste_hyperframes.py
           python motor/produzir.py saida/teste-hf.json
@@ -51,12 +47,14 @@ jobs:
           assert info['motor']=='hyperframes'
           assert (p/'capa.png').stat().st_size>10000
           assert duracao(str(p/'story.mp4'))<=59.1
+          assert (p/'voz.wav').stat().st_size>10000
           PY
       - uses: actions/upload-artifact@v4
         with:
-          name: nina-hyperframes-integracao
+          name: nina-hyperframes-integracao-thalita
           path: |
             saida/teste-hf/teste-hf.mp4
+            saida/teste-hf/voz.wav
             saida/teste-hf/capa.png
             saida/teste-hf/story.mp4
             saida/teste-hf/render.json
