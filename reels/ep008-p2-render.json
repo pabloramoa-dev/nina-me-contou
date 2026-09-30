@@ -1,0 +1,13 @@
+{
+  "motor": "hyperframes",
+  "versao": "nina-hyperframes-1",
+  "duracao": 65.092,
+  "resolucao": [
+    1080,
+    1920
+  ],
+  "fps": 30,
+  "voz": "pf_dora",
+  "cenario": "noite",
+  "batidas": 14
+}
