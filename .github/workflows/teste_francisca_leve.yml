@@ -1,0 +1,42 @@
+name: Previa leve Nina Francisca
+on:
+  push:
+    branches: ['test/nina-francisca']
+    paths: ['.github/workflows/teste_francisca_leve.yml']
+permissions:
+  contents: read
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install edge-tts
+      - name: Gerar voz Francisca
+        run: |
+          python - <<'PY'
+          import asyncio
+          import edge_tts
+          texto=("Nina me contou uma coisa curiosa. Ela achou que era apenas um café esquecido na mesa, "
+                 "até perceber que o nome escrito no copo não era o dela. Às vezes, a verdade não bate na porta. "
+                 "Ela fica bem na sua frente, esperando você enxergar.")
+          async def main():
+              await edge_tts.Communicate(texto, 'pt-BR-FranciscaNeural', rate='-6%').save('francisca.mp3')
+          asyncio.run(main())
+          PY
+      - name: Montar prévia MP4
+        run: |
+          D=$(ffprobe -v error -show_entries format=duration -of default=nw=1:nk=1 francisca.mp3)
+          ffmpeg -y -loglevel error -i reels/ep003-p1.mp4 -i francisca.mp3 \
+            -map 0:v:0 -map 1:a:0 -t "$D" -c:v copy -c:a aac -b:a 192k -movflags +faststart nina-francisca-preview.mp4
+          ffprobe -v error -show_entries format=duration -of default=nw=1:nk=1 nina-francisca-preview.mp4
+      - uses: actions/upload-artifact@v4
+        with:
+          name: nina-francisca-preview-leve
+          path: |
+            nina-francisca-preview.mp4
+            francisca.mp3
+          retention-days: 7
