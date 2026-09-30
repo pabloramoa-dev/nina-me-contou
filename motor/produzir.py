@@ -6,7 +6,7 @@
   python motor/produzir.py episodios/ep001-p1.json --rapido   # prévia 540p
 
 Etapas (pula o que já existe; apague o arquivo para refazer):
-  voz   -> saida/<id>/voz.wav + segs.json   (Kokoro pf_dora, masterizada)
+  voz   -> saida/<id>/voz.wav + segs.json   (Thalita Neural pt-BR, masterizada)
   lip   -> saida/<id>/lip.json              (lip sync por amplitude, 30 fps)
   video -> saida/<id>/<id>.mp4              (Nina original + HyperFrames, padrão)
   tex   -> compatibilidade: mesma composição completa no motor HyperFrames
@@ -21,7 +21,7 @@ import argparse, json, os, shutil, subprocess, sys
 
 MOTOR = os.path.dirname(os.path.abspath(__file__))
 RAIZ = os.path.dirname(MOTOR)
-VOZ, SPEED, GAP = "pf_dora", 1.02, 0.25
+VOZ, RATE, GAP = "pt-BR-ThalitaNeural", "-6%", 0.25
 MASTER = ("highpass=f=90,equalizer=f=3000:width_type=o:width=1.5:g=3,"
           "acompressor=threshold=-17dB:ratio=2.6:attack=6:release=140,volume=1.12")
 
@@ -61,8 +61,9 @@ def main():
     if quer("voz") and not os.path.exists(P("voz.wav")):
         with open(P("roteiro.txt"), "w", encoding="utf-8") as f:
             f.write("\n".join(b["fala"] for b in ep["batidas"]) + "\n")
-        sh([sys.executable, os.path.join(MOTOR, "gerar_voz_kokoro.py"), P("roteiro.txt"), "--voz", VOZ,
-            "--speed", str(SPEED), "--gap", str(GAP), "--out", P("bruta.wav"), "--seg-json", P("segs.json")])
+        sh([sys.executable, os.path.join(MOTOR, "gerar_voz_thalita.py"), P("roteiro.txt"),
+            "--voice", VOZ, "--rate", RATE, "--gap", str(GAP),
+            "--out", P("bruta.wav"), "--seg-json", P("segs.json")])
         sh(["ffmpeg", "-y", "-loglevel", "error", "-i", P("bruta.wav"), "-af", MASTER, P("voz.wav")])
 
     if quer("lip") and not os.path.exists(P("lip.json")):
@@ -130,4 +131,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
