@@ -1,0 +1,96 @@
+name: Teste Nina com Francisca
+on:
+  push:
+    branches: ['test/nina-francisca']
+    paths: ['.github/workflows/teste_francisca.yml']
+permissions:
+  contents: read
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - run: sudo apt-get update -qq && sudo apt-get install -y ffmpeg pkg-config libcairo2-dev libpango1.0-dev espeak-ng fonts-dejavu-core
+      - run: pip install -r requirements-estudio.txt edge-tts
+      - uses: ./.github/actions/setup-hyperframes
+      - name: Criar episódio curto
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          ep={
+            'id':'teste-francisca', 'ep':9999, 'parte':1,
+            'titulo':'ELA DESCOBRIU PELO CAFÉ', 'cenario':'dia',
+            'fim':'SEGUE A NINA',
+            'legenda_post':'Teste técnico da Nina com voz Francisca. Não publicar.',
+            'batidas':[
+              {'fala':'Eu achei que era só um café esquecido na mesa. Até olhar o nome escrito no copo.', 'expr':'desconfiada','arte':['cafe'],'zoom':True},
+              {'fala':'Não era o meu nome. E também não era o dele.', 'expr':'chocada','arte':['conversa','Um nome que eu nunca tinha visto.']},
+              {'fala':'Foi aí que eu percebi que aquela manhã tinha começado muito antes de eu acordar.', 'expr':'ironica','arte':['relogio','07:12']},
+              {'fala':'Às vezes, a verdade não bate na porta. Ela fica em cima da mesa esperando você enxergar.', 'expr':'neutra','arte':['porta']}
+            ]
+          }
+          p=Path('saida/teste-francisca.json'); p.parent.mkdir(exist_ok=True)
+          p.write_text(json.dumps(ep,ensure_ascii=False,indent=2),encoding='utf-8')
+          print(p)
+          PY
+      - name: Inicializar episódio e gerar voz Francisca
+        run: |
+          python motor/produzir.py saida/teste-francisca.json --so post
+          python - <<'PY'
+          import asyncio, json, subprocess, wave
+          from pathlib import Path
+          import edge_tts
+
+          pasta=Path('saida/teste-francisca')
+          ep=json.loads((pasta/'ep.json').read_text(encoding='utf-8'))
+          linhas=[b['fala'] for b in ep['batidas']]
+          voz='pt-BR-FranciscaNeural'
+          rate='-6%'
+          gap_s=0.25
+          sr=44100
+
+          async def main():
+              for i,txt in enumerate(linhas):
+                  await edge_tts.Communicate(txt, voz, rate=rate).save(str(pasta/f'seg{i}.mp3'))
+          asyncio.run(main())
+
+          frames=[]; segs=[]; t=0.0
+          silence=(b'\x00\x00')*int(gap_s*sr)
+          for i,txt in enumerate(linhas):
+              mp3=pasta/f'seg{i}.mp3'; wav=pasta/f'seg{i}.wav'
+              subprocess.run(['ffmpeg','-y','-loglevel','error','-i',str(mp3),'-ar',str(sr),'-ac','1','-c:a','pcm_s16le',str(wav)],check=True)
+              with wave.open(str(wav),'rb') as w:
+                  assert w.getnchannels()==1 and w.getsampwidth()==2 and w.getframerate()==sr
+                  data=w.readframes(w.getnframes()); dur=w.getnframes()/sr
+              ini=t; fim_fala=t+dur; t=fim_fala+gap_s
+              frames.append(data); frames.append(silence)
+              segs.append({'i':i,'texto':txt,'ini':round(ini,3),'fim_fala':round(fim_fala,3),'fim':round(t,3)})
+          bruto=pasta/'francisca-bruta.wav'
+          with wave.open(str(bruto),'wb') as w:
+              w.setnchannels(1); w.setsampwidth(2); w.setframerate(sr); w.writeframes(b''.join(frames))
+          subprocess.run(['ffmpeg','-y','-loglevel','error','-i',str(bruto),'-af','highpass=f=90,equalizer=f=3000:width_type=o:width=1.5:g=2,acompressor=threshold=-18dB:ratio=2.2:attack=6:release=140,volume=1.08',str(pasta/'voz.wav')],check=True)
+          (pasta/'segs.json').write_text(json.dumps(segs,ensure_ascii=False,indent=2),encoding='utf-8')
+          print('Francisca:', round(t,1),'s',len(linhas),'batidas')
+          PY
+      - name: Lip sync e render HyperFrames
+        env:
+          NINA_HF_BASE_WIDTH: '540'
+        run: |
+          python motor/produzir.py saida/teste-francisca.json --so lip
+          python motor/produzir.py saida/teste-francisca.json --so video --rapido
+          python motor/produzir.py saida/teste-francisca.json --so capa
+      - uses: actions/upload-artifact@v4
+        with:
+          name: nina-francisca-preview
+          path: |
+            saida/teste-francisca/teste-francisca.mp4
+            saida/teste-francisca/voz.wav
+            saida/teste-francisca/capa.png
+            saida/teste-francisca/render.json
+          retention-days: 7
