@@ -1,0 +1,11 @@
+assets/*.wav
+assets/*.mp4
+assets/*.ttf
+assets/gsap.min.js
+media/
+snapshots/
+snapshots-final/
+__pycache__/
+*.mp4
+*.log
+node_modules/
