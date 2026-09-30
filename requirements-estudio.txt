@@ -3,3 +3,4 @@ kokoro-onnx
 soundfile
 numpy
 Pillow
+edge-tts==7.2.8
