@@ -1,0 +1,61 @@
+# Nina Me Contou — Skill canônica
+
+Use este arquivo como fonte de verdade ao trabalhar no projeto `pabloramoa-dev/nina-me-contou`.
+
+## Identidade
+
+- Personagem: **Nina**.
+- Canal: **@ninamecontou**.
+- Formato: Reels/Shorts verticais com histórias ficcionais em duas partes.
+- Visual oficial: personagem original da Nina, varanda, estética de recortes/papel e composição **HyperFrames**.
+- HyperFrames é o compositor padrão; Manim puro é apenas fallback/legado explícito.
+
+## Voz oficial — regra obrigatória
+
+- Voz definitiva da Nina: **Microsoft `pt-BR-ThalitaNeural`**.
+- Velocidade oficial: **`-6%`**.
+- Gerador: `motor/gerar_voz_thalita.py`.
+- Entrada do pipeline: `motor/produzir.py`.
+- Não trocar automaticamente para Dora/Kokoro em produção.
+- `motor/gerar_voz_kokoro.py` permanece somente como legado/manual.
+- Se houver mudança futura de voz, atualizar também `motor/render_version.py` para invalidar renders ainda não publicados.
+
+## Pipeline visual obrigatório
+
+O padrão aprovado inclui:
+
+- animações HyperFrames;
+- movimentos de câmera;
+- transições;
+- legendas destacadas e sincronizadas;
+- lip sync orientado pelo áudio;
+- trilha e efeitos sonoros sob a narração;
+- CTA somente no final;
+- capa e Story gerados a partir do mesmo episódio;
+- duração acompanhando a fala, sem acelerar a voz apenas para caber em um minuto.
+
+## Fluxo de produção
+
+1. Roteiro em `episodios/epNNN-p1.json` e `episodios/epNNN-p2.json`.
+2. `motor/produzir.py` gera a narração Thalita e `segs.json`.
+3. `motor/lipsync_amplitude.py` produz o lip sync.
+4. `motor/hyperframes.py` compõe o vídeo final.
+5. O workflow `.github/workflows/produzir.yml` grava MP4, capa e Story em `reels/`.
+6. `src/fila.py` só considera pronto o material cuja assinatura corresponde à versão atual do render.
+
+## Proteções
+
+- Não alterar a aparência original da Nina sem pedido explícito.
+- Não remover HyperFrames do padrão.
+- Não retirar o CTA final.
+- Não publicar parte 1 sem a parte 2 estar pronta.
+- Não reaproveitar uma voz antiga em novos episódios.
+- Preservar histórico de publicações ao invalidar renders antigos.
+
+## Configuração atual
+
+- Render version: `nina-hyperframes-thalita-2`.
+- Voz: `pt-BR-ThalitaNeural`.
+- Rate: `-6%`.
+- Gap entre batidas: `0.25s`.
+- Saída de voz: WAV mono 44.1 kHz, masterizado antes do lip sync/render.
