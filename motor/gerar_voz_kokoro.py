@@ -77,6 +77,8 @@ def main():
         sys.exit("kokoro-onnx não instalado. Rode: bash scripts/setup_ambiente.sh "
                  "(ou pip install --break-system-packages kokoro-onnx soundfile)")
 
+    import onnxruntime as ort
+    ort.disable_telemetry_events()
     onnx, vozes = garantir_modelo()
     k = Kokoro(onnx, vozes)
 
@@ -91,7 +93,7 @@ def main():
         ini = t
         buf.append(s); buf.append(gap)
         t += (len(s) + len(gap)) / SR
-        segs.append({"i": i, "texto": txt, "ini": round(ini, 3), "fim": round(t, 3)})
+        segs.append({"i": i, "texto": txt, "ini": round(ini, 3), "fim_fala": round(t - a.gap, 3), "fim": round(t, 3)})
         print(f"[kokoro] linha {i}: {(len(s)/SR):.2f}s", file=sys.stderr)
 
     voz = np.concatenate(buf) if buf else np.zeros(1, dtype=np.float32)
@@ -107,3 +109,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

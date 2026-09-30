@@ -1,0 +1,63 @@
+name: Validar Nina HyperFrames
+on:
+  push:
+    branches: [main, feature/hyperframes-production]
+    paths: ['motor/**', 'src/fila.py', 'video/**', 'tests/**', 'tools/teste_hyperframes.py', '.github/**']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  testes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install pytest numpy Pillow soundfile
+      - run: python -m pytest -q tests
+      - run: python -m compileall -q motor src tools/teste_hyperframes.py
+  render:
+    needs: testes
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - run: sudo apt-get update -qq && sudo apt-get install -y ffmpeg pkg-config libcairo2-dev libpango1.0-dev espeak-ng fonts-dejavu-core
+      - run: pip install -r requirements-estudio.txt
+      - uses: ./.github/actions/setup-hyperframes
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/dvh_kokoro
+          key: kokoro-v1.0
+      - name: Gerar vídeo, capa e Story sem publicar
+        run: |
+          python tools/teste_hyperframes.py
+          python motor/produzir.py saida/teste-hf.json
+          python motor/story.py saida/teste-hf/teste-hf.mp4 saida/teste-hf/story.mp4
+          python - <<'PY'
+          import json,sys
+          from pathlib import Path
+          sys.path.insert(0,'motor')
+          from hyperframes import conferir
+          from story import duracao
+          p=Path('saida/teste-hf')
+          info=json.loads((p/'render.json').read_text())
+          conferir(p/'teste-hf.mp4',info['duracao'])
+          assert info['motor']=='hyperframes'
+          assert (p/'capa.png').stat().st_size>10000
+          assert duracao(str(p/'story.mp4'))<=59.1
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: nina-hyperframes-integracao
+          path: |
+            saida/teste-hf/teste-hf.mp4
+            saida/teste-hf/capa.png
+            saida/teste-hf/story.mp4
+            saida/teste-hf/render.json
+          retention-days: 7
