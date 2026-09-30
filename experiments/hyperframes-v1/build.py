@@ -53,8 +53,9 @@ for i,(s,(tag,title,art)) in enumerate(zip(segs,cards)):
    spans.append(f'<span id="w{i}_{j}">{html.escape(w)}</span>')
    anim.append(f'tl.set("#w{i}_{j}",{{color:"#ffd24a"}},{t});tl.set("#w{i}_{j}",{{color:"#ffffff"}},{end});')
    t=end;j+=1
-  stop=z if k==len(groups)-1 else t
+  stop=(s['fim'] if i==len(segs)-1 else z) if k==len(groups)-1 else t
   clips.append(f'<div id="caption{i}_{k}" class="clip caps" data-start="{start}" data-duration="{stop-start}" data-track-index="3"><div class="speaker">NINA ME CONTOU</div><div class="words">{" ".join(spans)}</div></div>')
+clips.append('<div id="outro" class="clip caps" data-start="57.25" data-duration="2.75" data-track-index="3"><div class="speaker">SEGUE A NINA</div><div class="words">CONTINUA NA PARTE 2</div></div>')
 anim.append(f'tl.fromTo("#p1 .wave i",{{scaleY:.45}},{{scaleY:1,duration:.24,stagger:.02,yoyo:true,repeat:18,ease:"sine.inOut"}},{segs[1]["ini"]});')
 anim.append(f'tl.fromTo("#p2 .stamp",{{scale:2,opacity:0,rotation:-30}},{{scale:1,opacity:1,rotation:-8,duration:.25,ease:"back.out(2)"}},{segs[2]["ini"]+.6});')
 anim.append(f'tl.to(".hands",{{rotation:360,svgOrigin:"140 130",duration:{segs[8]["fim"]-segs[8]["ini"]},ease:"none"}},{segs[8]["ini"]});')
@@ -72,3 +73,4 @@ anim=[x.replace('duration:', 'immediateRender:false,duration:') for x in anim]
 out=f'''<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="composition.css"></head><body><div id="root" data-composition-id="nina-hf" data-width="1080" data-height="1920" data-duration="60" data-fps="30"><video id="base" class="clip" src="assets/base.mp4" data-start="0" data-duration="60" data-track-index="0" muted playsinline></video><div class="wash"></div><header><div class="brand">NINA ME CONTOU</div><div class="tag">NA VARANDA</div></header>{''.join(clips)}{confetti}<footer><span>Uma história. Outra perspectiva.</span><small>COMENTE · SIGA</small></footer><div id="progress"></div><div class="demo">HISTÓRIA FICTÍCIA · TESTE VISUAL</div><div id="grain"></div><div id="wipe"></div><audio id="voice" src="assets/mix.wav" data-start="0" data-duration="60" data-track-index="4"></audio><script src="assets/gsap.min.js"></script><script>const tl=gsap.timeline({{paused:true}});{''.join(anim)}window.__timelines=window.__timelines||{{}};window.__timelines['nina-hf']=tl;</script></div></body></html>'''
 (P/'index.html').write_text(out)
 print('Composição: 60 s, 1080x1920, 30 fps')
+
