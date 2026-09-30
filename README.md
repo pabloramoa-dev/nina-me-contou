@@ -12,7 +12,7 @@ CTA de seguir pra não perder a continuação (`motor/cta.py`).
    `epNNN-p1.json` + `epNNN-p2.json`.
 2. O workflow **Produzir episódios** roda sozinho a cada push em `episodios/`
    (uma máquina por parte, em paralelo): gera voz (Kokoro), lip sync, vídeo
-   (Manim), capa e a versão Story (≤59 s, mantendo o CTA final), e grava em `reels/`.
+   (personagem Manim + composição HyperFrames), capa e a versão Story (≤59 s, mantendo o CTA final), e grava em `reels/`.
    Roteiro editado depois do render volta sozinho pro estúdio (`reels/<id>.hash`).
 3. O workflow **Publicar Reel** roda às 8h, 12h, 16h e 20h e publica o próximo da
    sequência: continuação pendente primeiro, depois a parte 1 do próximo episódio
@@ -42,3 +42,16 @@ Actions → **Publicar Reel** → Run workflow → horário `manha`, ensaio marc
 O log mostra qual episódio sairia, o link do vídeo e da capa, sem publicar.
 
 História de ficção, inspirada em causo de família.
+
+
+## Visual padrão: HyperFrames
+
+Os próximos episódios usam o visual aprovado: Nina e voz Dora originais, varanda diurna ou noturna, recortes com fita e sombra, textura de papel, câmera, legendas com destaque, transições, mensagens, ilustrações animadas e trilha/efeitos originais sob a narração. A duração acompanha a fala, sem acelerar a voz para forçar um minuto.
+
+Instale `requirements-estudio.txt`, execute `npm ci --prefix video` e `cd video && npx --no-install hyperframes browser ensure`. O workflow instala tudo automaticamente. Exporte normalmente com `python motor/produzir.py episodios/epNNN-p1.json --publicar-em saida_reels`.
+
+As artes existentes do roteiro são preservadas, inclusive imagens `.b64` e todo o catálogo `objetos.py`. Títulos e painéis são derivados das falas; opcionalmente, cada batida pode trazer `"hf": {"titulo": "Texto curto", "selo": "Uma pista"}`. Não há frases fixas do episódio de teste nos próximos vídeos.
+
+A assinatura da fila inclui a versão visual. Os vídeos ainda não publicados com o motor antigo retornam ao estúdio; o histórico de publicação é preservado. Só entram na fila as duas partes prontas. O CTA continua exclusivamente no final. Capa e Story acompanham o novo render.
+
+`NINA_MOTOR=manim` permite usar o motor anterior em uma execução explícita. HyperFrames é o padrão. Telemetria do compositor está desativada no estúdio e no CI. O workflow **Validar Nina HyperFrames** testa a composição, renderização, voz, capa e Story sem publicar.

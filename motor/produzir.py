@@ -7,10 +7,10 @@
 
 Etapas (pula o que já existe; apague o arquivo para refazer):
   voz   -> saida/<id>/voz.wav + segs.json   (Kokoro pf_dora, masterizada)
-  lip   -> saida/<id>/lip.json              (lip sync por amplitude, 24 fps)
-  video -> saida/<id>/raw.mp4               (Manim)
-  tex   -> saida/<id>/tex.mp4               (grão de papel)
-  mux   -> saida/<id>/<id>.mp4              (vídeo + voz)
+  lip   -> saida/<id>/lip.json              (lip sync por amplitude, 30 fps)
+  video -> saida/<id>/<id>.mp4              (Nina original + HyperFrames, padrão)
+  tex   -> compatibilidade: mesma composição completa no motor HyperFrames
+  mux   -> compatibilidade: mesma composição completa no motor HyperFrames
   capa  -> saida/<id>/capa.png              (capa do Reel)
   post  -> saida/<id>/legenda.txt           (legenda de publicação)
 
@@ -42,7 +42,10 @@ def main():
     ep_json = os.path.abspath(a.episodio)
     sys.path.insert(0, MOTOR)
     from cta import garantir_cta
+    from render_version import versao
     ep = garantir_cta(json.load(open(ep_json, encoding="utf-8")))   # CTA de seguir sempre no final
+    ep["_render_version"] = versao()
+    usa_hf = os.environ.get("NINA_MOTOR", "hyperframes") == "hyperframes"
     pasta = os.path.join(RAIZ, "saida", ep["id"])
     ep_path = os.path.join(pasta, "ep.json")
     novo = json.dumps(ep, ensure_ascii=False, indent=1)
@@ -63,9 +66,16 @@ def main():
         sh(["ffmpeg", "-y", "-loglevel", "error", "-i", P("bruta.wav"), "-af", MASTER, P("voz.wav")])
 
     if quer("lip") and not os.path.exists(P("lip.json")):
-        sh([sys.executable, os.path.join(MOTOR, "lipsync_amplitude.py"), P("voz.wav"), P("lip.json"), "24"])
+        sh([sys.executable, os.path.join(MOTOR, "lipsync_amplitude.py"), P("voz.wav"), P("lip.json"), "30" if usa_hf else "24"])
 
-    if quer("video") and not os.path.exists(P("raw.mp4")):
+    final = P(ep["id"] + ".mp4")
+    if usa_hf and (quer("video") or quer("tex") or quer("mux")) and not os.path.exists(final):
+        from hyperframes import renderizar
+        if a.rapido:
+            os.environ["NINA_HF_BASE_WIDTH"] = "540"
+        renderizar(ep, pasta, RAIZ)
+
+    if not usa_hf and quer("video") and not os.path.exists(P("raw.mp4")):
         q = ["-ql"] if a.rapido else []
         extra = ["-r", "540,960"] if a.rapido else []
         sh(["manim", *q, *extra, "--fps", "24", "--disable_caching", "--media_dir", P("media"),
@@ -76,14 +86,14 @@ def main():
                 achado = os.path.join(raiz, "raw.mp4")
         shutil.copy(achado, P("raw.mp4"))
 
-    if quer("tex") and not os.path.exists(P("tex.mp4")):
+    if not usa_hf and quer("tex") and not os.path.exists(P("tex.mp4")):
         sys.path.insert(0, MOTOR)
         import dvh_vox_papel as V
         V.estilo("papel")
         V.aplicar_textura(P("raw.mp4"), P("tex.mp4"), crf=24)
 
     final = P(ep["id"] + ".mp4")
-    if quer("mux") and not os.path.exists(final):
+    if not usa_hf and quer("mux") and not os.path.exists(final):
         sh(["ffmpeg", "-y", "-loglevel", "error", "-i", P("tex.mp4"), "-i", P("voz.wav"),
             "-af", "apad", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-shortest",
             "-movflags", "+faststart", final])
@@ -101,6 +111,8 @@ def main():
         dest = os.path.abspath(a.publicar_em)
         os.makedirs(dest, exist_ok=True)
         shutil.copy(final, os.path.join(dest, ep["id"] + ".mp4"))
+        if os.path.exists(P("render.json")):
+            shutil.copy(P("render.json"), os.path.join(dest, ep["id"] + "-render.json"))
         Image.open(P("capa.png")).convert("RGB").save(os.path.join(dest, ep["id"] + "-capa.jpg"), quality=90)
         from story import fazer_story
         fazer_story(final, os.path.join(dest, ep["id"] + "-story.mp4"))
@@ -118,3 +130,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

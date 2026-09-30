@@ -20,6 +20,7 @@ import subprocess
 from datetime import datetime, timezone, timedelta
 
 from src import config
+from motor.render_version import versao
 
 BRT = timezone(timedelta(hours=-3))
 RX = re.compile(r"^ep(\d{3})-p([12])$")
@@ -49,7 +50,7 @@ def carregar_ep(ep_id: str) -> dict:
 def assinatura(ep_id: str) -> str:
     """Impressão digital do roteiro (JSON canônico) — muda a cada edição."""
     ep = carregar_ep(ep_id)
-    bruto = json.dumps(ep, ensure_ascii=False, sort_keys=True).encode("utf-8")
+    bruto = json.dumps({"roteiro": ep, "render": versao()}, ensure_ascii=False, sort_keys=True).encode("utf-8")
     return hashlib.sha1(bruto).hexdigest()[:16]
 
 
@@ -135,3 +136,4 @@ if __name__ == "__main__":
         print(f"prontos={r['prontos_nao_publicados']}")
         print(f"reserva_baixa={'false' if r['reserva_ok'] else 'true'}")
     sys.exit(1 if r["problemas"] else 0)
+
