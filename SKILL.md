@@ -29,7 +29,8 @@ O padrão aprovado inclui:
 - transições;
 - legendas destacadas e sincronizadas;
 - lip sync orientado pelo áudio;
-- trilha e efeitos sonoros sob a narração;
+- voz masterizada com Pedalboard (`motor/audio_fx.py`), trilha com ducking e efeitos sonoros sintetizados (`motor/sfx.py`) presos às animações;
+- palavra falada com destaque amarelo + pulo de escala; flash + impacto nas batidas `chocada`;
 - CTA somente no final;
 - capa e Story gerados a partir do mesmo episódio;
 - duração acompanhando a fala, sem acelerar a voz apenas para caber em um minuto.
@@ -37,7 +38,7 @@ O padrão aprovado inclui:
 ## Fluxo de produção
 
 1. Roteiro em `episodios/epNNN-p1.json` e `episodios/epNNN-p2.json`.
-2. `motor/produzir.py` gera a narração Thalita e `segs.json`.
+2. `motor/produzir.py` gera a narração Thalita, masteriza com Pedalboard e grava `segs.json`.
 3. `motor/lipsync_amplitude.py` produz o lip sync.
 4. `motor/hyperframes.py` compõe o vídeo final.
 5. O workflow `.github/workflows/produzir.yml` grava MP4, capa e Story em `reels/`.
@@ -54,8 +55,9 @@ O padrão aprovado inclui:
 
 ## Configuração atual
 
-- Render version: `nina-hyperframes-thalita-2`.
+- Render version: `nina-hyperframes-thalita-3-som`.
 - Voz: `pt-BR-ThalitaNeural`.
 - Rate: `-6%`.
 - Gap entre batidas: `0.25s`.
-- Saída de voz: WAV mono 44.1 kHz, masterizado antes do lip sync/render.
+- Saída de voz: WAV mono 44.1 kHz, masterizado (Pedalboard) antes do lip sync/render.
+- Novos efeitos sonoros: acrescentar em `motor/sfx.py` (SONS, VOLUME e eventos) mantendo sincronia com `compor()`.

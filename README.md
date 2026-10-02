@@ -61,3 +61,13 @@ As artes existentes do roteiro são preservadas, inclusive imagens `.b64` e todo
 A assinatura da fila inclui a versão visual/voz. Os vídeos ainda não publicados com o motor antigo retornam ao estúdio; o histórico de publicação é preservado. Só entram na fila as duas partes prontas. O CTA continua exclusivamente no final. Capa e Story acompanham o novo render.
 
 `NINA_MOTOR=manim` permite usar o motor anterior em uma execução explícita. HyperFrames é o padrão. Telemetria do compositor está desativada no estúdio e no CI. O workflow **Validar Nina HyperFrames** testa a composição, renderização, voz, capa e Story sem publicar.
+
+## Som e acabamento (v3)
+
+- **Voz:** a narração da Thalita passa pela cadeia do **Spotify Pedalboard** (`motor/audio_fx.py`): corte de grave, presença, compressão suave, ambiência curtinha de varanda e limitador. A duração não muda, então legenda e lip sync seguem iguais. Sem o pedalboard instalado, volta sozinho para o filtro ffmpeg antigo.
+- **Trilha:** a mesma trilha original, abafada e com *ducking* — abaixa quando a Nina fala e volta nas pausas.
+- **Efeitos sonoros** (`motor/sfx.py`), sintetizados por código (estilo sfxr, sem arquivos de terceiros nem licença) e presos às animações: papel + pop na entrada de cada cartão, whoosh no wipe amarelo, impacto + flash nas batidas com `"expr": "chocada"`, notificação em `celular`/`direct`/`notificacao`, digitação em `conversa`, tique-taque no `relogio`, tum-tum no `coracao`, portão na `porta`, passagem grave no `carro` e brilho no confete final.
+- **Legenda:** a palavra falada fica amarela e dá um pulinho de escala.
+- **Flash:** clarão de papel nas batidas `chocada`.
+
+Para o flash e o impacto, basta marcar a batida com `"expr": "chocada"` no roteiro.
