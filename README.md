@@ -71,3 +71,15 @@ A assinatura da fila inclui a versão visual/voz. Os vídeos ainda não publicad
 - **Flash:** clarão de papel nas batidas `chocada`.
 
 Para o flash e o impacto, basta marcar a batida com `"expr": "chocada"` no roteiro.
+
+## Visual v4 (padrão desde out/2026)
+
+Blocos do catálogo HyperFrames adaptados ao estilo papel da Nina (`motor/visual_v4.py`):
+
+- **Legenda pílula (karaokê):** até 4 palavras num cartão claro; as palavras escurecem conforme a Nina fala.
+- **Palavras de impacto:** ficam vermelhas, crescem e soltam partículas, com um "pop" no som. Escolhidas automaticamente; para escolher no roteiro: `"hf": {"destaque": ["Paula"]}`.
+- **Título manuscrito** (fonte Caveat, OFL) escrito na hora, com traço de marca-texto por baixo.
+- **Headline slam** nas batidas `"expr": "chocada"`: o título despenca com tremida.
+- **Boca por fonema** com Rhubarb Lip Sync (MIT, modo fonético): 8 formatos de boca. Sem o Rhubarb, cai sozinho no lip sync por volume.
+
+Para voltar ao visual anterior numa execução: `NINA_VISUAL=v3` e/ou `NINA_LIP=amplitude`.

@@ -28,7 +28,8 @@ O padrão aprovado inclui:
 - movimentos de câmera;
 - transições;
 - legendas destacadas e sincronizadas;
-- lip sync orientado pelo áudio;
+- lip sync por fonema com Rhubarb (`motor/lipsync_rhubarb.py`, 8 bocas em `nina_lib.boca_fonema`), com queda automática para amplitude;
+- visual v4 (`motor/visual_v4.py`): legenda pílula karaokê, partículas nas palavras de impacto, título manuscrito com marca-texto, slam nas batidas `chocada`;
 - voz masterizada com Pedalboard (`motor/audio_fx.py`), trilha com ducking e efeitos sonoros sintetizados (`motor/sfx.py`) presos às animações;
 - palavra falada com destaque amarelo + pulo de escala; flash + impacto nas batidas `chocada`;
 - CTA somente no final;
@@ -39,7 +40,7 @@ O padrão aprovado inclui:
 
 1. Roteiro em `episodios/epNNN-p1.json` e `episodios/epNNN-p2.json`.
 2. `motor/produzir.py` gera a narração Thalita, masteriza com Pedalboard e grava `segs.json`.
-3. `motor/lipsync_amplitude.py` produz o lip sync.
+3. `motor/lipsync_rhubarb.py` produz o lip sync (fallback `lipsync_amplitude.py`).
 4. `motor/hyperframes.py` compõe o vídeo final.
 5. O workflow `.github/workflows/produzir.yml` grava MP4, capa e Story em `reels/`.
 6. `src/fila.py` só considera pronto o material cuja assinatura corresponde à versão atual do render.
@@ -55,7 +56,7 @@ O padrão aprovado inclui:
 
 ## Configuração atual
 
-- Render version: `nina-hyperframes-thalita-3-som`.
+- Render version: `nina-hyperframes-thalita-4-visual`.
 - Voz: `pt-BR-ThalitaNeural`.
 - Rate: `-6%`.
 - Gap entre batidas: `0.25s`.
