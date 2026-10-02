@@ -1,13 +1,15 @@
 {
   "motor": "hyperframes",
-  "versao": "nina-hyperframes-1",
-  "duracao": 60.847,
+  "versao": "nina-hyperframes-thalita-3-som",
+  "duracao": 80.556,
   "resolucao": [
     1080,
     1920
   ],
   "fps": 30,
-  "voz": "pf_dora",
+  "voz": "pt-BR-ThalitaNeural",
+  "audio": "ffmpeg",
+  "sfx": 43,
   "cenario": "tarde",
   "batidas": 14
 }
