@@ -1,0 +1,38 @@
+{
+ "2": {
+  "busca": "open planner",
+  "fonte": "openverse/rawpixel",
+  "pagina": "https://www.rawpixel.com/image/3303840/free-photo-image-pencil-book-cc0",
+  "autor": null
+ },
+ "4": {
+  "busca": "red roses bouquet",
+  "fonte": "openverse/rawpixel",
+  "pagina": "https://www.rawpixel.com/image/6032692/photo-image-background-flower-public-domain",
+  "autor": null
+ },
+ "7": {
+  "busca": "greeting card envelope",
+  "fonte": "openverse/stocksnap",
+  "pagina": "https://stocksnap.io/photo/letter-valentine-P2KICW97HO",
+  "autor": "Kelly Ishmael"
+ },
+ "8": {
+  "busca": "house number on wall",
+  "fonte": "openverse/stocksnap",
+  "pagina": "https://stocksnap.io/photo/building-number-3LDIGNBX7I",
+  "autor": "The Building Envelope"
+ },
+ "11": {
+  "busca": "smartphone call",
+  "fonte": "openverse/stocksnap",
+  "pagina": "https://stocksnap.io/photo/mobile-phone-BHM9FVHD4H",
+  "autor": "John Tekeridis"
+ },
+ "15": {
+  "busca": "vintage clock",
+  "fonte": "openverse/stocksnap",
+  "pagina": "https://stocksnap.io/photo/vintage-clock-EIW9MO2ZFG",
+  "autor": "Jiyeon Park"
+ }
+}
