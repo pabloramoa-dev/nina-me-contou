@@ -32,3 +32,6 @@ footer small{font-size:18px;letter-spacing:1px}#progress{position:absolute;left:
 .heart{color:#b14056;font-size:118px}.underline{height:6px;background:#a53450;transform-origin:left;width:94%;margin-top:18px}
 
 h1{height:136px;line-height:1.06}.eyebrow{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.native-art{width:100%;height:100%;object-fit:contain}.card .art{height:275px}.note{overflow-wrap:anywhere}.words{overflow-wrap:anywhere}
+
+#flash{position:absolute;inset:0;background:#fff9ea;opacity:0;pointer-events:none}
+.words span{transform-origin:50% 70%;margin:0 .07em}
