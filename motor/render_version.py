@@ -1,6 +1,6 @@
 """Versão visual/voz usada pelo estúdio e pela fila; não carrega o renderizador."""
 import os
-HYPERFRAMES_VERSION = 'nina-hyperframes-thalita-4-visual'
+HYPERFRAMES_VERSION = 'nina-hyperframes-thalita-5-fotos'
 def versao():
     motor = os.environ.get('NINA_MOTOR', 'hyperframes')
     if motor not in ('hyperframes', 'manim'):
