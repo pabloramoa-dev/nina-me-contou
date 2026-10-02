@@ -74,7 +74,8 @@ def test_sfx_follow_animation_events():
     for nome,f in S.SONS.items():
         x=f();assert len(x)>100 and np.isfinite(x).all() and abs(np.abs(x).max()-1)<1e-6,nome
 
-def test_flash_only_on_shock(tmp_path):
+def test_flash_only_on_shock(tmp_path,monkeypatch):
+    monkeypatch.setenv('NINA_VISUAL','v3')
     ep,segs=fixture();H.compor(ep,segs,tmp_path);s=(tmp_path/'index.html').read_text()
     assert 'id="flash"' in s and 'tl.fromTo("#flash"' not in s
     ep['batidas'][1]['expr']='chocada';H.compor(ep,segs,tmp_path);s=(tmp_path/'index.html').read_text()
@@ -88,3 +89,26 @@ def test_voice_master_keeps_length(tmp_path):
     y,sr2=sf.read(tmp_path/'v.wav');info=sf.info(tmp_path/'v.wav')
     assert sr2==sr and len(y)==len(x) and info.channels==1 and info.subtype=='PCM_16' and np.abs(y).max()<=.9
     g=audio_fx.ducking(y,sr);assert g[int(.6*sr)]<.5 and g[-1]>.85
+
+def test_v4_visual_escapes_and_highlights(tmp_path,monkeypatch):
+    import visual_v4 as V
+    monkeypatch.setenv('NINA_VISUAL','v4')
+    ep,segs=fixture();ep['batidas'][1]['fala']='<b>traição</b> & a amante, sim'
+    ep['batidas'][1]['expr']='chocada'
+    H.compor(ep,segs,tmp_path);s=(tmp_path/'index.html').read_text()
+    assert 'class="v4"' in s and 'class="pill"' in s and 'class="marker"' in s and '<b>' not in s
+    assert 'class="kw"' in s and 'keyframes' in s and 'clipPath' in s
+    assert V.palavras_chave({'fala':'x','hf':{'destaque':['Paula']}},['A','Paula.','foi'])=={1}
+
+def test_rhubarb_falls_back_to_amplitude(tmp_path,monkeypatch):
+    import numpy as np,soundfile as sf,subprocess,sys as _s
+    monkeypatch.setenv('RHUBARB_BIN','/nao/existe');monkeypatch.setenv('PATH','/usr/bin:/bin')
+    sr=44100;t=np.arange(sr)/sr;sf.write(tmp_path/'v.wav',.3*np.sin(2*np.pi*200*t),sr)
+    import os;env=dict(os.environ,HOME=str(tmp_path))
+    r=subprocess.run([_s.executable,str(ROOT/'motor/lipsync_rhubarb.py'),str(tmp_path/'v.wav'),str(tmp_path/'l.json'),'30'],env=env,capture_output=True,text=True)
+    assert r.returncode==0 and 'amplitude' in r.stdout and json.loads((tmp_path/'l.json').read_text())
+
+def test_phoneme_mouths_exist():
+    pytest.importorskip('manim')
+    import nina_lib as N
+    for l in 'ABCDEFGH':assert N.boca_fala(l) is not None
