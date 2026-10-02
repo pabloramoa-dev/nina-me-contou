@@ -35,3 +35,6 @@ h1{height:136px;line-height:1.06}.eyebrow{white-space:nowrap;overflow:hidden;tex
 
 #flash{position:absolute;inset:0;background:#fff9ea;opacity:0;pointer-events:none}
 .words span{transform-origin:50% 70%;margin:0 .07em}
+
+/* fotos reais (motor/banco_imagens.py): polaroid que transborda o cartão */
+.banco{position:absolute;left:50%;top:-12px;width:600px;margin-left:-300px;z-index:3;transform-origin:50% 40%}
