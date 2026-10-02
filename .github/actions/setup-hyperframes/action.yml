@@ -1,5 +1,5 @@
 name: Preparar HyperFrames
-description: Instala o compositor e o navegador com versões fixadas
+description: Instala o compositor, o navegador e o Rhubarb (lip sync) com versões fixadas
 runs:
   using: composite
   steps:
@@ -23,3 +23,17 @@ runs:
       env:
         HYPERFRAMES_NO_TELEMETRY: '1'
         DO_NOT_TRACK: '1'
+    - uses: actions/cache@v4
+      with:
+        path: ~/.cache/rhubarb
+        key: ${{ runner.os }}-rhubarb-1.13.0
+    - shell: bash
+      run: |
+        if [ ! -x ~/.cache/rhubarb/rhubarb ]; then
+          curl -sSL -o /tmp/rhubarb.zip https://github.com/DanielSWolf/rhubarb-lip-sync/releases/download/v1.13.0/Rhubarb-Lip-Sync-1.13.0-Linux.zip
+          mkdir -p ~/.cache/rhubarb
+          unzip -q -o /tmp/rhubarb.zip -d /tmp/rhubarb
+          cp -r /tmp/rhubarb/Rhubarb-Lip-Sync-1.13.0-Linux/. ~/.cache/rhubarb/
+        fi
+        ~/.cache/rhubarb/rhubarb --version || echo "rhubarb indisponível: o lip sync cai no modo amplitude"
+        echo "RHUBARB_BIN=$HOME/.cache/rhubarb/rhubarb" >> "$GITHUB_ENV"
