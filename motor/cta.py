@@ -19,6 +19,9 @@ CTA = {
     2: "Me segue pra não perder a continuação. Daqui a pouco tem história nova.",
 }
 PLACA = {1: "SEGUE PRA VER A PARTE 2", 2: "SEGUE PRA NÃO PERDER A PRÓXIMA"}
+# vídeo avulso (história completa num vídeo só, feito sob demanda)
+CTA_AVULSO = "Me segue pra não perder a próxima. Amanhã tem história nova."
+PLACA_AVULSO = "SEGUE PRA NÃO PERDER A PRÓXIMA"
 
 
 def eh_cta(b: dict) -> bool:
@@ -28,6 +31,11 @@ def eh_cta(b: dict) -> bool:
 def garantir_cta(ep: dict) -> dict:
     ep = copy.deepcopy(ep)
     bats = [b for b in ep["batidas"] if not eh_cta(b)]
+    if ep.get("avulso"):
+        bats.append({"fala": CTA_AVULSO, "expr": "ironica", "arte": ["seguir", PLACA_AVULSO],
+                     "destaque": ["segue", "próxima."]})
+        ep["batidas"] = bats
+        return ep
     parte = 2 if ep.get("parte") == 2 else 1
     bats.append({"fala": CTA[parte], "expr": "ironica", "arte": ["seguir", PLACA[parte]],
                  "destaque": ["segue", "continuação."]})
