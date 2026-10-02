@@ -82,7 +82,7 @@ def compor(ep,segs,pasta):
     for i,(b,s) in enumerate(zip(ep['batidas'],segs)):
         a=float(s['ini']);z=float(s['fim']);d=z-a
         spec=b.get('arte') or [None];tipo=spec[0];arg=spec[1] if len(spec)>1 else None
-        tag=b.get('hf',{}).get('selo') or f'EP {ep.get("ep",0):02d} · PARTE {ep.get("parte",1)} · NINA CONTA'
+        tag=b.get('hf',{}).get('selo') or ('NINA CONTA · HISTÓRIA COMPLETA' if ep.get('avulso') else f'EP {ep.get("ep",0):02d} · PARTE {ep.get("parte",1)} · NINA CONTA')
         if v4:
             title,size=V4.bloco_titulo(titulo(b,ep,i))
             h1=f'<h1 style="font-size:{size}px"><span class="ink">{title}</span>{V4.MARKER}</h1>'
@@ -142,7 +142,7 @@ def compor(ep,segs,pasta):
                 t=endw;j+=1
             stop=z if k==len(groups)-1 else t
             parts.append(f'<div id="cap{i}_{k}" class="clip caps" data-start="{start}" data-duration="{stop-start}" data-track-index="3"><div class="speaker">NINA ME CONTOU</div><div class="words">{" ".join(spans)}</div></div>')
-    final,final_size=bloco(ep.get('fim') or ('CONTINUA NA PARTE 2' if ep.get('parte')==1 else 'SEGUE A NINA'),max_height=120,max_size=45)
+    final,final_size=bloco(ep.get('fim') or ('CONTINUA NA PARTE 2' if ep.get('parte')==1 and not ep.get('avulso') else 'SEGUE A NINA'),max_height=120,max_size=45)
     parts.append(f'<div id="outro" class="clip caps" data-start="{segs[-1]["fim"]}" data-duration="{TAIL}" data-track-index="3"><div class="speaker">SEGUE A NINA</div><div class="words" style="font-size:{final_size}px">{final}</div></div>')
     confetti=''
     for k in range(22):
@@ -195,7 +195,8 @@ def conferir(mp4,dur):
 def renderizar(ep,pasta,raiz):
     pasta=Path(pasta);raiz=Path(raiz);segs=json.loads((pasta/'segs.json').read_text())
     dur=validar_timeline(ep,segs)
-    if not 15 <= dur <= 90:raise ValueError(f'Duração de produção fora de 15–90 s: {dur}')
+    maxdur=float(os.environ.get('NINA_MAX_DUR','90'))   # avulsos: até 180 s
+    if not 15 <= dur <= maxdur:raise ValueError(f'Duração de produção fora de 15–{maxdur:g} s: {dur}')
     audio=sf.info(pasta/'voz.wav')
     if abs(audio.frames/audio.samplerate-segs[-1]['fim'])>.3:raise ValueError('Áudio e timeline divergentes')
     work=pasta/'hyperframes';assets=work/'assets';assets.mkdir(parents=True,exist_ok=True)
