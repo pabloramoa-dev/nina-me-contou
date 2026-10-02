@@ -78,7 +78,7 @@ def chunks(text,width=840):
     return out
 
 def compor(ep,segs,pasta):
-    dur=validar_timeline(ep,segs);parts=[];anim=[];v4=usa_v4()
+    dur=validar_timeline(ep,segs);parts=[];anim=[];v4=usa_v4();fotos=ep.get('_fotos',{})
     for i,(b,s) in enumerate(zip(ep['batidas'],segs)):
         a=float(s['ini']);z=float(s['fim']);d=z-a
         spec=b.get('arte') or [None];tipo=spec[0];arg=spec[1] if len(spec)>1 else None
@@ -91,7 +91,9 @@ def compor(ep,segs,pasta):
             title,size=bloco(titulo(b,ep,i))
             h1=f'<h1 style="font-size:{size}px">{title}</h1>'
         body,body_size=bloco(arg if arg is not None else (b.get('tela') or b['fala']),max_height=225,max_size=34,min_size=24,width=505 if tipo in ICONS else 790)
-        if tipo in ICONS:
+        if i in fotos:
+            art=f'<img class="banco" src="assets/foto{i}.png" alt="Foto">'
+        elif tipo in ICONS:
             art=ICONS[tipo]+f'<div class="note" style="font-size:{body_size}px">{body}</div>'
         elif tipo=='imagem':
             art=f'<img class="native-art" src="assets/arte{i}.png" alt="Imagem do roteiro">'
@@ -112,6 +114,11 @@ def compor(ep,segs,pasta):
         if SFX.tem_flash(b,i):
             anim.append(f'tl.fromTo("#flash",{{opacity:0}},{{opacity:.85,duration:.07,immediateRender:false,ease:"power1.in"}},{a});tl.to("#flash",{{opacity:0,duration:.38,ease:"power2.out"}},{a+.07});')
         active=max(.1,min(d-.1,2.5))
+        if i in fotos:
+            rot=-3 if i%2 else 3
+            anim.append(f'tl.fromTo("#p{i} .banco",{{y:40,scale:.82,rotation:{rot},opacity:0}},{{y:0,scale:1,rotation:{rot*.7},opacity:1,duration:.38,immediateRender:false,ease:"back.out(1.4)"}},{a+.12});')
+            anim.append(f'tl.to("#p{i} .banco",{{scale:1.04,duration:{max(.1,d-.5)},ease:"none"}},{a+.5});')
+            tipo=None   # animações da ilustração não se aplicam
         if tipo=='porta':anim.append(f'tl.to("#p{i} .door",{{y:-140,duration:{active},ease:"power2.inOut"}},{a+.1});')
         if tipo=='carro':anim.append(f'tl.fromTo("#p{i} .car",{{x:-45}},{{x:0,duration:.8,immediateRender:false,ease:"power2.out"}},{a});')
         if tipo=='relogio':anim.append(f'tl.to("#p{i} .hands",{{rotation:360,svgOrigin:"140 130",duration:{d},ease:"none"}},{a});')
@@ -201,9 +208,12 @@ def renderizar(ep,pasta,raiz):
     bases=[p for p in bases if 'partial_movie_files' not in str(p)]
     if len(bases)!=1:raise ValueError('Camada Nina não encontrada')
     sh(['ffmpeg','-y','-v','error','-i',bases[0],'-c:v','libx264','-preset','fast','-crf','18','-g','30','-keyint_min','30','-sc_threshold','0','-pix_fmt','yuv420p','-an','-movflags','+faststart',assets/'base.mp4'])
+    import banco_imagens
+    ep=dict(ep);ep['_fotos']=banco_imagens.preparar_episodio(ep,assets,pasta)
     native=[]
     for i,b in enumerate(ep['batidas']):
         spec=b.get('arte') or [None];tipo=spec[0]
+        if i in ep['_fotos']:continue
         if tipo=='imagem':
             src=(raiz/str(spec[1])).resolve();src.relative_to(raiz.resolve())
             if str(src).endswith('.b64'):
@@ -226,6 +236,6 @@ def renderizar(ep,pasta,raiz):
     final=pasta/(ep['id']+'.mp4');tmp=pasta/(ep['id']+'.rendering.mp4')
     sh(['node',cli,'render',work,'--output',tmp,'--workers',os.environ.get('NINA_HF_WORKERS','2'),'--no-browser-gpu'],env=env)
     conferir(tmp,dur);tmp.replace(final)
-    info={'motor':'hyperframes','versao':HYPERFRAMES_VERSION,'duracao':dur,'resolucao':[1080,1920],'fps':30,'voz':'pt-BR-ThalitaNeural','audio':'pedalboard' if audio_fx.disponivel() else 'ffmpeg','sfx':len(SFX.eventos(ep,segs)),'visual':'v4' if usa_v4() else 'v3','lip':os.environ.get('NINA_LIP','rhubarb'),'cenario':ep.get('cenario','tarde'),'batidas':len(segs)}
+    info={'motor':'hyperframes','versao':HYPERFRAMES_VERSION,'fotos':len(ep['_fotos']),'duracao':dur,'resolucao':[1080,1920],'fps':30,'voz':'pt-BR-ThalitaNeural','audio':'pedalboard' if audio_fx.disponivel() else 'ffmpeg','sfx':len(SFX.eventos(ep,segs)),'visual':'v4' if usa_v4() else 'v3','lip':os.environ.get('NINA_LIP','rhubarb'),'cenario':ep.get('cenario','tarde'),'batidas':len(segs)}
     (pasta/'render.json').write_text(json.dumps(info,ensure_ascii=False,indent=2))
     return final
