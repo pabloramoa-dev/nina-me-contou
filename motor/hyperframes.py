@@ -6,6 +6,8 @@ import numpy as np
 import soundfile as sf
 from PIL import ImageFont
 from hf_assets import ICONS
+import audio_fx
+import sfx as SFX
 from render_version import HYPERFRAMES_VERSION
 
 FONT='/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
@@ -96,8 +98,10 @@ def compor(ep,segs,pasta):
             anim.append(f'tl.fromTo("#c{i}",{{y:55,rotation:{-3 if i%2 else 3},scale:.94,opacity:0}},{{y:0,rotation:0,scale:1,opacity:1,duration:.42,immediateRender:false,ease:"back.out(1.15)"}},{a});')
         anim.append(f'tl.to("#c{i} .art",{{y:-8,duration:{max(.1,d-.5)},ease:"none"}},{a+.5});')
         anim.append(f'tl.to("#base",{{scale:{1.10 if b.get("zoom") or b.get("expr")=="chocada" else 1.02},x:{-12 if i%2 else 12},duration:.55,ease:"power2.inOut"}},{a});')
-        if i and (b.get('zoom') or i%4==0):
+        if SFX.tem_wipe(b,i):
             anim.append(f'tl.fromTo("#wipe",{{x:"-110%"}},{{x:"110%",duration:.48,immediateRender:false,ease:"power2.inOut"}},{a});')
+        if SFX.tem_flash(b,i):
+            anim.append(f'tl.fromTo("#flash",{{opacity:0}},{{opacity:.85,duration:.07,immediateRender:false,ease:"power1.in"}},{a});tl.to("#flash",{{opacity:0,duration:.38,ease:"power2.out"}},{a+.07});')
         active=max(.1,min(d-.1,2.5))
         if tipo=='porta':anim.append(f'tl.to("#p{i} .door",{{y:-140,duration:{active},ease:"power2.inOut"}},{a+.1});')
         if tipo=='carro':anim.append(f'tl.fromTo("#p{i} .car",{{x:-45}},{{x:0,duration:.8,immediateRender:false,ease:"power2.out"}},{a});')
@@ -114,7 +118,7 @@ def compor(ep,segs,pasta):
             for w in g:
                 endw=t+(fim_fala-a)*max(2,len(w))/total
                 spans.append(f'<span id="w{i}_{j}">{html.escape(w)}</span>')
-                anim.append(f'tl.set("#w{i}_{j}",{{color:"#ffd24a"}},{t});tl.set("#w{i}_{j}",{{color:"#ffffff"}},{endw});')
+                anim.append(f'tl.set("#w{i}_{j}",{{color:"#ffd24a"}},{t});tl.fromTo("#w{i}_{j}",{{scale:1,y:0}},{{scale:1.08,y:-3,duration:{min(.09,max(.02,(endw-t)/2))},immediateRender:false,ease:"power2.out"}},{t});tl.to("#w{i}_{j}",{{scale:1,y:0,duration:.12,ease:"power2.in"}},{max(t+.02,endw-.05)});tl.set("#w{i}_{j}",{{color:"#ffffff"}},{endw});')
                 t=endw;j+=1
             stop=z if k==len(groups)-1 else t
             parts.append(f'<div id="cap{i}_{k}" class="clip caps" data-start="{start}" data-duration="{stop-start}" data-track-index="3"><div class="speaker">NINA ME CONTOU</div><div class="words">{" ".join(spans)}</div></div>')
@@ -126,15 +130,16 @@ def compor(ep,segs,pasta):
         confetti+=f'<div id="f{k}" class="confetti" style="left:{x}px;background:{color}"></div>'
         anim.append(f'tl.fromTo("#f{k}",{{y:0,opacity:1,rotation:0}},{{y:{500+k*11},x:{(k%5-2)*35},rotation:{k*63},opacity:0,duration:1.3,immediateRender:false,ease:"power1.out"}},{segs[-1]["fim"]+k*.03});')
     anim.append(f'tl.fromTo("#progress",{{scaleX:0}},{{scaleX:1,duration:{dur},ease:"none"}},0);')
-    out=f'''<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="composition.css"></head><body><div id="root" data-composition-id="nina-hf" data-width="1080" data-height="1920" data-duration="{dur}" data-fps="30"><video id="base" class="clip" src="assets/base.mp4" data-start="0" data-duration="{dur}" data-track-index="0" muted playsinline></video><div class="wash"></div><header><div class="brand">NINA ME CONTOU</div><div class="tag">NA VARANDA</div></header>{''.join(parts)}{confetti}<footer><span>Uma história. Outra perspectiva.</span><small>COMENTE · SIGA</small></footer><div id="progress"></div><div class="demo">HISTÓRIA FICTÍCIA</div><div id="grain"></div><div id="wipe"></div><audio id="voice" src="assets/mix.wav" data-start="0" data-duration="{dur}" data-track-index="4"></audio><script src="assets/gsap.min.js"></script><script>const tl=gsap.timeline({{paused:true}});{''.join(anim)}window.__timelines=window.__timelines||{{}};window.__timelines['nina-hf']=tl;</script></div></body></html>'''
+    out=f'''<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="composition.css"></head><body><div id="root" data-composition-id="nina-hf" data-width="1080" data-height="1920" data-duration="{dur}" data-fps="30"><video id="base" class="clip" src="assets/base.mp4" data-start="0" data-duration="{dur}" data-track-index="0" muted playsinline></video><div class="wash"></div><header><div class="brand">NINA ME CONTOU</div><div class="tag">NA VARANDA</div></header>{''.join(parts)}{confetti}<footer><span>Uma história. Outra perspectiva.</span><small>COMENTE · SIGA</small></footer><div id="progress"></div><div class="demo">HISTÓRIA FICTÍCIA</div><div id="grain"></div><div id="wipe"></div><div id="flash"></div><audio id="voice" src="assets/mix.wav" data-start="0" data-duration="{dur}" data-track-index="4"></audio><script src="assets/gsap.min.js"></script><script>const tl=gsap.timeline({{paused:true}});{''.join(anim)}window.__timelines=window.__timelines||{{}};window.__timelines['nina-hf']=tl;</script></div></body></html>'''
     (pasta/'index.html').write_text(out,encoding='utf-8')
     return dur
 
-def mixar(voz,segs,dur,destino):
-    sr=48000;out=np.zeros(math.ceil(sr*dur));rng=np.random.default_rng(91)
-    def add(t,s):
-        i=int(t*sr);n=min(len(s),len(out)-i)
-        if n>0:out[i:i+n]+=s[:n]
+def _bed(dur,sr):
+    """Trilha original sintetizada (pulso grave + acordes), igual à versão aprovada."""
+    out=np.zeros(math.ceil(sr*dur));rng=np.random.default_rng(91)
+    def add(t,x):
+        i=int(t*sr);n=min(len(x),len(out)-i)
+        if n>0:out[i:i+n]+=x[:n]
     for k,t0 in enumerate(np.arange(0,dur,.6)):
         t=np.arange(int(.22*sr))/sr
         add(t0,.008*np.sin(2*np.pi*65*t)*np.exp(-t*25))
@@ -142,16 +147,20 @@ def mixar(voz,segs,dur,destino):
     for k,t0 in enumerate(np.arange(0,dur,2.4)):
         t=np.arange(int(1.8*sr))/sr;notes=[220,261.63,329.63] if k%2 else [196,246.94,293.66]
         add(t0,sum(.003*np.sin(2*np.pi*f*t)*np.exp(-t*2.8) for f in notes))
-    for s in segs[1:]:
-        t=np.arange(int(.18*sr))/sr
-        add(s['ini'],.006*rng.normal(size=len(t))*np.sin(np.pi*t/.18)**2)
-    for i,s in enumerate(segs):
-        if i==0 or i%4==0:
-            for k,f in enumerate([880,1174]):
-                t=np.arange(int(.14*sr))/sr
-                add(s['ini']+.15+k*.14,.018*np.sin(2*np.pi*f*t)*np.exp(-t*25))
-    bed=destino.with_name('bed.wav');sf.write(bed,out,sr)
-    sh(['ffmpeg','-y','-v','error','-i',voz,'-i',bed,'-filter_complex',f'[0:a]apad,atrim=duration={dur}[v];[v][1:a]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.89:level=disabled[a]','-map','[a]','-ar','48000',destino])
+    return out
+
+def mixar(voz,segs,dur,destino,ep=None):
+    """Voz + trilha (com ducking) + efeitos sincronizados com as animações."""
+    sr=SFX.SR;n=math.ceil(sr*dur);destino=Path(destino)
+    v48=destino.with_name('voz48.wav')
+    sh(['ffmpeg','-y','-v','error','-i',voz,'-ac','1','-ar',str(sr),v48])
+    v,_=sf.read(v48,dtype='float64');v=np.pad(v,(0,max(0,n-len(v))))[:n]
+    bed=audio_fx.tratar_trilha(_bed(dur,sr),sr)*2.4
+    bed=bed*audio_fx.ducking(v,sr)
+    efeitos=SFX.trilha_sfx(ep,segs,dur) if ep else np.zeros(n)
+    mix=audio_fx.finalizar(v+bed+efeitos[:n],sr)
+    sf.write(destino.with_name('bed.wav'),bed,sr);sf.write(destino.with_name('sfx.wav'),efeitos,sr)
+    sf.write(destino,mix,sr,subtype='PCM_16')
 
 def conferir(mp4,dur):
     data=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(mp4)]))
@@ -196,11 +205,11 @@ def renderizar(ep,pasta,raiz):
             shutil.copy(found[0],assets/f'arte{i}.png')
     shutil.copy(FONT,assets/'bold.ttf');shutil.copy(video/'assets/composition.css',work/'composition.css')
     shutil.copy(video/'node_modules/gsap/dist/gsap.min.js',assets/'gsap.min.js')
-    mixar(pasta/'voz.wav',segs,dur,assets/'mix.wav');compor(ep,segs,work)
+    mixar(pasta/'voz.wav',segs,dur,assets/'mix.wav',ep);compor(ep,segs,work)
     sh(['node',cli,'lint',work],env=env)
     final=pasta/(ep['id']+'.mp4');tmp=pasta/(ep['id']+'.rendering.mp4')
     sh(['node',cli,'render',work,'--output',tmp,'--workers',os.environ.get('NINA_HF_WORKERS','2'),'--no-browser-gpu'],env=env)
     conferir(tmp,dur);tmp.replace(final)
-    info={'motor':'hyperframes','versao':HYPERFRAMES_VERSION,'duracao':dur,'resolucao':[1080,1920],'fps':30,'voz':'pf_dora','cenario':ep.get('cenario','tarde'),'batidas':len(segs)}
+    info={'motor':'hyperframes','versao':HYPERFRAMES_VERSION,'duracao':dur,'resolucao':[1080,1920],'fps':30,'voz':'pt-BR-ThalitaNeural','audio':'pedalboard' if audio_fx.disponivel() else 'ffmpeg','sfx':len(SFX.eventos(ep,segs)),'cenario':ep.get('cenario','tarde'),'batidas':len(segs)}
     (pasta/'render.json').write_text(json.dumps(info,ensure_ascii=False,indent=2))
     return final

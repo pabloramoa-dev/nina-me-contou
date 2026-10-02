@@ -6,7 +6,7 @@
   python motor/produzir.py episodios/ep001-p1.json --rapido   # prévia 540p
 
 Etapas (pula o que já existe; apague o arquivo para refazer):
-  voz   -> saida/<id>/voz.wav + segs.json   (Thalita Neural pt-BR, masterizada)
+  voz   -> saida/<id>/voz.wav + segs.json   (Thalita Neural pt-BR, master Pedalboard)
   lip   -> saida/<id>/lip.json              (lip sync por amplitude, 30 fps)
   video -> saida/<id>/<id>.mp4              (Nina original + HyperFrames, padrão)
   tex   -> compatibilidade: mesma composição completa no motor HyperFrames
@@ -22,8 +22,7 @@ import argparse, json, os, shutil, subprocess, sys
 MOTOR = os.path.dirname(os.path.abspath(__file__))
 RAIZ = os.path.dirname(MOTOR)
 VOZ, RATE, GAP = "pt-BR-ThalitaNeural", "-6%", 0.25
-MASTER = ("highpass=f=90,equalizer=f=3000:width_type=o:width=1.5:g=3,"
-          "acompressor=threshold=-17dB:ratio=2.6:attack=6:release=140,volume=1.12")
+# Master da voz: motor/audio_fx.py (Spotify Pedalboard; cai no ffmpeg se faltar)
 
 
 def sh(cmd, **kw):
@@ -62,9 +61,10 @@ def main():
         with open(P("roteiro.txt"), "w", encoding="utf-8") as f:
             f.write("\n".join(b["fala"] for b in ep["batidas"]) + "\n")
         sh([sys.executable, os.path.join(MOTOR, "gerar_voz_thalita.py"), P("roteiro.txt"),
-            "--voice", VOZ, "--rate", RATE, "--gap", str(GAP),
+            "--voice", VOZ, f"--rate={RATE}", "--gap", str(GAP),
             "--out", P("bruta.wav"), "--seg-json", P("segs.json")])
-        sh(["ffmpeg", "-y", "-loglevel", "error", "-i", P("bruta.wav"), "-af", MASTER, P("voz.wav")])
+        from audio_fx import masterizar_voz
+        print("master da voz:", masterizar_voz(P("bruta.wav"), P("voz.wav")), flush=True)
 
     if quer("lip") and not os.path.exists(P("lip.json")):
         sh([sys.executable, os.path.join(MOTOR, "lipsync_amplitude.py"), P("voz.wav"), P("lip.json"), "30" if usa_hf else "24"])
