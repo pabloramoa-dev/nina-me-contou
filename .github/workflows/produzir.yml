@@ -85,6 +85,9 @@ jobs:
 
       - name: Renderizar
         id: r
+        env:
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}   # opcional (fotos "banco"); sem ela usa Openverse CC0
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }} # opcional
         run: |
           python motor/produzir.py "${{ matrix.episodio }}" --publicar-em saida_reels
           echo "id=$(basename '${{ matrix.episodio }}' .json)" >> $GITHUB_OUTPUT
