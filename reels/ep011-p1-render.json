@@ -1,6 +1,7 @@
 {
   "motor": "hyperframes",
-  "versao": "nina-hyperframes-thalita-4-visual",
+  "versao": "nina-hyperframes-thalita-5-fotos",
+  "fotos": 9,
   "duracao": 82.62,
   "resolucao": [
     1080,
@@ -8,7 +9,7 @@
   ],
   "fps": 30,
   "voz": "pt-BR-ThalitaNeural",
-  "audio": "ffmpeg",
+  "audio": "pedalboard",
   "sfx": 34,
   "visual": "v4",
   "lip": "rhubarb",

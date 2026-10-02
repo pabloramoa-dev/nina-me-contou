@@ -1,6 +1,7 @@
 {
   "motor": "hyperframes",
-  "versao": "nina-hyperframes-thalita-4-visual",
+  "versao": "nina-hyperframes-thalita-5-fotos",
+  "fotos": 5,
   "duracao": 85.14,
   "resolucao": [
     1080,
