@@ -62,3 +62,29 @@ def test_unknown_images_stay_explicit(tmp_path):
     ep,segs=fixture();ep['batidas'][0]['arte']=['imagem','assets/quiz.jpg.b64']
     H.compor(ep,segs,tmp_path)
     assert 'assets/arte0.png' in (tmp_path/'index.html').read_text()
+
+def test_sfx_follow_animation_events():
+    import numpy as np, sfx as S
+    ep,segs=fixture();ep['batidas'][0].update(expr='chocada',zoom=True)
+    ev=S.eventos(ep,segs);nomes=[n for _,n,_ in ev]
+    assert 'impacto' in nomes and 'whoosh_grave' in nomes and 'digitando' in nomes and nomes[-1]=='brilho'
+    assert all(0<=t<=8.2 for t,_,_ in ev)
+    pista=S.trilha_sfx(ep,segs,8.2)
+    assert len(pista)==int(np.ceil(8.2*S.SR)) and 0<np.abs(pista).max()<.5
+    for nome,f in S.SONS.items():
+        x=f();assert len(x)>100 and np.isfinite(x).all() and abs(np.abs(x).max()-1)<1e-6,nome
+
+def test_flash_only_on_shock(tmp_path):
+    ep,segs=fixture();H.compor(ep,segs,tmp_path);s=(tmp_path/'index.html').read_text()
+    assert 'id="flash"' in s and 'tl.fromTo("#flash"' not in s
+    ep['batidas'][1]['expr']='chocada';H.compor(ep,segs,tmp_path);s=(tmp_path/'index.html').read_text()
+    assert 'tl.fromTo("#flash"' in s and 'scale:1.08' in s
+
+def test_voice_master_keeps_length(tmp_path):
+    import numpy as np, soundfile as sf, audio_fx
+    sr=44100;t=np.arange(sr*2)/sr;x=.3*np.sin(2*np.pi*220*t)*(t<1.2)
+    sf.write(tmp_path/'b.wav',x,sr,subtype='PCM_16')
+    audio_fx.masterizar_voz(tmp_path/'b.wav',tmp_path/'v.wav')
+    y,sr2=sf.read(tmp_path/'v.wav');info=sf.info(tmp_path/'v.wav')
+    assert sr2==sr and len(y)==len(x) and info.channels==1 and info.subtype=='PCM_16' and np.abs(y).max()<=.9
+    g=audio_fx.ducking(y,sr);assert g[int(.6*sr)]<.5 and g[-1]>.85
