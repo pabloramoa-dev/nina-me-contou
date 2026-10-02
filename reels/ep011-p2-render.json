@@ -1,6 +1,6 @@
 {
   "motor": "hyperframes",
-  "versao": "nina-hyperframes-thalita-3-som",
+  "versao": "nina-hyperframes-thalita-4-visual",
   "duracao": 86.868,
   "resolucao": [
     1080,
@@ -8,8 +8,10 @@
   ],
   "fps": 30,
   "voz": "pt-BR-ThalitaNeural",
-  "audio": "pedalboard",
+  "audio": "ffmpeg",
   "sfx": 39,
+  "visual": "v4",
+  "lip": "rhubarb",
   "cenario": "noite",
   "batidas": 14
 }
