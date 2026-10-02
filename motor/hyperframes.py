@@ -8,10 +8,13 @@ from PIL import ImageFont
 from hf_assets import ICONS
 import audio_fx
 import sfx as SFX
+import visual_v4 as V4
 from render_version import HYPERFRAMES_VERSION
 
 FONT='/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
 TAIL=2.2
+def usa_v4():
+    return os.environ.get('NINA_VISUAL','v4')=='v4'
 TEXT_TYPES={'titulo','seguir','manchete','manchete_v','carimbo','direct','conversa','notificacao'}
 
 def sh(cmd,**kw):
@@ -75,12 +78,18 @@ def chunks(text,width=840):
     return out
 
 def compor(ep,segs,pasta):
-    dur=validar_timeline(ep,segs);parts=[];anim=[]
+    dur=validar_timeline(ep,segs);parts=[];anim=[];v4=usa_v4()
     for i,(b,s) in enumerate(zip(ep['batidas'],segs)):
         a=float(s['ini']);z=float(s['fim']);d=z-a
         spec=b.get('arte') or [None];tipo=spec[0];arg=spec[1] if len(spec)>1 else None
         tag=b.get('hf',{}).get('selo') or f'EP {ep.get("ep",0):02d} · PARTE {ep.get("parte",1)} · NINA CONTA'
-        title,size=bloco(titulo(b,ep,i))
+        if v4:
+            title,size=V4.bloco_titulo(titulo(b,ep,i))
+            h1=f'<h1 style="font-size:{size}px"><span class="ink">{title}</span>{V4.MARKER}</h1>'
+            anim.extend(V4.titulo(i,a,b.get('expr')=='chocada',i==0))
+        else:
+            title,size=bloco(titulo(b,ep,i))
+            h1=f'<h1 style="font-size:{size}px">{title}</h1>'
         body,body_size=bloco(arg if arg is not None else (b.get('tela') or b['fala']),max_height=225,max_size=34,min_size=24,width=505 if tipo in ICONS else 790)
         if tipo in ICONS:
             art=ICONS[tipo]+f'<div class="note" style="font-size:{body_size}px">{body}</div>'
@@ -93,7 +102,7 @@ def compor(ep,segs,pasta):
             label='CONTINUAÇÃO' if tipo=='seguir' and ep.get('parte')==1 else 'NINA ME CONTOU'
             art=f'<div class="bubble" style="font-size:{body_size}px"><small>{label}</small>{body}{wave}<div class="underline"></div></div>'
         end=dur if i==len(segs)-1 else z
-        parts.append(f'<section id="p{i}" class="clip panel" data-start="{a}" data-duration="{end-a}" data-track-index="2"><div id="c{i}" class="card"><div class="tape"></div><div class="eyebrow">{html.escape(str(tag))}</div><h1 style="font-size:{size}px">{title}</h1><div class="art">{art}</div></div></section>')
+        parts.append(f'<section id="p{i}" class="clip panel" data-start="{a}" data-duration="{end-a}" data-track-index="2"><div id="c{i}" class="card"><div class="tape"></div><div class="eyebrow">{html.escape(str(tag))}</div>{h1}<div class="art">{art}</div></div></section>')
         if i:
             anim.append(f'tl.fromTo("#c{i}",{{y:55,rotation:{-3 if i%2 else 3},scale:.94,opacity:0}},{{y:0,rotation:0,scale:1,opacity:1,duration:.42,immediateRender:false,ease:"back.out(1.15)"}},{a});')
         anim.append(f'tl.to("#c{i} .art",{{y:-8,duration:{max(.1,d-.5)},ease:"none"}},{a+.5});')
@@ -110,8 +119,12 @@ def compor(ep,segs,pasta):
         if tipo=='coracao':anim.append(f'tl.fromTo("#p{i} .heartpath",{{scale:.92,svgOrigin:"140 130"}},{{scale:1,duration:{active/4},yoyo:true,repeat:3,immediateRender:false}},{a});')
         if tipo in ('direct','notificacao'):anim.append(f'tl.fromTo("#p{i} .wave i",{{scaleY:.45}},{{scaleY:1,duration:{min(.24,max(.05,d/8))},stagger:.015,yoyo:true,repeat:4,immediateRender:false}},{a});')
         anim.append(f'tl.fromTo("#p{i} .underline",{{scaleX:0}},{{scaleX:1,duration:.8,immediateRender:false,ease:"power2.out"}},{a});')
-        ws=b['fala'].split();total=sum(max(2,len(w)) for w in ws);t=a;j=0
         fim_fala=float(s.get('fim_fala',z-.25));fim_fala=max(a+.01,min(z,fim_fala))
+        if v4:
+            wt=V4.tempos(b,a,fim_fala);kws=V4.palavras_chave(b,[w for w,_,_ in wt])
+            cp,ca=V4.legenda(i,b,s,wt,kws,z);parts.extend(cp);anim.extend(ca)
+            continue
+        ws=b['fala'].split();total=sum(max(2,len(w)) for w in ws);t=a;j=0
         groups=chunks(b['fala'])
         for k,g in enumerate(groups):
             start=t;spans=[]
@@ -130,7 +143,7 @@ def compor(ep,segs,pasta):
         confetti+=f'<div id="f{k}" class="confetti" style="left:{x}px;background:{color}"></div>'
         anim.append(f'tl.fromTo("#f{k}",{{y:0,opacity:1,rotation:0}},{{y:{500+k*11},x:{(k%5-2)*35},rotation:{k*63},opacity:0,duration:1.3,immediateRender:false,ease:"power1.out"}},{segs[-1]["fim"]+k*.03});')
     anim.append(f'tl.fromTo("#progress",{{scaleX:0}},{{scaleX:1,duration:{dur},ease:"none"}},0);')
-    out=f'''<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="composition.css"></head><body><div id="root" data-composition-id="nina-hf" data-width="1080" data-height="1920" data-duration="{dur}" data-fps="30"><video id="base" class="clip" src="assets/base.mp4" data-start="0" data-duration="{dur}" data-track-index="0" muted playsinline></video><div class="wash"></div><header><div class="brand">NINA ME CONTOU</div><div class="tag">NA VARANDA</div></header>{''.join(parts)}{confetti}<footer><span>Uma história. Outra perspectiva.</span><small>COMENTE · SIGA</small></footer><div id="progress"></div><div class="demo">HISTÓRIA FICTÍCIA</div><div id="grain"></div><div id="wipe"></div><div id="flash"></div><audio id="voice" src="assets/mix.wav" data-start="0" data-duration="{dur}" data-track-index="4"></audio><script src="assets/gsap.min.js"></script><script>const tl=gsap.timeline({{paused:true}});{''.join(anim)}window.__timelines=window.__timelines||{{}};window.__timelines['nina-hf']=tl;</script></div></body></html>'''
+    out=f'''<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="composition.css">{"<style>"+V4.CSS+"</style>" if v4 else ""}</head><body><div id="root" class="{"v4" if v4 else ""}" data-composition-id="nina-hf" data-width="1080" data-height="1920" data-duration="{dur}" data-fps="30"><video id="base" class="clip" src="assets/base.mp4" data-start="0" data-duration="{dur}" data-track-index="0" muted playsinline></video><div class="wash"></div><header><div class="brand">NINA ME CONTOU</div><div class="tag">NA VARANDA</div></header>{''.join(parts)}{confetti}<footer><span>Uma história. Outra perspectiva.</span><small>COMENTE · SIGA</small></footer><div id="progress"></div><div class="demo">HISTÓRIA FICTÍCIA</div><div id="grain"></div><div id="wipe"></div><div id="flash"></div><audio id="voice" src="assets/mix.wav" data-start="0" data-duration="{dur}" data-track-index="4"></audio><script src="assets/gsap.min.js"></script><script>const tl=gsap.timeline({{paused:true}});{''.join(anim)}window.__timelines=window.__timelines||{{}};window.__timelines['nina-hf']=tl;</script></div></body></html>'''
     (pasta/'index.html').write_text(out,encoding='utf-8')
     return dur
 
@@ -157,7 +170,8 @@ def mixar(voz,segs,dur,destino,ep=None):
     v,_=sf.read(v48,dtype='float64');v=np.pad(v,(0,max(0,n-len(v))))[:n]
     bed=audio_fx.tratar_trilha(_bed(dur,sr),sr)*2.4
     bed=bed*audio_fx.ducking(v,sr)
-    efeitos=SFX.trilha_sfx(ep,segs,dur) if ep else np.zeros(n)
+    extra=V4.eventos_extra(ep,segs) if (ep and usa_v4()) else ()
+    efeitos=SFX.trilha_sfx(ep,segs,dur,extra) if ep else np.zeros(n)
     mix=audio_fx.finalizar(v+bed+efeitos[:n],sr)
     sf.write(destino.with_name('bed.wav'),bed,sr);sf.write(destino.with_name('sfx.wav'),efeitos,sr)
     sf.write(destino,mix,sr,subtype='PCM_16')
@@ -203,6 +217,8 @@ def renderizar(ep,pasta,raiz):
                    if p.name==f'Arte{i}.png' or p.name.startswith(f'Arte{i}_')]
             if len(found)!=1:raise ValueError(f'Arte {i} ausente')
             shutil.copy(found[0],assets/f'arte{i}.png')
+    if usa_v4():
+        shutil.copy(V4.CAVEAT,assets/'caveat.ttf');shutil.copy(V4.POPPINS,assets/'poppins-xb.ttf')
     shutil.copy(FONT,assets/'bold.ttf');shutil.copy(video/'assets/composition.css',work/'composition.css')
     shutil.copy(video/'node_modules/gsap/dist/gsap.min.js',assets/'gsap.min.js')
     mixar(pasta/'voz.wav',segs,dur,assets/'mix.wav',ep);compor(ep,segs,work)
@@ -210,6 +226,6 @@ def renderizar(ep,pasta,raiz):
     final=pasta/(ep['id']+'.mp4');tmp=pasta/(ep['id']+'.rendering.mp4')
     sh(['node',cli,'render',work,'--output',tmp,'--workers',os.environ.get('NINA_HF_WORKERS','2'),'--no-browser-gpu'],env=env)
     conferir(tmp,dur);tmp.replace(final)
-    info={'motor':'hyperframes','versao':HYPERFRAMES_VERSION,'duracao':dur,'resolucao':[1080,1920],'fps':30,'voz':'pt-BR-ThalitaNeural','audio':'pedalboard' if audio_fx.disponivel() else 'ffmpeg','sfx':len(SFX.eventos(ep,segs)),'cenario':ep.get('cenario','tarde'),'batidas':len(segs)}
+    info={'motor':'hyperframes','versao':HYPERFRAMES_VERSION,'duracao':dur,'resolucao':[1080,1920],'fps':30,'voz':'pt-BR-ThalitaNeural','audio':'pedalboard' if audio_fx.disponivel() else 'ffmpeg','sfx':len(SFX.eventos(ep,segs)),'visual':'v4' if usa_v4() else 'v3','lip':os.environ.get('NINA_LIP','rhubarb'),'cenario':ep.get('cenario','tarde'),'batidas':len(segs)}
     (pasta/'render.json').write_text(json.dumps(info,ensure_ascii=False,indent=2))
     return final

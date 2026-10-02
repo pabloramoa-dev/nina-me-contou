@@ -64,8 +64,60 @@ def boca_expr(expr, bc):
                arc_center=bc + UP * 0.16).set_stroke(BATOM, 10)
 
 
+DENTE = "#fffaf0"
+LINGUA = "#e07a86"
+
+
+def _lab(w, h, sw=7):
+    return Ellipse(width=w, height=h, fill_color=BOCA_IN, fill_opacity=1, stroke_color=BATOM, stroke_width=sw)
+
+
+def _dentes(boca, w, h, baixo=False):
+    d = Rectangle(width=w, height=h, fill_color=DENTE, fill_opacity=1, stroke_width=0)
+    if baixo:
+        return d.move_to(boca.get_bottom() + UP * (h / 2 + 0.012))
+    return d.move_to(boca.get_top() + DOWN * (h / 2 + 0.012))
+
+
+def _lingua(boca, w, h, cima=False):
+    l = Ellipse(width=w, height=h, fill_color=LINGUA, fill_opacity=1, stroke_width=0)
+    if cima:
+        return l.move_to(boca.get_top() + DOWN * (h / 2 + 0.02))
+    return l.move_to(boca.get_bottom() + UP * (h / 2 + 0.008))
+
+
+def boca_fonema(letra, largura=0.30):
+    """Formatos de boca do Rhubarb (A–H). Mantém traço e cores da Nina."""
+    w = largura
+    if letra == "A":                       # M, B, P — lábios apertados
+        return Ellipse(width=w * 0.85, height=0.055, fill_color=BATOM, fill_opacity=1,
+                       stroke_color=BATOM, stroke_width=7)
+    if letra == "B":                       # S, T, I — dentes cerrados
+        b = _lab(w * 1.05, 0.12)
+        return VGroup(b, _dentes(b, w * 0.78, 0.045), _dentes(b, w * 0.7, 0.03, baixo=True))
+    if letra == "C":                       # É, Ê
+        b = _lab(w, 0.18)
+        return VGroup(b, _dentes(b, w * 0.66, 0.045), _lingua(b, w * 0.5, 0.06))
+    if letra == "D":                       # A aberto
+        b = _lab(w * 1.08, 0.30)
+        return VGroup(b, _dentes(b, w * 0.7, 0.05), _lingua(b, w * 0.6, 0.10))
+    if letra == "E":                       # Ó
+        return _lab(w * 0.72, 0.22)
+    if letra == "F":                       # U, bico
+        return _lab(w * 0.42, 0.15, sw=9)
+    if letra == "G":                       # F, V — dente no lábio
+        b = _lab(w * 0.95, 0.085)
+        return VGroup(b, _dentes(b, w * 0.6, 0.05))
+    if letra == "H":                       # L — língua no céu da boca
+        b = _lab(w, 0.20)
+        return VGroup(b, _lingua(b, w * 0.55, 0.09, cima=True))
+    return boca_fala("meia", largura)
+
+
 def boca_fala(estado, largura=0.30):
-    """Boca aberta do lip sync (meia / aberta)."""
+    """Boca aberta do lip sync (meia / aberta ou fonema A–H do Rhubarb)."""
+    if estado in ("A", "B", "C", "D", "E", "F", "G", "H"):
+        return boca_fonema(estado, largura)
     if estado == "meia":
         return Ellipse(width=largura, height=0.13, fill_color=BOCA_IN, fill_opacity=1,
                        stroke_color=BATOM, stroke_width=7)

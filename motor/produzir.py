@@ -67,7 +67,8 @@ def main():
         print("master da voz:", masterizar_voz(P("bruta.wav"), P("voz.wav")), flush=True)
 
     if quer("lip") and not os.path.exists(P("lip.json")):
-        sh([sys.executable, os.path.join(MOTOR, "lipsync_amplitude.py"), P("voz.wav"), P("lip.json"), "30" if usa_hf else "24"])
+        lip = "lipsync_rhubarb.py" if os.environ.get("NINA_LIP", "rhubarb") == "rhubarb" else "lipsync_amplitude.py"
+        sh([sys.executable, os.path.join(MOTOR, lip), P("voz.wav"), P("lip.json"), "30" if usa_hf else "24"])
 
     final = P(ep["id"] + ".mp4")
     if usa_hf and (quer("video") or quer("tex") or quer("mux")) and not os.path.exists(final):

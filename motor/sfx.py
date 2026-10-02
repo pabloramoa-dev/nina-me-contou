@@ -195,11 +195,11 @@ def eventos(ep, segs):
     return ev
 
 
-def trilha_sfx(ep, segs, dur):
+def trilha_sfx(ep, segs, dur, extra=()):
     """Pista só de efeitos, já com volume, na duração do vídeo."""
     out = np.zeros(int(np.ceil(dur * SR)))
     cache = {}
-    for t0, nome, vol in eventos(ep, segs):
+    for t0, nome, vol in list(eventos(ep, segs)) + list(extra):
         if nome not in cache:
             cache[nome] = SONS[nome]()
         s = cache[nome] * vol
