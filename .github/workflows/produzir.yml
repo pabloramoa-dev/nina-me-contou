@@ -5,6 +5,7 @@ name: Produzir episódios
 # Cada parte roda numa máquina própria, em paralelo. Nada é publicado aqui.
 # Todo vídeo sai com o CTA de seguir no FINAL (motor/cta.py).
 # Voz oficial: Microsoft Thalita Neural pt-BR, rate -6%.
+# Visual v4 (legenda pílula, título manuscrito, partículas) + lip sync Rhubarb.
 
 on:
   push:
@@ -33,6 +34,8 @@ jobs:
       qtd: ${{ steps.l.outputs.qtd }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main   # sempre a main mais nova: não refaz o que outra rodada já gravou
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -56,6 +59,8 @@ jobs:
         episodio: ${{ fromJson(needs.listar.outputs.lista) }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
