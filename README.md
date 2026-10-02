@@ -83,3 +83,12 @@ Blocos do catálogo HyperFrames adaptados ao estilo papel da Nina (`motor/visual
 - **Boca por fonema** com Rhubarb Lip Sync (MIT, modo fonético): 8 formatos de boca. Sem o Rhubarb, cai sozinho no lip sync por volume.
 
 Para voltar ao visual anterior numa execução: `NINA_VISUAL=v3` e/ou `NINA_LIP=amplitude`.
+
+## Fotos reais (v5)
+
+Os objetos da história (aliança, relógio, carro, porta, celular, café, mala, perfume…) aparecem como **foto real em polaroid colada**, com tom de papel, granulado, fita e legenda. O motor (`motor/banco_imagens.py`) **baixa sozinho** as fotos de cada episódio no render — nada a fazer à mão.
+
+- Fonte: Pexels e Pixabay se existirem os secrets `PEXELS_API_KEY` / `PIXABAY_API_KEY` (opcionais, gratuitos); sem eles, Openverse (só CC0, StockSnap/Rawpixel). Sem atribuição obrigatória; créditos ficam em `saida/<id>/fotos.json` e no log.
+- Roteiro: `"foto": "busca em inglês"` ou `"foto": ["busca", "LEGENDA"]` pede a foto exata; sem isso, as artes de objeto usam a busca padrão (`FOTO_PADRAO`).
+- Resultados com pessoas, ilustrações ou recortes são descartados. Se a busca falhar, a batida volta para a ilustração.
+- `"foto": false` mantém a ilustração naquela batida; `NINA_FOTOS=0` desliga.
