@@ -1,0 +1,119 @@
+name: Produzir vídeo avulso
+
+# Vídeos AVULSOS da Nina, feitos sob demanda (fora da fila automática do Instagram).
+# Roteiro em avulsos/<id>.json  ->  MP4 + capa + Story + prévia 720p + legenda em avulsos_prontos/.
+# NADA aqui é publicado: o Pablo baixa e posta onde quiser (TikTok, Reels manual etc.).
+# Para entrar na fila automática, o roteiro vai em episodios/ (par p1/p2), não aqui.
+
+on:
+  push:
+    branches: [main]
+    paths: ["avulsos/**.json"]
+  workflow_dispatch:
+
+concurrency:
+  group: nina-avulso
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  listar:
+    runs-on: ubuntu-latest
+    outputs:
+      lista: ${{ steps.l.outputs.lista }}
+      qtd: ${{ steps.l.outputs.qtd }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: l
+        run: |
+          python3 - <<'PY' > /tmp/p.txt
+          import glob, hashlib, os, sys
+          sys.path.insert(0, "motor")
+          from render_version import versao
+          for f in sorted(glob.glob("avulsos/*.json")):
+              i = os.path.splitext(os.path.basename(f))[0]
+              h = hashlib.sha1(open(f, "rb").read() + versao().encode()).hexdigest()[:16]
+              feito = f"avulsos_prontos/{i}.hash"
+              if not (os.path.exists(f"avulsos_prontos/{i}.mp4") and os.path.exists(feito) and open(feito).read().strip() == h):
+                  print(f)
+          PY
+          cat /tmp/p.txt
+          echo "lista=$(python3 -c "import json;print(json.dumps(open('/tmp/p.txt').read().split()))")" >> $GITHUB_OUTPUT
+          echo "qtd=$(wc -l < /tmp/p.txt)" >> $GITHUB_OUTPUT
+
+  renderizar:
+    needs: listar
+    if: needs.listar.outputs.qtd != '0'
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    strategy:
+      fail-fast: false
+      max-parallel: 6
+      matrix:
+        roteiro: ${{ fromJson(needs.listar.outputs.lista) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Dependências de sistema
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg pkg-config libcairo2-dev libpango1.0-dev espeak-ng fonts-dejavu-core
+          mkdir -p ~/.fonts
+          for p in Bold Regular; do
+            curl -sSL -o ~/.fonts/Poppins-$p.ttf "https://github.com/google/fonts/raw/main/ofl/poppins/Poppins-$p.ttf"
+          done
+          fc-cache -f
+      - name: Pacotes Python
+        run: |
+          SETUPTOOLS_USE_DISTUTILS=stdlib pip install --no-build-isolation srt || true
+          pip install -r requirements-estudio.txt
+      - uses: ./.github/actions/setup-hyperframes
+      - name: Renderizar
+        id: r
+        env:
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+          NINA_MAX_DUR: "180"
+        run: |
+          F="${{ matrix.roteiro }}"; ID=$(basename "$F" .json)
+          python motor/produzir.py "$F"
+          mkdir -p out
+          cp "saida/$ID/$ID.mp4" "out/$ID.mp4"
+          python -c "from PIL import Image;Image.open('saida/$ID/capa.png').convert('RGB').save('out/$ID-capa.jpg',quality=90)"
+          python motor/story.py "out/$ID.mp4" "out/$ID-story.mp4"
+          ffmpeg -v error -y -i "out/$ID.mp4" -vf scale=720:-2 -c:v libx264 -crf 26 -preset medium -c:a aac -b:a 128k -movflags +faststart "out/$ID-720p.mp4"
+          cp "saida/$ID/legenda.txt" "out/$ID-legenda.txt"
+          [ -f "saida/$ID/fotos.json" ] && cp "saida/$ID/fotos.json" "out/$ID-fotos.json" || true
+          python3 -c "import hashlib,sys;sys.path.insert(0,'motor');from render_version import versao;print(hashlib.sha1(open('$F','rb').read()+versao().encode()).hexdigest()[:16])" > "out/$ID.hash"
+          echo "id=$ID" >> $GITHUB_OUTPUT
+      - uses: actions/upload-artifact@v4
+        with:
+          name: avulso-${{ steps.r.outputs.id }}
+          path: out/
+          retention-days: 3
+
+  gravar:
+    needs: renderizar
+    if: always() && needs.renderizar.result != 'skipped'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: avulso-*
+          merge-multiple: true
+          path: avulsos_prontos/
+      - name: Gravar no repositório
+        run: |
+          git config user.name "nina-bot"
+          git config user.email "actions@github.com"
+          git add avulsos_prontos/
+          git diff --cached --quiet && exit 0
+          git commit -m "estúdio: vídeos avulsos prontos [skip ci]"
+          for i in 1 2 3; do git pull --rebase && git push && exit 0; sleep 5; done
+          exit 1
