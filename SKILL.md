@@ -34,7 +34,17 @@ O padrão aprovado inclui:
 - palavra falada com destaque amarelo + pulo de escala; flash + impacto nas batidas `chocada`;
 - CTA somente no final;
 - capa e Story gerados a partir do mesmo episódio;
-- duração acompanhando a fala, sem acelerar a voz apenas para caber em um minuto.
+- duração acompanhando a fala, sem acelerar a voz apenas para caber em um minuto;
+- **fotos reais de banco de imagens** em polaroid colada (`motor/banco_imagens.py`), baixadas sozinhas a cada render.
+
+## Fotos reais (banco de imagens)
+
+- O motor baixa as fotos sozinho no render (Pexels/Pixabay se houver secret, senão Openverse CC0 sem chave).
+- Batidas com arte de objeto (aliança, relógio, carro, porta, celular, café, mala, perfume...) viram foto automaticamente; o texto curto da arte vira a legenda da polaroid.
+- Ao escrever roteiros novos, prefira pedir a foto exata da cena com `"foto"` (busca em **inglês**, objeto ou lugar concreto):
+  `"foto": "glove compartment car"` ou `"foto": ["velvet ring box", "CAIXINHA"]`. Funciona até em batida sem `arte`.
+- Nunca pedir foto de pessoa/rosto (a história é ficção de traição). Pessoas, títulos, conversas, manchetes, coração, interrogação e extrato continuam ilustrados.
+- `"foto": false` numa batida mantém a ilustração. `NINA_FOTOS=0` desliga tudo.
 
 ## Fluxo de produção
 
@@ -56,7 +66,7 @@ O padrão aprovado inclui:
 
 ## Configuração atual
 
-- Render version: `nina-hyperframes-thalita-4-visual`.
+- Render version: `nina-hyperframes-thalita-5-fotos`.
 - Voz: `pt-BR-ThalitaNeural`.
 - Rate: `-6%`.
 - Gap entre batidas: `0.25s`.
