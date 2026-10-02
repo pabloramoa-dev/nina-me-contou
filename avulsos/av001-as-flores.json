@@ -1,0 +1,29 @@
+{
+ "id": "av001-as-flores",
+ "avulso": true,
+ "titulo": "AS FLORES ERRADAS",
+ "temporada": "Avulsos",
+ "cenario": "tarde",
+ "batidas": [
+  {"fala": "Ela recebeu flores no aniversário de casamento. O problema é que não eram pra ela.", "expr": "ironica", "arte": ["titulo"], "destaque": ["não", "eram"]},
+  {"fala": "Quem me mandou foi a Renata, quarenta anos, casada com o Sérgio há doze.", "expr": "neutra", "arte": ["direct", "RENATA, 40"], "destaque": ["Renata,"], "tela": "Quem me mandou foi a Renata, 40 anos, casada com o Sérgio há 12."},
+  {"fala": "O Sérgio nunca foi de dar flor. Doze anos, e ela contava nos dedos as vezes.", "expr": "neutra", "arte": ["calendario", "12 ANOS"], "destaque": ["nunca"]},
+  {"fala": "Por isso ela estranhou quando o entregador tocou a campainha de manhã cedo.", "expr": "desconfiada", "arte": ["porta"], "foto": "front door doorbell", "destaque": ["campainha"]},
+  {"fala": "Um buquê enorme. Rosas vermelhas. E um cartãozinho preso no laço.", "expr": "neutra", "arte": null, "foto": ["red roses bouquet", "ROSAS VERMELHAS"], "destaque": ["Rosas", "vermelhas."]},
+  {"fala": "No cartão estava escrito: obrigado pela melhor noite da minha vida.", "expr": "chocada", "arte": ["manchete", "A MELHOR NOITE"], "destaque": ["melhor", "noite"], "zoom": true},
+  {"fala": "Só que aniversário de casamento é jantar em casa. Eles nem tinham saído.", "expr": "desconfiada", "arte": ["interrogacao"], "destaque": ["nem", "saído."]},
+  {"fala": "Ela virou o cartão. Atrás, o endereço de entrega. Rua das Acácias, número quarenta.", "expr": "desconfiada", "arte": null, "foto": ["greeting card envelope", "RUA DAS ACÁCIAS, 40"], "destaque": ["endereço"]},
+  {"fala": "A casa dela é na Rua das Acácias. Número catorze.", "expr": "chocada", "arte": ["porta", "Nº 14"], "foto": ["house number on wall", "Nº 14"], "destaque": ["catorze."]},
+  {"fala": "A floricultura tinha errado. Invertido os números. Quatro e um, um e quatro.", "expr": "ironica", "arte": ["manchete", "40 ≠ 14"], "destaque": ["errado."]},
+  {"fala": "E no número quarenta mora a Cláudia. A vizinha que o Sérgio sempre diz que é muito chata.", "expr": "brava", "arte": ["direct", "CLÁUDIA, Nº 40"], "destaque": ["muito", "chata."]},
+  {"fala": "A Renata ligou pra floricultura fingindo que era a dona do pedido.", "expr": "desconfiada", "arte": ["celular", "Floricultura"], "foto": ["smartphone call", "FLORICULTURA"], "destaque": ["fingindo"]},
+  {"fala": "A atendente confirmou tudo. Pedido feito ontem. Pago no cartão. Em nome de Sérgio.", "expr": "chocada", "arte": ["extrato", "CARTÃO · SÉRGIO"], "destaque": ["Sérgio."], "zoom": true},
+  {"fala": "Ela não jogou fora. Arrumou as rosas num vaso, bem no meio da mesa do jantar.", "expr": "ironica", "arte": null, "foto": ["roses in vase on dining table", "NO MEIO DA MESA"], "destaque": ["meio", "da", "mesa"]},
+  {"fala": "E deixou o cartãozinho encostado no vaso. Virado pra cadeira dele.", "expr": "ironica", "arte": null, "destaque": ["Virado", "pra", "cadeira"]},
+  {"fala": "O Sérgio chegou às oito. Olhou as flores. Olhou o cartão. E ficou branco.", "expr": "neutra", "arte": ["relogio", "20:00"], "destaque": ["branco."]},
+  {"fala": "Ela só perguntou: quer que eu leve pra vizinha, ou você leva?", "expr": "ironica", "arte": ["conversa", "Quer que eu leve pra vizinha, ou você leva?"], "destaque": ["vizinha,"]},
+  {"fala": "E você? No lugar dela, entregava as flores ou entregava as malas dele? Me conta aqui embaixo.", "expr": "ironica", "arte": ["manchete_v", "FLORES OU MALAS?"], "destaque": ["flores", "malas"]}
+ ],
+ "fim": "FLORES OU MALAS?",
+ "legenda_post": "Ela recebeu rosas no aniversário de casamento. Lindas. Com cartão e tudo. 🌹\n\nSó que não eram pra ela. A floricultura inverteu o número da casa… e o cartão era pra vizinha. 😶\n\nNo lugar dela, você entregava as flores ou entregava as malas dele? Me conta aqui embaixo. 👇\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em causo de família.\n\n#traição #casamento #vizinha #storytime #históriadetraição #desabafo #fofoca #ninamecontou"
+}
