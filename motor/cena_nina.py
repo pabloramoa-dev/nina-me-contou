@@ -221,10 +221,13 @@ class Capa(Scene):
     def construct(self):
         V.estilo("papel")
         self.add(NL.varanda(EP["cenario"])["grupo"])
-        expr = "desconfiada" if EP["parte"] == 1 else "chocada"
+        expr = "desconfiada" if EP.get("parte", 1) == 1 else "chocada"
         p = NL.posicionar(NL.nina(expr, EP["cenario"]), escala=1.9, pos=np.array([0.1, -3.6, 0]))
         V.colar(self, p, espessura=22)
-        sel = O.titulo(EP["titulo"], EP["ep"], EP["parte"])
+        if EP.get("avulso"):   # vídeo avulso: só o nome da história, sem "EP · PARTE"
+            sel = O.titulo(EP["titulo"])
+        else:
+            sel = O.titulo(EP["titulo"], EP["ep"], EP["parte"])
         if sel.width > 7.3:
             sel.scale(7.3 / sel.width)
         self.add(sel.move_to([0, 2.2, 0]))
