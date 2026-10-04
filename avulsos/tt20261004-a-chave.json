@@ -1,0 +1,83 @@
+{
+  "id": "tt20261004-a-chave",
+  "avulso": true,
+  "titulo": "A CHAVE NA MALA",
+  "temporada": "TikTok diário",
+  "cenario": "tarde",
+  "batidas": [
+    {
+      "fala": "Ele disse que ia viajar a trabalho. Mas a chave na mala abriu outra história.",
+      "expr": "desconfiada",
+      "arte": [
+        "titulo"
+      ]
+    },
+    {
+      "fala": "Na história de hoje, a Marina foi guardar uma camisa na mala do marido e encontrou uma chave com uma fita vermelha.",
+      "expr": "neutra",
+      "foto": [
+        "suitcase with shirt",
+        "A VIAGEM"
+      ]
+    },
+    {
+      "fala": "Perguntou de onde era. Ele respondeu sem olhar: do armário lá da firma.",
+      "expr": "ironica",
+      "arte": [
+        "conversa",
+        "É DO ARMÁRIO DA FIRMA"
+      ]
+    },
+    {
+      "fala": "Só que, naquela tarde, a vizinha apareceu procurando uma chave. Com fita vermelha.",
+      "expr": "chocada",
+      "foto": [
+        "key red ribbon",
+        "FITA VERMELHA"
+      ],
+      "zoom": true
+    },
+    {
+      "fala": "Marina mostrou a que tinha encontrado. A mulher sorriu: essa mesmo! Seu marido ficou de devolver.",
+      "expr": "chocada",
+      "arte": [
+        "conversa",
+        "ELE FICOU DE DEVOLVER"
+      ]
+    },
+    {
+      "fala": "A vizinha percebeu o silêncio e tentou consertar: ele só foi lá arrumar o chuveiro.",
+      "expr": "desconfiada",
+      "foto": [
+        "bathroom shower",
+        "O CONSERTO"
+      ]
+    },
+    {
+      "fala": "Marina olhou para o banheiro de casa. O chuveiro estava quebrado havia três semanas.",
+      "expr": "brava",
+      "arte": [
+        "calendario",
+        "3 SEMANAS"
+      ]
+    },
+    {
+      "fala": "Quando ele voltou, a mala estava na porta. Em cima, um bilhete: aproveita a viagem e leva suas ferramentas.",
+      "expr": "ironica",
+      "foto": [
+        "suitcase front door",
+        "BOA VIAGEM"
+      ]
+    },
+    {
+      "fala": "A chave podia até ser do armário. Mas a desculpa não fechava. Você perguntava mais ou já tinha ouvido o suficiente?",
+      "expr": "ironica",
+      "arte": [
+        "manchete_v",
+        "A DESCULPA NÃO FECHAVA"
+      ]
+    }
+  ],
+  "fim": "VOCÊ ACREDITARIA?",
+  "legenda_post": "A chave tinha uma fita vermelha. A desculpa, um problema maior. 🗝️😳\nVocê acreditaria nessa história do chuveiro? Conta nos comentários.\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Storytime #Fofoca #Historias #Relacionamento"
+}
