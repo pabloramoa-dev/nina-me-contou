@@ -1,0 +1,27 @@
+{
+  "episode": "tt20261004-a-chave",
+  "brandId": 7228264,
+  "account": "ninamecontou",
+  "id": 387620675,
+  "uuid": "-1498177178123091642",
+  "date": "2026-10-04T01:05:00-03:00",
+  "timezone": "America/Sao_Paulo",
+  "status": "agendado",
+  "providerStatus": "PENDING",
+  "autoPublish": true,
+  "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7228264&openWithPostUuid=-1498177178123091642",
+  "sourceUrl": "https://raw.githubusercontent.com/pabloramoa-dev/nina-me-contou/main/avulsos_prontos/tt20261004-a-chave.mp4",
+  "mediaUrl": "https://static.metricool.com/planner/202610/7228264-file-275227628448021878.mp4",
+  "caption": "A chave tinha uma fita vermelha. A desculpa, um problema maior. 🗝️😳\nVocê acreditaria nessa história do chuveiro? Conta nos comentários.\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Storytime #Fofoca #Historias #Relacionamento\n",
+  "validation": {
+    "workflowRun": 37173961925,
+    "conclusion": "success",
+    "width": 1080,
+    "height": 1920,
+    "durationSeconds": 69.633333,
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "visualSampleChecked": true
+  },
+  "monthlyLimit": 20
+}
