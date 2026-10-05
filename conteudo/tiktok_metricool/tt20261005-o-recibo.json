@@ -1,0 +1,27 @@
+{
+  "episode": "tt20261005-o-recibo",
+  "brandId": 7228264,
+  "account": "ninamecontou",
+  "id": 388452779,
+  "uuid": "535972572243969003",
+  "date": "2026-10-05T18:00:00-03:00",
+  "timezone": "America/Sao_Paulo",
+  "status": "agendado",
+  "providerStatus": "PENDING",
+  "autoPublish": true,
+  "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7228264&openWithPostUuid=535972572243969003",
+  "sourceUrl": "https://raw.githubusercontent.com/pabloramoa-dev/nina-me-contou/main/avulsos_prontos/tt20261005-o-recibo.mp4",
+  "mediaUrl": "https://static.metricool.com/planner/202610/7228264-file-8593621836458566229.mp4",
+  "caption": "Um recibo amassado revelou uma noite inteira de mentiras. 🧾😳\nVocê confrontaria na hora ou esperaria ele perguntar?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Storytime #Fofoca #Relacionamento #Historias\n",
+  "validation": {
+    "workflowRun": 37302035461,
+    "conclusion": "success",
+    "width": 1080,
+    "height": 1920,
+    "durationSeconds": 75.1,
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "visualSampleChecked": true
+  },
+  "monthlyLimit": 20
+}
