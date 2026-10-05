@@ -1,0 +1,131 @@
+{
+  "id": "tt20261005-o-recibo",
+  "avulso": true,
+  "titulo": "O RECIBO NO BOLSO",
+  "temporada": "TikTok diário",
+  "cenario": "tarde",
+  "batidas": [
+    {
+      "fala": "Ela só ia lavar a calça do marido. Mas o recibo no bolso contou onde ele realmente passou a noite.",
+      "expr": "desconfiada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "recibo",
+        "realmente"
+      ]
+    },
+    {
+      "fala": "A Débora encontrou um comprovante amassado de um hotel na cidade vizinha. Data: sexta-feira, onze e quarenta da noite.",
+      "expr": "neutra",
+      "foto": [
+        "crumpled hotel receipt",
+        "SEXTA · 23:40"
+      ],
+      "destaque": [
+        "hotel",
+        "onze",
+        "quarenta"
+      ]
+    },
+    {
+      "fala": "Na sexta, o Marcelo tinha mandado mensagem dizendo que dormiria no escritório para terminar um relatório.",
+      "expr": "ironica",
+      "arte": [
+        "conversa",
+        "VOU DORMIR NO ESCRITÓRIO"
+      ],
+      "destaque": [
+        "escritório"
+      ]
+    },
+    {
+      "fala": "Ela não discutiu. Ligou para o hotel e disse que precisava da nota completa para prestar contas na empresa.",
+      "expr": "desconfiada",
+      "arte": [
+        "celular",
+        "RECEPÇÃO DO HOTEL"
+      ],
+      "destaque": [
+        "nota",
+        "completa"
+      ]
+    },
+    {
+      "fala": "A recepcionista confirmou o quarto, o jantar para duas pessoas e uma observação no pedido: sem cebola para a Camila.",
+      "expr": "chocada",
+      "arte": [
+        "extrato",
+        "JANTAR PARA 2 · CAMILA"
+      ],
+      "destaque": [
+        "duas",
+        "Camila"
+      ],
+      "zoom": true
+    },
+    {
+      "fala": "Camila era justamente a colega que Marcelo jurava ser só uma amiga do trabalho.",
+      "expr": "brava",
+      "arte": [
+        "direct",
+        "SÓ UMA AMIGA"
+      ],
+      "destaque": [
+        "só",
+        "amiga"
+      ]
+    },
+    {
+      "fala": "Débora colocou o recibo de volta no bolso, lavou a calça e esperou.",
+      "expr": "neutra",
+      "foto": [
+        "laundry washing machine pants",
+        "ELA ESPEROU"
+      ],
+      "destaque": [
+        "esperou"
+      ]
+    },
+    {
+      "fala": "Naquela noite, ele vestiu a mesma calça e perguntou se ela tinha encontrado alguma coisa.",
+      "expr": "desconfiada",
+      "arte": [
+        "conversa",
+        "VOCÊ ACHOU ALGUMA COISA?"
+      ],
+      "destaque": [
+        "alguma",
+        "coisa"
+      ]
+    },
+    {
+      "fala": "Ela respondeu: só a conta do hotel. A sua parte eu já paguei. A minha liberdade, você paga saindo daqui.",
+      "expr": "chocada",
+      "arte": [
+        "manchete_v",
+        "A CONTA CHEGOU"
+      ],
+      "destaque": [
+        "liberdade",
+        "saindo"
+      ],
+      "zoom": true
+    },
+    {
+      "fala": "Você teria confrontado na hora ou deixaria ele perguntar primeiro?",
+      "expr": "ironica",
+      "arte": [
+        "interrogacao",
+        "E VOCÊ?"
+      ],
+      "destaque": [
+        "confrontado",
+        "primeiro"
+      ]
+    }
+  ],
+  "fim": "A CONTA CHEGOU",
+  "legenda_post": "Um recibo amassado revelou uma noite inteira de mentiras. 🧾😳\nVocê confrontaria na hora ou esperaria ele perguntar?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Storytime #Fofoca #Relacionamento #Historias"
+}
