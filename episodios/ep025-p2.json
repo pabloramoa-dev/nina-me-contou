@@ -1,0 +1,142 @@
+{
+ "id": "ep025-p2",
+ "ep": 25,
+ "parte": 2,
+ "titulo": "NOME DIFERENTE SALVO COMO CO",
+ "temporada": "Vizinhança",
+ "cenario": "noite",
+ "batidas": [
+  {
+   "fala": "Se você caiu aqui agora, volta na parte um. A pista principal está lá.",
+   "expr": "ironica",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "parte",
+    "um"
+   ]
+  },
+  {
+   "fala": "Paula esperou até as 20 horas e foi até um bairro de casas.",
+   "expr": "desconfiada",
+   "arte": [
+    "relogio",
+    "20H"
+   ],
+   "destaque": [
+    "20"
+   ]
+  },
+  {
+   "fala": "Ela levou só a foto de um nome diferente salvo como contato de emergência. Nada de discussão preparada.",
+   "expr": "neutra",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "foto"
+   ]
+  },
+  {
+   "fala": "Quando chegou, reconheceu o nome de Henrique numa caixa de correspondência.",
+   "expr": "chocada",
+   "arte": [
+    "porta",
+    "HENRIQUE"
+   ],
+   "destaque": [
+    "Henrique"
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "Henrique acreditava numa versão completamente diferente da história.",
+   "expr": "chocada",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "silêncio"
+   ]
+  },
+  {
+   "fala": "Em poucos minutos ficou claro que Vinícius escondia uma amizade antiga que nunca mencionava.",
+   "expr": "brava",
+   "arte": [
+    "manchete_v",
+    "A HISTÓRIA ERA MAIOR"
+   ],
+   "destaque": [
+    "claro"
+   ]
+  },
+  {
+   "fala": "E ainda tinha mais: o mapa do celular marcava o endereço como favorito.",
+   "expr": "desconfiada",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "mais"
+   ]
+  },
+  {
+   "fala": "Paula mandou uma única mensagem para Vinícius: preciso que você me conte a verdade inteira.",
+   "expr": "triste",
+   "arte": [
+    "conversa",
+    "A VERDADE INTEIRA"
+   ],
+   "destaque": [
+    "verdade"
+   ]
+  },
+  {
+   "fala": "A resposta demorou quarenta minutos. Veio com três parágrafos e nenhuma explicação completa.",
+   "expr": "ironica",
+   "arte": [
+    "celular",
+    "40 MINUTOS"
+   ],
+   "destaque": [
+    "nenhuma"
+   ]
+  },
+  {
+   "fala": "Paula voltou para casa sem decidir nada naquela noite.",
+   "expr": "neutra",
+   "arte": [
+    "carro"
+   ],
+   "destaque": [
+    "decidir"
+   ]
+  },
+  {
+   "fala": "No dia seguinte ela me mandou a história e uma pergunta só.",
+   "expr": "neutra",
+   "arte": [
+    "direct"
+   ],
+   "destaque": [
+    "pergunta"
+   ]
+  },
+  {
+   "fala": "Você iria ao endereço ou esperaria a pessoa falar? Me conta nos comentários.",
+   "expr": "ironica",
+   "arte": [
+    "manchete_v",
+    "O QUE VOCÊ FARIA?"
+   ],
+   "destaque": [
+    "você"
+   ]
+  }
+ ],
+ "fim": "SEGUE A NINA",
+ "legenda_post": "A parte dois de nome diferente salvo como co. A pista parecia pequena, mas revelou uma história inteira.\n\nVocê iria ao endereço ou esperaria a pessoa falar?\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em situações comuns do cotidiano.\n\n#storytime #historia #fofoca #segredo #relacionamentos #ninamecontou",
+ "gerado_automaticamente": true,
+ "serie_anual": 12
+}

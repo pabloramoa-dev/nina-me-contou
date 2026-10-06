@@ -1,0 +1,142 @@
+{
+ "id": "ep054-p2",
+ "ep": 54,
+ "parte": 2,
+ "titulo": "CÓPIA",
+ "temporada": "Trabalho",
+ "cenario": "noite",
+ "batidas": [
+  {
+   "fala": "Se você caiu aqui agora, volta na parte um. A pista principal está lá.",
+   "expr": "ironica",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "parte",
+    "um"
+   ]
+  },
+  {
+   "fala": "Carolina esperou até as 17 horas e foi até um condomínio novo.",
+   "expr": "desconfiada",
+   "arte": [
+    "relogio",
+    "17H"
+   ],
+   "destaque": [
+    "17"
+   ]
+  },
+  {
+   "fala": "Ela levou só a foto de uma cópia de contrato com outro endereço. Nada de discussão preparada.",
+   "expr": "neutra",
+   "arte": [
+    "extrato"
+   ],
+   "destaque": [
+    "foto"
+   ]
+  },
+  {
+   "fala": "Quando chegou, reconheceu o nome de Fernanda numa caixa de correspondência.",
+   "expr": "chocada",
+   "arte": [
+    "porta",
+    "FERNANDA"
+   ],
+   "destaque": [
+    "Fernanda"
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "Fernanda abriu a porta e ficou em silêncio quando ouviu o nome de Débora.",
+   "expr": "chocada",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "silêncio"
+   ]
+  },
+  {
+   "fala": "Em poucos minutos ficou claro que Débora tinha aberto uma empresa com outra pessoa.",
+   "expr": "brava",
+   "arte": [
+    "manchete_v",
+    "A HISTÓRIA ERA MAIOR"
+   ],
+   "destaque": [
+    "claro"
+   ]
+  },
+  {
+   "fala": "E ainda tinha mais: a caixa guardada no depósito tinha documentos com duas datas diferentes.",
+   "expr": "desconfiada",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "mais"
+   ]
+  },
+  {
+   "fala": "Carolina mandou uma única mensagem para Débora: preciso que você me conte a verdade inteira.",
+   "expr": "triste",
+   "arte": [
+    "conversa",
+    "A VERDADE INTEIRA"
+   ],
+   "destaque": [
+    "verdade"
+   ]
+  },
+  {
+   "fala": "A resposta demorou quarenta minutos. Veio com três parágrafos e nenhuma explicação completa.",
+   "expr": "ironica",
+   "arte": [
+    "celular",
+    "40 MINUTOS"
+   ],
+   "destaque": [
+    "nenhuma"
+   ]
+  },
+  {
+   "fala": "Carolina voltou para casa sem decidir nada naquela noite.",
+   "expr": "neutra",
+   "arte": [
+    "carro"
+   ],
+   "destaque": [
+    "decidir"
+   ]
+  },
+  {
+   "fala": "No dia seguinte ela me mandou a história e uma pergunta só.",
+   "expr": "neutra",
+   "arte": [
+    "direct"
+   ],
+   "destaque": [
+    "pergunta"
+   ]
+  },
+  {
+   "fala": "Você contaria para alguém de confiança antes de confrontar? Me conta nos comentários.",
+   "expr": "ironica",
+   "arte": [
+    "manchete_v",
+    "O QUE VOCÊ FARIA?"
+   ],
+   "destaque": [
+    "você"
+   ]
+  }
+ ],
+ "fim": "SEGUE A NINA",
+ "legenda_post": "A parte dois de cópia. A pista parecia pequena, mas revelou uma história inteira.\n\nVocê contaria para alguém de confiança antes de confrontar?\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em situações comuns do cotidiano.\n\n#storytime #historia #fofoca #segredo #relacionamentos #ninamecontou",
+ "gerado_automaticamente": true,
+ "serie_anual": 41
+}

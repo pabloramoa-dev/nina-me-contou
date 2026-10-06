@@ -1,0 +1,142 @@
+{
+ "id": "ep063-p2",
+ "ep": 63,
+ "parte": 2,
+ "titulo": "CARTÃO",
+ "temporada": "Casais",
+ "cenario": "noite",
+ "batidas": [
+  {
+   "fala": "Se você caiu aqui agora, volta na parte um. A pista principal está lá.",
+   "expr": "ironica",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "parte",
+    "um"
+   ]
+  },
+  {
+   "fala": "Camila esperou até as 18 horas e foi até um bairro antigo.",
+   "expr": "desconfiada",
+   "arte": [
+    "relogio",
+    "18H"
+   ],
+   "destaque": [
+    "18"
+   ]
+  },
+  {
+   "fala": "Ela levou só a foto de um cartão de estacionamento de outro prédio. Nada de discussão preparada.",
+   "expr": "neutra",
+   "arte": [
+    "carro"
+   ],
+   "destaque": [
+    "foto"
+   ]
+  },
+  {
+   "fala": "Quando chegou, reconheceu o nome de Bianca numa caixa de correspondência.",
+   "expr": "chocada",
+   "arte": [
+    "porta",
+    "BIANCA"
+   ],
+   "destaque": [
+    "Bianca"
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "Bianca respondeu a mensagem dizendo que também precisava entender o que estava acontecendo.",
+   "expr": "chocada",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "silêncio"
+   ]
+  },
+  {
+   "fala": "Em poucos minutos ficou claro que Rodrigo ajudava financeiramente alguém em segredo.",
+   "expr": "brava",
+   "arte": [
+    "manchete_v",
+    "A HISTÓRIA ERA MAIOR"
+   ],
+   "destaque": [
+    "claro"
+   ]
+  },
+  {
+   "fala": "E ainda tinha mais: a foto tinha sido tirada no mesmo lugar do recibo.",
+   "expr": "desconfiada",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "mais"
+   ]
+  },
+  {
+   "fala": "Camila mandou uma única mensagem para Rodrigo: preciso que você me conte a verdade inteira.",
+   "expr": "triste",
+   "arte": [
+    "conversa",
+    "A VERDADE INTEIRA"
+   ],
+   "destaque": [
+    "verdade"
+   ]
+  },
+  {
+   "fala": "A resposta demorou quarenta minutos. Veio com três parágrafos e nenhuma explicação completa.",
+   "expr": "ironica",
+   "arte": [
+    "celular",
+    "40 MINUTOS"
+   ],
+   "destaque": [
+    "nenhuma"
+   ]
+  },
+  {
+   "fala": "Camila voltou para casa sem decidir nada naquela noite.",
+   "expr": "neutra",
+   "arte": [
+    "carro"
+   ],
+   "destaque": [
+    "decidir"
+   ]
+  },
+  {
+   "fala": "No dia seguinte ela me mandou a história e uma pergunta só.",
+   "expr": "neutra",
+   "arte": [
+    "direct"
+   ],
+   "destaque": [
+    "pergunta"
+   ]
+  },
+  {
+   "fala": "Você perguntaria na hora ou juntaria mais uma prova? Me conta nos comentários.",
+   "expr": "ironica",
+   "arte": [
+    "manchete_v",
+    "O QUE VOCÊ FARIA?"
+   ],
+   "destaque": [
+    "você"
+   ]
+  }
+ ],
+ "fim": "SEGUE A NINA",
+ "legenda_post": "A parte dois de cartão. A pista parecia pequena, mas revelou uma história inteira.\n\nVocê perguntaria na hora ou juntaria mais uma prova?\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em situações comuns do cotidiano.\n\n#storytime #historia #fofoca #segredo #relacionamentos #ninamecontou",
+ "gerado_automaticamente": true,
+ "serie_anual": 50
+}

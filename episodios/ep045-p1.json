@@ -1,0 +1,145 @@
+{
+ "id": "ep045-p1",
+ "ep": 45,
+ "parte": 1,
+ "titulo": "CARTÃO",
+ "temporada": "Casais",
+ "cenario": "tarde",
+ "batidas": [
+  {
+   "fala": "Tudo começou com um papel dobrado no bolso de uma mala.",
+   "expr": "ironica",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "não",
+    "deveria"
+   ]
+  },
+  {
+   "fala": "A história chegou pela Isabela. Renata fazia parte da rotina dela havia 9 anos.",
+   "expr": "neutra",
+   "arte": [
+    "direct",
+    "ISABELA"
+   ],
+   "destaque": [
+    "Isabela"
+   ]
+  },
+  {
+   "fala": "Naquele sexta, Isabela encontrou um cartão de estacionamento de outro prédio.",
+   "expr": "desconfiada",
+   "arte": [
+    "carro"
+   ],
+   "destaque": [
+    "encontrou"
+   ]
+  },
+  {
+   "fala": "No começo ela tentou ignorar, porque aquilo não combinava com a rotina que contava.",
+   "expr": "neutra",
+   "arte": [
+    "interrogacao"
+   ],
+   "destaque": [
+    "ignorar"
+   ]
+  },
+  {
+   "fala": "Mas havia um detalhe: a pista apontava para uma rua tranquila.",
+   "expr": "desconfiada",
+   "arte": [
+    "mapa"
+   ],
+   "destaque": [
+    "detalhe"
+   ]
+  },
+  {
+   "fala": "Isabela perguntou de forma casual se Renata conhecia aquele lugar. A resposta foi não.",
+   "expr": "desconfiada",
+   "arte": [
+    "conversa",
+    "NÃO CONHEÇO"
+   ],
+   "destaque": [
+    "não"
+   ]
+  },
+  {
+   "fala": "Na mesma noite, outra pista apareceu: o nome do contato apareceu em outra foto guardada.",
+   "expr": "chocada",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "outra",
+    "pista"
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "Foi aí que Isabela ligou os pontos. Renata escondia uma amizade antiga que nunca mencionava.",
+   "expr": "brava",
+   "arte": [
+    "manchete_v",
+    "AS PEÇAS COMEÇARAM A FECHAR"
+   ],
+   "destaque": [
+    "segredo"
+   ]
+  },
+  {
+   "fala": "E o nome de Larissa apareceu no meio dos documentos.",
+   "expr": "chocada",
+   "arte": [
+    "celular",
+    "LARISSA"
+   ],
+   "destaque": [
+    "Larissa"
+   ]
+  },
+  {
+   "fala": "Isabela não disse nada naquela noite. Fotografou o que encontrou e colocou tudo no mesmo lugar.",
+   "expr": "desconfiada",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "mesmo",
+    "lugar"
+   ]
+  },
+  {
+   "fala": "No dia seguinte, Renata avisou que sairia mais cedo. Justamente para uma rua tranquila.",
+   "expr": "ironica",
+   "arte": [
+    "calendario",
+    "SAIU MAIS CEDO"
+   ],
+   "destaque": [
+    "justamente"
+   ]
+  },
+  {
+   "fala": "O que aconteceu quando ela decidiu seguir a pista eu conto na parte dois.",
+   "expr": "ironica",
+   "arte": [
+    "manchete_v",
+    "CONTINUA NA PARTE 2"
+   ],
+   "destaque": [
+    "parte",
+    "dois"
+   ]
+  }
+ ],
+ "fim": "CONTINUA NA PARTE 2",
+ "legenda_post": "Tudo começou com um papel dobrado no bolso de uma mala.\n\nUma pista levou Isabela a uma história que não fechava. A continuação está no perfil.\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em situações comuns do cotidiano.\n\n#storytime #historia #fofoca #segredo #relacionamentos #ninamecontou",
+ "gerado_automaticamente": true,
+ "serie_anual": 32
+}

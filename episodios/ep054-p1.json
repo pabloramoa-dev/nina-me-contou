@@ -1,0 +1,145 @@
+{
+ "id": "ep054-p1",
+ "ep": 54,
+ "parte": 1,
+ "titulo": "CÓPIA",
+ "temporada": "Trabalho",
+ "cenario": "tarde",
+ "batidas": [
+  {
+   "fala": "Ela só queria pegar um carregador. Encontrou uma segunda vida.",
+   "expr": "ironica",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "não",
+    "deveria"
+   ]
+  },
+  {
+   "fala": "A história chegou pela Carolina. Débora fazia parte da rotina dela havia 2 anos.",
+   "expr": "neutra",
+   "arte": [
+    "direct",
+    "CAROLINA"
+   ],
+   "destaque": [
+    "Carolina"
+   ]
+  },
+  {
+   "fala": "Naquele terça, Carolina encontrou uma cópia de contrato com outro endereço.",
+   "expr": "desconfiada",
+   "arte": [
+    "extrato"
+   ],
+   "destaque": [
+    "encontrou"
+   ]
+  },
+  {
+   "fala": "No começo ela tentou ignorar, porque ninguém lembrava de ter ouvido aquele nome antes.",
+   "expr": "neutra",
+   "arte": [
+    "interrogacao"
+   ],
+   "destaque": [
+    "ignorar"
+   ]
+  },
+  {
+   "fala": "Mas havia um detalhe: a pista apontava para um condomínio novo.",
+   "expr": "desconfiada",
+   "arte": [
+    "mapa"
+   ],
+   "destaque": [
+    "detalhe"
+   ]
+  },
+  {
+   "fala": "Carolina perguntou de forma casual se Débora conhecia aquele lugar. A resposta foi não.",
+   "expr": "desconfiada",
+   "arte": [
+    "conversa",
+    "NÃO CONHEÇO"
+   ],
+   "destaque": [
+    "não"
+   ]
+  },
+  {
+   "fala": "Na mesma noite, outra pista apareceu: a caixa guardada no depósito tinha documentos com duas datas diferentes.",
+   "expr": "chocada",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "outra",
+    "pista"
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "Foi aí que Carolina ligou os pontos. Débora tinha aberto uma empresa com outra pessoa.",
+   "expr": "brava",
+   "arte": [
+    "manchete_v",
+    "AS PEÇAS COMEÇARAM A FECHAR"
+   ],
+   "destaque": [
+    "segredo"
+   ]
+  },
+  {
+   "fala": "E o nome de Fernanda apareceu no meio dos documentos.",
+   "expr": "chocada",
+   "arte": [
+    "celular",
+    "FERNANDA"
+   ],
+   "destaque": [
+    "Fernanda"
+   ]
+  },
+  {
+   "fala": "Carolina não disse nada naquela noite. Fotografou o que encontrou e colocou tudo no mesmo lugar.",
+   "expr": "desconfiada",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "mesmo",
+    "lugar"
+   ]
+  },
+  {
+   "fala": "No dia seguinte, Débora avisou que sairia mais cedo. Justamente para um condomínio novo.",
+   "expr": "ironica",
+   "arte": [
+    "calendario",
+    "SAIU MAIS CEDO"
+   ],
+   "destaque": [
+    "justamente"
+   ]
+  },
+  {
+   "fala": "O que aconteceu quando ela decidiu seguir a pista eu conto na parte dois.",
+   "expr": "ironica",
+   "arte": [
+    "manchete_v",
+    "CONTINUA NA PARTE 2"
+   ],
+   "destaque": [
+    "parte",
+    "dois"
+   ]
+  }
+ ],
+ "fim": "CONTINUA NA PARTE 2",
+ "legenda_post": "Ela só queria pegar um carregador. Encontrou uma segunda vida.\n\nUma pista levou Carolina a uma história que não fechava. A continuação está no perfil.\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em situações comuns do cotidiano.\n\n#storytime #historia #fofoca #segredo #relacionamentos #ninamecontou",
+ "gerado_automaticamente": true,
+ "serie_anual": 41
+}

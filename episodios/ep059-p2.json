@@ -1,0 +1,142 @@
+{
+ "id": "ep059-p2",
+ "ep": 59,
+ "parte": 2,
+ "titulo": "BILHETE PRESO ATRÁS",
+ "temporada": "Família",
+ "cenario": "noite",
+ "batidas": [
+  {
+   "fala": "Se você caiu aqui agora, volta na parte um. A pista principal está lá.",
+   "expr": "ironica",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "parte",
+    "um"
+   ]
+  },
+  {
+   "fala": "Bruna esperou até as 18 horas e foi até um prédio perto do trabalho.",
+   "expr": "desconfiada",
+   "arte": [
+    "relogio",
+    "18H"
+   ],
+   "destaque": [
+    "18"
+   ]
+  },
+  {
+   "fala": "Ela levou só a foto de um bilhete preso atrás de uma moldura. Nada de discussão preparada.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "foto"
+   ]
+  },
+  {
+   "fala": "Quando chegou, reconheceu o nome de Mariana numa caixa de correspondência.",
+   "expr": "chocada",
+   "arte": [
+    "porta",
+    "MARIANA"
+   ],
+   "destaque": [
+    "Mariana"
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "Mariana respondeu a mensagem dizendo que também precisava entender o que estava acontecendo.",
+   "expr": "chocada",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "silêncio"
+   ]
+  },
+  {
+   "fala": "Em poucos minutos ficou claro que Carolina ajudava financeiramente alguém em segredo.",
+   "expr": "brava",
+   "arte": [
+    "manchete_v",
+    "A HISTÓRIA ERA MAIOR"
+   ],
+   "destaque": [
+    "claro"
+   ]
+  },
+  {
+   "fala": "E ainda tinha mais: o endereço aparecia também em três compras antigas.",
+   "expr": "desconfiada",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "mais"
+   ]
+  },
+  {
+   "fala": "Bruna mandou uma única mensagem para Carolina: preciso que você me conte a verdade inteira.",
+   "expr": "triste",
+   "arte": [
+    "conversa",
+    "A VERDADE INTEIRA"
+   ],
+   "destaque": [
+    "verdade"
+   ]
+  },
+  {
+   "fala": "A resposta demorou quarenta minutos. Veio com três parágrafos e nenhuma explicação completa.",
+   "expr": "ironica",
+   "arte": [
+    "celular",
+    "40 MINUTOS"
+   ],
+   "destaque": [
+    "nenhuma"
+   ]
+  },
+  {
+   "fala": "Bruna voltou para casa sem decidir nada naquela noite.",
+   "expr": "neutra",
+   "arte": [
+    "carro"
+   ],
+   "destaque": [
+    "decidir"
+   ]
+  },
+  {
+   "fala": "No dia seguinte ela me mandou a história e uma pergunta só.",
+   "expr": "neutra",
+   "arte": [
+    "direct"
+   ],
+   "destaque": [
+    "pergunta"
+   ]
+  },
+  {
+   "fala": "Você daria uma chance para a explicação ou encerraria a conversa ali? Me conta nos comentários.",
+   "expr": "ironica",
+   "arte": [
+    "manchete_v",
+    "O QUE VOCÊ FARIA?"
+   ],
+   "destaque": [
+    "você"
+   ]
+  }
+ ],
+ "fim": "SEGUE A NINA",
+ "legenda_post": "A parte dois de bilhete preso atrás. A pista parecia pequena, mas revelou uma história inteira.\n\nVocê daria uma chance para a explicação ou encerraria a conversa ali?\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em situações comuns do cotidiano.\n\n#storytime #historia #fofoca #segredo #relacionamentos #ninamecontou",
+ "gerado_automaticamente": true,
+ "serie_anual": 46
+}

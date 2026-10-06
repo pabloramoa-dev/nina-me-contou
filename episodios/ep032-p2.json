@@ -1,0 +1,142 @@
+{
+ "id": "ep032-p2",
+ "ep": 32,
+ "parte": 2,
+ "titulo": "RECIBO DOBRADO",
+ "temporada": "Segredos",
+ "cenario": "noite",
+ "batidas": [
+  {
+   "fala": "Se você caiu aqui agora, volta na parte um. A pista principal está lá.",
+   "expr": "ironica",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "parte",
+    "um"
+   ]
+  },
+  {
+   "fala": "Larissa esperou até as 19 horas e foi até a região da rodoviária.",
+   "expr": "desconfiada",
+   "arte": [
+    "relogio",
+    "19H"
+   ],
+   "destaque": [
+    "19"
+   ]
+  },
+  {
+   "fala": "Ela levou só a foto de um recibo dobrado dentro de um livro. Nada de discussão preparada.",
+   "expr": "neutra",
+   "arte": [
+    "extrato"
+   ],
+   "destaque": [
+    "foto"
+   ]
+  },
+  {
+   "fala": "Quando chegou, reconheceu o nome de Juliana numa caixa de correspondência.",
+   "expr": "chocada",
+   "arte": [
+    "porta",
+    "JULIANA"
+   ],
+   "destaque": [
+    "Juliana"
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "Juliana mostrou um segundo documento que Larissa nunca tinha visto.",
+   "expr": "chocada",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "silêncio"
+   ]
+  },
+  {
+   "fala": "Em poucos minutos ficou claro que Paula tinha feito uma reserva recorrente no mesmo lugar.",
+   "expr": "brava",
+   "arte": [
+    "manchete_v",
+    "A HISTÓRIA ERA MAIOR"
+   ],
+   "destaque": [
+    "claro"
+   ]
+  },
+  {
+   "fala": "E ainda tinha mais: o contrato tinha uma assinatura feita meses antes.",
+   "expr": "desconfiada",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "mais"
+   ]
+  },
+  {
+   "fala": "Larissa mandou uma única mensagem para Paula: preciso que você me conte a verdade inteira.",
+   "expr": "triste",
+   "arte": [
+    "conversa",
+    "A VERDADE INTEIRA"
+   ],
+   "destaque": [
+    "verdade"
+   ]
+  },
+  {
+   "fala": "A resposta demorou quarenta minutos. Veio com três parágrafos e nenhuma explicação completa.",
+   "expr": "ironica",
+   "arte": [
+    "celular",
+    "40 MINUTOS"
+   ],
+   "destaque": [
+    "nenhuma"
+   ]
+  },
+  {
+   "fala": "Larissa voltou para casa sem decidir nada naquela noite.",
+   "expr": "neutra",
+   "arte": [
+    "carro"
+   ],
+   "destaque": [
+    "decidir"
+   ]
+  },
+  {
+   "fala": "No dia seguinte ela me mandou a história e uma pergunta só.",
+   "expr": "neutra",
+   "arte": [
+    "direct"
+   ],
+   "destaque": [
+    "pergunta"
+   ]
+  },
+  {
+   "fala": "Você mostraria tudo e pediria uma explicação? Me conta nos comentários.",
+   "expr": "ironica",
+   "arte": [
+    "manchete_v",
+    "O QUE VOCÊ FARIA?"
+   ],
+   "destaque": [
+    "você"
+   ]
+  }
+ ],
+ "fim": "SEGUE A NINA",
+ "legenda_post": "A parte dois de recibo dobrado. A pista parecia pequena, mas revelou uma história inteira.\n\nVocê mostraria tudo e pediria uma explicação?\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em situações comuns do cotidiano.\n\n#storytime #historia #fofoca #segredo #relacionamentos #ninamecontou",
+ "gerado_automaticamente": true,
+ "serie_anual": 19
+}

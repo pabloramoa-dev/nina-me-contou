@@ -1,0 +1,145 @@
+{
+ "id": "ep019-p1",
+ "ep": 19,
+ "parte": 1,
+ "titulo": "NOME DIFERENTE SALVO COMO CO",
+ "temporada": "Vizinhança",
+ "cenario": "tarde",
+ "batidas": [
+  {
+   "fala": "Uma foto antiga tinha sido tirada três dias antes.",
+   "expr": "ironica",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "não",
+    "deveria"
+   ]
+  },
+  {
+   "fala": "A história chegou pela Débora. Mariana fazia parte da rotina dela havia 7 anos.",
+   "expr": "neutra",
+   "arte": [
+    "direct",
+    "DÉBORA"
+   ],
+   "destaque": [
+    "Débora"
+   ]
+  },
+  {
+   "fala": "Naquele quarta, Débora encontrou um nome diferente salvo como contato de emergência.",
+   "expr": "desconfiada",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "encontrou"
+   ]
+  },
+  {
+   "fala": "No começo ela tentou ignorar, porque já havia pequenas contradições acumuladas.",
+   "expr": "neutra",
+   "arte": [
+    "interrogacao"
+   ],
+   "destaque": [
+    "ignorar"
+   ]
+  },
+  {
+   "fala": "Mas havia um detalhe: a pista apontava para um prédio perto do trabalho.",
+   "expr": "desconfiada",
+   "arte": [
+    "mapa"
+   ],
+   "destaque": [
+    "detalhe"
+   ]
+  },
+  {
+   "fala": "Débora perguntou de forma casual se Mariana conhecia aquele lugar. A resposta foi não.",
+   "expr": "desconfiada",
+   "arte": [
+    "conversa",
+    "NÃO CONHEÇO"
+   ],
+   "destaque": [
+    "não"
+   ]
+  },
+  {
+   "fala": "Na mesma noite, outra pista apareceu: uma mensagem automática confirmou que aquilo não era a primeira vez.",
+   "expr": "chocada",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "outra",
+    "pista"
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "Foi aí que Débora ligou os pontos. Mariana ajudava financeiramente alguém em segredo.",
+   "expr": "brava",
+   "arte": [
+    "manchete_v",
+    "AS PEÇAS COMEÇARAM A FECHAR"
+   ],
+   "destaque": [
+    "segredo"
+   ]
+  },
+  {
+   "fala": "E o nome de Rafael apareceu no meio dos documentos.",
+   "expr": "chocada",
+   "arte": [
+    "celular",
+    "RAFAEL"
+   ],
+   "destaque": [
+    "Rafael"
+   ]
+  },
+  {
+   "fala": "Débora não disse nada naquela noite. Fotografou o que encontrou e colocou tudo no mesmo lugar.",
+   "expr": "desconfiada",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "mesmo",
+    "lugar"
+   ]
+  },
+  {
+   "fala": "No dia seguinte, Mariana avisou que sairia mais cedo. Justamente para um prédio perto do trabalho.",
+   "expr": "ironica",
+   "arte": [
+    "calendario",
+    "SAIU MAIS CEDO"
+   ],
+   "destaque": [
+    "justamente"
+   ]
+  },
+  {
+   "fala": "O que aconteceu quando ela decidiu seguir a pista eu conto na parte dois.",
+   "expr": "ironica",
+   "arte": [
+    "manchete_v",
+    "CONTINUA NA PARTE 2"
+   ],
+   "destaque": [
+    "parte",
+    "dois"
+   ]
+  }
+ ],
+ "fim": "CONTINUA NA PARTE 2",
+ "legenda_post": "Uma foto antiga tinha sido tirada três dias antes.\n\nUma pista levou Débora a uma história que não fechava. A continuação está no perfil.\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em situações comuns do cotidiano.\n\n#storytime #historia #fofoca #segredo #relacionamentos #ninamecontou",
+ "gerado_automaticamente": true,
+ "serie_anual": 6
+}

@@ -1,0 +1,145 @@
+{
+ "id": "ep033-p1",
+ "ep": 33,
+ "parte": 1,
+ "titulo": "CARTÃO",
+ "temporada": "Casais",
+ "cenario": "tarde",
+ "batidas": [
+  {
+   "fala": "O recibo custava pouco. O endereço custou a confiança.",
+   "expr": "ironica",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "não",
+    "deveria"
+   ]
+  },
+  {
+   "fala": "A história chegou pela Letícia. Larissa fazia parte da rotina dela havia 5 anos.",
+   "expr": "neutra",
+   "arte": [
+    "direct",
+    "LETÍCIA"
+   ],
+   "destaque": [
+    "Letícia"
+   ]
+  },
+  {
+   "fala": "Naquele sexta, Letícia encontrou um cartão de estacionamento de outro prédio.",
+   "expr": "desconfiada",
+   "arte": [
+    "carro"
+   ],
+   "destaque": [
+    "encontrou"
+   ]
+  },
+  {
+   "fala": "No começo ela tentou ignorar, porque o horário não fechava com a história.",
+   "expr": "neutra",
+   "arte": [
+    "interrogacao"
+   ],
+   "destaque": [
+    "ignorar"
+   ]
+  },
+  {
+   "fala": "Mas havia um detalhe: a pista apontava para um bairro de casas.",
+   "expr": "desconfiada",
+   "arte": [
+    "mapa"
+   ],
+   "destaque": [
+    "detalhe"
+   ]
+  },
+  {
+   "fala": "Letícia perguntou de forma casual se Larissa conhecia aquele lugar. A resposta foi não.",
+   "expr": "desconfiada",
+   "arte": [
+    "conversa",
+    "NÃO CONHEÇO"
+   ],
+   "destaque": [
+    "não"
+   ]
+  },
+  {
+   "fala": "Na mesma noite, outra pista apareceu: o nome do contato apareceu em outra foto guardada.",
+   "expr": "chocada",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "outra",
+    "pista"
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "Foi aí que Letícia ligou os pontos. Larissa escondia uma amizade antiga que nunca mencionava.",
+   "expr": "brava",
+   "arte": [
+    "manchete_v",
+    "AS PEÇAS COMEÇARAM A FECHAR"
+   ],
+   "destaque": [
+    "segredo"
+   ]
+  },
+  {
+   "fala": "E o nome de André apareceu no meio dos documentos.",
+   "expr": "chocada",
+   "arte": [
+    "celular",
+    "ANDRÉ"
+   ],
+   "destaque": [
+    "André"
+   ]
+  },
+  {
+   "fala": "Letícia não disse nada naquela noite. Fotografou o que encontrou e colocou tudo no mesmo lugar.",
+   "expr": "desconfiada",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "mesmo",
+    "lugar"
+   ]
+  },
+  {
+   "fala": "No dia seguinte, Larissa avisou que sairia mais cedo. Justamente para um bairro de casas.",
+   "expr": "ironica",
+   "arte": [
+    "calendario",
+    "SAIU MAIS CEDO"
+   ],
+   "destaque": [
+    "justamente"
+   ]
+  },
+  {
+   "fala": "O que aconteceu quando ela decidiu seguir a pista eu conto na parte dois.",
+   "expr": "ironica",
+   "arte": [
+    "manchete_v",
+    "CONTINUA NA PARTE 2"
+   ],
+   "destaque": [
+    "parte",
+    "dois"
+   ]
+  }
+ ],
+ "fim": "CONTINUA NA PARTE 2",
+ "legenda_post": "O recibo custava pouco. O endereço custou a confiança.\n\nUma pista levou Letícia a uma história que não fechava. A continuação está no perfil.\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em situações comuns do cotidiano.\n\n#storytime #historia #fofoca #segredo #relacionamentos #ninamecontou",
+ "gerado_automaticamente": true,
+ "serie_anual": 20
+}

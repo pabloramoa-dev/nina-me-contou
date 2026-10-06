@@ -1,0 +1,145 @@
+{
+ "id": "ep024-p1",
+ "ep": 24,
+ "parte": 1,
+ "titulo": "CÓPIA",
+ "temporada": "Trabalho",
+ "cenario": "tarde",
+ "batidas": [
+  {
+   "fala": "O detalhe estranho não era o nome. Era a repetição.",
+   "expr": "ironica",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "não",
+    "deveria"
+   ]
+  },
+  {
+   "fala": "A história chegou pela Patrícia. Bruno fazia parte da rotina dela havia 4 anos.",
+   "expr": "neutra",
+   "arte": [
+    "direct",
+    "PATRÍCIA"
+   ],
+   "destaque": [
+    "Patrícia"
+   ]
+  },
+  {
+   "fala": "Naquele quinta, Patrícia encontrou uma cópia de contrato com outro endereço.",
+   "expr": "desconfiada",
+   "arte": [
+    "extrato"
+   ],
+   "destaque": [
+    "encontrou"
+   ]
+  },
+  {
+   "fala": "No começo ela tentou ignorar, porque a explicação veio rápida demais.",
+   "expr": "neutra",
+   "arte": [
+    "interrogacao"
+   ],
+   "destaque": [
+    "ignorar"
+   ]
+  },
+  {
+   "fala": "Mas havia um detalhe: a pista apontava para a região da rodoviária.",
+   "expr": "desconfiada",
+   "arte": [
+    "mapa"
+   ],
+   "destaque": [
+    "detalhe"
+   ]
+  },
+  {
+   "fala": "Patrícia perguntou de forma casual se Bruno conhecia aquele lugar. A resposta foi não.",
+   "expr": "desconfiada",
+   "arte": [
+    "conversa",
+    "NÃO CONHEÇO"
+   ],
+   "destaque": [
+    "não"
+   ]
+  },
+  {
+   "fala": "Na mesma noite, outra pista apareceu: o comprovante mostrava uma rotina, não um episódio isolado.",
+   "expr": "chocada",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "outra",
+    "pista"
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "Foi aí que Patrícia ligou os pontos. Bruno tinha feito uma reserva recorrente no mesmo lugar.",
+   "expr": "brava",
+   "arte": [
+    "manchete_v",
+    "AS PEÇAS COMEÇARAM A FECHAR"
+   ],
+   "destaque": [
+    "segredo"
+   ]
+  },
+  {
+   "fala": "E o nome de Caio apareceu no meio dos documentos.",
+   "expr": "chocada",
+   "arte": [
+    "celular",
+    "CAIO"
+   ],
+   "destaque": [
+    "Caio"
+   ]
+  },
+  {
+   "fala": "Patrícia não disse nada naquela noite. Fotografou o que encontrou e colocou tudo no mesmo lugar.",
+   "expr": "desconfiada",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "mesmo",
+    "lugar"
+   ]
+  },
+  {
+   "fala": "No dia seguinte, Bruno avisou que sairia mais cedo. Justamente para a região da rodoviária.",
+   "expr": "ironica",
+   "arte": [
+    "calendario",
+    "SAIU MAIS CEDO"
+   ],
+   "destaque": [
+    "justamente"
+   ]
+  },
+  {
+   "fala": "O que aconteceu quando ela decidiu seguir a pista eu conto na parte dois.",
+   "expr": "ironica",
+   "arte": [
+    "manchete_v",
+    "CONTINUA NA PARTE 2"
+   ],
+   "destaque": [
+    "parte",
+    "dois"
+   ]
+  }
+ ],
+ "fim": "CONTINUA NA PARTE 2",
+ "legenda_post": "O detalhe estranho não era o nome. Era a repetição.\n\nUma pista levou Patrícia a uma história que não fechava. A continuação está no perfil.\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em situações comuns do cotidiano.\n\n#storytime #historia #fofoca #segredo #relacionamentos #ninamecontou",
+ "gerado_automaticamente": true,
+ "serie_anual": 11
+}

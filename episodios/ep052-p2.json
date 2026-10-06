@@ -1,0 +1,142 @@
+{
+ "id": "ep052-p2",
+ "ep": 52,
+ "parte": 2,
+ "titulo": "COMPROVANTE",
+ "temporada": "Amizades",
+ "cenario": "noite",
+ "batidas": [
+  {
+   "fala": "Se você caiu aqui agora, volta na parte um. A pista principal está lá.",
+   "expr": "ironica",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "parte",
+    "um"
+   ]
+  },
+  {
+   "fala": "Renata esperou até as 19 horas e foi até o centro da cidade.",
+   "expr": "desconfiada",
+   "arte": [
+    "relogio",
+    "19H"
+   ],
+   "destaque": [
+    "19"
+   ]
+  },
+  {
+   "fala": "Ela levou só a foto de um comprovante de reserva que ninguém reconhecia. Nada de discussão preparada.",
+   "expr": "neutra",
+   "arte": [
+    "calendario"
+   ],
+   "destaque": [
+    "foto"
+   ]
+  },
+  {
+   "fala": "Quando chegou, reconheceu o nome de Thiago numa caixa de correspondência.",
+   "expr": "chocada",
+   "arte": [
+    "porta",
+    "THIAGO"
+   ],
+   "destaque": [
+    "Thiago"
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "Thiago mostrou um segundo documento que Renata nunca tinha visto.",
+   "expr": "chocada",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "silêncio"
+   ]
+  },
+  {
+   "fala": "Em poucos minutos ficou claro que Fernanda tinha feito uma reserva recorrente no mesmo lugar.",
+   "expr": "brava",
+   "arte": [
+    "manchete_v",
+    "A HISTÓRIA ERA MAIOR"
+   ],
+   "destaque": [
+    "claro"
+   ]
+  },
+  {
+   "fala": "E ainda tinha mais: a mesma data se repetia no calendário dos últimos meses.",
+   "expr": "desconfiada",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "mais"
+   ]
+  },
+  {
+   "fala": "Renata mandou uma única mensagem para Fernanda: preciso que você me conte a verdade inteira.",
+   "expr": "triste",
+   "arte": [
+    "conversa",
+    "A VERDADE INTEIRA"
+   ],
+   "destaque": [
+    "verdade"
+   ]
+  },
+  {
+   "fala": "A resposta demorou quarenta minutos. Veio com três parágrafos e nenhuma explicação completa.",
+   "expr": "ironica",
+   "arte": [
+    "celular",
+    "40 MINUTOS"
+   ],
+   "destaque": [
+    "nenhuma"
+   ]
+  },
+  {
+   "fala": "Renata voltou para casa sem decidir nada naquela noite.",
+   "expr": "neutra",
+   "arte": [
+    "carro"
+   ],
+   "destaque": [
+    "decidir"
+   ]
+  },
+  {
+   "fala": "No dia seguinte ela me mandou a história e uma pergunta só.",
+   "expr": "neutra",
+   "arte": [
+    "direct"
+   ],
+   "destaque": [
+    "pergunta"
+   ]
+  },
+  {
+   "fala": "Você faria uma pergunta direta ou deixaria a pessoa contar sozinha? Me conta nos comentários.",
+   "expr": "ironica",
+   "arte": [
+    "manchete_v",
+    "O QUE VOCÊ FARIA?"
+   ],
+   "destaque": [
+    "você"
+   ]
+  }
+ ],
+ "fim": "SEGUE A NINA",
+ "legenda_post": "A parte dois de comprovante. A pista parecia pequena, mas revelou uma história inteira.\n\nVocê faria uma pergunta direta ou deixaria a pessoa contar sozinha?\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em situações comuns do cotidiano.\n\n#storytime #historia #fofoca #segredo #relacionamentos #ninamecontou",
+ "gerado_automaticamente": true,
+ "serie_anual": 39
+}

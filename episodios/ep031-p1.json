@@ -1,0 +1,145 @@
+{
+ "id": "ep031-p1",
+ "ep": 31,
+ "parte": 1,
+ "titulo": "NOME DIFERENTE SALVO COMO CO",
+ "temporada": "Vizinhança",
+ "cenario": "tarde",
+ "batidas": [
+  {
+   "fala": "O porteiro fez uma pergunta que ninguém estava preparado para ouvir.",
+   "expr": "ironica",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "não",
+    "deveria"
+   ]
+  },
+  {
+   "fala": "A história chegou pela Camila. Rodrigo fazia parte da rotina dela havia 3 anos.",
+   "expr": "neutra",
+   "arte": [
+    "direct",
+    "CAMILA"
+   ],
+   "destaque": [
+    "Camila"
+   ]
+  },
+  {
+   "fala": "Naquele quarta, Camila encontrou um nome diferente salvo como contato de emergência.",
+   "expr": "desconfiada",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "encontrou"
+   ]
+  },
+  {
+   "fala": "No começo ela tentou ignorar, porque dizia que precisava de privacidade.",
+   "expr": "neutra",
+   "arte": [
+    "interrogacao"
+   ],
+   "destaque": [
+    "ignorar"
+   ]
+  },
+  {
+   "fala": "Mas havia um detalhe: a pista apontava para um bairro antigo.",
+   "expr": "desconfiada",
+   "arte": [
+    "mapa"
+   ],
+   "destaque": [
+    "detalhe"
+   ]
+  },
+  {
+   "fala": "Camila perguntou de forma casual se Rodrigo conhecia aquele lugar. A resposta foi não.",
+   "expr": "desconfiada",
+   "arte": [
+    "conversa",
+    "NÃO CONHEÇO"
+   ],
+   "destaque": [
+    "não"
+   ]
+  },
+  {
+   "fala": "Na mesma noite, outra pista apareceu: uma mensagem automática confirmou que aquilo não era a primeira vez.",
+   "expr": "chocada",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "outra",
+    "pista"
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "Foi aí que Camila ligou os pontos. Rodrigo ajudava financeiramente alguém em segredo.",
+   "expr": "brava",
+   "arte": [
+    "manchete_v",
+    "AS PEÇAS COMEÇARAM A FECHAR"
+   ],
+   "destaque": [
+    "segredo"
+   ]
+  },
+  {
+   "fala": "E o nome de Bianca apareceu no meio dos documentos.",
+   "expr": "chocada",
+   "arte": [
+    "celular",
+    "BIANCA"
+   ],
+   "destaque": [
+    "Bianca"
+   ]
+  },
+  {
+   "fala": "Camila não disse nada naquela noite. Fotografou o que encontrou e colocou tudo no mesmo lugar.",
+   "expr": "desconfiada",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "mesmo",
+    "lugar"
+   ]
+  },
+  {
+   "fala": "No dia seguinte, Rodrigo avisou que sairia mais cedo. Justamente para um bairro antigo.",
+   "expr": "ironica",
+   "arte": [
+    "calendario",
+    "SAIU MAIS CEDO"
+   ],
+   "destaque": [
+    "justamente"
+   ]
+  },
+  {
+   "fala": "O que aconteceu quando ela decidiu seguir a pista eu conto na parte dois.",
+   "expr": "ironica",
+   "arte": [
+    "manchete_v",
+    "CONTINUA NA PARTE 2"
+   ],
+   "destaque": [
+    "parte",
+    "dois"
+   ]
+  }
+ ],
+ "fim": "CONTINUA NA PARTE 2",
+ "legenda_post": "O porteiro fez uma pergunta que ninguém estava preparado para ouvir.\n\nUma pista levou Camila a uma história que não fechava. A continuação está no perfil.\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em situações comuns do cotidiano.\n\n#storytime #historia #fofoca #segredo #relacionamentos #ninamecontou",
+ "gerado_automaticamente": true,
+ "serie_anual": 18
+}
