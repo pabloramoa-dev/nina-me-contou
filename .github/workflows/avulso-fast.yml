@@ -1,0 +1,68 @@
+name: Produzir avulso rápido
+
+on:
+  push:
+    branches: [main]
+    paths: ["avulsos_fast/**.json"]
+
+permissions:
+  contents: read
+
+jobs:
+  renderizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          filter: blob:none
+          sparse-checkout: |
+            .github/actions/setup-hyperframes
+            assets
+            motor
+            src
+            video
+            avulsos_fast
+            requirements-estudio.txt
+            requirements.txt
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: requirements-estudio.txt
+      - name: Dependências de sistema
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg pkg-config libcairo2-dev libpango1.0-dev espeak-ng fonts-dejavu-core
+          mkdir -p ~/.fonts
+          for p in Bold Regular; do
+            curl -sSL -o ~/.fonts/Poppins-$p.ttf "https://github.com/google/fonts/raw/main/ofl/poppins/Poppins-$p.ttf"
+          done
+          fc-cache -f
+      - name: Pacotes Python
+        run: |
+          SETUPTOOLS_USE_DISTUTILS=stdlib pip install --no-build-isolation srt || true
+          pip install -r requirements-estudio.txt
+      - uses: ./.github/actions/setup-hyperframes
+      - name: Renderizar episódio
+        id: render
+        env:
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+          NINA_MAX_DUR: "180"
+        run: |
+          F=$(ls -t avulsos_fast/*.json | head -1)
+          ID=$(basename "$F" .json)
+          python motor/produzir.py "$F"
+          mkdir -p out
+          cp "saida/$ID/$ID.mp4" "out/$ID.mp4"
+          ffmpeg -v error -y -i "out/$ID.mp4" -vf scale=720:-2 -c:v libx264 -crf 26 -preset medium -c:a aac -b:a 128k -movflags +faststart "out/$ID-720p.mp4"
+          cp "saida/$ID/legenda.txt" "out/$ID-legenda.txt"
+          echo "id=$ID" >> $GITHUB_OUTPUT
+      - uses: actions/upload-artifact@v4
+        with:
+          name: nina-avulso-fast-${{ steps.render.outputs.id }}
+          path: out/
+          retention-days: 3
