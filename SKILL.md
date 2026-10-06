@@ -35,7 +35,9 @@ O padrão aprovado inclui:
 - CTA somente no final;
 - capa e Story gerados a partir do mesmo episódio;
 - duração acompanhando a fala, sem acelerar a voz apenas para caber em um minuto;
-- **fotos reais de banco de imagens** em polaroid colada (`motor/banco_imagens.py`), baixadas sozinhas a cada render.
+- **fotos reais de banco de imagens** em polaroid colada (`motor/banco_imagens.py`), baixadas sozinhas a cada render;
+- **uma única legenda de fala**: a narração aparece somente na legenda dinâmica inferior; o cartão superior fica reservado ao título/arte curta;
+- **apoio visual automático**: batidas textuais sem arte curta tentam inferir objetos/lugares da fala (carro/viatura, celular, calendário, prédio, mala, mapa etc.), com foto quando disponível e ilustração local como fallback.
 
 ## Fotos reais (banco de imagens)
 
@@ -66,7 +68,7 @@ O padrão aprovado inclui:
 
 ## Configuração atual
 
-- Render version: `nina-hyperframes-thalita-5-fotos`.
+- Render version: `nina-hyperframes-thalita-6-legenda-unica-visuais`.
 - Voz: `pt-BR-ThalitaNeural`.
 - Rate: `-6%`.
 - Gap entre batidas: `0.25s`.
