@@ -1,0 +1,86 @@
+{
+  "id": "tt20261006-o-presente-escondido",
+  "avulso": true,
+  "titulo": "O PRESENTE ESCONDIDO",
+  "temporada": "TikTok diário",
+  "cenario": "tarde",
+  "batidas": [
+    {
+      "fala": "Ela encontrou um presente escondido no carro do namorado. O problema é que o aniversário dela já tinha passado.",
+      "expr": "chocada",
+      "arte": ["titulo"],
+      "destaque": ["presente", "escondido", "aniversário"],
+      "zoom": true
+    },
+    {
+      "fala": "Marina entrou no carro para procurar o carregador e viu uma sacola de joalheria embaixo do banco.",
+      "expr": "desconfiada",
+      "foto": ["jewelry store bag under car seat", "A SACOLA"],
+      "destaque": ["joalheria", "embaixo", "banco"]
+    },
+    {
+      "fala": "Dentro tinha uma caixinha pequena, com um colar e um cartão.",
+      "expr": "neutra",
+      "foto": ["necklace gift box with card", "O PRESENTE"],
+      "destaque": ["colar", "cartão"]
+    },
+    {
+      "fala": "Por alguns segundos ela até pensou que fosse uma surpresa atrasada. Até ler o nome escrito no cartão.",
+      "expr": "desconfiada",
+      "arte": ["conversa", "PARA RENATA"],
+      "destaque": ["nome", "cartão"]
+    },
+    {
+      "fala": "Não era Marina. Era Renata.",
+      "expr": "chocada",
+      "arte": ["manchete_v", "ERA RENATA"],
+      "destaque": ["não", "Renata"],
+      "zoom": true
+    },
+    {
+      "fala": "Renata era justamente a colega de trabalho que ele dizia ser só uma amiga.",
+      "expr": "ironica",
+      "arte": ["direct", "É SÓ UMA AMIGA"],
+      "destaque": ["colega", "só", "amiga"]
+    },
+    {
+      "fala": "Marina não falou nada. Colocou tudo de volta exatamente no mesmo lugar.",
+      "expr": "neutra",
+      "foto": ["gift box hidden under car seat", "TUDO NO LUGAR"],
+      "destaque": ["não", "falou", "mesmo", "lugar"]
+    },
+    {
+      "fala": "No dia seguinte, perguntou casualmente se ele tinha comprado algum presente recentemente.",
+      "expr": "desconfiada",
+      "arte": ["conversa", "COMPROU ALGUM PRESENTE?"],
+      "destaque": ["presente", "recentemente"]
+    },
+    {
+      "fala": "Ele respondeu sem pensar: não. Por quê?",
+      "expr": "ironica",
+      "arte": ["conversa", "NÃO. POR QUÊ?"],
+      "destaque": ["não"]
+    },
+    {
+      "fala": "Foi aí que Marina teve certeza de que o problema não era o colar. Era a mentira.",
+      "expr": "chocada",
+      "arte": ["manchete", "ERA A MENTIRA"],
+      "destaque": ["colar", "mentira"],
+      "zoom": true
+    },
+    {
+      "fala": "Ela colocou a caixinha sobre a mesa e disse: então talvez você queira explicar isso.",
+      "expr": "brava",
+      "foto": ["jewelry gift box on table", "EXPLICA ISSO"],
+      "destaque": ["explicar", "isso"]
+    },
+    {
+      "fala": "E você? Perguntaria na mesma hora ou esperaria para ver até onde a história iria?",
+      "expr": "ironica",
+      "arte": ["interrogacao", "E VOCÊ?"],
+      "destaque": ["perguntaria", "esperaria"]
+    }
+  ],
+  "fim": "ERA A MENTIRA",
+  "legenda_post": "Ela achou um presente escondido no carro do namorado… mas o nome no cartão não era o dela. 😳🎁\nVocê perguntaria na hora ou esperaria para ver até onde a história iria?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Storytime #Fofoca #Relacionamento #Historias"
+}
