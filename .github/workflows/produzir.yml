@@ -27,7 +27,39 @@ permissions:
   contents: write
 
 jobs:
+  abastecer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Garantir 30 dias de roteiros
+        run: python motor/gerar_roteiros.py --alvo 60
+      - name: Persistir a reserva anual
+        run: |
+          git config user.name "nina-bot"
+          git config user.email "actions@github.com"
+          git add episodios/ conteudo/geracao_anual.json
+          if git diff --cached --quiet; then
+            echo "Reserva de roteiros já está no alvo."
+            exit 0
+          fi
+          # [skip ci] evita abrir uma segunda execução: esta mesma execução
+          # continua abaixo e renderiza os roteiros recém-gravados.
+          git commit -m "roteiros: reserva anual da Nina [skip ci]"
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push origin main && exit 0
+            sleep 5
+          done
+          exit 1
+
   listar:
+    needs: abastecer
     runs-on: ubuntu-latest
     outputs:
       lista: ${{ steps.l.outputs.lista }}
