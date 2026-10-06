@@ -1,0 +1,80 @@
+{
+  "id": "tt20261006-o-audio-da-chefe",
+  "avulso": true,
+  "titulo": "O ÁUDIO DA CHEFE",
+  "temporada": "TikTok diário",
+  "cenario": "tarde",
+  "batidas": [
+    {
+      "fala": "Ela falou mal da própria chefe por dois minutos. Só depois percebeu para quem tinha enviado o áudio.",
+      "expr": "chocada",
+      "arte": ["titulo"],
+      "destaque": ["chefe", "enviado", "áudio"],
+      "zoom": true
+    },
+    {
+      "fala": "Camila chegou em casa depois de um dia péssimo no trabalho e decidiu desabafar com a melhor amiga.",
+      "expr": "cansada",
+      "foto": ["woman holding smartphone at home after work", "O DESABAFO"],
+      "destaque": ["dia", "péssimo", "desabafar"]
+    },
+    {
+      "fala": "Ela reclamou da reunião, do serviço e disse que a chefe era a pessoa mais difícil que já tinha conhecido.",
+      "expr": "brava",
+      "arte": ["conversa", "EU NÃO AGUENTO MAIS"],
+      "destaque": ["reunião", "difícil"]
+    },
+    {
+      "fala": "Terminou o áudio, apertou enviar e colocou o celular na mesa. Dois minutos depois, chegou uma resposta.",
+      "expr": "desconfiada",
+      "foto": ["smartphone voice message on table", "MENSAGEM ENVIADA"],
+      "destaque": ["enviar", "resposta"]
+    },
+    {
+      "fala": "Só que não era da amiga. Era da chefe.",
+      "expr": "chocada",
+      "arte": ["manchete_v", "ERA A CHEFE"],
+      "destaque": ["não", "chefe"],
+      "zoom": true
+    },
+    {
+      "fala": "Camila ficou gelada. Já estava imaginando até como seria procurar outro emprego.",
+      "expr": "assustada",
+      "arte": ["coracao", "E AGORA?"],
+      "destaque": ["gelada", "outro", "emprego"]
+    },
+    {
+      "fala": "Então abriu a mensagem. A chefe escreveu: eu ouvi tudo. E sabe o pior? Você tem razão.",
+      "expr": "chocada",
+      "arte": ["direct", "VOCÊ TEM RAZÃO"],
+      "destaque": ["ouvi", "tudo", "razão"],
+      "zoom": true
+    },
+    {
+      "fala": "No dia seguinte, em vez de uma demissão, Camila recebeu um pedido de desculpas.",
+      "expr": "surpresa",
+      "foto": ["office meeting apology handshake", "NO DIA SEGUINTE"],
+      "destaque": ["demissão", "desculpas"]
+    },
+    {
+      "fala": "A chefe admitiu que estava cobrando demais da equipe e disse que precisava mudar a forma de trabalhar.",
+      "expr": "neutra",
+      "arte": ["manchete", "EU PRECISO MUDAR"],
+      "destaque": ["cobrando", "mudar"]
+    },
+    {
+      "fala": "Às vezes, um erro coloca para fora uma verdade que ninguém tinha coragem de dizer.",
+      "expr": "ironica",
+      "arte": ["titulo", "A VERDADE SAIU"],
+      "destaque": ["erro", "verdade", "coragem"]
+    },
+    {
+      "fala": "E você? Tentaria apagar o áudio ou fingiria que nada aconteceu?",
+      "expr": "ironica",
+      "arte": ["interrogacao", "E VOCÊ?"],
+      "destaque": ["apagar", "áudio", "nada"]
+    }
+  ],
+  "fim": "A VERDADE SAIU",
+  "legenda_post": "Ela queria desabafar com a melhor amiga, mas o áudio foi parar justamente com a chefe. 😳🎙️\nE você: tentaria apagar ou assumiria o que falou?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Storytime #Fofoca #Trabalho #Historias"
+}
