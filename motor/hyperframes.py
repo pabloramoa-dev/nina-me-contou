@@ -17,6 +17,48 @@ def usa_v4():
     return os.environ.get('NINA_VISUAL','v4')=='v4'
 TEXT_TYPES={'titulo','seguir','manchete','manchete_v','carimbo','direct','conversa','notificacao'}
 
+# Quando uma batida textual não traz uma arte curta explícita, o motor procura
+# um objeto/lugar citado na fala e o transforma em apoio visual. Isso evita
+# longos trechos só com a Nina e mantém o vídeo compreensível mesmo sem fotos
+# externas: tipos conhecidos caem para as ilustrações locais do catálogo.
+AUTO_VISUAIS = (
+    (r'\b(viatura|pol[ií]cia militar|policial|carro|ve[ií]culo|porta[- ]?malas|garagem)\b', 'carro'),
+    (r'\b(celular|telefone|mensagem|liga[cç][aã]o|ligou|whatsapp|direct)\b', 'celular'),
+    (r'\b(rel[oó]gio|hora|horas|meia[- ]?noite|madrugada)\b', 'relogio'),
+    (r'\b(segunda[- ]?feira|ter[cç]a[- ]?feira|quarta[- ]?feira|quinta[- ]?feira|sexta[- ]?feira|s[aá]bado|domingo|calend[aá]rio|data|datas|semana)\b', 'calendario'),
+    (r'\b(pr[eé]dio|apartamento|condom[ií]nio|casa|porta|portaria|porteiro)\b', 'porta'),
+    (r'\b(mala|bagagem|viagem)\b', 'mala'),
+    (r'\b(foto|fotografia|retrato)\b', 'foto'),
+    (r'\b(mapa|endere[cç]o|bairro|rua|esquina|rota|local)\b', 'mapa'),
+    (r'\b(caf[eé]|caneca)\b', 'cafe'),
+    (r'\b(presente|caixa|pacote)\b', 'presente'),
+    (r'\b(alian[cç]a|anel)\b', 'alianca'),
+    (r'\b(documento|documentos|recibo|comprovante|contrato|extrato)\b', 'extrato'),
+    (r'\b(perfume)\b', 'perfume'),
+    (r'\b(academia|haltere|peso)\b', 'haltere'),
+    (r'\b(batom)\b', 'batom'),
+    (r'\b(pulseira)\b', 'pulseira'),
+    (r'\b(hospital|m[eé]dico|m[eé]dica|consulta)\b', 'estetoscopio'),
+)
+
+def enriquecer_visuais(ep):
+    """Adiciona apoio visual a batidas textuais sem sobrescrever arte intencional."""
+    out=dict(ep);batidas=[]
+    for b in ep.get('batidas',[]):
+        nb=dict(b);spec=nb.get('arte') or [None]
+        tipo=spec[0];arg=spec[1] if len(spec)>1 else None
+        explicito=arg is not None or bool(nb.get('tela')) or bool(nb.get('foto'))
+        if tipo in TEXT_TYPES and tipo!='seguir' and not explicito:
+            fala=str(nb.get('fala','')).lower()
+            for padrao,novo_tipo in AUTO_VISUAIS:
+                if re.search(padrao,fala,re.I):
+                    nb['arte']=[novo_tipo]
+                    nb['_visual_auto']=True
+                    break
+        batidas.append(nb)
+    out['batidas']=batidas
+    return out
+
 def sh(cmd,**kw):
     subprocess.run([str(x) for x in cmd],check=True,**kw)
 
@@ -64,9 +106,10 @@ def bloco(txt,width=850,max_height=128,max_size=58,min_size=26):
 def titulo(b,ep,i):
     custom=b.get('hf',{}).get('titulo')
     if custom:return str(custom)
-    if i==0:return ep['titulo']
-    txt=b.get('tela') or b['fala']
-    return re.split(r'(?<=[.!?])\s+',txt,maxsplit=1)[0]
+    # O cabeçalho superior é identidade/título, não uma segunda legenda.
+    # Texto narrado fica exclusivamente na legenda dinâmica inferior.
+    if b.get('tela'):return str(b['tela'])
+    return ep['titulo']
 
 def chunks(text,width=840):
     f=ImageFont.truetype(FONT,45);out=[];g=[]
@@ -90,7 +133,9 @@ def compor(ep,segs,pasta):
         else:
             title,size=bloco(titulo(b,ep,i))
             h1=f'<h1 style="font-size:{size}px">{title}</h1>'
-        body,body_size=bloco(arg if arg is not None else (b.get('tela') or b['fala']),max_height=225,max_size=34,min_size=24,width=505 if tipo in ICONS else 790)
+        body_source=arg if arg is not None else b.get('tela')
+        show_body=body_source is not None and str(body_source).strip()!=''
+        body,body_size=bloco(body_source,max_height=225,max_size=34,min_size=24,width=505 if tipo in ICONS else 790) if show_body else ('',24)
         if i in fotos:
             art=f'<img class="banco" src="assets/foto{i}.png" alt="Foto">'
         elif tipo in ICONS:
@@ -102,7 +147,9 @@ def compor(ep,segs,pasta):
         else:
             wave='<div class="wave">'+''.join(f'<i style="height:{17+k*19%44}px"></i>' for k in range(25))+'</div>' if tipo in ('direct','notificacao') else ''
             label='CONTINUAÇÃO' if tipo=='seguir' and ep.get('parte')==1 else 'NINA ME CONTOU'
-            art=f'<div class="bubble" style="font-size:{body_size}px"><small>{label}</small>{body}{wave}<div class="underline"></div></div>'
+            # Sem argumento/tela curto, não repete a fala no cartão superior.
+            art=(f'<div class="bubble" style="font-size:{body_size}px"><small>{label}</small>{body}{wave}<div class="underline"></div></div>'
+                 if show_body else '')
         end=dur if i==len(segs)-1 else z
         parts.append(f'<section id="p{i}" class="clip panel" data-start="{a}" data-duration="{end-a}" data-track-index="2"><div id="c{i}" class="card"><div class="tape"></div><div class="eyebrow">{html.escape(str(tag))}</div>{h1}<div class="art">{art}</div></div></section>')
         if i:
@@ -210,7 +257,8 @@ def renderizar(ep,pasta,raiz):
     if len(bases)!=1:raise ValueError('Camada Nina não encontrada')
     sh(['ffmpeg','-y','-v','error','-i',bases[0],'-c:v','libx264','-preset','fast','-crf','18','-g','30','-keyint_min','30','-sc_threshold','0','-pix_fmt','yuv420p','-an','-movflags','+faststart',assets/'base.mp4'])
     import banco_imagens
-    ep=dict(ep);ep['_fotos']=banco_imagens.preparar_episodio(ep,assets,pasta)
+    ep=enriquecer_visuais(ep)
+    ep['_fotos']=banco_imagens.preparar_episodio(ep,assets,pasta)
     native=[]
     for i,b in enumerate(ep['batidas']):
         spec=b.get('arte') or [None];tipo=spec[0]
