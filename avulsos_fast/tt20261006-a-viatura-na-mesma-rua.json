@@ -1,0 +1,161 @@
+{
+  "id": "tt20261006-a-viatura-na-mesma-rua",
+  "avulso": true,
+  "titulo": "A VIATURA PARADA NA MESMA RUA",
+  "temporada": "TikTok avulso",
+  "cenario": "noite",
+  "batidas": [
+    {
+      "fala": "Durante semanas, ela viu uma viatura da Polícia Militar parada na mesma rua toda quarta-feira à noite. Até descobrir que o policial dentro dela era o próprio marido.",
+      "expr": "chocada",
+      "arte": ["titulo"],
+      "destaque": ["viatura", "quarta-feira", "marido"],
+      "zoom": true
+    },
+    {
+      "fala": "Mariana era casada com André havia sete anos. Ele era policial militar e trabalhava em turnos que mudavam bastante.",
+      "expr": "neutra",
+      "arte": ["manchete", "SETE ANOS DE CASAMENTO"],
+      "destaque": ["sete anos", "policial militar"]
+    },
+    {
+      "fala": "Por isso, ela nunca estranhou quando André dizia que precisava sair mais cedo ou voltar depois da meia-noite.",
+      "expr": "neutra",
+      "arte": ["relogio", "DEPOIS DA MEIA-NOITE"],
+      "destaque": ["nunca", "meia-noite"]
+    },
+    {
+      "fala": "Uma quarta-feira, voltando da casa da mãe, Mariana passou por uma rua que normalmente não usava e viu uma viatura estacionada.",
+      "expr": "desconfiada",
+      "foto": ["police car parked on residential street at night", "A VIATURA"],
+      "destaque": ["quarta-feira", "viatura"]
+    },
+    {
+      "fala": "Ela diminuiu o carro e reconheceu André do lado de fora, olhando para um prédio residencial.",
+      "expr": "chocada",
+      "arte": ["manchete_v", "ERA ANDRÉ"],
+      "destaque": ["André", "prédio"],
+      "zoom": true
+    },
+    {
+      "fala": "Mariana pensou que fosse uma ocorrência e seguiu caminho. Mas na quarta-feira seguinte, a mesma viatura estava no mesmo lugar.",
+      "expr": "desconfiada",
+      "arte": ["calendario", "OUTRA QUARTA-FEIRA"],
+      "destaque": ["mesma viatura", "mesmo lugar"]
+    },
+    {
+      "fala": "Poucos minutos depois, uma mulher saiu do prédio. André caminhou até ela e os dois conversaram por alguns instantes.",
+      "expr": "desconfiada",
+      "arte": ["conversa", "QUEM ERA ELA?"],
+      "destaque": ["mulher", "André"]
+    },
+    {
+      "fala": "Naquela noite, Mariana perguntou como tinha sido o serviço. André respondeu: correria, nem consegui parar direito.",
+      "expr": "ironica",
+      "arte": ["conversa", "NEM CONSEGUI PARAR"],
+      "destaque": ["correria", "parar"]
+    },
+    {
+      "fala": "Mariana não contou o que tinha visto.",
+      "expr": "desconfiada",
+      "arte": ["interrogacao", "ELA FICOU QUIETA"],
+      "destaque": ["não contou"]
+    },
+    {
+      "fala": "Na terceira quarta-feira, ela voltou àquela rua. A viatura estava lá, mas André não estava dentro.",
+      "expr": "chocada",
+      "foto": ["police car parked empty on street at night", "TERCEIRA QUARTA"],
+      "destaque": ["terceira", "André", "não estava"]
+    },
+    {
+      "fala": "Mariana esperou alguns minutos. Então viu o marido saindo do mesmo prédio.",
+      "expr": "chocada",
+      "arte": ["manchete_v", "ELE SAIU DO PRÉDIO"],
+      "destaque": ["marido", "mesmo prédio"],
+      "zoom": true
+    },
+    {
+      "fala": "Quando chegou em casa, André disse que tinha passado a noite atendendo uma ocorrência em outro bairro.",
+      "expr": "brava",
+      "arte": ["conversa", "OUTRO BAIRRO"],
+      "destaque": ["ocorrência", "outro bairro"]
+    },
+    {
+      "fala": "Foi aí que Mariana teve certeza de que ele estava mentindo.",
+      "expr": "chocada",
+      "arte": ["manchete", "ERA MENTIRA"],
+      "destaque": ["certeza", "mentindo"],
+      "zoom": true
+    },
+    {
+      "fala": "No dia seguinte, ela voltou ao prédio e perguntou ao porteiro se conhecia André.",
+      "expr": "desconfiada",
+      "foto": ["apartment building entrance concierge desk", "O PORTEIRO"],
+      "destaque": ["prédio", "porteiro", "André"]
+    },
+    {
+      "fala": "O homem respondeu naturalmente: claro. Ele vem visitar a doutora Luciana quase toda semana.",
+      "expr": "chocada",
+      "arte": ["manchete_v", "DOUTORA LUCIANA"],
+      "destaque": ["Luciana", "toda semana"],
+      "zoom": true
+    },
+    {
+      "fala": "Luciana era uma dentista que André dizia conhecer apenas porque tinha feito um tratamento com ela meses antes.",
+      "expr": "desconfiada",
+      "arte": ["manchete", "ERA SÓ A DENTISTA"],
+      "destaque": ["dentista", "tratamento"]
+    },
+    {
+      "fala": "Na quarta-feira seguinte, Mariana esperou André chegar em casa e colocou sobre a mesa uma foto dele saindo do prédio.",
+      "expr": "brava",
+      "foto": ["smartphone photo on table at home", "A FOTO"],
+      "destaque": ["foto", "saindo", "prédio"]
+    },
+    {
+      "fala": "Ela perguntou: você quer me contar a verdade ou quer que eu conte o que descobri?",
+      "expr": "brava",
+      "arte": ["conversa", "CONTA A VERDADE"],
+      "destaque": ["verdade", "descobri"]
+    },
+    {
+      "fala": "André tentou dizer que Luciana era apenas uma amiga.",
+      "expr": "ironica",
+      "arte": ["conversa", "É SÓ UMA AMIGA"],
+      "destaque": ["Luciana", "amiga"]
+    },
+    {
+      "fala": "Mariana respondeu: amizade não precisa de mentira toda quarta-feira.",
+      "expr": "chocada",
+      "arte": ["manchete_v", "AMIZADE NÃO PRECISA DE MENTIRA"],
+      "destaque": ["amizade", "mentira", "quarta-feira"],
+      "zoom": true
+    },
+    {
+      "fala": "Depois de alguns minutos, André admitiu que mantinha um relacionamento escondido havia meses.",
+      "expr": "chocada",
+      "arte": ["manchete", "ELE ADMITIU"],
+      "destaque": ["admitiu", "meses"]
+    },
+    {
+      "fala": "Mariana não gritou. Colocou uma mala perto da porta e disse: hoje você vai sair desta casa sabendo exatamente o que perdeu.",
+      "expr": "brava",
+      "foto": ["suitcase near apartment door", "A MALA"],
+      "destaque": ["mala", "sair", "perdeu"]
+    },
+    {
+      "fala": "André foi embora naquela noite. E Mariana nunca mais precisou descobrir onde ele estava às quartas-feiras.",
+      "expr": "neutra",
+      "arte": ["titulo", "FIM"],
+      "destaque": ["foi embora", "quartas-feiras"]
+    },
+    {
+      "fala": "Agora me responde: será que todo policial é assim ou isso só acontece comigo? Comenta aí!",
+      "expr": "ironica",
+      "arte": ["interrogacao", "SERÁ QUE TODO POLICIAL É ASSIM?"],
+      "destaque": ["todo policial", "comenta aí"]
+    }
+  ],
+  "fim": "SERÁ QUE TODO POLICIAL É ASSIM?",
+  "legenda_post": "Toda quarta-feira, a mesma viatura aparecia na mesma rua. Até que Mariana decidiu descobrir o motivo. 👀🚔\nE você, teria perguntado logo na primeira vez ou esperaria para ter certeza?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Storytime #Fofoca #Relacionamento #Historias"
+}
