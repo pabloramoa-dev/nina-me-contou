@@ -1,0 +1,146 @@
+{
+  "id": "tt20261006-o-cupom",
+  "avulso": true,
+  "titulo": "O CUPOM DA FARMÁCIA",
+  "temporada": "TikTok diário",
+  "cenario": "tarde",
+  "batidas": [
+    {
+      "fala": "Ele disse que comprou remédio para a mãe. Mas o cupom da farmácia tinha um item que não combinava com a história.",
+      "expr": "desconfiada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "cupom",
+        "não",
+        "combinava"
+      ]
+    },
+    {
+      "fala": "A Lívia encontrou o cupom dentro do carro do namorado. Analgésico, vitamina e um perfume feminino importado.",
+      "expr": "neutra",
+      "foto": [
+        "pharmacy receipt on car seat",
+        "O CUPOM"
+      ],
+      "destaque": [
+        "perfume",
+        "feminino"
+      ]
+    },
+    {
+      "fala": "Quando ela perguntou, o Caio respondeu rápido: foi presente para minha mãe.",
+      "expr": "ironica",
+      "arte": [
+        "conversa",
+        "PRESENTE PRA MINHA MÃE"
+      ],
+      "destaque": [
+        "minha",
+        "mãe"
+      ]
+    },
+    {
+      "fala": "Só que a mãe dele tinha alergia exatamente àquela fragrância. Lívia sabia porque tinha ido com ela ao médico.",
+      "expr": "chocada",
+      "arte": [
+        "manchete",
+        "ELA TINHA ALERGIA"
+      ],
+      "destaque": [
+        "alergia",
+        "fragrância"
+      ],
+      "zoom": true
+    },
+    {
+      "fala": "Lívia fotografou o código do cupom e abriu o aplicativo da farmácia. O pedido tinha sido feito para retirada.",
+      "expr": "desconfiada",
+      "foto": [
+        "smartphone pharmacy app receipt",
+        "RETIRADA NA LOJA"
+      ],
+      "destaque": [
+        "pedido",
+        "retirada"
+      ]
+    },
+    {
+      "fala": "No campo observação estava escrito: embalagem de presente. Cartão com o nome Bianca.",
+      "expr": "chocada",
+      "arte": [
+        "extrato",
+        "PARA BIANCA"
+      ],
+      "destaque": [
+        "Bianca"
+      ],
+      "zoom": true
+    },
+    {
+      "fala": "Bianca era a colega que sempre ligava depois do expediente pedindo ajuda com planilhas.",
+      "expr": "brava",
+      "arte": [
+        "direct",
+        "É SÓ TRABALHO"
+      ],
+      "destaque": [
+        "depois",
+        "expediente"
+      ]
+    },
+    {
+      "fala": "No aniversário dele, Lívia entregou uma caixa igual. Dentro, colocou o cupom e o cartão da farmácia.",
+      "expr": "ironica",
+      "foto": [
+        "gift box with receipt",
+        "O PRESENTE DELE"
+      ],
+      "destaque": [
+        "cupom",
+        "cartão"
+      ]
+    },
+    {
+      "fala": "Caio abriu, perdeu o sorriso e perguntou o que aquilo significava.",
+      "expr": "desconfiada",
+      "arte": [
+        "conversa",
+        "O QUE ISSO SIGNIFICA?"
+      ],
+      "destaque": [
+        "perdeu",
+        "sorriso"
+      ]
+    },
+    {
+      "fala": "Ela respondeu: significa que a Bianca ganhou perfume. E você ganhou a chance de buscar suas coisas hoje.",
+      "expr": "chocada",
+      "arte": [
+        "manchete_v",
+        "PRESENTE DEVOLVIDO"
+      ],
+      "destaque": [
+        "Bianca",
+        "buscar",
+        "coisas"
+      ],
+      "zoom": true
+    },
+    {
+      "fala": "Você conferiria o cupom ou acreditaria na primeira explicação?",
+      "expr": "ironica",
+      "arte": [
+        "interrogacao",
+        "E VOCÊ?"
+      ],
+      "destaque": [
+        "conferiria",
+        "acreditaria"
+      ]
+    }
+  ],
+  "fim": "PRESENTE DEVOLVIDO",
+  "legenda_post": "Um simples cupom mostrou que o presente tinha outra dona. 🧾🎁\nVocê conferiria ou acreditaria na primeira explicação?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Storytime #Fofoca #Relacionamento #Historias"
+}
