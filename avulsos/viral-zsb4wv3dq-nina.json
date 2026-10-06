@@ -1,0 +1,140 @@
+{
+  "id": "viral-zsb4wv3dq-nina",
+  "avulso": true,
+  "titulo": "ELA QUASE NÃO ENVIOU",
+  "temporada": "Referência viral",
+  "cenario": "tarde",
+  "referencia_origem": "https://vt.tiktok.com/ZSb4wv3DQ/",
+  "publicar_automaticamente": false,
+  "batidas": [
+    {
+      "fala": "Ela ficou dez minutos olhando para o botão de enviar. Quase desistiu de uma oportunidade que mudaria o ano inteiro dela.",
+      "expr": "desconfiada",
+      "arte": [
+        "titulo",
+        "ELA QUASE NÃO ENVIOU"
+      ],
+      "destaque": [
+        "dez minutos",
+        "enviar",
+        "oportunidade"
+      ],
+      "zoom": true
+    },
+    {
+      "fala": "Marina tinha encontrado uma vaga perfeita, mas a primeira coisa que pensou foi: eu não tenho chance nenhuma.",
+      "expr": "cansada",
+      "foto": [
+        "woman looking at laptop job application at home",
+        "SEM CHANCE?"
+      ],
+      "destaque": [
+        "vaga perfeita",
+        "não tenho chance"
+      ]
+    },
+    {
+      "fala": "Ela começou a listar tudo que podia dar errado. Experiência de menos, entrevista difícil, gente mais preparada.",
+      "expr": "preocupada",
+      "arte": [
+        "lista",
+        "TUDO QUE PODE DAR ERRADO"
+      ],
+      "destaque": [
+        "dar errado",
+        "entrevista",
+        "mais preparada"
+      ]
+    },
+    {
+      "fala": "Até que a amiga perguntou uma coisa simples: e se eles gostarem de você?",
+      "expr": "surpresa",
+      "arte": [
+        "conversa",
+        "E SE DER CERTO?"
+      ],
+      "destaque": [
+        "e se",
+        "gostarem"
+      ],
+      "zoom": true
+    },
+    {
+      "fala": "Marina riu, porque percebeu que tinha imaginado dez derrotas e nenhuma possibilidade boa.",
+      "expr": "surpresa",
+      "foto": [
+        "woman smiling surprised looking at laptop",
+        "NENHUMA POSSIBILIDADE BOA"
+      ],
+      "destaque": [
+        "dez derrotas",
+        "possibilidade boa"
+      ]
+    },
+    {
+      "fala": "Ela respirou, corrigiu o currículo pela última vez e apertou enviar.",
+      "expr": "neutra",
+      "arte": [
+        "direct",
+        "ENVIADO"
+      ],
+      "destaque": [
+        "respirou",
+        "enviar"
+      ],
+      "zoom": true
+    },
+    {
+      "fala": "Dois dias depois, chegou o convite para a entrevista.",
+      "expr": "chocada",
+      "arte": [
+        "manchete_v",
+        "VOCÊ FOI SELECIONADA"
+      ],
+      "destaque": [
+        "dois dias",
+        "entrevista"
+      ],
+      "zoom": true
+    },
+    {
+      "fala": "E o mais importante nem foi conseguir a entrevista. Foi descobrir quanto o medo estava decidindo por ela.",
+      "expr": "ironica",
+      "arte": [
+        "titulo",
+        "O MEDO DECIDIA POR ELA"
+      ],
+      "destaque": [
+        "medo",
+        "decidindo"
+      ]
+    },
+    {
+      "fala": "Às vezes, você não precisa ter certeza de que vai dar certo. Só precisa parar de desistir antes de tentar.",
+      "expr": "neutra",
+      "arte": [
+        "coracao",
+        "TENTE PRIMEIRO"
+      ],
+      "destaque": [
+        "certeza",
+        "desistir",
+        "tentar"
+      ]
+    },
+    {
+      "fala": "E você? Tem alguma coisa que ainda não fez só porque já imaginou que daria errado?",
+      "expr": "ironica",
+      "arte": [
+        "interrogacao",
+        "E VOCÊ?"
+      ],
+      "destaque": [
+        "ainda não fez",
+        "daria errado"
+      ]
+    }
+  ],
+  "fim": "E SE DER CERTO?",
+  "legenda_post": "Ela quase desistiu antes mesmo de tentar. Às vezes, o medo cria dez finais ruins antes da primeira tentativa. E você: tem alguma coisa que ainda não fez porque já decidiu que vai dar errado?\\n\\nHistória fictícia, criada para entretenimento e reflexão.\\n#NinaMeContou #Storytime #Reflexao #Motivacao #Historias"
+}
