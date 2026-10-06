@@ -1,7 +1,7 @@
 name: Vigia da fila
 
-# Todo dia confere se há pelo menos 4 episódios completos prontos (2 dias de postagem).
-# Se não houver, abre um aviso (issue) pedindo roteiros novos.
+# Todo dia confere se há pelo menos 8 episódios completos prontos (4 dias de postagem).
+# Os roteiros agora são gerados automaticamente; aviso significa que a produção/render precisa ser conferida.
 
 on:
   schedule:
@@ -32,4 +32,4 @@ jobs:
             if (abertas.data.length) return;
             await github.rest.issues.create({owner: context.repo.owner, repo: context.repo.repo, labels: ['fila'],
               title: 'Fila da Nina acabando: só ${{ steps.f.outputs.prontos }} episódio(s) pronto(s)',
-              body: 'Peça ao Claude um lote novo de roteiros (skill nina-historias) e suba os JSON em episodios/. O estúdio renderiza sozinho.'});
+              body: 'A Nina possui reabastecimento automático para 730 histórias/1 ano. Se a fila pronta ficou baixa, confira o workflow Produzir episódios: o job abastecer deve criar roteiros e o estúdio deve renderizá-los.'});
