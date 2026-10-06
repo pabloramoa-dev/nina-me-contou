@@ -13,54 +13,42 @@
       "zoom": true
     },
     {
-      "fala": "Carolina namorava Rafael havia quase dois anos. Ele dizia trabalhar como supervisor de uma empresa de segurança.",
+      "fala": "Carolina namorava Rafael havia quase dois anos. Ele dizia trabalhar como supervisor de uma empresa de segurança e, algumas noites, voltava de madrugada.",
       "expr": "neutra",
       "foto": ["security company office night", "O TRABALHO DE RAFAEL"],
-      "destaque": ["dois anos", "segurança"]
+      "destaque": ["dois anos", "segurança", "madrugada"]
     },
     {
-      "fala": "Por causa do serviço, às vezes desaparecia durante noites inteiras. Carolina nunca desconfiou.",
-      "expr": "desconfiada",
-      "arte": ["relogio", "NOITES INTEIRAS"],
-      "destaque": ["noites", "inteiras", "nunca", "desconfiou"]
-    },
-    {
-      "fala": "Até o dia em que o carro dela quebrou e Rafael emprestou o dele.",
-      "expr": "neutra",
-      "foto": ["car keys handover", "CARRO EMPRESTADO"],
-      "destaque": ["carro", "emprestou"]
-    },
-    {
-      "fala": "No caminho para casa, ela parou no supermercado. Quando abriu o porta-malas para guardar as compras, viu uma mochila preta escondida atrás de uma caixa.",
+      "fala": "Um dia o carro dela quebrou e Rafael emprestou o dele. Ao abrir o porta-malas no supermercado, Carolina viu uma mochila preta atrás de uma caixa.",
       "expr": "desconfiada",
       "foto": ["black backpack hidden in car trunk", "A MOCHILA"],
-      "destaque": ["mochila", "preta", "escondida"]
+      "destaque": ["porta-malas", "mochila", "preta"]
     },
     {
-      "fala": "Ela puxou a mochila. Dentro havia uma farda da Polícia Militar, com calça, camisa e cinto cuidadosamente dobrados.",
+      "fala": "Dentro havia uma farda da Polícia Militar, cuidadosamente dobrada.",
       "expr": "chocada",
       "foto": ["folded police style uniform in bag", "A FARDA"],
-      "destaque": ["farda", "dobrados"],
+      "destaque": ["farda", "Polícia Militar"],
       "zoom": true
     },
     {
-      "fala": "Carolina ficou parada olhando aquilo. Rafael nunca tinha contado que era policial. Na verdade, sempre disse que nunca tinha trabalhado para o governo.",
-      "expr": "desconfiada",
-      "arte": ["manchete", "ELE NUNCA FOI POLICIAL"],
-      "destaque": ["nunca", "policial", "governo"]
-    },
-    {
-      "fala": "Ela olhou novamente para a camisa. Havia um sobrenome bordado. Mas não era Rafael. Era Moreira.",
+      "fala": "Ela olhou a camisa e viu um sobrenome bordado: Moreira.",
       "expr": "chocada",
       "arte": ["manchete_v", "MOREIRA"],
       "destaque": ["sobrenome", "Moreira"],
       "zoom": true
     },
     {
-      "fala": "Carolina tirou uma foto e colocou tudo exatamente no mesmo lugar.",
+      "fala": "Rafael nunca tinha contado que era policial e sempre dizia que nunca tinha trabalhado para o governo.",
+      "expr": "desconfiada",
+      "arte": ["manchete", "ELE NUNCA FOI POLICIAL"],
+      "destaque": ["nunca", "policial", "governo"]
+    },
+    {
+      "fala": "Carolina tirou uma foto e colocou tudo de volta no mesmo lugar.",
       "expr": "desconfiada",
       "foto": ["smartphone taking photo of folded uniform", "UMA FOTO"],
-      "destaque": ["foto", "mesmo", "lugar"]
+      "destaque": ["foto", "mesmo lugar"]
     },
     {
       "fala": "Naquela noite perguntou casualmente: Rafael, você conhece algum policial chamado Moreira?",
@@ -69,142 +57,98 @@
       "destaque": ["policial", "Moreira"]
     },
     {
-      "fala": "Ele demorou alguns segundos. Depois respondeu: conheço. Trabalha comigo fazendo uns serviços por fora.",
+      "fala": "Ele demorou e respondeu: conheço. Trabalha comigo fazendo uns serviços por fora.",
       "expr": "desconfiada",
-      "arte": ["relogio", "ALGUNS SEGUNDOS"],
+      "arte": ["relogio", "ELE DEMOROU"],
       "destaque": ["demorou", "serviços", "por fora"]
     },
     {
-      "fala": "Carolina disse que era só curiosidade. Mas alguma coisa naquela resposta incomodou.",
-      "expr": "desconfiada",
-      "arte": ["interrogacao", "ALGUMA COISA NÃO BATIA"],
-      "destaque": ["resposta", "incomodou"]
-    },
-    {
-      "fala": "Dois dias depois, Rafael disse que teria serviço noturno. Carolina não discutiu. Só observou.",
-      "expr": "neutra",
-      "arte": ["relogio", "SERVIÇO NOTURNO"],
-      "destaque": ["serviço", "noturno", "observou"]
-    },
-    {
-      "fala": "Às onze da noite, recebeu uma mensagem dele: vai dormir, amor. Hoje eu volto tarde.",
+      "fala": "Dois dias depois, Rafael disse que teria serviço noturno. Às onze da noite mandou uma mensagem: hoje eu volto tarde.",
       "expr": "desconfiada",
       "arte": ["direct", "HOJE EU VOLTO TARDE"],
-      "destaque": ["onze", "volto", "tarde"]
+      "destaque": ["serviço noturno", "onze", "volto tarde"]
     },
     {
-      "fala": "Às onze e quarenta, o celular dela tocou. Era a irmã, Vanessa.",
+      "fala": "Quarenta minutos depois, Vanessa, irmã de Carolina, ligou nervosa e perguntou se Rafael estava com ela.",
       "expr": "chocada",
       "arte": ["celular", "VANESSA LIGANDO"],
-      "destaque": ["onze e quarenta", "Vanessa"]
+      "destaque": ["Vanessa", "Rafael", "com ela"]
     },
     {
-      "fala": "Vanessa estava nervosa e perguntou: Carol, o Rafael está com você?",
-      "expr": "desconfiada",
-      "arte": ["conversa", "O RAFAEL ESTÁ COM VOCÊ?"],
-      "destaque": ["Rafael", "com você"]
-    },
-    {
-      "fala": "Carolina respondeu que não. Então Vanessa disse: meu marido acabou de sair daqui procurando uma farda que desapareceu.",
+      "fala": "Carolina disse que não. Então Vanessa contou que o marido dela estava procurando uma farda que tinha desaparecido de casa.",
       "expr": "chocada",
       "arte": ["manchete_v", "A FARDA SUMIU"],
-      "destaque": ["farda", "desapareceu"],
+      "destaque": ["farda", "desaparecido"],
       "zoom": true
     },
     {
-      "fala": "O marido de Vanessa era policial militar. E o sobrenome dele? Moreira.",
+      "fala": "O marido de Vanessa era policial militar. E o sobrenome dele era Moreira.",
       "expr": "chocada",
       "arte": ["manchete", "ERA MOREIRA"],
       "destaque": ["policial militar", "Moreira"],
       "zoom": true
     },
     {
-      "fala": "Carolina sentiu o estômago gelar. Perguntou se havia alguma identificação específica na farda.",
-      "expr": "assustada",
-      "arte": ["coracao", "O ESTÔMAGO GELOU"],
-      "destaque": ["identificação", "farda"]
-    },
-    {
-      "fala": "Vanessa descreveu exatamente a que estava no carro de Rafael.",
-      "expr": "chocada",
-      "arte": ["manchete_v", "ERA A MESMA"],
-      "destaque": ["exatamente", "mesma"],
-      "zoom": true
-    },
-    {
-      "fala": "Carolina ainda tentou encontrar alguma explicação. Talvez Rafael tivesse pegado emprestado. Talvez Moreira tivesse esquecido no carro.",
+      "fala": "Carolina perguntou como era a farda. Vanessa descreveu exatamente a que estava escondida no carro de Rafael.",
       "expr": "desconfiada",
-      "arte": ["interrogacao", "QUAL ERA A EXPLICAÇÃO?"],
-      "destaque": ["emprestado", "esquecido"]
+      "foto": ["folded uniform in car trunk", "ERA A MESMA"],
+      "destaque": ["exatamente", "escondida", "Rafael"]
     },
     {
-      "fala": "Só que Vanessa completou: essa farda desapareceu daqui de casa há quase uma semana.",
+      "fala": "E completou: essa farda sumiu daqui há quase uma semana.",
       "expr": "chocada",
       "arte": ["manchete_v", "HÁ UMA SEMANA"],
-      "destaque": ["desapareceu", "uma semana"],
+      "destaque": ["sumiu", "uma semana"],
       "zoom": true
     },
     {
-      "fala": "No dia seguinte, Carolina esperou Rafael chegar. Ele entrou sorrindo como se nada tivesse acontecido.",
+      "fala": "No dia seguinte, Carolina esperou Rafael chegar e colocou no celular a foto da farda.",
       "expr": "neutra",
-      "foto": ["man arriving home apartment door", "NO DIA SEGUINTE"],
-      "destaque": ["sorrindo", "nada"]
-    },
-    {
-      "fala": "Ela colocou o celular sobre a mesa. Na tela estava a foto da farda. O sorriso dele sumiu.",
-      "expr": "chocada",
       "foto": ["smartphone on table showing uniform photo", "A PROVA"],
-      "destaque": ["foto", "farda", "sorriso", "sumiu"],
-      "zoom": true
+      "destaque": ["foto", "farda"]
     },
     {
-      "fala": "Carolina perguntou: quer me contar por que a farda do meu cunhado estava escondida no seu carro?",
+      "fala": "Perguntou: quer me explicar por que a farda do meu cunhado estava escondida no seu carro?",
       "expr": "brava",
       "arte": ["conversa", "POR QUE ESTAVA NO SEU CARRO?"],
       "destaque": ["farda", "cunhado", "seu carro"]
     },
     {
-      "fala": "Rafael tentou explicar. Disse que Moreira tinha emprestado.",
+      "fala": "Rafael disse que Moreira tinha emprestado.",
       "expr": "ironica",
       "arte": ["conversa", "ELE ME EMPRESTOU"],
       "destaque": ["Moreira", "emprestado"]
     },
     {
-      "fala": "Carolina respondeu: engraçado, porque ele está procurando essa farda desde a semana passada.",
+      "fala": "Carolina respondeu: estranho, porque ele está procurando essa farda desde a semana passada.",
       "expr": "brava",
       "arte": ["manchete", "ELE ESTÁ PROCURANDO"],
       "destaque": ["procurando", "semana passada"]
     },
     {
-      "fala": "Rafael ficou em silêncio. E foi naquele silêncio que Carolina percebeu que ainda faltava uma parte da história.",
+      "fala": "Rafael ficou em silêncio.",
       "expr": "desconfiada",
       "arte": ["relogio", "SILÊNCIO"],
-      "destaque": ["silêncio", "parte", "história"]
+      "destaque": ["silêncio"]
     },
     {
-      "fala": "Ela perguntou onde ele realmente estava nas noites em que dizia trabalhar. Rafael não respondeu.",
-      "expr": "brava",
-      "arte": ["conversa", "ONDE VOCÊ ESTAVA?"],
-      "destaque": ["realmente", "noites", "não respondeu"]
-    },
-    {
-      "fala": "Então Carolina ligou para Vanessa. Poucos minutos depois, as duas começaram a comparar datas.",
+      "fala": "Carolina ligou para Vanessa e as duas começaram a comparar datas.",
       "expr": "desconfiada",
       "arte": ["calendario", "COMPARANDO DATAS"],
       "destaque": ["Vanessa", "comparar", "datas"]
     },
     {
-      "fala": "E descobriram que quase todas as noites em que Rafael dizia estar trabalhando eram justamente as noites em que Moreira também dizia estar de serviço.",
+      "fala": "Quase todas as noites em que Rafael dizia estar trabalhando coincidiam com noites em que Moreira também dizia estar de serviço.",
       "expr": "chocada",
       "arte": ["calendario", "AS DATAS BATIAM"],
-      "destaque": ["noites", "Rafael", "Moreira", "serviço"],
+      "destaque": ["Rafael", "Moreira", "serviço"],
       "zoom": true
     },
     {
-      "fala": "Só que Moreira não estava em serviço. Os dois tinham usado histórias diferentes para esconder encontros e festas que nenhuma das duas conhecia.",
+      "fala": "Mas Moreira não estava de serviço. Os dois usavam desculpas diferentes para esconder encontros e festas que nenhuma das duas conhecia.",
       "expr": "chocada",
       "arte": ["manchete_v", "DUAS HISTÓRIAS"],
-      "destaque": ["não", "serviço", "histórias", "festas"],
+      "destaque": ["não", "serviço", "desculpas", "festas"],
       "zoom": true
     },
     {
@@ -214,19 +158,13 @@
       "destaque": ["farda", "mentira", "duas histórias"]
     },
     {
-      "fala": "Carolina terminou o relacionamento naquela noite. Vanessa decidiu resolver a própria situação separadamente.",
+      "fala": "Carolina terminou o relacionamento e Vanessa decidiu resolver a própria situação separadamente.",
       "expr": "neutra",
       "arte": ["manchete", "FIM DA HISTÓRIA"],
       "destaque": ["terminou", "relacionamento"]
     },
     {
-      "fala": "E Rafael nunca imaginou que uma mochila esquecida no porta-malas seria suficiente para fazer tudo aparecer.",
-      "expr": "ironica",
-      "foto": ["black backpack in car trunk", "FOI ASSIM QUE TUDO APARECEU"],
-      "destaque": ["mochila", "porta-malas", "tudo"]
-    },
-    {
-      "fala": "Agora me conta: se você encontrasse uma farda escondida no carro de alguém que nunca foi policial, perguntaria imediatamente ou investigaria primeiro?",
+      "fala": "E você? Se encontrasse uma farda escondida no carro de alguém que nunca foi policial, perguntaria na hora ou investigaria primeiro?",
       "expr": "ironica",
       "arte": ["interrogacao", "E VOCÊ?"],
       "destaque": ["farda", "perguntaria", "investigaria"]
