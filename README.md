@@ -8,9 +8,11 @@ CTA de seguir pra não perder a continuação (`motor/cta.py`).
 
 ## Como funciona
 
-1. Você (ou o Claude) põe roteiros novos em `episodios/` — sempre em par:
-   `epNNN-p1.json` + `epNNN-p2.json`.
-2. O workflow **Produzir episódios** roda sozinho a cada push em `episodios/`
+1. O workflow **Produzir episódios** começa pelo abastecedor automático
+   (`motor/gerar_roteiros.py`), que mantém **60 histórias completas** na reserva.
+   O plano anual possui **730 histórias / 1.460 vídeos**, suficientes para 365 dias no ritmo atual.
+   Cada história entra em `episodios/` como `epNNN-p1.json` + `epNNN-p2.json`.
+2. Na mesma execução, o estúdio pega os roteiros ainda sem MP4
    (uma máquina por parte, em paralelo): gera voz (**Thalita Neural pt-BR**), lip sync, vídeo
    (personagem Manim + composição HyperFrames), capa e a versão Story (≤59 s, mantendo o CTA final), e grava em `reels/`.
    Roteiro ou versão de render alterado depois do render volta sozinho pro estúdio (`reels/<id>.hash`).
@@ -18,7 +20,8 @@ CTA de seguir pra não perder a continuação (`motor/cta.py`).
    sequência: continuação pendente primeiro, depois a parte 1 do próximo episódio
    completo. Às 8h e às 20h publica também o Story.
    Nunca publica o mesmo vídeo duas vezes (`conteudo/publicados.json`).
-4. **Vigia da fila** (6h30): se houver menos de 4 episódios prontos (2 dias), abre um aviso.
+4. **Vigia da fila** (6h30): se houver menos de 8 episódios prontos (4 dias), abre um aviso.
+   O aviso agora significa falha de produção/render, porque os roteiros são reabastecidos automaticamente.
 5. **Renovar a credencial** (segunda, 5h): renova o token de 60 dias sozinho.
 
 ## Voz oficial da Nina
