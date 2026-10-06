@@ -1,0 +1,70 @@
+name: Limpeza de mídia publicada
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "conteudo/tiktok_metricool/**.json"
+      - ".github/workflows/limpeza-midia.yml"
+  schedule:
+    - cron: "40 7 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nina-limpeza-midia
+  cancel-in-progress: false
+
+jobs:
+  limpar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          filter: blob:none
+          sparse-checkout: |
+            .github/workflows/limpeza-midia.yml
+            conteudo/tiktok_metricool
+          sparse-checkout-cone-mode: false
+
+      - name: Identificar episódios já entregues ao Metricool
+        run: |
+          python3 - <<'PY' > /tmp/episodios.txt
+          import glob, json
+          from datetime import datetime, timezone, timedelta
+          limite = datetime.now(timezone.utc) - timedelta(hours=6)
+          for arq in glob.glob("conteudo/tiktok_metricool/*.json"):
+              try:
+                  d = json.load(open(arq, encoding="utf-8"))
+                  quando = datetime.fromisoformat(d["date"])
+                  if quando.tzinfo is None:
+                      continue
+                  if d.get("mediaUrl") and quando.astimezone(timezone.utc) <= limite:
+                      ep = d.get("episode")
+                      if ep:
+                          print(ep)
+              except Exception:
+                  pass
+          PY
+          echo "Episódios elegíveis para limpeza:"
+          cat /tmp/episodios.txt || true
+
+      - name: Remover arquivos grandes sem baixar os blobs
+        run: |
+          git config user.name "nina-bot"
+          git config user.email "actions@github.com"
+          while read -r ep; do
+            [ -n "$ep" ] || continue
+            while read -r arquivo; do
+              [ -n "$arquivo" ] || continue
+              git update-index --force-remove -- "$arquivo"
+              echo "removendo $arquivo"
+            done < <(git ls-files "avulsos_prontos/$ep*")
+          done < /tmp/episodios.txt
+          git diff --cached --quiet && exit 0
+          git commit -m "limpeza: remover mídia já entregue ao Metricool [skip ci]"
+          for i in 1 2 3; do git pull --rebase && git push && exit 0; sleep 5; done
+          exit 1
