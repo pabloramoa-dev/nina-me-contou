@@ -53,19 +53,7 @@ jobs:
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
           NINA_MAX_DUR: "180"
         run: |
-          F=$(git diff-tree --no-commit-id --name-only -r "$GITHUB_SHA" | grep '^avulsos_fast/.*\\.json
-          python motor/produzir.py "$F"
-          mkdir -p out
-          cp "saida/$ID/$ID.mp4" "out/$ID.mp4"
-          ffmpeg -v error -y -i "out/$ID.mp4" -vf scale=720:-2 -c:v libx264 -crf 26 -preset medium -c:a aac -b:a 128k -movflags +faststart "out/$ID-720p.mp4"
-          cp "saida/$ID/legenda.txt" "out/$ID-legenda.txt"
-          echo "id=$ID" >> $GITHUB_OUTPUT
-      - uses: actions/upload-artifact@v4
-        with:
-          name: nina-avulso-fast-${{ steps.render.outputs.id }}
-          path: out/
-          retention-days: 3
- | head -1 || true)
+          F=$(git diff-tree --no-commit-id --name-only -r "$GITHUB_SHA" | grep '^avulsos_fast/.*\.json$' | head -1 || true)
           [ -n "$F" ] || F=$(ls -t avulsos_fast/*.json | head -1)
           ID=$(basename "$F" .json)
           python motor/produzir.py "$F"
