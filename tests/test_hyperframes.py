@@ -112,3 +112,33 @@ def test_phoneme_mouths_exist():
     pytest.importorskip('manim')
     import nina_lib as N
     for l in 'ABCDEFGH':assert N.boca_fala(l) is not None
+
+
+def test_top_card_does_not_repeat_full_narration(tmp_path):
+    ep,segs=fixture()
+    ep['avulso']=True
+    ep['batidas'][0]['arte']=['titulo']
+    H.compor(ep,segs,tmp_path)
+    html=(tmp_path/'index.html').read_text()
+    sec=html.split('id="p0"',1)[1].split('</section>',1)[0]
+    assert 'class="bubble"' not in sec
+    assert 'UMA HISTÓRIA' in sec
+
+
+def test_visual_auto_enrichment_keeps_explicit_art():
+    ep={'titulo':'T','batidas':[
+        {'fala':'A viatura da Polícia Militar estava na mesma rua.','arte':['titulo']},
+        {'fala':'Ela recebeu uma mensagem no celular.','arte':['titulo']},
+        {'fala':'Ele respondeu na hora.','arte':['conversa','NÃO FOI NADA']},
+        {'fala':'A mala estava perto da porta.','arte':['titulo']},
+    ]}
+    out=H.enriquecer_visuais(ep)
+    assert out['batidas'][0]['arte']==['carro']
+    assert out['batidas'][1]['arte']==['celular']
+    assert out['batidas'][2]['arte']==['conversa','NÃO FOI NADA']
+    assert out['batidas'][3]['arte']==['mala']
+
+
+def test_header_defaults_to_episode_title():
+    ep,_=fixture()
+    assert H.titulo(ep['batidas'][1],ep,1)=='UMA HISTÓRIA'
