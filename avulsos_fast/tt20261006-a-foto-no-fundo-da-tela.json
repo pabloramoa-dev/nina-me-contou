@@ -1,0 +1,80 @@
+{
+  "id": "tt20261006-a-foto-no-fundo-da-tela",
+  "avulso": true,
+  "titulo": "A FOTO NO FUNDO DA TELA",
+  "temporada": "TikTok diário",
+  "cenario": "noite",
+  "batidas": [
+    {
+      "fala": "Ela recebeu uma foto aparentemente normal. Mas percebeu um detalhe no fundo que mudou tudo.",
+      "expr": "chocada",
+      "arte": ["titulo"],
+      "destaque": ["foto", "detalhe", "mudou", "tudo"],
+      "zoom": true
+    },
+    {
+      "fala": "Lucas disse para a namorada que estava trabalhando até mais tarde.",
+      "expr": "neutra",
+      "arte": ["conversa", "VOU SAIR TARDE"],
+      "destaque": ["trabalhando", "mais", "tarde"]
+    },
+    {
+      "fala": "Para provar, mandou uma foto do computador e escreveu: ainda preso aqui no escritório.",
+      "expr": "desconfiada",
+      "foto": ["laptop desk office night smartphone photo", "NO ESCRITÓRIO"],
+      "destaque": ["foto", "escritório"]
+    },
+    {
+      "fala": "Fernanda respondeu normalmente. Só que alguns minutos depois resolveu olhar a foto de novo.",
+      "expr": "desconfiada",
+      "foto": ["woman looking closely at smartphone photo", "OLHA DE NOVO"],
+      "destaque": ["olhar", "foto", "de novo"]
+    },
+    {
+      "fala": "No reflexo da tela do computador aparecia uma janela. E naquela janela dava para ver claramente uma varanda.",
+      "expr": "chocada",
+      "foto": ["laptop screen reflection balcony", "A VARANDA"],
+      "destaque": ["reflexo", "janela", "varanda"],
+      "zoom": true
+    },
+    {
+      "fala": "O escritório dele ficava no décimo andar e não tinha varanda nenhuma.",
+      "expr": "ironica",
+      "arte": ["manchete_v", "NÃO EXISTIA VARANDA"],
+      "destaque": ["não", "tinha", "varanda"]
+    },
+    {
+      "fala": "Fernanda ampliou a imagem. Sobre a mesa também havia duas taças.",
+      "expr": "chocada",
+      "foto": ["two wine glasses on table apartment", "DUAS TAÇAS"],
+      "destaque": ["duas", "taças"],
+      "zoom": true
+    },
+    {
+      "fala": "Ela não discutiu. Só respondeu: bonita essa varanda nova do seu escritório.",
+      "expr": "ironica",
+      "arte": ["direct", "BONITA ESSA VARANDA"],
+      "destaque": ["varanda", "nova", "escritório"]
+    },
+    {
+      "fala": "A mensagem ficou visualizada por cinco minutos. Então Lucas começou a ligar sem parar.",
+      "expr": "desconfiada",
+      "arte": ["celular", "LIGAÇÃO ATRÁS DE LIGAÇÃO"],
+      "destaque": ["cinco", "minutos", "ligar"]
+    },
+    {
+      "fala": "Fernanda não precisava mais perguntar onde ele estava. Ela só queria saber por que ele tinha mentido.",
+      "expr": "brava",
+      "arte": ["manchete", "POR QUE MENTIU?"],
+      "destaque": ["onde", "mentido"]
+    },
+    {
+      "fala": "E você? Teria percebido o detalhe na foto ou teria acreditado?",
+      "expr": "ironica",
+      "arte": ["interrogacao", "E VOCÊ?"],
+      "destaque": ["percebido", "detalhe", "acreditado"]
+    }
+  ],
+  "fim": "O DETALHE ENTREGOU TUDO",
+  "legenda_post": "Uma foto aparentemente normal entregou tudo por causa de um detalhe no reflexo. 😳📱\nVocê teria percebido a varanda e as duas taças?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Storytime #Fofoca #Relacionamento #Historias"
+}
