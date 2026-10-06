@@ -1,0 +1,27 @@
+{
+  "episode": "tt20261006-o-cupom",
+  "brandId": 7228264,
+  "account": "ninamecontou",
+  "id": 389399794,
+  "uuid": "8207922704304523620",
+  "date": "2026-10-06T18:00:00-03:00",
+  "timezone": "America/Sao_Paulo",
+  "status": "agendado",
+  "providerStatus": "PENDING",
+  "autoPublish": true,
+  "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7228264&openWithPostUuid=8207922704304523620",
+  "sourceUrl": "https://raw.githubusercontent.com/pabloramoa-dev/nina-me-contou/main/avulsos_prontos/tt20261006-o-cupom.mp4",
+  "mediaUrl": "https://static.metricool.com/planner/202610/7228264-file-17529033904170110743.mp4",
+  "caption": "Um simples cupom mostrou que o presente tinha outra dona. 🧾🎁\nVocê conferiria ou acreditaria na primeira explicação?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Storytime #Fofoca #Relacionamento #Historias\n",
+  "validation": {
+    "workflowRun": 37459608848,
+    "conclusion": "success",
+    "width": 1080,
+    "height": 1920,
+    "durationSeconds": 80.666667,
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "visualSampleChecked": true
+  },
+  "monthlyLimit": 20
+}
