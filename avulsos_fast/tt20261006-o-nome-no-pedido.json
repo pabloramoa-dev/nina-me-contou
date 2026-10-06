@@ -1,0 +1,80 @@
+{
+  "id": "tt20261006-o-nome-no-pedido",
+  "avulso": true,
+  "titulo": "O NOME NO PEDIDO",
+  "temporada": "TikTok diário",
+  "cenario": "noite",
+  "batidas": [
+    {
+      "fala": "O pedido de comida chegou na casa certa. Mas estava no nome da pessoa errada.",
+      "expr": "chocada",
+      "arte": ["titulo"],
+      "destaque": ["casa", "certa", "pessoa", "errada"],
+      "zoom": true
+    },
+    {
+      "fala": "Patrícia estava em casa quando o interfone tocou. O entregador disse que tinha um pedido para aquele apartamento.",
+      "expr": "neutra",
+      "foto": ["food delivery bag apartment door", "O PEDIDO"],
+      "destaque": ["entregador", "pedido", "apartamento"]
+    },
+    {
+      "fala": "Ela respondeu que não tinha pedido nada. Então perguntou o nome.",
+      "expr": "desconfiada",
+      "arte": ["conversa", "QUAL É O NOME?"],
+      "destaque": ["não", "pedido", "nome"]
+    },
+    {
+      "fala": "O entregador respondeu: Juliana.",
+      "expr": "chocada",
+      "arte": ["manchete_v", "JULIANA"],
+      "destaque": ["Juliana"],
+      "zoom": true
+    },
+    {
+      "fala": "Patrícia estranhou porque não conhecia nenhuma Juliana. Mas o endereço estava perfeito: apartamento, bloco e complemento.",
+      "expr": "desconfiada",
+      "foto": ["delivery receipt apartment address", "ENDEREÇO CERTO"],
+      "destaque": ["endereço", "perfeito"]
+    },
+    {
+      "fala": "Quando o namorado chegou, ela comentou sobre o pedido. Ele ficou em silêncio por alguns segundos.",
+      "expr": "desconfiada",
+      "arte": ["relogio", "SILÊNCIO"],
+      "destaque": ["silêncio", "segundos"]
+    },
+    {
+      "fala": "Depois respondeu: deve ter sido erro do aplicativo.",
+      "expr": "ironica",
+      "arte": ["conversa", "ERRO DO APLICATIVO"],
+      "destaque": ["erro", "aplicativo"]
+    },
+    {
+      "fala": "Só que naquela mesma noite o celular dele acendeu sobre a mesa.",
+      "expr": "desconfiada",
+      "foto": ["smartphone lighting up on table at night", "UMA MENSAGEM"],
+      "destaque": ["celular", "acendeu"]
+    },
+    {
+      "fala": "Na tela apareceu uma mensagem: Juliana, chegou tudo certinho ontem?",
+      "expr": "chocada",
+      "arte": ["direct", "CHEGOU TUDO CERTINHO ONTEM?"],
+      "destaque": ["Juliana", "ontem"],
+      "zoom": true
+    },
+    {
+      "fala": "Patrícia olhou para ele e perguntou apenas uma coisa: ainda acha que foi erro do aplicativo?",
+      "expr": "brava",
+      "arte": ["manchete", "AINDA FOI ERRO?"],
+      "destaque": ["ainda", "erro", "aplicativo"]
+    },
+    {
+      "fala": "E você? Pegaria o celular para descobrir tudo ou perguntaria diretamente?",
+      "expr": "ironica",
+      "arte": ["interrogacao", "E VOCÊ?"],
+      "destaque": ["celular", "descobrir", "perguntaria"]
+    }
+  ],
+  "fim": "O NOME ENTREGOU TUDO",
+  "legenda_post": "O pedido chegou no endereço certo, mas estava no nome de uma mulher que ela nunca tinha ouvido falar. 👀🍔\nVocê acreditaria que foi erro do aplicativo?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Storytime #Fofoca #Relacionamento #Historias"
+}
