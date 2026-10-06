@@ -147,6 +147,33 @@ def _reserva_atual() -> int:
 def _pick(seq: int, itens: list):
     return itens[seq % len(itens)]
 
+def _corrigir_existentes() -> int:
+    """Corrige automaticamente pequenos defeitos de texto nos roteiros gerados."""
+    trocas = {
+        "Naquele terça,": "Naquela terça,",
+        "Naquele quarta,": "Naquela quarta,",
+        "Naquele quinta,": "Naquela quinta,",
+        "Naquele sexta,": "Naquela sexta,",
+    }
+    alterados = 0
+    for path in EP_DIR.glob("ep*-p*.json"):
+        ep = _ler_json(path, {})
+        if not ep.get("gerado_automaticamente"):
+            continue
+        mudou = False
+        for batida in ep.get("batidas", []):
+            fala = str(batida.get("fala", ""))
+            nova = fala
+            for velho, novo in trocas.items():
+                nova = nova.replace(velho, novo)
+            if nova != fala:
+                batida["fala"] = nova
+                mudou = True
+        if mudou:
+            _salvar(path, ep)
+            alterados += 1
+    return alterados
+
 def _beats_parte1(seq: int, a: str, b: str, c: str, objeto: str, arte: str,
                   segredo: str, bairro: str, motivo: str, revelacao: str, gancho: str):
     anos = 2 + (seq % 8)
@@ -155,7 +182,7 @@ def _beats_parte1(seq: int, a: str, b: str, c: str, objeto: str, arte: str,
         {"fala": gancho, "expr": "ironica", "arte": ["titulo"], "destaque": ["não", "deveria"]},
         {"fala": f"A história chegou pela {a}. {b} fazia parte da rotina dela havia {anos} anos.", "expr": "neutra",
          "arte": ["direct", f"{a.upper()}"], "destaque": [a]},
-        {"fala": f"Naquele {dia}, {a} encontrou {objeto}.", "expr": "desconfiada",
+        {"fala": f"Naquela {dia}, {a} encontrou {objeto}.", "expr": "desconfiada",
          "arte": [arte], "destaque": ["encontrou"]},
         {"fala": f"No começo ela tentou ignorar, {motivo}.", "expr": "neutra",
          "arte": ["interrogacao"], "destaque": ["ignorar"]},
@@ -260,6 +287,7 @@ def gerar_um(n: int, seq: int) -> tuple[dict, dict]:
 
 def abastecer(alvo: int) -> dict:
     EP_DIR.mkdir(parents=True, exist_ok=True)
+    corrigidos = _corrigir_existentes()
     state = _estado()
     reserva = _reserva_atual()
     faltam = max(0, alvo - reserva)
@@ -280,7 +308,7 @@ def abastecer(alvo: int) -> dict:
     state["gerados_nesta_execucao"] = len(gerados)
     state["restantes_no_plano"] = max(0, limite - int(state["proximo"]))
     _salvar(STATE, state)
-    return {"gerados": gerados, "estado": state}
+    return {"gerados": gerados, "corrigidos": corrigidos, "estado": state}
 
 def main() -> int:
     ap = argparse.ArgumentParser()
@@ -290,6 +318,7 @@ def main() -> int:
     print(json.dumps({
         "ok": True,
         "novos_episodios": len(r["gerados"]),
+        "roteiros_corrigidos": r["corrigidos"],
         "primeiro": r["gerados"][0] if r["gerados"] else None,
         "ultimo": r["gerados"][-1] if r["gerados"] else None,
         "reserva_depois": r["estado"]["reserva_depois"],
