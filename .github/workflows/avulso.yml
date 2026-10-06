@@ -32,8 +32,17 @@ jobs:
           import glob, hashlib, os, sys
           sys.path.insert(0, "motor")
           from render_version import versao
+          import json
           for f in sorted(glob.glob("avulsos/*.json")):
               i = os.path.splitext(os.path.basename(f))[0]
+              registro = f"conteudo/tiktok_metricool/{i}.json"
+              if os.path.exists(registro):
+                  try:
+                      info = json.load(open(registro, encoding="utf-8"))
+                      if info.get("mediaUrl"):
+                          continue
+                  except Exception:
+                      pass
               h = hashlib.sha1(open(f, "rb").read() + versao().encode()).hexdigest()[:16]
               feito = f"avulsos_prontos/{i}.hash"
               if not (os.path.exists(f"avulsos_prontos/{i}.mp4") and os.path.exists(feito) and open(feito).read().strip() == h):
@@ -95,7 +104,7 @@ jobs:
         with:
           name: avulso-${{ steps.r.outputs.id }}
           path: out/
-          retention-days: 3
+          retention-days: 1
 
   gravar:
     needs: renderizar
@@ -108,12 +117,16 @@ jobs:
           pattern: avulso-*
           merge-multiple: true
           path: avulsos_prontos/
-      - name: Gravar no repositório
+      - name: Gravar somente o necessário no repositório
         run: |
+          # A versão principal é usada como URL temporária para o agendamento.
+          # Story, prévia 720p, capa e fotos continuam disponíveis no artifact por 1 dia,
+          # mas não entram no Git e não aumentam o tamanho do repositório.
+          find avulsos_prontos -type f \( -name '*-story.mp4' -o -name '*-720p.mp4' -o -name '*-capa.jpg' -o -name '*-fotos.json' \) -delete
           git config user.name "nina-bot"
           git config user.email "actions@github.com"
           git add avulsos_prontos/
           git diff --cached --quiet && exit 0
-          git commit -m "estúdio: vídeos avulsos prontos [skip ci]"
+          git commit -m "estúdio: vídeo avulso temporário [skip ci]"
           for i in 1 2 3; do git pull --rebase && git push && exit 0; sleep 5; done
           exit 1
