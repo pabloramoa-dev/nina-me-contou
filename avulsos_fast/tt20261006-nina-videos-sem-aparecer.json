@@ -4,8 +4,8 @@
   "avulso": true,
   "temporada": "TikTok avulso",
   "cenario": "dia",
-  "fim": "QUER APRENDER? COMENTA: EU QUERO",
-  "legenda_post": "Você não precisa aparecer para criar conteúdo todos os dias. 👀📱\n\nCom personagens como a Nina, dá para transformar ideias em vídeos para negócios, histórias, ofertas, dicas e muito mais — para TikTok, Instagram e YouTube.\n\nQuer aprender a criar personagens assim? Comenta: EU QUERO.\n\n#NinaMeContou #CriacaoDeConteudo #VideosSemAparecer #TikTokBrasil #InstagramReels #YouTubeShorts #InteligenciaArtificial",
+  "fim": "SEGUE E COMENTA: EU QUERO",
+  "legenda_post": "Você não precisa aparecer para criar conteúdo todos os dias. 👀📱\n\nCom personagens como a Nina, dá para transformar ideias em vídeos para negócios, histórias, ofertas, dicas e muito mais — para TikTok, Instagram e YouTube.\n\nSe bastante gente me seguir e comentar EU QUERO, eu mostro como esse negócio funciona.\n\n#NinaMeContou #CriacaoDeConteudo #VideosSemAparecer #TikTokBrasil #InstagramReels #YouTubeShorts #InteligenciaArtificial",
   "batidas": [
     {
       "fala": "Você acha que, para publicar vídeos todos os dias, precisa ficar na frente da câmera?",
@@ -81,10 +81,10 @@
       "zoom": true
     },
     {
-      "fala": "Então comenta aqui: EU QUERO. Se bastante gente quiser, eu mostro como esse processo funciona.",
+      "fala": "Se bastante gente me seguir e comentar EU QUERO, eu mostro como esse negócio funciona.",
       "expr": "sorrindo",
-      "arte": ["direct", "COMENTA: EU QUERO"],
-      "destaque": ["EU QUERO", "mostro como funciona"],
+      "arte": ["direct", "SEGUE E COMENTA: EU QUERO"],
+      "destaque": ["me seguir", "EU QUERO", "mostro como esse negócio funciona"],
       "zoom": true
     }
   ]
