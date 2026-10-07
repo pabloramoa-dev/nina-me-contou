@@ -1,15 +1,15 @@
 {
   "motor": "hyperframes",
-  "versao": "nina-hyperframes-thalita-5-fotos",
+  "versao": "nina-hyperframes-thalita-6-legenda-unica-visuais",
   "fotos": 6,
-  "duracao": 76.154,
+  "duracao": 76.322,
   "resolucao": [
     1080,
     1920
   ],
   "fps": 30,
   "voz": "pt-BR-ThalitaNeural",
-  "audio": "pedalboard",
+  "audio": "ffmpeg",
   "sfx": 35,
   "visual": "v4",
   "lip": "rhubarb",
