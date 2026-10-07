@@ -85,6 +85,7 @@ jobs:
       - name: Renderizar
         id: r
         env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
           NINA_MAX_DUR: "180"
@@ -130,3 +131,4 @@ jobs:
           git commit -m "estúdio: vídeo avulso temporário [skip ci]"
           for i in 1 2 3; do git pull --rebase && git push && exit 0; sleep 5; done
           exit 1
+

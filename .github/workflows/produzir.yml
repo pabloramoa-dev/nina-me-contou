@@ -118,6 +118,7 @@ jobs:
       - name: Renderizar
         id: r
         env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}   # opcional (fotos "banco"); sem ela usa Openverse CC0
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }} # opcional
         run: |
@@ -156,3 +157,4 @@ jobs:
           git commit -m "estúdio: episódios renderizados [skip ci]"
           for i in 1 2 3; do git pull --rebase && git push && exit 0; sleep 5; done
           exit 1
+

@@ -1,0 +1,68 @@
+name: Nina imagens automáticas - aprovação sem publicar
+on:
+  push:
+    branches: [main, feature/nina-auto-visual-images]
+    paths: ['visual_tests/**.json']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: nina-visual-approval
+  cancel-in-progress: false
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          filter: blob:none
+          sparse-checkout: |
+            .github/actions/setup-hyperframes
+            motor
+            src
+            video
+            tests
+            visual_tests
+            requirements-estudio.txt
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - run: sudo apt-get update -qq && sudo apt-get install -y ffmpeg pkg-config libcairo2-dev libpango1.0-dev espeak-ng fonts-dejavu-core
+      - run: pip install -r requirements-estudio.txt pytest
+      - uses: ./.github/actions/setup-hyperframes
+      - name: Testes de layout, cache e falhas
+        run: python -m pytest -q tests
+      - name: Verificar acesso ao gerador
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          if [ -n "$OPENAI_API_KEY" ]; then
+            echo "Chave de geração disponível; acesso ao modelo será validado no render."
+          else
+            echo "::warning::OPENAI_API_KEY ausente; geração automática usará fallback."
+          fi
+      - name: Renderizar promocional completo sem publicar
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          NINA_MAX_DUR: '180'
+        run: |
+          python motor/produzir.py visual_tests/promo-auto-imagens.json --rapido
+          mkdir -p out
+          cp saida/promo-auto-imagens/promo-auto-imagens.mp4 out/
+          cp saida/promo-auto-imagens/render.json out/
+          cp saida/promo-auto-imagens/visual_images.json out/
+          cp saida/promo-auto-imagens/segs.json out/
+          cp saida/promo-auto-imagens/hyperframes/index.html out/
+          ffmpeg -v error -y -i out/promo-auto-imagens.mp4 -vf fps=1/8,scale=360:-2 out/check-%02d.jpg
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: nina-auto-visual-approval
+          path: |
+            out/
+            saida/promo-auto-imagens/visual_images.json
+          retention-days: 3

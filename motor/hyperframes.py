@@ -9,6 +9,7 @@ from hf_assets import ICONS
 import audio_fx
 import sfx as SFX
 import visual_v4 as V4
+import visual_images as VI
 from render_version import HYPERFRAMES_VERSION
 
 FONT='/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
@@ -50,11 +51,11 @@ def enriquecer_visuais(ep):
         explicito=arg is not None or bool(nb.get('tela')) or bool(nb.get('foto'))
         if tipo in TEXT_TYPES and tipo!='seguir' and not explicito:
             fala=str(nb.get('fala','')).lower()
-            for padrao,novo_tipo in AUTO_VISUAIS:
-                if re.search(padrao,fala,re.I):
-                    nb['arte']=[novo_tipo]
-                    nb['_visual_auto']=True
-                    break
+            matches=[(m.start(),novo_tipo) for padrao,novo_tipo in AUTO_VISUAIS
+                     if (m:=re.search(padrao,fala,re.I))]
+            if matches:
+                nb['arte']=[min(matches,key=lambda x:x[0])[1]]
+                nb['_visual_auto']=True
         batidas.append(nb)
     out['batidas']=batidas
     return out
@@ -122,6 +123,7 @@ def chunks(text,width=840):
 
 def compor(ep,segs,pasta):
     dur=validar_timeline(ep,segs);parts=[];anim=[];v4=usa_v4();fotos=ep.get('_fotos',{})
+    cfg=VI.config(ep);visuals=ep.get('_visual_images',{})
     for i,(b,s) in enumerate(zip(ep['batidas'],segs)):
         a=float(s['ini']);z=float(s['fim']);d=z-a
         spec=b.get('arte') or [None];tipo=spec[0];arg=spec[1] if len(spec)>1 else None
@@ -135,11 +137,18 @@ def compor(ep,segs,pasta):
             h1=f'<h1 style="font-size:{size}px">{title}</h1>'
         body_source=arg if arg is not None else b.get('tela')
         show_body=body_source is not None and str(body_source).strip()!=''
+        has_image=i in visuals or i in fotos or tipo=='imagem'
+        mode='story_frame_image' if has_image else 'story_frame_text'
+        # Do not merely hide text with an overlay: omit it from the image template.
+        if cfg['bottom_caption_only'] or (has_image and cfg['hide_inner_caption_when_image']):
+            show_body=False
         body,body_size=bloco(body_source,max_height=225,max_size=34,min_size=24,width=505 if tipo in ICONS else 790) if show_body else ('',24)
-        if i in fotos:
-            art=f'<img class="banco" src="assets/foto{i}.png" alt="Foto">'
+        if i in visuals:
+            art=f'<img class="story-illustration" src="assets/{html.escape(visuals[i],quote=True)}" alt="Ilustração da cena">'
+        elif i in fotos:
+            art=f'<img class="story-illustration" src="assets/foto{i}.png" alt="Foto">'
         elif tipo in ICONS:
-            art=ICONS[tipo]+f'<div class="note" style="font-size:{body_size}px">{body}</div>'
+            art=ICONS[tipo]+(f'<div class="note" style="font-size:{body_size}px">{body}</div>' if show_body else '')
         elif tipo=='imagem':
             art=f'<img class="native-art" src="assets/arte{i}.png" alt="Imagem do roteiro">'
         elif tipo and tipo not in TEXT_TYPES:
@@ -151,20 +160,19 @@ def compor(ep,segs,pasta):
             art=(f'<div class="bubble" style="font-size:{body_size}px"><small>{label}</small>{body}{wave}<div class="underline"></div></div>'
                  if show_body else '')
         end=dur if i==len(segs)-1 else z
-        parts.append(f'<section id="p{i}" class="clip panel" data-start="{a}" data-duration="{end-a}" data-track-index="2"><div id="c{i}" class="card"><div class="tape"></div><div class="eyebrow">{html.escape(str(tag))}</div>{h1}<div class="art">{art}</div></div></section>')
+        parts.append(f'<section id="p{i}" class="clip panel {mode}" data-template="{mode}" data-start="{a}" data-duration="{end-a}" data-track-index="2"><div id="c{i}" class="card"><div class="tape"></div><div class="eyebrow">{html.escape(str(tag))}</div>{h1}<div class="art">{art}</div></div></section>')
         if i:
             anim.append(f'tl.fromTo("#c{i}",{{y:55,rotation:{-3 if i%2 else 3},scale:.94,opacity:0}},{{y:0,rotation:0,scale:1,opacity:1,duration:.42,immediateRender:false,ease:"back.out(1.15)"}},{a});')
-        anim.append(f'tl.to("#c{i} .art",{{y:-8,duration:{max(.1,d-.5)},ease:"none"}},{a+.5});')
+        if not has_image:
+            anim.append(f'tl.to("#c{i} .art",{{y:-8,duration:{max(.1,d-.5)},ease:"none"}},{a+.5});')
         anim.append(f'tl.to("#base",{{scale:{1.10 if b.get("zoom") or b.get("expr")=="chocada" else 1.02},x:{-12 if i%2 else 12},duration:.55,ease:"power2.inOut"}},{a});')
         if SFX.tem_wipe(b,i):
             anim.append(f'tl.fromTo("#wipe",{{x:"-110%"}},{{x:"110%",duration:.48,immediateRender:false,ease:"power2.inOut"}},{a});')
         if SFX.tem_flash(b,i):
             anim.append(f'tl.fromTo("#flash",{{opacity:0}},{{opacity:.85,duration:.07,immediateRender:false,ease:"power1.in"}},{a});tl.to("#flash",{{opacity:0,duration:.38,ease:"power2.out"}},{a+.07});')
         active=max(.1,min(d-.1,2.5))
-        if i in fotos:
-            rot=-3 if i%2 else 3
-            anim.append(f'tl.fromTo("#p{i} .banco",{{y:40,scale:.82,rotation:{rot},opacity:0}},{{y:0,scale:1,rotation:{rot*.7},opacity:1,duration:.38,immediateRender:false,ease:"back.out(1.4)"}},{a+.12});')
-            anim.append(f'tl.to("#p{i} .banco",{{scale:1.04,duration:{max(.1,d-.5)},ease:"none"}},{a+.5});')
+        if has_image:
+            anim.append(f'tl.fromTo("#p{i} .art img",{{scale:.94,opacity:0}},{{scale:1,opacity:1,duration:.35,immediateRender:false,ease:"power2.out"}},{a+.12});')
             tipo=None   # animações da ilustração não se aplicam
         if tipo=='porta':anim.append(f'tl.to("#p{i} .door",{{y:-140,duration:{active},ease:"power2.inOut"}},{a+.1});')
         if tipo=='carro':anim.append(f'tl.fromTo("#p{i} .car",{{x:-45}},{{x:0,duration:.8,immediateRender:false,ease:"power2.out"}},{a});')
@@ -250,19 +258,27 @@ def renderizar(ep,pasta,raiz):
     video=raiz/'video';cli=video/'node_modules/hyperframes/bin/hyperframes.mjs'
     if not cli.is_file():raise FileNotFoundError('HyperFrames ausente: execute npm ci --prefix video')
     env=dict(os.environ,PASTA=str(pasta),EPISODIO=str(pasta/'ep.json'),HYPERFRAMES_NO_TELEMETRY='1',DO_NOT_TRACK='1',HYPERFRAMES_FFMPEG_PATH=shutil.which('ffmpeg') or 'ffmpeg',HYPERFRAMES_FFPROBE_PATH=shutil.which('ffprobe') or 'ffprobe')
+    import banco_imagens
+    ep=enriquecer_visuais(ep)
+    ep['_visual_images'],visual_report=VI.preparar(ep,segs,assets,pasta)
+    cfg=VI.config(ep)
+    # Generated illustrations replace stock photography in automatic mode.
+    ep['_fotos']={} if cfg['auto_visual_images'] else banco_imagens.preparar_episodio(ep,assets,pasta)
+    if cfg['auto_visual_images'] and cfg['fallback']=='story_frame_text':
+        for i,b in enumerate(ep['batidas']):
+            if i not in ep['_visual_images']:
+                b['arte']=['titulo']
+                b.pop('foto',None)
     scene=raiz/'motor/cena_hyperframes.py'
     sh([sys.executable,'-m','manim','--disable_caching','--media_dir',pasta/'media_hf','-o','nina-base',scene,'NinaBase'],env=env)
     bases=list((pasta/'media_hf/videos').glob('**/nina-base.mp4'))
     bases=[p for p in bases if 'partial_movie_files' not in str(p)]
     if len(bases)!=1:raise ValueError('Camada Nina não encontrada')
     sh(['ffmpeg','-y','-v','error','-i',bases[0],'-c:v','libx264','-preset','fast','-crf','18','-g','30','-keyint_min','30','-sc_threshold','0','-pix_fmt','yuv420p','-an','-movflags','+faststart',assets/'base.mp4'])
-    import banco_imagens
-    ep=enriquecer_visuais(ep)
-    ep['_fotos']=banco_imagens.preparar_episodio(ep,assets,pasta)
     native=[]
     for i,b in enumerate(ep['batidas']):
         spec=b.get('arte') or [None];tipo=spec[0]
-        if i in ep['_fotos']:continue
+        if i in ep['_fotos'] or i in ep['_visual_images']:continue
         if tipo=='imagem':
             src=(raiz/str(spec[1])).resolve();src.relative_to(raiz.resolve())
             if str(src).endswith('.b64'):
@@ -286,5 +302,8 @@ def renderizar(ep,pasta,raiz):
     sh(['node',cli,'render',work,'--output',tmp,'--workers',os.environ.get('NINA_HF_WORKERS','2'),'--no-browser-gpu'],env=env)
     conferir(tmp,dur);tmp.replace(final)
     info={'motor':'hyperframes','versao':HYPERFRAMES_VERSION,'fotos':len(ep['_fotos']),'duracao':dur,'resolucao':[1080,1920],'fps':30,'voz':'pt-BR-ThalitaNeural','audio':'pedalboard' if audio_fx.disponivel() else 'ffmpeg','sfx':len(SFX.eventos(ep,segs)),'visual':'v4' if usa_v4() else 'v3','lip':os.environ.get('NINA_LIP','rhubarb'),'cenario':ep.get('cenario','tarde'),'batidas':len(segs)}
+    info.update(visual_images_ready=visual_report['ready'],visual_images_requested=visual_report['requested'],visual_images_fallbacks=visual_report['fallbacks'])
+    if str(ep.get('voice_engine') or os.environ.get('NINA_VOICE_ENGINE','thalita')).lower()=='kokoro':
+        info['voz']=ep.get('kokoro_voice') or os.environ.get('NINA_KOKORO_VOICE','pf_dora')
     (pasta/'render.json').write_text(json.dumps(info,ensure_ascii=False,indent=2))
     return final
