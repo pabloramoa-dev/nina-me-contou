@@ -60,9 +60,17 @@ def main():
     if quer("voz") and not os.path.exists(P("voz.wav")):
         with open(P("roteiro.txt"), "w", encoding="utf-8") as f:
             f.write("\n".join(b["fala"] for b in ep["batidas"]) + "\n")
-        sh([sys.executable, os.path.join(MOTOR, "gerar_voz_thalita.py"), P("roteiro.txt"),
-            "--voice", VOZ, f"--rate={RATE}", "--gap", str(GAP),
-            "--out", P("bruta.wav"), "--seg-json", P("segs.json")])
+        voice_engine = str(ep.get("voice_engine") or os.environ.get("NINA_VOICE_ENGINE", "thalita")).lower()
+        if voice_engine == "kokoro":
+            kokoro_voice = str(ep.get("kokoro_voice") or os.environ.get("NINA_KOKORO_VOICE", "pf_dora"))
+            kokoro_speed = str(ep.get("kokoro_speed") or os.environ.get("NINA_KOKORO_SPEED", "1.05"))
+            sh([sys.executable, os.path.join(MOTOR, "gerar_voz_kokoro.py"), P("roteiro.txt"),
+                "--voz", kokoro_voice, "--speed", kokoro_speed, "--gap", str(GAP),
+                "--out", P("bruta.wav"), "--seg-json", P("segs.json")])
+        else:
+            sh([sys.executable, os.path.join(MOTOR, "gerar_voz_thalita.py"), P("roteiro.txt"),
+                "--voice", VOZ, f"--rate={RATE}", "--gap", str(GAP),
+                "--out", P("bruta.wav"), "--seg-json", P("segs.json")])
         from audio_fx import masterizar_voz
         print("master da voz:", masterizar_voz(P("bruta.wav"), P("voz.wav")), flush=True)
 
