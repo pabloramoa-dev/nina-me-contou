@@ -1,0 +1,18 @@
+{
+  "motor": "hyperframes",
+  "versao": "nina-hyperframes-thalita-6-legenda-unica-visuais",
+  "fotos": 6,
+  "duracao": 74.69,
+  "resolucao": [
+    1080,
+    1920
+  ],
+  "fps": 30,
+  "voz": "pt-BR-ThalitaNeural",
+  "audio": "pedalboard",
+  "sfx": 48,
+  "visual": "v4",
+  "lip": "rhubarb",
+  "cenario": "noite",
+  "batidas": 13
+}
