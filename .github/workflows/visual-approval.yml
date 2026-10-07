@@ -31,6 +31,7 @@ jobs:
         with:
           python-version: '3.11'
           cache: pip
+          cache-dependency-path: requirements-estudio.txt
       - run: sudo apt-get update -qq && sudo apt-get install -y ffmpeg pkg-config libcairo2-dev libpango1.0-dev espeak-ng fonts-dejavu-core
       - run: pip install -r requirements-estudio.txt pytest
       - uses: ./.github/actions/setup-hyperframes
