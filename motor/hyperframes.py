@@ -128,17 +128,17 @@ def compor(ep,segs,pasta):
         a=float(s['ini']);z=float(s['fim']);d=z-a
         spec=b.get('arte') or [None];tipo=spec[0];arg=spec[1] if len(spec)>1 else None
         tag=b.get('hf',{}).get('selo') or ('NINA CONTA · HISTÓRIA COMPLETA' if ep.get('avulso') else f'EP {ep.get("ep",0):02d} · PARTE {ep.get("parte",1)} · NINA CONTA')
+        has_image=i in visuals or i in fotos or tipo=='imagem'
+        mode='story_frame_image' if has_image else 'story_frame_text'
         if v4:
             title,size=V4.bloco_titulo(titulo(b,ep,i))
             h1=f'<h1 style="font-size:{size}px"><span class="ink">{title}</span>{V4.MARKER}</h1>'
-            anim.extend(V4.titulo(i,a,b.get('expr')=='chocada',i==0))
+            anim.extend(V4.titulo(i,a,b.get('expr')=='chocada' and not has_image,i==0))
         else:
             title,size=bloco(titulo(b,ep,i))
             h1=f'<h1 style="font-size:{size}px">{title}</h1>'
         body_source=arg if arg is not None else b.get('tela')
         show_body=body_source is not None and str(body_source).strip()!=''
-        has_image=i in visuals or i in fotos or tipo=='imagem'
-        mode='story_frame_image' if has_image else 'story_frame_text'
         # Do not merely hide text with an overlay: omit it from the image template.
         if cfg['bottom_caption_only'] or (has_image and cfg['hide_inner_caption_when_image']):
             show_body=False
@@ -286,7 +286,13 @@ def renderizar(ep,pasta,raiz):
             else:shutil.copy(src,assets/f'arte{i}.png')
         elif tipo and tipo not in ICONS and tipo not in TEXT_TYPES:native.append(i)
     if native:
-        sh([sys.executable,'-m','manim','-s','--disable_caching','--media_dir',pasta/'media_arts',scene,*[f'Arte{i}' for i in native]],env=dict(env,NINA_RENDER_ARTS='1'))
+        native_ep=json.loads(json.dumps(ep))
+        if cfg['bottom_caption_only']:
+            for i in native:
+                native_ep['batidas'][i]['arte']=native_ep['batidas'][i]['arte'][:1]
+        native_path=pasta/'native-art-ep.json'
+        native_path.write_text(json.dumps(native_ep,ensure_ascii=False))
+        sh([sys.executable,'-m','manim','-s','--disable_caching','--media_dir',pasta/'media_arts',scene,*[f'Arte{i}' for i in native]],env=dict(env,NINA_RENDER_ARTS='1',EPISODIO=str(native_path)))
         for i in native:
             found=[p for p in (pasta/'media_arts/images').glob(f'**/Arte{i}*.png')
                    if p.name==f'Arte{i}.png' or p.name.startswith(f'Arte{i}_')]

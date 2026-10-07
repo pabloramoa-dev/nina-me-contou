@@ -138,5 +138,13 @@
   ],
   "fim": "COMENTA: EU QUERO",
   "legenda_post": "Você não precisa aparecer para produzir conteúdo todos os dias. A Nina é um exemplo de como um personagem pode contar histórias, divulgar, ensinar e vender usando um motor de criação de vídeos. Se você quer que eu mostre como isso funciona, segue o perfil e comenta: EU QUERO.\n\n#NinaMeContou #CriacaoDeConteudo #TikTokBrasil #InstagramReels #YouTubeShorts #InteligenciaArtificial",
-  "review_revision": 2
+  "review_revision": 3,
+  "approved_visual_assets": [
+    "visual_tests/assets/approved-0.webp",
+    "visual_tests/assets/approved-1.webp",
+    "visual_tests/assets/approved-2.webp",
+    "visual_tests/assets/approved-3.webp",
+    "visual_tests/assets/approved-4.webp",
+    "visual_tests/assets/approved-5.webp"
+  ]
 }

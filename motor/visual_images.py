@@ -188,7 +188,14 @@ def preparar(ep, segs, assets, pasta, generator=None):
         scene['request_hash'] = digest
         try:
             data = None
-            if cached.exists():
+            supplied = ep.get('approved_visual_assets', [])
+            if scene['scene'] < len(supplied):
+                root = Path(__file__).resolve().parent.parent
+                asset = (root / supplied[scene['scene']]).resolve()
+                asset.relative_to(root)
+                data = validar_imagem(asset.read_bytes())
+                source = 'approved_asset'
+            if data is None and cached.exists():
                 try:
                     data = validar_imagem(cached.read_bytes())
                     source = 'cache'

@@ -57,3 +57,14 @@ O teste promocional usa a voz Kokoro `pf_dora` já escolhida naquele roteiro;
 a voz padrão Thalita e as publicações regulares permanecem como configuradas.
 O workflow de aprovação tem permissão somente de leitura, entrega artifacts
 temporários e não coloca o teste na fila nem publica nas redes sociais.
+
+## Teste de aprovação em 07/10/2026
+
+O primeiro teste confirmou 32 testes aprovados e renderização completa, mas detectou
+`OPENAI_API_KEY` ausente no repositório. Portanto, a geração nova pela API permanece
+pendente de configuração desse segredo. O teste visual usa seis ilustrações
+aprovadas pelo usuário, declaradas em `approved_visual_assets` apenas no roteiro
+de demonstração. O manifesto registra `approved_asset`, nunca `generated`.
+Roteiros normais não herdam essas imagens e continuam tentando a geração automática.
+Adicionar a chave em Settings → Secrets and variables → Actions → New repository secret.
+Não colocar a chave em arquivos, commits ou mensagens.

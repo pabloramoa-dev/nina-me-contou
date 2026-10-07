@@ -57,6 +57,8 @@ jobs:
           cp saida/promo-auto-imagens/render.json out/
           cp saida/promo-auto-imagens/visual_images.json out/
           cp saida/promo-auto-imagens/segs.json out/
+          node video/validate-layout.mjs saida/promo-auto-imagens/hyperframes
+          cp saida/promo-auto-imagens/hyperframes/layout-check.json out/
           cp saida/promo-auto-imagens/hyperframes/index.html out/
           ffmpeg -v error -y -i out/promo-auto-imagens.mp4 -vf fps=1/8,scale=360:-2 out/check-%02d.jpg
       - uses: actions/upload-artifact@v4
@@ -66,4 +68,5 @@ jobs:
           path: |
             out/
             saida/promo-auto-imagens/visual_images.json
+            saida/promo-auto-imagens/hyperframes/layout-check.json
           retention-days: 3
