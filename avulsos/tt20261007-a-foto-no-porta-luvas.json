@@ -1,0 +1,165 @@
+{
+  "id": "tt20261007-a-foto-no-porta-luvas",
+  "avulso": true,
+  "titulo": "A FOTO NO PORTA-LUVAS",
+  "temporada": "TikTok diário",
+  "cenario": "tarde",
+  "batidas": [
+    {
+      "fala": "Ela abriu o porta-luvas procurando um documento. E encontrou uma foto que o marido escondia havia vinte anos.",
+      "expr": "desconfiada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "foto",
+        "escondia",
+        "vinte"
+      ],
+      "zoom": true
+    },
+    {
+      "fala": "Na imagem, Renato aparecia abraçado com uma mulher e uma menina de uns seis anos.",
+      "expr": "neutra",
+      "foto": [
+        "old family photograph in glove compartment",
+        "A FOTO ESCONDIDA"
+      ],
+      "destaque": [
+        "mulher",
+        "menina"
+      ]
+    },
+    {
+      "fala": "No verso estava escrito: para o papai, com amor. Júlia.",
+      "expr": "chocada",
+      "arte": [
+        "manchete_v",
+        "PARA O PAPAI · JÚLIA"
+      ],
+      "destaque": [
+        "papai",
+        "Júlia"
+      ],
+      "zoom": true
+    },
+    {
+      "fala": "Clara sentiu o chão desaparecer. Eles eram casados havia quinze anos e não tinham filhos.",
+      "expr": "assustada",
+      "arte": [
+        "calendario",
+        "15 ANOS DE CASAMENTO"
+      ],
+      "destaque": [
+        "quinze",
+        "não",
+        "tinham",
+        "filhos"
+      ]
+    },
+    {
+      "fala": "Quando Renato chegou, ela colocou a foto sobre a mesa e perguntou apenas: quem é Júlia?",
+      "expr": "brava",
+      "foto": [
+        "old photograph on kitchen table",
+        "QUEM É JÚLIA?"
+      ],
+      "destaque": [
+        "quem",
+        "Júlia"
+      ]
+    },
+    {
+      "fala": "Ele ficou em silêncio, sentou e contou que Júlia era filha do irmão mais velho, que morreu num acidente.",
+      "expr": "neutra",
+      "arte": [
+        "conversa",
+        "ELA É MINHA SOBRINHA"
+      ],
+      "destaque": [
+        "filha",
+        "irmão",
+        "morreu"
+      ]
+    },
+    {
+      "fala": "A mãe da menina tinha desaparecido, e Renato cuidou dela durante dois anos como se fosse pai.",
+      "expr": "surpresa",
+      "arte": [
+        "coracao",
+        "COMO SE FOSSE PAI"
+      ],
+      "destaque": [
+        "cuidou",
+        "dois",
+        "anos"
+      ]
+    },
+    {
+      "fala": "Depois, uma tia conseguiu a guarda e levou Júlia para outro país. O contato se perdeu.",
+      "expr": "cansada",
+      "foto": [
+        "airplane departure family goodbye",
+        "A DESPEDIDA"
+      ],
+      "destaque": [
+        "outro",
+        "país",
+        "perdeu"
+      ]
+    },
+    {
+      "fala": "Renato guardava a foto porque ainda doía falar sobre aquilo. Não era uma traição. Era uma saudade sem endereço.",
+      "expr": "neutra",
+      "arte": [
+        "manchete",
+        "UMA SAUDADE SEM ENDEREÇO"
+      ],
+      "destaque": [
+        "não",
+        "traição",
+        "saudade"
+      ]
+    },
+    {
+      "fala": "Clara segurou a mão dele e disse: então vamos procurar por ela.",
+      "expr": "surpresa",
+      "arte": [
+        "conversa",
+        "VAMOS PROCURAR POR ELA"
+      ],
+      "destaque": [
+        "vamos",
+        "procurar"
+      ]
+    },
+    {
+      "fala": "Dois meses depois, uma chamada de vídeo reuniu os três. Às vezes, uma descoberta não termina uma família. Ela devolve uma parte que faltava.",
+      "expr": "ironica",
+      "arte": [
+        "celular",
+        "FAMÍLIA REENCONTRADA"
+      ],
+      "destaque": [
+        "reuniu",
+        "família",
+        "devolve"
+      ],
+      "zoom": true
+    },
+    {
+      "fala": "E você? Teria perguntado com calma ou imaginado o pior primeiro?",
+      "expr": "ironica",
+      "arte": [
+        "interrogacao",
+        "E VOCÊ?"
+      ],
+      "destaque": [
+        "calma",
+        "pior"
+      ]
+    }
+  ],
+  "fim": "FAMÍLIA REENCONTRADA",
+  "legenda_post": "Uma foto escondida parecia revelar uma traição, mas guardava uma história completamente diferente. 📷❤️\nVocê perguntaria com calma ou imaginaria o pior?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Storytime #Historia #Familia #Reencontro"
+}
