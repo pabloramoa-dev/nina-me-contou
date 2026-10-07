@@ -1,0 +1,28 @@
+{
+  "episode": "tt20261007-a-foto-no-porta-luvas",
+  "brandId": 7228264,
+  "account": "ninamecontou",
+  "id": 390299736,
+  "uuid": "-4949720643802806951",
+  "date": "2026-10-07T18:00:00-03:00",
+  "timezone": "America/Sao_Paulo",
+  "status": "agendado",
+  "providerStatus": "PENDING",
+  "autoPublish": true,
+  "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7228264&openWithPostUuid=-4949720643802806951",
+  "sourceUrl": "https://raw.githubusercontent.com/pabloramoa-dev/nina-me-contou/main/avulsos_prontos/tt20261007-a-foto-no-porta-luvas.mp4",
+  "mediaUrl": "https://static.metricool.com/planner/202610/7228264-file-11342958752810629362.mp4",
+  "caption": "Uma foto escondida parecia revelar uma traição, mas guardava uma história completamente diferente. 📷❤️\nVocê perguntaria com calma ou imaginaria o pior?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Storytime #Historia #Familia #Reencontro\n",
+  "validation": {
+    "workflowRun": 37617079671,
+    "conclusion": "success",
+    "width": 1080,
+    "height": 1920,
+    "durationSeconds": 88.466667,
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "visualSampleChecked": true,
+    "singleDynamicCaption": true
+  },
+  "monthlyLimit": 20
+}
