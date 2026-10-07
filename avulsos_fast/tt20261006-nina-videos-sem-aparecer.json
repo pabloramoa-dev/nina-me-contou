@@ -1,0 +1,91 @@
+{
+  "id": "tt20261006-nina-videos-sem-aparecer",
+  "titulo": "VÍDEOS SEM APARECER",
+  "avulso": true,
+  "temporada": "TikTok avulso",
+  "cenario": "dia",
+  "fim": "QUER APRENDER? COMENTA: EU QUERO",
+  "legenda_post": "Você não precisa aparecer para criar conteúdo todos os dias. 👀📱\n\nCom personagens como a Nina, dá para transformar ideias em vídeos para negócios, histórias, ofertas, dicas e muito mais — para TikTok, Instagram e YouTube.\n\nQuer aprender a criar personagens assim? Comenta: EU QUERO.\n\n#NinaMeContou #CriacaoDeConteudo #VideosSemAparecer #TikTokBrasil #InstagramReels #YouTubeShorts #InteligenciaArtificial",
+  "batidas": [
+    {
+      "fala": "Você acha que, para publicar vídeos todos os dias, precisa ficar na frente da câmera?",
+      "expr": "ironica",
+      "arte": ["titulo"],
+      "foto": ["smartphone on tripod home studio", "PRECISA APARECER?"],
+      "destaque": ["todos os dias", "frente da câmera"],
+      "zoom": true
+    },
+    {
+      "fala": "Eu sou a Nina. E eu existo justamente para mostrar que não.",
+      "expr": "sorrindo",
+      "arte": ["manchete_v", "VOCÊ NÃO PRECISA APARECER"],
+      "destaque": ["Nina", "não"],
+      "zoom": true
+    },
+    {
+      "fala": "Um personagem como eu pode apresentar ideias, contar histórias, explicar produtos, fazer ofertas ou ensinar alguma coisa por você.",
+      "expr": "neutra",
+      "arte": ["celular"],
+      "foto": ["content planning notebook smartphone laptop", "CONTEÚDO"],
+      "destaque": ["histórias", "produtos", "ofertas", "ensinar"]
+    },
+    {
+      "fala": "Você escreve o conteúdo que quiser, transforma aquilo em um episódio e deixa o personagem fazer a apresentação.",
+      "expr": "sorrindo",
+      "arte": ["conversa", "VOCÊ CRIA A IDEIA"],
+      "foto": ["notebook script beside smartphone", "ROTEIRO"],
+      "destaque": ["conteúdo", "episódio", "personagem"]
+    },
+    {
+      "fala": "E o melhor: você não precisa gravar cinquenta vezes, arrumar cenário, iluminação e ficar repetindo a mesma fala.",
+      "expr": "ironica",
+      "arte": ["relogio", "MENOS TEMPO GRAVANDO"],
+      "foto": ["ring light camera empty chair studio", "SEM GRAVAÇÃO"],
+      "destaque": ["não precisa", "cenário", "iluminação"],
+      "zoom": true
+    },
+    {
+      "fala": "Dá para criar vários vídeos no mesmo dia e preparar conteúdo para uma semana inteira, ou até muito mais.",
+      "expr": "sorrindo",
+      "arte": ["calendario", "VÁRIOS VÍDEOS NO MESMO DIA"],
+      "foto": ["weekly content calendar desk", "CONTEÚDO EM ESCALA"],
+      "destaque": ["vários vídeos", "mesmo dia", "semana inteira"]
+    },
+    {
+      "fala": "Serve para quem vende, para quem presta serviço, para quem conta histórias, para quem ensina e para quem quer crescer nas redes sem aparecer.",
+      "expr": "neutra",
+      "arte": ["manchete_v", "SERVE PARA MUITOS NEGÓCIOS"],
+      "foto": ["small business desk laptop smartphone", "QUALQUER NICHO"],
+      "destaque": ["vende", "serviço", "ensina", "sem aparecer"]
+    },
+    {
+      "fala": "O mesmo personagem pode virar conteúdo para Instagram, TikTok e YouTube, adaptando a mensagem para cada plataforma.",
+      "expr": "sorrindo",
+      "arte": ["celular", "INSTAGRAM • TIKTOK • YOUTUBE"],
+      "foto": ["three smartphones social media content", "3 PLATAFORMAS"],
+      "destaque": ["Instagram", "TikTok", "YouTube"],
+      "zoom": true
+    },
+    {
+      "fala": "Agora imagina ter o seu próprio personagem, com a sua voz, o seu estilo e o tipo de conteúdo que combina com o seu negócio.",
+      "expr": "desconfiada",
+      "arte": ["interrogacao", "E SE FOSSE O SEU PERSONAGEM?"],
+      "foto": ["blank character design sketchbook tablet", "SEU PERSONAGEM"],
+      "destaque": ["seu próprio personagem", "seu estilo", "seu negócio"]
+    },
+    {
+      "fala": "Você gostaria de aprender a criar personagens como eu para produzir vídeos sem precisar aparecer?",
+      "expr": "sorrindo",
+      "arte": ["manchete_v", "QUER APRENDER?"],
+      "destaque": ["aprender", "personagens", "sem precisar aparecer"],
+      "zoom": true
+    },
+    {
+      "fala": "Então comenta aqui: EU QUERO. Se bastante gente quiser, eu mostro como esse processo funciona.",
+      "expr": "sorrindo",
+      "arte": ["direct", "COMENTA: EU QUERO"],
+      "destaque": ["EU QUERO", "mostro como funciona"],
+      "zoom": true
+    }
+  ]
+}
