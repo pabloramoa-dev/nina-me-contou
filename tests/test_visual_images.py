@@ -79,3 +79,16 @@ def test_disabled_no_requests_and_text_mode(tmp_path):
 def test_invalid_bounds_and_corrupt_image():
     with pytest.raises(ValueError):V.config({'visual_images':{'min_images':9}})
     with pytest.raises(Exception):V.validar_imagem(b'not a png')
+
+def test_approved_assets_are_not_reported_as_generated(tmp_path):
+    ep,segs=episode(4)
+    ep['approved_visual_assets']=['visual_tests/assets/approved-0.webp']*4
+    def no(*args):raise AssertionError('Approved fixture must not call the API')
+    mapping,report=V.preparar(ep,segs,tmp_path/'assets',tmp_path,generator=no)
+    assert len(mapping)==4 and report['ready']==4
+    assert all(s['status']=='approved_asset' for s in report['scenes'])
+
+def test_approved_asset_cannot_escape_repository(tmp_path):
+    ep,segs=episode(4);ep['approved_visual_assets']=['../../etc/passwd']*4
+    mapping,report=V.preparar(ep,segs,tmp_path/'assets',tmp_path)
+    assert not mapping and report['fallbacks']==4

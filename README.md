@@ -95,3 +95,17 @@ Os objetos da história (aliança, relógio, carro, porta, celular, café, mala,
 - Roteiro: `"foto": "busca em inglês"` ou `"foto": ["busca", "LEGENDA"]` pede a foto exata; sem isso, as artes de objeto usam a busca padrão (`FOTO_PADRAO`).
 - Resultados com pessoas, ilustrações ou recortes são descartados. Se a busca falhar, a batida volta para a ilustração.
 - `"foto": false` mantém a ilustração naquela batida; `NINA_FOTOS=0` desliga.
+# Ilustrações automáticas por cena
+
+O compositor agora seleciona `story_frame_text` ou `story_frame_image` automaticamente.
+O modo de imagem mantém o título e reserva um espaço central exclusivo para a arte,
+sem legenda secundária no quadro. A fala continua na legenda dinâmica inferior.
+
+O motor planeja de 4 a 8 cenas (seis por padrão), gera ilustrações cartoon coerentes
+com as falas e registra cache, origem e falhas em `visual_images.json` de cada render.
+Configuração: `motor/visual_images.json`; detalhes em [docs/visual-images.md](docs/visual-images.md).
+
+**Ativação da API pendente:** o teste de 07/10/2026 detectou `OPENAI_API_KEY` ausente
+nos secrets do repositório. Até cadastrar essa chave, novos episódios usam o fallback
+configurado. O teste promocional de layout usa explicitamente seis imagens aprovadas;
+isso não comprova geração nova pela API. A voz padrão e a apresentadora são preservadas.
