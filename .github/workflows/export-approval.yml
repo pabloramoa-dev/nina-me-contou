@@ -1,0 +1,37 @@
+name: Exportar MP4 de aprovação sem publicar
+on:
+  push:
+    branches: [feature/nina-auto-visual-images]
+    paths: ['.github/workflows/export-approval.yml']
+permissions:
+  contents: read
+  actions: read
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: nina-auto-visual-approval
+          run-id: 37673549978
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: source
+      - name: Preparar transferência
+        run: |
+          mkdir -p part1 part2
+          split -b 24M -d source/out/promo-auto-imagens.mp4 video-part-
+          mv video-part-00 part1/
+          mv video-part-01 part2/
+          cp source/out/check-*.jpg part1/
+          cp source/out/*.json part1/
+          sha256sum source/out/promo-auto-imagens.mp4 > part1/video.sha256
+      - uses: actions/upload-artifact@v4
+        with:
+          name: nina-approval-part1
+          path: part1/
+          retention-days: 3
+      - uses: actions/upload-artifact@v4
+        with:
+          name: nina-approval-part2
+          path: part2/
+          retention-days: 3
