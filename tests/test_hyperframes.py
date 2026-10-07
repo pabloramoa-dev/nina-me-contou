@@ -13,7 +13,7 @@ def fixture():
     return ep,segs
 
 def test_all_text_escaped_and_content_driven(tmp_path):
-    ep,segs=fixture();ep['batidas'][1]['fala']='<script>alert(1)</script> & sim'
+    ep,segs=fixture();ep['visual_images']={'bottom_caption_only':False};ep['batidas'][1]['fala']='<script>alert(1)</script> & sim'
     ep['batidas'][1]['arte'][1]='<img src=x onerror=alert(1)>'
     d=H.compor(ep,segs,tmp_path);s=(tmp_path/'index.html').read_text()
     assert d==8.2 and 'data-duration="8.2"' in s
@@ -142,3 +142,4 @@ def test_visual_auto_enrichment_keeps_explicit_art():
 def test_header_defaults_to_episode_title():
     ep,_=fixture()
     assert H.titulo(ep['batidas'][1],ep,1)=='UMA HISTÓRIA'
+

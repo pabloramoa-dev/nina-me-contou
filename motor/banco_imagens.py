@@ -246,10 +246,12 @@ def preparar_episodio(ep: dict, assets: Path, pasta: Path | None = None) -> dict
     """Baixa e monta as polaroids do episódio. Devolve {i: legenda} das que deram
     certo; as que falharem ficam com a ilustração original."""
     ok, creditos = {}, {}
+    from visual_images import config
+    cfg=config(ep)
     for i, (q, leg, n) in plano(ep).items():
         try:
             foto, info = buscar(q, n)
-            polaroid(foto, leg, seed=i).save(Path(assets) / f"foto{i}.png")
+            polaroid(foto, None if cfg["hide_inner_caption_when_image"] or cfg["bottom_caption_only"] else leg, seed=i).save(Path(assets) / f"foto{i}.png")
             ok[i] = leg
             creditos[i] = info
             print(f"foto batida {i}: '{q}' #{n} <- {info.get('fonte')} {info.get('pagina')}", flush=True)

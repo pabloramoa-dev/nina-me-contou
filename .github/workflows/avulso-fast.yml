@@ -49,6 +49,7 @@ jobs:
       - name: Renderizar episódio
         id: render
         env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
           NINA_MAX_DUR: "180"
@@ -67,3 +68,4 @@ jobs:
           name: nina-avulso-fast-${{ steps.render.outputs.id }}
           path: out/
           retention-days: 3
+

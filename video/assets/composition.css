@@ -38,3 +38,11 @@ h1{height:136px;line-height:1.06}.eyebrow{white-space:nowrap;overflow:hidden;tex
 
 /* fotos reais (motor/banco_imagens.py): polaroid que transborda o cartão */
 .banco{position:absolute;left:50%;top:-12px;width:600px;margin-left:-300px;z-index:3;transform-origin:50% 40%}
+
+/* Exclusive layout: title and image occupy separate grid rows. No overlay. */
+.story_frame_image .card{display:grid;grid-template-rows:40px 136px minmax(0,1fr);row-gap:16px;padding:28px 32px}
+.story_frame_image .eyebrow{margin:0}
+.story_frame_image h1{margin:0;min-height:0;max-height:136px}
+.story_frame_image .art{height:100%;min-height:0;overflow:hidden;isolation:isolate;padding:8px 12px;transform:none}
+.story_frame_image .art img{position:static;display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain;object-position:center;margin:0;transform-origin:center}
+.story_frame_image .bubble,.story_frame_image .note,.story_frame_image .wave,.story_frame_image .underline{display:none}

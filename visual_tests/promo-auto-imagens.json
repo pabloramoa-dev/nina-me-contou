@@ -1,0 +1,150 @@
+{
+  "id": "promo-auto-imagens",
+  "avulso": true,
+  "titulo": "VOCÊ NÃO PRECISA APARECER",
+  "temporada": "Promocional",
+  "cenario": "tarde",
+  "voice_engine": "kokoro",
+  "kokoro_voice": "pf_dora",
+  "kokoro_speed": 1.08,
+  "batidas": [
+    {
+      "fala": "Você ainda acha que precisa aparecer na câmera todo santo dia para crescer no TikTok, Instagram ou YouTube?",
+      "expr": "chocada",
+      "arte": [
+        "interrogacao",
+        "PRECISA MESMO APARECER?"
+      ],
+      "destaque": [
+        "aparecer",
+        "TikTok",
+        "Instagram",
+        "YouTube"
+      ],
+      "zoom": true
+    },
+    {
+      "fala": "Olha para mim. Eu sou uma personagem. E posso contar histórias, vender, ensinar, divulgar um negócio e criar conteúdo sem ninguém precisar gravar o próprio rosto.",
+      "expr": "ironica",
+      "arte": [
+        "titulo",
+        "EU SOU UMA PERSONAGEM"
+      ],
+      "destaque": [
+        "personagem",
+        "vender",
+        "ensinar",
+        "divulgar"
+      ]
+    },
+    {
+      "fala": "Enquanto muita gente trava porque não gosta de câmera, não tem tempo ou não sabe o que postar, um personagem pode virar a cara do seu conteúdo.",
+      "expr": "neutra",
+      "foto": [
+        "smartphone social media content creator desk",
+        "CONTEÚDO SEM APARECER"
+      ],
+      "destaque": [
+        "câmera",
+        "tempo",
+        "personagem"
+      ]
+    },
+    {
+      "fala": "Você escolhe o assunto. História, loja, restaurante, serviço, curiosidade, notícia, motivação ou qualquer outro nicho.",
+      "expr": "animada",
+      "arte": [
+        "manchete",
+        "QUALQUER NICHO"
+      ],
+      "destaque": [
+        "loja",
+        "restaurante",
+        "serviço",
+        "nicho"
+      ],
+      "zoom": true
+    },
+    {
+      "fala": "E o melhor: depois que o motor está pronto, você consegue produzir vários vídeos em sequência, com voz, legenda, imagens, efeitos e chamada para ação.",
+      "expr": "surpresa",
+      "foto": [
+        "video editing timeline smartphone social media",
+        "VÍDEOS EM SEQUÊNCIA"
+      ],
+      "destaque": [
+        "voz",
+        "legenda",
+        "imagens",
+        "efeitos"
+      ]
+    },
+    {
+      "fala": "Ou seja: em vez de depender de inspiração para ligar a câmera, você cria uma fábrica de conteúdo com um personagem trabalhando por você.",
+      "expr": "ironica",
+      "arte": [
+        "titulo",
+        "UMA FÁBRICA DE CONTEÚDO"
+      ],
+      "destaque": [
+        "fábrica",
+        "conteúdo",
+        "personagem"
+      ]
+    },
+    {
+      "fala": "É exatamente assim que vídeos como este são feitos. Sem estúdio caro, sem precisar decorar texto e sem precisar aparecer.",
+      "expr": "chocada",
+      "arte": [
+        "manchete_v",
+        "SEM PRECISAR APARECER"
+      ],
+      "destaque": [
+        "sem",
+        "estúdio",
+        "decorar",
+        "aparecer"
+      ],
+      "zoom": true
+    },
+    {
+      "fala": "Agora eu quero saber se vocês realmente querem aprender como criar personagens assim e montar esse sistema do zero.",
+      "expr": "curiosa",
+      "arte": [
+        "interrogacao",
+        "QUER APRENDER?"
+      ],
+      "destaque": [
+        "aprender",
+        "personagens",
+        "sistema"
+      ]
+    },
+    {
+      "fala": "Se bastante gente me seguir e comentar EU QUERO, eu mostro como esse negócio funciona. Comenta EU QUERO aqui embaixo.",
+      "expr": "animada",
+      "arte": [
+        "titulo",
+        "COMENTA: EU QUERO"
+      ],
+      "destaque": [
+        "seguir",
+        "EU QUERO",
+        "mostro",
+        "funciona"
+      ],
+      "zoom": true
+    }
+  ],
+  "fim": "COMENTA: EU QUERO",
+  "legenda_post": "Você não precisa aparecer para produzir conteúdo todos os dias. A Nina é um exemplo de como um personagem pode contar histórias, divulgar, ensinar e vender usando um motor de criação de vídeos. Se você quer que eu mostre como isso funciona, segue o perfil e comenta: EU QUERO.\n\n#NinaMeContou #CriacaoDeConteudo #TikTokBrasil #InstagramReels #YouTubeShorts #InteligenciaArtificial",
+  "review_revision": 3,
+  "approved_visual_assets": [
+    "visual_tests/assets/approved-0.webp",
+    "visual_tests/assets/approved-1.webp",
+    "visual_tests/assets/approved-2.webp",
+    "visual_tests/assets/approved-3.webp",
+    "visual_tests/assets/approved-4.webp",
+    "visual_tests/assets/approved-5.webp"
+  ]
+}

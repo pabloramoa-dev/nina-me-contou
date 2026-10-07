@@ -43,6 +43,9 @@ def main():
     from cta import garantir_cta
     from render_version import versao
     ep = garantir_cta(json.load(open(ep_json, encoding="utf-8")))   # CTA de seguir sempre no final
+    from visual_images import preparar_roteiro, config as visual_config
+    ep = preparar_roteiro(ep)
+    ep['visual_images'] = visual_config(ep)
     ep["_render_version"] = versao()
     usa_hf = os.environ.get("NINA_MOTOR", "hyperframes") == "hyperframes"
     pasta = os.path.join(RAIZ, "saida", ep["id"])
