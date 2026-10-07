@@ -1,0 +1,18 @@
+{
+  "id": "tt20261006-crossover-nina",
+  "titulo": "TODOS JUNTOS",
+  "avulso": true,
+  "temporada": "Promo Crossover",
+  "cenario": "dia",
+  "fim": "AGORA É A VEZ DOS OUTROS",
+  "legenda_post": "Crossover promocional — render isolado da Nina, sem publicação automática.",
+  "batidas": [
+    {
+      "fala": "Eu sou a Nina. Histórias, vendas e ideias: eu transformo tudo em vídeo sem você precisar aparecer.",
+      "expr": "neutra",
+      "arte": ["titulo"],
+      "destaque": ["Nina", "vídeo", "sem aparecer"],
+      "zoom": true
+    }
+  ]
+}
