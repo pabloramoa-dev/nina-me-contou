@@ -7,74 +7,16 @@
   "fim": "SEGUE + COMENTA: EU QUERO",
   "legenda_post": "E se você pudesse criar um elenco inteiro de personagens para produzir conteúdo sem aparecer? 👀🎬\n\nHistórias, reflexões, provérbios, previsão do tempo, futebol, negócios e muito mais — cada personagem com voz, visual e estilo próprios.\n\nSe bastante gente me seguir e comentar EU QUERO, eu mostro como esse negócio funciona.\n\n#VideosSemAparecer #CriacaoDeConteudo #PersonagensIA #TikTokBrasil #InstagramReels #YouTubeShorts #InteligenciaArtificial",
   "batidas": [
-    {
-      "fala": "E se eu te dissesse que eu sou só uma das personagens que esse sistema consegue criar?",
-      "expr": "sorrindo",
-      "arte": ["titulo"],
-      "destaque": ["só uma", "personagens", "sistema"],
-      "zoom": true
-    },
-    {
-      "fala": "Eu sou a Nina. Posso contar histórias, apresentar ideias e criar conteúdo sem você precisar aparecer.",
-      "expr": "sorrindo",
-      "arte": ["manchete_v", "NINA • HISTÓRIAS"],
-      "destaque": ["Nina", "histórias", "sem aparecer"]
-    },
-    {
-      "fala": "Mas também tem o Pablo Guru e a Marina, para reflexões, perguntas e conteúdo de desenvolvimento pessoal.",
-      "expr": "neutra",
-      "arte": ["conversa", "PABLO GURU + MARINA"],
-      "destaque": ["Pablo Guru", "Marina", "reflexões"]
-    },
-    {
-      "fala": "Tem o Sábio, que transforma provérbios e mensagens em vídeos todos os dias.",
-      "expr": "sorrindo",
-      "arte": ["manchete_v", "SÁBIO • PROVÉRBIOS"],
-      "destaque": ["Sábio", "provérbios", "todos os dias"]
-    },
-    {
-      "fala": "Tem personagens para previsão do tempo, levando informação local de um jeito muito mais leve e interessante.",
-      "expr": "neutra",
-      "arte": ["calendario", "PREVISÃO DO TEMPO"],
-      "destaque": ["previsão do tempo", "informação local"]
-    },
-    {
-      "fala": "E tem o Gil e a Dona Cida, falando de futebol, notícias, pré-jogo, pós-jogo e humor.",
-      "expr": "sorrindo",
-      "arte": ["manchete_v", "GIL + DONA CIDA • FUTEBOL"],
-      "destaque": ["Gil", "Dona Cida", "futebol"]
-    },
-    {
-      "fala": "Cada um tem sua própria voz, aparência, cenário e jeito de falar. E todos podem produzir vídeos sem você entrar na frente da câmera.",
-      "expr": "ironica",
-      "arte": ["celular", "VOZ • VISUAL • CENÁRIO • ESTILO"],
-      "destaque": ["própria voz", "aparência", "sem você"]
-    },
-    {
-      "fala": "Você escolhe o negócio, o nicho e a mensagem. O personagem vira o apresentador do seu conteúdo.",
-      "expr": "sorrindo",
-      "arte": ["conversa", "QUALQUER NEGÓCIO. QUALQUER NICHO."],
-      "destaque": ["negócio", "nicho", "apresentador"]
-    },
-    {
-      "fala": "Pode publicar no Instagram, no TikTok e no YouTube, criando dezenas de vídeos sem passar o dia gravando.",
-      "expr": "sorrindo",
-      "arte": ["celular", "INSTAGRAM • TIKTOK • YOUTUBE"],
-      "destaque": ["Instagram", "TikTok", "YouTube", "dezenas de vídeos"],
-      "zoom": true
-    },
-    {
-      "fala": "Agora me diz: você gostaria de aprender a criar o seu próprio personagem e montar uma fábrica de conteúdo assim?",
-      "expr": "desconfiada",
-      "arte": ["interrogacao", "QUER CRIAR O SEU?"],
-      "destaque": ["seu próprio personagem", "fábrica de conteúdo"]
-    },
-    {
-      "fala": "Se bastante gente me seguir e comentar EU QUERO, eu mostro como esse negócio funciona.",
-      "expr": "sorrindo",
-      "arte": ["direct", "SEGUE + COMENTA: EU QUERO"],
-      "destaque": ["seguir", "EU QUERO", "mostro como funciona"],
-      "zoom": true
-    }
+    {"fala":"E se eu te dissesse que eu sou só uma das personagens que esse sistema consegue criar?","expr":"ironica","arte":["titulo"],"destaque":["só uma","personagens","sistema"],"zoom":true},
+    {"fala":"Eu sou a Nina. Posso contar histórias, apresentar ideias e criar conteúdo sem você precisar aparecer.","expr":"neutra","arte":["manchete_v","NINA • HISTÓRIAS"],"destaque":["Nina","histórias","sem aparecer"]},
+    {"fala":"Mas também tem o Pablo Guru e a Marina, para reflexões, perguntas e conteúdo de desenvolvimento pessoal.","expr":"neutra","arte":["conversa","PABLO GURU + MARINA"],"destaque":["Pablo Guru","Marina","reflexões"]},
+    {"fala":"Tem o Sábio, que transforma provérbios e mensagens em vídeos todos os dias.","expr":"neutra","arte":["manchete_v","SÁBIO • PROVÉRBIOS"],"destaque":["Sábio","provérbios","todos os dias"]},
+    {"fala":"Tem personagens para previsão do tempo, levando informação local de um jeito muito mais leve e interessante.","expr":"neutra","arte":["calendario","PREVISÃO DO TEMPO"],"destaque":["previsão do tempo","informação local"]},
+    {"fala":"E tem o Gil e a Dona Cida, falando de futebol, notícias, pré-jogo, pós-jogo e humor.","expr":"ironica","arte":["manchete_v","GIL + DONA CIDA • FUTEBOL"],"destaque":["Gil","Dona Cida","futebol"]},
+    {"fala":"Cada um tem sua própria voz, aparência, cenário e jeito de falar. E todos podem produzir vídeos sem você entrar na frente da câmera.","expr":"ironica","arte":["celular","VOZ • VISUAL • CENÁRIO • ESTILO"],"destaque":["própria voz","aparência","sem você"]},
+    {"fala":"Você escolhe o negócio, o nicho e a mensagem. O personagem vira o apresentador do seu conteúdo.","expr":"neutra","arte":["conversa","QUALQUER NEGÓCIO. QUALQUER NICHO."],"destaque":["negócio","nicho","apresentador"]},
+    {"fala":"Pode publicar no Instagram, no TikTok e no YouTube, criando dezenas de vídeos sem passar o dia gravando.","expr":"neutra","arte":["celular","INSTAGRAM • TIKTOK • YOUTUBE"],"destaque":["Instagram","TikTok","YouTube","dezenas de vídeos"],"zoom":true},
+    {"fala":"Agora me diz: você gostaria de aprender a criar o seu próprio personagem e montar uma fábrica de conteúdo assim?","expr":"desconfiada","arte":["interrogacao","QUER CRIAR O SEU?"],"destaque":["seu próprio personagem","fábrica de conteúdo"]},
+    {"fala":"Se bastante gente me seguir e comentar EU QUERO, eu mostro como esse negócio funciona.","expr":"ironica","arte":["direct","SEGUE + COMENTA: EU QUERO"],"destaque":["seguir","EU QUERO","mostro como funciona"],"zoom":true}
   ]
 }
