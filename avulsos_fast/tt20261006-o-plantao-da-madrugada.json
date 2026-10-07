@@ -4,37 +4,157 @@
   "avulso": true,
   "temporada": "TikTok avulso",
   "cenario": "noite",
-  "fim": "E você, o que faria no lugar dela? Comenta aí.",
-  "legenda_post": "Ela desconfiou do plantão do marido médico… mas a verdade apareceu onde ela menos esperava.\n\nVocê perdoaria ou terminaria?\n\nHistória fictícia, criada para entretenimento.\n\n#NinaMeContou #Storytime #Historia #Fofoca #Segredo #Relacionamentos",
+  "fim": "VOCÊ DARIA OUTRA CHANCE?",
+  "legenda_post": "Ela desconfiou do plantão do marido médico… e descobriu uma história que já durava meses. 😳🏥\n\nVocê perdoaria ou terminaria? Comenta aí!\n\nHistória fictícia, criada para entretenimento.\n\n#NinaMeContou #Storytime #Historia #Fofoca #Relacionamentos",
   "batidas": [
-    {"fala":"A história de hoje parece cena de novela, mas começou de um jeito muito simples: com um plantão que nunca acabava.","expr":"ironica","arte":["titulo"],"destaque":["plantão","nunca","acabava"]},
-    {"fala":"Quem me mandou a história foi uma mulher casada havia seis anos com um médico muito respeitado na cidade.","expr":"neutra","arte":["direct","ANÔNIMA"],"destaque":["seis anos","médico"]},
-    {"fala":"No começo, ela dizia que a rotina era pesada, mas normal. Ele fazia plantões longos, chegava cansado e quase sempre dormia sem jantar.","expr":"neutra","arte":["estetoscopio"],"foto":["hospital corridor at night","PLANTÃO"],"destaque":["plantões","cansado"]},
-    {"fala":"Só que, de uns meses pra cá, uma enfermeira começou a aparecer demais nas histórias dele.","expr":"desconfiada","arte":["cracha","ENFERMAGEM"],"foto":["nurse station hospital empty","ENFERMAGEM"],"destaque":["enfermeira","demais"]},
-    {"fala":"Era sempre a mesma desculpa: a enfermeira cobriu meu horário, a enfermeira levou um prontuário, a enfermeira resolveu um problema comigo.","expr":"ironica","arte":["conversa","FOI A ENFERMEIRA"],"destaque":["mesma","desculpa"]},
-    {"fala":"Ela achou estranho, mas preferiu não brigar. Até a noite em que, ao limpar o carro do marido, encontrou um perfume feminino no banco de trás.","expr":"chocada","arte":["perfume"],"foto":["perfume bottle on car seat","PERFUME"],"destaque":["perfume","banco de trás"],"zoom":true},
-    {"fala":"Quando perguntou sobre aquilo, ele respondeu rápido demais. Disse que devia ser de alguma paciente, ou talvez de uma colega do hospital.","expr":"desconfiada","arte":["conversa","DEVE SER DE ALGUMA COLEGA"],"destaque":["rápido demais"]},
-    {"fala":"Na semana seguinte, ele começou a sair mais cedo de casa toda quarta-feira, dizendo que tinha reunião antes do plantão.","expr":"desconfiada","arte":["calendario","QUARTA-FEIRA"],"foto":["calendar planner wednesday","QUARTA-FEIRA"],"destaque":["quarta-feira","mais cedo"]},
-    {"fala":"Ela decidiu observar sem falar nada. E foi aí que viu a primeira coincidência que não parecia coincidência.","expr":"desconfiada","arte":["interrogacao"],"destaque":["observar","coincidência"]},
-    {"fala":"Toda vez que ele dizia que estava entrando no hospital, o celular dele demorava a responder por quase quarenta minutos.","expr":"desconfiada","arte":["celular","40 MINUTOS"],"foto":["smartphone on table notifications","40 MINUTOS"],"destaque":["quarenta minutos"]},
-    {"fala":"Numa dessas noites, ela mandou uma mensagem simples perguntando se ele já estava no hospital. A resposta veio seca: sim, estou correndo aqui.","expr":"ironica","arte":["conversa","SIM, ESTOU CORRENDO AQUI"],"destaque":["seca"]},
-    {"fala":"Só que, naquele mesmo momento, uma amiga dela, que trabalhava perto do hospital, mandou uma foto da lanchonete da esquina.","expr":"chocada","arte":["foto"],"foto":["hospital cafe at night empty tables","LANCHONETE"],"destaque":["foto","lanchonete"],"zoom":true},
-    {"fala":"Na foto havia duas xícaras sobre uma mesa e, ao fundo, o marido dela conversando com a mesma enfermeira.","expr":"chocada","arte":["foto"],"foto":["two coffee cups cafe table hospital","DUAS XÍCARAS"],"destaque":["marido","mesma enfermeira"],"zoom":true},
-    {"fala":"Ela não confrontou na hora. Guardou a imagem, respirou fundo e esperou o momento certo.","expr":"triste","arte":["foto"],"foto":["printed photo on table","A FOTO"],"destaque":["guardou","esperou"]},
-    {"fala":"Dois dias depois, ele tomou banho e deixou o celular carregando no criado-mudo. Foi a primeira vez que ela teve coragem de olhar.","expr":"desconfiada","arte":["celular"],"foto":["phone charging bedside table night","CELULAR"],"destaque":["coragem","olhar"]},
-    {"fala":"As mensagens não eram claras no começo, mas havia intimidade demais: boa noite com coração, saudade do plantão juntos e um até amanhã, meu doutor preferido.","expr":"chocada","arte":["conversa","ATÉ AMANHÃ, MEU DOUTOR PREFERIDO"],"destaque":["coração","saudade"],"zoom":true},
-    {"fala":"Ela sentiu o mundo parar, mas ainda assim quis ter certeza antes de tomar qualquer decisão.","expr":"triste","arte":["coracao"],"destaque":["certeza","decisão"]},
-    {"fala":"Na quarta-feira seguinte, fingiu que iria dormir cedo. Esperou ele sair e seguiu de carro mantendo distância.","expr":"desconfiada","arte":["carro"],"foto":["car driving on city street at night","SEGUIU O CARRO"],"destaque":["seguiu","distância"]},
-    {"fala":"Em vez de entrar no hospital, ele parou num prédio residencial a poucas quadras dali.","expr":"chocada","arte":["porta"],"foto":["apartment building entrance at night","O PRÉDIO"],"destaque":["prédio residencial"],"zoom":true},
-    {"fala":"Cinco minutos depois, a mesma enfermeira apareceu. Ela entrou no prédio e ele foi logo atrás.","expr":"chocada","arte":["cracha","ENFERMAGEM"],"foto":["apartment building doorway at night","ELA CHEGOU"],"destaque":["mesma enfermeira","logo atrás"],"zoom":true},
-    {"fala":"Naquele instante, ela entendeu que não era amizade nem coincidência. Era uma traição escondida atrás dos plantões.","expr":"brava","arte":["manchete_v","ERA TRAIÇÃO"],"destaque":["traição","plantões"]},
-    {"fala":"Ela voltou pra casa em silêncio. Separou a foto da lanchonete, tirou prints das mensagens e colocou tudo sobre a mesa da cozinha.","expr":"neutra","arte":["foto"],"foto":["phone papers on kitchen table night","AS PROVAS"],"destaque":["prints","mesa"]},
-    {"fala":"Quando ele chegou, perto das duas da manhã, ainda tentou dizer que o plantão tinha sido puxado e que estava exausto.","expr":"ironica","arte":["relogio","02:00"],"foto":["digital clock 2 am","02:00"],"destaque":["duas da manhã","exausto"]},
-    {"fala":"Ela empurrou as provas na direção dele e perguntou com calma: a enfermeira também fazia parte desse plantão tão puxado?", "expr":"brava","arte":["conversa","A ENFERMEIRA TAMBÉM FAZIA PARTE DO PLANTÃO?"],"destaque":["provas","enfermeira"]},
-    {"fala":"Ele ficou em silêncio por alguns segundos e acabou admitindo que o relacionamento com a enfermeira já durava alguns meses.","expr":"triste","arte":["estetoscopio"],"foto":["empty hospital corridor night","ALGUNS MESES"],"destaque":["admitindo","meses"]},
-    {"fala":"Para ela, o pior não foi só a traição. Foram as mentiras repetidas, a frieza e o desrespeito dentro da própria casa.","expr":"brava","arte":["manchete_v","A PIOR PARTE FOI A MENTIRA"],"destaque":["mentiras","desrespeito"]},
-    {"fala":"Na manhã seguinte, ela arrumou uma mala e saiu de casa. Disse que precisava de distância para decidir o que faria com a própria vida.","expr":"triste","arte":["mala"],"foto":["packed suitcase near bedroom door","A MALA"],"destaque":["mala","distância"]},
-    {"fala":"Algum tempo depois, os dois se separaram. Ela me contou que nunca mais confundiu confiança com fechar os olhos para os sinais.","expr":"neutra","arte":["direct","ANÔNIMA"],"destaque":["separaram","confiança"]},
-    {"fala":"E eu te pergunto: depois de descobrir uma traição assim, você terminaria na hora ou ainda daria outra chance? Comenta aí!", "expr":"ironica","arte":["manchete_v","E VOCÊ, O QUE FARIA?"],"destaque":["terminaria","outra chance","comenta"]}
+    {
+      "fala": "Tudo começou com um detalhe pequeno: o plantão do marido médico parecia ficar mais longo toda quarta-feira.",
+      "expr": "ironica",
+      "arte": ["titulo"],
+      "destaque": ["plantão", "médico", "quarta-feira"],
+      "zoom": true
+    },
+    {
+      "fala": "Eles eram casados havia seis anos. Até então, ela nunca tinha desconfiado da rotina dele no hospital.",
+      "expr": "neutra",
+      "arte": ["estetoscopio"],
+      "foto": ["empty hospital corridor at night", "HOSPITAL"],
+      "destaque": ["seis anos", "hospital"]
+    },
+    {
+      "fala": "Só que uma enfermeira começou a aparecer demais nas histórias: cobriu meu horário, trouxe um prontuário, resolveu um problema comigo.",
+      "expr": "desconfiada",
+      "arte": ["cracha", "ENFERMAGEM"],
+      "foto": ["empty nurse station hospital", "ENFERMAGEM"],
+      "destaque": ["enfermeira", "demais"]
+    },
+    {
+      "fala": "A primeira pista apareceu no carro. Um perfume feminino estava escondido entre o banco traseiro e a porta.",
+      "expr": "chocada",
+      "arte": ["perfume"],
+      "foto": ["perfume bottle on car seat", "O PERFUME"],
+      "destaque": ["perfume", "carro"],
+      "zoom": true
+    },
+    {
+      "fala": "Ele respondeu rápido: deve ser de alguma paciente ou de alguém do hospital. Ela fingiu acreditar.",
+      "expr": "ironica",
+      "arte": ["conversa", "DEVE SER DE ALGUÉM DO HOSPITAL"],
+      "destaque": ["rápido", "hospital"]
+    },
+    {
+      "fala": "Na semana seguinte, ele saiu mais cedo na quarta-feira e disse que tinha uma reunião antes do plantão.",
+      "expr": "desconfiada",
+      "arte": ["calendario", "QUARTA-FEIRA"],
+      "foto": ["calendar planner wednesday", "QUARTA-FEIRA"],
+      "destaque": ["quarta-feira", "reunião"]
+    },
+    {
+      "fala": "À noite, ela perguntou por mensagem se ele já estava trabalhando. Ele respondeu: sim, estou correndo aqui.",
+      "expr": "desconfiada",
+      "arte": ["celular", "ESTOU CORRENDO AQUI"],
+      "foto": ["smartphone on table at night", "A MENSAGEM"],
+      "destaque": ["mensagem", "correndo"]
+    },
+    {
+      "fala": "Minutos depois, uma amiga mandou uma foto de uma lanchonete perto do hospital. Na mesa havia duas xícaras.",
+      "expr": "chocada",
+      "arte": ["foto"],
+      "foto": ["two coffee cups cafe table", "DUAS XÍCARAS"],
+      "destaque": ["foto", "duas xícaras"],
+      "zoom": true
+    },
+    {
+      "fala": "Ao fundo da foto, ela reconheceu o marido conversando com a mesma enfermeira que aparecia em todas aquelas desculpas.",
+      "expr": "chocada",
+      "arte": ["manchete_v", "ERA A MESMA ENFERMEIRA"],
+      "destaque": ["marido", "mesma enfermeira"],
+      "zoom": true
+    },
+    {
+      "fala": "Ela não discutiu. Guardou a imagem e decidiu esperar. Queria saber se era coincidência ou uma mentira maior.",
+      "expr": "desconfiada",
+      "arte": ["foto"],
+      "foto": ["printed photo on table", "A FOTO"],
+      "destaque": ["esperar", "mentira"]
+    },
+    {
+      "fala": "Dois dias depois, o celular dele ficou carregando no quarto. Uma notificação apareceu na tela: até amanhã, meu doutor preferido.",
+      "expr": "chocada",
+      "arte": ["celular", "MEU DOUTOR PREFERIDO"],
+      "foto": ["phone charging bedside table", "NOTIFICAÇÃO"],
+      "destaque": ["notificação", "doutor preferido"],
+      "zoom": true
+    },
+    {
+      "fala": "Na quarta-feira seguinte, ela esperou ele sair e seguiu o carro de longe. Ele não foi direto para o hospital.",
+      "expr": "desconfiada",
+      "arte": ["carro"],
+      "foto": ["car driving city street at night", "SEGUIU O CARRO"],
+      "destaque": ["seguiu", "não foi"]
+    },
+    {
+      "fala": "O carro parou diante de um prédio residencial, a poucas quadras do hospital.",
+      "expr": "chocada",
+      "arte": ["porta"],
+      "foto": ["apartment building entrance at night", "O PRÉDIO"],
+      "destaque": ["prédio", "hospital"],
+      "zoom": true
+    },
+    {
+      "fala": "Cinco minutos depois, a enfermeira chegou. Ela entrou no prédio e o médico foi logo atrás.",
+      "expr": "chocada",
+      "arte": ["cracha", "ENFERMAGEM"],
+      "foto": ["apartment doorway at night", "ELA CHEGOU"],
+      "destaque": ["enfermeira", "logo atrás"],
+      "zoom": true
+    },
+    {
+      "fala": "Naquele momento, ela entendeu: não era amizade. A traição estava escondida atrás dos plantões.",
+      "expr": "brava",
+      "arte": ["manchete_v", "ERA TRAIÇÃO"],
+      "destaque": ["traição", "plantões"],
+      "zoom": true
+    },
+    {
+      "fala": "Ela voltou para casa, separou a foto, registrou as mensagens e colocou tudo sobre a mesa da cozinha.",
+      "expr": "neutra",
+      "arte": ["foto"],
+      "foto": ["phone and papers on kitchen table", "AS PROVAS"],
+      "destaque": ["foto", "mensagens", "provas"]
+    },
+    {
+      "fala": "Perto das duas da manhã, ele chegou dizendo que o plantão tinha sido puxado. Ela apenas mostrou as provas.",
+      "expr": "brava",
+      "arte": ["relogio", "02:00"],
+      "foto": ["digital clock 2 am", "02:00"],
+      "destaque": ["duas da manhã", "provas"]
+    },
+    {
+      "fala": "Depois de tentar negar, ele admitiu que o relacionamento com a enfermeira já durava alguns meses.",
+      "expr": "triste",
+      "arte": ["estetoscopio"],
+      "foto": ["empty hospital hallway", "ALGUNS MESES"],
+      "destaque": ["admitiu", "meses"]
+    },
+    {
+      "fala": "Na manhã seguinte, ela colocou algumas roupas numa mala e saiu. Para ela, a mentira tinha pesado mais que qualquer explicação.",
+      "expr": "triste",
+      "arte": ["mala"],
+      "foto": ["packed suitcase near door", "A MALA"],
+      "destaque": ["mala", "mentira"]
+    },
+    {
+      "fala": "Algum tempo depois, os dois se separaram. E ela nunca mais confundiu confiança com ignorar sinais.",
+      "expr": "neutra",
+      "arte": ["direct", "ANÔNIMA"],
+      "destaque": ["separaram", "confiança"]
+    },
+    {
+      "fala": "E você? Depois de descobrir uma traição assim, terminaria na hora ou daria outra chance? Comenta aí!",
+      "expr": "ironica",
+      "arte": ["manchete_v", "E VOCÊ, O QUE FARIA?"],
+      "destaque": ["terminaria", "outra chance", "comenta"]
+    }
   ]
 }
