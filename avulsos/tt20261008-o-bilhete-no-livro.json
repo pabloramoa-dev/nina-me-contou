@@ -11,7 +11,7 @@
     "min_images": 4,
     "max_images": 8,
     "target_images": 6,
-    "fallback": "story_frame_text"
+    "fallback": "original_art"
   },
   "batidas": [
     {
