@@ -1,6 +1,6 @@
 {
   "motor": "hyperframes",
-  "versao": "nina-hyperframes-thalita-6-legenda-unica-visuais",
+  "versao": "nina-hyperframes-7-auto-visual-story-frames",
   "fotos": 0,
   "duracao": 32.49,
   "resolucao": [
@@ -14,5 +14,8 @@
   "visual": "v4",
   "lip": "rhubarb",
   "cenario": "tarde",
-  "batidas": 5
+  "batidas": 5,
+  "visual_images_ready": 0,
+  "visual_images_requested": 5,
+  "visual_images_fallbacks": 5
 }
