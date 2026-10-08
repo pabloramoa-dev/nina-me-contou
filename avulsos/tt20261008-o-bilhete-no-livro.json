@@ -1,0 +1,169 @@
+{
+  "id": "tt20261008-o-bilhete-no-livro",
+  "avulso": true,
+  "titulo": "O BILHETE NO LIVRO",
+  "temporada": "TikTok diário",
+  "cenario": "tarde",
+  "visual_images": {
+    "auto_visual_images": true,
+    "hide_inner_caption_when_image": true,
+    "bottom_caption_only": true,
+    "min_images": 4,
+    "max_images": 8,
+    "target_images": 6,
+    "fallback": "story_frame_text"
+  },
+  "batidas": [
+    {
+      "fala": "Ela comprou um livro usado por dez reais. Dentro, encontrou um bilhete que estava esperando havia vinte e oito anos.",
+      "expr": "desconfiada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "bilhete",
+        "vinte",
+        "oito"
+      ],
+      "zoom": true
+    },
+    {
+      "fala": "Na primeira página havia uma dedicatória: para Helena, quando você estiver pronta para saber a verdade.",
+      "expr": "chocada",
+      "foto": [
+        "old handwritten note inside used book",
+        "PARA HELENA"
+      ],
+      "destaque": [
+        "Helena",
+        "verdade"
+      ],
+      "zoom": true
+    },
+    {
+      "fala": "Marina quase devolveu o livro. Mas, no verso do papel, reconheceu o endereço da casa onde a mãe tinha crescido.",
+      "expr": "assustada",
+      "foto": [
+        "old handwritten letter and house address",
+        "O ENDEREÇO"
+      ],
+      "destaque": [
+        "reconheceu",
+        "mãe"
+      ]
+    },
+    {
+      "fala": "A mãe dela se chamava Helena. E nunca falava sobre os anos antes de Marina nascer.",
+      "expr": "desconfiada",
+      "arte": [
+        "calendario",
+        "28 ANOS DE SILÊNCIO"
+      ],
+      "destaque": [
+        "Helena",
+        "nunca"
+      ]
+    },
+    {
+      "fala": "Marina levou o bilhete até ela. Helena leu uma vez, sentou devagar e perguntou onde aquele livro estava.",
+      "expr": "neutra",
+      "foto": [
+        "open vintage book on kitchen table",
+        "ONDE VOCÊ ACHOU?"
+      ],
+      "destaque": [
+        "sentou",
+        "onde"
+      ]
+    },
+    {
+      "fala": "A resposta estava escondida entre as páginas cento e doze e cento e treze: uma fotografia de duas irmãs adolescentes.",
+      "expr": "surpresa",
+      "foto": [
+        "old photograph of two sisters tucked in book",
+        "DUAS IRMÃS"
+      ],
+      "destaque": [
+        "fotografia",
+        "duas",
+        "irmãs"
+      ]
+    },
+    {
+      "fala": "Helena contou que a outra menina era Lúcia, sua irmã mais nova. As duas brigaram depois da morte da mãe e nunca mais se procuraram.",
+      "expr": "cansada",
+      "arte": [
+        "coracao",
+        "IRMÃS SEPARADAS"
+      ],
+      "destaque": [
+        "irmã",
+        "nunca"
+      ]
+    },
+    {
+      "fala": "O bilhete tinha sido escrito por Lúcia. Ela deixou o livro num sebo que as duas frequentavam, esperando que um dia Helena o encontrasse.",
+      "expr": "surpresa",
+      "foto": [
+        "cozy old used bookstore shelves",
+        "O SEBO"
+      ],
+      "destaque": [
+        "Lúcia",
+        "esperando"
+      ]
+    },
+    {
+      "fala": "Marina voltou à loja. O dono pesquisou o cadastro antigo e encontrou um telefone que ainda funcionava.",
+      "expr": "neutra",
+      "foto": [
+        "used bookstore counter old ledger",
+        "UM TELEFONE"
+      ],
+      "destaque": [
+        "telefone",
+        "funcionava"
+      ]
+    },
+    {
+      "fala": "Quando Helena ligou, ninguém disse alô por alguns segundos. Então uma voz respondeu: eu sabia que você ia achar.",
+      "expr": "chocada",
+      "arte": [
+        "celular",
+        "EU SABIA QUE VOCÊ IA ACHAR"
+      ],
+      "destaque": [
+        "sabia",
+        "achar"
+      ],
+      "zoom": true
+    },
+    {
+      "fala": "No domingo seguinte, as duas se encontraram no mesmo sebo. Não recuperaram vinte e oito anos. Mas decidiram não perder o próximo.",
+      "expr": "ironica",
+      "foto": [
+        "two cups coffee bookstore table",
+        "O REENCONTRO"
+      ],
+      "destaque": [
+        "domingo",
+        "próximo"
+      ]
+    },
+    {
+      "fala": "E você? Acredita que alguns recados encontram a pessoa certa, mesmo quando chegam tarde? Me conta aqui embaixo.",
+      "expr": "ironica",
+      "arte": [
+        "interrogacao",
+        "E VOCÊ?"
+      ],
+      "destaque": [
+        "pessoa",
+        "certa",
+        "tarde"
+      ]
+    }
+  ],
+  "fim": "NUNCA É TARDE",
+  "legenda_post": "Um livro usado guardava um bilhete escrito havia 28 anos — e o caminho de volta para duas irmãs. 📖💌\nVocê acredita que alguns recados encontram a pessoa certa, mesmo quando chegam tarde?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Storytime #Historia #Familia #Reencontro"
+}
