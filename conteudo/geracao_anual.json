@@ -1,12 +1,12 @@
 {
  "inicio": 14,
- "proximo": 73,
+ "proximo": 74,
  "total_planejado": 730,
  "criado_em": "2026-10-06T19:50:54+00:00",
  "descricao": "730 historias x 2 partes = 1460 videos, suficientes para 365 dias a 4 videos/dia",
- "atualizado_em": "2026-10-08T11:36:13+00:00",
- "reserva_antes": 60,
+ "atualizado_em": "2026-10-09T11:32:27+00:00",
+ "reserva_antes": 59,
  "reserva_depois": 60,
- "gerados_nesta_execucao": 0,
- "restantes_no_plano": 671
+ "gerados_nesta_execucao": 1,
+ "restantes_no_plano": 670
 }
