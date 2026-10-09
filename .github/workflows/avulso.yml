@@ -112,7 +112,11 @@ jobs:
     if: always() && needs.renderizar.result != 'skipped'
     runs-on: ubuntu-latest
     steps:
+      # O job começa depois dos renders; use o HEAD atual para não tentar
+      # rebasear commits binários produzidos a partir de um SHA antigo.
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - uses: actions/download-artifact@v4
         with:
           pattern: avulso-*
