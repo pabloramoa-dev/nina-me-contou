@@ -1,8 +1,8 @@
 {
   "motor": "hyperframes",
-  "versao": "nina-hyperframes-thalita-6-legenda-unica-visuais",
-  "fotos": 6,
-  "duracao": 73.85,
+  "versao": "nina-hyperframes-7-auto-visual-story-frames",
+  "fotos": 0,
+  "duracao": 73.946,
   "resolucao": [
     1080,
     1920
@@ -10,9 +10,12 @@
   "fps": 30,
   "voz": "pt-BR-ThalitaNeural",
   "audio": "ffmpeg",
-  "sfx": 47,
+  "sfx": 31,
   "visual": "v4",
   "lip": "rhubarb",
   "cenario": "noite",
-  "batidas": 13
+  "batidas": 13,
+  "visual_images_ready": 0,
+  "visual_images_requested": 6,
+  "visual_images_fallbacks": 6
 }
