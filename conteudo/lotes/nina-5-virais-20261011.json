@@ -9,7 +9,9 @@
     "voice": "pt-BR-ThalitaNeural",
     "target_images": 6,
     "bottom_caption_only": true,
-    "image_generation_blocker": "GitHub Action logs confirm OPENAI_API_KEY absent; image generator falls back."
+    "image_generation_blocker": "OPENAI_API_KEY missing; deterministic local cartoon illustrations now available for avulsos as fallback (not photorealistic)",
+    "fallback_engine": "motor/local_story_art.py",
+    "validation": "Require actual 4-8 illustrated scene images and one lower speech caption before delivery"
   },
   "status": "episode_3_rendering",
   "episodes": [
@@ -40,7 +42,9 @@
       "status": "rendering",
       "story": "Motorista acha celular no banco traseiro, recebe ligação pedindo devolução urgente; a ligação revela uma situação familiar inesperada. Motorista ajuda a reunir o telefone ao dono e encontra um bilhete surpreendente.",
       "hook": "O motorista só queria devolver o celular. Aí alguém ligou!",
-      "run_id": 38155072682
+      "run_id": 38185923735,
+      "render_revision": 3,
+      "quality_check": "awaiting new render and image count"
     },
     {
       "number": 4,
