@@ -1,0 +1,18 @@
+{
+  "episodio": "tt20261011-o-quarto-fechado",
+  "titulo": "O quarto fechado",
+  "rede": "tiktok",
+  "conta": "ninamecontou",
+  "brandId": "7228264",
+  "timezone": "America/Sao_Paulo",
+  "status": "agendado",
+  "status_metricool": "PENDING",
+  "id": "393234358",
+  "uuid": "-4146365110820912640",
+  "data_publicacao": "2026-10-11T10:00:00-03:00",
+  "criado_em": "2026-10-11T08:46:00-03:00",
+  "video_url": "https://raw.githubusercontent.com/pabloramoa-dev/nina-me-contou/main/avulsos_prontos/tt20261011-o-quarto-fechado.mp4",
+  "metricool_media_url": "https://static.metricool.com/planner/202610/7228264-file-1450351802109137331.mp4",
+  "planner_url": "https://app.metricool.com/planner/calendar?blogId=7228264&openWithPostUuid=-4146365110820912640",
+  "observacao": "Agendado; publicação ainda não concluída."
+}
