@@ -1,0 +1,150 @@
+{
+  "id": "tt20261011-noiva-foto-10-minutos",
+  "avulso": true,
+  "titulo": "A FOTO 10 MINUTOS ANTES DO CASAMENTO",
+  "temporada": "Histórias da Nina — viradas",
+  "cenario": "tarde",
+  "visual_images": {
+    "auto_visual_images": true,
+    "hide_inner_caption_when_image": true,
+    "bottom_caption_only": true,
+    "min_images": 4,
+    "max_images": 8,
+    "target_images": 6,
+    "fallback": "original_art"
+  },
+  "batidas": [
+    {
+      "fala": "Menina, faltavam DEZ minutos pro casamento quando a noiva recebeu uma foto do noivo... abraçadinho com a melhor amiga dela. E a foto era da noite anterior!",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "DEZ minutos",
+        "melhor amiga",
+        "noite anterior"
+      ],
+      "zoom": true
+    },
+    {
+      "fala": "Junto veio uma mensagem anônima: pergunta onde ele passou a madrugada. Na foto, aparecia o hotel onde os convidados estavam hospedados.",
+      "expr": "desconfiada",
+      "foto": [
+        "smartphone displaying anonymous text message on table",
+        "A MENSAGEM"
+      ],
+      "destaque": [
+        "mensagem anônima",
+        "hotel"
+      ]
+    },
+    {
+      "fala": "Lívia ligou pra amiga, Camila. Nada. Ligou pro noivo. Ele só disse: agora não dá, depois eu explico.",
+      "expr": "assustada",
+      "arte": [
+        "celular",
+        "DEPOIS EU EXPLICO"
+      ],
+      "destaque": [
+        "Nada",
+        "depois eu explico"
+      ],
+      "zoom": true
+    },
+    {
+      "fala": "A mãe falou: cancela tudo, menina! Mas Lívia ajeitou o vestido, respirou fundo e respondeu: eu vou entrar nessa igreja.",
+      "expr": "desconfiada",
+      "foto": [
+        "white bridal shoes on floor wedding dress hem",
+        "EU VOU ENTRAR"
+      ],
+      "destaque": [
+        "cancela tudo",
+        "vou entrar"
+      ]
+    },
+    {
+      "fala": "Quando a música começou, todo mundo ficou de pé. O noivo sorriu, achando que tava tudo certo. Só que a Lívia pediu o microfone.",
+      "expr": "surpresa",
+      "foto": [
+        "wedding church aisle microphone flowers",
+        "O MICROFONE"
+      ],
+      "destaque": [
+        "sorriu",
+        "microfone"
+      ],
+      "zoom": true
+    },
+    {
+      "fala": "Ela olhou pra ele e perguntou: você tava no hotel com a Camila ontem? O rapaz ficou branco. A Camila abaixou a cabeça.",
+      "expr": "chocada",
+      "arte": [
+        "conversa",
+        "E A CAMILA?"
+      ],
+      "destaque": [
+        "hotel",
+        "Camila",
+        "abaixou a cabeça"
+      ],
+      "zoom": true
+    },
+    {
+      "fala": "Aí veio a confissão. Ele falou baixinho que os dois estavam juntos fazia três meses. Três meses enganando a noiva!",
+      "expr": "brava",
+      "foto": [
+        "gold wedding rings on empty table dramatic",
+        "TRÊS MESES"
+      ],
+      "destaque": [
+        "confissão",
+        "três meses",
+        "enganando"
+      ],
+      "zoom": true
+    },
+    {
+      "fala": "A igreja congelou. Lívia pegou o microfone de novo e disse: casamento não vai ter. Mas a festa tá paga, viu? E eu não vou perder minha alegria por causa de mentira.",
+      "expr": "ironica",
+      "foto": [
+        "wedding celebration table cake and flowers",
+        "A FESTA TÁ PAGA"
+      ],
+      "destaque": [
+        "casamento não vai ter",
+        "festa tá paga",
+        "alegria"
+      ],
+      "zoom": true
+    },
+    {
+      "fala": "E não é que ela foi pra festa? Dançou com a mãe, abraçou quem ficou do lado dela e começou uma vida nova, do jeito dela.",
+      "expr": "surpresa",
+      "foto": [
+        "party decorations confetti wedding reception empty dance floor",
+        "VIDA NOVA"
+      ],
+      "destaque": [
+        "foi pra festa",
+        "vida nova"
+      ]
+    },
+    {
+      "fala": "Agora me conta: você entrava na igreja pra falar tudo ou cancelava antes? Comenta aqui e segue a Nina, porque por aqui a fofoca vem com reviravolta!",
+      "expr": "ironica",
+      "arte": [
+        "interrogacao",
+        "E VOCÊ?"
+      ],
+      "destaque": [
+        "você",
+        "comenta",
+        "segue a Nina"
+      ]
+    }
+  ],
+  "fim": "A FESTA TÁ PAGA!",
+  "legenda_post": "💍📸 Faltavam só 10 minutos pro casamento quando Lívia recebeu uma foto que mudou tudo! Ela entrou na igreja... mas ninguém esperava o que aconteceu depois. 😳\n\nNo lugar dela, você entraria na igreja ou cancelaria tudo antes? Conta aqui! 👇\n\n🎭 História fictícia para entretenimento.\n#NinaMeContou #HistoriaComReviravolta #Fofoca #Casamento #ReelsBrasil"
+}
