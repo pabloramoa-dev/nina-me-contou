@@ -10,21 +10,23 @@
     "target_images": 6,
     "bottom_caption_only": true
   },
-  "status": "episode_1_rendering",
+  "status": "episode_2_rendering",
   "episodes": [
     {
       "number": 1,
       "title": "A noiva recebeu uma foto 10 minutos antes do casamento",
       "id": "tt20261011-noiva-foto-10-minutos",
-      "status": "rendering",
+      "status": "delivered",
       "story": "Lívia descobre na última hora a traição do noivo com a melhor amiga, entra na igreja para contar a verdade e decide aproveitar a festa sem se casar.",
-      "hook": "Faltavam dez minutos pro casamento quando ela viu a foto."
+      "hook": "Faltavam dez minutos pro casamento quando ela viu a foto.",
+      "video_url": "https://raw.githubusercontent.com/pabloramoa-dev/nina-me-contou/main/avulsos_prontos/tt20261011-noiva-foto-10-minutos.mp4",
+      "run_id": 38147393795
     },
     {
       "number": 2,
       "title": "O áudio da sogra caiu no grupo errado",
       "id": "tt20261011-sogra-audio-grupo",
-      "status": "planned",
+      "status": "rendering",
       "story": "A sogra envia áudio falando mal da nora ao grupo da família, todos brigam, mas a nora revela um gesto de ajuda que mantinha em segredo. Humilhada, sogra tenta se reconciliar.",
       "hook": "A sogra falou da nora... no grupo da família inteira!"
     },
