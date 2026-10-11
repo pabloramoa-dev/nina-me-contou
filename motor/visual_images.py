@@ -218,6 +218,23 @@ def preparar(ep, segs, assets, pasta, generator=None):
             reason = str(exc) if isinstance(exc, ImageFailure) else type(exc).__name__
             if reason in ('missing_openai_api_key', 'image_http_401', 'image_http_403', 'image_http_429'):
                 circuit = reason
+            # Áudio/roteiro não mudam. Avulsos recebem ilustração editorial
+            # original offline se faltar a API, sem depender de fotos externas.
+            if ep.get('avulso'):
+                try:
+                    from local_story_art import render as render_local
+                    local_data = validar_imagem(render_local(scene, ep))
+                    name = f'visual-scene-{scene["scene"]:02d}.png'
+                    (assets/name).write_bytes(local_data)
+                    scene.update(status='local_fallback', mode='story_frame_image',
+                                 asset=name, image_origin='pillow_illustration',
+                                 fallback_reason=reason)
+                    for i in scene['beats']:
+                        mapping[i] = name
+                    print(f'visual scene {scene["scene"]}: ilustração local incluída (motivo: {reason})', flush=True)
+                    continue
+                except Exception as local_exc:
+                    reason += ';local_fallback_' + type(local_exc).__name__
             scene.update(status='fallback', mode='story_frame_text', error=reason)
             print(f'visual scene {scene["scene"]}: {reason}; fallback={cfg["fallback"]}', flush=True)
     report = {'config': cfg, 'requested': len(scenes), 'ready': sum(s['status'] != 'fallback' for s in scenes),
