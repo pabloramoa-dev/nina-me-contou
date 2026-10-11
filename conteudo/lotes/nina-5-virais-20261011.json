@@ -1,0 +1,56 @@
+{
+  "serie": "Nina — 5 histórias para atrair seguidores",
+  "created": "2026-10-11",
+  "repo": "pabloramoa-dev/nina-me-contou",
+  "allow_auto_publish": false,
+  "mode": "render sequentially and present one at a time",
+  "visual": {
+    "style": "original Nina, HyperFrames",
+    "voice": "pt-BR-ThalitaNeural",
+    "target_images": 6,
+    "bottom_caption_only": true
+  },
+  "status": "episode_1_rendering",
+  "episodes": [
+    {
+      "number": 1,
+      "title": "A noiva recebeu uma foto 10 minutos antes do casamento",
+      "id": "tt20261011-noiva-foto-10-minutos",
+      "status": "rendering",
+      "story": "Lívia descobre na última hora a traição do noivo com a melhor amiga, entra na igreja para contar a verdade e decide aproveitar a festa sem se casar.",
+      "hook": "Faltavam dez minutos pro casamento quando ela viu a foto."
+    },
+    {
+      "number": 2,
+      "title": "O áudio da sogra caiu no grupo errado",
+      "id": "tt20261011-sogra-audio-grupo",
+      "status": "planned",
+      "story": "A sogra envia áudio falando mal da nora ao grupo da família, todos brigam, mas a nora revela um gesto de ajuda que mantinha em segredo. Humilhada, sogra tenta se reconciliar.",
+      "hook": "A sogra falou da nora... no grupo da família inteira!"
+    },
+    {
+      "number": 3,
+      "title": "O passageiro deixou um celular no Uber",
+      "id": "tt20261011-celular-uber",
+      "status": "planned",
+      "story": "Motorista acha celular no banco traseiro, recebe ligação pedindo devolução urgente; a ligação revela uma situação familiar inesperada. Motorista ajuda a reunir o telefone ao dono e encontra um bilhete surpreendente.",
+      "hook": "O motorista só queria devolver o celular. Aí alguém ligou!"
+    },
+    {
+      "number": 4,
+      "title": "A patroa humilhou a funcionária e se arrependeu",
+      "id": "tt20261011-patroa-funcionaria",
+      "status": "planned",
+      "story": "Patroa envergonha funcionária diante de visitas, mas logo precisa de ajuda e descobre que a funcionária a protegeu durante uma crise familiar. Termina com pedido de desculpas e limites claros.",
+      "hook": "Essa patroa humilhou a funcionária na frente de todo mundo..."
+    },
+    {
+      "number": 5,
+      "title": "Quem está mentindo? O mistério dos três depoimentos",
+      "id": "tt20261011-tres-depoimentos",
+      "status": "planned",
+      "story": "Nina narra um pequeno mistério de objeto sumido com três depoimentos e pistas claras para o espectador resolver, revelando a mentira antes do CTA final.",
+      "hook": "Três pessoas deram sua versão. Uma delas tá mentindo. E você consegue perceber qual?"
+    }
+  ]
+}
