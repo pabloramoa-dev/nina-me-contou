@@ -263,7 +263,18 @@ def renderizar(ep,pasta,raiz):
     ep['_visual_images'],visual_report=VI.preparar(ep,segs,assets,pasta)
     cfg=VI.config(ep)
     # Generated illustrations replace stock photography in automatic mode.
-    ep['_fotos']={} if cfg['auto_visual_images'] else banco_imagens.preparar_episodio(ep,assets,pasta)
+    # A falta de chave de ilustrações não pode deixar as histórias avulsas sem apoio visual.
+    # Usa as fotos licenciadas do banco como segunda opção somente quando o gerador falhar.
+    if cfg['auto_visual_images']:
+        if ep.get('avulso') and visual_report['ready'] < cfg['min_images']:
+            fotos_reserva = banco_imagens.preparar_episodio(ep, assets, pasta)
+            ep['_fotos'] = {i: desc for i,desc in fotos_reserva.items() if i not in ep['_visual_images']}
+        else:
+            ep['_fotos'] = {}
+        print('visuais da história:', visual_report['ready'], 'ilustrações,',
+              len(ep['_fotos']), 'fotos de reserva; mínimo:', cfg['min_images'], flush=True)
+    else:
+        ep['_fotos'] = banco_imagens.preparar_episodio(ep, assets, pasta)
     if cfg['auto_visual_images'] and cfg['fallback']=='story_frame_text':
         for i,b in enumerate(ep['batidas']):
             if i not in ep['_visual_images']:
@@ -308,7 +319,7 @@ def renderizar(ep,pasta,raiz):
     sh(['node',cli,'render',work,'--output',tmp,'--workers',os.environ.get('NINA_HF_WORKERS','2'),'--no-browser-gpu'],env=env)
     conferir(tmp,dur);tmp.replace(final)
     info={'motor':'hyperframes','versao':HYPERFRAMES_VERSION,'fotos':len(ep['_fotos']),'duracao':dur,'resolucao':[1080,1920],'fps':30,'voz':'pt-BR-ThalitaNeural','audio':'pedalboard' if audio_fx.disponivel() else 'ffmpeg','sfx':len(SFX.eventos(ep,segs)),'visual':'v4' if usa_v4() else 'v3','lip':os.environ.get('NINA_LIP','rhubarb'),'cenario':ep.get('cenario','tarde'),'batidas':len(segs)}
-    info.update(visual_images_ready=visual_report['ready'],visual_images_requested=visual_report['requested'],visual_images_fallbacks=visual_report['fallbacks'])
+    info.update(visual_images_ready=visual_report['ready'],visual_images_requested=visual_report['requested'],visual_images_fallbacks=visual_report['fallbacks'],visual_photo_fallbacks=len(ep['_fotos']),visual_total_ready=visual_report['ready']+len(ep['_fotos']))
     if str(ep.get('voice_engine') or os.environ.get('NINA_VOICE_ENGINE','thalita')).lower()=='kokoro':
         info['voz']=ep.get('kokoro_voice') or os.environ.get('NINA_KOKORO_VOICE','pf_dora')
     (pasta/'render.json').write_text(json.dumps(info,ensure_ascii=False,indent=2))
