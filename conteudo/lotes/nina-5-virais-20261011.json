@@ -8,9 +8,10 @@
     "style": "original Nina, HyperFrames",
     "voice": "pt-BR-ThalitaNeural",
     "target_images": 6,
-    "bottom_caption_only": true
+    "bottom_caption_only": true,
+    "image_generation_blocker": "GitHub Action logs confirm OPENAI_API_KEY absent; image generator falls back."
   },
-  "status": "episode_2_rendering",
+  "status": "episode_3_rendering",
   "episodes": [
     {
       "number": 1,
@@ -26,17 +27,20 @@
       "number": 2,
       "title": "O áudio da sogra caiu no grupo errado",
       "id": "tt20261011-sogra-audio-grupo",
-      "status": "rendering",
+      "status": "delivered",
       "story": "A sogra envia áudio falando mal da nora ao grupo da família, todos brigam, mas a nora revela um gesto de ajuda que mantinha em segredo. Humilhada, sogra tenta se reconciliar.",
-      "hook": "A sogra falou da nora... no grupo da família inteira!"
+      "hook": "A sogra falou da nora... no grupo da família inteira!",
+      "video_url": "https://raw.githubusercontent.com/pabloramoa-dev/nina-me-contou/main/avulsos_prontos/tt20261011-sogra-audio-grupo.mp4",
+      "run_id": 38150279664
     },
     {
       "number": 3,
       "title": "O passageiro deixou um celular no Uber",
       "id": "tt20261011-celular-uber",
-      "status": "planned",
+      "status": "rendering",
       "story": "Motorista acha celular no banco traseiro, recebe ligação pedindo devolução urgente; a ligação revela uma situação familiar inesperada. Motorista ajuda a reunir o telefone ao dono e encontra um bilhete surpreendente.",
-      "hook": "O motorista só queria devolver o celular. Aí alguém ligou!"
+      "hook": "O motorista só queria devolver o celular. Aí alguém ligou!",
+      "run_id": 38155072682
     },
     {
       "number": 4,
