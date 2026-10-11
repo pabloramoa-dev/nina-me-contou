@@ -140,6 +140,32 @@
   ],
   "fim": "AINDA DÁ TEMPO DE RECOMEÇAR?",
   "legenda_post": "📱🚗 Um passageiro esqueceu o celular no Uber. O motorista atendeu uma ligação e descobriu um segredo de família que mudou o fim daquela corrida. 😳\n\n💬 Você daria outra chance para esse pai? Conta nos comentários e segue a Nina!\n\n🎭 História fictícia, criada para entretenimento.\n#NinaMeContou #HistoriaComReviravolta #Uber #StorytimeBrasil #Familia",
-  "render_revision": 2,
-  "visual_delivery_goal": "4-8 distinct reinforcement images; image AI preferred, photo stock fallback accepted if key missing; no duplicate inner captions"
+  "render_revision": 3,
+  "visual_delivery_goal": "Six story-specific illustrated scene assets; AI if available or offline original pictograms (not plain title cards); single bottom caption; verify visual_images.json",
+  "visual_storyboard": [
+    [
+      "car",
+      "phone"
+    ],
+    [
+      "phone",
+      "call"
+    ],
+    [
+      "station",
+      "gift"
+    ],
+    [
+      "car",
+      "family"
+    ],
+    [
+      "home",
+      "letter"
+    ],
+    [
+      "heart",
+      "question"
+    ]
+  ]
 }
