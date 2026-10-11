@@ -8,9 +8,9 @@
     "auto_visual_images": true,
     "hide_inner_caption_when_image": true,
     "bottom_caption_only": true,
-    "min_images": 6,
+    "min_images": 4,
     "max_images": 8,
-    "target_images": 8,
+    "target_images": 6,
     "fallback": "original_art"
   },
   "batidas": [
@@ -139,5 +139,7 @@
     }
   ],
   "fim": "AINDA DÁ TEMPO DE RECOMEÇAR?",
-  "legenda_post": "📱🚗 Um passageiro esqueceu o celular no Uber. O motorista atendeu uma ligação e descobriu um segredo de família que mudou o fim daquela corrida. 😳\n\n💬 Você daria outra chance para esse pai? Conta nos comentários e segue a Nina!\n\n🎭 História fictícia, criada para entretenimento.\n#NinaMeContou #HistoriaComReviravolta #Uber #StorytimeBrasil #Familia"
+  "legenda_post": "📱🚗 Um passageiro esqueceu o celular no Uber. O motorista atendeu uma ligação e descobriu um segredo de família que mudou o fim daquela corrida. 😳\n\n💬 Você daria outra chance para esse pai? Conta nos comentários e segue a Nina!\n\n🎭 História fictícia, criada para entretenimento.\n#NinaMeContou #HistoriaComReviravolta #Uber #StorytimeBrasil #Familia",
+  "render_revision": 2,
+  "visual_delivery_goal": "4-8 distinct reinforcement images; image AI preferred, photo stock fallback accepted if key missing; no duplicate inner captions"
 }
