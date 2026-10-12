@@ -1,4 +1,5 @@
 name: Produzir vídeo avulso
+# v2: checkout leve após poda do estoque de mídia
 
 # Vídeos AVULSOS da Nina, feitos sob demanda (fora da fila automática do Instagram).
 # Roteiro em avulsos/<id>.json  ->  MP4 + capa + Story + prévia 720p + legenda em avulsos_prontos/.
