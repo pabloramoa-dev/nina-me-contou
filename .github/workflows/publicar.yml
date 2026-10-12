@@ -70,3 +70,21 @@ jobs:
           git commit -m "publicado: ${{ steps.h.outputs.h }} [skip ci]"
           git pull --rebase
           git push
+
+      - name: Limpar mídia já consumida e excesso de buffer
+        if: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.dry_run == false) }}
+        run: |
+          python motor/limpar_reels.py --alvo 8
+          git config user.name "nina-bot"
+          git config user.email "actions@github.com"
+          git add -A reels/
+          if git diff --cached --quiet; then
+            echo "Nenhuma mídia para limpar."
+            exit 0
+          fi
+          git commit -m "limpeza: mídia já publicada da Nina [skip ci]"
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push origin main && exit 0
+            sleep 5
+          done
+          exit 1
