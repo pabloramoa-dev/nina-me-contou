@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
 
 concurrency:
-  group: nina-avulso
+  group: nina-avulso-v2
   # Cada execução lista TODOS os avulsos ainda sem saída válida. Se uma versão
   # mais nova do motor chega, cancela a antiga e reprocessa o conjunto pendente.
   cancel-in-progress: true
