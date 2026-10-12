@@ -13,7 +13,9 @@ on:
 
 concurrency:
   group: nina-avulso
-  cancel-in-progress: false
+  # Cada execução lista TODOS os avulsos ainda sem saída válida. Se uma versão
+  # mais nova do motor chega, cancela a antiga e reprocessa o conjunto pendente.
+  cancel-in-progress: true
 
 permissions:
   contents: write
