@@ -50,6 +50,11 @@ async def sintetizar(texto: str, destino_mp3: str, voice: str, rate: str):
             return
         except Exception as exc:
             ultimo_erro = exc
+            # 403 no websocket é bloqueio do serviço, não instabilidade de rede:
+            # insistir seis vezes só atrasa o fallback local do pipeline.
+            if getattr(exc, "status", None) == 403 or "403" in str(exc):
+                print("[thalita] serviço respondeu 403; acionando fallback local do pipeline.", flush=True)
+                break
             if tentativa == TTS_ATTEMPTS:
                 break
             espera = min(20, 3 * (2 ** (tentativa - 1)))
