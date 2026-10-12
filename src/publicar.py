@@ -59,9 +59,10 @@ def main() -> int:
     try:
         media_id = pub.publicar(container)
     except Exception:
-        media_id = pub.reconciliar(container)
+        media_id = pub.reconciliar(container, legenda)
         if not media_id:
             raise
+        rel["reconciliado_apos_erro"] = True
     fila.gravar_publicado(ep_id, media_id, dry=False)
     rel.update(ok=True, media_id=media_id)
 
