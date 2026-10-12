@@ -23,6 +23,7 @@ import edge_tts
 SR = 44100
 VOICE = "pt-BR-ThalitaNeural"
 RATE = "-6%"
+TTS_ATTEMPTS = 6
 
 
 def sh(cmd):
@@ -37,7 +38,30 @@ def wav_pcm(path):
 
 
 async def sintetizar(texto: str, destino_mp3: str, voice: str, rate: str):
-    await edge_tts.Communicate(texto, voice, rate=rate).save(destino_mp3)
+    """Sintetiza com novas conexões e espera progressiva em falhas transitórias."""
+    ultimo_erro = None
+    for tentativa in range(1, TTS_ATTEMPTS + 1):
+        try:
+            if os.path.exists(destino_mp3):
+                os.remove(destino_mp3)
+            await edge_tts.Communicate(texto, voice, rate=rate).save(destino_mp3)
+            if not os.path.exists(destino_mp3) or os.path.getsize(destino_mp3) == 0:
+                raise RuntimeError("Edge TTS retornou áudio vazio")
+            return
+        except Exception as exc:
+            ultimo_erro = exc
+            if tentativa == TTS_ATTEMPTS:
+                break
+            espera = min(20, 3 * (2 ** (tentativa - 1)))
+            print(
+                f"[thalita] tentativa {tentativa}/{TTS_ATTEMPTS} falhou: "
+                f"{type(exc).__name__}; nova tentativa em {espera}s",
+                flush=True,
+            )
+            await asyncio.sleep(espera)
+    raise RuntimeError(
+        f"Thalita indisponível após {TTS_ATTEMPTS} tentativas"
+    ) from ultimo_erro
 
 
 def main():
