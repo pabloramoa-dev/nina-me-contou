@@ -16,12 +16,14 @@ on:
   workflow_dispatch:
     inputs:
       limite:
-        description: "Máximo de partes nesta execução"
-        default: "20"
+        description: "Máximo de partes a renderizar nesta execução"
+        default: "8"
 
 concurrency:
-  group: nina-estudio
-  cancel-in-progress: false
+  group: nina-estudio-v2
+  # A execução mais nova recalcula todos os pendentes; priorizar o motor novo
+  # evita acumular renders obsoletos.
+  cancel-in-progress: true
 
 permissions:
   contents: write
@@ -73,8 +75,8 @@ jobs:
           python-version: "3.11"
       - id: l
         run: |
-          LIM="${{ inputs.limite || '20' }}"
-          python motor/pendentes.py --rel | head -n "$LIM" > /tmp/p.txt
+          LIM="${{ inputs.limite || '8' }}"
+          python motor/pendentes.py --rel --alvo-prontos 8 --limite "$LIM" > /tmp/p.txt
           cat /tmp/p.txt
           echo "lista=$(python -c "import json;print(json.dumps(open('/tmp/p.txt').read().split()))")" >> $GITHUB_OUTPUT
           echo "qtd=$(wc -l < /tmp/p.txt)" >> $GITHUB_OUTPUT
