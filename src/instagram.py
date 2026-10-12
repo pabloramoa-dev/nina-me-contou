@@ -150,7 +150,7 @@ class Publicador:
         )
         return r.json()["id"]
 
-    def reconciliar(self, container_id: str) -> str | None:
+    def reconciliar(self, container_id: str, legenda_esperada: str | None = None) -> str | None:
         """Depois de um timeout na publicação: descobre se o Reel entrou mesmo.
 
         Evita o pior cenário do plano (publicação duplicada): procura nas
@@ -164,13 +164,17 @@ class Publicador:
         self._checar(r)
         itens = r.json().get("data", [])
         agora = datetime.now(timezone.utc)
+        esperado = (legenda_esperada or "").strip()
         for item in itens:
             try:
                 quando = datetime.fromisoformat(str(item.get("timestamp", "")).replace("Z", "+00:00"))
             except ValueError:
                 continue
-            if agora - quando <= timedelta(minutes=20):
-                return item.get("id")
+            if agora - quando > timedelta(minutes=20):
+                continue
+            if esperado and str(item.get("caption") or "").strip() != esperado:
+                continue
+            return item.get("id")
         return None
 
     def metricas(self, media_id: str) -> dict:
