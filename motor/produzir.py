@@ -71,9 +71,24 @@ def main():
                 "--voz", kokoro_voice, "--speed", kokoro_speed, "--gap", str(GAP),
                 "--out", P("bruta.wav"), "--seg-json", P("segs.json")])
         else:
-            sh([sys.executable, os.path.join(MOTOR, "gerar_voz_thalita.py"), P("roteiro.txt"),
-                "--voice", VOZ, f"--rate={RATE}", "--gap", str(GAP),
-                "--out", P("bruta.wav"), "--seg-json", P("segs.json")])
+            try:
+                sh([sys.executable, os.path.join(MOTOR, "gerar_voz_thalita.py"), P("roteiro.txt"),
+                    "--voice", VOZ, f"--rate={RATE}", "--gap", str(GAP),
+                    "--out", P("bruta.wav"), "--seg-json", P("segs.json")])
+            except subprocess.CalledProcessError:
+                permite = os.environ.get("NINA_VOICE_FALLBACK", "true").strip().lower() in {"1","true","yes","sim"}
+                if not permite:
+                    raise
+                # O Edge TTS pode responder 403 temporariamente. Em vez de perder
+                # o vídeo, usa voz feminina local apenas como contingência.
+                print("::warning::Thalita indisponível; usando Kokoro pf_dora como fallback local.", flush=True)
+                sh([sys.executable, os.path.join(MOTOR, "gerar_voz_kokoro.py"), P("roteiro.txt"),
+                    "--voz", os.environ.get("NINA_KOKORO_FALLBACK_VOICE", "pf_dora"),
+                    "--speed", os.environ.get("NINA_KOKORO_FALLBACK_SPEED", "1.02"),
+                    "--gap", str(GAP), "--out", P("bruta.wav"), "--seg-json", P("segs.json")])
+                with open(P("voz_fallback.json"), "w", encoding="utf-8") as f:
+                    json.dump({"motor":"kokoro","voz":os.environ.get("NINA_KOKORO_FALLBACK_VOICE","pf_dora"),
+                               "motivo":"thalita_indisponivel"}, f, ensure_ascii=False, indent=2)
         from audio_fx import masterizar_voz
         print("master da voz:", masterizar_voz(P("bruta.wav"), P("voz.wav")), flush=True)
 
