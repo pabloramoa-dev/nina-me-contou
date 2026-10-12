@@ -30,7 +30,7 @@ class Publicador:
     def __init__(self, cfg: Config):
         self.cfg = cfg
 
-    def _request(self, method: str, url: str, *, retry: bool = True, **kwargs):
+    def _request(self, method: str, url: str, *, retry: bool = True, check: bool = True, **kwargs):
         """Repete apenas falhas claramente transitórias.
 
         media_publish usa retry=False: depois de resposta ambígua, o chamador
@@ -49,7 +49,8 @@ class Publicador:
             if retry and r.status_code in HTTP_TRANSIENTES and tentativa < MAX_HTTP_RETRIES:
                 time.sleep(2 ** tentativa)
                 continue
-            self._checar(r)
+            if check:
+                self._checar(r)
             return r
         raise ErroInstagram(f"Falha transitória persistente na Meta: {ultimo}")
 
@@ -174,7 +175,7 @@ class Publicador:
 
     def metricas(self, media_id: str) -> dict:
         r = self._request("GET",
-            f"{self.cfg.base_graph}/{media_id}/insights",
+            f"{self.cfg.base_graph}/{media_id}/insights", check=False,
             params={
                 "metric": "reach,shares,saved,comments,likes,total_interactions,ig_reels_avg_watch_time,ig_reels_video_view_total_time",
                 "access_token": self.cfg.ig_token,
