@@ -1,0 +1,144 @@
+{
+  "id": "tt20261012-o-casaco-da-lavanderia",
+  "avulso": true,
+  "titulo": "O CASACO DA LAVANDERIA",
+  "temporada": "TikTok diário",
+  "cenario": "tarde",
+  "visual_images": {
+    "auto_visual_images": true,
+    "hide_inner_caption_when_image": true,
+    "bottom_caption_only": true,
+    "min_images": 4,
+    "max_images": 8,
+    "target_images": 6,
+    "fallback": "original_art"
+  },
+  "batidas": [
+    {
+      "fala": "Três anos depois da morte da mãe, Júlia recebeu uma ligação de uma lavanderia que jurava guardar um casaco em nome dela.",
+      "expr": "desconfiada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "três anos",
+        "um casaco"
+      ],
+      "zoom": true
+    },
+    {
+      "fala": "Júlia nunca tinha levado roupa ali. Mesmo assim, foi buscar. No bolso havia um recibo antigo com uma frase escrita à mão: abra o forro.",
+      "expr": "surpresa",
+      "foto": [
+        "vintage dry cleaning receipt coat pocket",
+        "ABRA O FORRO"
+      ],
+      "destaque": [
+        "nunca tinha levado",
+        "abra o forro"
+      ]
+    },
+    {
+      "fala": "A costureira desfez dois pontos da manga e encontrou um envelope fino. Dentro havia doze comprovantes de depósitos feitos pela mãe.",
+      "expr": "chocada",
+      "foto": [
+        "seamstress opening coat lining envelope",
+        "O ENVELOPE"
+      ],
+      "destaque": [
+        "dois pontos",
+        "doze depósitos"
+      ],
+      "zoom": true
+    },
+    {
+      "fala": "Todos tinham o mesmo destinatário: Rafael Nunes. Júlia pensou que a mãe escondera outra família e sentiu o chão desaparecer.",
+      "expr": "assustada",
+      "arte": [
+        "extrato",
+        "RAFAEL NUNES"
+      ],
+      "destaque": [
+        "mesmo destinatário",
+        "outra família"
+      ],
+      "zoom": true
+    },
+    {
+      "fala": "No fundo do envelope havia um bilhete da lavanderia e um endereço. Dizia que Rafael só poderia receber o casaco depois que Júlia soubesse de tudo.",
+      "expr": "desconfiada",
+      "foto": [
+        "old handwritten note with address",
+        "UM ENDEREÇO"
+      ],
+      "destaque": [
+        "depois",
+        "soubesse de tudo"
+      ]
+    },
+    {
+      "fala": "Ela chegou ao endereço esperando encontrar um segredo. Encontrou uma pequena biblioteca comunitária com o nome da mãe na porta.",
+      "expr": "surpresa",
+      "foto": [
+        "small community library entrance sign",
+        "BIBLIOTECA"
+      ],
+      "destaque": [
+        "um segredo",
+        "nome da mãe"
+      ]
+    },
+    {
+      "fala": "Rafael contou que, aos doze anos, vendia doces na rua. A mãe de Júlia pagou seus estudos em silêncio e fez uma única exigência.",
+      "expr": "cansada",
+      "foto": [
+        "school notebooks scholarship receipts",
+        "ESTUDOS PAGOS"
+      ],
+      "destaque": [
+        "doze anos",
+        "em silêncio"
+      ]
+    },
+    {
+      "fala": "Quando ele pudesse, deveria ajudar outra criança sem revelar quem tinha começado a corrente. Os depósitos eram as últimas parcelas da faculdade.",
+      "expr": "chocada",
+      "arte": [
+        "coracao",
+        "UMA CORRENTE"
+      ],
+      "destaque": [
+        "outra criança",
+        "faculdade"
+      ],
+      "zoom": true
+    },
+    {
+      "fala": "Rafael se formou professor e abriu aquela biblioteca. O casaco guardava a lista de quarenta e sete crianças que já tinham recebido ajuda.",
+      "expr": "surpresa",
+      "foto": [
+        "open notebook list library desk",
+        "47 CRIANÇAS"
+      ],
+      "destaque": [
+        "professor",
+        "quarenta e sete"
+      ]
+    },
+    {
+      "fala": "Júlia saiu dali sem descobrir um segredo da mãe, mas encontrando o tamanho dela. E você, continuaria essa corrente? Comenta e segue a Nina para mais histórias.",
+      "expr": "ironica",
+      "arte": [
+        "interrogacao",
+        "E VOCÊ?"
+      ],
+      "destaque": [
+        "tamanho dela",
+        "continuaria",
+        "segue a Nina"
+      ]
+    }
+  ],
+  "fim": "O BEM QUE CONTINUA",
+  "legenda_post": "Um casaco esquecido revelou o segredo que uma mãe guardou por anos — e mudou a vida de 47 crianças. 🧥📚\nVocê continuaria essa corrente sem contar a ninguém?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Storytime #Historia #Misterio #Familia"
+}
