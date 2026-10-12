@@ -6,11 +6,27 @@ on:
   workflow_dispatch:
 permissions:
   contents: read
+
+concurrency:
+  group: nina-hyperframes-v2
+  cancel-in-progress: true
 jobs:
   testes:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          sparse-checkout: |
+            /.github/
+            /assets/
+            /motor/
+            /src/
+            /tests/
+            /tools/
+            /video/
+            /requirements-estudio.txt
+          sparse-checkout-cone-mode: false
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
@@ -24,6 +40,18 @@ jobs:
     timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          sparse-checkout: |
+            /.github/
+            /assets/
+            /motor/
+            /src/
+            /tests/
+            /tools/
+            /video/
+            /requirements-estudio.txt
+          sparse-checkout-cone-mode: false
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
