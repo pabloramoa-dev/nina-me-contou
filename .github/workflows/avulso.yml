@@ -29,6 +29,19 @@ jobs:
       qtd: ${{ steps.l.outputs.qtd }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          sparse-checkout: |
+            /.github/
+            /assets/
+            /avulsos/
+            /avulsos_prontos/
+            /conteudo/tiktok_metricool/
+            /motor/
+            /src/
+            /video/
+            /requirements-estudio.txt
+          sparse-checkout-cone-mode: false
       - id: l
         run: |
           python3 - <<'PY' > /tmp/p.txt
@@ -67,6 +80,19 @@ jobs:
         roteiro: ${{ fromJson(needs.listar.outputs.lista) }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          sparse-checkout: |
+            /.github/
+            /assets/
+            /avulsos/
+            /avulsos_prontos/
+            /conteudo/tiktok_metricool/
+            /motor/
+            /src/
+            /video/
+            /requirements-estudio.txt
+          sparse-checkout-cone-mode: false
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -124,6 +150,18 @@ jobs:
       # rebasear commits binários produzidos a partir de um SHA antigo.
       - uses: actions/checkout@v4
         with:
+          filter: blob:none
+          sparse-checkout: |
+            /.github/
+            /assets/
+            /avulsos/
+            /avulsos_prontos/
+            /conteudo/tiktok_metricool/
+            /motor/
+            /src/
+            /video/
+            /requirements-estudio.txt
+          sparse-checkout-cone-mode: false
           ref: main
       - uses: actions/download-artifact@v4
         with:
