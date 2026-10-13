@@ -76,7 +76,7 @@ def main():
                     "--voice", VOZ, f"--rate={RATE}", "--gap", str(GAP),
                     "--out", P("bruta.wav"), "--seg-json", P("segs.json")])
             except subprocess.CalledProcessError:
-                permite = os.environ.get("NINA_VOICE_FALLBACK", "true").strip().lower() in {"1","true","yes","sim"}
+                permite = os.environ.get("NINA_VOICE_FALLBACK", "false").strip().lower() in {"1","true","yes","sim"}
                 if not permite:
                     raise
                 # O Edge TTS pode responder 403 temporariamente. Em vez de perder
