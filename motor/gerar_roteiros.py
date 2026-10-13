@@ -147,6 +147,20 @@ def _reserva_atual() -> int:
 def _pick(seq: int, itens: list):
     return itens[seq % len(itens)]
 
+
+def gancho_situacional(seq: int, objeto: str) -> str:
+    """O gancho precisa mencionar a pista real, evitando assunto desconectado."""
+    frase = objeto.strip().rstrip('.').lower()
+    modelos = (
+        f"Ela encontrou {frase}. O estranho veio depois.",
+        f"Tudo mudou por causa de {frase}. Escuta essa história.",
+        f"Parecia só {frase}. Até aparecer um segundo nome.",
+        f"Ninguém imaginava o segredo por trás de {frase}.",
+        f"A primeira pista foi {frase}. A última surpreendeu todo mundo.",
+        f"Você desconfiaria de {frase}? Ela também não desconfiou.",
+    )
+    return modelos[seq % len(modelos)]
+
 def _corrigir_existentes() -> int:
     """Corrige automaticamente pequenos defeitos de texto nos roteiros gerados."""
     trocas = {
@@ -251,7 +265,7 @@ def gerar_um(n: int, seq: int) -> tuple[dict, dict]:
     revelacao = _pick(seq * 5 + 3, REVELACOES)
     bairro = _pick(seq * 7 + 1, BAIRROS)
     motivo = _pick(seq * 11 + 5, MOTIVOS)
-    gancho = _pick(seq * 13 + 2, GANCHOS)
+    gancho = gancho_situacional(seq, objeto)
     pergunta = _pick(seq * 17 + 1, PERGUNTAS)
     temporada = _pick(seq, TEMPORADAS)
     titulo = (objeto.split(" dentro")[0].split(" de ")[0].replace("uma ", "").replace("um ", "")).upper()[:28]
