@@ -97,6 +97,7 @@ jobs:
         with:
           python-version: "3.11"
           cache: pip
+          cache-dependency-path: requirements-estudio.txt
       - name: Dependências de sistema
         run: |
           sudo apt-get update
