@@ -1,7 +1,8 @@
-# Laboratório: Nina com direção e gestos gratuitos
+# Direção gratuita da Nina — estilo aprovado
 
-Branch experimental: lab/nina-direcao-gratuita-v1. **Nada publica no Instagram**.
-A branch main continua como estava; o vídeo de teste é gerado por GitHub Actions.
+Implementação aprovada em 13/10/2026 e preparada para a branch principal.
+O vídeo de teste foi renderizado sem publicação automática. A produção diária volta
+a usar os workflows originais; nenhuma postagem é disparada por este documento.
 
 ## Modificações implementadas
 - motor/direcao_nina.py: gestos por batida (contar, perguntar, alertar, surpresa, ponderar, acolher), plano de câmera e transições suaves, com saída saida/<id>/direcao.json.
@@ -17,9 +18,10 @@ A execução dispara ao enviar alterações desta branch. Veja artifact
 nina-hyperframes-integracao-thalita para MP4, Story, capa, direcao.json,
 qualidade.json e render.json.
 
-Durante esse teste a geração paga de imagens fica desligada:
-NINA_AUTO_VISUAL_IMAGES=0 e NINA_FOTOS=0; continuam os elementos locais de
-arte. A voz principal permanece Thalita, com fallback Kokoro se indisponível.
+O workflow de validação usa NINA_AUTO_VISUAL_IMAGES=0 e NINA_FOTOS=0
+somente para não gastar com geração de imagens durante testes. Isso não
+desativa as ilustrações de reforço nem o fallback de fotos nos workflows
+normais de publicação. A voz principal permanece Thalita, com fallback Kokoro.
 
 Para desativar os novos gestos/enquadramentos: NINA_DIRECAO=0.
 A versão de render inclui essa opção, evitando confusão entre vídeos antigos e novos.
@@ -33,3 +35,15 @@ laboratório: a opção depende da API já prevista no pipeline.
 
 Código inspirado em técnicas de direção de cena e animação 2D dos projetos
 Synctoon e Avatar Skills; não foram copiados módulos GPL do Synctoon.
+
+## Produção
+
+A direção de gestos e enquadramentos vem **ativa por padrão** quando
+NINA_MOTOR=hyperframes. A publicação normal permanece controlada pelos
+workflows existentes. A geração de imagens segue os controles originais
+de visual_images.json. Não forçar OPENAI_API_KEY vazio na produção.
+
+A cada render ficam disponíveis direcao.json, qualidade.json e render.json.
+O relatório de QA bloqueia saída que falhe em checagens estruturais; não é
+uma avaliação artística ou de retenção. É importante observar os primeiros
+vídeos para conferir gestos naturais e evitar cenas repetitivas.
