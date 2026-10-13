@@ -25,6 +25,7 @@ jobs:
             /tests/
             /tools/
             /video/
+            /visual_tests/
             /requirements-estudio.txt
           sparse-checkout-cone-mode: false
       - uses: actions/setup-python@v5
@@ -50,6 +51,7 @@ jobs:
             /tests/
             /tools/
             /video/
+            /visual_tests/
             /requirements-estudio.txt
           sparse-checkout-cone-mode: false
       - uses: actions/setup-python@v5
