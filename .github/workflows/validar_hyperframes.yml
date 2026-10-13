@@ -1,7 +1,7 @@
 name: Validar Nina HyperFrames
 on:
   push:
-    branches: [main, feature/hyperframes-production]
+    branches: [main, feature/hyperframes-production, lab/nina-direcao-gratuita-v1]
     paths: ['motor/**', 'src/fila.py', 'video/**', 'tests/**', 'tools/teste_hyperframes.py', '.github/**', 'requirements-estudio.txt']
   workflow_dispatch:
 permissions:
@@ -25,6 +25,7 @@ jobs:
             /tests/
             /tools/
             /video/
+            /visual_tests/
             /requirements-estudio.txt
           sparse-checkout-cone-mode: false
       - uses: actions/setup-python@v5
@@ -50,18 +51,23 @@ jobs:
             /tests/
             /tools/
             /video/
+            /visual_tests/
             /requirements-estudio.txt
           sparse-checkout-cone-mode: false
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
           cache: pip
+          cache-dependency-path: requirements-estudio.txt
       - run: sudo apt-get update -qq && sudo apt-get install -y ffmpeg pkg-config libcairo2-dev libpango1.0-dev espeak-ng fonts-dejavu-core
       - run: pip install -r requirements-estudio.txt
       - uses: ./.github/actions/setup-hyperframes
       - name: Gerar vídeo, capa e Story com Thalita sem publicar
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_API_KEY: ''
+          NINA_AUTO_VISUAL_IMAGES: '0'
+          NINA_FOTOS: '0'
+          NINA_DIRECAO: '1'
         run: |
           python tools/teste_hyperframes.py
           python motor/produzir.py saida/teste-hf.json
@@ -79,7 +85,15 @@ jobs:
           assert (p/'capa.png').stat().st_size>10000
           assert duracao(str(p/'story.mp4'))<=59.1
           assert (p/'voz.wav').stat().st_size>10000
+          plano=json.loads((p/'direcao.json').read_text())
+          qa=json.loads((p/'qualidade.json').read_text())
+          assert qa['aprovado_tecnicamente'] and len(plano)>=6
+          assert len({x['gesto'] for x in plano})>=4
+          print('direcao:', sorted({x['gesto'] for x in plano}))
+          print('QA:',qa)
           PY
+      - name: Conferir imagens e legendas no navegador
+        run: node video/validate-layout.mjs saida/teste-hf/hyperframes
       - uses: actions/upload-artifact@v4
         with:
           name: nina-hyperframes-integracao-thalita
@@ -89,5 +103,8 @@ jobs:
             saida/teste-hf/capa.png
             saida/teste-hf/story.mp4
             saida/teste-hf/render.json
+            saida/teste-hf/direcao.json
+            saida/teste-hf/qualidade.json
+            saida/teste-hf/hyperframes/layout-check.json
           retention-days: 7
 

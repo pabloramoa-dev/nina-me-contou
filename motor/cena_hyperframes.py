@@ -5,6 +5,7 @@ M=Path(__file__).resolve().parent
 sys.path.insert(0,str(M))
 from manim import *
 import nina_lib as N
+import direcao_nina as D
 import dvh_vox_papel as V
 import objetos as O
 P=Path(os.environ['PASTA'])
@@ -25,6 +26,11 @@ class NinaBase(Scene):
         p=N.posicionar(N.nina(bats[0].get('expr','neutra'),cenario),escala=1.65,pos=np.array([0,-2.25,0]))
         V.colar(self,p,espessura=22)
         home=p['grupo'].get_center().copy();state={'i':0}
+        inicio_braco=p['braco_esq'].get_start().copy()
+        fim_braco=p['braco_esq'].get_end().copy()
+        ligado=os.environ.get('NINA_DIRECAO','1') not in ('0','false','False')
+        plano=(json.loads((P/'direcao.json').read_text()) if (P/'direcao.json').is_file()
+               else D.planejar(EP,SEGS)) if ligado else []
         def motion(m,dt):
             t=self.renderer.time
             i=max([k for k,s in enumerate(SEGS) if s['ini']<=t] or [0])
@@ -34,6 +40,13 @@ class NinaBase(Scene):
                 p['rosto'].become(N.rosto_alinhado(p,expr))
                 p['expr']=expr;state['i']=i
             m.move_to(home+np.array([.045*np.sin(t*1.4),.035*np.sin(t*2.1),0]))
+            if ligado:
+                item=plano[i]
+                dx,dy=D.deslocamento(item['gesto'],t,item['inicio'],item['fim'],item['energia'])
+                shift=m.get_center()-home
+                alvo=fim_braco+shift+np.array([dx,dy,0])*p['escala']
+                p['braco_esq'].put_start_and_end_on(inicio_braco+shift,alvo)
+                p['mao_esq'].move_to(alvo)
         p['grupo'].add_updater(motion)
         N.animar_nina(self,p,cues)
         self.wait(SEGS[-1]['fim']+2.2)

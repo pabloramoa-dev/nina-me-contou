@@ -248,10 +248,13 @@ def nina(expr="neutra", cenario="tarde"):
                     fill_color="#f4f1e6", fill_opacity=1, stroke_color=PT, stroke_width=6),
             Line(e + UP * 0.40, e + UP * 0.85 + RIGHT * 0.18, stroke_color="#e2483c", stroke_width=7))
 
+    # A mão livre é articulada pela direção sem alterar o braço da taça/coco.
+    mao_esq = Dot(be.get_end(), radius=0.095, color=PELE)
     face = rosto(expr, c)
-    grupo = VGroup(nuvem, cascata(-1), cascata(1), fios, pesc, blusa, pele_v, colar, be, bd, copo,
+    grupo = VGroup(nuvem, cascata(-1), cascata(1), fios, pesc, blusa, pele_v, colar, be, mao_esq, bd, copo,
                    brincos, cab, blush, sardas, franja, brilho, nariz, face)
-    return dict(grupo=grupo, cab=cab, rosto=face, copo=copo, expr=expr)
+    return dict(grupo=grupo, cab=cab, rosto=face, copo=copo, expr=expr,
+                braco_esq=be, mao_esq=mao_esq)
 
 
 def posicionar(p, escala=ESCALA, pos=POSICAO):
