@@ -10,6 +10,8 @@ import audio_fx
 import sfx as SFX
 import visual_v4 as V4
 import visual_images as VI
+import direcao_nina as DN
+import qualidade_nina as QN
 from render_version import HYPERFRAMES_VERSION
 
 FONT='/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
@@ -124,6 +126,8 @@ def chunks(text,width=840):
 def compor(ep,segs,pasta):
     dur=validar_timeline(ep,segs);parts=[];anim=[];v4=usa_v4();fotos=ep.get('_fotos',{})
     cfg=VI.config(ep);visuals=ep.get('_visual_images',{})
+    diretor_ativo=os.environ.get('NINA_DIRECAO','1') not in ('0','false','False')
+    plano=DN.planejar(ep,segs) if diretor_ativo else []
     for i,(b,s) in enumerate(zip(ep['batidas'],segs)):
         a=float(s['ini']);z=float(s['fim']);d=z-a
         spec=b.get('arte') or [None];tipo=spec[0];arg=spec[1] if len(spec)>1 else None
@@ -165,7 +169,11 @@ def compor(ep,segs,pasta):
             anim.append(f'tl.fromTo("#c{i}",{{y:55,rotation:{-3 if i%2 else 3},scale:.94,opacity:0}},{{y:0,rotation:0,scale:1,opacity:1,duration:.42,immediateRender:false,ease:"back.out(1.15)"}},{a});')
         if not has_image:
             anim.append(f'tl.to("#c{i} .art",{{y:-8,duration:{max(.1,d-.5)},ease:"none"}},{a+.5});')
-        anim.append(f'tl.to("#base",{{scale:{1.10 if b.get("zoom") or b.get("expr")=="chocada" else 1.02},x:{-12 if i%2 else 12},duration:.55,ease:"power2.inOut"}},{a});')
+        if diretor_ativo:
+            escala,x=DN.camera_destino(plano[i])
+        else:
+            escala,x=(1.10 if b.get('zoom') or b.get('expr')=='chocada' else 1.02),(-12 if i%2 else 12)
+        anim.append(f'tl.to("#base",{{scale:{escala},x:{x},duration:.55,ease:"power2.inOut"}},{a});')
         if SFX.tem_wipe(b,i):
             anim.append(f'tl.fromTo("#wipe",{{x:"-110%"}},{{x:"110%",duration:.48,immediateRender:false,ease:"power2.inOut"}},{a});')
         if SFX.tem_flash(b,i):
@@ -260,6 +268,9 @@ def renderizar(ep,pasta,raiz):
     env=dict(os.environ,PASTA=str(pasta),EPISODIO=str(pasta/'ep.json'),HYPERFRAMES_NO_TELEMETRY='1',DO_NOT_TRACK='1',HYPERFRAMES_FFMPEG_PATH=shutil.which('ffmpeg') or 'ffmpeg',HYPERFRAMES_FFPROBE_PATH=shutil.which('ffprobe') or 'ffprobe')
     import banco_imagens
     ep=enriquecer_visuais(ep)
+    diretor_ativo=os.environ.get('NINA_DIRECAO','1') not in ('0','false','False')
+    plano=DN.planejar(ep,segs) if diretor_ativo else []
+    (pasta/'direcao.json').write_text(json.dumps(plano,ensure_ascii=False,indent=2),encoding='utf-8')
     ep['_visual_images'],visual_report=VI.preparar(ep,segs,assets,pasta)
     cfg=VI.config(ep)
     # Generated illustrations replace stock photography in automatic mode.
@@ -317,9 +328,13 @@ def renderizar(ep,pasta,raiz):
     sh(['node',cli,'lint',work],env=env)
     final=pasta/(ep['id']+'.mp4');tmp=pasta/(ep['id']+'.rendering.mp4')
     sh(['node',cli,'render',work,'--output',tmp,'--workers',os.environ.get('NINA_HF_WORKERS','2'),'--no-browser-gpu'],env=env)
-    conferir(tmp,dur);tmp.replace(final)
+    probe=conferir(tmp,dur);tmp.replace(final)
+    relatorio=QN.analisar(ep,segs,plano if diretor_ativo else DN.planejar(ep,segs),work/'index.html',visual_report,probe)
+    QN.gravar(relatorio,pasta/'qualidade.json')
+    if not relatorio['aprovado_tecnicamente']:
+        raise ValueError('Qualidade técnica reprovada: '+ '; '.join(relatorio['erros']))
     info={'motor':'hyperframes','versao':HYPERFRAMES_VERSION,'fotos':len(ep['_fotos']),'duracao':dur,'resolucao':[1080,1920],'fps':30,'voz':'pt-BR-ThalitaNeural','audio':'pedalboard' if audio_fx.disponivel() else 'ffmpeg','sfx':len(SFX.eventos(ep,segs)),'visual':'v4' if usa_v4() else 'v3','lip':os.environ.get('NINA_LIP','rhubarb'),'cenario':ep.get('cenario','tarde'),'batidas':len(segs)}
-    info.update(visual_images_ready=visual_report['ready'],visual_images_requested=visual_report['requested'],visual_images_fallbacks=visual_report['fallbacks'],visual_photo_fallbacks=len(ep['_fotos']),visual_total_ready=visual_report['ready']+len(ep['_fotos']))
+    info.update(visual_images_ready=visual_report['ready'],visual_images_requested=visual_report['requested'],visual_images_fallbacks=visual_report['fallbacks'],visual_photo_fallbacks=len(ep['_fotos']),visual_total_ready=visual_report['ready']+len(ep['_fotos']), direcao_automatica=diretor_ativo, gestos_distintos=len({x['gesto'] for x in plano}),qualidade_tecnica=relatorio['aprovado_tecnicamente'])
     if str(ep.get('voice_engine') or os.environ.get('NINA_VOICE_ENGINE','thalita')).lower()=='kokoro':
         info['voz']=ep.get('kokoro_voice') or os.environ.get('NINA_KOKORO_VOICE','pf_dora')
     (pasta/'render.json').write_text(json.dumps(info,ensure_ascii=False,indent=2))
