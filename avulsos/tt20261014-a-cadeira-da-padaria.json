@@ -1,0 +1,102 @@
+{
+  "id": "tt20261014-a-cadeira-da-padaria",
+  "avulso": true,
+  "titulo": "A CADEIRA DA PADARIA",
+  "temporada": "TikTok diário",
+  "cenario": "tarde",
+  "visual_images": {
+    "auto_visual_images": true,
+    "hide_inner_caption_when_image": true,
+    "bottom_caption_only": true,
+    "min_images": 4,
+    "max_images": 8,
+    "target_images": 6,
+    "fallback": "original_art"
+  },
+  "batidas": [
+    {
+      "fala": "O dono da padaria pagava para ninguém sentar naquela cadeira. Quando ele morreu, Luiza descobriu quem estava esperando.",
+      "expr": "desconfiada",
+      "arte": [
+        "titulo"
+      ],
+      "zoom": true
+    },
+    {
+      "fala": "Ela herdou o pequeno comércio e encontrou uma regra no caderno do pai: a mesa da janela fica livre até as oito.",
+      "expr": "desconfiada",
+      "foto": [
+        "empty bakery table by window",
+        "MESA RESERVADA"
+      ]
+    },
+    {
+      "fala": "Durante uma semana, Luiza ignorou a regra. Na sexta, uma senhora entrou, viu a mesa ocupada e saiu sem comprar nada.",
+      "expr": "chocada",
+      "foto": [
+        "bakery entrance empty chair",
+        "NINGUÉM SENTAVA"
+      ],
+      "zoom": true
+    },
+    {
+      "fala": "Luiza correu atrás dela. A mulher perguntou pelo padeiro e ficou em silêncio quando soube da morte dele.",
+      "expr": "triste",
+      "foto": [
+        "bakery counter bread basket",
+        "UMA VISITA"
+      ]
+    },
+    {
+      "fala": "A senhora contou que, quarenta anos antes, deixara um bebê na porta de um hospital porque não tinha onde morar.",
+      "expr": "triste",
+      "foto": [
+        "old hospital entrance",
+        "QUARENTA ANOS"
+      ]
+    },
+    {
+      "fala": "Anos depois, reencontrou o filho naquela padaria. Ele aceitou conversar, mas pediu tempo antes de apresentá-la à família.",
+      "expr": "chocada",
+      "arte": [
+        "coracao",
+        "O FILHO"
+      ],
+      "zoom": true
+    },
+    {
+      "fala": "Toda sexta, tomavam café na mesa da janela. Para Luiza, a avó tinha morrido. Para o pai, contar a verdade ainda doía.",
+      "expr": "desconfiada",
+      "foto": [
+        "two coffee cups wooden table",
+        "TODA SEXTA"
+      ]
+    },
+    {
+      "fala": "Naquela noite, Luiza abriu o caderno outra vez. Na última página, o pai escrevera: se eu perder a coragem, apresenta vocês duas por mim.",
+      "expr": "triste",
+      "foto": [
+        "handwritten notebook bakery desk",
+        "A ÚLTIMA PÁGINA"
+      ]
+    },
+    {
+      "fala": "Na sexta seguinte, a senhora encontrou duas xícaras e um bilhete: vó, guardei seu lugar. Luiza sentou ao lado dela e ouviu sua história inteira.",
+      "expr": "neutra",
+      "arte": [
+        "coracao",
+        "GUARDEI SEU LUGAR"
+      ]
+    },
+    {
+      "fala": "A cadeira deixou de guardar um segredo e passou a guardar um encontro. Você daria essa chance? Comenta e segue a Nina para mais histórias.",
+      "expr": "ironica",
+      "arte": [
+        "interrogacao",
+        "E VOCÊ?"
+      ]
+    }
+  ],
+  "fim": "GUARDEI SEU LUGAR",
+  "legenda_post": "Uma cadeira vazia na padaria escondia a história que um pai não conseguiu contar. ☕💛\nVocê daria uma chance a esse reencontro?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Storytime #Ficcao #Familia"
+}
