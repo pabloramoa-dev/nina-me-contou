@@ -16,8 +16,8 @@ Use este arquivo como fonte de verdade ao trabalhar no projeto `pabloramoa-dev/n
 - Velocidade oficial: **`-6%`**.
 - Gerador: `motor/gerar_voz_thalita.py`.
 - Entrada do pipeline: `motor/produzir.py`.
-- Não trocar automaticamente para Dora/Kokoro em produção.
-- `motor/gerar_voz_kokoro.py` permanece somente como legado/manual.
+- Autorização do Pablo em 14/10/2026: se a geração da Thalita falhar, usar automaticamente a voz antiga Kokoro (`pf_dora`, speed `1.02`).
+- `motor/gerar_voz_kokoro.py` é a contingência local autorizada; Thalita `-6%` continua como primeira tentativa.
 - Se houver mudança futura de voz, atualizar também `motor/render_version.py` para invalidar renders ainda não publicados.
 
 ## Pipeline visual obrigatório
@@ -63,7 +63,7 @@ O padrão aprovado inclui:
 - Não remover HyperFrames do padrão.
 - Não retirar o CTA final.
 - Não publicar parte 1 sem a parte 2 estar pronta.
-- Não reaproveitar uma voz antiga em novos episódios.
+- Em falhas da Thalita, permitir a contingência Kokoro autorizada acima.
 - Preservar histórico de publicações ao invalidar renders antigos.
 
 ## Configuração atual
