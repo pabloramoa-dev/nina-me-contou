@@ -31,7 +31,7 @@
       }
     },
     {
-      "fala": "E sabe o mais estranho? A carta mais recente chegara naquela semana. Então aquele homem continuava tentando falar com ela.",
+      "fala": "O pior? A carta mais recente chegara naquela semana. Então aquele homem continuava tentando falar com ela.",
       "expr": "desconfiada",
       "arte": [
         "carta"
@@ -39,7 +39,7 @@
       "foto": "recent letter postmarked on kitchen table"
     },
     {
-      "fala": "Bianca tinha vinte e seis anos. Desde os oito, escutava que seu pai tinha ido embora e nunca mais procurado saber dela.",
+      "fala": "Bianca tinha vinte e seis. Desde os oito, escutava que seu pai tinha ido embora e nunca mais procurado saber dela.",
       "expr": "cansada",
       "arte": [
         "calendario"
@@ -53,7 +53,7 @@
       ]
     },
     {
-      "fala": "Só que havia uma carta para cada aniversário. Nove anos, dez, onze... até vinte e seis. Todas com a mesma letra.",
+      "fala": "Havia uma carta por aniversário. Nove anos, dez, onze... até vinte e seis. Mesma letra.",
       "expr": "surpresa",
       "arte": [
         "extrato"
@@ -147,7 +147,7 @@
       "foto": "sealed white envelope beside wedding invitation"
     },
     {
-      "fala": "Bianca pegou o carro e dirigiu até uma pequena floricultura, do outro lado da cidade. Quase voltou duas vezes.",
+      "fala": "Bianca pegou o carro e dirigiu até uma pequena floricultura, do outro lado da cidade. Quase voltou.",
       "expr": "assustada",
       "arte": [
         "carro"
@@ -155,7 +155,7 @@
       "foto": "small flower shop street storefront daylight"
     },
     {
-      "fala": "Quando entrou, viu um homem colocando flores numa caixa. Os cabelos estavam grisalhos, mas ela reconheceu os olhos das fotografias antigas.",
+      "fala": "Quando entrou, viu um homem colocando flores numa caixa. Era grisalho, mas ela reconheceu os olhos das fotografias antigas.",
       "expr": "surpresa",
       "arte": [
         "foto"
@@ -186,7 +186,7 @@
       ]
     },
     {
-      "fala": "Bianca não apagou dezoito anos numa conversa. Mas pediu um café e ouviu sua história até a floricultura fechar.",
+      "fala": "Bianca não apagou o passado numa conversa. Mas pediu um café e ouviu sua história até a floricultura fechar.",
       "expr": "neutra",
       "arte": [
         "cafe"
