@@ -175,6 +175,26 @@ jobs:
           # Story, prévia 720p, capa e fotos continuam disponíveis no artifact por 1 dia,
           # mas não entram no Git e não aumentam o tamanho do repositório.
           find avulsos_prontos -type f \( -name '*-story.mp4' -o -name '*-720p.mp4' -o -name '*-capa.jpg' -o -name '*-fotos.json' \) -delete
+          # GitHub rejeita arquivos acima de 100 MiB: comprimir MP4 grande antes do commit.
+          # Manter resolução 1080x1920 quando possível, com alvo seguro de 85 MiB.
+          for f in avulsos_prontos/*.mp4; do
+            [ -f "$f" ] || continue
+            size=$(stat -c '%s' "$f")
+            [ "$size" -le 99614720 ] && continue
+            duration=$(ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "$f")
+            rate=$(python3 -c "import sys; d=float(sys.argv[1]); print(max(800,int(85*1024*1024*8/d/1000-160)))" "$duration")
+            echo "Compactando $f ($size bytes) para não exceder limite do GitHub; video ${rate}k"
+            ffmpeg -hide_banner -loglevel error -y -i "$f" -map 0:v:0 -map 0:a:0 -c:v libx264 -preset veryfast -b:v "${rate}k" -maxrate "${rate}k" -bufsize "$((rate*2))k" -c:a aac -b:a 128k -movflags +faststart "${f%.mp4}.compact.mp4"
+            newsize=$(stat -c '%s' "${f%.mp4}.compact.mp4")
+            if [ "$newsize" -gt 99614720 ]; then
+              # Fallback garantido para postagem: resolução 720p em vez de perder o vídeo.
+              ffmpeg -hide_banner -loglevel error -y -i "$f" -vf 'scale=720:-2' -c:v libx264 -preset veryfast -crf 26 -c:a aac -b:a 128k -movflags +faststart "${f%.mp4}.fallback.mp4"
+              mv "${f%.mp4}.fallback.mp4" "${f%.mp4}.compact.mp4"
+              newsize=$(stat -c '%s' "${f%.mp4}.compact.mp4")
+            fi
+            [ "$newsize" -le 99614720 ] || { echo "MP4 continua maior que 95 MiB"; exit 1; }
+            mv "${f%.mp4}.compact.mp4" "$f"
+          done
           git config user.name "nina-bot"
           git config user.email "actions@github.com"
           git add avulsos_prontos/
