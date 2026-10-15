@@ -1,0 +1,26 @@
+{
+  "motor": "hyperframes",
+  "versao": "nina-hyperframes-8-direcao-gratuita-qa",
+  "fotos": 0,
+  "duracao": 65.93,
+  "resolucao": [
+    1080,
+    1920
+  ],
+  "fps": 30,
+  "voz": "pt-BR-ThalitaNeural",
+  "audio": "ffmpeg",
+  "sfx": 31,
+  "visual": "v4",
+  "lip": "rhubarb",
+  "cenario": "tarde",
+  "batidas": 13,
+  "visual_images_ready": 0,
+  "visual_images_requested": 6,
+  "visual_images_fallbacks": 6,
+  "visual_photo_fallbacks": 0,
+  "visual_total_ready": 0,
+  "direcao_automatica": true,
+  "gestos_distintos": 6,
+  "qualidade_tecnica": true
+}
