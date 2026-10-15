@@ -1,0 +1,225 @@
+{
+  "id": "tt20261015-as-dezoito-cartas",
+  "avulso": true,
+  "titulo": "AS DEZOITO CARTAS",
+  "temporada": "Nina Me Contou — histórias completas",
+  "cenario": "tarde",
+  "visual_images": {
+    "auto_visual_images": true,
+    "hide_inner_caption_when_image": true,
+    "bottom_caption_only": true,
+    "min_images": 4,
+    "max_images": 8,
+    "target_images": 6,
+    "fallback": "original_art"
+  },
+  "batidas": [
+    {
+      "fala": "Dois dias antes do casamento, Bianca encontrou dezoito cartas escondidas no armário da mãe. Todas eram do pai que, segundo ela, tinha abandonado a família.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "foto": "eighteen old envelopes tied with string inside wooden wardrobe",
+      "zoom": true,
+      "hf": {
+        "titulo": "AS 18 CARTAS",
+        "destaque": [
+          "dezoito",
+          "pai"
+        ]
+      }
+    },
+    {
+      "fala": "E sabe o mais estranho? A carta mais recente tinha sido entregue naquela mesma semana. Então aquele homem continuava tentando falar com ela.",
+      "expr": "desconfiada",
+      "arte": [
+        "carta"
+      ],
+      "foto": "recent letter postmarked on kitchen table"
+    },
+    {
+      "fala": "Bianca tinha vinte e seis anos. Desde os oito, escutava que seu pai tinha ido embora e nunca mais procurado saber dela.",
+      "expr": "cansada",
+      "arte": [
+        "calendario"
+      ]
+    },
+    {
+      "fala": "Toda vez que perguntava, a mãe mudava de assunto. Dizia que algumas pessoas não mereciam segunda chance. Bianca tinha acreditado nisso.",
+      "expr": "neutra",
+      "arte": [
+        "interrogacao"
+      ]
+    },
+    {
+      "fala": "Só que havia uma carta para cada aniversário. Nove anos, dez, onze... até vinte e seis. Todas com a mesma letra.",
+      "expr": "surpresa",
+      "arte": [
+        "extrato"
+      ],
+      "foto": "handwritten birthday letters and cards arranged by year"
+    },
+    {
+      "fala": "A primeira dizia: Bianca, hoje você faz nove anos. Eu sei que está com raiva. Mas quero que saiba que tentei te ligar.",
+      "expr": "desconfiada",
+      "arte": [
+        "carta",
+        "EU TENTEI LIGAR"
+      ]
+    },
+    {
+      "fala": "A dos quinze contava que ele foi à apresentação da escola. Ficou do lado de fora, porque disseram que não podia entrar.",
+      "expr": "cansada",
+      "arte": [
+        "porta"
+      ],
+      "foto": "school theater entrance empty chairs evening"
+    },
+    {
+      "fala": "Em outra, ele contava que tinha guardado o desenho que Bianca fez quando pequena. O desenho dos três de mãos dadas.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "foto": "child drawing family holding hands on paper"
+    },
+    {
+      "fala": "No fundo da caixa estavam os recibos dos correios. Nenhuma carta tinha sido devolvida. Todas tinham chegado àquela casa.",
+      "expr": "chocada",
+      "arte": [
+        "extrato"
+      ],
+      "foto": "old postal receipts stacked beside stamped envelopes"
+    },
+    {
+      "fala": "Bianca sentiu um frio no estômago. Alguém recebeu todas aquelas cartas, guardou e nunca entregou. E ela começou a entender quem.",
+      "expr": "chocada",
+      "arte": [
+        "manchete_v",
+        "QUEM ESCONDEU?"
+      ],
+      "zoom": true
+    },
+    {
+      "fala": "Quando a mãe entrou no quarto, viu a caixa aberta. Sentou na cama e disse: Bianca, eu posso explicar.",
+      "expr": "desconfiada",
+      "arte": [
+        "interrogacao"
+      ]
+    },
+    {
+      "fala": "Bianca perguntou: então você sabia que ele escrevia? Sabia que eu passei anos achando que não era importante pra ele?",
+      "expr": "brava",
+      "arte": [
+        "conversa",
+        "VOCÊ SABIA?"
+      ]
+    },
+    {
+      "fala": "A mãe chorou. Contou que a separação tinha sido difícil e que temia que a filha se aproximasse do pai e se afastasse dela.",
+      "expr": "cansada",
+      "arte": [
+        "coracao"
+      ]
+    },
+    {
+      "fala": "No começo escondeu só uma carta. Depois vieram tantas que ela já não sabia como contar a verdade. Foi deixando passar.",
+      "expr": "neutra",
+      "arte": [
+        "calendario"
+      ]
+    },
+    {
+      "fala": "Bianca ficou em silêncio. Pensou nos aniversários, nas conversas e nas lembranças que poderia ter vivido. Aquilo não tinha conserto rápido.",
+      "expr": "cansada",
+      "arte": [
+        "relogio"
+      ]
+    },
+    {
+      "fala": "A última carta trazia um endereço: sei que seu casamento está chegando. Se não quiser me ver, eu respeito. Mas estarei aqui.",
+      "expr": "desconfiada",
+      "arte": [
+        "carta",
+        "ESTAREI AQUI"
+      ],
+      "foto": "sealed white envelope beside wedding invitation"
+    },
+    {
+      "fala": "Bianca pegou o carro e dirigiu até uma pequena floricultura, do outro lado da cidade. Quase voltou duas vezes.",
+      "expr": "assustada",
+      "arte": [
+        "carro"
+      ],
+      "foto": "small flower shop street storefront daylight"
+    },
+    {
+      "fala": "Quando entrou, viu um homem colocando flores numa caixa. Os cabelos estavam grisalhos, mas ela reconheceu os olhos das fotografias antigas.",
+      "expr": "surpresa",
+      "arte": [
+        "foto"
+      ],
+      "foto": "white flower bouquet and old family photograph"
+    },
+    {
+      "fala": "Ele perguntou: posso ajudar? Bianca mostrou a carta. As mãos dele tremeram. E ele falou só uma palavra: filha?",
+      "expr": "chocada",
+      "arte": [
+        "conversa",
+        "FILHA?"
+      ],
+      "zoom": true
+    },
+    {
+      "fala": "Ela respondeu: eu li todas. E depois perguntou o que doía havia anos: por que você nunca bateu na minha porta?",
+      "expr": "brava",
+      "arte": [
+        "porta"
+      ]
+    },
+    {
+      "fala": "Ele contou que tentou visitá-la, mas sempre ouviu que ela não queria vê-lo. Achou que insistir só faria as coisas piorarem.",
+      "expr": "cansada",
+      "arte": [
+        "interrogacao"
+      ]
+    },
+    {
+      "fala": "Bianca não apagou dezoito anos numa conversa. Mas pediu um café e ouviu sua história até a floricultura fechar.",
+      "expr": "neutra",
+      "arte": [
+        "cafe"
+      ],
+      "foto": "two coffee cups on flower shop wooden table"
+    },
+    {
+      "fala": "No casamento, três dias depois, havia uma cadeira na primeira fila ocupada por alguém inesperado: o pai de Bianca, segurando um pequeno buquê.",
+      "expr": "surpresa",
+      "arte": [
+        "manchete_v",
+        "ELE ESTAVA LÁ"
+      ],
+      "foto": "wedding guest chairs with small bouquet tied ribbon",
+      "zoom": true
+    },
+    {
+      "fala": "A mãe também estava lá. Bianca não fingiu que nada aconteceu. Só disse que, depois da festa, elas precisavam conversar de verdade.",
+      "expr": "desconfiada",
+      "arte": [
+        "coracao"
+      ]
+    },
+    {
+      "fala": "Agora me fala: você conseguiria perdoar uma mãe que escondeu dezoito anos de cartas? Ou tem mentira que muda tudo pra sempre? Comenta aqui.",
+      "expr": "ironica",
+      "arte": [
+        "interrogacao",
+        "VOCÊ PERDOARIA?"
+      ]
+    }
+  ],
+  "fim": "VOCÊ PERDOARIA?",
+  "legenda_post": "💌 Dois dias antes do casamento, Bianca achou 18 cartas do pai que, segundo a mãe, tinha abandonado a família. A última tinha sido enviada naquela semana. E o segredo mudou tudo.\n\nVocê perdoaria a mãe por esconder essas cartas? 👀 Conta aqui!\n\nHistória fictícia, criada para entretenimento.\n\n#NinaMeContou #Storytime #HistoriaEmocionante #SegredosDeFamilia #Reviravolta #TikTokBrasil #Historias",
+  "render_retry": 1
+}
