@@ -15,7 +15,7 @@
   },
   "batidas": [
     {
-      "fala": "Dois dias antes do casamento, Bianca encontrou dezoito cartas escondidas no armário da mãe. Todas eram do pai que, segundo ela, tinha abandonado a família.",
+      "fala": "Antes do casamento, Bianca encontrou dezoito cartas escondidas no armário da mãe. Todas eram do pai que, segundo ela, tinha abandonado a família.",
       "expr": "chocada",
       "arte": [
         "titulo"
@@ -31,7 +31,7 @@
       }
     },
     {
-      "fala": "E sabe o mais estranho? A carta mais recente tinha sido entregue naquela mesma semana. Então aquele homem continuava tentando falar com ela.",
+      "fala": "E sabe o mais estranho? A carta mais recente chegara naquela semana. Então aquele homem continuava tentando falar com ela.",
       "expr": "desconfiada",
       "arte": [
         "carta"
@@ -46,7 +46,7 @@
       ]
     },
     {
-      "fala": "Toda vez que perguntava, a mãe mudava de assunto. Dizia que algumas pessoas não mereciam segunda chance. Bianca tinha acreditado nisso.",
+      "fala": "A mãe desconversava. Dizia que algumas pessoas não mereciam segunda chance.",
       "expr": "neutra",
       "arte": [
         "interrogacao"
@@ -61,7 +61,7 @@
       "foto": "handwritten birthday letters and cards arranged by year"
     },
     {
-      "fala": "A primeira dizia: Bianca, hoje você faz nove anos. Eu sei que está com raiva. Mas quero que saiba que tentei te ligar.",
+      "fala": "A primeira dizia: Bianca, hoje você faz nove anos. Eu sei que está com raiva. Mas tentei te ligar.",
       "expr": "desconfiada",
       "arte": [
         "carta",
@@ -85,7 +85,7 @@
       "foto": "child drawing family holding hands on paper"
     },
     {
-      "fala": "No fundo da caixa estavam os recibos dos correios. Nenhuma carta tinha sido devolvida. Todas tinham chegado àquela casa.",
+      "fala": "No fundo havia recibos dos correios. Nenhuma carta tinha sido devolvida. Todas tinham chegado àquela casa.",
       "expr": "chocada",
       "arte": [
         "extrato"
@@ -93,7 +93,7 @@
       "foto": "old postal receipts stacked beside stamped envelopes"
     },
     {
-      "fala": "Bianca sentiu um frio no estômago. Alguém recebeu todas aquelas cartas, guardou e nunca entregou. E ela começou a entender quem.",
+      "fala": "Alguém recebeu todas aquelas cartas, guardou e nunca entregou. E ela começou a entender quem.",
       "expr": "chocada",
       "arte": [
         "manchete_v",
@@ -172,7 +172,7 @@
       "zoom": true
     },
     {
-      "fala": "Ela respondeu: eu li todas. E depois perguntou o que doía havia anos: por que você nunca bateu na minha porta?",
+      "fala": "Bianca respondeu: li todas. Mas me explica: por que você nunca bateu na minha porta?",
       "expr": "brava",
       "arte": [
         "porta"
@@ -194,7 +194,7 @@
       "foto": "two coffee cups on flower shop wooden table"
     },
     {
-      "fala": "No casamento, três dias depois, havia uma cadeira na primeira fila ocupada por alguém inesperado: o pai de Bianca, segurando um pequeno buquê.",
+      "fala": "No casamento, dois dias depois, havia uma cadeira na primeira fila ocupada por alguém inesperado: o pai de Bianca, segurando um pequeno buquê.",
       "expr": "surpresa",
       "arte": [
         "manchete_v",
