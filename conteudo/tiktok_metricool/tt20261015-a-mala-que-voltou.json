@@ -1,0 +1,30 @@
+{
+  "episode": "tt20261015-a-mala-que-voltou",
+  "brandId": 7228264,
+  "network": "tiktok",
+  "account": "ninamecontou",
+  "id": 397024623,
+  "uuid": "7798818129575101855",
+  "status": "agendado",
+  "publicationDate": {
+    "dateTime": "2026-10-15T18:00:00",
+    "timezone": "America/Sao_Paulo"
+  },
+  "autoPublish": true,
+  "mediaUrl": "https://raw.githubusercontent.com/pabloramoa-dev/nina-me-contou/main/avulsos_prontos/tt20261015-a-mala-que-voltou.mp4",
+  "metricoolMediaUrl": "https://static.metricool.com/planner/202610/7228264-file-10718127126430375819.mp4",
+  "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7228264&openWithPostUuid=7798818129575101855",
+  "run_id": 38731096288,
+  "validation": {
+    "width": 1080,
+    "height": 1920,
+    "duration_seconds": 100.566667,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "audio_peak_db": -2,
+    "visual_frames_checked": true,
+    "voice": "Kokoro pf_dora",
+    "voice_speed": 1.02
+  },
+  "caption": "Ela comprou uma mala antiga e encontrou uma fotografia da própria infância. O segredo mudou tudo que sabia sobre o pai. 🧳\nVocê conseguiria reconstruir essa confiança?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Familia"
+}
