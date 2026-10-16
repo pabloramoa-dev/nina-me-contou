@@ -169,6 +169,10 @@ jobs:
           pattern: avulso-*
           merge-multiple: true
           path: avulsos_prontos/
+      - name: Preparar FFmpeg para compactar vídeos grandes
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
       - name: Gravar somente o necessário no repositório
         run: |
           # A versão principal é usada como URL temporária para o agendamento.
