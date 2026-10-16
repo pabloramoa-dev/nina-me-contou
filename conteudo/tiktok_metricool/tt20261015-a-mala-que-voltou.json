@@ -5,7 +5,7 @@
   "account": "ninamecontou",
   "id": 397024623,
   "uuid": "7798818129575101855",
-  "status": "agendado",
+  "status": "publicado",
   "publicationDate": {
     "dateTime": "2026-10-15T18:00:00",
     "timezone": "America/Sao_Paulo"
@@ -26,5 +26,7 @@
     "voice": "Kokoro pf_dora",
     "voice_speed": 1.02
   },
-  "caption": "Ela comprou uma mala antiga e encontrou uma fotografia da própria infância. O segredo mudou tudo que sabia sobre o pai. 🧳\nVocê conseguiria reconstruir essa confiança?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Familia"
+  "caption": "Ela comprou uma mala antiga e encontrou uma fotografia da própria infância. O segredo mudou tudo que sabia sobre o pai. 🧳\nVocê conseguiria reconstruir essa confiança?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Familia",
+  "publicUrl": "https://www.tiktok.com/@ninamecontou/video/7697003093833075974",
+  "publicationConfirmedAt": "2026-10-16T08:04:00-03:00"
 }
