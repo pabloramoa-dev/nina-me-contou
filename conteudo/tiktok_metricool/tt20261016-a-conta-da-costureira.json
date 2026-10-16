@@ -1,0 +1,28 @@
+{
+  "episode": "tt20261016-a-conta-da-costureira",
+  "brandId": 7228264,
+  "network": "tiktok",
+  "account": "ninamecontou",
+  "id": 397741591,
+  "uuid": "-1799640572567139009",
+  "status": "agendado",
+  "publicationDate": {
+    "dateTime": "2026-10-16T12:00:00",
+    "timezone": "America/Sao_Paulo"
+  },
+  "autoPublish": true,
+  "mediaUrl": "https://raw.githubusercontent.com/pabloramoa-dev/nina-me-contou/main/avulsos_prontos/tt20261016-a-conta-da-costureira.mp4",
+  "metricoolMediaUrl": "https://static.metricool.com/planner/202610/7228264-file-6568337337833310209.mp4",
+  "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7228264&openWithPostUuid=-1799640572567139009",
+  "run_id": 38891445162,
+  "validation": {
+    "width": 1080,
+    "height": 1920,
+    "duration_seconds": 92.033333,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "audio_peak_db": -1.6,
+    "visual_frames_checked": true
+  },
+  "caption": "Um vestido de noiva, uma conta de um real e uma dívida de gratidão que atravessou uma geração. 🧵💛\nQuem já fez uma gentileza que você nunca esqueceu?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Gratidao"
+}
