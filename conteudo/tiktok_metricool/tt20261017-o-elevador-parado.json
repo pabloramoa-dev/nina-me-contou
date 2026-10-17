@@ -1,0 +1,28 @@
+{
+  "episode": "tt20261017-o-elevador-parado",
+  "brandId": 7228264,
+  "network": "tiktok",
+  "account": "ninamecontou",
+  "id": 398491250,
+  "uuid": "9073600765566208621",
+  "status": "agendado",
+  "publicationDate": {
+    "dateTime": "2026-10-17T10:00:00",
+    "timezone": "America/Sao_Paulo"
+  },
+  "autoPublish": true,
+  "mediaUrl": "https://raw.githubusercontent.com/pabloramoa-dev/nina-me-contou/main/avulsos_prontos/tt20261017-o-elevador-parado.mp4",
+  "metricoolMediaUrl": "https://static.metricool.com/planner/202610/7228264-file-3138265827788035254.mp4",
+  "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7228264&openWithPostUuid=9073600765566208621",
+  "run_id": 39027363198,
+  "validation": {
+    "width": 1080,
+    "height": 1920,
+    "duration_seconds": 94.7,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "audio_peak_db": -1.5,
+    "visual_frames_checked": true
+  },
+  "caption": "Um elevador parado, um sorvete e uma segunda chance que quase não aconteceu. 🍦💛\nVocê daria uma nova chance depois de um pedido sincero de desculpas?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Reencontro"
+}
