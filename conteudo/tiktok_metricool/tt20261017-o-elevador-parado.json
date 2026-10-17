@@ -5,7 +5,7 @@
   "account": "ninamecontou",
   "id": 398491250,
   "uuid": "9073600765566208621",
-  "status": "agendado",
+  "status": "publicado",
   "publicationDate": {
     "dateTime": "2026-10-17T10:00:00",
     "timezone": "America/Sao_Paulo"
@@ -24,5 +24,7 @@
     "audio_peak_db": -1.5,
     "visual_frames_checked": true
   },
-  "caption": "Um elevador parado, um sorvete e uma segunda chance que quase não aconteceu. 🍦💛\nVocê daria uma nova chance depois de um pedido sincero de desculpas?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Reencontro"
+  "caption": "Um elevador parado, um sorvete e uma segunda chance que quase não aconteceu. 🍦💛\nVocê daria uma nova chance depois de um pedido sincero de desculpas?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Reencontro",
+  "publicUrl": "https://www.tiktok.com/@ninamecontou/video/7697621831183764756",
+  "publicationConfirmedAt": "2026-10-17T12:05:00-03:00"
 }
