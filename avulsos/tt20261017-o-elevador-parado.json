@@ -1,0 +1,118 @@
+{
+  "id": "tt20261017-o-elevador-parado",
+  "avulso": true,
+  "titulo": "O ELEVADOR PARADO",
+  "temporada": "TikTok diário",
+  "cenario": "tarde",
+  "visual_images": {
+    "auto_visual_images": true,
+    "hide_inner_caption_when_image": true,
+    "bottom_caption_only": true,
+    "min_images": 4,
+    "max_images": 8,
+    "target_images": 6,
+    "fallback": "original_art"
+  },
+  "batidas": [
+    {
+      "fala": "O vizinho que nunca cumprimentava ninguém ficou preso no elevador. E a primeira coisa que pediu não foi socorro.",
+      "expr": "chocada",
+      "foto": [
+        "closed elevator doors",
+        "PAROU"
+      ],
+      "zoom": true
+    },
+    {
+      "fala": "Foi num sábado. Bia ouviu batidas no térreo e reconheceu a voz do seu Ernesto, o homem do quinto andar que passava por todo mundo olhando para o chão.",
+      "expr": "desconfiada",
+      "foto": [
+        "apartment building lobby",
+        "NO TÉRREO"
+      ]
+    },
+    {
+      "fala": "Ela chamou a manutenção e ficou do lado de fora. Então ele pediu: tem uma sacola no corredor. Não deixa o sorvete derreter.",
+      "expr": "neutra",
+      "foto": [
+        "paper grocery bag",
+        "A SACOLA"
+      ]
+    },
+    {
+      "fala": "Bia encontrou a sacola e guardou o sorvete no congelador da portaria. Voltou para avisar, mas ouviu o vizinho chorando baixinho.",
+      "expr": "triste",
+      "foto": [
+        "ice cream container",
+        "GUARDADO"
+      ]
+    },
+    {
+      "fala": "Ele contou que a neta iria visitá-lo naquele dia. Era o primeiro encontro depois de três anos sem falar com a filha, por causa de uma briga.",
+      "expr": "triste",
+      "arte": [
+        "coracao",
+        "TRÊS ANOS"
+      ]
+    },
+    {
+      "fala": "Eu falei coisa que não devia, ele disse. Pedi desculpa, ela aceitou vir. Agora vai achar que eu inventei uma desculpa para não abrir a porta.",
+      "expr": "triste",
+      "foto": [
+        "apartment door",
+        "O REENCONTRO"
+      ]
+    },
+    {
+      "fala": "O celular dele tinha ficado carregando em casa. Bia pediu o número da filha, ligou da portaria e explicou tudo.",
+      "expr": "neutra",
+      "foto": [
+        "smartphone on wooden desk",
+        "A LIGAÇÃO"
+      ]
+    },
+    {
+      "fala": "Pouco depois, uma menina chegou segurando uma folha dobrada. Sentou no chão ao lado de Bia e falou para a porta: vô, eu também trouxe uma coisa que pode estragar.",
+      "expr": "chocada",
+      "zoom": true,
+      "arte": [
+        "interrogacao",
+        "O PRESENTE"
+      ]
+    },
+    {
+      "fala": "Ernesto perguntou o que era. Minha coragem, respondeu ela. Mamãe disse que você era bravo. Eu estava com medo de você não gostar do meu desenho.",
+      "expr": "triste",
+      "arte": [
+        "coracao",
+        "CORAGEM"
+      ]
+    },
+    {
+      "fala": "Ele respondeu chorando: eu quero ver todos. Quando a equipe liberou o elevador, encontrou a filha e a neta esperando. Dessa vez, foi ele quem abriu os braços.",
+      "expr": "neutra",
+      "arte": [
+        "coracao",
+        "PORTA ABERTA"
+      ]
+    },
+    {
+      "fala": "Na portaria, os três dividiram o sorvete em copos de café. No desenho havia uma mesa com uma cadeira vazia. A menina escreveu o nome do avô nela.",
+      "expr": "neutra",
+      "foto": [
+        "paper coffee cups on table",
+        "JUNTOS"
+      ]
+    },
+    {
+      "fala": "Na segunda, Ernesto cumprimentou Bia pelo nome. Às vezes, a porta mais difícil de abrir nem é a do elevador. Você daria essa chance? Comenta e segue a Nina.",
+      "expr": "ironica",
+      "arte": [
+        "coracao",
+        "UMA NOVA CHANCE"
+      ]
+    }
+  ],
+  "fim": "A PORTA QUE FALTAVA ABRIR",
+  "legenda_post": "Um elevador parado, um sorvete e uma segunda chance que quase não aconteceu. 🍦💛\nVocê daria uma nova chance depois de um pedido sincero de desculpas?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Reencontro"
+}
