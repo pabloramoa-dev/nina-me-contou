@@ -5,7 +5,7 @@
   "account": "ninamecontou",
   "id": 399118594,
   "uuid": "5982883444504547013",
-  "status": "agendado",
+  "status": "publicado",
   "publicationDate": {
     "dateTime": "2026-10-18T10:00:00",
     "timezone": "America/Sao_Paulo"
@@ -24,5 +24,7 @@
     "audio_peak_db": -2.3,
     "visual_frames_checked": true
   },
-  "caption": "Um rádio quebrado guardava a voz que Júlia mais precisava ouvir. 📻💛\nQue lembrança você nunca teria coragem de jogar fora?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Familia"
+  "caption": "Um rádio quebrado guardava a voz que Júlia mais precisava ouvir. 📻💛\nQue lembrança você nunca teria coragem de jogar fora?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Familia",
+  "publicUrl": "https://www.tiktok.com/@ninamecontou/video/7697992873211448597",
+  "publicationConfirmedAt": "2026-10-18T11:57:00-03:00"
 }
