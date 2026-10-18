@@ -1,0 +1,28 @@
+{
+  "episode": "tt20261018-o-radio-da-oficina",
+  "brandId": 7228264,
+  "network": "tiktok",
+  "account": "ninamecontou",
+  "id": 399118594,
+  "uuid": "5982883444504547013",
+  "status": "agendado",
+  "publicationDate": {
+    "dateTime": "2026-10-18T10:00:00",
+    "timezone": "America/Sao_Paulo"
+  },
+  "autoPublish": true,
+  "mediaUrl": "https://raw.githubusercontent.com/pabloramoa-dev/nina-me-contou/main/avulsos_prontos/tt20261018-o-radio-da-oficina.mp4",
+  "metricoolMediaUrl": "https://static.metricool.com/planner/202610/7228264-file-15042773936452605004.mp4",
+  "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7228264&openWithPostUuid=5982883444504547013",
+  "run_id": 39121284118,
+  "validation": {
+    "width": 1080,
+    "height": 1920,
+    "duration_seconds": 99.5,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "audio_peak_db": -2.3,
+    "visual_frames_checked": true
+  },
+  "caption": "Um rádio quebrado guardava a voz que Júlia mais precisava ouvir. 📻💛\nQue lembrança você nunca teria coragem de jogar fora?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Familia"
+}
