@@ -1,0 +1,118 @@
+{
+  "id": "tt20261018-o-radio-da-oficina",
+  "avulso": true,
+  "titulo": "O RÁDIO DA OFICINA",
+  "temporada": "TikTok diário",
+  "cenario": "tarde",
+  "visual_images": {
+    "auto_visual_images": true,
+    "hide_inner_caption_when_image": true,
+    "bottom_caption_only": true,
+    "min_images": 4,
+    "max_images": 8,
+    "target_images": 6,
+    "fallback": "original_art"
+  },
+  "batidas": [
+    {
+      "fala": "O mecânico se recusou a vender um rádio quebrado. Quando a filha ouviu o que tinha dentro, desistiu de fechar a oficina.",
+      "expr": "chocada",
+      "foto": [
+        "old portable radio",
+        "NÃO ESTÁ À VENDA"
+      ],
+      "zoom": true
+    },
+    {
+      "fala": "Depois que o pai morreu, Júlia passou o domingo separando as ferramentas da pequena oficina. Ela queria vender tudo e entregar o ponto.",
+      "expr": "triste",
+      "foto": [
+        "old mechanic workshop",
+        "A OFICINA"
+      ]
+    },
+    {
+      "fala": "Um comprador ofereceu dinheiro pelo rádio em cima da bancada. O ajudante, seu Raul, colocou a mão na frente: esse não. Teu pai me pediu para guardar.",
+      "expr": "desconfiada",
+      "foto": [
+        "workshop wooden workbench",
+        "O PEDIDO"
+      ]
+    },
+    {
+      "fala": "Júlia ficou irritada. O rádio nem ligava havia anos. Raul virou o aparelho e mostrou um gravador de fita na lateral.",
+      "expr": "neutra",
+      "foto": [
+        "cassette tape recorder",
+        "A FITA"
+      ]
+    },
+    {
+      "fala": "Ele trouxe pilhas novas da gaveta. Apertou uma tecla e a oficina se encheu de uma voz fina: teste, teste, aqui é a Júlia, apresentadora da rádio do papai.",
+      "expr": "chocada",
+      "foto": [
+        "cassette tape",
+        "A VOZ"
+      ],
+      "zoom": true
+    },
+    {
+      "fala": "Ela tinha sete anos naquela gravação. Inventava notícias enquanto o pai consertava carros. Nem lembrava que ele gravava aquelas brincadeiras.",
+      "expr": "triste",
+      "arte": [
+        "coracao",
+        "SETE ANOS"
+      ]
+    },
+    {
+      "fala": "Na fita, a menina anunciou: atenção, hoje o melhor mecânico do mundo vai ensinar a filha a trocar um pneu. Ao fundo, o pai deu uma gargalhada.",
+      "expr": "neutra",
+      "foto": [
+        "car wheel workshop",
+        "A BRINCADEIRA"
+      ]
+    },
+    {
+      "fala": "Júlia sentou no banquinho. Contou que tinha parado de visitar a oficina depois de uma discussão. Queria trabalhar com música, e achava que o pai tinha vergonha disso.",
+      "expr": "triste",
+      "arte": [
+        "coracao",
+        "A DISTÂNCIA"
+      ]
+    },
+    {
+      "fala": "Raul abriu uma gaveta cheia de recortes dos shows dela. Disse: ele ouvia tuas músicas aqui. Só não sabia como te procurar depois daquela briga.",
+      "expr": "triste",
+      "foto": [
+        "newspaper clippings on desk",
+        "OS RECORTES"
+      ]
+    },
+    {
+      "fala": "A fita ainda rodava. Veio a voz do pai, gravada naquela mesma tarde da infância: quando você tiver sua rádio de verdade, não esquece de mandar um abraço pro teu velho.",
+      "expr": "triste",
+      "foto": [
+        "vintage radio dial",
+        "O ABRAÇO"
+      ]
+    },
+    {
+      "fala": "Júlia levou o rádio para consertar. Em vez de fechar a oficina, combinou com Raul que ele continuaria o negócio. No sábado seguinte, fez um pequeno show ali.",
+      "expr": "neutra",
+      "foto": [
+        "acoustic guitar in workshop",
+        "NO SÁBADO"
+      ]
+    },
+    {
+      "fala": "Antes da primeira música, tocou a gargalhada da fita. E disse no microfone: esse abraço demorou, pai. Mas chegou. Que lembrança você guardaria? Conta e segue a Nina.",
+      "expr": "ironica",
+      "arte": [
+        "coracao",
+        "O ABRAÇO CHEGOU"
+      ]
+    }
+  ],
+  "fim": "O ABRAÇO CHEGOU",
+  "legenda_post": "Um rádio quebrado guardava a voz que Júlia mais precisava ouvir. 📻💛\nQue lembrança você nunca teria coragem de jogar fora?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Familia"
+}
