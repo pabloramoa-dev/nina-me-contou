@@ -1,0 +1,28 @@
+{
+  "episode": "tt20261019-o-guarda-chuva-amarelo",
+  "brandId": 7228264,
+  "network": "tiktok",
+  "account": "ninamecontou",
+  "id": 400032898,
+  "uuid": "2762395682794128599",
+  "status": "agendado",
+  "publicationDate": {
+    "dateTime": "2026-10-19T18:00:00",
+    "timezone": "America/Sao_Paulo"
+  },
+  "autoPublish": true,
+  "mediaUrl": "https://raw.githubusercontent.com/pabloramoa-dev/nina-me-contou/main/avulsos_prontos/tt20261019-o-guarda-chuva-amarelo.mp4",
+  "metricoolMediaUrl": "https://static.metricool.com/planner/202610/7228264-file-17942859636330661893.mp4",
+  "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7228264&openWithPostUuid=2762395682794128599",
+  "run_id": 39241204463,
+  "validation": {
+    "width": 1080,
+    "height": 1920,
+    "duration_seconds": 103.266667,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "audio_peak_db": -1.6,
+    "visual_frames_checked": true
+  },
+  "caption": "Um guarda-chuva sumiu por oito anos. Quando voltou, trouxe uma lista de pessoas que nunca esqueceram dele. ☂️💛\nVocê passaria essa gentileza adiante?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Gentileza"
+}
