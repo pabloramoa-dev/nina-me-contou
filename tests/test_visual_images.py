@@ -42,8 +42,8 @@ def test_cache_invalidation_and_partial_failure(tmp_path):
         return png()
     assets=tmp_path/'assets'
     images,report=V.preparar(ep,segs,assets,tmp_path,generator=generate)
-    assert report['ready']==5 and report['fallbacks']==1
-    assert report['scenes'][1]['mode']=='story_frame_text'
+    assert report['ready']==6 and report['fallbacks']==0
+    assert report['scenes'][1]['mode']=='story_frame_image' and report['scenes'][1]['status']=='local_fallback'
     assert all((assets/name).exists() for name in images.values())
     calls.clear();V.preparar(ep,segs,assets,tmp_path,generator=generate)
     assert len(calls)==1
@@ -53,9 +53,10 @@ def test_cache_invalidation_and_partial_failure(tmp_path):
 
 def test_missing_key_fallback_is_recorded(tmp_path,monkeypatch):
     monkeypatch.delenv('OPENAI_API_KEY',raising=False)
+    monkeypatch.setenv('NINA_ALLOW_PAID_IMAGE_API','0')
     ep,segs=episode();images,report=V.preparar(ep,segs,tmp_path/'assets',tmp_path)
-    assert not images and report['fallbacks']==6
-    assert all(s['error']=='missing_openai_api_key' for s in report['scenes'])
+    assert images and report['ready']==6 and report['fallbacks']==0
+    assert all(s['status']=='local_fallback' and s['fallback_reason']=='paid_image_api_disabled' for s in report['scenes'])
 
 @pytest.mark.parametrize('visual',['v3','v4'])
 def test_image_template_omits_inner_caption_and_keeps_single_bottom_caption(tmp_path,monkeypatch,visual):
