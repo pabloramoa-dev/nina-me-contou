@@ -20,6 +20,7 @@ jobs:
             assets
             motor
             src
+            video
             tests
             visual_tests
           sparse-checkout-cone-mode: true
