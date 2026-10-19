@@ -134,6 +134,14 @@ def main():
                 if n.startswith("capa") and n.endswith(".png"):
                     shutil.copy(os.path.join(raiz, n), P("capa.png"))
 
+    # O vídeo do personagem original permanece completo: roteiro e voz são
+    # produzidos nos motores oficiais; só roteiros explicitamente interativos
+    # recebem o cartão de participação no FINAL (sem eSpeak ou sobreposição).
+    if os.path.isfile(final) and a.so in (None, "video", "tex", "mux") and ep.get("interatividade"):
+        sys.path.insert(0, RAIZ)
+        from tools.native_video_finisher import apply_from_metadata
+        print("acabamento do episódio original:", apply_from_metadata(final, ep, RAIZ), flush=True)
+
     if a.publicar_em:
         from PIL import Image
         dest = os.path.abspath(a.publicar_em)

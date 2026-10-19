@@ -1,0 +1,12 @@
+{
+  "interatividade": {
+    "modo": "misterio",
+    "pergunta": "Quem deixou a carta sem assinatura na porta?",
+    "opcoes": [
+      "Uma vizinha",
+      "O visitante inesperado",
+      "Alguém da família"
+    ],
+    "segundos": 3
+  }
+}
