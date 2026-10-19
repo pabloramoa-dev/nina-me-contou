@@ -80,14 +80,6 @@
       ]
     },
     {
-      "fala": "Naquela noite, Renata mal tocou na comida. O marido tentou conversar, mas ela parecia longe, como se ainda estivesse presa àquela viagem.",
-      "expr": "triste",
-      "arte": [
-        "relogio",
-        "LONGE DALI"
-      ]
-    },
-    {
       "fala": "Nos dias seguintes, o silêncio dela começou a incomodar. Renata se distraía no meio das frases e se assustava sempre que ouvia um carro parar na rua.",
       "expr": "assustada",
       "arte": [
@@ -134,14 +126,6 @@
       "arte": [
         "celular",
         "SEM PROVAS"
-      ]
-    },
-    {
-      "fala": "Imaginou possibilidades: discussão no emprego, dívida, problema de saúde. Quanto mais tentava adivinhar, mais distante Renata parecia.",
-      "expr": "triste",
-      "arte": [
-        "interrogacao",
-        "MIL HIPÓTESES"
       ]
     },
     {
@@ -208,5 +192,8 @@
     "pergunta": "Um segredo que ninguém descobre deixa de ser uma traição?",
     "segundos": 2.8
   },
-  "legenda_post": "🚗 Ela pegou um Uber sem dinheiro e tomou uma decisão que colocou seu casamento em risco.\n\nO marido desconfiou do comportamento dela, mas nunca descobriu a verdade daquela corrida. 😳\n\nE você: um segredo escondido por anos continua sendo uma traição? Comente!\n\nHistória fictícia, com personagens adultos, criada para entretenimento.\n\n#NinaMeContou #Storytime #Segredos #Traicao #Suspense #Historias"
+  "legenda_post": "🚗 Ela pegou um Uber sem dinheiro e tomou uma decisão que colocou seu casamento em risco.\n\nO marido desconfiou do comportamento dela, mas nunca descobriu a verdade daquela corrida. 😳\n\nE você: um segredo escondido por anos continua sendo uma traição? Comente!\n\nHistória fictícia, com personagens adultos, criada para entretenimento.\n\n#NinaMeContou #Storytime #Segredos #Traicao #Suspense #Historias",
+  "voice_engine": "kokoro",
+  "kokoro_voice": "pf_dora",
+  "kokoro_speed": "1.10"
 }
