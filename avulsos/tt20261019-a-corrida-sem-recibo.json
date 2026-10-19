@@ -1,0 +1,212 @@
+{
+  "id": "tt20261019-a-corrida-sem-recibo",
+  "avulso": true,
+  "titulo": "A CORRIDA QUE NÃO TEVE RECIBO",
+  "temporada": "Nina Me Contou — Histórias completas",
+  "cenario": "noite",
+  "visual_images": {
+    "auto_visual_images": true,
+    "hide_inner_caption_when_image": true,
+    "bottom_caption_only": true,
+    "min_images": 4,
+    "max_images": 8,
+    "target_images": 8,
+    "fallback": "original_art"
+  },
+  "batidas": [
+    {
+      "fala": "Ela pagou uma corrida de Uber com um favor que jamais contaria ao marido. Ele desconfiou de tudo. Só nunca descobriu a verdade.",
+      "expr": "chocada",
+      "arte": [
+        "celular",
+        "A CORRIDA"
+      ],
+      "zoom": true
+    },
+    {
+      "fala": "Renata tinha trinta e quatro anos, era casada com Marcelo havia nove, e dizia que confiança era tudo num casamento.",
+      "expr": "neutra",
+      "arte": [
+        "coracao",
+        "NOVE ANOS"
+      ]
+    },
+    {
+      "fala": "Numa sexta-feira de chuva forte, ela fechou a loja depois das dez da noite. O último ônibus já tinha passado, e a rua estava deserta.",
+      "expr": "desconfiada",
+      "arte": [
+        "relogio",
+        "DEZ DA NOITE"
+      ]
+    },
+    {
+      "fala": "Pediu um carro pelo aplicativo e escolheu pagar em dinheiro. Era uma corrida longa, até o bairro onde morava, do outro lado da cidade.",
+      "expr": "neutra",
+      "arte": [
+        "mapa",
+        "QUARENTA MINUTOS"
+      ]
+    },
+    {
+      "fala": "Só quando o motorista parou perto de sua casa, Renata percebeu que a carteira tinha ficado no trabalho. O cartão também estava bloqueado naquele dia.",
+      "expr": "assustada",
+      "arte": [
+        "bolsa",
+        "SEM DINHEIRO"
+      ]
+    },
+    {
+      "fala": "O motorista, Caio, esperou. Renata podia pedir ajuda, mas entrou em pânico e ofereceu um favor íntimo para pagar a corrida.",
+      "expr": "desconfiada",
+      "arte": [
+        "interrogacao",
+        "UMA PROPOSTA"
+      ]
+    },
+    {
+      "fala": "Caio aceitou. Não houve dinheiro nem recibo. Quando Renata entrou em casa, o problema já era maior que a corrida.",
+      "expr": "cansada",
+      "arte": [
+        "extrato",
+        "SEM RECIBO"
+      ]
+    },
+    {
+      "fala": "Marcelo havia aquecido o jantar duas vezes. Perguntou por que ela chegara tão tarde e por que estava com os olhos baixos. Ela respondeu: foi o trânsito.",
+      "expr": "desconfiada",
+      "arte": [
+        "cafe",
+        "FOI O TRÂNSITO"
+      ]
+    },
+    {
+      "fala": "Naquela noite, Renata mal tocou na comida. O marido tentou conversar, mas ela parecia longe, como se ainda estivesse presa àquela viagem.",
+      "expr": "triste",
+      "arte": [
+        "relogio",
+        "LONGE DALI"
+      ]
+    },
+    {
+      "fala": "Nos dias seguintes, o silêncio dela começou a incomodar. Renata se distraía no meio das frases e se assustava sempre que ouvia um carro parar na rua.",
+      "expr": "assustada",
+      "arte": [
+        "carro",
+        "O SILÊNCIO"
+      ]
+    },
+    {
+      "fala": "Marcelo conhecia a esposa havia quase uma década. Não sabia o que tinha acontecido, mas percebia que alguma coisa havia mudado depois daquela sexta-feira.",
+      "expr": "desconfiada",
+      "arte": [
+        "calendario",
+        "AQUELA SEXTA"
+      ]
+    },
+    {
+      "fala": "Uma semana depois, saíam do mercado quando um carro parecido passou devagar. Renata empalideceu, e Marcelo percebeu.",
+      "expr": "chocada",
+      "arte": [
+        "carro",
+        "O CARRO"
+      ],
+      "zoom": true
+    },
+    {
+      "fala": "Ele perguntou: você conhece aquele motorista? Renata demorou a responder. Disse que talvez o tivesse visto pelo bairro. Marcelo achou a resposta estranha.",
+      "expr": "desconfiada",
+      "arte": [
+        "conversa",
+        "VOCÊ CONHECE?"
+      ]
+    },
+    {
+      "fala": "Naquela mesma noite, ele voltou ao assunto. Perguntou se ela tinha tido algum problema na volta do trabalho. Renata respirou fundo e disse apenas que estava cansada.",
+      "expr": "cansada",
+      "arte": [
+        "interrogacao",
+        "O QUE HOUVE?"
+      ]
+    },
+    {
+      "fala": "Marcelo não encontrou mensagem suspeita, comprovante diferente, nem nada que explicasse o comportamento da esposa. Só tinha a sensação incômoda de que ela escondia algo.",
+      "expr": "desconfiada",
+      "arte": [
+        "celular",
+        "SEM PROVAS"
+      ]
+    },
+    {
+      "fala": "Imaginou possibilidades: discussão no emprego, dívida, problema de saúde. Quanto mais tentava adivinhar, mais distante Renata parecia.",
+      "expr": "triste",
+      "arte": [
+        "interrogacao",
+        "MIL HIPÓTESES"
+      ]
+    },
+    {
+      "fala": "Até que, num domingo, ele fez uma pergunta simples: você ainda confia em mim para me contar quando alguma coisa está errada? Renata começou a chorar.",
+      "expr": "triste",
+      "arte": [
+        "coracao",
+        "CONFIANÇA"
+      ]
+    },
+    {
+      "fala": "Ela disse que o amava e que não queria perder a família. Marcelo a abraçou, mas sentiu falta de uma resposta. Mesmo assim, decidiu não insistir.",
+      "expr": "cansada",
+      "arte": [
+        "coracao",
+        "SEM RESPOSTA"
+      ]
+    },
+    {
+      "fala": "O tempo passou. Vieram aniversários, contas para pagar e pequenas alegrias. Aos poucos, os dois aprenderam a conviver outra vez, embora nem tudo parecesse igual.",
+      "expr": "neutra",
+      "arte": [
+        "calendario",
+        "MESES DEPOIS"
+      ]
+    },
+    {
+      "fala": "Marcelo nunca recebeu uma prova, uma confissão ou sequer uma explicação para o que havia acontecido naquela sexta-feira. A desconfiança ficou sem nome e sem resposta.",
+      "expr": "desconfiada",
+      "arte": [
+        "extrato",
+        "NUNCA SOUBE"
+      ]
+    },
+    {
+      "fala": "Renata seguia a rotina, sorria nas fotografias e participava das conversas de família. Mas carregava sozinha a lembrança de uma decisão que não podia desfazer.",
+      "expr": "triste",
+      "arte": [
+        "foto",
+        "UM SEGREDO"
+      ]
+    },
+    {
+      "fala": "O marido jamais descobriu como aquela corrida tinha sido paga. Não houve revelação nem confronto. Apenas uma verdade guardada por Renata.",
+      "expr": "chocada",
+      "arte": [
+        "porta",
+        "A VERDADE"
+      ],
+      "zoom": true
+    },
+    {
+      "fala": "Agora me conta: o que pesa mais num casamento, uma traição descoberta ou um segredo que nunca vem à tona? Eu quero saber o que você pensa.",
+      "expr": "ironica",
+      "arte": [
+        "interrogacao",
+        "E VOCÊ?"
+      ]
+    }
+  ],
+  "fim": "UM SEGREDO SEM RESPOSTA",
+  "interatividade": {
+    "modo": "pergunta",
+    "pergunta": "Um segredo que ninguém descobre deixa de ser uma traição?",
+    "segundos": 2.8
+  },
+  "legenda_post": "🚗 Ela pegou um Uber sem dinheiro e tomou uma decisão que colocou seu casamento em risco.\n\nO marido desconfiou do comportamento dela, mas nunca descobriu a verdade daquela corrida. 😳\n\nE você: um segredo escondido por anos continua sendo uma traição? Comente!\n\nHistória fictícia, com personagens adultos, criada para entretenimento.\n\n#NinaMeContou #Storytime #Segredos #Traicao #Suspense #Historias"
+}
