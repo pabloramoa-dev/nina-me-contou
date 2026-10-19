@@ -220,6 +220,14 @@ def preparar(ep, segs, assets, pasta, generator=None):
                 mapping[i] = name
         except Exception as exc:
             reason = str(exc) if isinstance(exc, ImageFailure) else type(exc).__name__
+            # Uma referencia explicitamente aprovada, se invalida, nunca
+            # pode virar outra imagem via fallback silencioso.
+            supplied = ep.get('approved_visual_assets', [])
+            if scene['scene'] < len(supplied):
+                scene.update(status='fallback', mode='story_frame_text',
+                             error='invalid_approved_asset')
+                print(f"visual scene {scene['scene']}: approved asset invalido", flush=True)
+                continue
             if reason in ('missing_openai_api_key', 'image_http_401', 'image_http_403', 'image_http_429'):
                 circuit = reason
             # Áudio/roteiro não mudam. Avulsos recebem ilustração editorial
