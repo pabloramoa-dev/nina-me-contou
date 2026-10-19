@@ -38,6 +38,7 @@ jobs:
             /avulsos_prontos/
             /conteudo/tiktok_metricool/
             /motor/
+            /tools/
             /src/
             /video/
             /requirements-estudio.txt
@@ -89,6 +90,7 @@ jobs:
             /avulsos_prontos/
             /conteudo/tiktok_metricool/
             /motor/
+            /tools/
             /src/
             /video/
             /requirements-estudio.txt
@@ -159,6 +161,7 @@ jobs:
             /avulsos_prontos/
             /conteudo/tiktok_metricool/
             /motor/
+            /tools/
             /src/
             /video/
             /requirements-estudio.txt
