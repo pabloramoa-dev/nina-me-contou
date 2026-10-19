@@ -24,7 +24,7 @@
       "zoom": true
     },
     {
-      "fala": "Renata tinha trinta e quatro anos, era casada com Marcelo havia nove, e sempre dizia que confiança era a coisa mais importante de um casamento.",
+      "fala": "Renata tinha trinta e quatro anos, era casada com Marcelo havia nove, e dizia que confiança era tudo num casamento.",
       "expr": "neutra",
       "arte": [
         "coracao",
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "fala": "O homem se chamava Caio. Renata podia telefonar para pedir ajuda, mas entrou em pânico e, numa escolha impulsiva, ofereceu um favor íntimo como pagamento.",
+      "fala": "O motorista, Caio, esperou. Renata podia pedir ajuda, mas entrou em pânico e ofereceu um favor íntimo para pagar a corrida.",
       "expr": "desconfiada",
       "arte": [
         "interrogacao",
@@ -64,7 +64,7 @@
       ]
     },
     {
-      "fala": "Ele aceitou. Não houve transferência, dinheiro trocado ou recibo explicando a decisão. Quando Renata entrou em casa, o problema já era muito maior que a corrida.",
+      "fala": "Caio aceitou. Não houve dinheiro nem recibo. Quando Renata entrou em casa, o problema já era maior que a corrida.",
       "expr": "cansada",
       "arte": [
         "extrato",
@@ -104,7 +104,7 @@
       ]
     },
     {
-      "fala": "Uma semana mais tarde, os dois saíam do mercado quando um carro parecido com o da viagem passou devagar. Renata ficou pálida, e Marcelo percebeu imediatamente.",
+      "fala": "Uma semana depois, saíam do mercado quando um carro parecido passou devagar. Renata empalideceu, e Marcelo percebeu.",
       "expr": "chocada",
       "arte": [
         "carro",
@@ -137,7 +137,7 @@
       ]
     },
     {
-      "fala": "Passou dias imaginando possibilidades. Uma discussão no emprego? Alguma dívida? Um problema de saúde? Quanto mais tentava adivinhar, mais distante Renata parecia ficar.",
+      "fala": "Imaginou possibilidades: discussão no emprego, dívida, problema de saúde. Quanto mais tentava adivinhar, mais distante Renata parecia.",
       "expr": "triste",
       "arte": [
         "interrogacao",
@@ -185,7 +185,7 @@
       ]
     },
     {
-      "fala": "O marido jamais descobriu como aquela corrida tinha sido paga. E esse foi o fim da história: nenhuma revelação, nenhum confronto. Apenas uma verdade guardada por Renata.",
+      "fala": "O marido jamais descobriu como aquela corrida tinha sido paga. Não houve revelação nem confronto. Apenas uma verdade guardada por Renata.",
       "expr": "chocada",
       "arte": [
         "porta",
