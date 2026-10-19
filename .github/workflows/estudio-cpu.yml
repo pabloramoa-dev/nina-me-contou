@@ -23,7 +23,7 @@ jobs:
       - name: Render e QA sem publicar
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -y ffmpeg fonts-dejavu-core
+          sudo apt-get install -y ffmpeg fonts-dejavu-core espeak-ng
           python tools/cpu_studio.py --spec examples/cpu_piloto.json --output output/estudio_cpu.mp4 --tts espeak
       - uses: actions/upload-artifact@v4
         with:
