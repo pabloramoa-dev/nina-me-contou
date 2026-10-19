@@ -27,5 +27,6 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
       - run: pip install requests pytest numpy Pillow soundfile edge-tts==7.2.8 pedalboard==0.9.25
       - run: python -m pytest -q tests
