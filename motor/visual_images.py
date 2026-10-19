@@ -129,6 +129,10 @@ class ImageFailure(RuntimeError):
 
 
 def gerar(prompt, cfg):
+    # O pipeline gratuito nunca faz requisicao a API paga por padrao.
+    # Qualquer gasto exige uma segunda autorizacao explicita no ambiente.
+    if not _bool(os.environ.get('NINA_ALLOW_PAID_IMAGE_API', '0')):
+        raise ImageFailure('paid_image_api_disabled')
     key = os.environ.get('OPENAI_API_KEY', '').strip()
     if not key:
         raise ImageFailure('missing_openai_api_key')
@@ -220,7 +224,7 @@ def preparar(ep, segs, assets, pasta, generator=None):
                 circuit = reason
             # Áudio/roteiro não mudam. Avulsos recebem ilustração editorial
             # original offline se faltar a API, sem depender de fotos externas.
-            if ep.get('avulso'):
+            if cfg['auto_visual_images']:
                 try:
                     from local_story_art import render as render_local
                     local_data = validar_imagem(render_local(scene, ep))
