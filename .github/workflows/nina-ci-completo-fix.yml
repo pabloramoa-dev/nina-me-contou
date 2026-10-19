@@ -1,0 +1,30 @@
+name: Ninja validar regressao CPU original
+on:
+  push:
+    branches: [fix/testes-ilustracoes-cpu-20261019]
+    paths:
+      - motor/visual_images.py
+      - tests/test_visual_images.py
+      - .github/workflows/nina-ci-completo-fix.yml
+permissions:
+  contents: read
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          sparse-checkout: |
+            assets
+            motor
+            src
+            tests
+            visual_tests
+          sparse-checkout-cone-mode: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests pytest numpy Pillow soundfile edge-tts==7.2.8 pedalboard==0.9.25
+      - run: python -m pytest -q tests
