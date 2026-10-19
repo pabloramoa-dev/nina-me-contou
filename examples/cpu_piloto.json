@@ -1,0 +1,27 @@
+{
+  "name": "NINA INVESTIGA",
+  "style": "nina",
+  "footer": "Qual e a sua teoria? Comenta aqui!",
+  "scenes": [
+    {
+      "title": "Quem esta mentindo?",
+      "text": "Tres pessoas contam versoes diferentes. So uma esta escondendo a verdade.",
+      "seconds": 4
+    },
+    {
+      "title": "Pista numero 1",
+      "text": "O horario do encontro mudou. Mas uma testemunha lembra do relogio.",
+      "seconds": 5
+    },
+    {
+      "title": "Voce percebeu?",
+      "text": "Observe a contradicao. Quem teria motivo para inventar uma desculpa?",
+      "seconds": 5
+    },
+    {
+      "title": "A resposta vem no proximo episodio",
+      "text": "Escreva sua teoria nos comentarios. Esta e uma historia ficticia.",
+      "seconds": 5
+    }
+  ]
+}
