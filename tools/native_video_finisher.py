@@ -70,6 +70,8 @@ def validate(config, root):
     image = config.get("broll_imagem")
     if video and image:
         raise ValueError("selecione video OU imagem de apoio")
+    if options and (video or image):
+        raise ValueError("quiz com alternativas nao admite B-roll sobre o texto")
     if (video or image) and not str(config.get("credito", "")).strip():
         raise ValueError("b-roll exige credito e licença")
     if video:
@@ -159,7 +161,9 @@ def finish(video_file, config, root, *, max_total=60, replace=True):
         raise RuntimeError("O MP4 já foi finalizado com outra configuração; renderize o episódio original novamente")
     info = _probe(original)
     seconds = float(cfg.get("segundos", 2.8))
-    if info["duration"] + seconds > max_total:
+    answer_seconds = 1.6 if cfg.get("resposta") else 0
+    final_seconds = seconds + answer_seconds
+    if info["duration"] + final_seconds > max_total:
         report = dict(applied=False, reason="duracao_maxima", duration_original=info["duration"],
                       max_seconds=max_total, configuration_sha256=target_hash)
         report_file.write_text(json.dumps(report, ensure_ascii=False, indent=2))
@@ -177,19 +181,26 @@ def finish(video_file, config, root, *, max_total=60, replace=True):
             broll_image = tmp / "broll.png"
             _run(["ffmpeg", "-y", "-v", "error", "-i", broll_video, "-frames:v", "1", broll_image])
         _poster(frame, poster, cfg, info["width"], info["height"], broll_image)
-        filter_video = (f"[0:v]fps={info['fps']},setsar=1,setpts=PTS-STARTPTS[orig];"
-                        f"[1:v]trim=duration={seconds:.3f},fps={info['fps']},"
-                        "setpts=PTS-STARTPTS,setsar=1[card];"
-                        "[orig][card]concat=n=2:v=1:a=0[v]")
-        _run(["ffmpeg", "-y", "-v", "error", "-i", original, "-loop", "1",
-              "-framerate", info["fps"], "-i", poster,
+        inputs = ["-i", original, "-loop", "1", "-framerate", info["fps"], "-i", poster]
+        parts = [f"[0:v]fps={info['fps']},setsar=1,setpts=PTS-STARTPTS[orig]",
+                 f"[1:v]trim=duration={seconds:.3f},fps={info['fps']},setpts=PTS-STARTPTS,setsar=1[card]"]
+        labels = "[orig][card]"
+        if cfg.get("resposta"):
+            answer_poster = tmp / "resposta.png"
+            answer_cfg = dict(cfg, pergunta="RESPOSTA: " + cfg["resposta"], opcoes=[])
+            _poster(frame, answer_poster, answer_cfg, info["width"], info["height"])
+            inputs += ["-loop", "1", "-framerate", info["fps"], "-i", answer_poster]
+            parts.append(f"[2:v]trim=duration={answer_seconds:.3f},fps={info['fps']},setpts=PTS-STARTPTS,setsar=1[answer]")
+            labels += "[answer]"
+        filter_video = ";".join(parts) + ";" + labels + f"concat=n={3 if cfg.get('resposta') else 2}:v=1:a=0[v]"
+        _run(["ffmpeg", "-y", "-v", "error", *inputs,
               "-filter_complex", filter_video, "-map", "[v]", "-map", "0:a:0",
-              "-af", "apad", "-t", f"{info['duration'] + seconds:.3f}",
+              "-af", "apad", "-t", f"{info['duration'] + final_seconds:.3f}",
               "-c:v", "libx264", "-preset", "veryfast", "-crf", "23",
               "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "160k",
               "-movflags", "+faststart", destination])
         check = _probe(destination)
-        if check["duration"] < info["duration"]+seconds-.5 or (check["width"],check["height"]) != (info["width"],info["height"]):
+        if check["duration"] < info["duration"]+final_seconds-.5 or (check["width"],check["height"]) != (info["width"],info["height"]):
             raise RuntimeError("QA: MP4 final incompleto ou resolução alterada")
         if replace:
             os.replace(destination, original)
