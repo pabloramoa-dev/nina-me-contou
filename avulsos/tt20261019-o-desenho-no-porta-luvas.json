@@ -1,0 +1,178 @@
+{
+  "id": "tt20261019-o-desenho-no-porta-luvas",
+  "avulso": true,
+  "titulo": "O DESENHO NO PORTA-LUVAS",
+  "temporada": "Nina Me Contou — histórias completas",
+  "cenario": "tarde",
+  "visual_images": {
+    "auto_visual_images": true,
+    "hide_inner_caption_when_image": true,
+    "bottom_caption_only": true,
+    "min_images": 4,
+    "max_images": 8,
+    "target_images": 6,
+    "fallback": "original_art"
+  },
+  "batidas": [
+    {
+      "fala": "Menina, a Sofia foi procurar um documento no carro do marido e achou um desenho infantil. Até aí, tudo bem. O problema era a frase embaixo: pai, não esquece de mim no domingo.",
+      "expr": "chocada",
+      "foto": [
+        "child crayon drawing car house on white paper",
+        "NÃO ESQUECE, PAI"
+      ],
+      "zoom": true,
+      "hf": {
+        "titulo": "O DESENHO NO CARRO",
+        "destaque": [
+          "pai",
+          "domingo"
+        ]
+      }
+    },
+    {
+      "fala": "Ela e o Rafael estavam casados havia onze anos. Não tinham filhos. E todo domingo ele saía cedinho dizendo que precisava fazer umas entregas extras.",
+      "expr": "desconfiada",
+      "foto": [
+        "car dashboard glove compartment open",
+        "TODO DOMINGO"
+      ]
+    },
+    {
+      "fala": "O desenho mostrava um carro azul, uma casa de telhado vermelho e duas pessoas de mãos dadas. Num cantinho, escrito com letra torta: Lara, oito anos.",
+      "expr": "surpresa",
+      "foto": [
+        "child colored pencils and drawing on kitchen table",
+        "LARA, 8 ANOS"
+      ],
+      "zoom": true
+    },
+    {
+      "fala": "Sofia esperou ele chegar e perguntou de quem era aquilo. Rafael deu uma risadinha nervosa. Ah, deve ser da filha de um colega. Esqueci de devolver.",
+      "expr": "desconfiada",
+      "arte": [
+        "conversa",
+        "FILHA DE UM COLEGA?"
+      ]
+    },
+    {
+      "fala": "Só que, no verso, tinha outra coisa: apresentação da escola, quinta-feira, seis da tarde. E um coraçãozinho ao lado da palavra papai.",
+      "expr": "chocada",
+      "foto": [
+        "school invitation card handwritten date",
+        "QUINTA, ÀS SEIS"
+      ],
+      "zoom": true
+    },
+    {
+      "fala": "A semana inteira, Sofia tentou conversar. Rafael desconversou, mudou de assunto, jurou que não tinha nada pra contar. Foi aí que ela decidiu assistir à apresentação.",
+      "expr": "cansada",
+      "arte": [
+        "calendario",
+        "CHEGOU A QUINTA"
+      ]
+    },
+    {
+      "fala": "Ela entrou discretamente no auditório. Na primeira fileira estava Rafael, com um buquê pequeno de flores. Ao lado dele, uma mulher que Sofia nunca tinha visto.",
+      "expr": "desconfiada",
+      "foto": [
+        "school auditorium empty front row bouquet flowers on chair",
+        "PRIMEIRA FILEIRA"
+      ]
+    },
+    {
+      "fala": "Quando uma menina de vestido amarelo terminou de cantar, Rafael se levantou e aplaudiu como se fosse o homem mais orgulhoso do mundo.",
+      "expr": "surpresa",
+      "foto": [
+        "small school stage curtain microphone spotlight",
+        "A APRESENTAÇÃO"
+      ]
+    },
+    {
+      "fala": "A menina apontou pra ele e gritou: meu pai veio! Sofia sentiu o chão sumir. E Rafael, quando virou o rosto, viu a própria esposa na porta.",
+      "expr": "chocada",
+      "arte": [
+        "manchete_v",
+        "MEU PAI VEIO!"
+      ],
+      "zoom": true
+    },
+    {
+      "fala": "Sofia não fez escândalo. Esperou a criança sair com a professora e perguntou baixinho à mulher do lado: você é a mãe da Lara?",
+      "expr": "cansada",
+      "foto": [
+        "school corridor doorway soft daylight",
+        "A PERGUNTA"
+      ]
+    },
+    {
+      "fala": "A mulher se chamava Cláudia. Quando Sofia disse quem era, Cláudia ficou pálida. Contou que tinha se envolvido com Rafael anos antes, sem saber que ele era casado.",
+      "expr": "surpresa",
+      "arte": [
+        "conversa",
+        "ELE ERA CASADO?"
+      ]
+    },
+    {
+      "fala": "Assim que descobriu, Cláudia terminou tudo. Mas Rafael continuou visitando a filha. E disse a Cláudia que a esposa sabia da existência da menina.",
+      "expr": "brava",
+      "foto": [
+        "calendar and folded letters on desk",
+        "O SEGREDO"
+      ],
+      "zoom": true
+    },
+    {
+      "fala": "Aí Sofia entendeu: as entregas de domingo eram verdadeiras em uma coisa só. Ele sempre ia entregar alguma coisa. Só que era a presença de um pai, escondida dentro de uma mentira.",
+      "expr": "desconfiada",
+      "foto": [
+        "blue car parked near residential street",
+        "AS ENTREGAS"
+      ]
+    },
+    {
+      "fala": "Naquela noite, Rafael tentou se explicar: eu queria contar, mas nunca achei a hora certa. Sofia respondeu: você teve oito aniversários pra encontrar essa hora.",
+      "expr": "chocada",
+      "arte": [
+        "conversa",
+        "OITO ANIVERSÁRIOS"
+      ],
+      "zoom": true
+    },
+    {
+      "fala": "Ele pediu perdão. Ela disse que precisava de distância e que não ia transformar a Lara em culpada por um segredo que os adultos criaram.",
+      "expr": "cansada",
+      "foto": [
+        "house keys beside closed notebook on table",
+        "A DECISÃO"
+      ]
+    },
+    {
+      "fala": "Antes de sair, Sofia devolveu o desenho. Não pra menina. Pro Rafael. E falou: guarda isso onde você consiga ver todo dia. A sua filha merece um pai que não precise se esconder.",
+      "expr": "surpresa",
+      "foto": [
+        "child drawing held over car dashboard",
+        "NÃO SE ESCONDA"
+      ]
+    },
+    {
+      "fala": "Rafael ficou em silêncio. E Sofia foi embora sabendo que a mentira tinha acabado, mas a confiança não voltaria num passe de mágica.",
+      "expr": "neutra",
+      "foto": [
+        "empty porch chair evening light",
+        "DEPOIS DA VERDADE"
+      ]
+    },
+    {
+      "fala": "Agora me conta: você perdoaria onze anos de casamento com um segredo desses? Ou terminaria ali mesmo? Comenta aqui e segue a Nina, porque história assim dá o que falar!",
+      "expr": "ironica",
+      "arte": [
+        "interrogacao",
+        "VOCÊ PERDOARIA?"
+      ],
+      "zoom": true
+    }
+  ],
+  "fim": "VOCÊ PERDOARIA?",
+  "legenda_post": "🚗💔 ELA ENCONTROU UM DESENHO NO PORTA-LUVAS DO MARIDO...\n\nNo papel, uma menina escreveu: “Pai, não esquece de mim no domingo.” Sofia estava casada havia 11 anos — e não fazia ideia de quem era aquela criança.\n\nA verdade apareceu numa apresentação da escola, bem na frente de todo mundo. 😳\n\n👇 Você perdoaria uma mentira assim ou terminaria o casamento? Quero saber!\n\n🎭 História fictícia criada para entretenimento.\n\n#NinaMeContou #HistoriaComReviravolta #StorytimeBrasil #Fofoca #Segredos #HistoriasTikTok"
+}
