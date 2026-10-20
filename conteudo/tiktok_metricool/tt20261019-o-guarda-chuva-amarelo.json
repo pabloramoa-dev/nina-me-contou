@@ -5,7 +5,7 @@
   "account": "ninamecontou",
   "id": 400032898,
   "uuid": "2762395682794128599",
-  "status": "aguardando_confirmacao",
+  "status": "publicado",
   "publicationDate": {
     "dateTime": "2026-10-19T18:00:00",
     "timezone": "America/Sao_Paulo"
@@ -25,8 +25,10 @@
     "visual_frames_checked": true
   },
   "caption": "Um guarda-chuva sumiu por oito anos. Quando voltou, trouxe uma lista de pessoas que nunca esqueceram dele. ☂️💛\nVocê passaria essa gentileza adiante?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Gentileza",
-  "providerStatus": "AWAITING_CONFIRMATION",
-  "providerDetailedStatus": "Published:7698487269976606738",
-  "tiktokVideoId": "7698487269976606738",
-  "lastCheckedAt": "2026-10-19T18:04:00-03:00"
+  "providerStatus": "PUBLISHED",
+  "providerDetailedStatus": "Published",
+  "tiktokVideoId": "7698487003268058374",
+  "lastCheckedAt": "2026-10-20T07:57:00-03:00",
+  "publicUrl": "https://www.tiktok.com/@ninamecontou/video/7698487003268058374",
+  "publicationConfirmedAt": "2026-10-20T07:57:00-03:00"
 }
