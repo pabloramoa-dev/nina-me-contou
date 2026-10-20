@@ -50,14 +50,17 @@ jobs:
           p=Path('saida/teste-hf.json')
           e=json.loads(p.read_text())
           falas=[
-          'Menina, ela viu um carro parado na porta e já ficou desconfiada. Olhou para um lado, olhou para o outro e resolveu espiar.',
-          'O marido desceu todo arrumado, segurando uma caixa enorme. Ela cruzou os braços e pensou: agora eu peguei!',
-          'Nessa hora, o celular tocou. Era a vizinha perguntando se ela podia ir até a garagem, rapidinho.',
-          'Ela foi, levantou a sobrancelha e abriu a porta devagar. Estava pronta para fazer aquele escândalo!',
-          'Só que a garagem estava cheia de balões. Dentro da caixa tinha o bolo de aniversário que ela mesma tinha esquecido.',
-          'Ela ficou sem graça, abriu os braços e começou a rir. E você, teria esperado a surpresa ou já chegava cobrando explicação?'
+          'Menina, ela viu um carro na porta e ficou desconfiada. Olhou para os lados e resolveu espiar.',
+          'O marido desceu arrumado, segurando uma caixa enorme. Ela pensou: agora eu peguei!',
+          'O celular tocou. Era a vizinha pedindo para ela ir até a garagem, rapidinho.',
+          'Ela levantou a sobrancelha e abriu a porta. Estava pronta para fazer um escândalo!',
+          'Só que tinha balões por toda parte! Na caixa estava o bolo de aniversário que ela tinha esquecido.',
+          'Ela abriu os braços e caiu na risada. E você, esperava a surpresa ou chegava cobrando explicação?'
           ]
-          for b,f in zip(e['batidas'],falas): b['fala']=f
+          artes=[['porta'],['carro'],['conversa'],['porta'],['presente'],['presente']]
+          for b,f,arte in zip(e['batidas'],falas,artes):
+              b['fala']=f
+              b['arte']=arte
           e['titulo']='A SURPRESA NA GARAGEM'
           e['fim']='VOCÊ TAMBÉM DESCONFIARIA?'
           p.write_text(json.dumps(e,ensure_ascii=False))
