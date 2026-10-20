@@ -18,4 +18,6 @@ def versao():
         if "NINA_"+key.upper() in os.environ:
             cfg[key]=os.environ["NINA_"+key.upper()]
     fingerprint=hashlib.sha256(json.dumps(cfg,sort_keys=True).encode()).hexdigest()[:10]
-    return HYPERFRAMES_VERSION + extra + "-images-" + fingerprint
+    from tools.channel_ops import engine_signature
+    engine = engine_signature(Path(__file__).resolve().parents[1])[:12]
+    return HYPERFRAMES_VERSION + extra + "-images-" + fingerprint + '-engine-' + engine

@@ -326,6 +326,7 @@ def renderizar(ep,pasta,raiz):
     shutil.copy(video/'node_modules/gsap/dist/gsap.min.js',assets/'gsap.min.js')
     mixar(pasta/'voz.wav',segs,dur,assets/'mix.wav',ep);compor(ep,segs,work)
     sh(['node',cli,'lint',work],env=env)
+    sh(['node',video/'validate-production-layout.mjs',work],env=env)
     final=pasta/(ep['id']+'.mp4');tmp=pasta/(ep['id']+'.rendering.mp4')
     sh(['node',cli,'render',work,'--output',tmp,'--workers',os.environ.get('NINA_HF_WORKERS','2'),'--no-browser-gpu'],env=env)
     probe=conferir(tmp,dur);tmp.replace(final)

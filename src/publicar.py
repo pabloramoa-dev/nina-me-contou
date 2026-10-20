@@ -54,15 +54,20 @@ def main() -> int:
         return 0
 
     pub = Publicador(cfg)
-    container = pub.criar_container(video, legenda, capa)
-    pub.aguardar_pronto(container)
-    try:
-        media_id = pub.publicar(container)
-    except Exception:
-        media_id = pub.reconciliar(container, legenda)
-        if not media_id:
-            raise
-        rel["reconciliado_apos_erro"] = True
+    from tools.channel_ops import resume_send, pending_send, confirm_send
+    media_id = resume_send(config.RAIZ, ep_id, lambda cid: pub.reconciliar(cid, legenda))
+    if not media_id:
+        container = pub.criar_container(video, legenda, capa)
+        pub.aguardar_pronto(container)
+        pending_send(config.RAIZ, ep_id, container)
+        try:
+            media_id = pub.publicar(container)
+        except Exception:
+            media_id = pub.reconciliar(container, legenda)
+            if not media_id:
+                raise
+            rel["reconciliado_apos_erro"] = True
+        confirm_send(config.RAIZ, ep_id, media_id)
     fila.gravar_publicado(ep_id, media_id, dry=False)
     rel.update(ok=True, media_id=media_id)
 
