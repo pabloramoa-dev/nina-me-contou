@@ -11,6 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 75
     env:
+      NINA_VOICE_FALLBACK: 'false'
+      NINA_VOICE_ENGINE: 'thalita'
       NINA_PUPPET_TEST: '1'
       NINA_AUTO_VISUAL_IMAGES: '0'
       NINA_FOTOS: '0'
