@@ -88,3 +88,5 @@ jobs:
             saida/teste-hf/qualidade.json
             saida/teste-hf/hyperframes/layout-check.json
           retention-days: 7
+
+# validation pass: dynamic silhouette
