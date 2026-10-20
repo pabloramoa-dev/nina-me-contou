@@ -5,7 +5,7 @@
   "account": "ninamecontou",
   "id": 401069855,
   "uuid": "2226509582128595904",
-  "status": "agendado",
+  "status": "publicado",
   "publicationDate": {
     "dateTime": "2026-10-20T10:00:00",
     "timezone": "America/Sao_Paulo"
@@ -25,5 +25,10 @@
     "audio_mean_db": -17.3,
     "visual_frames_checked": true
   },
-  "caption": "Um vestido de noiva chegou no lugar da cortina… e a primeira explicação do marido só piorou tudo. 📦😂\nVocê acreditaria nessa história?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Humor"
+  "caption": "Um vestido de noiva chegou no lugar da cortina… e a primeira explicação do marido só piorou tudo. 📦😂\nVocê acreditaria nessa história?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Humor",
+  "providerStatus": "PUBLISHED",
+  "providerDetailedStatus": "Published",
+  "tiktokVideoId": "7698735360204983572",
+  "publicUrl": "https://www.tiktok.com/@ninamecontou/video/7698735360204983572",
+  "publicationConfirmedAt": "2026-10-20T12:03:00-03:00"
 }
