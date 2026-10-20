@@ -45,6 +45,8 @@ class NinaBase(Scene):
             pivot=p['cab'].get_center()+DOWN*1.6
             neck=p['cab'].get_center()+DOWN*1.4
             outline=g.copy()
+            # Mark outline dynamic so Manim cannot cache its first pose.
+            outline.add_updater(lambda mob,dt: None)
             self.add(outline,g)
         else:
             V.colar(self,p,espessura=22)
