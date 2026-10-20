@@ -1,0 +1,29 @@
+{
+  "episode": "tt20261020-a-encomenda-errada",
+  "brandId": 7228264,
+  "network": "tiktok",
+  "account": "ninamecontou",
+  "id": 401069855,
+  "uuid": "2226509582128595904",
+  "status": "agendado",
+  "publicationDate": {
+    "dateTime": "2026-10-20T10:00:00",
+    "timezone": "America/Sao_Paulo"
+  },
+  "autoPublish": true,
+  "mediaUrl": "https://raw.githubusercontent.com/pabloramoa-dev/nina-me-contou/main/avulsos_prontos/tt20261020-a-encomenda-errada.mp4",
+  "metricoolMediaUrl": "https://static.metricool.com/planner/202610/7228264-file-2063157312131334664.mp4",
+  "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7228264&openWithPostUuid=2226509582128595904",
+  "run_id": 39411576008,
+  "validation": {
+    "width": 1080,
+    "height": 1920,
+    "duration_seconds": 99.966667,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "audio_peak_db": -1.5,
+    "audio_mean_db": -17.3,
+    "visual_frames_checked": true
+  },
+  "caption": "Um vestido de noiva chegou no lugar da cortina… e a primeira explicação do marido só piorou tudo. 📦😂\nVocê acreditaria nessa história?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Humor"
+}
