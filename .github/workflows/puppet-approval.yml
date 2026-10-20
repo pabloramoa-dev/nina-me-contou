@@ -1,0 +1,82 @@
+name: Nina puppet experimental approval
+on:
+  push:
+    branches: [experimento/nina-gestos-2d]
+    paths: ['.github/workflows/puppet-approval.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    env:
+      NINA_PUPPET_TEST: '1'
+      NINA_AUTO_VISUAL_IMAGES: '0'
+      NINA_FOTOS: '0'
+      NINA_DIRECAO: '1'
+      OPENAI_API_KEY: ''
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          filter: blob:none
+          sparse-checkout: |
+            /.github/
+            /assets/
+            /motor/
+            /src/
+            /tests/
+            /tools/
+            /video/
+            /requirements-estudio.txt
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: sudo apt-get update -qq && sudo apt-get install -y ffmpeg pkg-config libcairo2-dev libpango1.0-dev espeak-ng fonts-dejavu-core
+      - run: pip install -r requirements-estudio.txt pytest
+      - uses: ./.github/actions/setup-hyperframes
+      - run: python -m pytest -q tests
+      - name: Prepare isolated episode
+        run: |
+          python tools/teste_hyperframes.py
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('saida/teste-hf.json')
+          e=json.loads(p.read_text())
+          falas=[
+          'Menina, ela viu um carro parado na porta e já ficou desconfiada. Olhou para um lado, olhou para o outro e resolveu espiar.',
+          'O marido desceu todo arrumado, segurando uma caixa enorme. Ela cruzou os braços e pensou: agora eu peguei!',
+          'Nessa hora, o celular tocou. Era a vizinha perguntando se ela podia ir até a garagem, rapidinho.',
+          'Ela foi, levantou a sobrancelha e abriu a porta devagar. Estava pronta para fazer aquele escândalo!',
+          'Só que a garagem estava cheia de balões. Dentro da caixa tinha o bolo de aniversário que ela mesma tinha esquecido.',
+          'Ela ficou sem graça, abriu os braços e começou a rir. E você, teria esperado a surpresa ou já chegava cobrando explicação?'
+          ]
+          for b,f in zip(e['batidas'],falas): b['fala']=f
+          e['titulo']='A SURPRESA NA GARAGEM'
+          e['fim']='VOCÊ TAMBÉM DESCONFIARIA?'
+          p.write_text(json.dumps(e,ensure_ascii=False))
+          PY
+      - name: Render original Nina with Thalita and HyperFrames
+        run: |
+          python motor/produzir.py saida/teste-hf.json
+          node video/validate-layout.mjs saida/teste-hf/hyperframes
+          mkdir -p out
+          cp saida/teste-hf/teste-hf.mp4 out/Nina-Gestos-2D-Teste.mp4
+          cp saida/teste-hf/render.json out/
+          cp saida/teste-hf/direcao.json out/
+          cp saida/teste-hf/qualidade.json out/
+          ffprobe -v error -show_streams -show_format -of json out/Nina-Gestos-2D-Teste.mp4 > out/probe.json
+          ffmpeg -v error -i out/Nina-Gestos-2D-Teste.mp4 -vf fps=1/5,scale=360:-2 out/check-%02d.jpg
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: nina-puppet-approval
+          path: |
+            out/
+            saida/teste-hf/render.json
+            saida/teste-hf/qualidade.json
+            saida/teste-hf/hyperframes/layout-check.json
+          retention-days: 7
