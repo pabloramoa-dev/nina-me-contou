@@ -303,7 +303,9 @@ def animar_nina(scene, p, cues, semente=7):
             if cu["start"] > tt:
                 break
         boca_parada = p["rosto"][3]
-        centro = p["cab"].get_center() + DOWN * 0.50 * k
+        angle = p.get("head_angle", 0.0)
+        offset = np.array([np.sin(angle), -np.cos(angle), 0]) * 0.50 * k
+        centro = p["cab"].get_center() + offset
         if v == "fechada":
             boca_parada.set_stroke(opacity=1)
             boca_parada.set_fill(opacity=1 if p["expr"] == "chocada" else 0)
@@ -311,8 +313,8 @@ def animar_nina(scene, p, cues, semente=7):
                 mo.become(VMobject())
         else:
             boca_parada.set_stroke(opacity=0).set_fill(opacity=0)
-            if st["v"] != v:
-                mo.become(boca_fala(v).scale(k))
+            if st["v"] != v or "head_angle" in p:
+                mo.become(boca_fala(v).scale(k).rotate(angle))
             mo.move_to(centro)
         st["v"] = v
     fala.add_updater(upd)
