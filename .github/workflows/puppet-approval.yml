@@ -38,7 +38,7 @@ jobs:
         with:
           python-version: '3.11'
       - run: sudo apt-get update -qq && sudo apt-get install -y ffmpeg pkg-config libcairo2-dev libpango1.0-dev espeak-ng fonts-dejavu-core
-      - run: pip install -r requirements-estudio.txt pytest
+      - run: pip install -r requirements-estudio.txt pytest && pip install edge-tts==7.3.1
       - uses: ./.github/actions/setup-hyperframes
       - run: env -u NINA_AUTO_VISUAL_IMAGES -u NINA_FOTOS python -m pytest -q tests
       - name: Prepare isolated episode
