@@ -5,7 +5,7 @@
   "account": "ninamecontou",
   "id": 402107942,
   "uuid": "-9132240308179744988",
-  "status": "agendado",
+  "status": "publicado",
   "publicationDate": {
     "dateTime": "2026-10-21T10:00:00",
     "timezone": "America/Sao_Paulo"
@@ -25,5 +25,10 @@
     "audio_mean_db": -17.6,
     "visual_frames_checked": true
   },
-  "caption": "Ele disse que estava sem dinheiro para o aniversário dela. A ligação da confeitaria contou outra história. 🎂😳\nVocê teria ido ao escritório?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Relacionamento"
+  "caption": "Ele disse que estava sem dinheiro para o aniversário dela. A ligação da confeitaria contou outra história. 🎂😳\nVocê teria ido ao escritório?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Relacionamento",
+  "providerStatus": "PUBLISHED",
+  "providerDetailedStatus": "Published",
+  "tiktokVideoId": "7699106540497734933",
+  "publicUrl": "https://www.tiktok.com/@ninamecontou/video/7699106540497734933",
+  "publicationConfirmedAt": "2026-10-21T13:58:43-03:00"
 }
