@@ -1,0 +1,118 @@
+{
+  "id": "tt20261022-a-mesa-do-fundo",
+  "avulso": true,
+  "titulo": "A MESA DO FUNDO",
+  "temporada": "TikTok diário",
+  "cenario": "tarde",
+  "visual_images": {
+    "auto_visual_images": true,
+    "hide_inner_caption_when_image": true,
+    "bottom_caption_only": true,
+    "min_images": 4,
+    "max_images": 8,
+    "target_images": 6,
+    "fallback": "original_art"
+  },
+  "batidas": [
+    {
+      "fala": "Ela foi ao restaurante desmascarar o marido. Mas, quando viu quem estava sentado na mesa do fundo, perdeu a coragem de abrir a boca.",
+      "expr": "chocada",
+      "foto": [
+        "restaurant table window",
+        "A RESERVA"
+      ],
+      "zoom": true
+    },
+    {
+      "fala": "Toda quinta, André dizia que tinha reunião até tarde. Só que um dia deixou na bancada um cartão do restaurante, com duas pessoas escrito atrás.",
+      "expr": "desconfiada",
+      "foto": [
+        "restaurant reservation card",
+        "DUAS PESSOAS"
+      ]
+    },
+    {
+      "fala": "Lúcia perguntou direto. Ele respondeu que era um cliente. Na quinta seguinte, ela resolveu jantar lá. Sozinha, numa mesa perto da entrada.",
+      "expr": "neutra",
+      "foto": [
+        "restaurant entrance evening",
+        "QUINTA-FEIRA"
+      ]
+    },
+    {
+      "fala": "André chegou com um senhor de camisa passada e sapato antigo. Lúcia reconheceu na hora. Era seu pai, que não falava com ela havia três anos.",
+      "expr": "chocada",
+      "foto": [
+        "old leather shoes",
+        "SEU PAI"
+      ],
+      "zoom": true
+    },
+    {
+      "fala": "A briga tinha começado quando ela fechou a loja da família. O pai chamou aquilo de desistência. Ela chamou a cobrança dele de crueldade. Ninguém voltou atrás.",
+      "expr": "triste",
+      "foto": [
+        "closed shop storefront",
+        "TRÊS ANOS"
+      ]
+    },
+    {
+      "fala": "Lúcia levantou para ir embora. Então ouviu o pai perguntar: ela ainda faz aquele café forte? André respondeu que sim. E que ainda guardava a xícara dele.",
+      "expr": "triste",
+      "foto": [
+        "coffee cup saucer",
+        "A XÍCARA"
+      ]
+    },
+    {
+      "fala": "Ela chegou perto e perguntou por que os dois estavam escondendo aquilo. André abaixou os olhos. O pai puxou uma cadeira, mas ela continuou em pé.",
+      "expr": "desconfiada",
+      "foto": [
+        "empty wooden chair",
+        "A CONVERSA"
+      ]
+    },
+    {
+      "fala": "O pai disse que procurara André para saber dela. Queria pedir desculpas, só que sempre ensaiava e desistia. Lúcia respondeu: eu não sou reunião pra você remarcar.",
+      "expr": "neutra",
+      "foto": [
+        "restaurant table napkins",
+        "SEM ADIAR"
+      ]
+    },
+    {
+      "fala": "Dessa vez, ele não tentou se explicar. Disse: você estava cheia de dívidas e eu só pensei no nome da loja. Devia ter ajudado minha filha. Eu errei.",
+      "expr": "triste",
+      "foto": [
+        "closed shop keys",
+        "EU ERREI"
+      ]
+    },
+    {
+      "fala": "Lúcia sentou. Não prometeu esquecer tudo. Pediu ao marido que não escondesse mais aqueles encontros. E disse ao pai que podiam começar com um café no domingo.",
+      "expr": "neutra",
+      "foto": [
+        "coffee pot kitchen",
+        "UM COMEÇO"
+      ]
+    },
+    {
+      "fala": "No domingo, ele chegou sem conselho sobre dinheiro, sem cobrança e sem discurso. Trouxe pão quentinho. Lúcia colocou a velha xícara na mesa e serviu o café.",
+      "expr": "neutra",
+      "foto": [
+        "bread paper bag breakfast",
+        "DOMINGO"
+      ]
+    },
+    {
+      "fala": "Ele tomou um gole e fez careta. Continua forte. Ela respondeu: e você continua reclamando. Os dois riram. Qual conversa você anda adiando? Conta e segue a Nina.",
+      "expr": "ironica",
+      "foto": [
+        "two coffee cups breakfast",
+        "A PRIMEIRA RISADA"
+      ]
+    }
+  ],
+  "fim": "UM RECOMEÇO",
+  "legenda_post": "Ela seguiu o marido até o restaurante. Na mesa do fundo, encontrou alguém que não via havia três anos. ☕💛\nQual conversa você anda adiando?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Familia"
+}
