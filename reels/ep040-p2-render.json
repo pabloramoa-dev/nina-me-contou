@@ -9,7 +9,7 @@
   ],
   "fps": 30,
   "voz": "pt-BR-ThalitaNeural",
-  "audio": "pedalboard",
+  "audio": "ffmpeg",
   "sfx": 45,
   "visual": "v4",
   "lip": "rhubarb",
