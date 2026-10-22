@@ -1,0 +1,29 @@
+{
+  "episode": "tt20261022-a-mesa-do-fundo",
+  "brandId": 7228264,
+  "network": "tiktok",
+  "account": "ninamecontou",
+  "id": 403133039,
+  "uuid": "6130395860759233334",
+  "status": "agendado",
+  "publicationDate": {
+    "dateTime": "2026-10-22T18:00:00",
+    "timezone": "America/Sao_Paulo"
+  },
+  "autoPublish": true,
+  "mediaUrl": "https://raw.githubusercontent.com/pabloramoa-dev/nina-me-contou/main/avulsos_prontos/tt20261022-a-mesa-do-fundo.mp4",
+  "metricoolMediaUrl": "https://static.metricool.com/planner/202610/7228264-file-1089717608841767340.mp4",
+  "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7228264&openWithPostUuid=6130395860759233334",
+  "run_id": 39766998637,
+  "validation": {
+    "width": 1080,
+    "height": 1920,
+    "duration_seconds": 102.733333,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "audio_peak_db": -1.6,
+    "audio_mean_db": -17.1,
+    "visual_frames_checked": true
+  },
+  "caption": "Ela seguiu o marido até o restaurante. Na mesa do fundo, encontrou alguém que não via havia três anos. ☕💛\nQual conversa você anda adiando?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Familia"
+}
