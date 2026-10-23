@@ -1,15 +1,15 @@
 {
-  "motor": "hyperframes",
+  "motor": "remotion",
   "versao": "nina-hyperframes-8-direcao-gratuita-qa",
   "fotos": 0,
-  "duracao": 61.813,
+  "duracao": 61.833333333333336,
   "resolucao": [
     1080,
     1920
   ],
   "fps": 30,
-  "voz": "pt-BR-ThalitaNeural",
-  "audio": "pedalboard",
+  "voz": "pf_dora",
+  "audio": "ffmpeg",
   "sfx": 46,
   "visual": "v4",
   "lip": "rhubarb",
@@ -22,5 +22,8 @@
   "visual_total_ready": 6,
   "direcao_automatica": true,
   "gestos_distintos": 5,
-  "qualidade_tecnica": true
+  "qualidade_tecnica": true,
+  "motor_base": "hyperframes",
+  "versao_final": "nina-remotion-aprovado-legenda-inferior-v1",
+  "legenda": "solta_sem_faixa_inferior"
 }
