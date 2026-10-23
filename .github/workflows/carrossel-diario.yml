@@ -13,6 +13,12 @@ on:
         description: 'Publicar? Desmarcado = apenas gerar e avaliar'
         default: false
         type: boolean
+  push:
+    branches: [main]
+    paths:
+      - 'tools/carrossel_diario.py'
+      - 'tests/test_carrossel_diario.py'
+      - '.github/workflows/carrossel-diario.yml'
   pull_request:
     branches: [main]
     paths:
@@ -46,7 +52,7 @@ jobs:
     timeout-minutes: 40
     env:
       DIA: ${{ inputs.data }}
-      ENSAIO: ${{ github.event_name == 'workflow_dispatch' && inputs.publicar != true && 'true' || 'false' }}
+      ENSAIO: ${{ github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.publicar != true) && 'true' || 'false' }}
     steps:
       - uses: actions/checkout@v4
         with:
