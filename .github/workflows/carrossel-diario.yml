@@ -51,7 +51,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 40
     env:
-      DIA: ${{ inputs.data }}
+      DIA: ${{ github.event_name == 'push' && '2026-10-23' || inputs.data }}
       ENSAIO: ${{ github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.publicar != true) && 'true' || 'false' }}
     steps:
       - uses: actions/checkout@v4
