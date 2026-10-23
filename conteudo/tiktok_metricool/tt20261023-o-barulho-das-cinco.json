@@ -5,7 +5,7 @@
   "account": "ninamecontou",
   "id": 404155521,
   "uuid": "8312378863304132574",
-  "status": "agendado",
+  "status": "publicado",
   "publicationDate": {
     "dateTime": "2026-10-23T12:00:00",
     "timezone": "America/Sao_Paulo"
@@ -25,5 +25,10 @@
     "audio_mean_db": -17.2,
     "visual_frames_checked": true
   },
-  "caption": "Ela queria multar o vizinho pelo barulho das cinco. Uma visita mudou a conversa do condomínio. 🥖💛\nVocê já julgou alguém e depois mudou de ideia?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Vizinhos"
+  "caption": "Ela queria multar o vizinho pelo barulho das cinco. Uma visita mudou a conversa do condomínio. 🥖💛\nVocê já julgou alguém e depois mudou de ideia?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Vizinhos",
+  "providerStatus": "PUBLISHED",
+  "providerDetailedStatus": "Published",
+  "tiktokVideoId": "7699880286737141013",
+  "publicUrl": "https://www.tiktok.com/@ninamecontou/video/7699880286737141013",
+  "publicationConfirmedAt": "2026-10-23T14:04:36-03:00"
 }
