@@ -1,0 +1,29 @@
+{
+  "episode": "tt20261023-o-barulho-das-cinco",
+  "brandId": 7228264,
+  "network": "tiktok",
+  "account": "ninamecontou",
+  "id": 404155521,
+  "uuid": "8312378863304132574",
+  "status": "agendado",
+  "publicationDate": {
+    "dateTime": "2026-10-23T12:00:00",
+    "timezone": "America/Sao_Paulo"
+  },
+  "autoPublish": true,
+  "mediaUrl": "https://raw.githubusercontent.com/pabloramoa-dev/nina-me-contou/main/avulsos_prontos/tt20261023-o-barulho-das-cinco.mp4",
+  "metricoolMediaUrl": "https://static.metricool.com/planner/202610/7228264-file-18350219818879776028.mp4",
+  "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7228264&openWithPostUuid=8312378863304132574",
+  "run_id": 39943604362,
+  "validation": {
+    "width": 1080,
+    "height": 1920,
+    "duration_seconds": 106.8,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "audio_peak_db": -1.4,
+    "audio_mean_db": -17.2,
+    "visual_frames_checked": true
+  },
+  "caption": "Ela queria multar o vizinho pelo barulho das cinco. Uma visita mudou a conversa do condomínio. 🥖💛\nVocê já julgou alguém e depois mudou de ideia?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Vizinhos"
+}
