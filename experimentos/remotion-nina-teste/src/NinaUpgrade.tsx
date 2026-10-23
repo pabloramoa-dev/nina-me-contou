@@ -6,9 +6,9 @@ export type NinaProps = {durationFrames:number;scenes:Scene[]};
 const clamp=(n:number,min:number,max:number)=>Math.max(min,Math.min(max,n));
 const selectedWords=(s:string,progress:number)=>{
   const words=s.split(/\s+/).filter(Boolean);
-  if(words.length<=6)return s;
+  if(words.length<=5)return s;
   const groups: string[]=[];
-  for(let i=0;i<words.length;i+=6)groups.push(words.slice(i,i+6).join(' '));
+  for(let i=0;i<words.length;i+=5)groups.push(words.slice(i,i+5).join(' '));
   return groups[Math.min(groups.length-1,Math.floor(clamp(progress,0,0.99999)*groups.length))];
 };
 const accents=['#f5b94f','#d9858d','#86b3a0','#f1bb64','#dd9cb0','#79b7b2'];
@@ -56,15 +56,14 @@ export const NinaUpgrade:React.FC<NinaProps>=({scenes})=>{
        </div>
      </div>
    </div>
-   {/* Linha de fala legível e com progresso, sem reproduzir frases inventadas. */}
-   <div style={{position:'absolute',left:76,right:76,bottom:170,opacity:Math.max(0,textAppear),transform:`translateY(${interpolate(textAppear,[0,1],[36,0])}px)`}}>
-     <div style={{background:'rgba(24,21,22,.89)',border:'4px solid #f6e4bc',borderRadius:26,padding:'26px 30px',textAlign:'center',boxShadow:'0 12px 28px #211c1860'}}>
-       <div style={{fontSize:45,fontWeight:900,color:'#fffaf1',lineHeight:1.18,textShadow:'0 2px #000',minHeight:96,display:'flex',alignItems:'center',justifyContent:'center'}}>{caption}</div>
+   {/* Legendas leves no espaço ENTRE o cartão e o cabelo da Nina: sem caixa escura, sem encobrir o corpo. */}
+   <div style={{position:'absolute',left:100,right:100,top:604,minHeight:102,display:'flex',justifyContent:'center',alignItems:'center',opacity:Math.max(0,textAppear),transform:`translateY(${interpolate(textAppear,[0,1],[16,0])}px)`,pointerEvents:'none'}}>
+     <div style={{maxWidth:880,fontSize:40,fontWeight:950,lineHeight:1.12,letterSpacing:0.3,textAlign:'center',color:'#fffdf6',WebkitTextStroke:'1px #1d201e',textShadow:'3px 3px 0 #292321,-3px 3px 0 #292321,3px -3px 0 #292321,-3px -3px 0 #292321,0 6px 10px #292321aa'}}>
+       {caption}
      </div>
    </div>
-   <div style={{position:'absolute',bottom:73,left:72,right:72,display:'flex',justifyContent:'space-between',alignItems:'center',color:'#342420',fontSize:28,fontWeight:950}}>
-     <span style={{background:'#fff7ec',padding:'8px 12px',borderRadius:8}}>HISTÓRIA FICTÍCIA</span>
-     <span style={{background:accent,padding:'9px 15px',borderRadius:9}}>NINA • {Math.round(t)}s</span>
+   <div style={{position:'absolute',left:70,bottom:48,fontSize:20,fontWeight:850,color:'#2a241e',letterSpacing:2,opacity:0.85}}>
+     HISTÓRIA FICTÍCIA
    </div>
  </AbsoluteFill>;
 };
