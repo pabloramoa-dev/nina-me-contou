@@ -1,0 +1,117 @@
+{
+  "id": "tt20261023-o-barulho-das-cinco",
+  "avulso": true,
+  "titulo": "O BARULHO DAS CINCO",
+  "temporada": "TikTok diário",
+  "cenario": "tarde",
+  "visual_images": {
+    "auto_visual_images": true,
+    "hide_inner_caption_when_image": true,
+    "bottom_caption_only": true,
+    "min_images": 4,
+    "max_images": 8,
+    "target_images": 6,
+    "fallback": "original_art"
+  },
+  "batidas": [
+    {
+      "fala": "A vizinha reclamou de um barulho de madrugada. Quando descobriram o que acontecia no apartamento de cima, o condomínio inteiro ficou sem graça.",
+      "expr": "chocada",
+      "foto": [
+        "apartment building night",
+        "A RECLAMAÇÃO"
+      ],
+      "zoom": true
+    },
+    {
+      "fala": "Todo dia, às cinco, vinha aquele arrastar de cadeira. Sônia batia no teto com o cabo da vassoura. Lá em cima morava um rapaz que nunca ia às reuniões.",
+      "expr": "desconfiada",
+      "foto": [
+        "broom apartment floor",
+        "CINCO DA MANHÃ"
+      ]
+    },
+    {
+      "fala": "No grupo, ela escreveu que tinha gente montando academia dentro de casa. Em dez minutos, já estavam falando em multa. Ninguém tinha conversado com o rapaz.",
+      "expr": "ironica",
+      "foto": [
+        "smartphone table",
+        "O GRUPO"
+      ]
+    },
+    {
+      "fala": "A síndica marcou uma visita. Sônia foi junto, pronta para mostrar os áudios do barulho. Quem abriu a porta foi Rafael, de avental e com farinha na sobrancelha.",
+      "expr": "neutra",
+      "foto": [
+        "flour kitchen counter",
+        "A VISITA"
+      ]
+    },
+    {
+      "fala": "A sala estava cheia de caixas de pão. Ele acordava cedo para fazer entregas antes do trabalho. A cadeira arrastava quando ele alcançava a prateleira dos ingredientes.",
+      "expr": "neutra",
+      "foto": [
+        "bread boxes kitchen",
+        "OS PÃES"
+      ]
+    },
+    {
+      "fala": "Sônia perguntou por que não comprava uma escadinha. Rafael mostrou a conta da faculdade da irmã. Disse: esse mês, até a cadeira tá trabalhando dobrado.",
+      "expr": "triste",
+      "foto": [
+        "wooden chair shelf",
+        "A CONTA"
+      ]
+    },
+    {
+      "fala": "Ele pediu desculpas e prometeu levantar a cadeira em vez de arrastar. Sônia guardou o celular. Na saída, perguntou quanto custava o pão de queijo.",
+      "expr": "neutra",
+      "foto": [
+        "cheese bread tray",
+        "O PRIMEIRO PEDIDO"
+      ]
+    },
+    {
+      "fala": "No grupo, ela escreveu outra mensagem: falei sem saber. O rapaz vende pão. Quem quiser encomendar, eu passo o contato, com a autorização dele.",
+      "expr": "neutra",
+      "foto": [
+        "phone kitchen table",
+        "A CORREÇÃO"
+      ]
+    },
+    {
+      "fala": "No sábado, chegaram vinte pedidos. A síndica emprestou uma mesa para organizar as entregas. O vizinho que mais pediu multa apareceu com feltro para os pés da cadeira.",
+      "expr": "ironica",
+      "foto": [
+        "felt pads chair legs",
+        "SEM BARULHO"
+      ]
+    },
+    {
+      "fala": "Rafael pagou a mensalidade da irmã e comprou a escadinha no mês seguinte. Sônia virou cliente fixa. Mas fez questão de uma condição: entrega só depois das sete.",
+      "expr": "ironica",
+      "foto": [
+        "small folding step stool",
+        "COMBINADO"
+      ]
+    },
+    {
+      "fala": "Agora, quando alguém reclama no grupo, ela pergunta se já bateu na porta para conversar. O pessoal brinca que a fiscal do barulho virou gerente da padaria.",
+      "expr": "ironica",
+      "foto": [
+        "paper bag fresh bread",
+        "A GERENTE"
+      ]
+    },
+    {
+      "fala": "Sônia responde: gerente nada, eu pago meu pão. Só aprendi a perguntar antes de acusar. Já julgou alguém e depois mudou de ideia? Conta e segue a Nina.",
+      "expr": "neutra",
+      "foto": [
+        "breakfast bread coffee",
+        "ANTES DE JULGAR"
+      ]
+    }
+  ],
+  "fim": "ANTES DE JULGAR",
+  "legenda_post": "Ela queria multar o vizinho pelo barulho das cinco. Uma visita mudou a conversa do condomínio. 🥖💛\nVocê já julgou alguém e depois mudou de ideia?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Vizinhos"
+}
