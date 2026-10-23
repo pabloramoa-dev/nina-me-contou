@@ -1,0 +1,96 @@
+name: Nina - Carrossel diário
+
+on:
+  schedule:
+    - cron: '37 13 * * *' # 10h37 em Brasília (UTC-3)
+  workflow_dispatch:
+    inputs:
+      data:
+        description: 'Data do carrossel, AAAA-MM-DD (vazio = hoje em Brasília)'
+        required: false
+        type: string
+      publicar:
+        description: 'Publicar? Desmarcado = apenas gerar e avaliar'
+        default: false
+        type: boolean
+  pull_request:
+    branches: [main]
+    paths:
+      - 'tools/carrossel_diario.py'
+      - 'tests/test_carrossel_diario.py'
+      - '.github/workflows/carrossel-diario.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nina-carrossel-diario
+  cancel-in-progress: false
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install Pillow requests
+      - run: python -m unittest discover -s tests -p test_carrossel_diario.py -v
+
+  produzir-e-publicar:
+    needs: validar
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      DIA: ${{ inputs.data }}
+      ENSAIO: ${{ github.event_name == 'workflow_dispatch' && inputs.publicar != true && 'true' || 'false' }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Instalar Manim + Pillow (CPU, sem GPU)
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq pkg-config libcairo2-dev libpango1.0-dev fonts-dejavu-core
+          pip install 'manim==0.20.1' 'Pillow>=10,<13' 'requests>=2.32,<3'
+      - name: Gerar retrato da Nina original
+        run: |
+          python -m manim -s motor/perfil_nina.py Perfil -o nina-carrossel-original.png
+          mkdir -p output
+          find media/images -name 'nina-carrossel-original.png' -type f -print -quit | xargs -r -I {} cp '{}' output/nina-carrossel-original.png
+          test -s output/nina-carrossel-original.png
+      - name: Gerar as 7 páginas do carrossel
+        shell: bash
+        run: |
+          args=(preparar --avatar output/nina-carrossel-original.png)
+          if [[ -n "$DIA" ]]; then args+=(--data "$DIA"); fi
+          if [[ "$ENSAIO" == "true" ]]; then args+=(--dry-run); fi
+          python -m tools.carrossel_diario "${args[@]}"
+      - name: Artes do teste para avaliação (não publica)
+        if: env.ENSAIO == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: nina-carrossel-ensaio
+          path: output/carrossel-teste/
+          retention-days: 3
+      - name: Publicar um carrossel por dia
+        if: env.ENSAIO != 'true'
+        env:
+          IG_USER_ID_NINA: ${{ secrets.IG_USER_ID_NINA }}
+          IG_ACCESS_TOKEN_NINA: ${{ secrets.IG_ACCESS_TOKEN_NINA }}
+          RAW_BASE_URL: ${{ vars.RAW_BASE_URL }}
+          GRAPH_API_VERSION: ${{ vars.GRAPH_API_VERSION }}
+          PUBLICAR_ATIVO: ${{ vars.PUBLICAR_ATIVO }}
+          DRY_RUN: 'false'
+        shell: bash
+        run: |
+          args=(publicar)
+          if [[ -n "$DIA" ]]; then args+=(--data "$DIA"); fi
+          python -m tools.carrossel_diario "${args[@]}"
