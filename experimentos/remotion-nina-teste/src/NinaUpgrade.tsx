@@ -1,0 +1,70 @@
+import React from 'react';
+import {AbsoluteFill, Audio, OffthreadVideo, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
+
+type Scene = {start:number;end:number;title:string;fala:string;expr:string};
+export type NinaProps = {durationFrames:number;scenes:Scene[]};
+const clamp=(n:number,min:number,max:number)=>Math.max(min,Math.min(max,n));
+const selectedWords=(s:string,progress:number)=>{
+  const words=s.split(/\s+/).filter(Boolean);
+  if(words.length<=6)return s;
+  const groups: string[]=[];
+  for(let i=0;i<words.length;i+=6)groups.push(words.slice(i,i+6).join(' '));
+  return groups[Math.min(groups.length-1,Math.floor(clamp(progress,0,0.99999)*groups.length))];
+};
+const accents=['#f5b94f','#d9858d','#86b3a0','#f1bb64','#dd9cb0','#79b7b2'];
+
+export const NinaUpgrade:React.FC<NinaProps>=({scenes})=>{
+ const frame=useCurrentFrame();const {fps,durationInFrames}=useVideoConfig();const t=frame/fps;
+ const index=Math.max(0,scenes.findIndex(s=>t>=s.start&&t<s.end));
+ const scene=scenes[index]??scenes[0];
+ const elapsed=Math.max(0,t-scene.start);const d=Math.max(1,scene.end-scene.start);
+ const progress=clamp(elapsed/d,0,1);
+ const appearing=spring({frame:elapsed*fps,fps,config:{damping:16,mass:0.8,stiffness:110}});
+ const leaving=clamp((scene.end-t)*2.5,0,1);
+ const panelScale=interpolate(appearing,[0,1],[0.76,1])*interpolate(leaving,[0,1],[0.96,1]);
+ const panelY=interpolate(appearing,[0,1],[-95,0]);
+ const baseZoom=1.03+0.016*Math.sin(t*.48)+(index===3?.035:0);
+ const baseX=12*Math.sin(t*.36);
+ const caption=selectedWords(scene.fala,progress);
+ const textAppear=spring({frame:(elapsed-.1)*fps,fps,config:{damping:18}});
+ const accent=accents[index%accents.length];
+ const endFade=interpolate(frame,[durationInFrames-18,durationInFrames-1],[1,0],{extrapolateLeft:'clamp',extrapolateRight:'clamp'});
+ return <AbsoluteFill style={{backgroundColor:'#e9d7bc',fontFamily:'Arial, sans-serif',overflow:'hidden',opacity:endFade}}>
+   {/* Personagem e lip-sync oficiais renderizados em Manim, não uma imitação da Nina. */}
+   <AbsoluteFill style={{transform:`translateX(${baseX}px) scale(${baseZoom})`,transformOrigin:'50% 56%'}}>
+     <OffthreadVideo muted src={staticFile('nina-base.mp4')} style={{width:'100%',height:'100%',objectFit:'cover'}} />
+   </AbsoluteFill>
+   <Audio src={staticFile('mix.wav')} />
+   {/* Barra de identidade e progresso da história */}
+   <div style={{position:'absolute',top:58,left:66,right:66,display:'flex',justifyContent:'space-between',alignItems:'center',color:'#231f20'}}>
+     <div style={{fontWeight:950,fontSize:48,letterSpacing:2,textShadow:'0 2px #fff'}}>NINA ME CONTOU</div>
+     <div style={{background:'#fff8e9',border:'4px solid #302725',borderRadius:18,padding:'13px 20px',fontSize:25,fontWeight:900,boxShadow:'7px 8px #302725'}}>TESTE REMOTION</div>
+   </div>
+   <div style={{position:'absolute',top:153,left:65,width:950,height:13,background:'#51352d38',borderRadius:18,overflow:'hidden'}}>
+     <div style={{width:`${Math.min(100,100*frame/durationInFrames)}%`,height:'100%',background:'#ca5538',borderRadius:18}} />
+   </div>
+   {/* Cartão ilustrado. Mantém a zona inferior livre para a personagem. */}
+   <div style={{position:'absolute',top:226,left:90,width:900,transform:`translateY(${panelY}px) rotate(${interpolate(appearing,[0,1],[7,index%2?2:-2])}deg) scale(${panelScale})`,opacity:Math.min(1,appearing*1.5,leaving*4),transformOrigin:'50% 25%'}}>
+     <div style={{height:320,background:'#fff7e7',border:'7px solid #302625',borderRadius:22,boxShadow:'18px 22px 0 #47322c55',padding:'30px 42px',boxSizing:'border-box',display:'flex',alignItems:'center',gap:26}}>
+       <div style={{height:195,width:195,borderRadius:24,background:accent,border:'5px solid #292321',display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center',flexShrink:0,transform:`rotate(${Math.sin(t*4)*4}deg)`}}>
+         <span style={{fontSize:78,color:'#302625',fontWeight:950}}>{['?','!', '...', '?!','♥','★','✓'][index%7]}</span>
+         <div style={{height:9,width:85,background:'#302625',borderRadius:4}}/>
+       </div>
+       <div style={{display:'flex',flexDirection:'column',justifyContent:'center',minWidth:0,gap:12}}>
+         <span style={{fontSize:25,fontWeight:900,letterSpacing:4,color:'#b3523e'}}>CAPÍTULO {index+1}</span>
+         <div style={{fontSize:Math.min(49,scene.title.length>22?40:49),lineHeight:1.09,fontWeight:1000,color:'#29221f',textTransform:'uppercase',overflowWrap:'break-word'}}>{scene.title}</div>
+       </div>
+     </div>
+   </div>
+   {/* Linha de fala legível e com progresso, sem reproduzir frases inventadas. */}
+   <div style={{position:'absolute',left:76,right:76,bottom:170,opacity:Math.max(0,textAppear),transform:`translateY(${interpolate(textAppear,[0,1],[36,0])}px)`}}>
+     <div style={{background:'rgba(24,21,22,.89)',border:'4px solid #f6e4bc',borderRadius:26,padding:'26px 30px',textAlign:'center',boxShadow:'0 12px 28px #211c1860'}}>
+       <div style={{fontSize:45,fontWeight:900,color:'#fffaf1',lineHeight:1.18,textShadow:'0 2px #000',minHeight:96,display:'flex',alignItems:'center',justifyContent:'center'}}>{caption}</div>
+     </div>
+   </div>
+   <div style={{position:'absolute',bottom:73,left:72,right:72,display:'flex',justifyContent:'space-between',alignItems:'center',color:'#342420',fontSize:28,fontWeight:950}}>
+     <span style={{background:'#fff7ec',padding:'8px 12px',borderRadius:8}}>HISTÓRIA FICTÍCIA</span>
+     <span style={{background:accent,padding:'9px 15px',borderRadius:9}}>NINA • {Math.round(t)}s</span>
+   </div>
+ </AbsoluteFill>;
+};

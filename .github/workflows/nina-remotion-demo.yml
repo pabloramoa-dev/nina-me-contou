@@ -1,0 +1,81 @@
+name: EXPERIMENTO Nina + Remotion 45s (sem publicar)
+on:
+  push:
+    branches:
+      - experimento/nina-remotion-20261023
+    paths:
+      - 'experimentos/remotion-nina-teste/**'
+      - '.github/workflows/nina-remotion-demo.yml'
+permissions:
+  contents: read
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 110
+    env:
+      NINA_AUTO_VISUAL_IMAGES: '0'
+      NINA_FOTOS: '0'
+      NINA_DIRECAO: '1'
+      NINA_VOICE_FALLBACK: 'false'
+      NINA_MAX_DUR: '90'
+      NINA_LIP: 'rhubarb'
+      NINA_MOTOR: 'hyperframes'
+      HYPERFRAMES_NO_TELEMETRY: '1'
+      DO_NOT_TRACK: '1'
+    steps:
+      - name: Checkout somente da branch de experimento
+        uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          sparse-checkout: |
+            .github/actions/setup-hyperframes
+            .github/workflows/nina-remotion-demo.yml
+            assets
+            motor
+            src
+            video
+            requirements-estudio.txt
+            experimentos/remotion-nina-teste
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+          cache-dependency-path: requirements-estudio.txt
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Dependências nativas e Python
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg pkg-config libcairo2-dev libpango1.0-dev espeak-ng fonts-dejavu-core
+          pip install -r requirements-estudio.txt
+      - uses: ./.github/actions/setup-hyperframes
+      - name: Voz oficial Thalita e base animada original da Nina
+        run: |
+          python motor/produzir.py experimentos/remotion-nina-teste/episodio.json --so voz
+          python motor/produzir.py experimentos/remotion-nina-teste/episodio.json --so lip
+          python motor/produzir.py experimentos/remotion-nina-teste/episodio.json --so video
+      - name: Preparar projeto Remotion
+        working-directory: experimentos/remotion-nina-teste
+        run: |
+          mkdir -p public out
+          cp ../../saida/nina-remotion-demo-20261023/hyperframes/assets/base.mp4 public/nina-base.mp4
+          cp ../../saida/nina-remotion-demo-20261023/hyperframes/assets/mix.wav public/mix.wav
+          python prepare_props.py
+          npm install --no-audit --no-fund
+          npx remotion browser ensure
+      - name: Renderizar novo visual sem publicar
+        working-directory: experimentos/remotion-nina-teste
+        run: |
+          npx remotion render src/index.ts NinaRemotion out/nina-remotion-demo.mp4 --props=props.json --codec=h264 --crf=21 --concurrency=2
+          ffprobe -v error -show_entries stream=codec_type,width,height -show_entries format=duration -of json out/nina-remotion-demo.mp4 | tee out/qa.json
+          ffmpeg -y -v error -ss 00:00:12 -i out/nina-remotion-demo.mp4 -frames:v 1 out/quadro-12s.jpg
+          ffmpeg -y -v error -ss 00:00:28 -i out/nina-remotion-demo.mp4 -frames:v 1 out/quadro-28s.jpg
+          cp props.json out/timeline.json
+      - name: Disponibilizar MP4 para avaliação
+        uses: actions/upload-artifact@v4
+        with:
+          name: nina-remotion-teste-45s
+          path: experimentos/remotion-nina-teste/out/
+          retention-days: 7
