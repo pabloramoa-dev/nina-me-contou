@@ -15,7 +15,7 @@ for seg in segs:
  b=ep['batidas'][i]
  art=b.get('arte') or []
  title=(b.get('tela') or (art[1] if len(art)>1 else '') or b['fala'][:45]).strip()
- scenes.append({'start':float(seg.get('inicio',seg.get('start',0))),
+ scenes.append({'start':float(seg.get('ini',seg.get('inicio',seg.get('start',0)))),
                 'end':float(seg.get('fim',seg.get('end',duration))),
                 'title':title,
                 'fala':b['fala'],
