@@ -62,12 +62,14 @@ jobs:
       - run: sudo apt-get update -qq && sudo apt-get install -y ffmpeg pkg-config libcairo2-dev libpango1.0-dev espeak-ng fonts-dejavu-core
       - run: pip install -r requirements-estudio.txt
       - uses: ./.github/actions/setup-hyperframes
-      - name: Gerar vídeo, capa e Story com Thalita sem publicar
+      - name: Gerar vídeo, capa e Story com Kokoro sem publicar
         env:
           OPENAI_API_KEY: ''
           NINA_AUTO_VISUAL_IMAGES: '0'
           NINA_FOTOS: '0'
           NINA_DIRECAO: '1'
+          NINA_VOICE_ENGINE: 'kokoro'
+          NINA_FINAL_COMPOSITOR: 'hyperframes'
         run: |
           python tools/teste_hyperframes.py
           python motor/produzir.py saida/teste-hf.json
@@ -96,7 +98,7 @@ jobs:
         run: node video/validate-layout.mjs saida/teste-hf/hyperframes
       - uses: actions/upload-artifact@v4
         with:
-          name: nina-hyperframes-integracao-thalita
+          name: nina-hyperframes-integracao-kokoro
           path: |
             saida/teste-hf/teste-hf.mp4
             saida/teste-hf/voz.wav

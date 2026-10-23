@@ -1,0 +1,93 @@
+{
+  "id": "nina-remotion-producao-smoke",
+  "avulso": true,
+  "ep": 1,
+  "parte": 1,
+  "titulo": "A CAIXA QUE ESCONDIA UMA SURPRESA",
+  "temporada": "Laboratório Remotion",
+  "cenario": "tarde",
+  "batidas": [
+    {
+      "fala": "Você abriria um presente com o nome de alguém que nem apareceu na festa? Pois uma amiga minha abriu.",
+      "expr": "desconfiada",
+      "tela": "O PRESENTE MISTERIOSO",
+      "zoom": true,
+      "arte": [
+        "titulo",
+        "O PRESENTE MISTERIOSO"
+      ],
+      "destaque": [
+        "presente",
+        "festa"
+      ]
+    },
+    {
+      "fala": "Era uma caixa azul, escondida no canto da sala, que parecia ter sido esquecida ali.",
+      "expr": "neutra",
+      "tela": "UMA CAIXA AZUL",
+      "arte": [
+        "titulo",
+        "UMA CAIXA AZUL"
+      ],
+      "destaque": [
+        "caixa",
+        "azul"
+      ]
+    },
+    {
+      "fala": "A aniversariante chamou a irmã e perguntou: quem trouxe isso? A irmã ficou em silêncio.",
+      "expr": "desconfiada",
+      "tela": "QUEM TROUXE ISSO?",
+      "arte": [
+        "interrogacao",
+        "QUEM TROUXE ISSO?"
+      ],
+      "destaque": [
+        "quem",
+        "irmã"
+      ]
+    },
+    {
+      "fala": "Até que ela olhou para a caixa e começou a rir. Minha amiga abriu, ainda mais curiosa.",
+      "expr": "chocada",
+      "tela": "ELA COMEÇOU A RIR",
+      "zoom": true,
+      "arte": [
+        "titulo",
+        "ELA COMEÇOU A RIR"
+      ],
+      "destaque": [
+        "rir",
+        "abriu"
+      ]
+    },
+    {
+      "fala": "Lá dentro, havia fotografias antigas e pequenas lembranças das duas, guardadas desde a infância.",
+      "expr": "ironica",
+      "tela": "FOTOS DA INFÂNCIA",
+      "arte": [
+        "titulo",
+        "FOTOS DA INFÂNCIA"
+      ],
+      "destaque": [
+        "fotografias",
+        "infância"
+      ]
+    },
+    {
+      "fala": "Era uma surpresa preparada havia meses. E a melhor parte não foi o presente, mas o abraço que veio depois.",
+      "expr": "neutra",
+      "tela": "A VERDADEIRA SURPRESA",
+      "arte": [
+        "titulo",
+        "A VERDADEIRA SURPRESA"
+      ],
+      "destaque": [
+        "surpresa",
+        "abraço"
+      ]
+    }
+  ],
+  "fim": "UM SEGREDO BONITO",
+  "legenda_post": "Uma caixa misteriosa no meio da festa... e um final que ninguém imaginava. 💛 História fictícia. #NinaMeContou #Historias #Reels"
+}

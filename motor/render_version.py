@@ -24,4 +24,19 @@ def versao():
         sys.path.insert(0, str(root))
     from tools.channel_ops import engine_signature
     engine = engine_signature(Path(__file__).resolve().parents[1])[:12]
-    return HYPERFRAMES_VERSION + extra + "-images-" + fingerprint + '-engine-' + engine
+    # Inclui TS/TSX do Remotion e a escolha de voz; mudança visual renova apenas
+    # vídeos ainda não publicados (src/fila.py mantém o histórico intacto).
+    compositor = os.environ.get("NINA_FINAL_COMPOSITOR", "remotion")
+    voz = os.environ.get("NINA_VOICE_ENGINE", "kokoro")
+    speed = os.environ.get("NINA_KOKORO_SPEED", "1.02")
+    voice_name = os.environ.get("NINA_KOKORO_VOICE", "pf_dora")
+    visual = hashlib.sha256()
+    prod = root / "video" / "remotion"
+    for suffix in ("*.ts", "*.tsx", "package.json"):
+        for path in sorted(prod.rglob(suffix)) if prod.exists() else []:
+            if "node_modules" in path.parts:
+                continue
+            visual.update(str(path.relative_to(root)).encode())
+            visual.update(path.read_bytes())
+    identidade = f"-final-{compositor}-{visual.hexdigest()[:10]}-voz-{voz}-{voice_name}-{speed}"
+    return HYPERFRAMES_VERSION + extra + "-images-" + fingerprint + '-engine-' + engine + identidade

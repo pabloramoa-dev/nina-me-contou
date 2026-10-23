@@ -4,8 +4,8 @@ name: Produzir episódios
 # teve o roteiro/versão de render editado depois do render) e grava MP4 + capa + versão Story.
 # Cada parte roda numa máquina própria, em paralelo. Nada é publicado aqui.
 # Todo vídeo sai com o CTA de seguir no FINAL (motor/cta.py).
-# Voz oficial: Microsoft Thalita Neural pt-BR, rate -6%.
-# Visual v4 (legenda pílula, título manuscrito, partículas) + lip sync Rhubarb.
+# Voz principal: Kokoro Dora pf_dora (local, conforme teste aprovado).
+# Visual final: Remotion, legendas leves embaixo; Nina e lip sync originais.
 
 on:
   push:

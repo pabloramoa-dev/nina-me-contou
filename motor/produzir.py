@@ -6,9 +6,9 @@
   python motor/produzir.py episodios/ep001-p1.json --rapido   # prévia 540p
 
 Etapas (pula o que já existe; apague o arquivo para refazer):
-  voz   -> saida/<id>/voz.wav + segs.json   (Thalita Neural pt-BR, master Pedalboard)
+  voz   -> saida/<id>/voz.wav + segs.json   (Kokoro Dora pf_dora local, master Pedalboard)
   lip   -> saida/<id>/lip.json              (lip sync por amplitude, 30 fps)
-  video -> saida/<id>/<id>.mp4              (Nina original + HyperFrames, padrão)
+  video -> saida/<id>/<id>.mp4              (Nina original + HyperFrames + Remotion, padrão)
   tex   -> compatibilidade: mesma composição completa no motor HyperFrames
   mux   -> compatibilidade: mesma composição completa no motor HyperFrames
   capa  -> saida/<id>/capa.png              (capa do Reel)
@@ -46,6 +46,12 @@ def main():
     from visual_images import preparar_roteiro, config as visual_config
     ep = preparar_roteiro(ep)
     ep['visual_images'] = visual_config(ep)
+    # A nova voz principal é a mesma do vídeo Remotion aprovado (Kokoro Dora).
+    # Uma voz definida explicitamente no roteiro continua sendo respeitada.
+    ep["voice_engine"] = str(ep.get("voice_engine") or os.environ.get("NINA_VOICE_ENGINE", "kokoro")).lower()
+    if ep["voice_engine"] == "kokoro":
+        ep.setdefault("kokoro_voice", os.environ.get("NINA_KOKORO_VOICE", "pf_dora"))
+        ep.setdefault("kokoro_speed", float(os.environ.get("NINA_KOKORO_SPEED", "1.02")))
     ep["_render_version"] = versao()
     usa_hf = os.environ.get("NINA_MOTOR", "hyperframes") == "hyperframes"
     pasta = os.path.join(RAIZ, "saida", ep["id"])
@@ -63,10 +69,10 @@ def main():
     if quer("voz") and not os.path.exists(P("voz.wav")):
         with open(P("roteiro.txt"), "w", encoding="utf-8") as f:
             f.write("\n".join(b["fala"] for b in ep["batidas"]) + "\n")
-        voice_engine = str(ep.get("voice_engine") or os.environ.get("NINA_VOICE_ENGINE", "thalita")).lower()
+        voice_engine = str(ep.get("voice_engine") or os.environ.get("NINA_VOICE_ENGINE", "kokoro")).lower()
         if voice_engine == "kokoro":
             kokoro_voice = str(ep.get("kokoro_voice") or os.environ.get("NINA_KOKORO_VOICE", "pf_dora"))
-            kokoro_speed = str(ep.get("kokoro_speed") or os.environ.get("NINA_KOKORO_SPEED", "1.05"))
+            kokoro_speed = str(ep.get("kokoro_speed") or os.environ.get("NINA_KOKORO_SPEED", "1.02"))
             sh([sys.executable, os.path.join(MOTOR, "gerar_voz_kokoro.py"), P("roteiro.txt"),
                 "--voz", kokoro_voice, "--speed", kokoro_speed, "--gap", str(GAP),
                 "--out", P("bruta.wav"), "--seg-json", P("segs.json")])
@@ -102,6 +108,15 @@ def main():
         if a.rapido:
             os.environ["NINA_HF_BASE_WIDTH"] = "540"
         renderizar(ep, pasta, RAIZ)
+
+    # Remotion é o acabamento padrão aprovado: cartões no alto, Nina visível e
+    # legendas soltas na parte inferior. A camada HyperFrames fica disponível
+    # para reversão explícita por NINA_FINAL_COMPOSITOR=hyperframes.
+    if usa_hf and (quer("video") or quer("tex") or quer("mux")) and os.environ.get("NINA_FINAL_COMPOSITOR", "remotion") == "remotion":
+        meta = json.load(open(P("render.json"), encoding="utf-8"))
+        if meta.get("motor") != "remotion":
+            from remotion_final import finalizar
+            finalizar(ep, pasta, RAIZ)
 
     if not usa_hf and quer("video") and not os.path.exists(P("raw.mp4")):
         q = ["-ql"] if a.rapido else []

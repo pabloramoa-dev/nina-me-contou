@@ -13,8 +13,8 @@ CTA de seguir pra não perder a continuação (`motor/cta.py`).
    O plano anual possui **730 histórias / 1.460 vídeos**, suficientes para 365 dias no ritmo atual.
    Cada história entra em `episodios/` como `epNNN-p1.json` + `epNNN-p2.json`.
 2. Na mesma execução, o estúdio pega os roteiros ainda sem MP4
-   (uma máquina por parte, em paralelo): gera voz (**Thalita Neural pt-BR**), lip sync, vídeo
-   (personagem Manim + composição HyperFrames), capa e a versão Story (≤59 s, mantendo o CTA final), e grava em `reels/`.
+   (uma máquina por parte, em paralelo): gera voz (**Kokoro Dora pf_dora, local**), lip sync, vídeo
+   (Nina original/HyperFrames + acabamento Remotion), capa e a versão Story (≤59 s, mantendo o CTA final), e grava em `reels/`.
    Roteiro ou versão de render alterado depois do render volta sozinho pro estúdio (`reels/<id>.hash`).
 3. O workflow **Publicar Reel** roda às 8h, 12h, 16h e 20h e publica o próximo da
    sequência: continuação pendente primeiro, depois a parte 1 do próximo episódio
@@ -24,12 +24,22 @@ CTA de seguir pra não perder a continuação (`motor/cta.py`).
    O aviso agora significa falha de produção/render, porque os roteiros são reabastecidos automaticamente.
 5. **Renovar a credencial** (segunda, 5h): renova o token de 60 dias sozinho.
 
-## Voz oficial da Nina
+## Voz principal da Nina (aprovada em 23/10/2026)
 
-A voz definitiva é **Microsoft `pt-BR-ThalitaNeural`**, com velocidade **`-6%`**.
-O gerador canônico é `motor/gerar_voz_thalita.py` e `motor/produzir.py` chama esse motor por padrão.
-Kokoro/Dora permanece apenas como código legado/manual e não deve ser usado na produção normal.
-A troca de voz altera a versão de render, portanto vídeos ainda não publicados feitos com Dora retornam automaticamente ao estúdio para serem refeitos com Thalita.
+A voz principal agora é **Kokoro Dora (`pf_dora`)**, em português brasileiro,
+com velocidade **1.02**, executada localmente no GitHub Actions, sem depender
+do serviço Edge TTS. O código `motor/gerar_voz_kokoro.py` é a fonte padrão;
+`NINA_VOICE_ENGINE=thalita` ou `voice_engine` no roteiro são opções explícitas
+de reversão. A narração continua passando pelo master de áudio e o Rhubarb.
+
+O novo renderizador final padrão é **Remotion**, usando o vídeo base da própria
+Nina gerado pelo HyperFrames. Mantém os quadros animados no alto e as legendas
+brancas soltas, com contorno e **posição inferior**, sem caixa escura.
+`NINA_FINAL_COMPOSITOR=hyperframes` restaura o acabamento anterior sem
+alterar os fluxos de publicação. Sem esse override, a publicação automática
+usa o novo visual. A alteração da assinatura pede novos renders **somente
+de vídeos ainda não publicados**, preservando o histórico das postagens.
+
 
 ## Configuração (uma vez)
 
@@ -53,9 +63,9 @@ O log mostra qual episódio sairia, o link do vídeo e da capa, sem publicar.
 
 História de ficção, inspirada em causo de família.
 
-## Visual padrão: HyperFrames
+## Motor base HyperFrames e acabamento final Remotion
 
-Os próximos episódios usam o visual aprovado: Nina original, **voz Thalita**, varanda diurna ou noturna, recortes com fita e sombra, textura de papel, câmera, legendas com destaque, transições, mensagens, ilustrações animadas e trilha/efeitos originais sob a narração. A duração acompanha a fala, sem acelerar a voz para forçar um minuto.
+Os próximos episódios usam o visual aprovado: Nina original, **voz Kokoro Dora**, varanda diurna ou noturna, recortes com fita e sombra, textura de papel, câmera, legendas com destaque, transições, mensagens, ilustrações animadas e trilha/efeitos originais sob a narração. A duração acompanha a fala, sem acelerar a voz para forçar um minuto.
 
 Instale `requirements-estudio.txt`, execute `npm ci --prefix video` e `cd video && npx --no-install hyperframes browser ensure`. O workflow instala tudo automaticamente. Exporte normalmente com `python motor/produzir.py episodios/epNNN-p1.json --publicar-em saida_reels`.
 
@@ -108,4 +118,4 @@ Configuração: `motor/visual_images.json`; detalhes em [docs/visual-images.md](
 **Ativação da API pendente:** o teste de 07/10/2026 detectou `OPENAI_API_KEY` ausente
 nos secrets do repositório. Até cadastrar essa chave, novos episódios usam o fallback
 configurado. O teste promocional de layout usa explicitamente seis imagens aprovadas;
-isso não comprova geração nova pela API. A voz padrão e a apresentadora são preservadas.
+isso não comprova geração nova pela API. A voz principal Kokoro Dora e a apresentadora original são preservadas.

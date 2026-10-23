@@ -3,7 +3,7 @@ name: Produzir avulso rápido
 on:
   push:
     branches: [main]
-    paths: ["avulsos_fast/**.json"]
+    paths: ["avulsos_fast/**.json", "motor/produzir.py", "motor/remotion_final.py", "video/remotion/**"]
 
 permissions:
   contents: read
@@ -22,6 +22,7 @@ jobs:
             assets
             motor
             src
+            tools
             video
             avulsos_fast
             requirements-estudio.txt

@@ -9,7 +9,7 @@ name: Produzir vídeo avulso
 on:
   push:
     branches: [main]
-    paths: ["avulsos/**.json", "motor/produzir.py", "motor/gerar_voz_thalita.py", "motor/gerar_voz_kokoro.py", ".github/workflows/avulso.yml"]
+    paths: ["avulsos/**.json", "motor/produzir.py", "motor/gerar_voz_thalita.py", "motor/gerar_voz_kokoro.py", "motor/remotion_final.py", "video/remotion/**", ".github/workflows/avulso.yml"]
   workflow_dispatch:
 
 concurrency:

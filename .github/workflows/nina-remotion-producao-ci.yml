@@ -1,0 +1,86 @@
+name: Validar Nina Remotion e Kokoro (sem publicar)
+on:
+  push:
+    branches: [feat/nina-remotion-kokoro-producao-20261023]
+    paths:
+      - 'video/remotion/**'
+      - 'motor/produzir.py'
+      - 'motor/remotion_final.py'
+      - 'motor/render_version.py'
+      - 'tests/test_remotion_prod.py'
+      - '.github/workflows/nina-remotion-producao-ci.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'video/remotion/**'
+      - 'motor/remotion_final.py'
+      - 'motor/produzir.py'
+permissions:
+  contents: read
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 110
+    env:
+      NINA_AUTO_VISUAL_IMAGES: '0'
+      NINA_FOTOS: '0'
+      NINA_VOICE_ENGINE: 'kokoro'
+      NINA_KOKORO_VOICE: 'pf_dora'
+      NINA_KOKORO_SPEED: '1.02'
+      NINA_FINAL_COMPOSITOR: 'remotion'
+      NINA_MAX_DUR: '90'
+      NINA_DIRECAO: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          sparse-checkout: |
+            .github/actions/setup-hyperframes
+            assets
+            motor
+            src
+            tools
+            video
+            tests
+            requirements-estudio.txt
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+          cache-dependency-path: requirements-estudio.txt
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Dependências e testes rápidos
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg pkg-config libcairo2-dev libpango1.0-dev espeak-ng fonts-dejavu-core
+          pip install -r requirements-estudio.txt
+          python -m unittest tests/test_remotion_prod.py -v
+          python -m compileall -q motor src
+      - uses: ./.github/actions/setup-hyperframes
+      - name: Renderizar Nina original + Kokoro + Remotion sem publicar
+        run: |
+          python motor/produzir.py video/remotion/fixtures/smoke.json
+          python - <<'PY'
+          from pathlib import Path
+          import json,subprocess
+          p=Path('saida/nina-remotion-producao-smoke')
+          m=json.loads((p/'render.json').read_text())
+          assert m['motor']=='remotion',m
+          assert m['voz']=='pf_dora',m
+          assert m['legenda']=='solta_sem_faixa_inferior',m
+          assert (p/'nina-remotion-producao-smoke.mp4').stat().st_size>100000
+          assert (p/'capa.png').stat().st_size>10000
+          print('RENDER OK: Remotion + Kokoro Dora')
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: nina-prod-remotion-kokoro-smoke
+          path: |
+            saida/nina-remotion-producao-smoke/nina-remotion-producao-smoke.mp4
+            saida/nina-remotion-producao-smoke/render.json
+            saida/nina-remotion-producao-smoke/qualidade.json
+          retention-days: 5
