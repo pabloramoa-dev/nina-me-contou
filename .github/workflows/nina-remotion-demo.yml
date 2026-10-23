@@ -33,6 +33,7 @@ jobs:
             assets
             motor
             src
+            tools
             video
             requirements-estudio.txt
             experimentos/remotion-nina-teste
