@@ -5,7 +5,7 @@
   "account": "ninamecontou",
   "id": 403133039,
   "uuid": "6130395860759233334",
-  "status": "agendado",
+  "status": "publicado",
   "publicationDate": {
     "dateTime": "2026-10-22T18:00:00",
     "timezone": "America/Sao_Paulo"
@@ -25,5 +25,10 @@
     "audio_mean_db": -17.1,
     "visual_frames_checked": true
   },
-  "caption": "Ela seguiu o marido até o restaurante. Na mesa do fundo, encontrou alguém que não via havia três anos. ☕💛\nQual conversa você anda adiando?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Familia"
+  "caption": "Ela seguiu o marido até o restaurante. Na mesa do fundo, encontrou alguém que não via havia três anos. ☕💛\nQual conversa você anda adiando?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Familia",
+  "providerStatus": "PUBLISHED",
+  "providerDetailedStatus": "Published",
+  "tiktokVideoId": "7699600613394418945",
+  "publicUrl": "https://www.tiktok.com/@ninamecontou/video/7699600613394418945",
+  "publicationConfirmedAt": "2026-10-23T08:04:10-03:00"
 }
