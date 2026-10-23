@@ -56,8 +56,8 @@ export const NinaUpgrade:React.FC<NinaProps>=({scenes})=>{
        </div>
      </div>
    </div>
-   {/* Legendas leves no espaço ENTRE o cartão e o cabelo da Nina: sem caixa escura, sem encobrir o corpo. */}
-   <div style={{position:'absolute',left:100,right:100,top:604,minHeight:102,display:'flex',justifyContent:'center',alignItems:'center',opacity:Math.max(0,textAppear),transform:`translateY(${interpolate(textAppear,[0,1],[16,0])}px)`,pointerEvents:'none'}}>
+   {/* Legendas na parte inferior, sem painel fixo: estilo solto aprovado pelo usuário. */}
+   <div style={{position:'absolute',left:100,right:100,bottom:195,minHeight:112,display:'flex',justifyContent:'center',alignItems:'center',opacity:Math.max(0,textAppear),transform:`translateY(${interpolate(textAppear,[0,1],[16,0])}px)`,pointerEvents:'none'}}>
      <div style={{maxWidth:880,fontSize:40,fontWeight:950,lineHeight:1.12,letterSpacing:0.3,textAlign:'center',color:'#fffdf6',WebkitTextStroke:'1px #1d201e',textShadow:'3px 3px 0 #292321,-3px 3px 0 #292321,3px -3px 0 #292321,-3px -3px 0 #292321,0 6px 10px #292321aa'}}>
        {caption}
      </div>
