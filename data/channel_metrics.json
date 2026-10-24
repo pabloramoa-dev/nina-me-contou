@@ -1,0 +1,330 @@
+{
+  "measurements": [
+    {
+      "media_id": "18124276105933896",
+      "window": "24h",
+      "age_hours": 24.1,
+      "collected_at": "2026-10-24T18:13:07.544532+00:00",
+      "metrics": {
+        "reach": 0,
+        "shares": 0,
+        "saved": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares_per_1000_reached": null
+      }
+    },
+    {
+      "media_id": "18122395573940314",
+      "window": "24h",
+      "age_hours": 39.84,
+      "collected_at": "2026-10-24T18:13:07.544532+00:00",
+      "metrics": {
+        "reach": 7,
+        "shares": 0,
+        "saved": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares_per_1000_reached": 0.0
+      }
+    },
+    {
+      "media_id": "17920788528244616",
+      "window": "24h",
+      "age_hours": 40.13,
+      "collected_at": "2026-10-24T18:13:07.544532+00:00",
+      "metrics": {
+        "reach": 17,
+        "shares": 0,
+        "saved": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares_per_1000_reached": 0.0
+      }
+    },
+    {
+      "media_id": "18105635435004685",
+      "window": "24h",
+      "age_hours": 40.7,
+      "collected_at": "2026-10-24T18:13:07.544532+00:00",
+      "metrics": {
+        "reach": 13,
+        "shares": 0,
+        "saved": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares_per_1000_reached": 0.0
+      }
+    },
+    {
+      "media_id": "18483462022117214",
+      "window": "24h",
+      "age_hours": 40.71,
+      "collected_at": "2026-10-24T18:13:07.544532+00:00",
+      "metrics": {
+        "reach": 1,
+        "shares": 0,
+        "saved": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares_per_1000_reached": 0.0
+      }
+    },
+    {
+      "media_id": "18116118116111504",
+      "window": "24h",
+      "age_hours": 43.91,
+      "collected_at": "2026-10-24T18:13:07.544532+00:00",
+      "metrics": {
+        "reach": 17,
+        "shares": 0,
+        "saved": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares_per_1000_reached": 0.0
+      }
+    },
+    {
+      "media_id": "18117373045996908",
+      "window": "24h",
+      "age_hours": 46.97,
+      "collected_at": "2026-10-24T18:13:07.544532+00:00",
+      "metrics": {
+        "reach": 102,
+        "shares": 0,
+        "saved": 0,
+        "likes": 1,
+        "comments": 0,
+        "shares_per_1000_reached": 0.0
+      }
+    },
+    {
+      "media_id": "18120440434993963",
+      "window": "24h",
+      "age_hours": 50.27,
+      "collected_at": "2026-10-24T18:13:07.544532+00:00",
+      "metrics": {
+        "reach": 42,
+        "shares": 0,
+        "saved": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares_per_1000_reached": 0.0
+      }
+    },
+    {
+      "media_id": "18181065232439599",
+      "window": "24h",
+      "age_hours": 64.7,
+      "collected_at": "2026-10-24T18:13:07.544532+00:00",
+      "metrics": {
+        "reach": 85,
+        "shares": 0,
+        "saved": 0,
+        "likes": 3,
+        "comments": 0,
+        "shares_per_1000_reached": 0.0
+      }
+    },
+    {
+      "media_id": "17950873041054204",
+      "window": "24h",
+      "age_hours": 67.88,
+      "collected_at": "2026-10-24T18:13:07.544532+00:00",
+      "metrics": {
+        "reach": 53,
+        "shares": 0,
+        "saved": 0,
+        "likes": 1,
+        "comments": 0,
+        "shares_per_1000_reached": 0.0
+      }
+    },
+    {
+      "media_id": "17909819433589497",
+      "window": "24h",
+      "age_hours": 70.89,
+      "collected_at": "2026-10-24T18:13:07.544532+00:00",
+      "metrics": {
+        "reach": 13,
+        "shares": 0,
+        "saved": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares_per_1000_reached": 0.0
+      }
+    },
+    {
+      "media_id": "18347565073284026",
+      "window": "72h",
+      "age_hours": 74.23,
+      "collected_at": "2026-10-24T18:13:07.544532+00:00",
+      "metrics": {
+        "reach": 43,
+        "shares": 0,
+        "saved": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares_per_1000_reached": 0.0
+      }
+    },
+    {
+      "media_id": "18023291549873711",
+      "window": "72h",
+      "age_hours": 98.55,
+      "collected_at": "2026-10-24T18:13:07.544532+00:00",
+      "metrics": {
+        "reach": 8,
+        "shares": 0,
+        "saved": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares_per_1000_reached": 0.0
+      }
+    },
+    {
+      "media_id": "18130028470691044",
+      "window": "72h",
+      "age_hours": 112.41,
+      "collected_at": "2026-10-24T18:13:07.544532+00:00",
+      "metrics": {
+        "reach": 8,
+        "shares": 0,
+        "saved": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares_per_1000_reached": 0.0
+      }
+    },
+    {
+      "media_id": "18126249842478301",
+      "window": "72h",
+      "age_hours": 115.27,
+      "collected_at": "2026-10-24T18:13:07.544532+00:00",
+      "metrics": {
+        "reach": 15,
+        "shares": 0,
+        "saved": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares_per_1000_reached": 0.0
+      }
+    },
+    {
+      "media_id": "18631629217053817",
+      "window": "72h",
+      "age_hours": 117.61,
+      "collected_at": "2026-10-24T18:13:07.544532+00:00",
+      "metrics": {
+        "reach": 0,
+        "shares": 0,
+        "saved": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares_per_1000_reached": null
+      }
+    },
+    {
+      "media_id": "18105208334205699",
+      "window": "72h",
+      "age_hours": 120.73,
+      "collected_at": "2026-10-24T18:13:07.544532+00:00",
+      "metrics": {
+        "reach": 5,
+        "shares": 0,
+        "saved": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares_per_1000_reached": 0.0
+      }
+    },
+    {
+      "media_id": "18110722301174232",
+      "window": "72h",
+      "age_hours": 137.03,
+      "collected_at": "2026-10-24T18:13:07.544532+00:00",
+      "metrics": {
+        "reach": 48,
+        "shares": 0,
+        "saved": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares_per_1000_reached": 0.0
+      }
+    },
+    {
+      "media_id": "18099889601537345",
+      "window": "72h",
+      "age_hours": 140.73,
+      "collected_at": "2026-10-24T18:13:07.544532+00:00",
+      "metrics": {
+        "reach": 176,
+        "shares": 0,
+        "saved": 0,
+        "likes": 3,
+        "comments": 0,
+        "shares_per_1000_reached": 0.0
+      }
+    },
+    {
+      "media_id": "18591075154070535",
+      "window": "72h",
+      "age_hours": 144.14,
+      "collected_at": "2026-10-24T18:13:07.544532+00:00",
+      "metrics": {
+        "reach": 41,
+        "shares": 0,
+        "saved": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares_per_1000_reached": 0.0
+      }
+    },
+    {
+      "media_id": "18106373483214037",
+      "window": "72h",
+      "age_hours": 147.68,
+      "collected_at": "2026-10-24T18:13:07.544532+00:00",
+      "metrics": {
+        "reach": 44,
+        "shares": 0,
+        "saved": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares_per_1000_reached": 0.0
+      }
+    },
+    {
+      "media_id": "17934511386396931",
+      "window": "72h",
+      "age_hours": 161.23,
+      "collected_at": "2026-10-24T18:13:07.544532+00:00",
+      "metrics": {
+        "reach": 14,
+        "shares": 0,
+        "saved": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares_per_1000_reached": 0.0
+      }
+    },
+    {
+      "media_id": "18289235776293758",
+      "window": "72h",
+      "age_hours": 164.78,
+      "collected_at": "2026-10-24T18:13:07.544532+00:00",
+      "metrics": {
+        "reach": 44,
+        "shares": 0,
+        "saved": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares_per_1000_reached": 0.0
+      }
+    }
+  ],
+  "status": "ok",
+  "errors": [],
+  "updated_at": "2026-10-24T18:13:07.544532+00:00",
+  "account": "ninamecontou"
+}
