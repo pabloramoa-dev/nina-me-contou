@@ -1,0 +1,197 @@
+{
+  "id": "nina-politica-20261024-teste-5-noticias",
+  "titulo": "NINA COMENTA | 5 NOTÍCIAS DA POLÍTICA",
+  "avulso": true,
+  "temporada": "Piloto avulso — notícias e análise",
+  "cenario": "tarde",
+  "voice_engine": "kokoro",
+  "kokoro_voice": "pf_dora",
+  "kokoro_speed": 1.02,
+  "publicar_automaticamente": false,
+  "nao_publicar": true,
+  "editoria": "Política | comentário com perspectiva conservadora",
+  "data_referencia": "2026-10-24",
+  "recorte": "informações verificadas na manhã de 24/10/2026; não inclui resultados da pesquisa prevista para a noite",
+  "fontes": [
+    "https://www.cnnbrasil.com.br/eleicoes/debate-presidencial-flavio-lula-2o-turno/",
+    "https://www1.folha.uol.com.br/poder/2026/10/datafolha-divulga-pesquisa-de-2o-turno-para-presidente-e-df-neste-sabado-24-live-comenta-resultados.shtml",
+    "https://www.cnnbrasil.com.br/eleicoes/tse-determina-que-nikolas-e-marcal-evitem-conteudos-eleitorais-ate-2o-turno/",
+    "https://agenciabrasil.ebc.com.br/justica/noticia/2026-10/tse-da-24h-para-meta-e-x-explicarem-distribuicao-de-material-politico",
+    "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/campanha-de-lula-apresenta-acordo-com-flavio-para-abrir-sigilos"
+  ],
+  "batidas": [
+    {
+      "fala": "Faltando um dia para o segundo turno, eu sou a Nina, e hoje vou comentar cinco notícias da política, com um olhar conservador e compromisso com os fatos.",
+      "expr": "animada",
+      "arte": [
+        "titulo",
+        "NINA COMENTA: 5 NOTÍCIAS"
+      ],
+      "destaque": [
+        "cinco notícias",
+        "fatos"
+      ],
+      "zoom": true,
+      "foto": false
+    },
+    {
+      "fala": "Primeira notícia: Lula e Flávio Bolsonaro fizeram ontem o último debate na TV Globo. Economia, segurança e custo de vida ficaram no centro da discussão.",
+      "expr": "neutra",
+      "arte": [
+        "manchete_v",
+        "1. O ÚLTIMO DEBATE"
+      ],
+      "destaque": [
+        "último debate",
+        "economia",
+        "segurança"
+      ],
+      "zoom": true,
+      "foto": false
+    },
+    {
+      "fala": "Flávio criticou os gastos federais e o endividamento. Lula defendeu investimentos e programas do governo. Na minha visão, o eleitor merece números, propostas e resultados; não só acusações.",
+      "expr": "ironica",
+      "arte": [
+        "manchete",
+        "PROPOSTAS E RESULTADOS"
+      ],
+      "destaque": [
+        "gastos federais",
+        "resultados"
+      ],
+      "zoom": false,
+      "foto": false
+    },
+    {
+      "fala": "Segunda notícia: na última pesquisa Datafolha, divulgada quinta-feira, os dois candidatos apareceram com cinquenta por cento dos votos válidos, após arredondamento.",
+      "expr": "surpresa",
+      "arte": [
+        "manchete_v",
+        "2. EMPATE TÉCNICO"
+      ],
+      "destaque": [
+        "cinquenta por cento",
+        "Datafolha"
+      ],
+      "zoom": true,
+      "foto": false
+    },
+    {
+      "fala": "Um novo levantamento está previsto para hoje à noite. Pesquisa é retrato do momento, não resultado de urna. De direita ou de esquerda, ninguém pode anunciar vitória antes dos votos.",
+      "expr": "neutra",
+      "arte": [
+        "titulo",
+        "PESQUISA NÃO É RESULTADO"
+      ],
+      "destaque": [
+        "retrato do momento",
+        "urna"
+      ],
+      "zoom": false,
+      "foto": false
+    },
+    {
+      "fala": "Terceira notícia: o TSE determinou que Nikolas Ferreira e Pablo Marçal não divulguem conteúdo eleitoral até o fim da votação de domingo. Há previsão de multa por descumprimento.",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete_v",
+        "3. DECISÃO DO TSE"
+      ],
+      "destaque": [
+        "TSE",
+        "Nikolas Ferreira",
+        "Pablo Marçal"
+      ],
+      "zoom": true,
+      "foto": false
+    },
+    {
+      "fala": "A preocupação, sob uma ótica conservadora, é conciliar liberdade de expressão e cumprimento da lei. Decisões eleitorais precisam de fundamentos claros e regras iguais para todos.",
+      "expr": "neutra",
+      "arte": [
+        "titulo",
+        "LIBERDADE E RESPONSABILIDADE"
+      ],
+      "destaque": [
+        "liberdade de expressão",
+        "regras iguais"
+      ],
+      "zoom": false,
+      "foto": false
+    },
+    {
+      "fala": "Quarta notícia: o TSE pediu explicações à Meta e ao X sobre a distribuição de conteúdo político. A campanha de Lula alega favorecimento a Flávio nas plataformas.",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete_v",
+        "4. REDES SOCIAIS NO TSE"
+      ],
+      "destaque": [
+        "Meta",
+        "X",
+        "alega"
+      ],
+      "zoom": true,
+      "foto": false
+    },
+    {
+      "fala": "Importante: o próprio tribunal disse que os elementos apresentados ainda não comprovam tratamento político diferente. Transparência dos algoritmos é importante, sem transformar suspeita em prova.",
+      "expr": "neutra",
+      "arte": [
+        "manchete",
+        "SUSPEITA NÃO É PROVA"
+      ],
+      "destaque": [
+        "ainda não comprovam",
+        "transparência"
+      ],
+      "zoom": false,
+      "foto": false
+    },
+    {
+      "fala": "Quinta notícia: as campanhas de Lula e Flávio apresentaram acordo para autorizar abertura de sigilos bancários, fiscais e telefônicos, também de pessoas relacionadas.",
+      "expr": "neutra",
+      "arte": [
+        "manchete_v",
+        "5. ACORDO SOBRE SIGILOS"
+      ],
+      "destaque": [
+        "acordo",
+        "sigilos"
+      ],
+      "zoom": true,
+      "foto": false
+    },
+    {
+      "fala": "O texto depende de análise do ministro André Mendonça no TSE. Minha avaliação é simples: transparência deve ser cobrada de qualquer político, independentemente do partido.",
+      "expr": "ironica",
+      "arte": [
+        "titulo",
+        "TRANSPARÊNCIA PARA TODOS"
+      ],
+      "destaque": [
+        "depende de análise",
+        "qualquer político"
+      ],
+      "zoom": false,
+      "foto": false
+    },
+    {
+      "fala": "Essas foram as cinco pautas desta manhã de sábado, vinte e quatro de outubro. Qual delas merece mais explicações? Comente com respeito, e confira as fontes na descrição.",
+      "expr": "animada",
+      "arte": [
+        "interrogacao",
+        "QUAL NOTÍCIA MERECE ATENÇÃO?"
+      ],
+      "destaque": [
+        "fontes",
+        "com respeito"
+      ],
+      "zoom": false,
+      "foto": false
+    }
+  ],
+  "fim": "NINA COMENTA | 24 DE OUTUBRO",
+  "legenda_post": "Nina comenta 5 notícias da política brasileira em 24/10/2026: último debate presidencial, pesquisa Datafolha, decisão do TSE sobre Nikolas Ferreira e Pablo Marçal, questionamentos a Meta/X e acordo sobre abertura de sigilos de Lula e Flávio Bolsonaro.\n\nEdição com perspectiva conservadora. Os fatos e as interpretações estão identificados. Pesquisa não é resultado eleitoral; a nova pesquisa Datafolha está prevista para a noite de hoje.\n\nFontes: CNN Brasil (debate; TSE e Nikolas/Marçal), Folha de S.Paulo (Datafolha), Agência Brasil (Meta/X; acordo de sigilos). Links disponíveis no roteiro do GitHub.\n\nEste é um teste editorial. Não houve publicação automática.\n\n#NinaComenta #NoticiasDoDia #PoliticaBrasileira #Eleições2026"
+}
