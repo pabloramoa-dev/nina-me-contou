@@ -79,7 +79,8 @@
   },
   "carrossel-20261024": {
     "container_id": "18129132661787127",
-    "status": "unknown",
-    "created_at": "2026-10-24T17:04:54.240435+00:00"
+    "status": "published",
+    "created_at": "2026-10-24T17:04:54.240435+00:00",
+    "media_id": "18007696364793804"
   }
 }
