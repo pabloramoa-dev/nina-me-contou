@@ -1,0 +1,43 @@
+name: Piloto Breno na Pauta (sem publicar)
+on:
+  push:
+    branches: ['piloto/breno-na-pauta-20261024']
+    paths:
+      - 'pilotos/breno/**'
+      - '.github/workflows/piloto-breno.yml'
+permissions:
+  contents: read
+jobs:
+  renderizar-piloto:
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          sparse-checkout: |
+            pilotos/breno
+            motor/gerar_voz_kokoro.py
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Dependências do piloto (CPU)
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg espeak-ng fonts-dejavu-core
+          pip install -q kokoro-onnx soundfile numpy Pillow
+      - name: Compilar e renderizar Breno (sem publicar)
+        run: |
+          python -m py_compile pilotos/breno/render.py motor/gerar_voz_kokoro.py
+          python -u pilotos/breno/render.py
+          ffprobe -v error -show_entries stream=codec_type,width,height -of json pilotos/breno/saida/breno-na-pauta-piloto-20261024.mp4
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: breno-na-pauta-piloto-20261024
+          path: |
+            pilotos/breno/saida/breno-na-pauta-piloto-20261024.mp4
+            pilotos/breno/saida/piloto.json
+            pilotos/breno/saida/segmentos.json
+          retention-days: 7
