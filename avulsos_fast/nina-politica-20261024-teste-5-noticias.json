@@ -22,7 +22,7 @@
   "batidas": [
     {
       "fala": "Faltando um dia para o segundo turno, eu sou a Nina, e hoje vou comentar cinco notícias da política, com um olhar conservador e compromisso com os fatos.",
-      "expr": "animada",
+      "expr": "neutra",
       "arte": [
         "titulo",
         "NINA COMENTA: 5 NOTÍCIAS"
@@ -65,7 +65,7 @@
     },
     {
       "fala": "Segunda notícia: na última pesquisa Datafolha, divulgada quinta-feira, os dois candidatos apareceram com cinquenta por cento dos votos válidos, após arredondamento.",
-      "expr": "surpresa",
+      "expr": "chocada",
       "arte": [
         "manchete_v",
         "2. EMPATE TÉCNICO"
@@ -179,7 +179,7 @@
     },
     {
       "fala": "Essas foram as cinco pautas desta manhã de sábado, vinte e quatro de outubro. Qual delas merece mais explicações? Comente com respeito, e confira as fontes na descrição.",
-      "expr": "animada",
+      "expr": "neutra",
       "arte": [
         "interrogacao",
         "QUAL NOTÍCIA MERECE ATENÇÃO?"
