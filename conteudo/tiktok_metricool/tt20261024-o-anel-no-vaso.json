@@ -5,7 +5,7 @@
   "account": "ninamecontou",
   "id": 404986132,
   "uuid": "-3466505152484588197",
-  "status": "agendado",
+  "status": "publicado",
   "publicationDate": {
     "dateTime": "2026-10-24T12:00:00",
     "timezone": "America/Sao_Paulo"
@@ -25,5 +25,10 @@
     "audio_mean_db": -19.6,
     "visual_frames_checked": true
   },
-  "caption": "A aliança perdida no ônibus apareceu dentro de um vaso. A explicação do marido deixou tudo pior. 💍🪴\nVocê perdoaria essa mentira?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Relacionamento"
+  "caption": "A aliança perdida no ônibus apareceu dentro de um vaso. A explicação do marido deixou tudo pior. 💍🪴\nVocê perdoaria essa mentira?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Relacionamento",
+  "providerStatus": "PUBLISHED",
+  "providerDetailedStatus": "Published",
+  "tiktokVideoId": "7700250983451905300",
+  "publicUrl": "https://www.tiktok.com/@ninamecontou/video/7700250983451905300",
+  "publicationConfirmedAt": "2026-10-24T14:04:06-03:00"
 }
