@@ -109,7 +109,8 @@
   },
   "carrossel-20261025": {
     "container_id": "18129429610787127",
-    "status": "unknown",
-    "created_at": "2026-10-25T17:21:07.279866+00:00"
+    "status": "published",
+    "created_at": "2026-10-25T17:21:07.279866+00:00",
+    "media_id": "18093403451671063"
   }
 }
