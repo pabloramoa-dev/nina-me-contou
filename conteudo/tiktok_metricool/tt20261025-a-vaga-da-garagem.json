@@ -1,0 +1,29 @@
+{
+  "episode": "tt20261025-a-vaga-da-garagem",
+  "brandId": 7228264,
+  "network": "tiktok",
+  "account": "ninamecontou",
+  "id": 405658189,
+  "uuid": "-4167217628470424558",
+  "status": "agendado",
+  "publicationDate": {
+    "dateTime": "2026-10-25T12:00:00",
+    "timezone": "America/Sao_Paulo"
+  },
+  "autoPublish": true,
+  "mediaUrl": "https://raw.githubusercontent.com/pabloramoa-dev/nina-me-contou/main/avulsos_prontos/tt20261025-a-vaga-da-garagem.mp4",
+  "metricoolMediaUrl": "https://static.metricool.com/planner/202610/7228264-file-13769109666894436924.mp4",
+  "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7228264&openWithPostUuid=-4167217628470424558",
+  "run_id": 40187139041,
+  "validation": {
+    "width": 1080,
+    "height": 1920,
+    "duration_seconds": 115.33,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "audio_peak_db": -2.3,
+    "audio_mean_db": -14.9,
+    "visual_frames_checked": true
+  },
+  "caption": "Ela anunciou a vaga de garagem e descobriu que o marido já recebia o aluguel havia oito meses. 🚗😳\nVocê aceitaria esse acordo?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Relacionamento"
+}
