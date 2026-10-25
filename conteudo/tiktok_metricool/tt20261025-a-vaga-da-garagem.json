@@ -5,7 +5,7 @@
   "account": "ninamecontou",
   "id": 405658189,
   "uuid": "-4167217628470424558",
-  "status": "agendado",
+  "status": "publicado",
   "publicationDate": {
     "dateTime": "2026-10-25T12:00:00",
     "timezone": "America/Sao_Paulo"
@@ -25,5 +25,10 @@
     "audio_mean_db": -14.9,
     "visual_frames_checked": true
   },
-  "caption": "Ela anunciou a vaga de garagem e descobriu que o marido já recebia o aluguel havia oito meses. 🚗😳\nVocê aceitaria esse acordo?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Relacionamento"
+  "caption": "Ela anunciou a vaga de garagem e descobriu que o marido já recebia o aluguel havia oito meses. 🚗😳\nVocê aceitaria esse acordo?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Relacionamento",
+  "providerStatus": "PUBLISHED",
+  "providerDetailedStatus": "Published",
+  "tiktokVideoId": "7700622012539997461",
+  "publicUrl": "https://www.tiktok.com/@ninamecontou/video/7700622012539997461",
+  "publicationConfirmedAt": "2026-10-25T14:04:00-03:00"
 }
