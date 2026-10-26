@@ -297,7 +297,8 @@ def gerar_um(n: int, seq: int) -> tuple[dict, dict]:
         ),
         "gerado_automaticamente": True, "serie_anual": seq + 1,
     }
-    return p1, p2
+    from ganchos import aplicar_gancho
+    return aplicar_gancho(p1), aplicar_gancho(p2)
 
 def abastecer(alvo: int) -> dict:
     EP_DIR.mkdir(parents=True, exist_ok=True)

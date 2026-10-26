@@ -41,12 +41,15 @@ jobs:
         with:
           python-version: "3.12"
       - name: Garantir 30 dias de roteiros
-        run: python motor/gerar_roteiros.py --alvo 60
+        run: |
+          python -m unittest discover -s tests -p test_ganchos.py -v
+          python motor/normalizar_ganchos.py
+          python motor/gerar_roteiros.py --alvo 60
       - name: Persistir a reserva anual
         run: |
           git config user.name "nina-bot"
           git config user.email "actions@github.com"
-          git add episodios/ conteudo/geracao_anual.json
+          git add episodios/ avulsos/ avulsos_fast/ conteudo/geracao_anual.json
           if git diff --cached --quiet; then
             echo "Reserva de roteiros já está no alvo."
             exit 0
