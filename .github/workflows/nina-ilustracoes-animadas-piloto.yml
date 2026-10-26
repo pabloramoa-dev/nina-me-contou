@@ -1,0 +1,84 @@
+name: Nina - Piloto imagens animadas (sem publicar)
+on:
+  push:
+    branches: [experimento/nina-ilustracoes-remotion-20261026]
+    paths:
+      - 'motor/remotion_final.py'
+      - 'video/remotion/src/NinaUpgrade.tsx'
+      - 'video/remotion/fixtures/nina-piloto-imagens-animadas.json'
+      - 'tests/test_remotion_prod.py'
+      - '.github/workflows/nina-ilustracoes-animadas-piloto.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  piloto:
+    runs-on: ubuntu-latest
+    timeout-minutes: 100
+    env:
+      NINA_VOICE_ENGINE: kokoro
+      NINA_KOKORO_VOICE: pf_dora
+      NINA_KOKORO_SPEED: '1.02'
+      NINA_VISUAL_EXPERIMENT: '1'
+      NINA_ALLOW_PAID_IMAGE_API: '0'
+      NINA_AUTO_VISUAL_IMAGES: '1'
+      NINA_FINAL_COMPOSITOR: remotion
+      NINA_MAX_DUR: '120'
+      NINA_FOTOS: '0'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          sparse-checkout: |
+            .github/actions/setup-hyperframes
+            assets
+            motor
+            src
+            tools
+            video
+            tests
+            requirements-estudio.txt
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+          cache-dependency-path: requirements-estudio.txt
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Dependências e testes
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg pkg-config libcairo2-dev libpango1.0-dev espeak-ng fonts-dejavu-core
+          pip install -r requirements-estudio.txt
+          python -m unittest tests/test_remotion_prod.py -v
+          python -m compileall -q motor src
+      - uses: ./.github/actions/setup-hyperframes
+      - name: Renderizar piloto gratuito sem publicar
+        run: |
+          python motor/produzir.py video/remotion/fixtures/nina-piloto-imagens-animadas.json
+          python - <<'PY'
+          from pathlib import Path
+          import json
+          p=Path('saida/nina-piloto-imagens-animadas-20261026')
+          meta=json.loads((p/'render.json').read_text())
+          props=json.loads((p/'remotion-props.json').read_text())
+          assert meta['motor']=='remotion',meta
+          assert 'experimental' in meta['versao_final'],meta
+          assert len({s['image'] for s in props['scenes'] if s.get('image')})>=4
+          video=p/'nina-piloto-imagens-animadas-20261026.mp4'
+          assert video.stat().st_size>100000
+          print('PILOTO OK',video,meta['versao_final'])
+          PY
+      - name: Guardar vídeo somente no GitHub Actions
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: nina-piloto-imagens-animadas-20261026
+          path: |
+            saida/nina-piloto-imagens-animadas-20261026/nina-piloto-imagens-animadas-20261026.mp4
+            saida/nina-piloto-imagens-animadas-20261026/render.json
+            saida/nina-piloto-imagens-animadas-20261026/remotion-props.json
+            saida/nina-piloto-imagens-animadas-20261026/visual_images.json
+          retention-days: 7

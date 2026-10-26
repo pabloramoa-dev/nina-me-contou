@@ -1,0 +1,45 @@
+{
+  "id": "nina-piloto-imagens-animadas-20261026",
+  "avulso": true,
+  "titulo": "O CELULAR NA CAIXA",
+  "temporada": "Piloto ilustrado Remotion",
+  "cenario": "tarde",
+  "batidas": [
+    {
+      "fala": "Renata encontrou um celular tocando dentro de uma caixa de presentes. Na tela estava escrito: mãe. O estranho é que a caixa tinha sido entregue ao marido.",
+      "expr": "chocada",
+      "zoom": true
+    },
+    {
+      "fala": "Ela pensou que fosse um engano, até o aparelho tocar de novo. Uma mulher perguntou se ele já tinha contado a verdade. Renata ficou sem entender.",
+      "expr": "desconfiada"
+    },
+    {
+      "fala": "Procurando alguma pista, Renata achou um envelope com endereço desconhecido. Dentro dele, havia uma fotografia antiga de sua sogra, muito mais jovem.",
+      "expr": "desconfiada"
+    },
+    {
+      "fala": "Quando o marido chegou, explicou: ele havia encontrado uma irmã que nunca conhecera e estava preparando o primeiro encontro dos dois. Foi uma descoberta de família.",
+      "expr": "chocada"
+    },
+    {
+      "fala": "O celular era da irmã, esquecido durante uma visita. Quem ligava era a mãe adotiva dela, ansiosa para saber se o encontro daria certo. Tudo finalmente fazia sentido.",
+      "expr": "neutra"
+    },
+    {
+      "fala": "Renata ficou aliviada, mas pediu: da próxima vez, nada de esconder uma surpresa desse tamanho. E você, também teria desconfiado? Conta nos comentários.",
+      "expr": "ironica"
+    }
+  ],
+  "fim": "VOCÊ TERIA DESCONFIADO?",
+  "legenda_post": "Ela encontrou um celular numa caixa e descobriu um segredo de família. Você também teria desconfiado? História fictícia. #NinaMeContou #Storytime #Historias",
+  "visual_images": {
+    "auto_visual_images": true,
+    "bottom_caption_only": true,
+    "hide_inner_caption_when_image": true,
+    "min_images": 4,
+    "max_images": 8,
+    "target_images": 6,
+    "fallback": "original_art"
+  }
+}

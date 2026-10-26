@@ -13,6 +13,13 @@ class RemotionNinaTest(unittest.TestCase):
         self.assertEqual(result["durationFrames"],246)
         self.assertEqual(result["scenes"][0]["start"],0)
         self.assertEqual(result["scenes"][1]["title"],"SIGA A NINA")
+    def test_imagem_de_apoio_na_timeline(self):
+        ep={"batidas":[{"fala":"Uma surpresa.","expr":"chocada"},{"fala":"A descoberta.","expr":"neutra"}]}
+        segs=[{"i":0,"ini":0,"fim":3},{"i":1,"ini":3,"fim":6}]
+        p=montar_props(ep,segs,8.2,{0:"story-visual-00.png",1:"story-visual-00.png"})
+        self.assertEqual(p["scenes"][0]["image"],"story-visual-00.png")
+        self.assertEqual(p["scenes"][1]["start"],3.0)
+        self.assertEqual(p["scenes"][1]["fala"],"A descoberta.")
     def test_divergencia_bloqueia_publicacao(self):
         with self.assertRaises(ValueError):
             montar_props({"batidas":[{"fala":"A"}]},[],3)

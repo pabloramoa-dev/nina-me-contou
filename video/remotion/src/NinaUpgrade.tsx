@@ -1,7 +1,7 @@
 import React from 'react';
-import {AbsoluteFill, Audio, OffthreadVideo, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
+import {AbsoluteFill, Audio, OffthreadVideo, Img, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
 
-type Scene = {start:number;end:number;title:string;fala:string;expr:string};
+type Scene = {start:number;end:number;title:string;fala:string;expr:string;image?:string|null};
 export type NinaProps = {durationFrames:number;scenes:Scene[]};
 const clamp=(n:number,min:number,max:number)=>Math.max(min,Math.min(max,n));
 const selectedWords=(s:string,progress:number)=>{
@@ -25,6 +25,13 @@ export const NinaUpgrade:React.FC<NinaProps>=({scenes})=>{
  const panelY=interpolate(appearing,[0,1],[-95,0]);
  const baseZoom=1.03+0.016*Math.sin(t*.48)+(index===3?.035:0);
  const baseX=12*Math.sin(t*.36);
+ let artStart=scene.start;
+ if(scene.image){for(let k=index-1;k>=0&&scenes[k].image===scene.image;k--)artStart=scenes[k].start;}
+ const artTime=Math.max(0,t-artStart);
+ const artOpacity=interpolate(artTime,[0,.45],[0,1],{extrapolateLeft:'clamp',extrapolateRight:'clamp'});
+ const artX=21*Math.sin(artTime*.3);
+ const artY=11*Math.sin(artTime*.4);
+ const artScale=1.04+Math.min(0.085,artTime*.007);
  const caption=selectedWords(scene.fala,progress);
  const textAppear=spring({frame:(elapsed-.1)*fps,fps,config:{damping:18}});
  const accent=accents[index%accents.length];
@@ -43,6 +50,22 @@ export const NinaUpgrade:React.FC<NinaProps>=({scenes})=>{
    <div style={{position:'absolute',top:153,left:65,width:950,height:13,background:'#51352d38',borderRadius:18,overflow:'hidden'}}>
      <div style={{width:`${Math.min(100,100*frame/durationInFrames)}%`,height:'100%',background:'#ca5538',borderRadius:18}} />
    </div>
+   {/* Piloto: ilustrações gratuitas e motion na região superior, sem texto duplicado. */}
+   {scene.image ? (
+     <div style={{position:'absolute',top:211,left:82,width:916,height:408,opacity:artOpacity,
+       transform:`translateY(${(1-artOpacity)*16}px)`,pointerEvents:'none'}}>
+       <div style={{position:'absolute',inset:0,border:'5px solid #362925',borderRadius:30,
+          boxShadow:'12px 16px 0 #382b254a',
+          background:'linear-gradient(135deg,#fff9ed,#e8f0e9)'}}/>
+       <div style={{position:'absolute',top:12,bottom:12,left:12,right:12,
+          overflow:'hidden',borderRadius:23}}>
+         <Img src={staticFile(scene.image)} style={{width:'100%',height:'100%',objectFit:'contain',
+           transform:`translate(${artX}px,${artY}px) scale(${artScale})`,
+           transformOrigin:'center'}} />
+       </div>
+     </div>
+   ) : (
+     <>
    {/* Cartão ilustrado. Mantém a zona inferior livre para a personagem. */}
    <div style={{position:'absolute',top:226,left:90,width:900,transform:`translateY(${panelY}px) rotate(${interpolate(appearing,[0,1],[7,index%2?2:-2])}deg) scale(${panelScale})`,opacity:Math.min(1,appearing*1.5,leaving*4),transformOrigin:'50% 25%'}}>
      <div style={{height:320,background:'#fff7e7',border:'7px solid #302625',borderRadius:22,boxShadow:'18px 22px 0 #47322c55',padding:'30px 42px',boxSizing:'border-box',display:'flex',alignItems:'center',gap:26}}>
@@ -56,6 +79,8 @@ export const NinaUpgrade:React.FC<NinaProps>=({scenes})=>{
        </div>
      </div>
    </div>
+     </>
+   )}
    {/* Legendas na parte inferior, sem painel fixo: estilo solto aprovado pelo usuário. */}
    <div style={{position:'absolute',left:100,right:100,bottom:195,minHeight:112,display:'flex',justifyContent:'center',alignItems:'center',opacity:Math.max(0,textAppear),transform:`translateY(${interpolate(textAppear,[0,1],[16,0])}px)`,pointerEvents:'none'}}>
      <div style={{maxWidth:880,fontSize:40,fontWeight:950,lineHeight:1.12,letterSpacing:0.3,textAlign:'center',color:'#fffdf6',WebkitTextStroke:'1px #1d201e',textShadow:'3px 3px 0 #292321,-3px 3px 0 #292321,3px -3px 0 #292321,-3px -3px 0 #292321,0 6px 10px #292321aa'}}>

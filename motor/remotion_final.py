@@ -18,7 +18,7 @@ def duracao_ffprobe(path):
     ], text=True)
     return float(out.strip())
 
-def montar_props(ep, segs, dur):
+def montar_props(ep, segs, dur, image_by_beat=None):
     if len(segs) != len(ep["batidas"]):
         raise ValueError("Cenas e falas não correspondem")
     scenes = []
@@ -36,7 +36,8 @@ def montar_props(ep, segs, dur):
             raise ValueError(f"Timeline inválida no bloco {i}: {start} - {end}")
         scenes.append({
             "start": start, "end": end, "title": str(titulo),
-            "fala": b["fala"], "expr": b.get("expr", "neutra")
+            "fala": b["fala"], "expr": b.get("expr", "neutra"),
+            "image": (image_by_beat or {}).get(i)
         })
     return {"durationFrames": math.ceil(dur * 30), "scenes": scenes}
 
@@ -54,7 +55,28 @@ def finalizar(ep, pasta, raiz):
     shutil.copy2(base / "mix.wav", public / "mix.wav")
     segs = json.loads((pasta / "segs.json").read_text(encoding="utf-8"))
     duration = duracao_ffprobe(public / "nina-base.mp4")
-    props = montar_props(ep, segs, duration)
+    image_by_beat = {}
+    # Piloto isolado: reutiliza as ilustrações locais que já foram geradas pelo HyperFrames.
+    if os.environ.get("NINA_VISUAL_EXPERIMENT", "0").lower() in ("1", "true", "sim"):
+        report_file = pasta / "visual_images.json"
+        if not report_file.is_file():
+            raise FileNotFoundError("Relatório de imagens ausente no piloto")
+        report = json.loads(report_file.read_text(encoding="utf-8"))
+        for item in report.get("scenes", []):
+            asset = item.get("asset")
+            if not asset:
+                continue
+            original = base / Path(asset).name
+            if not original.is_file():
+                raise FileNotFoundError(f"Ilustração ausente: {original}")
+            name = f"story-visual-{int(item['scene']):02d}.png"
+            shutil.copy2(original, public / name)
+            for beat in item.get("beats", []):
+                image_by_beat[int(beat)] = name
+        if len(set(image_by_beat.values())) < 4:
+            raise ValueError("Ao menos quatro ilustrações são necessárias para o piloto")
+        print(f"[Piloto ilustrado] {len(set(image_by_beat.values()))} artes visuais", flush=True)
+    props = montar_props(ep, segs, duration, image_by_beat=image_by_beat)
     propsfile = pasta / "remotion-props.json"
     propsfile.write_text(json.dumps(props, ensure_ascii=False, indent=2), encoding="utf-8")
     # Instala em diretório separado: NÃO substitui nem altera o HyperFrames.
@@ -77,7 +99,8 @@ def finalizar(ep, pasta, raiz):
     metap = pasta / "render.json"
     meta = json.loads(metap.read_text(encoding="utf-8"))
     meta.update(motor="remotion", motor_base="hyperframes",
-                versao_final="nina-remotion-aprovado-legenda-inferior-v1",
+                versao_final=("nina-remotion-imagens-animadas-experimental-v1" if image_by_beat
+                              else "nina-remotion-aprovado-legenda-inferior-v1"),
                 legenda="solta_sem_faixa_inferior",
                 voz=ep.get("kokoro_voice") if ep.get("voice_engine") == "kokoro"
                     else "pt-BR-ThalitaNeural",
