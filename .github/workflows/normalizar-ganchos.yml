@@ -1,0 +1,56 @@
+name: Nina - Atualizar ganchos de todo o acervo
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/normalizar-ganchos.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nina-migracao-ganchos
+  cancel-in-progress: false
+
+jobs:
+  migrar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+          filter: blob:none
+          sparse-checkout: |
+            episodios
+            avulsos
+            avulsos_fast
+            motor
+            tests
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Verificar a lógica de ganchos
+        run: python -m unittest discover -s tests -p test_ganchos.py -v
+      - name: Conferir o que será alterado
+        run: python motor/normalizar_ganchos.py --check
+      - name: Atualizar os JSONs no repositório
+        run: python motor/normalizar_ganchos.py
+      - name: Persistir os roteiros sem disparar republicação
+        run: |
+          git config user.name 'nina-bot'
+          git config user.email 'actions@github.com'
+          git add episodios/ avulsos/ avulsos_fast/
+          if git diff --cached --quiet; then
+            echo 'Nenhum JSON precisa de atualização'
+            exit 0
+          fi
+          git commit -m 'roteiros: aplicar ganchos factuais ao acervo Nina [skip ci]'
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push origin main && exit 0
+            sleep 3
+          done
+          exit 1
