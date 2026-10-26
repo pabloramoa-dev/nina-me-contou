@@ -1,0 +1,82 @@
+{
+  "id": "nina-20261026-duas-noivas-imagens",
+  "avulso": true,
+  "titulo": "AS DUAS NOIVAS DO MESMO HOMEM",
+  "temporada": "Episódio especial ilustrado",
+  "cenario": "tarde",
+  "voice_engine": "kokoro",
+  "kokoro_voice": "pf_dora",
+  "kokoro_speed": 1.02,
+  "visual_images": {
+    "auto_visual_images": true,
+    "hide_inner_caption_when_image": true,
+    "bottom_caption_only": true,
+    "min_images": 4,
+    "max_images": 8,
+    "target_images": 8,
+    "fallback": "story_frame_text"
+  },
+  "approved_visual_assets": [
+    "assets/nina_duas_noivas/01-abertura-salao.png",
+    "assets/nina_duas_noivas/02-revelacao-computador.png",
+    "assets/nina_duas_noivas/03-aliancas-cafe.png",
+    "assets/nina_duas_noivas/04-comprovantes-cafe.png",
+    "assets/nina_duas_noivas/05-entrada-igreja.png",
+    "assets/nina_duas_noivas/06-confronto-altar.png",
+    "assets/nina_duas_noivas/07-viagem-amigas.png",
+    "assets/nina_duas_noivas/07-viagem-amigas.png"
+  ],
+  "batidas": [
+    {
+      "fala": "Gente, vocês não vão acreditar! Camila descobriu que o noivo estava preparando outro casamento quando foi fazer uma simples prova de penteado. Ela estava com Rafael havia três anos, e a cerimônia deles já estava quase toda paga. No salão, a cabeleireira Patrícia pediu para ver a foto do noivo. Camila mostrou toda orgulhosa, mas Patrícia ficou branca.",
+      "expr": "chocada",
+      "hf": {
+        "titulo": "O NOIVO DE DUAS MULHERES"
+      }
+    },
+    {
+      "fala": "Patrícia perguntou: moça, esse homem é seu noivo? Camila respondeu que sim, sem entender nada. A cabeleireira contou que havia atendido outra noiva no dia anterior, e ela mostrou a fotografia do mesmo homem. Abriu o computador do salão e lá estava Rafael, com o mesmo sorriso e a mesma tatuagem. O pior? A outra cerimônia seria no sábado seguinte, justamente quando ele disse que viajaria a trabalho!",
+      "expr": "desconfiada",
+      "hf": {
+        "titulo": "A FOTO NO COMPUTADOR"
+      }
+    },
+    {
+      "fala": "Camila pediu contato com a outra noiva e, no dia seguinte, encontrou Fernanda numa cafeteria. Fernanda achava que aquilo era uma brincadeira, até ver as mensagens, as fotos e as alianças. Rafael dizia a Camila que estava sempre viajando. Para Fernanda, dizia que ia visitar a mãe doente em outra cidade. As duas ficaram sem acreditar que tinham vivido histórias tão parecidas.",
+      "expr": "chocada",
+      "hf": {
+        "titulo": "DUAS ALIANÇAS, UM NOIVO"
+      }
+    },
+    {
+      "fala": "Só que a comparação revelou algo ainda pior. Fernanda contou que Rafael lhe pedira quinze mil reais para o casamento. Camila arregalou os olhos: quinze mil? Ele me pediu oito! Na mesa, elas juntaram recibos e comprovantes. Perceberam que a mentira não envolvia só traição, mas também muito dinheiro. Em vez de discutir entre si, resolveram unir forças e preparar uma surpresa no casamento do sábado.",
+      "expr": "desconfiada",
+      "hf": {
+        "titulo": "O DINHEIRO DAS DUAS"
+      }
+    },
+    {
+      "fala": "Chegou o sábado. Rafael estava elegante no altar, esperando Fernanda. A música começou e as portas da igreja se abriram. Mas não entrou uma noiva sozinha. Entraram Fernanda e Camila, lado a lado, as duas vestidas de branco. Os convidados se viraram, sem entender nada. Rafael ficou imóvel, olhando para as duas como se estivesse vendo um pesadelo acontecer diante de todo mundo.",
+      "expr": "chocada",
+      "hf": {
+        "titulo": "A ENTRADA NA IGREJA"
+      }
+    },
+    {
+      "fala": "Fernanda pegou o microfone: pessoal, antes de começar, apresento a outra noiva do meu futuro marido! Camila completou: e se alguém aqui emprestou dinheiro para ele, aproveite para cobrar agora! Virou uma confusão. Rafael tentou dizer que era um mal-entendido, mas as duas não aceitaram mais desculpas. O casamento foi cancelado, e elas procuraram ajuda para recuperar os valores.",
+      "expr": "ironica",
+      "hf": {
+        "titulo": "O SEGREDO NO ALTAR"
+      }
+    },
+    {
+      "fala": "Três meses depois, Camila e Fernanda já eram amigas e viajaram juntas com parte do dinheiro que conseguiram recuperar. Rafael ficou solteiro, devendo explicações e dinheiro. Agora me diz: você apareceria no casamento para revelar tudo ou desmascararia o noivo antes? Porque Rafael queria casar duas vezes, mas acabou levando dois foras no mesmo dia!",
+      "expr": "ironica",
+      "hf": {
+        "titulo": "AS NOVAS AMIGAS"
+      }
+    }
+  ],
+  "fim": "DUAS NOIVAS, DOIS FORAS!",
+  "legenda_post": "Ela descobriu que o noivo tinha outro casamento marcado — e conheceu a outra noiva. 😳💍💍 Você revelaria tudo no altar? História fictícia. #NinaMeContou #Storytime #Traicao #Historias"
+}
