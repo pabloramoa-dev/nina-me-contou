@@ -1,0 +1,29 @@
+{
+  "episode": "tt20261026-o-segundo-caderno",
+  "brandId": 7228264,
+  "network": "tiktok",
+  "account": "ninamecontou",
+  "id": 406724660,
+  "uuid": "-6425822288175347047",
+  "status": "agendado",
+  "publicationDate": {
+    "dateTime": "2026-10-26T18:00:00",
+    "timezone": "America/Sao_Paulo"
+  },
+  "autoPublish": true,
+  "mediaUrl": "https://raw.githubusercontent.com/pabloramoa-dev/nina-me-contou/main/avulsos_prontos/tt20261026-o-segundo-caderno.mp4",
+  "metricoolMediaUrl": "https://static.metricool.com/planner/202610/7228264-file-10630713640770036284.mp4",
+  "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7228264&openWithPostUuid=-6425822288175347047",
+  "run_id": 40312494386,
+  "validation": {
+    "width": 1080,
+    "height": 1920,
+    "duration_seconds": 112.5,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "audio_peak_db": -4.5,
+    "audio_mean_db": -19.8,
+    "visual_frames_checked": true
+  },
+  "caption": "Uma folha escondida no caderno do filho revelou o sonho que a mãe tinha vergonha de contar. 📒💛\nQuem te deu coragem para recomeçar?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Recomeco"
+}
