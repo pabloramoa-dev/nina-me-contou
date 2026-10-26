@@ -7,14 +7,14 @@
  "cenario": "tarde",
  "batidas": [
   {
-   "fala": "Tudo começou com um papel dobrado no bolso de uma mala.",
-   "expr": "ironica",
+   "fala": "Isabela encontrou um cartão de estacionamento de outro prédio. A pista levava a uma rua tranquila, mas Renata negou conhecer o lugar.",
+   "expr": "desconfiada",
    "arte": [
     "titulo"
    ],
    "destaque": [
-    "não",
-    "deveria"
+    "Isabela",
+    "cartão"
    ]
   },
   {
@@ -139,7 +139,9 @@
   }
  ],
  "fim": "CONTINUA NA PARTE 2",
- "legenda_post": "Tudo começou com um papel dobrado no bolso de uma mala.\n\nUma pista levou Isabela a uma história que não fechava. A continuação está no perfil.\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em situações comuns do cotidiano.\n\n#storytime #historia #fofoca #segredo #relacionamentos #ninamecontou",
+ "legenda_post": "Isabela encontrou um cartão de estacionamento de outro prédio. A pista levava a uma rua tranquila, mas Renata negou conhecer o lugar.\n\nUma pista levou Isabela a uma história que não fechava. A continuação está no perfil.\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em situações comuns do cotidiano.\n\n#storytime #historia #fofoca #segredo #relacionamentos #ninamecontou",
  "gerado_automaticamente": true,
- "serie_anual": 32
+ "serie_anual": 32,
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "descoberta_e_contradicao"
 }

@@ -1,118 +1,120 @@
 {
-  "id": "tt20261016-a-conta-da-costureira",
-  "avulso": true,
-  "titulo": "A CONTA DA COSTUREIRA",
-  "temporada": "TikTok diário",
-  "cenario": "tarde",
-  "visual_images": {
-    "auto_visual_images": true,
-    "hide_inner_caption_when_image": true,
-    "bottom_caption_only": true,
-    "min_images": 4,
-    "max_images": 8,
-    "target_images": 6,
-    "fallback": "original_art"
+ "id": "tt20261016-a-conta-da-costureira",
+ "avulso": true,
+ "titulo": "A CONTA DA COSTUREIRA",
+ "temporada": "TikTok diário",
+ "cenario": "tarde",
+ "visual_images": {
+  "auto_visual_images": true,
+  "hide_inner_caption_when_image": true,
+  "bottom_caption_only": true,
+  "min_images": 4,
+  "max_images": 8,
+  "target_images": 6,
+  "fallback": "original_art"
+ },
+ "batidas": [
+  {
+   "fala": "A costureira cobrou um real pelo vestido de noiva. Quando a noiva viu o nome no recibo, desabou.",
+   "expr": "chocada",
+   "foto": [
+    "wedding dress sewing machine",
+    "UM REAL"
+   ],
+   "zoom": true
   },
-  "batidas": [
-    {
-      "fala": "A costureira cobrou um real pelo vestido de noiva. Quando a noiva viu o nome no recibo, desabou.",
-      "expr": "chocada",
-      "foto": [
-        "wedding dress sewing machine",
-        "UM REAL"
-      ],
-      "zoom": true
-    },
-    {
-      "fala": "Marina tinha juntado dinheiro durante dois anos para casar. Faltando uma semana, a loja fechou e o vestido pago nunca chegou.",
-      "expr": "triste",
-      "foto": [
-        "closed clothing store",
-        "A COSTURA"
-      ]
-    },
-    {
-      "fala": "Ela apareceu chorando no pequeno ateliê da dona Lúcia, levando uma fotografia do modelo e um tecido que a mãe havia guardado.",
-      "expr": "triste",
-      "foto": [
-        "fabric on sewing table",
-        "A COSTURA"
-      ]
-    },
-    {
-      "fala": "Lúcia mediu, riscou e disse: vem provar na sexta. Marina avisou que não tinha como pagar outro vestido. A costureira respondeu: depois a gente acerta.",
-      "expr": "neutra",
-      "foto": [
-        "measuring tape fabric",
-        "A COSTURA"
-      ]
-    },
-    {
-      "fala": "Na sexta, o vestido estava pronto. Tinha mangas delicadas e um bolso escondido. Marina pediu para parcelar, mas recebeu uma conta de um real.",
-      "expr": "chocada",
-      "foto": [
-        "white wedding dress detail",
-        "A COSTURA"
-      ],
-      "zoom": true
-    },
-    {
-      "fala": "No recibo estava escrito: restante quitado por Helena, em mil novecentos e noventa e oito. Helena era a mãe de Marina.",
-      "expr": "desconfiada",
-      "foto": [
-        "handwritten receipt",
-        "A COSTURA"
-      ]
-    },
-    {
-      "fala": "Lúcia abriu uma caixa de fotos. Mostrou uma menina na porta de uma escola, com um uniforme grande demais. Era ela.",
-      "expr": "triste",
-      "arte": [
-        "coracao",
-        "GRATIDÃO"
-      ]
-    },
-    {
-      "fala": "Contou que, quando sua mãe perdeu o emprego, Helena ajustou todos os seus uniformes sem cobrar. Ainda lhe ensinou a usar uma máquina de costura.",
-      "expr": "neutra",
-      "foto": [
-        "vintage sewing machine",
-        "A COSTURA"
-      ]
-    },
-    {
-      "fala": "Marina reconheceu a máquina da foto. Lembrou da mãe trabalhando de madrugada e dizendo que sempre cabia mais uma peça na mesa.",
-      "expr": "triste",
-      "arte": [
-        "coracao",
-        "GRATIDÃO"
-      ]
-    },
-    {
-      "fala": "Lúcia disse: tua mãe não me deu só roupa. Me deu um ofício. Eu procurei por ela durante anos. Quando você falou seu sobrenome, entendi quem tinha entrado aqui.",
-      "expr": "neutra",
-      "arte": [
-        "coracao",
-        "GRATIDÃO"
-      ]
-    },
-    {
-      "fala": "Helena tinha morrido no ano anterior. No casamento, Marina reservou para Lúcia a cadeira ao lado da família. No bolso do vestido, levou aquele recibo.",
-      "expr": "triste",
-      "arte": [
-        "coracao",
-        "GRATIDÃO"
-      ]
-    },
-    {
-      "fala": "O vestido custou um real. Mas a bondade que fez ele existir atravessou uma geração. Quem já fez isso por você? Conta e segue a Nina para mais histórias.",
-      "expr": "ironica",
-      "arte": [
-        "coracao",
-        "GRATIDÃO"
-      ]
-    }
-  ],
-  "fim": "UMA DÍVIDA DE GRATIDÃO",
-  "legenda_post": "Um vestido de noiva, uma conta de um real e uma dívida de gratidão que atravessou uma geração. 🧵💛\nQuem já fez uma gentileza que você nunca esqueceu?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Gratidao"
+  {
+   "fala": "Marina tinha juntado dinheiro durante dois anos para casar. Faltando uma semana, a loja fechou e o vestido pago nunca chegou.",
+   "expr": "triste",
+   "foto": [
+    "closed clothing store",
+    "A COSTURA"
+   ]
+  },
+  {
+   "fala": "Ela apareceu chorando no pequeno ateliê da dona Lúcia, levando uma fotografia do modelo e um tecido que a mãe havia guardado.",
+   "expr": "triste",
+   "foto": [
+    "fabric on sewing table",
+    "A COSTURA"
+   ]
+  },
+  {
+   "fala": "Lúcia mediu, riscou e disse: vem provar na sexta. Marina avisou que não tinha como pagar outro vestido. A costureira respondeu: depois a gente acerta.",
+   "expr": "neutra",
+   "foto": [
+    "measuring tape fabric",
+    "A COSTURA"
+   ]
+  },
+  {
+   "fala": "Na sexta, o vestido estava pronto. Tinha mangas delicadas e um bolso escondido. Marina pediu para parcelar, mas recebeu uma conta de um real.",
+   "expr": "chocada",
+   "foto": [
+    "white wedding dress detail",
+    "A COSTURA"
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "No recibo estava escrito: restante quitado por Helena, em mil novecentos e noventa e oito. Helena era a mãe de Marina.",
+   "expr": "desconfiada",
+   "foto": [
+    "handwritten receipt",
+    "A COSTURA"
+   ]
+  },
+  {
+   "fala": "Lúcia abriu uma caixa de fotos. Mostrou uma menina na porta de uma escola, com um uniforme grande demais. Era ela.",
+   "expr": "triste",
+   "arte": [
+    "coracao",
+    "GRATIDÃO"
+   ]
+  },
+  {
+   "fala": "Contou que, quando sua mãe perdeu o emprego, Helena ajustou todos os seus uniformes sem cobrar. Ainda lhe ensinou a usar uma máquina de costura.",
+   "expr": "neutra",
+   "foto": [
+    "vintage sewing machine",
+    "A COSTURA"
+   ]
+  },
+  {
+   "fala": "Marina reconheceu a máquina da foto. Lembrou da mãe trabalhando de madrugada e dizendo que sempre cabia mais uma peça na mesa.",
+   "expr": "triste",
+   "arte": [
+    "coracao",
+    "GRATIDÃO"
+   ]
+  },
+  {
+   "fala": "Lúcia disse: tua mãe não me deu só roupa. Me deu um ofício. Eu procurei por ela durante anos. Quando você falou seu sobrenome, entendi quem tinha entrado aqui.",
+   "expr": "neutra",
+   "arte": [
+    "coracao",
+    "GRATIDÃO"
+   ]
+  },
+  {
+   "fala": "Helena tinha morrido no ano anterior. No casamento, Marina reservou para Lúcia a cadeira ao lado da família. No bolso do vestido, levou aquele recibo.",
+   "expr": "triste",
+   "arte": [
+    "coracao",
+    "GRATIDÃO"
+   ]
+  },
+  {
+   "fala": "O vestido custou um real. Mas a bondade que fez ele existir atravessou uma geração. Quem já fez isso por você? Conta e segue a Nina para mais histórias.",
+   "expr": "ironica",
+   "arte": [
+    "coracao",
+    "GRATIDÃO"
+   ]
+  }
+ ],
+ "fim": "UMA DÍVIDA DE GRATIDÃO",
+ "legenda_post": "Um vestido de noiva, uma conta de um real e uma dívida de gratidão que atravessou uma geração. 🧵💛\nQuem já fez uma gentileza que você nunca esqueceu?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Gratidao",
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
 }

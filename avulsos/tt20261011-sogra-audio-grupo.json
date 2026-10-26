@@ -1,147 +1,149 @@
 {
-  "id": "tt20261011-sogra-audio-grupo",
-  "avulso": true,
-  "titulo": "O ÁUDIO DA SOGRA NO GRUPO ERRADO",
-  "temporada": "Histórias da Nina — viradas",
-  "cenario": "tarde",
-  "visual_images": {
-    "auto_visual_images": true,
-    "hide_inner_caption_when_image": true,
-    "bottom_caption_only": true,
-    "min_images": 4,
-    "max_images": 8,
-    "target_images": 6,
-    "fallback": "original_art"
+ "id": "tt20261011-sogra-audio-grupo",
+ "avulso": true,
+ "titulo": "O ÁUDIO DA SOGRA NO GRUPO ERRADO",
+ "temporada": "Histórias da Nina — viradas",
+ "cenario": "tarde",
+ "visual_images": {
+  "auto_visual_images": true,
+  "hide_inner_caption_when_image": true,
+  "bottom_caption_only": true,
+  "min_images": 4,
+  "max_images": 8,
+  "target_images": 6,
+  "fallback": "original_art"
+ },
+ "batidas": [
+  {
+   "fala": "Menina, a sogra foi falar mal da nora... e mandou o áudio pro grupo da família inteira! Foi um silêncio de cinco segundos. Depois, o celular quase pegou fogo!",
+   "expr": "chocada",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "sogra",
+    "grupo da família",
+    "celular"
+   ],
+   "zoom": true
   },
-  "batidas": [
-    {
-      "fala": "Menina, a sogra foi falar mal da nora... e mandou o áudio pro grupo da família inteira! Foi um silêncio de cinco segundos. Depois, o celular quase pegou fogo!",
-      "expr": "chocada",
-      "arte": [
-        "titulo"
-      ],
-      "destaque": [
-        "sogra",
-        "grupo da família",
-        "celular"
-      ],
-      "zoom": true
-    },
-    {
-      "fala": "Dona Odete queria mandar pra irmã: essa Camila é uma folgada, não faz nada pelo meu filho! Só que escolheu o grupo: FAMÍLIA UNIDA.",
-      "expr": "ironica",
-      "arte": [
-        "conversa",
-        "FAMÍLIA UNIDA"
-      ],
-      "destaque": [
-        "folgada",
-        "FAMÍLIA UNIDA"
-      ],
-      "zoom": true
-    },
-    {
-      "fala": "A primeira a responder foi a cunhada: mãe, você mandou no grupo! Aí veio o marido de Camila: nossa, mãe, precisava disso?",
-      "expr": "surpresa",
-      "foto": [
-        "smartphone family group chat on wooden table",
-        "O GRUPO"
-      ],
-      "destaque": [
-        "você mandou no grupo",
-        "precisava disso"
-      ]
-    },
-    {
-      "fala": "Odete tentou apagar. Não deu tempo. Camila já tinha escutado tudo. Mas, em vez de xingar, só escreveu: amanhã eu passo aí e conversamos.",
-      "expr": "desconfiada",
-      "foto": [
-        "phone showing message notification on table",
-        "AMANHÃ EU PASSO AÍ"
-      ],
-      "destaque": [
-        "escutado tudo",
-        "amanhã"
-      ]
-    },
-    {
-      "fala": "No outro dia, a sogra abriu a porta pronta pra briga. Camila chegou com uma pasta cheia de recibos e colocou tudo na mesa.",
-      "expr": "surpresa",
-      "foto": [
-        "paper folder receipts on kitchen table",
-        "OS RECIBOS"
-      ],
-      "destaque": [
-        "pronta pra briga",
-        "recibos"
-      ],
-      "zoom": true
-    },
-    {
-      "fala": "E veio a reviravolta: fazia seis meses que Camila pagava escondido parte dos remédios de Odete. Era ela quem ajudava a fechar as contas da casa!",
-      "expr": "chocada",
-      "foto": [
-        "pharmacy receipts medicine packages on table",
-        "SEIS MESES"
-      ],
-      "destaque": [
-        "seis meses",
-        "pagava escondido",
-        "ajudava"
-      ],
-      "zoom": true
-    },
-    {
-      "fala": "O filho nem sabia. Camila explicou: eu não queria que a senhora se sentisse devendo nada pra ninguém. Eu só queria ajudar.",
-      "expr": "cansada",
-      "arte": [
-        "coracao",
-        "EU SÓ QUERIA AJUDAR"
-      ],
-      "destaque": [
-        "nem sabia",
-        "ajudar"
-      ]
-    },
-    {
-      "fala": "Dona Odete ficou sem saber onde enfiar a cara. Pediu desculpa. Camila respondeu: eu aceito, mas respeito não pode depender de favor, não, viu?",
-      "expr": "ironica",
-      "arte": [
-        "conversa",
-        "RESPEITO É O MÍNIMO"
-      ],
-      "destaque": [
-        "pediu desculpa",
-        "respeito"
-      ],
-      "zoom": true
-    },
-    {
-      "fala": "A sogra gravou outro áudio, dessa vez no grupo certo: gente, eu fui injusta com a Camila. Quem errou fui eu. E o grupo finalmente ficou em paz.",
-      "expr": "surpresa",
-      "foto": [
-        "phone voice message notification cozy living room",
-        "OUTRO ÁUDIO"
-      ],
-      "destaque": [
-        "fui injusta",
-        "quem errou fui eu"
-      ]
-    },
-    {
-      "fala": "Agora me diz: você perdoava a sogra ou saía do grupo sem olhar pra trás? Comenta aqui e segue a Nina, porque nessa família até áudio tem reviravolta!",
-      "expr": "ironica",
-      "arte": [
-        "interrogacao",
-        "E VOCÊ?"
-      ],
-      "destaque": [
-        "perdoava",
-        "comenta",
-        "segue a Nina"
-      ]
-    }
-  ],
-  "fim": "O GRUPO NÃO PERDOA!",
-  "legenda_post": "🎙️😳 A sogra falou mal da nora… mas mandou o áudio pro grupo da família inteira!\n\nQuando a nora apareceu com uma pasta de recibos, ninguém esperava a verdade. 👀\n\n💬 Você perdoaria essa sogra? Conta aqui e segue a Nina!\n\n🎭 História fictícia, criada para entretenimento.\n#NinaMeContou #FofocaDeFamilia #Sogra #StorytimeBrasil #Reviravolta"
+  {
+   "fala": "Dona Odete queria mandar pra irmã: essa Camila é uma folgada, não faz nada pelo meu filho! Só que escolheu o grupo: FAMÍLIA UNIDA.",
+   "expr": "ironica",
+   "arte": [
+    "conversa",
+    "FAMÍLIA UNIDA"
+   ],
+   "destaque": [
+    "folgada",
+    "FAMÍLIA UNIDA"
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "A primeira a responder foi a cunhada: mãe, você mandou no grupo! Aí veio o marido de Camila: nossa, mãe, precisava disso?",
+   "expr": "surpresa",
+   "foto": [
+    "smartphone family group chat on wooden table",
+    "O GRUPO"
+   ],
+   "destaque": [
+    "você mandou no grupo",
+    "precisava disso"
+   ]
+  },
+  {
+   "fala": "Odete tentou apagar. Não deu tempo. Camila já tinha escutado tudo. Mas, em vez de xingar, só escreveu: amanhã eu passo aí e conversamos.",
+   "expr": "desconfiada",
+   "foto": [
+    "phone showing message notification on table",
+    "AMANHÃ EU PASSO AÍ"
+   ],
+   "destaque": [
+    "escutado tudo",
+    "amanhã"
+   ]
+  },
+  {
+   "fala": "No outro dia, a sogra abriu a porta pronta pra briga. Camila chegou com uma pasta cheia de recibos e colocou tudo na mesa.",
+   "expr": "surpresa",
+   "foto": [
+    "paper folder receipts on kitchen table",
+    "OS RECIBOS"
+   ],
+   "destaque": [
+    "pronta pra briga",
+    "recibos"
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "E veio a reviravolta: fazia seis meses que Camila pagava escondido parte dos remédios de Odete. Era ela quem ajudava a fechar as contas da casa!",
+   "expr": "chocada",
+   "foto": [
+    "pharmacy receipts medicine packages on table",
+    "SEIS MESES"
+   ],
+   "destaque": [
+    "seis meses",
+    "pagava escondido",
+    "ajudava"
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "O filho nem sabia. Camila explicou: eu não queria que a senhora se sentisse devendo nada pra ninguém. Eu só queria ajudar.",
+   "expr": "cansada",
+   "arte": [
+    "coracao",
+    "EU SÓ QUERIA AJUDAR"
+   ],
+   "destaque": [
+    "nem sabia",
+    "ajudar"
+   ]
+  },
+  {
+   "fala": "Dona Odete ficou sem saber onde enfiar a cara. Pediu desculpa. Camila respondeu: eu aceito, mas respeito não pode depender de favor, não, viu?",
+   "expr": "ironica",
+   "arte": [
+    "conversa",
+    "RESPEITO É O MÍNIMO"
+   ],
+   "destaque": [
+    "pediu desculpa",
+    "respeito"
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "A sogra gravou outro áudio, dessa vez no grupo certo: gente, eu fui injusta com a Camila. Quem errou fui eu. E o grupo finalmente ficou em paz.",
+   "expr": "surpresa",
+   "foto": [
+    "phone voice message notification cozy living room",
+    "OUTRO ÁUDIO"
+   ],
+   "destaque": [
+    "fui injusta",
+    "quem errou fui eu"
+   ]
+  },
+  {
+   "fala": "Agora me diz: você perdoava a sogra ou saía do grupo sem olhar pra trás? Comenta aqui e segue a Nina, porque nessa família até áudio tem reviravolta!",
+   "expr": "ironica",
+   "arte": [
+    "interrogacao",
+    "E VOCÊ?"
+   ],
+   "destaque": [
+    "perdoava",
+    "comenta",
+    "segue a Nina"
+   ]
+  }
+ ],
+ "fim": "O GRUPO NÃO PERDOA!",
+ "legenda_post": "🎙️😳 A sogra falou mal da nora… mas mandou o áudio pro grupo da família inteira!\n\nQuando a nora apareceu com uma pasta de recibos, ninguém esperava a verdade. 👀\n\n💬 Você perdoaria essa sogra? Conta aqui e segue a Nina!\n\n🎭 História fictícia, criada para entretenimento.\n#NinaMeContou #FofocaDeFamilia #Sogra #StorytimeBrasil #Reviravolta",
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
 }

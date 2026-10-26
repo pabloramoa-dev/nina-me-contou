@@ -7,14 +7,14 @@
  "cenario": "noite",
  "batidas": [
   {
-   "fala": "Se você caiu aqui agora, volta na parte um. A pista principal está lá.",
-   "expr": "ironica",
+   "fala": "Carolina encontrou o nome de Fernanda na caixa de correspondência. E Débora ainda precisava explicar aquela pista.",
+   "expr": "desconfiada",
    "arte": [
     "titulo"
    ],
    "destaque": [
-    "parte",
-    "um"
+    "Carolina",
+    "Fernanda"
    ]
   },
   {
@@ -138,5 +138,7 @@
  "fim": "SEGUE A NINA",
  "legenda_post": "A parte dois de comprovante. A pista parecia pequena, mas revelou uma história inteira.\n\nVocê faria uma pergunta direta ou deixaria a pessoa contar sozinha?\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em situações comuns do cotidiano.\n\n#storytime #historia #fofoca #segredo #relacionamentos #ninamecontou",
  "gerado_automaticamente": true,
- "serie_anual": 9
+ "serie_anual": 9,
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "descoberta_na_continuacao"
 }

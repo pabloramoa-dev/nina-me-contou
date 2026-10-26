@@ -1,171 +1,173 @@
 {
-  "id": "tt20261011-celular-uber",
-  "avulso": true,
-  "titulo": "O CELULAR ESQUECIDO NO UBER",
-  "temporada": "Histórias da Nina — viradas",
-  "cenario": "tarde",
-  "visual_images": {
-    "auto_visual_images": true,
-    "hide_inner_caption_when_image": true,
-    "bottom_caption_only": true,
-    "min_images": 4,
-    "max_images": 8,
-    "target_images": 6,
-    "fallback": "original_art"
+ "id": "tt20261011-celular-uber",
+ "avulso": true,
+ "titulo": "O CELULAR ESQUECIDO NO UBER",
+ "temporada": "Histórias da Nina — viradas",
+ "cenario": "tarde",
+ "visual_images": {
+  "auto_visual_images": true,
+  "hide_inner_caption_when_image": true,
+  "bottom_caption_only": true,
+  "min_images": 4,
+  "max_images": 8,
+  "target_images": 6,
+  "fallback": "original_art"
+ },
+ "batidas": [
+  {
+   "fala": "Menina, o motorista só queria devolver um celular esquecido no carro. Mas, quando ele atendeu a ligação, descobriu uma história que ninguém esperava!",
+   "expr": "chocada",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "celular esquecido",
+    "ligação"
+   ],
+   "zoom": true
   },
-  "batidas": [
-    {
-      "fala": "Menina, o motorista só queria devolver um celular esquecido no carro. Mas, quando ele atendeu a ligação, descobriu uma história que ninguém esperava!",
-      "expr": "chocada",
-      "arte": [
-        "titulo"
-      ],
-      "destaque": [
-        "celular esquecido",
-        "ligação"
-      ],
-      "zoom": true
-    },
-    {
-      "fala": "O Raul já tava encerrando a corrida quando viu o aparelho no banco de trás. Nem deu tempo de pensar: começou a tocar.",
-      "expr": "surpresa",
-      "foto": [
-        "smartphone forgotten on back seat of taxi car",
-        "O CELULAR"
-      ],
-      "destaque": [
-        "banco de trás",
-        "começou a tocar"
-      ]
-    },
-    {
-      "fala": "Na tela aparecia: FILHA. Ele atendeu e ouviu uma moça aflita: moço, esse celular é do meu pai? O senhor sabe onde ele tá?",
-      "expr": "assustada",
-      "foto": [
-        "smartphone incoming call on car dashboard at dusk",
-        "FILHA LIGANDO"
-      ],
-      "destaque": [
-        "FILHA",
-        "onde ele tá"
-      ]
-    },
-    {
-      "fala": "Raul contou que tinha deixado o passageiro perto da rodoviária. A moça ficou em silêncio e disse: faz três anos que a gente não se fala.",
-      "expr": "desconfiada",
-      "foto": [
-        "bus station entrance at dusk city",
-        "TRÊS ANOS"
-      ],
-      "destaque": [
-        "rodoviária",
-        "três anos"
-      ]
-    },
-    {
-      "fala": "Aí veio a surpresa: o pai tava indo conhecer a netinha pela primeira vez. Levava um presente, mas tinha medo de não ser recebido.",
-      "expr": "chocada",
-      "foto": [
-        "small wrapped gift box with ribbon on bench",
-        "O PRESENTE"
-      ],
-      "destaque": [
-        "netinha",
-        "primeira vez",
-        "medo"
-      ]
-    },
-    {
-      "fala": "Raul voltou pelo caminho. Viu o senhor sentado num banco, segurando uma sacolinha. Parou e falou: seu Antônio, sua filha tá procurando o senhor.",
-      "expr": "surpresa",
-      "foto": [
-        "empty wooden bench near bus terminal at sunset",
-        "A VOLTA"
-      ],
-      "destaque": [
-        "sacolinha",
-        "sua filha"
-      ]
-    },
-    {
-      "fala": "O homem respirou fundo: eu não sei nem como pedir desculpa. Raul respondeu: então começa dizendo exatamente isso. E ofereceu uma carona.",
-      "expr": "cansada",
-      "foto": [
-        "car interior windshield view city street evening",
-        "A CARONA"
-      ],
-      "destaque": [
-        "pedir desculpa",
-        "carona"
-      ]
-    },
-    {
-      "fala": "Na porta da casa, o senhor entregou o presente. A filha abriu o portão. Os dois se abraçaram sem conseguir falar direito.",
-      "expr": "surpresa",
-      "foto": [
-        "small gift box at front gate of cozy home",
-        "O REENCONTRO"
-      ],
-      "destaque": [
-        "presente",
-        "abraçaram"
-      ]
-    },
-    {
-      "fala": "E sabe o que caiu de dentro da sacola? Um bilhete escrito à mão: eu errei com você. Será que ainda dá tempo de recomeçar?",
-      "expr": "chocada",
-      "foto": [
-        "folded handwritten letter beside small gift box",
-        "O BILHETE"
-      ],
-      "destaque": [
-        "eu errei",
-        "recomeçar"
-      ],
-      "zoom": true
-    },
-    {
-      "fala": "Agora me conta: você daria outra chance pra esse pai? Comenta aqui e segue a Nina, que amanhã tem mais história de arrepiar!",
-      "expr": "ironica",
-      "arte": [
-        "interrogacao",
-        "E VOCÊ?"
-      ],
-      "destaque": [
-        "outra chance",
-        "comenta",
-        "segue a Nina"
-      ]
-    }
+  {
+   "fala": "O Raul já tava encerrando a corrida quando viu o aparelho no banco de trás. Nem deu tempo de pensar: começou a tocar.",
+   "expr": "surpresa",
+   "foto": [
+    "smartphone forgotten on back seat of taxi car",
+    "O CELULAR"
+   ],
+   "destaque": [
+    "banco de trás",
+    "começou a tocar"
+   ]
+  },
+  {
+   "fala": "Na tela aparecia: FILHA. Ele atendeu e ouviu uma moça aflita: moço, esse celular é do meu pai? O senhor sabe onde ele tá?",
+   "expr": "assustada",
+   "foto": [
+    "smartphone incoming call on car dashboard at dusk",
+    "FILHA LIGANDO"
+   ],
+   "destaque": [
+    "FILHA",
+    "onde ele tá"
+   ]
+  },
+  {
+   "fala": "Raul contou que tinha deixado o passageiro perto da rodoviária. A moça ficou em silêncio e disse: faz três anos que a gente não se fala.",
+   "expr": "desconfiada",
+   "foto": [
+    "bus station entrance at dusk city",
+    "TRÊS ANOS"
+   ],
+   "destaque": [
+    "rodoviária",
+    "três anos"
+   ]
+  },
+  {
+   "fala": "Aí veio a surpresa: o pai tava indo conhecer a netinha pela primeira vez. Levava um presente, mas tinha medo de não ser recebido.",
+   "expr": "chocada",
+   "foto": [
+    "small wrapped gift box with ribbon on bench",
+    "O PRESENTE"
+   ],
+   "destaque": [
+    "netinha",
+    "primeira vez",
+    "medo"
+   ]
+  },
+  {
+   "fala": "Raul voltou pelo caminho. Viu o senhor sentado num banco, segurando uma sacolinha. Parou e falou: seu Antônio, sua filha tá procurando o senhor.",
+   "expr": "surpresa",
+   "foto": [
+    "empty wooden bench near bus terminal at sunset",
+    "A VOLTA"
+   ],
+   "destaque": [
+    "sacolinha",
+    "sua filha"
+   ]
+  },
+  {
+   "fala": "O homem respirou fundo: eu não sei nem como pedir desculpa. Raul respondeu: então começa dizendo exatamente isso. E ofereceu uma carona.",
+   "expr": "cansada",
+   "foto": [
+    "car interior windshield view city street evening",
+    "A CARONA"
+   ],
+   "destaque": [
+    "pedir desculpa",
+    "carona"
+   ]
+  },
+  {
+   "fala": "Na porta da casa, o senhor entregou o presente. A filha abriu o portão. Os dois se abraçaram sem conseguir falar direito.",
+   "expr": "surpresa",
+   "foto": [
+    "small gift box at front gate of cozy home",
+    "O REENCONTRO"
+   ],
+   "destaque": [
+    "presente",
+    "abraçaram"
+   ]
+  },
+  {
+   "fala": "E sabe o que caiu de dentro da sacola? Um bilhete escrito à mão: eu errei com você. Será que ainda dá tempo de recomeçar?",
+   "expr": "chocada",
+   "foto": [
+    "folded handwritten letter beside small gift box",
+    "O BILHETE"
+   ],
+   "destaque": [
+    "eu errei",
+    "recomeçar"
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "Agora me conta: você daria outra chance pra esse pai? Comenta aqui e segue a Nina, que amanhã tem mais história de arrepiar!",
+   "expr": "ironica",
+   "arte": [
+    "interrogacao",
+    "E VOCÊ?"
+   ],
+   "destaque": [
+    "outra chance",
+    "comenta",
+    "segue a Nina"
+   ]
+  }
+ ],
+ "fim": "AINDA DÁ TEMPO DE RECOMEÇAR?",
+ "legenda_post": "📱🚗 Um passageiro esqueceu o celular no Uber. O motorista atendeu uma ligação e descobriu um segredo de família que mudou o fim daquela corrida. 😳\n\n💬 Você daria outra chance para esse pai? Conta nos comentários e segue a Nina!\n\n🎭 História fictícia, criada para entretenimento.\n#NinaMeContou #HistoriaComReviravolta #Uber #StorytimeBrasil #Familia",
+ "render_revision": 3,
+ "visual_delivery_goal": "Six story-specific illustrated scene assets; AI if available or offline original pictograms (not plain title cards); single bottom caption; verify visual_images.json",
+ "visual_storyboard": [
+  [
+   "car",
+   "phone"
   ],
-  "fim": "AINDA DÁ TEMPO DE RECOMEÇAR?",
-  "legenda_post": "📱🚗 Um passageiro esqueceu o celular no Uber. O motorista atendeu uma ligação e descobriu um segredo de família que mudou o fim daquela corrida. 😳\n\n💬 Você daria outra chance para esse pai? Conta nos comentários e segue a Nina!\n\n🎭 História fictícia, criada para entretenimento.\n#NinaMeContou #HistoriaComReviravolta #Uber #StorytimeBrasil #Familia",
-  "render_revision": 3,
-  "visual_delivery_goal": "Six story-specific illustrated scene assets; AI if available or offline original pictograms (not plain title cards); single bottom caption; verify visual_images.json",
-  "visual_storyboard": [
-    [
-      "car",
-      "phone"
-    ],
-    [
-      "phone",
-      "call"
-    ],
-    [
-      "station",
-      "gift"
-    ],
-    [
-      "car",
-      "family"
-    ],
-    [
-      "home",
-      "letter"
-    ],
-    [
-      "heart",
-      "question"
-    ]
+  [
+   "phone",
+   "call"
+  ],
+  [
+   "station",
+   "gift"
+  ],
+  [
+   "car",
+   "family"
+  ],
+  [
+   "home",
+   "letter"
+  ],
+  [
+   "heart",
+   "question"
   ]
+ ],
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
 }

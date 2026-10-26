@@ -1,215 +1,217 @@
 {
-  "id": "tt20261015-a-casa-a-venda",
-  "avulso": true,
-  "titulo": "A CASA À VENDA",
-  "temporada": "Nina Me Contou — Histórias completas",
-  "cenario": "tarde",
-  "visual_images": {
-    "auto_visual_images": true,
-    "hide_inner_caption_when_image": true,
-    "bottom_caption_only": true,
-    "min_images": 4,
-    "max_images": 8,
-    "target_images": 6,
-    "fallback": "original_art"
+ "id": "tt20261015-a-casa-a-venda",
+ "avulso": true,
+ "titulo": "A CASA À VENDA",
+ "temporada": "Nina Me Contou — Histórias completas",
+ "cenario": "tarde",
+ "visual_images": {
+  "auto_visual_images": true,
+  "hide_inner_caption_when_image": true,
+  "bottom_caption_only": true,
+  "min_images": 4,
+  "max_images": 8,
+  "target_images": 6,
+  "fallback": "original_art"
+ },
+ "batidas": [
+  {
+   "fala": "Renata encontrou a própria casa à venda na internet. O anúncio dizia: imóvel vazio, entrega imediata. Só que ela morava lá!",
+   "expr": "chocada",
+   "arte": [
+    "titulo"
+   ],
+   "foto": "house for sale property listing on laptop screen",
+   "zoom": true,
+   "hf": {
+    "titulo": "A CASA À VENDA",
+    "destaque": [
+     "própria",
+     "venda"
+    ]
+   }
   },
-  "batidas": [
-    {
-      "fala": "Renata encontrou a própria casa à venda na internet. O anúncio dizia: imóvel vazio, entrega imediata. Só que ela morava lá!",
-      "expr": "chocada",
-      "arte": [
-        "titulo"
-      ],
-      "foto": "house for sale property listing on laptop screen",
-      "zoom": true,
-      "hf": {
-        "titulo": "A CASA À VENDA",
-        "destaque": [
-          "própria",
-          "venda"
-        ]
-      }
-    },
-    {
-      "fala": "O preço era quatrocentos e vinte mil reais. As fotos mostravam até seu quarto, arrumado como deixara na terça-feira.",
-      "expr": "desconfiada",
-      "arte": [
-        "celular",
-        "IMÓVEL À VENDA"
-      ],
-      "foto": "real estate listing laptop bedroom photo"
-    },
-    {
-      "fala": "Achando que era golpe, ligou para a corretora fingindo ser compradora. A mulher confirmou: a casa estava disponível.",
-      "expr": "neutra",
-      "arte": [
-        "celular"
-      ]
-    },
-    {
-      "fala": "Renata perguntou pelo proprietário. A resposta foi: Rogério. O nome do marido dela. A corretora ainda disse que ele morava sozinho.",
-      "expr": "chocada",
-      "arte": [
-        "conversa",
-        "MORA SOZINHO?"
-      ]
-    },
-    {
-      "fala": "Renata e Rogério estavam juntos havia doze anos. A casa tinha vindo da avó dela antes do casamento. Era seu único patrimônio.",
-      "expr": "cansada",
-      "arte": [
-        "foto"
-      ],
-      "foto": "old framed grandmother photograph living room"
-    },
-    {
-      "fala": "A corretora marcou visita para sábado, às dez. Renata aceitou. Só não contou que conhecia cada rachadura daquele imóvel.",
-      "expr": "ironica",
-      "arte": [
-        "calendario"
-      ]
-    },
-    {
-      "fala": "Na sexta, Renata perguntou ao marido o que achava de vender a casa. Rogério riu: você enlouqueceu?",
-      "expr": "desconfiada",
-      "arte": [
-        "conversa",
-        "VOCÊ ENLOUQUECEU?"
-      ]
-    },
-    {
-      "fala": "Ela fingiu concordar. Quando ele dormiu, imprimiu o anúncio e separou a escritura original, com seu nome bem claro.",
-      "expr": "neutra",
-      "arte": [
-        "extrato"
-      ],
-      "foto": "property deed next to printed real estate listing"
-    },
-    {
-      "fala": "No sábado, a campainha tocou. A corretora chegou com um casal interessado. Renata abriu a porta e os convidou a entrar.",
-      "expr": "surpresa",
-      "arte": [
-        "porta"
-      ]
-    },
-    {
-      "fala": "A mulher perguntou se o proprietário havia saído. Renata respondeu: não sei. Mas a proprietária está aqui, na sua frente.",
-      "expr": "chocada",
-      "arte": [
-        "manchete_v",
-        "A DONA SOU EU"
-      ],
-      "zoom": true
-    },
-    {
-      "fala": "A corretora empalideceu. Mostrou um contrato enviado por Rogério, com uma autorização de venda supostamente assinada por Renata.",
-      "expr": "desconfiada",
-      "arte": [
-        "celular"
-      ],
-      "foto": "real estate authorization document on table"
-    },
-    {
-      "fala": "Só que ela nunca assinou nada. E percebeu: aquela assinatura parecia copiada de um documento antigo.",
-      "expr": "brava",
-      "arte": [
-        "extrato"
-      ]
-    },
-    {
-      "fala": "O casal ficou assustado. Já havia pago um sinal de trinta mil reais, diretamente para a conta indicada por Rogério.",
-      "expr": "chocada",
-      "arte": [
-        "manchete_v",
-        "R$ 30 MIL"
-      ],
-      "zoom": true
-    },
-    {
-      "fala": "Renata pediu o comprovante. O nome do beneficiário estava lá. O marido tinha recebido o dinheiro.",
-      "expr": "brava",
-      "arte": [
-        "extrato"
-      ],
-      "foto": "bank transfer receipt paper on desk"
-    },
-    {
-      "fala": "Nesse instante, Rogério chegou com sacolas do mercado. Parou ao ver quatro pessoas na sala e documentos espalhados.",
-      "expr": "assustada",
-      "arte": [
-        "porta"
-      ]
-    },
-    {
-      "fala": "Renata perguntou: você ia vender a casa da minha avó? E por que usou uma assinatura que não é minha?",
-      "expr": "brava",
-      "arte": [
-        "conversa",
-        "EXPLICA ISSO!"
-      ]
-    },
-    {
-      "fala": "Ele tentou sorrir. Falou que preparava uma surpresa, uma casa maior. Mas não explicou o dinheiro recebido.",
-      "expr": "ironica",
-      "arte": [
-        "interrogacao"
-      ]
-    },
-    {
-      "fala": "A corretora interrompeu: Rogério, você garantiu que sua esposa tinha se mudado para outra cidade. Está escrito aqui!",
-      "expr": "chocada",
-      "arte": [
-        "conversa",
-        "ELA SE MUDOU?"
-      ]
-    },
-    {
-      "fala": "Ele baixou a cabeça. Confessou que tinha muitas dívidas e achou que resolveria tudo antes que Renata percebesse.",
-      "expr": "cansada",
-      "arte": [
-        "calendario"
-      ],
-      "zoom": true
-    },
-    {
-      "fala": "Renata respirou fundo: você não queria vender uma casa. Queria vender minha confiança, como se ela também fosse sua.",
-      "expr": "chocada",
-      "arte": [
-        "coracao"
-      ]
-    },
-    {
-      "fala": "A corretora cancelou a negociação e começou a resolver a devolução do sinal. Renata guardou as provas para procurar orientação jurídica.",
-      "expr": "neutra",
-      "arte": [
-        "extrato"
-      ]
-    },
-    {
-      "fala": "Rogério pediu perdão e perguntou onde dormiria naquela noite. Renata apontou para as sacolas que ele ainda segurava.",
-      "expr": "ironica",
-      "arte": [
-        "carro"
-      ]
-    },
-    {
-      "fala": "Ela respondeu: procure um lugar. Aqui você não entra fingindo que nada aconteceu. E fechou a porta.",
-      "expr": "chocada",
-      "arte": [
-        "porta"
-      ],
-      "zoom": true
-    },
-    {
-      "fala": "E você? Perdoaria alguém que tentou vender sua casa pelas suas costas? Ou essa confiança acabou para sempre? Comenta aqui.",
-      "expr": "ironica",
-      "arte": [
-        "interrogacao",
-        "VOCÊ PERDOARIA?"
-      ]
-    }
-  ],
-  "fim": "E VOCÊ, PERDOARIA?",
-  "legenda_post": "🏠 RENATA DESCOBRIU A PRÓPRIA CASA À VENDA NA INTERNET! 😱\n\nO anúncio dizia que o imóvel estava vazio. Mas ela morava lá — e o vendedor era o próprio marido!\n\nQuando fingiu ser compradora e marcou uma visita, encontrou um detalhe que mudou tudo.\n\n😳 Você perdoaria alguém que tentou vender sua casa pelas suas costas?\n\n👇 Comenta: PERDOARIA ou NÃO PERDOARIA?\n\n💛 Siga a Nina para mais histórias com reviravoltas.\n\nHistória fictícia, criada para entretenimento.\n\n#NinaMeContou #Storytime #HistoriaCompleta #Reviravolta #Segredo #Relacionamentos #TikTokBrasil",
-  "render_retry": 1
+  {
+   "fala": "O preço era quatrocentos e vinte mil reais. As fotos mostravam até seu quarto, arrumado como deixara na terça-feira.",
+   "expr": "desconfiada",
+   "arte": [
+    "celular",
+    "IMÓVEL À VENDA"
+   ],
+   "foto": "real estate listing laptop bedroom photo"
+  },
+  {
+   "fala": "Achando que era golpe, ligou para a corretora fingindo ser compradora. A mulher confirmou: a casa estava disponível.",
+   "expr": "neutra",
+   "arte": [
+    "celular"
+   ]
+  },
+  {
+   "fala": "Renata perguntou pelo proprietário. A resposta foi: Rogério. O nome do marido dela. A corretora ainda disse que ele morava sozinho.",
+   "expr": "chocada",
+   "arte": [
+    "conversa",
+    "MORA SOZINHO?"
+   ]
+  },
+  {
+   "fala": "Renata e Rogério estavam juntos havia doze anos. A casa tinha vindo da avó dela antes do casamento. Era seu único patrimônio.",
+   "expr": "cansada",
+   "arte": [
+    "foto"
+   ],
+   "foto": "old framed grandmother photograph living room"
+  },
+  {
+   "fala": "A corretora marcou visita para sábado, às dez. Renata aceitou. Só não contou que conhecia cada rachadura daquele imóvel.",
+   "expr": "ironica",
+   "arte": [
+    "calendario"
+   ]
+  },
+  {
+   "fala": "Na sexta, Renata perguntou ao marido o que achava de vender a casa. Rogério riu: você enlouqueceu?",
+   "expr": "desconfiada",
+   "arte": [
+    "conversa",
+    "VOCÊ ENLOUQUECEU?"
+   ]
+  },
+  {
+   "fala": "Ela fingiu concordar. Quando ele dormiu, imprimiu o anúncio e separou a escritura original, com seu nome bem claro.",
+   "expr": "neutra",
+   "arte": [
+    "extrato"
+   ],
+   "foto": "property deed next to printed real estate listing"
+  },
+  {
+   "fala": "No sábado, a campainha tocou. A corretora chegou com um casal interessado. Renata abriu a porta e os convidou a entrar.",
+   "expr": "surpresa",
+   "arte": [
+    "porta"
+   ]
+  },
+  {
+   "fala": "A mulher perguntou se o proprietário havia saído. Renata respondeu: não sei. Mas a proprietária está aqui, na sua frente.",
+   "expr": "chocada",
+   "arte": [
+    "manchete_v",
+    "A DONA SOU EU"
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "A corretora empalideceu. Mostrou um contrato enviado por Rogério, com uma autorização de venda supostamente assinada por Renata.",
+   "expr": "desconfiada",
+   "arte": [
+    "celular"
+   ],
+   "foto": "real estate authorization document on table"
+  },
+  {
+   "fala": "Só que ela nunca assinou nada. E percebeu: aquela assinatura parecia copiada de um documento antigo.",
+   "expr": "brava",
+   "arte": [
+    "extrato"
+   ]
+  },
+  {
+   "fala": "O casal ficou assustado. Já havia pago um sinal de trinta mil reais, diretamente para a conta indicada por Rogério.",
+   "expr": "chocada",
+   "arte": [
+    "manchete_v",
+    "R$ 30 MIL"
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "Renata pediu o comprovante. O nome do beneficiário estava lá. O marido tinha recebido o dinheiro.",
+   "expr": "brava",
+   "arte": [
+    "extrato"
+   ],
+   "foto": "bank transfer receipt paper on desk"
+  },
+  {
+   "fala": "Nesse instante, Rogério chegou com sacolas do mercado. Parou ao ver quatro pessoas na sala e documentos espalhados.",
+   "expr": "assustada",
+   "arte": [
+    "porta"
+   ]
+  },
+  {
+   "fala": "Renata perguntou: você ia vender a casa da minha avó? E por que usou uma assinatura que não é minha?",
+   "expr": "brava",
+   "arte": [
+    "conversa",
+    "EXPLICA ISSO!"
+   ]
+  },
+  {
+   "fala": "Ele tentou sorrir. Falou que preparava uma surpresa, uma casa maior. Mas não explicou o dinheiro recebido.",
+   "expr": "ironica",
+   "arte": [
+    "interrogacao"
+   ]
+  },
+  {
+   "fala": "A corretora interrompeu: Rogério, você garantiu que sua esposa tinha se mudado para outra cidade. Está escrito aqui!",
+   "expr": "chocada",
+   "arte": [
+    "conversa",
+    "ELA SE MUDOU?"
+   ]
+  },
+  {
+   "fala": "Ele baixou a cabeça. Confessou que tinha muitas dívidas e achou que resolveria tudo antes que Renata percebesse.",
+   "expr": "cansada",
+   "arte": [
+    "calendario"
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "Renata respirou fundo: você não queria vender uma casa. Queria vender minha confiança, como se ela também fosse sua.",
+   "expr": "chocada",
+   "arte": [
+    "coracao"
+   ]
+  },
+  {
+   "fala": "A corretora cancelou a negociação e começou a resolver a devolução do sinal. Renata guardou as provas para procurar orientação jurídica.",
+   "expr": "neutra",
+   "arte": [
+    "extrato"
+   ]
+  },
+  {
+   "fala": "Rogério pediu perdão e perguntou onde dormiria naquela noite. Renata apontou para as sacolas que ele ainda segurava.",
+   "expr": "ironica",
+   "arte": [
+    "carro"
+   ]
+  },
+  {
+   "fala": "Ela respondeu: procure um lugar. Aqui você não entra fingindo que nada aconteceu. E fechou a porta.",
+   "expr": "chocada",
+   "arte": [
+    "porta"
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "E você? Perdoaria alguém que tentou vender sua casa pelas suas costas? Ou essa confiança acabou para sempre? Comenta aqui.",
+   "expr": "ironica",
+   "arte": [
+    "interrogacao",
+    "VOCÊ PERDOARIA?"
+   ]
+  }
+ ],
+ "fim": "E VOCÊ, PERDOARIA?",
+ "legenda_post": "🏠 RENATA DESCOBRIU A PRÓPRIA CASA À VENDA NA INTERNET! 😱\n\nO anúncio dizia que o imóvel estava vazio. Mas ela morava lá — e o vendedor era o próprio marido!\n\nQuando fingiu ser compradora e marcou uma visita, encontrou um detalhe que mudou tudo.\n\n😳 Você perdoaria alguém que tentou vender sua casa pelas suas costas?\n\n👇 Comenta: PERDOARIA ou NÃO PERDOARIA?\n\n💛 Siga a Nina para mais histórias com reviravoltas.\n\nHistória fictícia, criada para entretenimento.\n\n#NinaMeContou #Storytime #HistoriaCompleta #Reviravolta #Segredo #Relacionamentos #TikTokBrasil",
+ "render_retry": 1,
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
 }

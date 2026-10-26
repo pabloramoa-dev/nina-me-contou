@@ -1,119 +1,121 @@
 {
-  "id": "tt20261021-o-bolo-sem-nome",
-  "avulso": true,
-  "titulo": "O BOLO SEM NOME",
-  "temporada": "TikTok diário",
-  "cenario": "tarde",
-  "visual_images": {
-    "auto_visual_images": true,
-    "hide_inner_caption_when_image": true,
-    "bottom_caption_only": true,
-    "min_images": 4,
-    "max_images": 8,
-    "target_images": 6,
-    "fallback": "original_art"
+ "id": "tt20261021-o-bolo-sem-nome",
+ "avulso": true,
+ "titulo": "O BOLO SEM NOME",
+ "temporada": "TikTok diário",
+ "cenario": "tarde",
+ "visual_images": {
+  "auto_visual_images": true,
+  "hide_inner_caption_when_image": true,
+  "bottom_caption_only": true,
+  "min_images": 4,
+  "max_images": 8,
+  "target_images": 6,
+  "fallback": "original_art"
+ },
+ "batidas": [
+  {
+   "fala": "O marido disse que estava sem dinheiro para o aniversário dela. Duas horas depois, a confeitaria ligou perguntando onde entregava um bolo de quatrocentos reais.",
+   "expr": "chocada",
+   "foto": [
+    "birthday cake box",
+    "A LIGAÇÃO"
+   ],
+   "zoom": true
   },
-  "batidas": [
-    {
-      "fala": "O marido disse que estava sem dinheiro para o aniversário dela. Duas horas depois, a confeitaria ligou perguntando onde entregava um bolo de quatrocentos reais.",
-      "expr": "chocada",
-      "foto": [
-        "birthday cake box",
-        "A LIGAÇÃO"
-      ],
-      "zoom": true
-    },
-    {
-      "fala": "Renata achou que tinha estragado uma surpresa. Confirmou o endereço de casa e até trocou de roupa. Fazia anos que Paulo não organizava nada.",
-      "expr": "neutra",
-      "foto": [
-        "living room birthday decorations",
-        "A EXPECTATIVA"
-      ]
-    },
-    {
-      "fala": "Só que a atendente perguntou: e mantém a frase, parabéns, meu amor? Renata sorriu. Mantém. Aí ouviu: e o nome Vanessa, escrito em dourado?",
-      "expr": "chocada",
-      "foto": [
-        "gold cake lettering",
-        "VANESSA?"
-      ],
-      "zoom": true
-    },
-    {
-      "fala": "Ela pediu que conferissem o telefone do pedido. Era o de Paulo. Conferiram também a mensagem enviada por ele: entregar no escritório depois das seis.",
-      "expr": "desconfiada",
-      "foto": [
-        "smartphone bakery counter",
-        "O PEDIDO"
-      ]
-    },
-    {
-      "fala": "Renata não gritou com a moça. Disse que havia uma confusão e pediu para não mudar a entrega original. Depois ligou para o marido.",
-      "expr": "neutra",
-      "foto": [
-        "phone on kitchen table",
-        "A PERGUNTA"
-      ]
-    },
-    {
-      "fala": "Perguntou se ele voltaria cedo. Paulo respondeu que precisava fechar umas planilhas e que a empresa nem lembrava do aniversário de ninguém.",
-      "expr": "ironica",
-      "foto": [
-        "office desk calculator",
-        "AS PLANILHAS"
-      ]
-    },
-    {
-      "fala": "Às seis e meia, Renata chegou à recepção do escritório com dois pratos descartáveis. Disse que tinha vindo dividir um pedaço do bolo com o marido.",
-      "expr": "desconfiada",
-      "foto": [
-        "paper plates table",
-        "DOIS PRATOS"
-      ]
-    },
-    {
-      "fala": "Paulo apareceu com Vanessa. Quando viu os pratos, ficou branco. Renata perguntou só uma coisa: há quanto tempo? Ele tentou dizer que era brincadeira do pessoal.",
-      "expr": "chocada",
-      "foto": [
-        "office reception hallway",
-        "A DESCULPA"
-      ],
-      "zoom": true
-    },
-    {
-      "fala": "Vanessa olhou para ele e perguntou: você não estava separado? O silêncio respondeu antes dele. Ela tirou a mão do braço de Paulo e foi embora.",
-      "expr": "neutra",
-      "foto": [
-        "empty office doorway",
-        "O SILÊNCIO"
-      ]
-    },
-    {
-      "fala": "Renata voltou para casa, separou suas coisas e passou a noite na irmã. Nos dias seguintes, decidiu encerrar o casamento. Não era pelo preço do bolo.",
-      "expr": "neutra",
-      "foto": [
-        "travel bag bedroom",
-        "A DECISÃO"
-      ]
-    },
-    {
-      "fala": "No sábado, comemorou com as amigas. Comprou um bolo pequeno, sem nome, sem frase e sem dourado. A irmã perguntou se não faltava alguma coisa.",
-      "expr": "ironica",
-      "foto": [
-        "small chocolate cake",
-        "O ANIVERSÁRIO"
-      ]
-    },
-    {
-      "fala": "Renata acendeu a vela e respondeu: faltava sinceridade. Agora tem. Você teria ido ao escritório ou perguntado em casa? Conta e segue a Nina.",
-      "expr": "ironica",
-      "foto": [
-        "birthday candle cake",
-        "NOVO COMEÇO"
-      ]
-    }
-  ],
-  "fim": "NOVO COMEÇO",
-  "legenda_post": "Ele disse que estava sem dinheiro para o aniversário dela. A ligação da confeitaria contou outra história. 🎂😳\nVocê teria ido ao escritório?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Relacionamento"
+  {
+   "fala": "Renata achou que tinha estragado uma surpresa. Confirmou o endereço de casa e até trocou de roupa. Fazia anos que Paulo não organizava nada.",
+   "expr": "neutra",
+   "foto": [
+    "living room birthday decorations",
+    "A EXPECTATIVA"
+   ]
+  },
+  {
+   "fala": "Só que a atendente perguntou: e mantém a frase, parabéns, meu amor? Renata sorriu. Mantém. Aí ouviu: e o nome Vanessa, escrito em dourado?",
+   "expr": "chocada",
+   "foto": [
+    "gold cake lettering",
+    "VANESSA?"
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "Ela pediu que conferissem o telefone do pedido. Era o de Paulo. Conferiram também a mensagem enviada por ele: entregar no escritório depois das seis.",
+   "expr": "desconfiada",
+   "foto": [
+    "smartphone bakery counter",
+    "O PEDIDO"
+   ]
+  },
+  {
+   "fala": "Renata não gritou com a moça. Disse que havia uma confusão e pediu para não mudar a entrega original. Depois ligou para o marido.",
+   "expr": "neutra",
+   "foto": [
+    "phone on kitchen table",
+    "A PERGUNTA"
+   ]
+  },
+  {
+   "fala": "Perguntou se ele voltaria cedo. Paulo respondeu que precisava fechar umas planilhas e que a empresa nem lembrava do aniversário de ninguém.",
+   "expr": "ironica",
+   "foto": [
+    "office desk calculator",
+    "AS PLANILHAS"
+   ]
+  },
+  {
+   "fala": "Às seis e meia, Renata chegou à recepção do escritório com dois pratos descartáveis. Disse que tinha vindo dividir um pedaço do bolo com o marido.",
+   "expr": "desconfiada",
+   "foto": [
+    "paper plates table",
+    "DOIS PRATOS"
+   ]
+  },
+  {
+   "fala": "Paulo apareceu com Vanessa. Quando viu os pratos, ficou branco. Renata perguntou só uma coisa: há quanto tempo? Ele tentou dizer que era brincadeira do pessoal.",
+   "expr": "chocada",
+   "foto": [
+    "office reception hallway",
+    "A DESCULPA"
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "Vanessa olhou para ele e perguntou: você não estava separado? O silêncio respondeu antes dele. Ela tirou a mão do braço de Paulo e foi embora.",
+   "expr": "neutra",
+   "foto": [
+    "empty office doorway",
+    "O SILÊNCIO"
+   ]
+  },
+  {
+   "fala": "Renata voltou para casa, separou suas coisas e passou a noite na irmã. Nos dias seguintes, decidiu encerrar o casamento. Não era pelo preço do bolo.",
+   "expr": "neutra",
+   "foto": [
+    "travel bag bedroom",
+    "A DECISÃO"
+   ]
+  },
+  {
+   "fala": "No sábado, comemorou com as amigas. Comprou um bolo pequeno, sem nome, sem frase e sem dourado. A irmã perguntou se não faltava alguma coisa.",
+   "expr": "ironica",
+   "foto": [
+    "small chocolate cake",
+    "O ANIVERSÁRIO"
+   ]
+  },
+  {
+   "fala": "Renata acendeu a vela e respondeu: faltava sinceridade. Agora tem. Você teria ido ao escritório ou perguntado em casa? Conta e segue a Nina.",
+   "expr": "ironica",
+   "foto": [
+    "birthday candle cake",
+    "NOVO COMEÇO"
+   ]
+  }
+ ],
+ "fim": "NOVO COMEÇO",
+ "legenda_post": "Ele disse que estava sem dinheiro para o aniversário dela. A ligação da confeitaria contou outra história. 🎂😳\nVocê teria ido ao escritório?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Relacionamento",
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
 }

@@ -7,14 +7,14 @@
  "cenario": "tarde",
  "batidas": [
   {
-   "fala": "Você desconfiaria de um nome diferente salvo como contato de emergência? Ela também não desconfiou.",
-   "expr": "ironica",
+   "fala": "Bruna encontrou um nome diferente salvo como contato de emergência. A pista levava a um prédio perto do trabalho, mas Carolina negou conhecer o lugar.",
+   "expr": "desconfiada",
    "arte": [
     "titulo"
    ],
    "destaque": [
-    "não",
-    "deveria"
+    "Bruna",
+    "diferente"
    ]
   },
   {
@@ -139,7 +139,9 @@
   }
  ],
  "fim": "CONTINUA NA PARTE 2",
- "legenda_post": "Você desconfiaria de um nome diferente salvo como contato de emergência? Ela também não desconfiou.\n\nUma pista levou Bruna a uma história que não fechava. A continuação está no perfil.\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em situações comuns do cotidiano.\n\n#storytime #historia #fofoca #segredo #relacionamentos #ninamecontou",
+ "legenda_post": "Bruna encontrou um nome diferente salvo como contato de emergência. A pista levava a um prédio perto do trabalho, mas Carolina negou conhecer o lugar.\n\nUma pista levou Bruna a uma história que não fechava. A continuação está no perfil.\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em situações comuns do cotidiano.\n\n#storytime #historia #fofoca #segredo #relacionamentos #ninamecontou",
  "gerado_automaticamente": true,
- "serie_anual": 78
+ "serie_anual": 78,
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "descoberta_e_contradicao"
 }

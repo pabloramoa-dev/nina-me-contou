@@ -1,144 +1,146 @@
 {
-  "id": "tt20261011-o-quarto-fechado",
-  "avulso": true,
-  "titulo": "O QUARTO FECHADO",
-  "temporada": "TikTok diário",
-  "cenario": "noite",
-  "visual_images": {
-    "auto_visual_images": true,
-    "hide_inner_caption_when_image": true,
-    "bottom_caption_only": true,
-    "min_images": 4,
-    "max_images": 8,
-    "target_images": 6,
-    "fallback": "original_art"
+ "id": "tt20261011-o-quarto-fechado",
+ "avulso": true,
+ "titulo": "O QUARTO FECHADO",
+ "temporada": "TikTok diário",
+ "cenario": "noite",
+ "visual_images": {
+  "auto_visual_images": true,
+  "hide_inner_caption_when_image": true,
+  "bottom_caption_only": true,
+  "min_images": 4,
+  "max_images": 8,
+  "target_images": 6,
+  "fallback": "original_art"
+ },
+ "batidas": [
+  {
+   "fala": "Durante quinze anos, ninguém entrou no quarto que o avô de Clara mantinha trancado. No enterro, ela recebeu a única chave.",
+   "expr": "desconfiada",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "quinze anos",
+    "única chave"
+   ],
+   "zoom": true
   },
-  "batidas": [
-    {
-      "fala": "Durante quinze anos, ninguém entrou no quarto que o avô de Clara mantinha trancado. No enterro, ela recebeu a única chave.",
-      "expr": "desconfiada",
-      "arte": [
-        "titulo"
-      ],
-      "destaque": [
-        "quinze anos",
-        "única chave"
-      ],
-      "zoom": true
-    },
-    {
-      "fala": "A família dizia que ali dentro havia lembranças da avó, morta antes de Clara nascer. Mas o avô sempre mudava de assunto.",
-      "expr": "cansada",
-      "foto": [
-        "old locked bedroom door",
-        "O QUARTO"
-      ],
-      "destaque": [
-        "lembranças",
-        "mudava"
-      ]
-    },
-    {
-      "fala": "Naquela noite, Clara girou a chave. O quarto não tinha cama. Tinha uma bancada, caixas de madeira e dezenas de relógios parados.",
-      "expr": "surpresa",
-      "foto": [
-        "vintage clock workshop room",
-        "RELÓGIOS PARADOS"
-      ],
-      "destaque": [
-        "dezenas",
-        "parados"
-      ],
-      "zoom": true
-    },
-    {
-      "fala": "Todos marcavam seis e vinte. Menos um relógio de bolso, ainda funcionando dentro de uma caixa com o nome dela.",
-      "expr": "chocada",
-      "foto": [
-        "antique pocket watch wooden box",
-        "6:20"
-      ],
-      "destaque": [
-        "funcionando",
-        "nome dela"
-      ],
-      "zoom": true
-    },
-    {
-      "fala": "Debaixo dele havia cartas que o avô nunca enviou. Eram dirigidas a uma mulher chamada Elisa, a irmã gêmea da avó.",
-      "expr": "assustada",
-      "foto": [
-        "old letters tied with ribbon",
-        "ELISA"
-      ],
-      "destaque": [
-        "nunca enviou",
-        "irmã gêmea"
-      ]
-    },
-    {
-      "fala": "As cartas contavam que, depois de uma briga, Elisa saiu da cidade. O avô consertava um relógio por ano, esperando que ela voltasse.",
-      "expr": "cansada",
-      "arte": [
-        "calendario",
-        "UM POR ANO"
-      ],
-      "destaque": [
-        "um relógio",
-        "voltasse"
-      ]
-    },
-    {
-      "fala": "O último envelope trazia um endereço recente. Clara foi até lá no domingo e encontrou uma senhora com os mesmos olhos da fotografia da avó.",
-      "expr": "surpresa",
-      "foto": [
-        "old envelope with address",
-        "UM ENDEREÇO"
-      ],
-      "destaque": [
-        "domingo",
-        "mesmos olhos"
-      ]
-    },
-    {
-      "fala": "Elisa não sabia que a irmã tinha morrido. Também não sabia que o cunhado havia passado quinze anos tentando encontrá-la.",
-      "expr": "chocada",
-      "arte": [
-        "coracao",
-        "15 ANOS"
-      ],
-      "destaque": [
-        "não sabia",
-        "quinze anos"
-      ],
-      "zoom": true
-    },
-    {
-      "fala": "Clara entregou o relógio de bolso. Quando Elisa abriu a tampa, ele marcou seis e vinte e finalmente parou.",
-      "expr": "neutra",
-      "foto": [
-        "open antique pocket watch",
-        "O ÚLTIMO RELÓGIO"
-      ],
-      "destaque": [
-        "seis e vinte",
-        "parou"
-      ]
-    },
-    {
-      "fala": "Dentro da tampa havia uma frase: família é o tempo que a gente decide recuperar. E você, abriria uma porta que todos mandaram deixar fechada? Me conta aqui embaixo.",
-      "expr": "ironica",
-      "arte": [
-        "interrogacao",
-        "E VOCÊ?"
-      ],
-      "destaque": [
-        "família",
-        "recuperar",
-        "abriria"
-      ]
-    }
-  ],
-  "fim": "O TEMPO QUE VOLTA",
-  "legenda_post": "Um quarto ficou fechado por 15 anos — até Clara encontrar a chave e descobrir por que todos os relógios marcavam a mesma hora. 🗝️⏰\nVocê abriria uma porta que a família inteira mandou deixar fechada?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Storytime #Historia #Misterio #Familia"
+  {
+   "fala": "A família dizia que ali dentro havia lembranças da avó, morta antes de Clara nascer. Mas o avô sempre mudava de assunto.",
+   "expr": "cansada",
+   "foto": [
+    "old locked bedroom door",
+    "O QUARTO"
+   ],
+   "destaque": [
+    "lembranças",
+    "mudava"
+   ]
+  },
+  {
+   "fala": "Naquela noite, Clara girou a chave. O quarto não tinha cama. Tinha uma bancada, caixas de madeira e dezenas de relógios parados.",
+   "expr": "surpresa",
+   "foto": [
+    "vintage clock workshop room",
+    "RELÓGIOS PARADOS"
+   ],
+   "destaque": [
+    "dezenas",
+    "parados"
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "Todos marcavam seis e vinte. Menos um relógio de bolso, ainda funcionando dentro de uma caixa com o nome dela.",
+   "expr": "chocada",
+   "foto": [
+    "antique pocket watch wooden box",
+    "6:20"
+   ],
+   "destaque": [
+    "funcionando",
+    "nome dela"
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "Debaixo dele havia cartas que o avô nunca enviou. Eram dirigidas a uma mulher chamada Elisa, a irmã gêmea da avó.",
+   "expr": "assustada",
+   "foto": [
+    "old letters tied with ribbon",
+    "ELISA"
+   ],
+   "destaque": [
+    "nunca enviou",
+    "irmã gêmea"
+   ]
+  },
+  {
+   "fala": "As cartas contavam que, depois de uma briga, Elisa saiu da cidade. O avô consertava um relógio por ano, esperando que ela voltasse.",
+   "expr": "cansada",
+   "arte": [
+    "calendario",
+    "UM POR ANO"
+   ],
+   "destaque": [
+    "um relógio",
+    "voltasse"
+   ]
+  },
+  {
+   "fala": "O último envelope trazia um endereço recente. Clara foi até lá no domingo e encontrou uma senhora com os mesmos olhos da fotografia da avó.",
+   "expr": "surpresa",
+   "foto": [
+    "old envelope with address",
+    "UM ENDEREÇO"
+   ],
+   "destaque": [
+    "domingo",
+    "mesmos olhos"
+   ]
+  },
+  {
+   "fala": "Elisa não sabia que a irmã tinha morrido. Também não sabia que o cunhado havia passado quinze anos tentando encontrá-la.",
+   "expr": "chocada",
+   "arte": [
+    "coracao",
+    "15 ANOS"
+   ],
+   "destaque": [
+    "não sabia",
+    "quinze anos"
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "Clara entregou o relógio de bolso. Quando Elisa abriu a tampa, ele marcou seis e vinte e finalmente parou.",
+   "expr": "neutra",
+   "foto": [
+    "open antique pocket watch",
+    "O ÚLTIMO RELÓGIO"
+   ],
+   "destaque": [
+    "seis e vinte",
+    "parou"
+   ]
+  },
+  {
+   "fala": "Dentro da tampa havia uma frase: família é o tempo que a gente decide recuperar. E você, abriria uma porta que todos mandaram deixar fechada? Me conta aqui embaixo.",
+   "expr": "ironica",
+   "arte": [
+    "interrogacao",
+    "E VOCÊ?"
+   ],
+   "destaque": [
+    "família",
+    "recuperar",
+    "abriria"
+   ]
+  }
+ ],
+ "fim": "O TEMPO QUE VOLTA",
+ "legenda_post": "Um quarto ficou fechado por 15 anos — até Clara encontrar a chave e descobrir por que todos os relógios marcavam a mesma hora. 🗝️⏰\nVocê abriria uma porta que a família inteira mandou deixar fechada?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Storytime #Historia #Misterio #Familia",
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
 }

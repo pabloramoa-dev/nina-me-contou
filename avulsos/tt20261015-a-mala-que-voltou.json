@@ -1,118 +1,120 @@
 {
-  "id": "tt20261015-a-mala-que-voltou",
-  "avulso": true,
-  "titulo": "A MALA QUE VOLTOU",
-  "temporada": "TikTok diário",
-  "cenario": "tarde",
-  "visual_images": {
-    "auto_visual_images": true,
-    "hide_inner_caption_when_image": true,
-    "bottom_caption_only": true,
-    "min_images": 4,
-    "max_images": 8,
-    "target_images": 6,
-    "fallback": "original_art"
+ "id": "tt20261015-a-mala-que-voltou",
+ "avulso": true,
+ "titulo": "A MALA QUE VOLTOU",
+ "temporada": "TikTok diário",
+ "cenario": "tarde",
+ "visual_images": {
+  "auto_visual_images": true,
+  "hide_inner_caption_when_image": true,
+  "bottom_caption_only": true,
+  "min_images": 4,
+  "max_images": 8,
+  "target_images": 6,
+  "fallback": "original_art"
+ },
+ "batidas": [
+  {
+   "fala": "A mala que Clara comprou num leilão tinha uma foto dela dormindo. Só que a foto era de vinte anos atrás.",
+   "expr": "chocada",
+   "foto": [
+    "old leather suitcase",
+    "A MALA"
+   ],
+   "zoom": true
   },
-  "batidas": [
-    {
-      "fala": "A mala que Clara comprou num leilão tinha uma foto dela dormindo. Só que a foto era de vinte anos atrás.",
-      "expr": "chocada",
-      "foto": [
-        "old leather suitcase",
-        "A MALA"
-      ],
-      "zoom": true
-    },
-    {
-      "fala": "Clara restaurava malas antigas para vender. Naquela terça, pagou quarenta reais por uma pequena mala azul, esquecida no depósito de uma rodoviária.",
-      "expr": "neutra",
-      "foto": [
-        "vintage blue suitcase",
-        "QUARENTA REAIS"
-      ]
-    },
-    {
-      "fala": "Ao trocar o forro, encontrou um envelope costurado por dentro. A menina da foto usava o vestido amarelo que sua mãe guardava até hoje.",
-      "expr": "desconfiada",
-      "foto": [
-        "old photograph envelope",
-        "A FOTOGRAFIA"
-      ]
-    },
-    {
-      "fala": "Atrás, havia uma data e uma frase: volto antes do aniversário. Era a letra do pai, que desaparecera quando ela tinha cinco anos.",
-      "expr": "triste",
-      "arte": [
-        "coracao",
-        "A VERDADE"
-      ]
-    },
-    {
-      "fala": "A mãe sempre dissera que ele tinha escolhido outra família. Clara levou a mala para casa e colocou a fotografia na mesa, sem dizer nada.",
-      "expr": "desconfiada",
-      "foto": [
-        "old suitcase on table",
-        "A VERDADE"
-      ]
-    },
-    {
-      "fala": "A mãe ficou pálida. Abriu uma gaveta trancada e tirou uma carta. O pai tinha morrido num acidente, viajando para uma entrevista de emprego.",
-      "expr": "triste",
-      "foto": [
-        "letter in wooden drawer",
-        "A CARTA"
-      ]
-    },
-    {
-      "fala": "Sem conseguir explicar a morte para a filha, ela inventara que ele estava longe. Depois, por vergonha, deixou a mentira crescer por vinte anos.",
-      "expr": "triste",
-      "arte": [
-        "coracao",
-        "A VERDADE"
-      ]
-    },
-    {
-      "fala": "Clara perguntou por que tinha sido mais fácil deixá-la acreditar que não era amada. A mãe começou uma desculpa, mas parou: não foi mais fácil para você. Foi para mim.",
-      "expr": "chocada",
-      "arte": [
-        "coracao",
-        "A VERDADE"
-      ],
-      "zoom": true
-    },
-    {
-      "fala": "Por semanas, Clara não conseguiu visitá-la. Procurou a antiga empresa de ônibus e confirmou o acidente num arquivo de jornal. A data era a mesma da carta.",
-      "expr": "desconfiada",
-      "foto": [
-        "old newspaper archive",
-        "VINTE ANOS"
-      ]
-    },
-    {
-      "fala": "Quando voltou, levou a mala restaurada. Dentro, colocou a foto do pai e o vestido amarelo. Disse que precisava de tempo, mas que dali em diante só aceitaria a verdade.",
-      "expr": "neutra",
-      "foto": [
-        "yellow dress folded suitcase",
-        "SEM MENTIRAS"
-      ]
-    },
-    {
-      "fala": "Naquele aniversário, mãe e filha olharam as fotografias juntas. Clara ainda sentia raiva. Mas, pela primeira vez, pôde sentir saudade de alguém que nunca tinha deixado de amá-la.",
-      "expr": "triste",
-      "arte": [
-        "coracao",
-        "A VERDADE"
-      ]
-    },
-    {
-      "fala": "Você conseguiria reconstruir essa confiança? Conta nos comentários e segue a Nina para mais histórias.",
-      "expr": "ironica",
-      "arte": [
-        "interrogacao",
-        "E VOCÊ?"
-      ]
-    }
-  ],
-  "fim": "A VERDADE TAMBÉM CUIDA",
-  "legenda_post": "Ela comprou uma mala antiga e encontrou uma fotografia da própria infância. O segredo mudou tudo que sabia sobre o pai. 🧳\nVocê conseguiria reconstruir essa confiança?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Familia"
+  {
+   "fala": "Clara restaurava malas antigas para vender. Naquela terça, pagou quarenta reais por uma pequena mala azul, esquecida no depósito de uma rodoviária.",
+   "expr": "neutra",
+   "foto": [
+    "vintage blue suitcase",
+    "QUARENTA REAIS"
+   ]
+  },
+  {
+   "fala": "Ao trocar o forro, encontrou um envelope costurado por dentro. A menina da foto usava o vestido amarelo que sua mãe guardava até hoje.",
+   "expr": "desconfiada",
+   "foto": [
+    "old photograph envelope",
+    "A FOTOGRAFIA"
+   ]
+  },
+  {
+   "fala": "Atrás, havia uma data e uma frase: volto antes do aniversário. Era a letra do pai, que desaparecera quando ela tinha cinco anos.",
+   "expr": "triste",
+   "arte": [
+    "coracao",
+    "A VERDADE"
+   ]
+  },
+  {
+   "fala": "A mãe sempre dissera que ele tinha escolhido outra família. Clara levou a mala para casa e colocou a fotografia na mesa, sem dizer nada.",
+   "expr": "desconfiada",
+   "foto": [
+    "old suitcase on table",
+    "A VERDADE"
+   ]
+  },
+  {
+   "fala": "A mãe ficou pálida. Abriu uma gaveta trancada e tirou uma carta. O pai tinha morrido num acidente, viajando para uma entrevista de emprego.",
+   "expr": "triste",
+   "foto": [
+    "letter in wooden drawer",
+    "A CARTA"
+   ]
+  },
+  {
+   "fala": "Sem conseguir explicar a morte para a filha, ela inventara que ele estava longe. Depois, por vergonha, deixou a mentira crescer por vinte anos.",
+   "expr": "triste",
+   "arte": [
+    "coracao",
+    "A VERDADE"
+   ]
+  },
+  {
+   "fala": "Clara perguntou por que tinha sido mais fácil deixá-la acreditar que não era amada. A mãe começou uma desculpa, mas parou: não foi mais fácil para você. Foi para mim.",
+   "expr": "chocada",
+   "arte": [
+    "coracao",
+    "A VERDADE"
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "Por semanas, Clara não conseguiu visitá-la. Procurou a antiga empresa de ônibus e confirmou o acidente num arquivo de jornal. A data era a mesma da carta.",
+   "expr": "desconfiada",
+   "foto": [
+    "old newspaper archive",
+    "VINTE ANOS"
+   ]
+  },
+  {
+   "fala": "Quando voltou, levou a mala restaurada. Dentro, colocou a foto do pai e o vestido amarelo. Disse que precisava de tempo, mas que dali em diante só aceitaria a verdade.",
+   "expr": "neutra",
+   "foto": [
+    "yellow dress folded suitcase",
+    "SEM MENTIRAS"
+   ]
+  },
+  {
+   "fala": "Naquele aniversário, mãe e filha olharam as fotografias juntas. Clara ainda sentia raiva. Mas, pela primeira vez, pôde sentir saudade de alguém que nunca tinha deixado de amá-la.",
+   "expr": "triste",
+   "arte": [
+    "coracao",
+    "A VERDADE"
+   ]
+  },
+  {
+   "fala": "Você conseguiria reconstruir essa confiança? Conta nos comentários e segue a Nina para mais histórias.",
+   "expr": "ironica",
+   "arte": [
+    "interrogacao",
+    "E VOCÊ?"
+   ]
+  }
+ ],
+ "fim": "A VERDADE TAMBÉM CUIDA",
+ "legenda_post": "Ela comprou uma mala antiga e encontrou uma fotografia da própria infância. O segredo mudou tudo que sabia sobre o pai. 🧳\nVocê conseguiria reconstruir essa confiança?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Familia",
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
 }

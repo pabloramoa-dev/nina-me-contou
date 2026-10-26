@@ -1,118 +1,120 @@
 {
-  "id": "tt20261020-a-encomenda-errada",
-  "avulso": true,
-  "titulo": "A ENCOMENDA ERRADA",
-  "temporada": "TikTok diário",
-  "cenario": "tarde",
-  "visual_images": {
-    "auto_visual_images": true,
-    "hide_inner_caption_when_image": true,
-    "bottom_caption_only": true,
-    "min_images": 4,
-    "max_images": 8,
-    "target_images": 6,
-    "fallback": "original_art"
+ "id": "tt20261020-a-encomenda-errada",
+ "avulso": true,
+ "titulo": "A ENCOMENDA ERRADA",
+ "temporada": "TikTok diário",
+ "cenario": "tarde",
+ "visual_images": {
+  "auto_visual_images": true,
+  "hide_inner_caption_when_image": true,
+  "bottom_caption_only": true,
+  "min_images": 4,
+  "max_images": 8,
+  "target_images": 6,
+  "fallback": "original_art"
+ },
+ "batidas": [
+  {
+   "fala": "Ela recebeu um vestido de noiva no lugar de uma cortina. E o marido ficou mais nervoso com a etiqueta do que com o vestido.",
+   "expr": "chocada",
+   "foto": [
+    "wedding dress box",
+    "A ENCOMENDA"
+   ],
+   "zoom": true
   },
-  "batidas": [
-    {
-      "fala": "Ela recebeu um vestido de noiva no lugar de uma cortina. E o marido ficou mais nervoso com a etiqueta do que com o vestido.",
-      "expr": "chocada",
-      "foto": [
-        "wedding dress box",
-        "A ENCOMENDA"
-      ],
-      "zoom": true
-    },
-    {
-      "fala": "Patrícia abriu a caixa na sala. Tinha renda, véu e um cartão: para o nosso grande dia. Ela chamou Sérgio, que apareceu segurando uma xícara.",
-      "expr": "desconfiada",
-      "foto": [
-        "cardboard parcel living room",
-        "O CARTÃO"
-      ]
-    },
-    {
-      "fala": "Ele olhou a etiqueta e soltou: isso não era para chegar aqui. Pronto. Patrícia cruzou os braços. Então era para chegar onde, Sérgio?",
-      "expr": "chocada",
-      "foto": [
-        "shipping label parcel",
-        "ONDE?"
-      ],
-      "zoom": true
-    },
-    {
-      "fala": "O marido pediu cinco minutos para explicar. Ela respondeu que ele já tinha tido vinte anos de casamento para aprender a explicar as coisas.",
-      "expr": "ironica",
-      "arte": [
-        "interrogacao",
-        "CINCO MINUTOS"
-      ]
-    },
-    {
-      "fala": "Sérgio pegou o celular e ligou para a irmã. Falou baixinho: deu errado, ela abriu. Patrícia ouviu tudo e mandou colocar no viva-voz.",
-      "expr": "desconfiada",
-      "foto": [
-        "smartphone on table",
-        "VIVA-VOZ"
-      ]
-    },
-    {
-      "fala": "Do outro lado, a cunhada ficou muda. Depois perguntou: mas chegou o vestido ou a cortina? Patrícia sentou. Agora tinha uma cortina envolvida na mentira também.",
-      "expr": "ironica",
-      "foto": [
-        "white curtain window",
-        "E A CORTINA?"
-      ]
-    },
-    {
-      "fala": "A explicação veio aos tropeços. A irmã organizava uma festa de renovação de votos para os pais. O vestido era da mãe, que queria fazer surpresa ao pai.",
-      "expr": "neutra",
-      "foto": [
-        "wedding lace fabric",
-        "A SURPRESA"
-      ]
-    },
-    {
-      "fala": "Sérgio ofereceu o próprio endereço para esconder a encomenda. Só esqueceu de avisar a esposa. E ainda prometeu à mãe que ninguém ficaria sabendo.",
-      "expr": "ironica",
-      "arte": [
-        "interrogacao",
-        "NINGUÉM?"
-      ]
-    },
-    {
-      "fala": "Patrícia pediu uma prova. A cunhada mandou a foto do pedido, no nome da mãe, e o convite da festa. O tamanho do vestido também não deixava dúvida.",
-      "expr": "neutra",
-      "foto": [
-        "celebration invitation envelope",
-        "A PROVA"
-      ]
-    },
-    {
-      "fala": "Ela respirou aliviada, mas não perdeu a oportunidade: você consegue esconder uma festa inteira, mas não consegue guardar a própria meia na gaveta?",
-      "expr": "ironica",
-      "foto": [
-        "socks open drawer",
-        "AS MEIAS"
-      ]
-    },
-    {
-      "fala": "Na festa, a sogra entrou com o vestido e surpreendeu o marido. Patrícia ajudou a ajeitar o véu. Sérgio ficou responsável por uma única coisa: buscar as alianças.",
-      "expr": "neutra",
-      "foto": [
-        "wedding rings small box",
-        "AS ALIANÇAS"
-      ]
-    },
-    {
-      "fala": "Quando ele apareceu com uma caixa, Patrícia avisou: se tiver cortina aí dentro, eu vou embora. Você acreditaria nessa explicação? Conta e segue a Nina.",
-      "expr": "ironica",
-      "arte": [
-        "coracao",
-        "FIM DA CONFUSÃO"
-      ]
-    }
-  ],
-  "fim": "FIM DA CONFUSÃO",
-  "legenda_post": "Um vestido de noiva chegou no lugar da cortina… e a primeira explicação do marido só piorou tudo. 📦😂\nVocê acreditaria nessa história?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Humor"
+  {
+   "fala": "Patrícia abriu a caixa na sala. Tinha renda, véu e um cartão: para o nosso grande dia. Ela chamou Sérgio, que apareceu segurando uma xícara.",
+   "expr": "desconfiada",
+   "foto": [
+    "cardboard parcel living room",
+    "O CARTÃO"
+   ]
+  },
+  {
+   "fala": "Ele olhou a etiqueta e soltou: isso não era para chegar aqui. Pronto. Patrícia cruzou os braços. Então era para chegar onde, Sérgio?",
+   "expr": "chocada",
+   "foto": [
+    "shipping label parcel",
+    "ONDE?"
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "O marido pediu cinco minutos para explicar. Ela respondeu que ele já tinha tido vinte anos de casamento para aprender a explicar as coisas.",
+   "expr": "ironica",
+   "arte": [
+    "interrogacao",
+    "CINCO MINUTOS"
+   ]
+  },
+  {
+   "fala": "Sérgio pegou o celular e ligou para a irmã. Falou baixinho: deu errado, ela abriu. Patrícia ouviu tudo e mandou colocar no viva-voz.",
+   "expr": "desconfiada",
+   "foto": [
+    "smartphone on table",
+    "VIVA-VOZ"
+   ]
+  },
+  {
+   "fala": "Do outro lado, a cunhada ficou muda. Depois perguntou: mas chegou o vestido ou a cortina? Patrícia sentou. Agora tinha uma cortina envolvida na mentira também.",
+   "expr": "ironica",
+   "foto": [
+    "white curtain window",
+    "E A CORTINA?"
+   ]
+  },
+  {
+   "fala": "A explicação veio aos tropeços. A irmã organizava uma festa de renovação de votos para os pais. O vestido era da mãe, que queria fazer surpresa ao pai.",
+   "expr": "neutra",
+   "foto": [
+    "wedding lace fabric",
+    "A SURPRESA"
+   ]
+  },
+  {
+   "fala": "Sérgio ofereceu o próprio endereço para esconder a encomenda. Só esqueceu de avisar a esposa. E ainda prometeu à mãe que ninguém ficaria sabendo.",
+   "expr": "ironica",
+   "arte": [
+    "interrogacao",
+    "NINGUÉM?"
+   ]
+  },
+  {
+   "fala": "Patrícia pediu uma prova. A cunhada mandou a foto do pedido, no nome da mãe, e o convite da festa. O tamanho do vestido também não deixava dúvida.",
+   "expr": "neutra",
+   "foto": [
+    "celebration invitation envelope",
+    "A PROVA"
+   ]
+  },
+  {
+   "fala": "Ela respirou aliviada, mas não perdeu a oportunidade: você consegue esconder uma festa inteira, mas não consegue guardar a própria meia na gaveta?",
+   "expr": "ironica",
+   "foto": [
+    "socks open drawer",
+    "AS MEIAS"
+   ]
+  },
+  {
+   "fala": "Na festa, a sogra entrou com o vestido e surpreendeu o marido. Patrícia ajudou a ajeitar o véu. Sérgio ficou responsável por uma única coisa: buscar as alianças.",
+   "expr": "neutra",
+   "foto": [
+    "wedding rings small box",
+    "AS ALIANÇAS"
+   ]
+  },
+  {
+   "fala": "Quando ele apareceu com uma caixa, Patrícia avisou: se tiver cortina aí dentro, eu vou embora. Você acreditaria nessa explicação? Conta e segue a Nina.",
+   "expr": "ironica",
+   "arte": [
+    "coracao",
+    "FIM DA CONFUSÃO"
+   ]
+  }
+ ],
+ "fim": "FIM DA CONFUSÃO",
+ "legenda_post": "Um vestido de noiva chegou no lugar da cortina… e a primeira explicação do marido só piorou tudo. 📦😂\nVocê acreditaria nessa história?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Humor",
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
 }

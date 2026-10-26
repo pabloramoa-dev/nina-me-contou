@@ -7,14 +7,14 @@
  "cenario": "noite",
  "batidas": [
   {
-   "fala": "Se você caiu aqui agora, volta na parte um. A pista principal está lá.",
-   "expr": "ironica",
+   "fala": "Paula encontrou o nome de Amanda na caixa de correspondência. E Patrícia ainda precisava explicar aquela pista.",
+   "expr": "desconfiada",
    "arte": [
     "titulo"
    ],
    "destaque": [
-    "parte",
-    "um"
+    "Paula",
+    "Amanda"
    ]
   },
   {
@@ -138,5 +138,7 @@
  "fim": "SEGUE A NINA",
  "legenda_post": "A parte dois de bilhete preso atrás. A pista parecia pequena, mas revelou uma história inteira.\n\nVocê daria uma chance para a explicação ou encerraria a conversa ali?\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em situações comuns do cotidiano.\n\n#storytime #historia #fofoca #segredo #relacionamentos #ninamecontou",
  "gerado_automaticamente": true,
- "serie_anual": 28
+ "serie_anual": 28,
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "descoberta_na_continuacao"
 }

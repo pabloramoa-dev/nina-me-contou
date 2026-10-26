@@ -7,17 +7,6 @@
  "cenario": "noite",
  "batidas": [
   {
-   "fala": "Se você caiu aqui agora, volta na parte um. A andorinha está lá.",
-   "expr": "ironica",
-   "arte": [
-    "titulo"
-   ],
-   "destaque": [
-    "parte",
-    "um."
-   ]
-  },
-  {
    "fala": "A Tatiane passou a noite olhando pra foto dezessete, dando zoom no ombro da mulher.",
    "expr": "neutra",
    "arte": [
@@ -165,5 +154,7 @@
   }
  ],
  "fim": "SEGUE A NINA",
- "legenda_post": "A andorinha no ombro era de quem ela menos esperava. 🍷\n\nSe você caiu aqui agora, assiste a PARTE 1 primeiro.\n\nE agora: ela cancela tudo ou deixa a cerimonialista organizar até o fim e fala no altar? Me conta nos comentários. 👇\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em causo de família.\n\n#traição #noivado #casamento #balada #storytime #históriadetraição #desabafo #fofoca #ninamecontou"
+ "legenda_post": "A andorinha no ombro era de quem ela menos esperava. 🍷\n\nSe você caiu aqui agora, assiste a PARTE 1 primeiro.\n\nE agora: ela cancela tudo ou deixa a cerimonialista organizar até o fim e fala no altar? Me conta nos comentários. 👇\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em causo de família.\n\n#traição #noivado #casamento #balada #storytime #históriadetraição #desabafo #fofoca #ninamecontou",
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "entrada_direta_na_cena"
 }

@@ -1,193 +1,195 @@
 {
-  "id": "tt20261014-o-bolo-dez-anos",
-  "avulso": true,
-  "titulo": "O BOLO DE DEZ ANOS",
-  "temporada": "Nina Me Contou — histórias completas",
-  "cenario": "noite",
-  "visual_images": {
-    "auto_visual_images": true,
-    "hide_inner_caption_when_image": true,
-    "bottom_caption_only": true,
-    "min_images": 4,
-    "max_images": 8,
-    "target_images": 6,
-    "fallback": "original_art"
+ "id": "tt20261014-o-bolo-dez-anos",
+ "avulso": true,
+ "titulo": "O BOLO DE DEZ ANOS",
+ "temporada": "Nina Me Contou — histórias completas",
+ "cenario": "noite",
+ "visual_images": {
+  "auto_visual_images": true,
+  "hide_inner_caption_when_image": true,
+  "bottom_caption_only": true,
+  "min_images": 4,
+  "max_images": 8,
+  "target_images": 6,
+  "fallback": "original_art"
+ },
+ "batidas": [
+  {
+   "fala": "O bolo chegou com dois nomes: Mauro e Laura. Só que Mauro era o marido da Vera. E Laura... era uma completa desconhecida.",
+   "expr": "chocada",
+   "arte": [
+    "titulo"
+   ],
+   "zoom": true,
+   "hf": {
+    "titulo": "DOIS NOMES NO BOLO",
+    "destaque": [
+     "Mauro",
+     "Laura"
+    ]
+   }
   },
-  "batidas": [
-    {
-      "fala": "O bolo chegou com dois nomes: Mauro e Laura. Só que Mauro era o marido da Vera. E Laura... era uma completa desconhecida.",
-      "expr": "chocada",
-      "arte": [
-        "titulo"
-      ],
-      "zoom": true,
-      "hf": {
-        "titulo": "DOIS NOMES NO BOLO",
-        "destaque": [
-          "Mauro",
-          "Laura"
-        ]
-      }
-    },
-    {
-      "fala": "Na cobertura estava escrito: dez anos juntos. Vera e Mauro estavam casados havia vinte. Vinte anos!",
-      "expr": "surpresa",
-      "arte": [
-        "manchete_v",
-        "DEZ ANOS JUNTOS"
-      ]
-    },
-    {
-      "fala": "Vera conferiu a etiqueta três vezes. Rua certa, apartamento certo. Aquela encomenda tinha sido enviada exatamente para ela.",
-      "expr": "desconfiada",
-      "arte": [
-        "extrato"
-      ]
-    },
-    {
-      "fala": "O cartão dizia: obrigada pela nossa família. Te espero às oito. Com amor, Laura. Vera ficou paralisada.",
-      "expr": "chocada",
-      "arte": [
-        "carta"
-      ],
-      "foto": "handwritten greeting card next to white celebration cake"
-    },
-    {
-      "fala": "Ela ligou para a confeitaria. A atendente confirmou: a própria Laura tinha escolhido aquele endereço.",
-      "expr": "desconfiada",
-      "arte": [
-        "celular"
-      ],
-      "foto": "bakery receipt on counter"
-    },
-    {
-      "fala": "Vera lembrou das viagens de Mauro e das reuniões que terminavam tarde. De repente, tudo parecia fazer sentido.",
-      "expr": "cansada",
-      "arte": [
-        "calendario"
-      ]
-    },
-    {
-      "fala": "Mas não fez escândalo. Colocou o bolo na mesa, passou café e esperou. Às oito, a chave girou.",
-      "expr": "desconfiada",
-      "arte": [
-        "relogio"
-      ],
-      "foto": "coffee cups and anniversary cake on dining table"
-    },
-    {
-      "fala": "Mauro entrou sorrindo. Quando viu o bolo, perdeu a cor. E perguntou: quem foi que mandou isso?",
-      "expr": "chocada",
-      "arte": [
-        "porta"
-      ],
-      "zoom": true
-    },
-    {
-      "fala": "Vera respondeu: foi Laura. Agora me explica quem é a mulher que comemora dez anos com meu marido.",
-      "expr": "brava",
-      "arte": [
-        "conversa",
-        "QUEM É LAURA?"
-      ]
-    },
-    {
-      "fala": "Ele gaguejou. Disse que era uma cliente, uma brincadeira sem graça. Só que a campainha interrompeu a desculpa.",
-      "expr": "desconfiada",
-      "arte": [
-        "interrogacao"
-      ]
-    },
-    {
-      "fala": "Na porta, uma mulher segurava o celular com força. Disse: eu sou Laura. Antes de me odiar, olha isso.",
-      "expr": "surpresa",
-      "arte": [
-        "celular",
-        "EU SOU LAURA"
-      ]
-    },
-    {
-      "fala": "Havia fotos de viagens, aniversários e uma menina de oito anos chamando Mauro de pai. Vera precisou sentar.",
-      "expr": "chocada",
-      "arte": [
-        "foto"
-      ],
-      "foto": "photo album with family travel photos faces out of focus",
-      "zoom": true
-    },
-    {
-      "fala": "Laura explicou que vivia com ele havia dez anos. Mauro tinha garantido que era viúvo. Ela nunca desconfiou.",
-      "expr": "assustada",
-      "arte": [
-        "coracao"
-      ]
-    },
-    {
-      "fala": "Duas semanas antes, encontrou um documento antigo com o nome de Vera. E descobriu que a primeira esposa estava viva.",
-      "expr": "desconfiada",
-      "arte": [
-        "extrato"
-      ],
-      "foto": "old document folder on a wooden desk"
-    },
-    {
-      "fala": "Foi Laura quem mandou o bolo. Queria que Mauro parasse de esconder uma mulher da outra. Não queria brigar com Vera.",
-      "expr": "surpresa",
-      "arte": [
-        "bolo"
-      ],
-      "foto": "celebration cake with two slices missing"
-    },
-    {
-      "fala": "Mauro disse que tinha uma explicação. Vera perguntou: qual delas? A que contou pra mim ou a que contou pra ela?",
-      "expr": "brava",
-      "arte": [
-        "conversa",
-        "QUAL VERSÃO?"
-      ]
-    },
-    {
-      "fala": "Laura perguntou baixinho: você sabia de mim? Vera respondeu: não. E Laura disse: então ele enganou nós duas.",
-      "expr": "cansada",
-      "arte": [
-        "interrogacao"
-      ]
-    },
-    {
-      "fala": "As duas perceberam que a mentira era a mesma, só mudava o endereço. E decidiram não descontar uma na outra.",
-      "expr": "neutra",
-      "arte": [
-        "mapa"
-      ]
-    },
-    {
-      "fala": "Vera cortou duas fatias, uma para cada mulher. Mauro estendeu a mão para pegar a terceira.",
-      "expr": "ironica",
-      "arte": [
-        "bolo"
-      ],
-      "foto": "two slices of white cake on ceramic plates"
-    },
-    {
-      "fala": "Vera fechou a caixa e disse: o resto você pode levar. Porque aqui, Mauro, acabou a festa.",
-      "expr": "chocada",
-      "arte": [
-        "manchete_v",
-        "ACABOU A FESTA"
-      ],
-      "foto": "closed cardboard cake box on dining table",
-      "zoom": true
-    },
-    {
-      "fala": "Mauro saiu com o bolo e sem resposta. E você? Teria aberto a porta para Laura? Me conta nos comentários.",
-      "expr": "ironica",
-      "arte": [
-        "interrogacao",
-        "E VOCÊ?"
-      ]
-    }
-  ],
-  "fim": "ACABOU A FESTA",
-  "legenda_post": "🎂 O bolo chegou na casa da Vera com o nome do marido dela... e de OUTRA mulher. O que aconteceu quando ele chegou às oito mudou a vida de duas famílias.\n\nVocê teria aberto a porta para Laura? 👀 Conta nos comentários!\n\nHistória fictícia, criada para entretenimento.\n\n#NinaMeContou #Storytime #Historias #Fofoca #Reviravolta #Suspense #TikTokBrasil",
-  "render_retry": 1
+  {
+   "fala": "Na cobertura estava escrito: dez anos juntos. Vera e Mauro estavam casados havia vinte. Vinte anos!",
+   "expr": "surpresa",
+   "arte": [
+    "manchete_v",
+    "DEZ ANOS JUNTOS"
+   ]
+  },
+  {
+   "fala": "Vera conferiu a etiqueta três vezes. Rua certa, apartamento certo. Aquela encomenda tinha sido enviada exatamente para ela.",
+   "expr": "desconfiada",
+   "arte": [
+    "extrato"
+   ]
+  },
+  {
+   "fala": "O cartão dizia: obrigada pela nossa família. Te espero às oito. Com amor, Laura. Vera ficou paralisada.",
+   "expr": "chocada",
+   "arte": [
+    "carta"
+   ],
+   "foto": "handwritten greeting card next to white celebration cake"
+  },
+  {
+   "fala": "Ela ligou para a confeitaria. A atendente confirmou: a própria Laura tinha escolhido aquele endereço.",
+   "expr": "desconfiada",
+   "arte": [
+    "celular"
+   ],
+   "foto": "bakery receipt on counter"
+  },
+  {
+   "fala": "Vera lembrou das viagens de Mauro e das reuniões que terminavam tarde. De repente, tudo parecia fazer sentido.",
+   "expr": "cansada",
+   "arte": [
+    "calendario"
+   ]
+  },
+  {
+   "fala": "Mas não fez escândalo. Colocou o bolo na mesa, passou café e esperou. Às oito, a chave girou.",
+   "expr": "desconfiada",
+   "arte": [
+    "relogio"
+   ],
+   "foto": "coffee cups and anniversary cake on dining table"
+  },
+  {
+   "fala": "Mauro entrou sorrindo. Quando viu o bolo, perdeu a cor. E perguntou: quem foi que mandou isso?",
+   "expr": "chocada",
+   "arte": [
+    "porta"
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "Vera respondeu: foi Laura. Agora me explica quem é a mulher que comemora dez anos com meu marido.",
+   "expr": "brava",
+   "arte": [
+    "conversa",
+    "QUEM É LAURA?"
+   ]
+  },
+  {
+   "fala": "Ele gaguejou. Disse que era uma cliente, uma brincadeira sem graça. Só que a campainha interrompeu a desculpa.",
+   "expr": "desconfiada",
+   "arte": [
+    "interrogacao"
+   ]
+  },
+  {
+   "fala": "Na porta, uma mulher segurava o celular com força. Disse: eu sou Laura. Antes de me odiar, olha isso.",
+   "expr": "surpresa",
+   "arte": [
+    "celular",
+    "EU SOU LAURA"
+   ]
+  },
+  {
+   "fala": "Havia fotos de viagens, aniversários e uma menina de oito anos chamando Mauro de pai. Vera precisou sentar.",
+   "expr": "chocada",
+   "arte": [
+    "foto"
+   ],
+   "foto": "photo album with family travel photos faces out of focus",
+   "zoom": true
+  },
+  {
+   "fala": "Laura explicou que vivia com ele havia dez anos. Mauro tinha garantido que era viúvo. Ela nunca desconfiou.",
+   "expr": "assustada",
+   "arte": [
+    "coracao"
+   ]
+  },
+  {
+   "fala": "Duas semanas antes, encontrou um documento antigo com o nome de Vera. E descobriu que a primeira esposa estava viva.",
+   "expr": "desconfiada",
+   "arte": [
+    "extrato"
+   ],
+   "foto": "old document folder on a wooden desk"
+  },
+  {
+   "fala": "Foi Laura quem mandou o bolo. Queria que Mauro parasse de esconder uma mulher da outra. Não queria brigar com Vera.",
+   "expr": "surpresa",
+   "arte": [
+    "bolo"
+   ],
+   "foto": "celebration cake with two slices missing"
+  },
+  {
+   "fala": "Mauro disse que tinha uma explicação. Vera perguntou: qual delas? A que contou pra mim ou a que contou pra ela?",
+   "expr": "brava",
+   "arte": [
+    "conversa",
+    "QUAL VERSÃO?"
+   ]
+  },
+  {
+   "fala": "Laura perguntou baixinho: você sabia de mim? Vera respondeu: não. E Laura disse: então ele enganou nós duas.",
+   "expr": "cansada",
+   "arte": [
+    "interrogacao"
+   ]
+  },
+  {
+   "fala": "As duas perceberam que a mentira era a mesma, só mudava o endereço. E decidiram não descontar uma na outra.",
+   "expr": "neutra",
+   "arte": [
+    "mapa"
+   ]
+  },
+  {
+   "fala": "Vera cortou duas fatias, uma para cada mulher. Mauro estendeu a mão para pegar a terceira.",
+   "expr": "ironica",
+   "arte": [
+    "bolo"
+   ],
+   "foto": "two slices of white cake on ceramic plates"
+  },
+  {
+   "fala": "Vera fechou a caixa e disse: o resto você pode levar. Porque aqui, Mauro, acabou a festa.",
+   "expr": "chocada",
+   "arte": [
+    "manchete_v",
+    "ACABOU A FESTA"
+   ],
+   "foto": "closed cardboard cake box on dining table",
+   "zoom": true
+  },
+  {
+   "fala": "Mauro saiu com o bolo e sem resposta. E você? Teria aberto a porta para Laura? Me conta nos comentários.",
+   "expr": "ironica",
+   "arte": [
+    "interrogacao",
+    "E VOCÊ?"
+   ]
+  }
+ ],
+ "fim": "ACABOU A FESTA",
+ "legenda_post": "🎂 O bolo chegou na casa da Vera com o nome do marido dela... e de OUTRA mulher. O que aconteceu quando ele chegou às oito mudou a vida de duas famílias.\n\nVocê teria aberto a porta para Laura? 👀 Conta nos comentários!\n\nHistória fictícia, criada para entretenimento.\n\n#NinaMeContou #Storytime #Historias #Fofoca #Reviravolta #Suspense #TikTokBrasil",
+ "render_retry": 1,
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
 }

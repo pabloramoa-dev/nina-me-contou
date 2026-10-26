@@ -1,118 +1,120 @@
 {
-  "id": "tt20261019-o-guarda-chuva-amarelo",
-  "avulso": true,
-  "titulo": "O GUARDA-CHUVA AMARELO",
-  "temporada": "TikTok diário",
-  "cenario": "tarde",
-  "visual_images": {
-    "auto_visual_images": true,
-    "hide_inner_caption_when_image": true,
-    "bottom_caption_only": true,
-    "min_images": 4,
-    "max_images": 8,
-    "target_images": 6,
-    "fallback": "original_art"
+ "id": "tt20261019-o-guarda-chuva-amarelo",
+ "avulso": true,
+ "titulo": "O GUARDA-CHUVA AMARELO",
+ "temporada": "TikTok diário",
+ "cenario": "tarde",
+ "visual_images": {
+  "auto_visual_images": true,
+  "hide_inner_caption_when_image": true,
+  "bottom_caption_only": true,
+  "min_images": 4,
+  "max_images": 8,
+  "target_images": 6,
+  "fallback": "original_art"
+ },
+ "batidas": [
+  {
+   "fala": "Ela pegou um guarda-chuva emprestado e voltou para devolver. Só que a dona da loja jurou que aquele guarda-chuva tinha sumido fazia oito anos.",
+   "expr": "chocada",
+   "foto": [
+    "yellow umbrella rain",
+    "OITO ANOS"
+   ],
+   "zoom": true
   },
-  "batidas": [
-    {
-      "fala": "Ela pegou um guarda-chuva emprestado e voltou para devolver. Só que a dona da loja jurou que aquele guarda-chuva tinha sumido fazia oito anos.",
-      "expr": "chocada",
-      "foto": [
-        "yellow umbrella rain",
-        "OITO ANOS"
-      ],
-      "zoom": true
-    },
-    {
-      "fala": "Na segunda-feira, uma chuva pegou Camila na saída da entrevista de emprego. Ela se abrigou na porta de uma papelaria, segurando uma pasta contra o peito.",
-      "expr": "neutra",
-      "foto": [
-        "stationery shop rainy street",
-        "A CHUVA"
-      ]
-    },
-    {
-      "fala": "Uma senhora encostou ao lado e ofereceu um guarda-chuva amarelo. Disse que morava perto. Pode levar, minha filha. Depois deixa aqui na papelaria.",
-      "expr": "neutra",
-      "foto": [
-        "yellow umbrella wooden handle",
-        "EMPRESTADO"
-      ]
-    },
-    {
-      "fala": "No dia seguinte, Camila voltou. A dona, Teresa, reconheceu uma costura azul no tecido e ficou olhando em silêncio. Aquilo tinha sido dela.",
-      "expr": "desconfiada",
-      "foto": [
-        "blue thread sewing needle",
-        "A COSTURA"
-      ]
-    },
-    {
-      "fala": "Oito anos antes, Teresa emprestara o guarda-chuva para uma cliente sair com o bebê no colo. Nunca mais tinha visto nem a mulher nem o objeto.",
-      "expr": "neutra",
-      "foto": [
-        "rainy sidewalk umbrella",
-        "UM EMPRÉSTIMO"
-      ]
-    },
-    {
-      "fala": "Camila procurou alguma identificação. Pendurado na haste, havia um saquinho transparente com um papel dobrado. Não tinha telefone. Tinha uma lista.",
-      "expr": "chocada",
-      "foto": [
-        "folded paper transparent pouch",
-        "A LISTA"
-      ],
-      "zoom": true
-    },
-    {
-      "fala": "No começo, alguém escreveu: não consegui devolver hoje. Se você precisar, use. Só não venda. Embaixo, apareciam nomes, datas e pequenos agradecimentos.",
-      "expr": "neutra",
-      "arte": [
-        "interrogacao",
-        "NOMES E DATAS"
-      ]
-    },
-    {
-      "fala": "Uma estudante escreveu que chegou seca na prova. Um entregador contou que protegeu um remédio. Outra pessoa desenhou uma pata e escreveu: levei o cachorro ao veterinário.",
-      "expr": "neutra",
-      "foto": [
-        "handwritten notebook page",
-        "OS RECADOS"
-      ]
-    },
-    {
-      "fala": "Teresa riu: eu passei anos chamando aquela mulher de esquecida. E meu guarda-chuva trabalhando mais que eu! Camila perguntou se ela queria ficar com ele.",
-      "expr": "ironica",
-      "arte": [
-        "interrogacao",
-        "FICAR COM ELE?"
-      ]
-    },
-    {
-      "fala": "Teresa olhou a chuva começando outra vez. Pegou uma etiqueta e escreveu: pode levar, depois passe adiante. Deixou o guarda-chuva num suporte junto à porta.",
-      "expr": "neutra",
-      "foto": [
-        "umbrella stand shop entrance",
-        "PASSE ADIANTE"
-      ]
-    },
-    {
-      "fala": "Camila acrescentou seu nome à lista. Quando saiu, viu um rapaz de bicicleta pedindo abrigo. Teresa apontou para o suporte: aquele amarelo já conhece o caminho.",
-      "expr": "neutra",
-      "foto": [
-        "bicycle rainy street",
-        "MAIS UMA VIAGEM"
-      ]
-    },
-    {
-      "fala": "Camila foi embora sorrindo. Tinha voltado para devolver uma coisa. Acabou ajudando a continuar uma história. Você passaria adiante? Conta e segue a Nina.",
-      "expr": "neutra",
-      "arte": [
-        "coracao",
-        "PASSE ADIANTE"
-      ]
-    }
-  ],
-  "fim": "PASSE ADIANTE",
-  "legenda_post": "Um guarda-chuva sumiu por oito anos. Quando voltou, trouxe uma lista de pessoas que nunca esqueceram dele. ☂️💛\nVocê passaria essa gentileza adiante?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Gentileza"
+  {
+   "fala": "Na segunda-feira, uma chuva pegou Camila na saída da entrevista de emprego. Ela se abrigou na porta de uma papelaria, segurando uma pasta contra o peito.",
+   "expr": "neutra",
+   "foto": [
+    "stationery shop rainy street",
+    "A CHUVA"
+   ]
+  },
+  {
+   "fala": "Uma senhora encostou ao lado e ofereceu um guarda-chuva amarelo. Disse que morava perto. Pode levar, minha filha. Depois deixa aqui na papelaria.",
+   "expr": "neutra",
+   "foto": [
+    "yellow umbrella wooden handle",
+    "EMPRESTADO"
+   ]
+  },
+  {
+   "fala": "No dia seguinte, Camila voltou. A dona, Teresa, reconheceu uma costura azul no tecido e ficou olhando em silêncio. Aquilo tinha sido dela.",
+   "expr": "desconfiada",
+   "foto": [
+    "blue thread sewing needle",
+    "A COSTURA"
+   ]
+  },
+  {
+   "fala": "Oito anos antes, Teresa emprestara o guarda-chuva para uma cliente sair com o bebê no colo. Nunca mais tinha visto nem a mulher nem o objeto.",
+   "expr": "neutra",
+   "foto": [
+    "rainy sidewalk umbrella",
+    "UM EMPRÉSTIMO"
+   ]
+  },
+  {
+   "fala": "Camila procurou alguma identificação. Pendurado na haste, havia um saquinho transparente com um papel dobrado. Não tinha telefone. Tinha uma lista.",
+   "expr": "chocada",
+   "foto": [
+    "folded paper transparent pouch",
+    "A LISTA"
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "No começo, alguém escreveu: não consegui devolver hoje. Se você precisar, use. Só não venda. Embaixo, apareciam nomes, datas e pequenos agradecimentos.",
+   "expr": "neutra",
+   "arte": [
+    "interrogacao",
+    "NOMES E DATAS"
+   ]
+  },
+  {
+   "fala": "Uma estudante escreveu que chegou seca na prova. Um entregador contou que protegeu um remédio. Outra pessoa desenhou uma pata e escreveu: levei o cachorro ao veterinário.",
+   "expr": "neutra",
+   "foto": [
+    "handwritten notebook page",
+    "OS RECADOS"
+   ]
+  },
+  {
+   "fala": "Teresa riu: eu passei anos chamando aquela mulher de esquecida. E meu guarda-chuva trabalhando mais que eu! Camila perguntou se ela queria ficar com ele.",
+   "expr": "ironica",
+   "arte": [
+    "interrogacao",
+    "FICAR COM ELE?"
+   ]
+  },
+  {
+   "fala": "Teresa olhou a chuva começando outra vez. Pegou uma etiqueta e escreveu: pode levar, depois passe adiante. Deixou o guarda-chuva num suporte junto à porta.",
+   "expr": "neutra",
+   "foto": [
+    "umbrella stand shop entrance",
+    "PASSE ADIANTE"
+   ]
+  },
+  {
+   "fala": "Camila acrescentou seu nome à lista. Quando saiu, viu um rapaz de bicicleta pedindo abrigo. Teresa apontou para o suporte: aquele amarelo já conhece o caminho.",
+   "expr": "neutra",
+   "foto": [
+    "bicycle rainy street",
+    "MAIS UMA VIAGEM"
+   ]
+  },
+  {
+   "fala": "Camila foi embora sorrindo. Tinha voltado para devolver uma coisa. Acabou ajudando a continuar uma história. Você passaria adiante? Conta e segue a Nina.",
+   "expr": "neutra",
+   "arte": [
+    "coracao",
+    "PASSE ADIANTE"
+   ]
+  }
+ ],
+ "fim": "PASSE ADIANTE",
+ "legenda_post": "Um guarda-chuva sumiu por oito anos. Quando voltou, trouxe uma lista de pessoas que nunca esqueceram dele. ☂️💛\nVocê passaria essa gentileza adiante?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Gentileza",
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
 }

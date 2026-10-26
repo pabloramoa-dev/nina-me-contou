@@ -1,196 +1,198 @@
 {
-  "id": "nina-politica-20261024-direita-otimista",
-  "titulo": "NINA COMENTA | UM OLHAR OTIMISTA DA DIREITA",
-  "avulso": true,
-  "temporada": "Piloto editorial avulso — política e opinião",
-  "cenario": "tarde",
-  "voice_engine": "kokoro",
-  "kokoro_voice": "pf_dora",
-  "kokoro_speed": 1.02,
-  "publicar_automaticamente": false,
-  "nao_publicar": true,
-  "editoria": "Política — comentário opinativo, explícito, de direita",
-  "data_referencia": "2026-10-24",
-  "recorte": "informações verificadas na manhã de 24/10/2026; pesquisa de 22/10 não é resultado eleitoral; apurações e suspeitas não equivalem a prova",
-  "fontes": [
-    "https://noticias.uol.com.br/eleicoes/2026/10/24/propostas-lula-e-flavio-bolsonaro-debate.ghtm",
-    "https://www1.folha.uol.com.br/poder/2026/10/datafolha-flavio-bolsonaro-e-lula-empatam-com-50-dos-votos-validos-cada.shtml",
-    "https://www1.folha.uol.com.br/poder/2026/10/tse-proibe-nikolas-e-marcal-de-publicarem-conteudo-falso-ate-a-eleicao-sob-pena-r-100-mil-de-multa.shtml",
-    "https://www.tse.jus.br/comunicacao/noticias/2026/Outubro/corregedor-eleitoral-proibe-nikolas-e-marcal-de-voltar-a-divulgar-conteudos-proibidos-pelo-tse",
-    "https://www.poder360.com.br/poder-eleicoes-2026/tse-manda-meta-enviar-relatorios-a-cada-6-horas-sobre-nikolas-e-marcal/",
-    "https://agenciabrasil.ebc.com.br/justica/noticia/2026-10/mendonca-reitera-que-lula-e-flavio-podem-abrir-sigilos-por-ato-proprio"
-  ],
-  "batidas": [
-    {
-      "fala": "Hoje eu tô especialmente animada! Sou a Nina e vou comentar cinco notícias da política com um olhar assumidamente de direita. Os fatos são reais; o entusiasmo é meu!",
-      "expr": "chocada",
-      "arte": [
-        "titulo",
-        "NINA COMENTA | DIREITA"
-      ],
-      "destaque": [
-        "cinco notícias"
-      ],
-      "zoom": true,
-      "foto": false
-    },
-    {
-      "fala": "Primeira: ontem, Lula e Flávio Bolsonaro fizeram o último debate presidencial. Economia, educação e segurança entraram na conversa.",
-      "expr": "neutra",
-      "arte": [
-        "manchete_v",
-        "1. ÚLTIMO DEBATE"
-      ],
-      "destaque": [
-        "último debate"
-      ],
-      "zoom": false,
-      "foto": false
-    },
-    {
-      "fala": "Eu gostei de ouvir Flávio defender crédito para empreendedores, concessões de estradas e mais firmeza na segurança. Na minha opinião, esse tipo de proposta merece atenção!",
-      "expr": "chocada",
-      "arte": [
-        "manchete_v",
-        "OPINIÃO | PROPOSTAS DA DIREITA"
-      ],
-      "destaque": [
-        "empreendedores"
-      ],
-      "zoom": true,
-      "foto": false
-    },
-    {
-      "fala": "Lula defendeu ampliar programas e investimentos públicos. São caminhos diferentes; o essencial é comparar propostas, custos e resultados, sem transformar promessa em fato.",
-      "expr": "neutra",
-      "arte": [
-        "manchete_v",
-        "FATOS | PROPOSTAS DIFERENTES"
-      ],
-      "destaque": [
-        "comparar propostas"
-      ],
-      "zoom": false,
-      "foto": false
-    },
-    {
-      "fala": "Segunda: o Datafolha de quinta-feira registrou cinquenta por cento dos votos válidos para cada candidato. Que disputa apertada!",
-      "expr": "chocada",
-      "arte": [
-        "manchete_v",
-        "2. DATAFOLHA | 50 A 50"
-      ],
-      "destaque": [
-        "cinquenta por cento"
-      ],
-      "zoom": true,
-      "foto": false
-    },
-    {
-      "fala": "Como comentarista de direita, ver o campo conservador competitivo me anima muito! Mas pesquisa tem margem de erro e não antecipa o resultado de domingo.",
-      "expr": "ironica",
-      "arte": [
-        "manchete_v",
-        "OPINIÃO | DISPUTA ABERTA"
-      ],
-      "destaque": [
-        "margem de erro"
-      ],
-      "zoom": false,
-      "foto": false
-    },
-    {
-      "fala": "Terceira: o TSE restringiu publicações falsas ou já proibidas de Nikolas Ferreira e Pablo Marçal. Há multas previstas para descumprimento.",
-      "expr": "neutra",
-      "arte": [
-        "manchete_v",
-        "3. DECISÃO DO TSE"
-      ],
-      "destaque": [
-        "publicações falsas"
-      ],
-      "zoom": true,
-      "foto": false
-    },
-    {
-      "fala": "Eu valorizo a liberdade de expressão e quero regras iguais para todos! Opinião legítima deve circular; informação comprovadamente falsa não merece passe livre.",
-      "expr": "chocada",
-      "arte": [
-        "manchete_v",
-        "OPINIÃO | LIBERDADE E LEI"
-      ],
-      "destaque": [
-        "regras iguais"
-      ],
-      "zoom": false,
-      "foto": false
-    },
-    {
-      "fala": "Quarta: Meta e X devem enviar relatórios sobre o alcance de publicações nas redes sociais. Isso não significa que favorecimento de algoritmo já esteja comprovado.",
-      "expr": "neutra",
-      "arte": [
-        "manchete_v",
-        "4. REDES E TRANSPARÊNCIA"
-      ],
-      "destaque": [
-        "relatórios"
-      ],
-      "zoom": true,
-      "foto": false
-    },
-    {
-      "fala": "Minha posição é clara: que os critérios das plataformas sejam transparentes, sem favorecer nem prejudicar esquerda ou direita!",
-      "expr": "ironica",
-      "arte": [
-        "manchete_v",
-        "OPINIÃO | CRITÉRIOS CLAROS"
-      ],
-      "destaque": [
-        "transparentes"
-      ],
-      "zoom": false,
-      "foto": false
-    },
-    {
-      "fala": "Quinta: Lula e Flávio assinaram um acordo sobre divulgação de sigilos. O ministro André Mendonça explicou que podem publicar os próprios dados, sem ordem do TSE.",
-      "expr": "neutra",
-      "arte": [
-        "manchete_v",
-        "5. ABERTURA DE SIGILOS"
-      ],
-      "destaque": [
-        "sigilos"
-      ],
-      "zoom": true,
-      "foto": false
-    },
-    {
-      "fala": "E isso me empolga: cobrança por transparência de todos os políticos! Quero ver os compromissos virarem prática, não apenas fala de campanha.",
-      "expr": "chocada",
-      "arte": [
-        "manchete_v",
-        "OPINIÃO | PRESTAR CONTAS"
-      ],
-      "destaque": [
-        "transparência"
-      ],
-      "zoom": false,
-      "foto": false
-    },
-    {
-      "fala": "Saio dessa rodada otimista com o debate sobre segurança, empreendedorismo e liberdade. Amanhã, quem decide é o eleitor. Qual dessas pautas você quer entender melhor?",
-      "expr": "neutra",
-      "arte": [
-        "titulo",
-        "NINA COMENTA | SUA OPINIÃO"
-      ],
-      "destaque": [
-        "quem decide é o eleitor"
-      ],
-      "zoom": true,
-      "foto": false
-    }
-  ],
-  "fim": "NINA COMENTA | OPINIÃO DE DIREITA",
-  "legenda_post": "A Nina comenta cinco notícias da política de 24/10/2026 com perspectiva de direita, entusiasmo e opinião explícita, mas separando fatos de avaliações. Pautas: debate Lula–Flávio, pesquisa Datafolha de 22/10 (50% x 50% dos votos válidos), decisões do TSE sobre conteúdos proibidos de Nikolas e Marçal, prestação de informações por Meta/X e abertura voluntária de sigilos dos candidatos.\n\nPesquisa não é resultado eleitoral. Medida judicial sobre publicações proibidas não é proibição geral de comentar política. Alegação sobre algoritmos não equivale a prova.\n\nFontes e links completos no roteiro do repositório. Teste editorial, sem publicação automática.\n\n#NinaComenta #PoliticaBrasileira #NoticiasDoDia #Opiniao"
+ "id": "nina-politica-20261024-direita-otimista",
+ "titulo": "NINA COMENTA | UM OLHAR OTIMISTA DA DIREITA",
+ "avulso": true,
+ "temporada": "Piloto editorial avulso — política e opinião",
+ "cenario": "tarde",
+ "voice_engine": "kokoro",
+ "kokoro_voice": "pf_dora",
+ "kokoro_speed": 1.02,
+ "publicar_automaticamente": false,
+ "nao_publicar": true,
+ "editoria": "Política — comentário opinativo, explícito, de direita",
+ "data_referencia": "2026-10-24",
+ "recorte": "informações verificadas na manhã de 24/10/2026; pesquisa de 22/10 não é resultado eleitoral; apurações e suspeitas não equivalem a prova",
+ "fontes": [
+  "https://noticias.uol.com.br/eleicoes/2026/10/24/propostas-lula-e-flavio-bolsonaro-debate.ghtm",
+  "https://www1.folha.uol.com.br/poder/2026/10/datafolha-flavio-bolsonaro-e-lula-empatam-com-50-dos-votos-validos-cada.shtml",
+  "https://www1.folha.uol.com.br/poder/2026/10/tse-proibe-nikolas-e-marcal-de-publicarem-conteudo-falso-ate-a-eleicao-sob-pena-r-100-mil-de-multa.shtml",
+  "https://www.tse.jus.br/comunicacao/noticias/2026/Outubro/corregedor-eleitoral-proibe-nikolas-e-marcal-de-voltar-a-divulgar-conteudos-proibidos-pelo-tse",
+  "https://www.poder360.com.br/poder-eleicoes-2026/tse-manda-meta-enviar-relatorios-a-cada-6-horas-sobre-nikolas-e-marcal/",
+  "https://agenciabrasil.ebc.com.br/justica/noticia/2026-10/mendonca-reitera-que-lula-e-flavio-podem-abrir-sigilos-por-ato-proprio"
+ ],
+ "batidas": [
+  {
+   "fala": "Hoje eu tô especialmente animada! Sou a Nina e vou comentar cinco notícias da política com um olhar assumidamente de direita. Os fatos são reais; o entusiasmo é meu!",
+   "expr": "chocada",
+   "arte": [
+    "titulo",
+    "NINA COMENTA | DIREITA"
+   ],
+   "destaque": [
+    "cinco notícias"
+   ],
+   "zoom": true,
+   "foto": false
+  },
+  {
+   "fala": "Primeira: ontem, Lula e Flávio Bolsonaro fizeram o último debate presidencial. Economia, educação e segurança entraram na conversa.",
+   "expr": "neutra",
+   "arte": [
+    "manchete_v",
+    "1. ÚLTIMO DEBATE"
+   ],
+   "destaque": [
+    "último debate"
+   ],
+   "zoom": false,
+   "foto": false
+  },
+  {
+   "fala": "Eu gostei de ouvir Flávio defender crédito para empreendedores, concessões de estradas e mais firmeza na segurança. Na minha opinião, esse tipo de proposta merece atenção!",
+   "expr": "chocada",
+   "arte": [
+    "manchete_v",
+    "OPINIÃO | PROPOSTAS DA DIREITA"
+   ],
+   "destaque": [
+    "empreendedores"
+   ],
+   "zoom": true,
+   "foto": false
+  },
+  {
+   "fala": "Lula defendeu ampliar programas e investimentos públicos. São caminhos diferentes; o essencial é comparar propostas, custos e resultados, sem transformar promessa em fato.",
+   "expr": "neutra",
+   "arte": [
+    "manchete_v",
+    "FATOS | PROPOSTAS DIFERENTES"
+   ],
+   "destaque": [
+    "comparar propostas"
+   ],
+   "zoom": false,
+   "foto": false
+  },
+  {
+   "fala": "Segunda: o Datafolha de quinta-feira registrou cinquenta por cento dos votos válidos para cada candidato. Que disputa apertada!",
+   "expr": "chocada",
+   "arte": [
+    "manchete_v",
+    "2. DATAFOLHA | 50 A 50"
+   ],
+   "destaque": [
+    "cinquenta por cento"
+   ],
+   "zoom": true,
+   "foto": false
+  },
+  {
+   "fala": "Como comentarista de direita, ver o campo conservador competitivo me anima muito! Mas pesquisa tem margem de erro e não antecipa o resultado de domingo.",
+   "expr": "ironica",
+   "arte": [
+    "manchete_v",
+    "OPINIÃO | DISPUTA ABERTA"
+   ],
+   "destaque": [
+    "margem de erro"
+   ],
+   "zoom": false,
+   "foto": false
+  },
+  {
+   "fala": "Terceira: o TSE restringiu publicações falsas ou já proibidas de Nikolas Ferreira e Pablo Marçal. Há multas previstas para descumprimento.",
+   "expr": "neutra",
+   "arte": [
+    "manchete_v",
+    "3. DECISÃO DO TSE"
+   ],
+   "destaque": [
+    "publicações falsas"
+   ],
+   "zoom": true,
+   "foto": false
+  },
+  {
+   "fala": "Eu valorizo a liberdade de expressão e quero regras iguais para todos! Opinião legítima deve circular; informação comprovadamente falsa não merece passe livre.",
+   "expr": "chocada",
+   "arte": [
+    "manchete_v",
+    "OPINIÃO | LIBERDADE E LEI"
+   ],
+   "destaque": [
+    "regras iguais"
+   ],
+   "zoom": false,
+   "foto": false
+  },
+  {
+   "fala": "Quarta: Meta e X devem enviar relatórios sobre o alcance de publicações nas redes sociais. Isso não significa que favorecimento de algoritmo já esteja comprovado.",
+   "expr": "neutra",
+   "arte": [
+    "manchete_v",
+    "4. REDES E TRANSPARÊNCIA"
+   ],
+   "destaque": [
+    "relatórios"
+   ],
+   "zoom": true,
+   "foto": false
+  },
+  {
+   "fala": "Minha posição é clara: que os critérios das plataformas sejam transparentes, sem favorecer nem prejudicar esquerda ou direita!",
+   "expr": "ironica",
+   "arte": [
+    "manchete_v",
+    "OPINIÃO | CRITÉRIOS CLAROS"
+   ],
+   "destaque": [
+    "transparentes"
+   ],
+   "zoom": false,
+   "foto": false
+  },
+  {
+   "fala": "Quinta: Lula e Flávio assinaram um acordo sobre divulgação de sigilos. O ministro André Mendonça explicou que podem publicar os próprios dados, sem ordem do TSE.",
+   "expr": "neutra",
+   "arte": [
+    "manchete_v",
+    "5. ABERTURA DE SIGILOS"
+   ],
+   "destaque": [
+    "sigilos"
+   ],
+   "zoom": true,
+   "foto": false
+  },
+  {
+   "fala": "E isso me empolga: cobrança por transparência de todos os políticos! Quero ver os compromissos virarem prática, não apenas fala de campanha.",
+   "expr": "chocada",
+   "arte": [
+    "manchete_v",
+    "OPINIÃO | PRESTAR CONTAS"
+   ],
+   "destaque": [
+    "transparência"
+   ],
+   "zoom": false,
+   "foto": false
+  },
+  {
+   "fala": "Saio dessa rodada otimista com o debate sobre segurança, empreendedorismo e liberdade. Amanhã, quem decide é o eleitor. Qual dessas pautas você quer entender melhor?",
+   "expr": "neutra",
+   "arte": [
+    "titulo",
+    "NINA COMENTA | SUA OPINIÃO"
+   ],
+   "destaque": [
+    "quem decide é o eleitor"
+   ],
+   "zoom": true,
+   "foto": false
+  }
+ ],
+ "fim": "NINA COMENTA | OPINIÃO DE DIREITA",
+ "legenda_post": "A Nina comenta cinco notícias da política de 24/10/2026 com perspectiva de direita, entusiasmo e opinião explícita, mas separando fatos de avaliações. Pautas: debate Lula–Flávio, pesquisa Datafolha de 22/10 (50% x 50% dos votos válidos), decisões do TSE sobre conteúdos proibidos de Nikolas e Marçal, prestação de informações por Meta/X e abertura voluntária de sigilos dos candidatos.\n\nPesquisa não é resultado eleitoral. Medida judicial sobre publicações proibidas não é proibição geral de comentar política. Alegação sobre algoritmos não equivale a prova.\n\nFontes e links completos no roteiro do repositório. Teste editorial, sem publicação automática.\n\n#NinaComenta #PoliticaBrasileira #NoticiasDoDia #Opiniao",
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
 }

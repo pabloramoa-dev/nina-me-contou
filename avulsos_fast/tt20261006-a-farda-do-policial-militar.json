@@ -1,175 +1,347 @@
 {
-  "id": "tt20261006-a-farda-do-policial-militar",
-  "avulso": true,
-  "titulo": "A FARDA DO POLICIAL MILITAR",
-  "temporada": "TikTok avulso",
-  "cenario": "noite",
-  "batidas": [
-    {
-      "fala": "Ela encontrou uma farda da Polícia Militar escondida no porta-malas do namorado. O problema? Ele nunca tinha sido policial.",
-      "expr": "chocada",
-      "arte": ["titulo"],
-      "destaque": ["farda", "Polícia Militar", "nunca", "policial"],
-      "zoom": true
-    },
-    {
-      "fala": "Carolina namorava Rafael havia quase dois anos. Ele dizia trabalhar como supervisor de uma empresa de segurança e, algumas noites, voltava de madrugada.",
-      "expr": "neutra",
-      "foto": ["security company office night", "O TRABALHO DE RAFAEL"],
-      "destaque": ["dois anos", "segurança", "madrugada"]
-    },
-    {
-      "fala": "Um dia o carro dela quebrou e Rafael emprestou o dele. Ao abrir o porta-malas no supermercado, Carolina viu uma mochila preta atrás de uma caixa.",
-      "expr": "desconfiada",
-      "foto": ["black backpack hidden in car trunk", "A MOCHILA"],
-      "destaque": ["porta-malas", "mochila", "preta"]
-    },
-    {
-      "fala": "Dentro havia uma farda da Polícia Militar, cuidadosamente dobrada.",
-      "expr": "chocada",
-      "foto": ["folded police style uniform in bag", "A FARDA"],
-      "destaque": ["farda", "Polícia Militar"],
-      "zoom": true
-    },
-    {
-      "fala": "Ela olhou a camisa e viu um sobrenome bordado: Moreira.",
-      "expr": "chocada",
-      "arte": ["manchete_v", "MOREIRA"],
-      "destaque": ["sobrenome", "Moreira"],
-      "zoom": true
-    },
-    {
-      "fala": "Rafael nunca tinha contado que era policial e sempre dizia que nunca tinha trabalhado para o governo.",
-      "expr": "desconfiada",
-      "arte": ["manchete", "ELE NUNCA FOI POLICIAL"],
-      "destaque": ["nunca", "policial", "governo"]
-    },
-    {
-      "fala": "Carolina tirou uma foto e colocou tudo de volta no mesmo lugar.",
-      "expr": "desconfiada",
-      "foto": ["smartphone taking photo of folded uniform", "UMA FOTO"],
-      "destaque": ["foto", "mesmo lugar"]
-    },
-    {
-      "fala": "Naquela noite perguntou casualmente: Rafael, você conhece algum policial chamado Moreira?",
-      "expr": "ironica",
-      "arte": ["conversa", "CONHECE O MOREIRA?"],
-      "destaque": ["policial", "Moreira"]
-    },
-    {
-      "fala": "Ele demorou e respondeu: conheço. Trabalha comigo fazendo uns serviços por fora.",
-      "expr": "desconfiada",
-      "arte": ["relogio", "ELE DEMOROU"],
-      "destaque": ["demorou", "serviços", "por fora"]
-    },
-    {
-      "fala": "Dois dias depois, Rafael disse que teria serviço noturno. Às onze da noite mandou uma mensagem: hoje eu volto tarde.",
-      "expr": "desconfiada",
-      "arte": ["direct", "HOJE EU VOLTO TARDE"],
-      "destaque": ["serviço noturno", "onze", "volto tarde"]
-    },
-    {
-      "fala": "Quarenta minutos depois, Vanessa, irmã de Carolina, ligou nervosa e perguntou se Rafael estava com ela.",
-      "expr": "chocada",
-      "arte": ["celular", "VANESSA LIGANDO"],
-      "destaque": ["Vanessa", "Rafael", "com ela"]
-    },
-    {
-      "fala": "Carolina disse que não. Então Vanessa contou que o marido dela estava procurando uma farda que tinha desaparecido de casa.",
-      "expr": "chocada",
-      "arte": ["manchete_v", "A FARDA SUMIU"],
-      "destaque": ["farda", "desaparecido"],
-      "zoom": true
-    },
-    {
-      "fala": "O marido de Vanessa era policial militar. E o sobrenome dele era Moreira.",
-      "expr": "chocada",
-      "arte": ["manchete", "ERA MOREIRA"],
-      "destaque": ["policial militar", "Moreira"],
-      "zoom": true
-    },
-    {
-      "fala": "Carolina perguntou como era a farda. Vanessa descreveu exatamente a que estava escondida no carro de Rafael.",
-      "expr": "desconfiada",
-      "foto": ["folded uniform in car trunk", "ERA A MESMA"],
-      "destaque": ["exatamente", "escondida", "Rafael"]
-    },
-    {
-      "fala": "E completou: essa farda sumiu daqui há quase uma semana.",
-      "expr": "chocada",
-      "arte": ["manchete_v", "HÁ UMA SEMANA"],
-      "destaque": ["sumiu", "uma semana"],
-      "zoom": true
-    },
-    {
-      "fala": "No dia seguinte, Carolina esperou Rafael chegar e colocou no celular a foto da farda.",
-      "expr": "neutra",
-      "foto": ["smartphone on table showing uniform photo", "A PROVA"],
-      "destaque": ["foto", "farda"]
-    },
-    {
-      "fala": "Perguntou: quer me explicar por que a farda do meu cunhado estava escondida no seu carro?",
-      "expr": "brava",
-      "arte": ["conversa", "POR QUE ESTAVA NO SEU CARRO?"],
-      "destaque": ["farda", "cunhado", "seu carro"]
-    },
-    {
-      "fala": "Rafael disse que Moreira tinha emprestado.",
-      "expr": "ironica",
-      "arte": ["conversa", "ELE ME EMPRESTOU"],
-      "destaque": ["Moreira", "emprestado"]
-    },
-    {
-      "fala": "Carolina respondeu: estranho, porque ele está procurando essa farda desde a semana passada.",
-      "expr": "brava",
-      "arte": ["manchete", "ELE ESTÁ PROCURANDO"],
-      "destaque": ["procurando", "semana passada"]
-    },
-    {
-      "fala": "Rafael ficou em silêncio.",
-      "expr": "desconfiada",
-      "arte": ["relogio", "SILÊNCIO"],
-      "destaque": ["silêncio"]
-    },
-    {
-      "fala": "Carolina ligou para Vanessa e as duas começaram a comparar datas.",
-      "expr": "desconfiada",
-      "arte": ["calendario", "COMPARANDO DATAS"],
-      "destaque": ["Vanessa", "comparar", "datas"]
-    },
-    {
-      "fala": "Quase todas as noites em que Rafael dizia estar trabalhando coincidiam com noites em que Moreira também dizia estar de serviço.",
-      "expr": "chocada",
-      "arte": ["calendario", "AS DATAS BATIAM"],
-      "destaque": ["Rafael", "Moreira", "serviço"],
-      "zoom": true
-    },
-    {
-      "fala": "Mas Moreira não estava de serviço. Os dois usavam desculpas diferentes para esconder encontros e festas que nenhuma das duas conhecia.",
-      "expr": "chocada",
-      "arte": ["manchete_v", "DUAS HISTÓRIAS"],
-      "destaque": ["não", "serviço", "desculpas", "festas"],
-      "zoom": true
-    },
-    {
-      "fala": "Aquela farda não revelou apenas uma mentira. Ela desmontou duas histórias ao mesmo tempo.",
-      "expr": "ironica",
-      "arte": ["titulo", "A FARDA ENTREGOU TUDO"],
-      "destaque": ["farda", "mentira", "duas histórias"]
-    },
-    {
-      "fala": "Carolina terminou o relacionamento e Vanessa decidiu resolver a própria situação separadamente.",
-      "expr": "neutra",
-      "arte": ["manchete", "FIM DA HISTÓRIA"],
-      "destaque": ["terminou", "relacionamento"]
-    },
-    {
-      "fala": "E você? Se encontrasse uma farda escondida no carro de alguém que nunca foi policial, perguntaria na hora ou investigaria primeiro?",
-      "expr": "ironica",
-      "arte": ["interrogacao", "E VOCÊ?"],
-      "destaque": ["farda", "perguntaria", "investigaria"]
-    }
-  ],
-  "fim": "A FARDA ENTREGOU TUDO",
-  "legenda_post": "Ela encontrou uma farda da Polícia Militar escondida no porta-malas do namorado. O problema? Ele nunca tinha sido policial. 😳\nAquela mochila acabou revelando muito mais do que ela imaginava.\nVocê perguntaria na hora ou investigaria primeiro?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Storytime #Fofoca #Relacionamento #Historias"
+ "id": "tt20261006-a-farda-do-policial-militar",
+ "avulso": true,
+ "titulo": "A FARDA DO POLICIAL MILITAR",
+ "temporada": "TikTok avulso",
+ "cenario": "noite",
+ "batidas": [
+  {
+   "fala": "Ela encontrou uma farda da Polícia Militar escondida no porta-malas do namorado. O problema? Ele nunca tinha sido policial.",
+   "expr": "chocada",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "farda",
+    "Polícia Militar",
+    "nunca",
+    "policial"
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "Carolina namorava Rafael havia quase dois anos. Ele dizia trabalhar como supervisor de uma empresa de segurança e, algumas noites, voltava de madrugada.",
+   "expr": "neutra",
+   "foto": [
+    "security company office night",
+    "O TRABALHO DE RAFAEL"
+   ],
+   "destaque": [
+    "dois anos",
+    "segurança",
+    "madrugada"
+   ]
+  },
+  {
+   "fala": "Um dia o carro dela quebrou e Rafael emprestou o dele. Ao abrir o porta-malas no supermercado, Carolina viu uma mochila preta atrás de uma caixa.",
+   "expr": "desconfiada",
+   "foto": [
+    "black backpack hidden in car trunk",
+    "A MOCHILA"
+   ],
+   "destaque": [
+    "porta-malas",
+    "mochila",
+    "preta"
+   ]
+  },
+  {
+   "fala": "Dentro havia uma farda da Polícia Militar, cuidadosamente dobrada.",
+   "expr": "chocada",
+   "foto": [
+    "folded police style uniform in bag",
+    "A FARDA"
+   ],
+   "destaque": [
+    "farda",
+    "Polícia Militar"
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "Ela olhou a camisa e viu um sobrenome bordado: Moreira.",
+   "expr": "chocada",
+   "arte": [
+    "manchete_v",
+    "MOREIRA"
+   ],
+   "destaque": [
+    "sobrenome",
+    "Moreira"
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "Rafael nunca tinha contado que era policial e sempre dizia que nunca tinha trabalhado para o governo.",
+   "expr": "desconfiada",
+   "arte": [
+    "manchete",
+    "ELE NUNCA FOI POLICIAL"
+   ],
+   "destaque": [
+    "nunca",
+    "policial",
+    "governo"
+   ]
+  },
+  {
+   "fala": "Carolina tirou uma foto e colocou tudo de volta no mesmo lugar.",
+   "expr": "desconfiada",
+   "foto": [
+    "smartphone taking photo of folded uniform",
+    "UMA FOTO"
+   ],
+   "destaque": [
+    "foto",
+    "mesmo lugar"
+   ]
+  },
+  {
+   "fala": "Naquela noite perguntou casualmente: Rafael, você conhece algum policial chamado Moreira?",
+   "expr": "ironica",
+   "arte": [
+    "conversa",
+    "CONHECE O MOREIRA?"
+   ],
+   "destaque": [
+    "policial",
+    "Moreira"
+   ]
+  },
+  {
+   "fala": "Ele demorou e respondeu: conheço. Trabalha comigo fazendo uns serviços por fora.",
+   "expr": "desconfiada",
+   "arte": [
+    "relogio",
+    "ELE DEMOROU"
+   ],
+   "destaque": [
+    "demorou",
+    "serviços",
+    "por fora"
+   ]
+  },
+  {
+   "fala": "Dois dias depois, Rafael disse que teria serviço noturno. Às onze da noite mandou uma mensagem: hoje eu volto tarde.",
+   "expr": "desconfiada",
+   "arte": [
+    "direct",
+    "HOJE EU VOLTO TARDE"
+   ],
+   "destaque": [
+    "serviço noturno",
+    "onze",
+    "volto tarde"
+   ]
+  },
+  {
+   "fala": "Quarenta minutos depois, Vanessa, irmã de Carolina, ligou nervosa e perguntou se Rafael estava com ela.",
+   "expr": "chocada",
+   "arte": [
+    "celular",
+    "VANESSA LIGANDO"
+   ],
+   "destaque": [
+    "Vanessa",
+    "Rafael",
+    "com ela"
+   ]
+  },
+  {
+   "fala": "Carolina disse que não. Então Vanessa contou que o marido dela estava procurando uma farda que tinha desaparecido de casa.",
+   "expr": "chocada",
+   "arte": [
+    "manchete_v",
+    "A FARDA SUMIU"
+   ],
+   "destaque": [
+    "farda",
+    "desaparecido"
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "O marido de Vanessa era policial militar. E o sobrenome dele era Moreira.",
+   "expr": "chocada",
+   "arte": [
+    "manchete",
+    "ERA MOREIRA"
+   ],
+   "destaque": [
+    "policial militar",
+    "Moreira"
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "Carolina perguntou como era a farda. Vanessa descreveu exatamente a que estava escondida no carro de Rafael.",
+   "expr": "desconfiada",
+   "foto": [
+    "folded uniform in car trunk",
+    "ERA A MESMA"
+   ],
+   "destaque": [
+    "exatamente",
+    "escondida",
+    "Rafael"
+   ]
+  },
+  {
+   "fala": "E completou: essa farda sumiu daqui há quase uma semana.",
+   "expr": "chocada",
+   "arte": [
+    "manchete_v",
+    "HÁ UMA SEMANA"
+   ],
+   "destaque": [
+    "sumiu",
+    "uma semana"
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "No dia seguinte, Carolina esperou Rafael chegar e colocou no celular a foto da farda.",
+   "expr": "neutra",
+   "foto": [
+    "smartphone on table showing uniform photo",
+    "A PROVA"
+   ],
+   "destaque": [
+    "foto",
+    "farda"
+   ]
+  },
+  {
+   "fala": "Perguntou: quer me explicar por que a farda do meu cunhado estava escondida no seu carro?",
+   "expr": "brava",
+   "arte": [
+    "conversa",
+    "POR QUE ESTAVA NO SEU CARRO?"
+   ],
+   "destaque": [
+    "farda",
+    "cunhado",
+    "seu carro"
+   ]
+  },
+  {
+   "fala": "Rafael disse que Moreira tinha emprestado.",
+   "expr": "ironica",
+   "arte": [
+    "conversa",
+    "ELE ME EMPRESTOU"
+   ],
+   "destaque": [
+    "Moreira",
+    "emprestado"
+   ]
+  },
+  {
+   "fala": "Carolina respondeu: estranho, porque ele está procurando essa farda desde a semana passada.",
+   "expr": "brava",
+   "arte": [
+    "manchete",
+    "ELE ESTÁ PROCURANDO"
+   ],
+   "destaque": [
+    "procurando",
+    "semana passada"
+   ]
+  },
+  {
+   "fala": "Rafael ficou em silêncio.",
+   "expr": "desconfiada",
+   "arte": [
+    "relogio",
+    "SILÊNCIO"
+   ],
+   "destaque": [
+    "silêncio"
+   ]
+  },
+  {
+   "fala": "Carolina ligou para Vanessa e as duas começaram a comparar datas.",
+   "expr": "desconfiada",
+   "arte": [
+    "calendario",
+    "COMPARANDO DATAS"
+   ],
+   "destaque": [
+    "Vanessa",
+    "comparar",
+    "datas"
+   ]
+  },
+  {
+   "fala": "Quase todas as noites em que Rafael dizia estar trabalhando coincidiam com noites em que Moreira também dizia estar de serviço.",
+   "expr": "chocada",
+   "arte": [
+    "calendario",
+    "AS DATAS BATIAM"
+   ],
+   "destaque": [
+    "Rafael",
+    "Moreira",
+    "serviço"
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "Mas Moreira não estava de serviço. Os dois usavam desculpas diferentes para esconder encontros e festas que nenhuma das duas conhecia.",
+   "expr": "chocada",
+   "arte": [
+    "manchete_v",
+    "DUAS HISTÓRIAS"
+   ],
+   "destaque": [
+    "não",
+    "serviço",
+    "desculpas",
+    "festas"
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "Aquela farda não revelou apenas uma mentira. Ela desmontou duas histórias ao mesmo tempo.",
+   "expr": "ironica",
+   "arte": [
+    "titulo",
+    "A FARDA ENTREGOU TUDO"
+   ],
+   "destaque": [
+    "farda",
+    "mentira",
+    "duas histórias"
+   ]
+  },
+  {
+   "fala": "Carolina terminou o relacionamento e Vanessa decidiu resolver a própria situação separadamente.",
+   "expr": "neutra",
+   "arte": [
+    "manchete",
+    "FIM DA HISTÓRIA"
+   ],
+   "destaque": [
+    "terminou",
+    "relacionamento"
+   ]
+  },
+  {
+   "fala": "E você? Se encontrasse uma farda escondida no carro de alguém que nunca foi policial, perguntaria na hora ou investigaria primeiro?",
+   "expr": "ironica",
+   "arte": [
+    "interrogacao",
+    "E VOCÊ?"
+   ],
+   "destaque": [
+    "farda",
+    "perguntaria",
+    "investigaria"
+   ]
+  }
+ ],
+ "fim": "A FARDA ENTREGOU TUDO",
+ "legenda_post": "Ela encontrou uma farda da Polícia Militar escondida no porta-malas do namorado. O problema? Ele nunca tinha sido policial. 😳\nAquela mochila acabou revelando muito mais do que ela imaginava.\nVocê perguntaria na hora ou investigaria primeiro?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Storytime #Fofoca #Relacionamento #Historias",
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
 }

@@ -1,145 +1,147 @@
 {
-  "id": "tt20261013-o-telefone-da-estacao",
-  "avulso": true,
-  "titulo": "O TELEFONE DA ESTAÇÃO",
-  "temporada": "TikTok diário",
-  "cenario": "noite",
-  "visual_images": {
-    "auto_visual_images": true,
-    "hide_inner_caption_when_image": true,
-    "bottom_caption_only": true,
-    "min_images": 4,
-    "max_images": 8,
-    "target_images": 6,
-    "fallback": "original_art"
+ "id": "tt20261013-o-telefone-da-estacao",
+ "avulso": true,
+ "titulo": "O TELEFONE DA ESTAÇÃO",
+ "temporada": "TikTok diário",
+ "cenario": "noite",
+ "visual_images": {
+  "auto_visual_images": true,
+  "hide_inner_caption_when_image": true,
+  "bottom_caption_only": true,
+  "min_images": 4,
+  "max_images": 8,
+  "target_images": 6,
+  "fallback": "original_art"
+ },
+ "batidas": [
+  {
+   "fala": "Toda terça-feira, às nove e dez da noite, o telefone abandonado da antiga estação tocava. Até que Marina decidiu atender.",
+   "expr": "desconfiada",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "toda terça-feira",
+    "decidiu atender"
+   ],
+   "zoom": true
   },
-  "batidas": [
-    {
-      "fala": "Toda terça-feira, às nove e dez da noite, o telefone abandonado da antiga estação tocava. Até que Marina decidiu atender.",
-      "expr": "desconfiada",
-      "arte": [
-        "titulo"
-      ],
-      "destaque": [
-        "toda terça-feira",
-        "decidiu atender"
-      ],
-      "zoom": true
-    },
-    {
-      "fala": "Do outro lado, uma voz gravada repetia apenas três palavras: armário vinte e sete. A estação estava fechada havia dezoito anos.",
-      "expr": "surpresa",
-      "foto": [
-        "abandoned train station payphone at night",
-        "ARMÁRIO 27"
-      ],
-      "destaque": [
-        "três palavras",
-        "dezoito anos"
-      ]
-    },
-    {
-      "fala": "Marina voltou com uma lanterna e encontrou o armário coberto de poeira. Dentro havia uma mala azul e uma passagem sem destino.",
-      "expr": "chocada",
-      "foto": [
-        "dusty station locker blue suitcase",
-        "A MALA AZUL"
-      ],
-      "destaque": [
-        "mala azul",
-        "sem destino"
-      ],
-      "zoom": true
-    },
-    {
-      "fala": "Na mala, dezenas de cartas tinham o nome de sua avó, Irene. Todas estavam fechadas e assinadas pelo mesmo homem: Augusto.",
-      "expr": "assustada",
-      "foto": [
-        "old letters inside vintage suitcase",
-        "CARTAS PARA IRENE"
-      ],
-      "destaque": [
-        "sua avó",
-        "Augusto"
-      ]
-    },
-    {
-      "fala": "Marina imaginou um romance escondido. Mas a primeira carta dizia que Augusto era o irmão que Irene pensava ter morrido ainda criança.",
-      "expr": "chocada",
-      "arte": [
-        "coracao",
-        "O IRMÃO PERDIDO"
-      ],
-      "destaque": [
-        "romance escondido",
-        "irmão"
-      ],
-      "zoom": true
-    },
-    {
-      "fala": "Separados numa enchente, os dois cresceram em cidades diferentes. Anos depois, Augusto encontrou Irene, mas não teve coragem de aparecer.",
-      "expr": "cansada",
-      "foto": [
-        "old flood map railway towns",
-        "DUAS CIDADES"
-      ],
-      "destaque": [
-        "separados",
-        "não teve coragem"
-      ]
-    },
-    {
-      "fala": "Durante meses, ele deixou cartas no armário vinte e sete. A última pedia que ela estivesse na plataforma naquela terça, às nove e dez.",
-      "expr": "desconfiada",
-      "foto": [
-        "vintage train platform clock 9 10",
-        "9:10"
-      ],
-      "destaque": [
-        "última",
-        "nove e dez"
-      ]
-    },
-    {
-      "fala": "Irene nunca chegou. Naquela noite, um acidente interrompeu a linha, e Augusto partiu acreditando que a irmã escolhera esquecê-lo.",
-      "expr": "assustada",
-      "arte": [
-        "relogio",
-        "A VIAGEM INTERROMPIDA"
-      ],
-      "destaque": [
-        "nunca chegou",
-        "esquecê-lo"
-      ],
-      "zoom": true
-    },
-    {
-      "fala": "No fundo da mala havia um gravador ligado a um temporizador e um endereço recente. Marina foi até lá e encontrou Augusto ainda esperando uma resposta.",
-      "expr": "surpresa",
-      "foto": [
-        "old cassette recorder handwritten address",
-        "UM ENDEREÇO"
-      ],
-      "destaque": [
-        "temporizador",
-        "ainda esperando"
-      ]
-    },
-    {
-      "fala": "Na semana seguinte, Marina levou Irene à estação. Quando os irmãos se abraçaram, o telefone tocou pela última vez. E você, atenderia? Comenta e segue a Nina.",
-      "expr": "ironica",
-      "arte": [
-        "interrogacao",
-        "E VOCÊ?"
-      ],
-      "destaque": [
-        "pela última vez",
-        "atenderia",
-        "segue a Nina"
-      ]
-    }
-  ],
-  "fim": "A RESPOSTA QUE CHEGOU",
-  "legenda_post": "Um telefone abandonado tocava toda terça-feira, sempre às 21h10. Quando Marina atendeu, encontrou uma história guardada havia 18 anos. ☎️🚉\nVocê teria coragem de seguir a pista?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Storytime #Historia #Misterio #Familia",
-  "render_retry": 1
+  {
+   "fala": "Do outro lado, uma voz gravada repetia apenas três palavras: armário vinte e sete. A estação estava fechada havia dezoito anos.",
+   "expr": "surpresa",
+   "foto": [
+    "abandoned train station payphone at night",
+    "ARMÁRIO 27"
+   ],
+   "destaque": [
+    "três palavras",
+    "dezoito anos"
+   ]
+  },
+  {
+   "fala": "Marina voltou com uma lanterna e encontrou o armário coberto de poeira. Dentro havia uma mala azul e uma passagem sem destino.",
+   "expr": "chocada",
+   "foto": [
+    "dusty station locker blue suitcase",
+    "A MALA AZUL"
+   ],
+   "destaque": [
+    "mala azul",
+    "sem destino"
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "Na mala, dezenas de cartas tinham o nome de sua avó, Irene. Todas estavam fechadas e assinadas pelo mesmo homem: Augusto.",
+   "expr": "assustada",
+   "foto": [
+    "old letters inside vintage suitcase",
+    "CARTAS PARA IRENE"
+   ],
+   "destaque": [
+    "sua avó",
+    "Augusto"
+   ]
+  },
+  {
+   "fala": "Marina imaginou um romance escondido. Mas a primeira carta dizia que Augusto era o irmão que Irene pensava ter morrido ainda criança.",
+   "expr": "chocada",
+   "arte": [
+    "coracao",
+    "O IRMÃO PERDIDO"
+   ],
+   "destaque": [
+    "romance escondido",
+    "irmão"
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "Separados numa enchente, os dois cresceram em cidades diferentes. Anos depois, Augusto encontrou Irene, mas não teve coragem de aparecer.",
+   "expr": "cansada",
+   "foto": [
+    "old flood map railway towns",
+    "DUAS CIDADES"
+   ],
+   "destaque": [
+    "separados",
+    "não teve coragem"
+   ]
+  },
+  {
+   "fala": "Durante meses, ele deixou cartas no armário vinte e sete. A última pedia que ela estivesse na plataforma naquela terça, às nove e dez.",
+   "expr": "desconfiada",
+   "foto": [
+    "vintage train platform clock 9 10",
+    "9:10"
+   ],
+   "destaque": [
+    "última",
+    "nove e dez"
+   ]
+  },
+  {
+   "fala": "Irene nunca chegou. Naquela noite, um acidente interrompeu a linha, e Augusto partiu acreditando que a irmã escolhera esquecê-lo.",
+   "expr": "assustada",
+   "arte": [
+    "relogio",
+    "A VIAGEM INTERROMPIDA"
+   ],
+   "destaque": [
+    "nunca chegou",
+    "esquecê-lo"
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "No fundo da mala havia um gravador ligado a um temporizador e um endereço recente. Marina foi até lá e encontrou Augusto ainda esperando uma resposta.",
+   "expr": "surpresa",
+   "foto": [
+    "old cassette recorder handwritten address",
+    "UM ENDEREÇO"
+   ],
+   "destaque": [
+    "temporizador",
+    "ainda esperando"
+   ]
+  },
+  {
+   "fala": "Na semana seguinte, Marina levou Irene à estação. Quando os irmãos se abraçaram, o telefone tocou pela última vez. E você, atenderia? Comenta e segue a Nina.",
+   "expr": "ironica",
+   "arte": [
+    "interrogacao",
+    "E VOCÊ?"
+   ],
+   "destaque": [
+    "pela última vez",
+    "atenderia",
+    "segue a Nina"
+   ]
+  }
+ ],
+ "fim": "A RESPOSTA QUE CHEGOU",
+ "legenda_post": "Um telefone abandonado tocava toda terça-feira, sempre às 21h10. Quando Marina atendeu, encontrou uma história guardada havia 18 anos. ☎️🚉\nVocê teria coragem de seguir a pista?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Storytime #Historia #Misterio #Familia",
+ "render_retry": 1,
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
 }

@@ -1,212 +1,214 @@
 {
-  "id": "tt20261015-o-audio-do-policial-militar",
-  "avulso": true,
-  "titulo": "O ÁUDIO DO POLICIAL MILITAR",
-  "temporada": "Nina Me Contou — Histórias completas",
-  "cenario": "noite",
-  "visual_images": {
-    "auto_visual_images": true,
-    "hide_inner_caption_when_image": true,
-    "bottom_caption_only": true,
-    "min_images": 4,
-    "max_images": 8,
-    "target_images": 6,
-    "fallback": "original_art"
+ "id": "tt20261015-o-audio-do-policial-militar",
+ "avulso": true,
+ "titulo": "O ÁUDIO DO POLICIAL MILITAR",
+ "temporada": "Nina Me Contou — Histórias completas",
+ "cenario": "noite",
+ "visual_images": {
+  "auto_visual_images": true,
+  "hide_inner_caption_when_image": true,
+  "bottom_caption_only": true,
+  "min_images": 4,
+  "max_images": 8,
+  "target_images": 6,
+  "fallback": "original_art"
+ },
+ "batidas": [
+  {
+   "fala": "O policial militar mandou um áudio para a amante. Só que enviou no grupo do condomínio. E o marido dela ouviu tudo.",
+   "expr": "chocada",
+   "arte": [
+    "titulo"
+   ],
+   "foto": "smartphone showing audio message in chat group on table",
+   "zoom": true
   },
-  "batidas": [
-    {
-      "fala": "O policial militar mandou um áudio para a amante. Só que enviou no grupo do condomínio. E o marido dela ouviu tudo.",
-      "expr": "chocada",
-      "arte": [
-        "titulo"
-      ],
-      "foto": "smartphone showing audio message in chat group on table",
-      "zoom": true
-    },
-    {
-      "fala": "Leandro era policial militar e morava no bloco B. Era casado com Joana, conhecida por todos no prédio.",
-      "expr": "neutra",
-      "arte": [
-        "porta"
-      ],
-      "foto": "apartment building entrance afternoon"
-    },
-    {
-      "fala": "No apartamento ao lado moravam Carla e Sérgio. Onze anos de casamento, um comércio e uma rotina aparentemente perfeita.",
-      "expr": "neutra",
-      "arte": [
-        "coracao"
-      ]
-    },
-    {
-      "fala": "Leandro e Sérgio eram amigos. Faziam churrasco, assistiam futebol e tinham até a chave reserva da casa um do outro.",
-      "expr": "ironica",
-      "arte": [
-        "chave"
-      ],
-      "foto": "two house keys on kitchen counter"
-    },
-    {
-      "fala": "Ninguém imaginava que Carla e Leandro estavam se encontrando havia cinco meses. Ela inventava visitas à prima; ele, compromissos particulares.",
-      "expr": "desconfiada",
-      "arte": [
-        "calendario"
-      ]
-    },
-    {
-      "fala": "Na quinta-feira, Leandro gravou: amanhã inventa uma desculpa pro Sérgio. Reservei nosso quarto de sempre. Tô com saudade.",
-      "expr": "chocada",
-      "arte": [
-        "celular",
-        "ÁUDIO ERRADO"
-      ],
-      "foto": "phone screen displaying voice message waveform"
-    },
-    {
-      "fala": "Ele percebeu o engano quando apareceu: enviado para Moradores do Bloco B. Vinte e oito pessoas naquele grupo.",
-      "expr": "assustada",
-      "arte": [
-        "conversa",
-        "BLOCO B"
-      ]
-    },
-    {
-      "fala": "Apagou correndo. Mas Joana, esposa dele, tinha ouvido. E Sérgio também. Ambos reconheceram a voz na primeira palavra.",
-      "expr": "chocada",
-      "arte": [
-        "manchete_v",
-        "OS DOIS OUVIRAM"
-      ],
-      "zoom": true
-    },
-    {
-      "fala": "Joana não gritou. Foi à cozinha, onde Leandro mexia no celular, e perguntou se o plantão de sexta estava confirmado.",
-      "expr": "desconfiada",
-      "arte": [
-        "celular"
-      ]
-    },
-    {
-      "fala": "Ele respondeu que sim, sem levantar os olhos. Aquela mentira confirmou tudo o que ela precisava saber.",
-      "expr": "cansada",
-      "arte": [
-        "relogio"
-      ]
-    },
-    {
-      "fala": "Do outro lado do corredor, Sérgio perguntou se Carla visitaria mesmo a prima. Ela respondeu: claro, amor. Por quê?",
-      "expr": "desconfiada",
-      "arte": [
-        "conversa",
-        "POR QUÊ?"
-      ]
-    },
-    {
-      "fala": "Ele disse: por nada. Mas naquela madrugada mandou uma mensagem para Joana: a gente precisa conversar.",
-      "expr": "neutra",
-      "arte": [
-        "celular"
-      ],
-      "foto": "unread text notification on smartphone at night"
-    },
-    {
-      "fala": "No dia seguinte, Joana mostrou a Sérgio mensagens deixadas por Leandro no computador da sala. Havia reservas e declarações.",
-      "expr": "surpresa",
-      "arte": [
-        "extrato"
-      ],
-      "foto": "hotel reservation printout on wooden desk"
-    },
-    {
-      "fala": "Sérgio ficou olhando as datas. Muitas eram de dias em que Leandro jantava em sua casa e chamava Carla de cunhada.",
-      "expr": "brava",
-      "arte": [
-        "calendario"
-      ]
-    },
-    {
-      "fala": "Os dois chamaram seus parceiros para jantar no sábado. Disseram que queriam reunir os vizinhos como antigamente.",
-      "expr": "desconfiada",
-      "arte": [
-        "cafe"
-      ],
-      "foto": "dinner table with four place settings"
-    },
-    {
-      "fala": "À mesa, Leandro fazia piada, Carla ria, e ninguém percebia que Sérgio mal tocava na comida.",
-      "expr": "neutra",
-      "arte": [
-        "interrogacao"
-      ]
-    },
-    {
-      "fala": "Depois da sobremesa, Joana colocou o celular no centro da mesa e apertou o play. A voz de Leandro encheu a sala.",
-      "expr": "chocada",
-      "arte": [
-        "celular",
-        "APERTOU O PLAY"
-      ],
-      "zoom": true
-    },
-    {
-      "fala": "Carla disse que era um mal-entendido. Leandro afirmou que estava se separando. Mas Joana tinha outra surpresa.",
-      "expr": "surpresa",
-      "arte": [
-        "manchete_v",
-        "AINDA PIOR"
-      ]
-    },
-    {
-      "fala": "Ela mostrou as passagens de férias que ele comprara para o casal naquela semana. Datas escolhidas pelo próprio Leandro.",
-      "expr": "desconfiada",
-      "arte": [
-        "extrato"
-      ],
-      "foto": "printed travel tickets on table",
-      "zoom": true
-    },
-    {
-      "fala": "Carla ficou sem reação. Leandro prometera abandonar a esposa por ela. Na verdade, planejava viajar com Joana.",
-      "expr": "cansada",
-      "arte": [
-        "mala"
-      ],
-      "foto": "travel suitcase near front door"
-    },
-    {
-      "fala": "Sérgio se levantou: você entrou na minha casa, comeu na minha mesa e me chamou de irmão. Era tudo mentira?",
-      "expr": "brava",
-      "arte": [
-        "conversa",
-        "ERA MEU AMIGO"
-      ],
-      "zoom": true
-    },
-    {
-      "fala": "Leandro não respondeu. Joana pegou a bolsa. Sérgio abriu a porta. Carla percebeu que aquela história tinha acabado.",
-      "expr": "chocada",
-      "arte": [
-        "porta"
-      ]
-    },
-    {
-      "fala": "Os dois traídos foram para o corredor. E ficou uma pergunta: quando existe traição assim, o que dói mais?",
-      "expr": "ironica",
-      "arte": [
-        "interrogacao",
-        "E AGORA?"
-      ]
-    },
-    {
-      "fala": "E você, no lugar do Sérgio, perdoaria a esposa ou o amigo? Me conta nos comentários.",
-      "expr": "ironica",
-      "arte": [
-        "interrogacao",
-        "QUEM VOCÊ PERDOARIA?"
-      ]
-    }
-  ],
-  "fim": "E VOCÊ, PERDOARIA?",
-  "legenda_post": "🚨 UM POLICIAL MILITAR MANDOU UM ÁUDIO PARA A AMANTE... NO GRUPO ERRADO! 😱\n\nLeandro era amigo do marido de Carla. Ninguém imaginava o segredo que os dois escondiam havia meses. Até que um áudio apareceu no grupo do condomínio — e a esposa do policial e o marido de Carla ouviram tudo.\n\nMas a última descoberta foi pior ainda. 😳\n\n👇 E você? Perdoaria a esposa ou o amigo? Conta nos comentários!\n\n💛 Siga a Nina para mais histórias com reviravoltas.\n\nHistória fictícia para entretenimento. Personagens e acontecimentos inventados.\n\n#NinaMeContou #Storytime #Traicao #PolicialMilitar #HistoriaDeTraicao #Reviravolta #TikTokBrasil",
-  "render_retry": 1
+  {
+   "fala": "Leandro era policial militar e morava no bloco B. Era casado com Joana, conhecida por todos no prédio.",
+   "expr": "neutra",
+   "arte": [
+    "porta"
+   ],
+   "foto": "apartment building entrance afternoon"
+  },
+  {
+   "fala": "No apartamento ao lado moravam Carla e Sérgio. Onze anos de casamento, um comércio e uma rotina aparentemente perfeita.",
+   "expr": "neutra",
+   "arte": [
+    "coracao"
+   ]
+  },
+  {
+   "fala": "Leandro e Sérgio eram amigos. Faziam churrasco, assistiam futebol e tinham até a chave reserva da casa um do outro.",
+   "expr": "ironica",
+   "arte": [
+    "chave"
+   ],
+   "foto": "two house keys on kitchen counter"
+  },
+  {
+   "fala": "Ninguém imaginava que Carla e Leandro estavam se encontrando havia cinco meses. Ela inventava visitas à prima; ele, compromissos particulares.",
+   "expr": "desconfiada",
+   "arte": [
+    "calendario"
+   ]
+  },
+  {
+   "fala": "Na quinta-feira, Leandro gravou: amanhã inventa uma desculpa pro Sérgio. Reservei nosso quarto de sempre. Tô com saudade.",
+   "expr": "chocada",
+   "arte": [
+    "celular",
+    "ÁUDIO ERRADO"
+   ],
+   "foto": "phone screen displaying voice message waveform"
+  },
+  {
+   "fala": "Ele percebeu o engano quando apareceu: enviado para Moradores do Bloco B. Vinte e oito pessoas naquele grupo.",
+   "expr": "assustada",
+   "arte": [
+    "conversa",
+    "BLOCO B"
+   ]
+  },
+  {
+   "fala": "Apagou correndo. Mas Joana, esposa dele, tinha ouvido. E Sérgio também. Ambos reconheceram a voz na primeira palavra.",
+   "expr": "chocada",
+   "arte": [
+    "manchete_v",
+    "OS DOIS OUVIRAM"
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "Joana não gritou. Foi à cozinha, onde Leandro mexia no celular, e perguntou se o plantão de sexta estava confirmado.",
+   "expr": "desconfiada",
+   "arte": [
+    "celular"
+   ]
+  },
+  {
+   "fala": "Ele respondeu que sim, sem levantar os olhos. Aquela mentira confirmou tudo o que ela precisava saber.",
+   "expr": "cansada",
+   "arte": [
+    "relogio"
+   ]
+  },
+  {
+   "fala": "Do outro lado do corredor, Sérgio perguntou se Carla visitaria mesmo a prima. Ela respondeu: claro, amor. Por quê?",
+   "expr": "desconfiada",
+   "arte": [
+    "conversa",
+    "POR QUÊ?"
+   ]
+  },
+  {
+   "fala": "Ele disse: por nada. Mas naquela madrugada mandou uma mensagem para Joana: a gente precisa conversar.",
+   "expr": "neutra",
+   "arte": [
+    "celular"
+   ],
+   "foto": "unread text notification on smartphone at night"
+  },
+  {
+   "fala": "No dia seguinte, Joana mostrou a Sérgio mensagens deixadas por Leandro no computador da sala. Havia reservas e declarações.",
+   "expr": "surpresa",
+   "arte": [
+    "extrato"
+   ],
+   "foto": "hotel reservation printout on wooden desk"
+  },
+  {
+   "fala": "Sérgio ficou olhando as datas. Muitas eram de dias em que Leandro jantava em sua casa e chamava Carla de cunhada.",
+   "expr": "brava",
+   "arte": [
+    "calendario"
+   ]
+  },
+  {
+   "fala": "Os dois chamaram seus parceiros para jantar no sábado. Disseram que queriam reunir os vizinhos como antigamente.",
+   "expr": "desconfiada",
+   "arte": [
+    "cafe"
+   ],
+   "foto": "dinner table with four place settings"
+  },
+  {
+   "fala": "À mesa, Leandro fazia piada, Carla ria, e ninguém percebia que Sérgio mal tocava na comida.",
+   "expr": "neutra",
+   "arte": [
+    "interrogacao"
+   ]
+  },
+  {
+   "fala": "Depois da sobremesa, Joana colocou o celular no centro da mesa e apertou o play. A voz de Leandro encheu a sala.",
+   "expr": "chocada",
+   "arte": [
+    "celular",
+    "APERTOU O PLAY"
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "Carla disse que era um mal-entendido. Leandro afirmou que estava se separando. Mas Joana tinha outra surpresa.",
+   "expr": "surpresa",
+   "arte": [
+    "manchete_v",
+    "AINDA PIOR"
+   ]
+  },
+  {
+   "fala": "Ela mostrou as passagens de férias que ele comprara para o casal naquela semana. Datas escolhidas pelo próprio Leandro.",
+   "expr": "desconfiada",
+   "arte": [
+    "extrato"
+   ],
+   "foto": "printed travel tickets on table",
+   "zoom": true
+  },
+  {
+   "fala": "Carla ficou sem reação. Leandro prometera abandonar a esposa por ela. Na verdade, planejava viajar com Joana.",
+   "expr": "cansada",
+   "arte": [
+    "mala"
+   ],
+   "foto": "travel suitcase near front door"
+  },
+  {
+   "fala": "Sérgio se levantou: você entrou na minha casa, comeu na minha mesa e me chamou de irmão. Era tudo mentira?",
+   "expr": "brava",
+   "arte": [
+    "conversa",
+    "ERA MEU AMIGO"
+   ],
+   "zoom": true
+  },
+  {
+   "fala": "Leandro não respondeu. Joana pegou a bolsa. Sérgio abriu a porta. Carla percebeu que aquela história tinha acabado.",
+   "expr": "chocada",
+   "arte": [
+    "porta"
+   ]
+  },
+  {
+   "fala": "Os dois traídos foram para o corredor. E ficou uma pergunta: quando existe traição assim, o que dói mais?",
+   "expr": "ironica",
+   "arte": [
+    "interrogacao",
+    "E AGORA?"
+   ]
+  },
+  {
+   "fala": "E você, no lugar do Sérgio, perdoaria a esposa ou o amigo? Me conta nos comentários.",
+   "expr": "ironica",
+   "arte": [
+    "interrogacao",
+    "QUEM VOCÊ PERDOARIA?"
+   ]
+  }
+ ],
+ "fim": "E VOCÊ, PERDOARIA?",
+ "legenda_post": "🚨 UM POLICIAL MILITAR MANDOU UM ÁUDIO PARA A AMANTE... NO GRUPO ERRADO! 😱\n\nLeandro era amigo do marido de Carla. Ninguém imaginava o segredo que os dois escondiam havia meses. Até que um áudio apareceu no grupo do condomínio — e a esposa do policial e o marido de Carla ouviram tudo.\n\nMas a última descoberta foi pior ainda. 😳\n\n👇 E você? Perdoaria a esposa ou o amigo? Conta nos comentários!\n\n💛 Siga a Nina para mais histórias com reviravoltas.\n\nHistória fictícia para entretenimento. Personagens e acontecimentos inventados.\n\n#NinaMeContou #Storytime #Traicao #PolicialMilitar #HistoriaDeTraicao #Reviravolta #TikTokBrasil",
+ "render_retry": 1,
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
 }

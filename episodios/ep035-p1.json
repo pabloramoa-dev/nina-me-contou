@@ -7,14 +7,14 @@
  "cenario": "tarde",
  "batidas": [
   {
-   "fala": "Uma foto antiga tinha sido tirada três dias antes.",
-   "expr": "ironica",
+   "fala": "Débora encontrou um bilhete preso atrás de uma moldura. A pista levava a um prédio perto do trabalho, mas Rafael negou conhecer o lugar.",
+   "expr": "desconfiada",
    "arte": [
     "titulo"
    ],
    "destaque": [
-    "não",
-    "deveria"
+    "Débora",
+    "bilhete"
    ]
   },
   {
@@ -139,7 +139,9 @@
   }
  ],
  "fim": "CONTINUA NA PARTE 2",
- "legenda_post": "Uma foto antiga tinha sido tirada três dias antes.\n\nUma pista levou Débora a uma história que não fechava. A continuação está no perfil.\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em situações comuns do cotidiano.\n\n#storytime #historia #fofoca #segredo #relacionamentos #ninamecontou",
+ "legenda_post": "Débora encontrou um bilhete preso atrás de uma moldura. A pista levava a um prédio perto do trabalho, mas Rafael negou conhecer o lugar.\n\nUma pista levou Débora a uma história que não fechava. A continuação está no perfil.\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em situações comuns do cotidiano.\n\n#storytime #historia #fofoca #segredo #relacionamentos #ninamecontou",
  "gerado_automaticamente": true,
- "serie_anual": 22
+ "serie_anual": 22,
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "descoberta_e_contradicao"
 }

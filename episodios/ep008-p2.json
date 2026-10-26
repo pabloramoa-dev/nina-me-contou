@@ -7,17 +7,6 @@
  "cenario": "noite",
  "batidas": [
   {
-   "fala": "Se você caiu aqui agora, volta na parte um. O vestido vermelho está lá.",
-   "expr": "ironica",
-   "arte": [
-    "titulo"
-   ],
-   "destaque": [
-    "parte",
-    "um."
-   ]
-  },
-  {
    "fala": "A Simone pegou a caixa, atravessou a vila e tocou na casa quatro.",
    "expr": "neutra",
    "arte": [
@@ -142,5 +131,7 @@
   }
  ],
  "fim": "SEGUE A NINA",
- "legenda_post": "Ela devolveu o pacote pessoalmente. E no sábado, ficou na janela. 🍷\n\nSe você caiu aqui agora, assiste a PARTE 1 primeiro.\n\nDesconvida a vizinha do aniversário ou espera pra ver se ela aparece de vermelho? Me conta nos comentários. 👇\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em causo de família.\n\n#traição #vizinha #casamento #encomenda #storytime #históriadetraição #desabafo #fofoca #ninamecontou"
+ "legenda_post": "Ela devolveu o pacote pessoalmente. E no sábado, ficou na janela. 🍷\n\nSe você caiu aqui agora, assiste a PARTE 1 primeiro.\n\nDesconvida a vizinha do aniversário ou espera pra ver se ela aparece de vermelho? Me conta nos comentários. 👇\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em causo de família.\n\n#traição #vizinha #casamento #encomenda #storytime #históriadetraição #desabafo #fofoca #ninamecontou",
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "entrada_direta_na_cena"
 }

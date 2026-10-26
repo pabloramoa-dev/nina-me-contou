@@ -7,17 +7,6 @@
  "cenario": "noite",
  "batidas": [
   {
-   "fala": "Se você caiu aqui agora, volta na parte um. O perfume está lá.",
-   "expr": "ironica",
-   "arte": [
-    "titulo"
-   ],
-   "destaque": [
-    "parte",
-    "um."
-   ]
-  },
-  {
    "fala": "A Carol fez uma coisa simples. Marcou o nível do frasco com uma caneta.",
    "expr": "neutra",
    "arte": [
@@ -151,5 +140,7 @@
   }
  ],
  "fim": "SEGUE A NINA",
- "legenda_post": "Ela marcou o nível do frasco com caneta. E na quarta, desceu. 🍷\n\nSe você caiu aqui agora, assiste a PARTE 1 primeiro.\n\nEla finge que não sabe na festa surpresa ou mostra o print lá? Me conta nos comentários. 👇\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em causo de família.\n\n#traição #melhoramiga #namoro #amizade #storytime #históriadetraição #desabafo #fofoca #ninamecontou"
+ "legenda_post": "Ela marcou o nível do frasco com caneta. E na quarta, desceu. 🍷\n\nSe você caiu aqui agora, assiste a PARTE 1 primeiro.\n\nEla finge que não sabe na festa surpresa ou mostra o print lá? Me conta nos comentários. 👇\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em causo de família.\n\n#traição #melhoramiga #namoro #amizade #storytime #históriadetraição #desabafo #fofoca #ninamecontou",
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "entrada_direta_na_cena"
 }

@@ -7,17 +7,6 @@
  "cenario": "noite",
  "batidas": [
   {
-   "fala": "Se você chegou agora, volta na parte um. O mapa está lá.",
-   "expr": "ironica",
-   "arte": [
-    "titulo"
-   ],
-   "destaque": [
-    "parte",
-    "um."
-   ]
-  },
-  {
    "fala": "Na Rua das Acácias, cento e dezoito, mora o Henrique. O ex do Caio.",
    "expr": "neutra",
    "arte": [
@@ -163,5 +152,7 @@
   }
  ],
  "fim": "SEGUE A NINA",
- "legenda_post": "Um convite de casamento chegou pelo correio. 🍷\n\nSe você caiu aqui agora, assiste a PARTE 1 primeiro.\n\nEle vai no casamento e fala com o noivo, ou confronta o namorado antes? Me conta nos comentários. 👇\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em causo de família.\n\n#traição #namoro #casal #corrida #storytime #históriadetraição #desabafo #fofoca #ninamecontou"
+ "legenda_post": "Um convite de casamento chegou pelo correio. 🍷\n\nSe você caiu aqui agora, assiste a PARTE 1 primeiro.\n\nEle vai no casamento e fala com o noivo, ou confronta o namorado antes? Me conta nos comentários. 👇\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em causo de família.\n\n#traição #namoro #casal #corrida #storytime #históriadetraição #desabafo #fofoca #ninamecontou",
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "entrada_direta_na_cena"
 }

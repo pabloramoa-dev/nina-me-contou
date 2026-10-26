@@ -1,220 +1,222 @@
 {
-  "id": "tt20261019-tres-meses-e-o-escapamento",
-  "avulso": true,
-  "titulo": "TRÊS MESES DE CONQUISTA E O ESCAPAMENTO",
-  "temporada": "Nina Me Contou — Histórias de humor",
-  "cenario": "noite",
-  "visual_images": {
-    "auto_visual_images": true,
-    "hide_inner_caption_when_image": true,
-    "bottom_caption_only": true,
-    "min_images": 4,
-    "max_images": 8,
-    "target_images": 8,
-    "fallback": "original_art"
+ "id": "tt20261019-tres-meses-e-o-escapamento",
+ "avulso": true,
+ "titulo": "TRÊS MESES DE CONQUISTA E O ESCAPAMENTO",
+ "temporada": "Nina Me Contou — Histórias de humor",
+ "cenario": "noite",
+ "visual_images": {
+  "auto_visual_images": true,
+  "hide_inner_caption_when_image": true,
+  "bottom_caption_only": true,
+  "min_images": 4,
+  "max_images": 8,
+  "target_images": 8,
+  "fallback": "original_art"
+ },
+ "batidas": [
+  {
+   "fala": "Minha gente, o Rogério passou três meses paquerando uma passageira. Quando finalmente marcou um encontro no motel, um churrasco resolveu estragar tudo!",
+   "expr": "chocada",
+   "arte": [
+    "titulo",
+    "TRÊS MESES!"
+   ],
+   "zoom": true,
+   "hf": {
+    "titulo": "TRÊS MESES DE CANTADAS",
+    "destaque": [
+     "três meses",
+     "churrasco"
+    ]
+   }
   },
-  "batidas": [
-    {
-      "fala": "Minha gente, o Rogério passou três meses paquerando uma passageira. Quando finalmente marcou um encontro no motel, um churrasco resolveu estragar tudo!",
-      "expr": "chocada",
-      "arte": [
-        "titulo",
-        "TRÊS MESES!"
-      ],
-      "zoom": true,
-      "hf": {
-        "titulo": "TRÊS MESES DE CANTADAS",
-        "destaque": [
-          "três meses",
-          "churrasco"
-        ]
-      }
-    },
-    {
-      "fala": "Rogério era motorista de aplicativo e tinha uma cliente frequente: Patrícia. Ela era simpática, puxava conversa, e ele se derretia inteiro.",
-      "expr": "neutra",
-      "arte": [
-        "carro",
-        "A PASSAGEIRA"
-      ],
-      "foto": "car interior dashboard empty passenger seat daytime"
-    },
-    {
-      "fala": "Toda semana ele inventava uma cantada nova. Patrícia ria, devolvia as brincadeiras, mas nunca aceitava sair com ele.",
-      "expr": "ironica",
-      "arte": [
-        "conversa",
-        "TRÊS MESES"
-      ]
-    },
-    {
-      "fala": "Até que, depois de três meses, ela ligou numa sexta-feira: Rogério, hoje eu aceito seu convite. Vem me buscar!",
-      "expr": "surpresa",
-      "arte": [
-        "celular",
-        "ELA ACEITOU!"
-      ],
-      "foto": "smartphone incoming call on wooden table",
-      "zoom": true
-    },
-    {
-      "fala": "O homem quase deixou o celular cair. Só que tinha um detalhe: ele acabara de sair de um churrasco na casa do cunhado.",
-      "expr": "desconfiada",
-      "arte": [
-        "calendario",
-        "SEXTA-FEIRA"
-      ],
-      "foto": "barbecue party backyard grill smoke"
-    },
-    {
-      "fala": "Tinha comido costela gordurosa, linguiça, farofa e repetido a picanha. Pra completar, umas cervejas quentes que não caíram nada bem.",
-      "expr": "chocada",
-      "arte": [
-        "cafe",
-        "O CHURRASCO"
-      ],
-      "foto": "grilled fatty beef ribs sausages farofa on barbecue table"
-    },
-    {
-      "fala": "Mas a confiança falou mais alto. Banho, perfume, camisa nova e lá foi ele buscar Patrícia, todo sorridente.",
-      "expr": "ironica",
-      "arte": [
-        "coracao",
-        "PERFUME NOVO"
-      ],
-      "foto": "mens perfume bottle and folded shirt on bed"
-    },
-    {
-      "fala": "No carro, ela brincou: então hoje você vai cumprir aquela promessa? Rogério respondeu: hoje você é a convidada especial!",
-      "expr": "surpresa",
-      "arte": [
-        "conversa",
-        "O CONVITE"
-      ]
-    },
-    {
-      "fala": "Cinco minutos depois, a barriga fez: gruuuum! Patrícia perguntou: que barulho foi esse? Ele: o escapamento, menina!",
-      "expr": "chocada",
-      "arte": [
-        "carro",
-        "GRUUUUM!"
-      ],
-      "foto": "car exhaust pipe close-up",
-      "zoom": true
-    },
-    {
-      "fala": "Veio outra pontada. O motorista começou a suar, apertou o volante e abaixou o ar-condicionado, fingindo tranquilidade.",
-      "expr": "assustada",
-      "arte": [
-        "carro",
-        "SOCORRO!"
-      ],
-      "foto": "close up steering wheel air conditioning car dashboard"
-    },
-    {
-      "fala": "Patrícia notou: você está pálido. Rogério, quase sem voz, respondeu: é nervosismo de felicidade!",
-      "expr": "desconfiada",
-      "arte": [
-        "conversa",
-        "TUDO BEM?"
-      ]
-    },
-    {
-      "fala": "Quando o carro entrou no motel, ele já andava torto. Só pensava numa coisa: encontrar um banheiro imediatamente.",
-      "expr": "assustada",
-      "arte": [
-        "porta",
-        "O MOTEL"
-      ],
-      "foto": "motel exterior neon sign at night empty parking"
-    },
-    {
-      "fala": "Patrícia achou que era timidez e deu risada. Mas, antes de alcançar a porta do quarto, a barriga venceu.",
-      "expr": "chocada",
-      "arte": [
-        "relogio",
-        "TARDE DEMAIS!"
-      ],
-      "foto": "hotel room door hallway empty"
-    },
-    {
-      "fala": "Minha gente... o Rogério fez cocô na própria calça! Três meses de cantada derrotados em três segundos.",
-      "expr": "chocada",
-      "arte": [
-        "manchete_v",
-        "QUE VERGONHA!"
-      ],
-      "foto": false,
-      "zoom": true,
-      "hf": {
-        "titulo": "A GRANDE VERGONHA",
-        "destaque": [
-          "três segundos"
-        ]
-      }
-    },
-    {
-      "fala": "Ele ficou parado, sem coragem de olhar para Patrícia. A camisa nova, o perfume e a pose de galã já não resolviam nada.",
-      "expr": "cansada",
-      "arte": [
-        "interrogacao",
-        "E AGORA?"
-      ],
-      "foto": false
-    },
-    {
-      "fala": "Ela tentou segurar o riso, mas perguntou: Rogério, você precisa de ajuda? Ele respondeu: só de um milagre!",
-      "expr": "ironica",
-      "arte": [
-        "conversa",
-        "UM MILAGRE!"
-      ]
-    },
-    {
-      "fala": "O encontro terminou ali. Patrícia chamou outro carro. Rogério foi embora morrendo de vergonha e jurou nunca mais comer churrasco antes de trabalhar.",
-      "expr": "cansada",
-      "arte": [
-        "carro",
-        "FIM DO ENCONTRO"
-      ],
-      "foto": "empty car leaving hotel parking lot at night"
-    },
-    {
-      "fala": "Só que a história não acabou. Dias depois, Patrícia voltou a ligar, pedindo uma corrida como se nada tivesse acontecido.",
-      "expr": "surpresa",
-      "arte": [
-        "celular",
-        "ELA LIGOU!"
-      ],
-      "foto": "smartphone ringing on car dashboard"
-    },
-    {
-      "fala": "Quando viu o nome dela na tela, Rogério congelou. Porque imaginava a pergunta: e aí, já consertou o escapamento?",
-      "expr": "chocada",
-      "arte": [
-        "celular",
-        "O ESCAPAMENTO!"
-      ],
-      "foto": "phone incoming call in parked car",
-      "zoom": true
-    },
-    {
-      "fala": "Até hoje ele deixa o celular tocar! E você, daria outra chance ao Rogério? Comenta e segue a Nina para mais histórias!",
-      "expr": "ironica",
-      "arte": [
-        "interrogacao",
-        "VOCÊ DARIA?"
-      ],
-      "foto": false
-    }
-  ],
-  "fim": "VOCÊ DARIA OUTRA CHANCE?",
-  "interatividade": {
-    "modo": "pergunta",
-    "pergunta": "Você daria uma segunda chance ao Rogério depois dessa vergonha?",
-    "segundos": 2.8
+  {
+   "fala": "Rogério era motorista de aplicativo e tinha uma cliente frequente: Patrícia. Ela era simpática, puxava conversa, e ele se derretia inteiro.",
+   "expr": "neutra",
+   "arte": [
+    "carro",
+    "A PASSAGEIRA"
+   ],
+   "foto": "car interior dashboard empty passenger seat daytime"
   },
-  "legenda_post": "😂🚗 TRÊS MESES de cantadas para conquistar uma passageira... e tudo acabou por causa de um churrasco!\n\nQuando Rogério finalmente conseguiu marcar um encontro com Patrícia, a barriga resolveu sabotar o romance. 💥 E até hoje ele tem vergonha de atender as ligações dela!\n\n🤣 Você daria uma segunda chance ao Rogério? Conta nos comentários e segue a Nina!\n\n🎭 História fictícia criada para entretenimento.\n#NinaMeContou #HistoriaEngracada #StorytimeBrasil #MotoristaDeAplicativo #Fofoca #Humor",
-  "visual_delivery_goal": "8 story-specific cartoon illustrations; HyperFrames central frame without inner caption, only bottom karaoke subtitles; Nina original presenter, sound effects; no graphical bodily waste depiction; humorous adult storyline",
-  "render_revision": 1
+  {
+   "fala": "Toda semana ele inventava uma cantada nova. Patrícia ria, devolvia as brincadeiras, mas nunca aceitava sair com ele.",
+   "expr": "ironica",
+   "arte": [
+    "conversa",
+    "TRÊS MESES"
+   ]
+  },
+  {
+   "fala": "Até que, depois de três meses, ela ligou numa sexta-feira: Rogério, hoje eu aceito seu convite. Vem me buscar!",
+   "expr": "surpresa",
+   "arte": [
+    "celular",
+    "ELA ACEITOU!"
+   ],
+   "foto": "smartphone incoming call on wooden table",
+   "zoom": true
+  },
+  {
+   "fala": "O homem quase deixou o celular cair. Só que tinha um detalhe: ele acabara de sair de um churrasco na casa do cunhado.",
+   "expr": "desconfiada",
+   "arte": [
+    "calendario",
+    "SEXTA-FEIRA"
+   ],
+   "foto": "barbecue party backyard grill smoke"
+  },
+  {
+   "fala": "Tinha comido costela gordurosa, linguiça, farofa e repetido a picanha. Pra completar, umas cervejas quentes que não caíram nada bem.",
+   "expr": "chocada",
+   "arte": [
+    "cafe",
+    "O CHURRASCO"
+   ],
+   "foto": "grilled fatty beef ribs sausages farofa on barbecue table"
+  },
+  {
+   "fala": "Mas a confiança falou mais alto. Banho, perfume, camisa nova e lá foi ele buscar Patrícia, todo sorridente.",
+   "expr": "ironica",
+   "arte": [
+    "coracao",
+    "PERFUME NOVO"
+   ],
+   "foto": "mens perfume bottle and folded shirt on bed"
+  },
+  {
+   "fala": "No carro, ela brincou: então hoje você vai cumprir aquela promessa? Rogério respondeu: hoje você é a convidada especial!",
+   "expr": "surpresa",
+   "arte": [
+    "conversa",
+    "O CONVITE"
+   ]
+  },
+  {
+   "fala": "Cinco minutos depois, a barriga fez: gruuuum! Patrícia perguntou: que barulho foi esse? Ele: o escapamento, menina!",
+   "expr": "chocada",
+   "arte": [
+    "carro",
+    "GRUUUUM!"
+   ],
+   "foto": "car exhaust pipe close-up",
+   "zoom": true
+  },
+  {
+   "fala": "Veio outra pontada. O motorista começou a suar, apertou o volante e abaixou o ar-condicionado, fingindo tranquilidade.",
+   "expr": "assustada",
+   "arte": [
+    "carro",
+    "SOCORRO!"
+   ],
+   "foto": "close up steering wheel air conditioning car dashboard"
+  },
+  {
+   "fala": "Patrícia notou: você está pálido. Rogério, quase sem voz, respondeu: é nervosismo de felicidade!",
+   "expr": "desconfiada",
+   "arte": [
+    "conversa",
+    "TUDO BEM?"
+   ]
+  },
+  {
+   "fala": "Quando o carro entrou no motel, ele já andava torto. Só pensava numa coisa: encontrar um banheiro imediatamente.",
+   "expr": "assustada",
+   "arte": [
+    "porta",
+    "O MOTEL"
+   ],
+   "foto": "motel exterior neon sign at night empty parking"
+  },
+  {
+   "fala": "Patrícia achou que era timidez e deu risada. Mas, antes de alcançar a porta do quarto, a barriga venceu.",
+   "expr": "chocada",
+   "arte": [
+    "relogio",
+    "TARDE DEMAIS!"
+   ],
+   "foto": "hotel room door hallway empty"
+  },
+  {
+   "fala": "Minha gente... o Rogério fez cocô na própria calça! Três meses de cantada derrotados em três segundos.",
+   "expr": "chocada",
+   "arte": [
+    "manchete_v",
+    "QUE VERGONHA!"
+   ],
+   "foto": false,
+   "zoom": true,
+   "hf": {
+    "titulo": "A GRANDE VERGONHA",
+    "destaque": [
+     "três segundos"
+    ]
+   }
+  },
+  {
+   "fala": "Ele ficou parado, sem coragem de olhar para Patrícia. A camisa nova, o perfume e a pose de galã já não resolviam nada.",
+   "expr": "cansada",
+   "arte": [
+    "interrogacao",
+    "E AGORA?"
+   ],
+   "foto": false
+  },
+  {
+   "fala": "Ela tentou segurar o riso, mas perguntou: Rogério, você precisa de ajuda? Ele respondeu: só de um milagre!",
+   "expr": "ironica",
+   "arte": [
+    "conversa",
+    "UM MILAGRE!"
+   ]
+  },
+  {
+   "fala": "O encontro terminou ali. Patrícia chamou outro carro. Rogério foi embora morrendo de vergonha e jurou nunca mais comer churrasco antes de trabalhar.",
+   "expr": "cansada",
+   "arte": [
+    "carro",
+    "FIM DO ENCONTRO"
+   ],
+   "foto": "empty car leaving hotel parking lot at night"
+  },
+  {
+   "fala": "Só que a história não acabou. Dias depois, Patrícia voltou a ligar, pedindo uma corrida como se nada tivesse acontecido.",
+   "expr": "surpresa",
+   "arte": [
+    "celular",
+    "ELA LIGOU!"
+   ],
+   "foto": "smartphone ringing on car dashboard"
+  },
+  {
+   "fala": "Quando viu o nome dela na tela, Rogério congelou. Porque imaginava a pergunta: e aí, já consertou o escapamento?",
+   "expr": "chocada",
+   "arte": [
+    "celular",
+    "O ESCAPAMENTO!"
+   ],
+   "foto": "phone incoming call in parked car",
+   "zoom": true
+  },
+  {
+   "fala": "Até hoje ele deixa o celular tocar! E você, daria outra chance ao Rogério? Comenta e segue a Nina para mais histórias!",
+   "expr": "ironica",
+   "arte": [
+    "interrogacao",
+    "VOCÊ DARIA?"
+   ],
+   "foto": false
+  }
+ ],
+ "fim": "VOCÊ DARIA OUTRA CHANCE?",
+ "interatividade": {
+  "modo": "pergunta",
+  "pergunta": "Você daria uma segunda chance ao Rogério depois dessa vergonha?",
+  "segundos": 2.8
+ },
+ "legenda_post": "😂🚗 TRÊS MESES de cantadas para conquistar uma passageira... e tudo acabou por causa de um churrasco!\n\nQuando Rogério finalmente conseguiu marcar um encontro com Patrícia, a barriga resolveu sabotar o romance. 💥 E até hoje ele tem vergonha de atender as ligações dela!\n\n🤣 Você daria uma segunda chance ao Rogério? Conta nos comentários e segue a Nina!\n\n🎭 História fictícia criada para entretenimento.\n#NinaMeContou #HistoriaEngracada #StorytimeBrasil #MotoristaDeAplicativo #Fofoca #Humor",
+ "visual_delivery_goal": "8 story-specific cartoon illustrations; HyperFrames central frame without inner caption, only bottom karaoke subtitles; Nina original presenter, sound effects; no graphical bodily waste depiction; humorous adult storyline",
+ "render_revision": 1,
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
 }

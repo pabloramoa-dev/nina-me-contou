@@ -7,17 +7,6 @@
  "cenario": "noite",
  "batidas": [
   {
-   "fala": "Se você caiu aqui agora, volta na parte um. As duas xícaras estão lá.",
-   "expr": "ironica",
-   "arte": [
-    "titulo"
-   ],
-   "destaque": [
-    "parte",
-    "um."
-   ]
-  },
-  {
    "fala": "Na copa do quinto andar, de costas pra porta, estava o Fábio. Lavando a caneca do time.",
    "expr": "desconfiada",
    "arte": [
@@ -143,5 +132,7 @@
   }
  ],
  "fim": "SEGUE A NINA",
- "legenda_post": "Ela subiu pro 5º andar às 3 em ponto. E a xícara do batom era de quem ela menos queria. 🍷\n\nSe você caiu aqui agora, assiste a PARTE 1 primeiro.\n\nMostra a foto na reunião ou resolve em casa? Me conta nos comentários. 👇\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em causo de família.\n\n#traição #trabalho #firma #colegadetrabalho #storytime #históriadetraição #desabafo #fofoca #ninamecontou"
+ "legenda_post": "Ela subiu pro 5º andar às 3 em ponto. E a xícara do batom era de quem ela menos queria. 🍷\n\nSe você caiu aqui agora, assiste a PARTE 1 primeiro.\n\nMostra a foto na reunião ou resolve em casa? Me conta nos comentários. 👇\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em causo de família.\n\n#traição #trabalho #firma #colegadetrabalho #storytime #históriadetraição #desabafo #fofoca #ninamecontou",
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "entrada_direta_na_cena"
 }

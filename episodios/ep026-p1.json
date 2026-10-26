@@ -7,14 +7,14 @@
  "cenario": "tarde",
  "batidas": [
   {
-   "fala": "A mentira parecia pequena até o calendário entrar na história.",
-   "expr": "ironica",
+   "fala": "Bianca encontrou um recibo dobrado dentro de um livro. A pista levava a uma cidade vizinha, mas Camila negou conhecer o lugar.",
+   "expr": "desconfiada",
    "arte": [
     "titulo"
    ],
    "destaque": [
-    "não",
-    "deveria"
+    "Bianca",
+    "recibo"
    ]
   },
   {
@@ -139,7 +139,9 @@
   }
  ],
  "fim": "CONTINUA NA PARTE 2",
- "legenda_post": "A mentira parecia pequena até o calendário entrar na história.\n\nUma pista levou Bianca a uma história que não fechava. A continuação está no perfil.\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em situações comuns do cotidiano.\n\n#storytime #historia #fofoca #segredo #relacionamentos #ninamecontou",
+ "legenda_post": "Bianca encontrou um recibo dobrado dentro de um livro. A pista levava a uma cidade vizinha, mas Camila negou conhecer o lugar.\n\nUma pista levou Bianca a uma história que não fechava. A continuação está no perfil.\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em situações comuns do cotidiano.\n\n#storytime #historia #fofoca #segredo #relacionamentos #ninamecontou",
  "gerado_automaticamente": true,
- "serie_anual": 13
+ "serie_anual": 13,
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "descoberta_e_contradicao"
 }

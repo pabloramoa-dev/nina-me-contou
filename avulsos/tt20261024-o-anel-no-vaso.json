@@ -1,81 +1,83 @@
 {
-  "id": "tt20261024-o-anel-no-vaso",
-  "avulso": true,
-  "titulo": "O ANEL NO VASO",
-  "temporada": "TikTok diário",
-  "cenario": "tarde",
-  "visual_images": {
-    "auto_visual_images": true,
-    "hide_inner_caption_when_image": true,
-    "bottom_caption_only": true,
-    "min_images": 4,
-    "max_images": 8,
-    "target_images": 6,
-    "fallback": "original_art"
+ "id": "tt20261024-o-anel-no-vaso",
+ "avulso": true,
+ "titulo": "O ANEL NO VASO",
+ "temporada": "TikTok diário",
+ "cenario": "tarde",
+ "visual_images": {
+  "auto_visual_images": true,
+  "hide_inner_caption_when_image": true,
+  "bottom_caption_only": true,
+  "min_images": 4,
+  "max_images": 8,
+  "target_images": 6,
+  "fallback": "original_art"
+ },
+ "batidas": [
+  {
+   "fala": "Ela encontrou a aliança do marido enterrada num vaso. E a explicação dele conseguiu ser pior que a descoberta.",
+   "expr": "chocada",
+   "foto": "plant pot balcony",
+   "zoom": true
   },
-  "batidas": [
-    {
-      "fala": "Ela encontrou a aliança do marido enterrada num vaso. E a explicação dele conseguiu ser pior que a descoberta.",
-      "expr": "chocada",
-      "foto": "plant pot balcony",
-      "zoom": true
-    },
-    {
-      "fala": "Marina foi trocar a terra da samambaia no sábado. A colher bateu num metal. Era a aliança de Paulo, que ele dizia ter perdido no ônibus havia dois meses.",
-      "expr": "desconfiada",
-      "foto": "garden trowel pot"
-    },
-    {
-      "fala": "Ela lavou o anel e deixou em cima do prato dele. Quando Paulo sentou para almoçar, tentou pegar o copo e derrubou a água inteira.",
-      "expr": "ironica",
-      "foto": "wedding ring dinner plate"
-    },
-    {
-      "fala": "Marina perguntou se agora o ônibus passava pela varanda. Ele ficou quieto. Depois disse que tinha tirado a aliança para jogar bola e guardado ali para não perder.",
-      "expr": "ironica",
-      "foto": "soccer ball shoes"
-    },
-    {
-      "fala": "Só que Paulo nem jogava mais. Ela cruzou os braços. Ele respirou fundo e admitiu: tinha escondido o anel depois de uma discussão, para fazer drama.",
-      "expr": "desconfiada",
-      "foto": "balcony plants"
-    },
-    {
-      "fala": "Naquela noite, queria que Marina perguntasse por que estava sem aliança. Mas ela estava cuidando da mãe doente e nem reparou. No dia seguinte, ele inventou a história do ônibus.",
-      "expr": "triste",
-      "foto": "glass water bedside"
-    },
-    {
-      "fala": "Marina lembrou que tinha ligado para a empresa de transporte e procurado nos achados e perdidos. Até ofereceu comprar outra quando recebesse o salário.",
-      "expr": "triste",
-      "foto": "telephone notebook"
-    },
-    {
-      "fala": "Paulo abaixou a cabeça. Disse que ficou com vergonha de contar a verdade depois de ver o trabalho que ela teve. Quanto mais o tempo passava, mais difícil parecia admitir.",
-      "expr": "neutra",
-      "foto": "wooden table ring"
-    },
-    {
-      "fala": "Ela respondeu: você me deixou procurando uma coisa que sabia onde estava. O problema não é o anel. É eu ter acreditado em você enquanto ria da minha preocupação.",
-      "expr": "triste",
-      "foto": "empty chair table"
-    },
-    {
-      "fala": "Ele disse que não tinha rido, mas entendeu o recado. Pediu desculpas sem colocar a culpa na discussão. E ligou para cancelar o aviso de objeto perdido que ela ainda mantinha.",
-      "expr": "neutra",
-      "foto": "phone on desk"
-    },
-    {
-      "fala": "Marina não fingiu que estava tudo resolvido. Combinaram conversar sem castigo silencioso e procurar ajuda se repetissem aquilo. A aliança ficou na gaveta até ele decidir usá-la de verdade.",
-      "expr": "neutra",
-      "foto": "wooden drawer"
-    },
-    {
-      "fala": "Na semana seguinte, Paulo apareceu de aliança. Marina apontou para o vaso: ali só fica planta. Você perdoaria essa mentira? Conta nos comentários e segue a Nina para a próxima história.",
-      "expr": "ironica",
-      "foto": "fern balcony"
-    }
-  ],
-  "fim": "ALI SÓ FICA PLANTA",
-  "legenda_post": "A aliança perdida no ônibus apareceu dentro de um vaso. A explicação do marido deixou tudo pior. 💍🪴\nVocê perdoaria essa mentira?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Relacionamento"
+  {
+   "fala": "Marina foi trocar a terra da samambaia no sábado. A colher bateu num metal. Era a aliança de Paulo, que ele dizia ter perdido no ônibus havia dois meses.",
+   "expr": "desconfiada",
+   "foto": "garden trowel pot"
+  },
+  {
+   "fala": "Ela lavou o anel e deixou em cima do prato dele. Quando Paulo sentou para almoçar, tentou pegar o copo e derrubou a água inteira.",
+   "expr": "ironica",
+   "foto": "wedding ring dinner plate"
+  },
+  {
+   "fala": "Marina perguntou se agora o ônibus passava pela varanda. Ele ficou quieto. Depois disse que tinha tirado a aliança para jogar bola e guardado ali para não perder.",
+   "expr": "ironica",
+   "foto": "soccer ball shoes"
+  },
+  {
+   "fala": "Só que Paulo nem jogava mais. Ela cruzou os braços. Ele respirou fundo e admitiu: tinha escondido o anel depois de uma discussão, para fazer drama.",
+   "expr": "desconfiada",
+   "foto": "balcony plants"
+  },
+  {
+   "fala": "Naquela noite, queria que Marina perguntasse por que estava sem aliança. Mas ela estava cuidando da mãe doente e nem reparou. No dia seguinte, ele inventou a história do ônibus.",
+   "expr": "triste",
+   "foto": "glass water bedside"
+  },
+  {
+   "fala": "Marina lembrou que tinha ligado para a empresa de transporte e procurado nos achados e perdidos. Até ofereceu comprar outra quando recebesse o salário.",
+   "expr": "triste",
+   "foto": "telephone notebook"
+  },
+  {
+   "fala": "Paulo abaixou a cabeça. Disse que ficou com vergonha de contar a verdade depois de ver o trabalho que ela teve. Quanto mais o tempo passava, mais difícil parecia admitir.",
+   "expr": "neutra",
+   "foto": "wooden table ring"
+  },
+  {
+   "fala": "Ela respondeu: você me deixou procurando uma coisa que sabia onde estava. O problema não é o anel. É eu ter acreditado em você enquanto ria da minha preocupação.",
+   "expr": "triste",
+   "foto": "empty chair table"
+  },
+  {
+   "fala": "Ele disse que não tinha rido, mas entendeu o recado. Pediu desculpas sem colocar a culpa na discussão. E ligou para cancelar o aviso de objeto perdido que ela ainda mantinha.",
+   "expr": "neutra",
+   "foto": "phone on desk"
+  },
+  {
+   "fala": "Marina não fingiu que estava tudo resolvido. Combinaram conversar sem castigo silencioso e procurar ajuda se repetissem aquilo. A aliança ficou na gaveta até ele decidir usá-la de verdade.",
+   "expr": "neutra",
+   "foto": "wooden drawer"
+  },
+  {
+   "fala": "Na semana seguinte, Paulo apareceu de aliança. Marina apontou para o vaso: ali só fica planta. Você perdoaria essa mentira? Conta nos comentários e segue a Nina para a próxima história.",
+   "expr": "ironica",
+   "foto": "fern balcony"
+  }
+ ],
+ "fim": "ALI SÓ FICA PLANTA",
+ "legenda_post": "A aliança perdida no ônibus apareceu dentro de um vaso. A explicação do marido deixou tudo pior. 💍🪴\nVocê perdoaria essa mentira?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Relacionamento",
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
 }

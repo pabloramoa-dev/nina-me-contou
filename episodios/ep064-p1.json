@@ -7,14 +7,14 @@
  "cenario": "tarde",
  "batidas": [
   {
-   "fala": "O detalhe estranho não era o nome. Era a repetição.",
-   "expr": "ironica",
+   "fala": "Larissa encontrou um comprovante de reserva que ninguém reconhecia. A pista levava a a região da rodoviária, mas Paula negou conhecer o lugar.",
+   "expr": "desconfiada",
    "arte": [
     "titulo"
    ],
    "destaque": [
-    "não",
-    "deveria"
+    "Larissa",
+    "comprovante"
    ]
   },
   {
@@ -139,7 +139,9 @@
   }
  ],
  "fim": "CONTINUA NA PARTE 2",
- "legenda_post": "O detalhe estranho não era o nome. Era a repetição.\n\nUma pista levou Larissa a uma história que não fechava. A continuação está no perfil.\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em situações comuns do cotidiano.\n\n#storytime #historia #fofoca #segredo #relacionamentos #ninamecontou",
+ "legenda_post": "Larissa encontrou um comprovante de reserva que ninguém reconhecia. A pista levava a a região da rodoviária, mas Paula negou conhecer o lugar.\n\nUma pista levou Larissa a uma história que não fechava. A continuação está no perfil.\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em situações comuns do cotidiano.\n\n#storytime #historia #fofoca #segredo #relacionamentos #ninamecontou",
  "gerado_automaticamente": true,
- "serie_anual": 51
+ "serie_anual": 51,
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "descoberta_e_contradicao"
 }

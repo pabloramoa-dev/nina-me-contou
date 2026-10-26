@@ -7,14 +7,14 @@
  "cenario": "noite",
  "batidas": [
   {
-   "fala": "Se você caiu aqui agora, volta na parte um. A pista principal está lá.",
-   "expr": "ironica",
+   "fala": "Larissa encontrou o nome de Eduardo na caixa de correspondência. E Lucas ainda precisava explicar aquela pista.",
+   "expr": "desconfiada",
    "arte": [
     "titulo"
    ],
    "destaque": [
-    "parte",
-    "um"
+    "Larissa",
+    "Eduardo"
    ]
   },
   {
@@ -138,5 +138,7 @@
  "fim": "SEGUE A NINA",
  "legenda_post": "A parte dois de cópia. A pista parecia pequena, mas revelou uma história inteira.\n\nVocê contaria para alguém de confiança antes de confrontar?\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em situações comuns do cotidiano.\n\n#storytime #historia #fofoca #segredo #relacionamentos #ninamecontou",
  "gerado_automaticamente": true,
- "serie_anual": 35
+ "serie_anual": 35,
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "descoberta_na_continuacao"
 }

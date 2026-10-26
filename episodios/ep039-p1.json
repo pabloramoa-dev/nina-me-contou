@@ -7,14 +7,14 @@
  "cenario": "tarde",
  "batidas": [
   {
-   "fala": "O porteiro fez uma pergunta que ninguém estava preparado para ouvir.",
-   "expr": "ironica",
+   "fala": "Juliana encontrou um cartão de estacionamento de outro prédio. A pista levava a um bairro antigo, mas Bianca negou conhecer o lugar.",
+   "expr": "desconfiada",
    "arte": [
     "titulo"
    ],
    "destaque": [
-    "não",
-    "deveria"
+    "Juliana",
+    "cartão"
    ]
   },
   {
@@ -139,7 +139,9 @@
   }
  ],
  "fim": "CONTINUA NA PARTE 2",
- "legenda_post": "O porteiro fez uma pergunta que ninguém estava preparado para ouvir.\n\nUma pista levou Juliana a uma história que não fechava. A continuação está no perfil.\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em situações comuns do cotidiano.\n\n#storytime #historia #fofoca #segredo #relacionamentos #ninamecontou",
+ "legenda_post": "Juliana encontrou um cartão de estacionamento de outro prédio. A pista levava a um bairro antigo, mas Bianca negou conhecer o lugar.\n\nUma pista levou Juliana a uma história que não fechava. A continuação está no perfil.\n\nTem uma história assim? Me manda no direct — eu conto sem nome e sem rosto.\n\nHistória de ficção, inspirada em situações comuns do cotidiano.\n\n#storytime #historia #fofoca #segredo #relacionamentos #ninamecontou",
  "gerado_automaticamente": true,
- "serie_anual": 26
+ "serie_anual": 26,
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "descoberta_e_contradicao"
 }
