@@ -1,25 +1,21 @@
-# Nina: As Duas Noivas do Mesmo Homem — imagens geradas
+# Nina: As Duas Noivas do Mesmo Homem — ilustrações aprovadas
 
-Este episódio avulso está em `avulsos/nina-20261026-duas-noivas-imagens.json`.
+Roteiro avulso: `avulsos/nina-20261026-duas-noivas-imagens.json`.
 
-**Importante:** só executar/mesclar depois de incluir os arquivos PNG abaixo na mesma branch. A referência `approved_visual_assets` já foi preparada para que o motor use EXATAMENTE as imagens aprovadas, sem fazer uma nova geração pela API.
+**As 7 imagens originais foram transferidas e verificadas no GitHub**, na pasta `assets/nina_duas_noivas/`, em 26/10/2026.
 
-Caminhos obrigatórios na raiz do repositório:
+| Cena | Arquivo |
+| --- | --- |
+| Abertura no salão | `01-abertura-salao.png` |
+| Revelação no computador | `02-revelacao-computador.png` |
+| As duas noivas na cafeteria | `03-aliancas-cafe.png` |
+| Comprovantes de empréstimo | `04-comprovantes-cafe.png` |
+| Entrada na igreja | `05-entrada-igreja.png` |
+| Confronto no altar | `06-confronto-altar.png` |
+| Férias das amigas | `07-viagem-amigas.png` |
 
-- `assets/nina_duas_noivas/01-abertura-salao.png`
-- `assets/nina_duas_noivas/02-revelacao-computador.png`
-- `assets/nina_duas_noivas/03-aliancas-cafe.png`
-- `assets/nina_duas_noivas/04-comprovantes-cafe.png`
-- `assets/nina_duas_noivas/05-entrada-igreja.png`
-- `assets/nina_duas_noivas/06-confronto-altar.png`
-- `assets/nina_duas_noivas/07-viagem-amigas.png`
+O pipeline oficial lê `approved_visual_assets` no JSON, conserva as imagens sem geração adicional por API e sincroniza cada quadro com a fala. A oitava batida é o CTA obrigatório acrescentado automaticamente por `motor/cta.py`, que reutiliza a última imagem.
 
-A oitava batida é o CTA obrigatório do canal e reutiliza a sétima imagem. O emparelhamento com as cenas é calculado com `target_images=8` em `visual_images.py`.
+O workflow `.github/workflows/avulso.yml` é acionado em `main` quando há novo roteiro avulso. Produz com `motor/produzir.py`: Nina original, voz Kokoro Dora `pf_dora`, lip-sync, HyperFrames e Remotion, resultando em MP4/capa/Story. O avulso **não é publicado nas redes sociais** nem entra na fila automática de episódios.
 
-## Renderização oficial
-
-Após anexar as artes e mesclar para `main`, a alteração em `avulsos/*.json` aciona `.github/workflows/avulso.yml`, o fluxo **Produzir vídeo avulso**. Ele executa `python motor/produzir.py`, com voz Kokoro Dora, personagem original, lip-sync HyperFrames e acabamento Remotion, e grava MP4/capa/Story em `avulsos_prontos/`. **Não publica** em Instagram ou TikTok.
-
-A instalação da imagem no arquivo com caminho relativo à raiz é essencial; sem ela o motor registra `invalid_approved_asset` e pode renderizar sem a arte. Antes de renderizar, conferir se todos os sete PNGs estão presentes.
-
-As artes originais podem ser fornecidas em um ZIP com a hierarquia `assets/nina_duas_noivas/` (criado na conversa ChatGPT) e enviadas ao GitHub nesta branch.
+Após o render, verificar as imagens em `saida/<id>/visual_images.json` (origem: `approved_asset`) e o MP4 no artifact e em `avulsos_prontos/`.
