@@ -1,0 +1,81 @@
+{
+  "id": "tt20261026-o-segundo-caderno",
+  "avulso": true,
+  "titulo": "O SEGUNDO CADERNO",
+  "temporada": "TikTok diário",
+  "cenario": "tarde",
+  "visual_images": {
+    "auto_visual_images": true,
+    "hide_inner_caption_when_image": true,
+    "bottom_caption_only": true,
+    "min_images": 4,
+    "max_images": 8,
+    "target_images": 6,
+    "fallback": "original_art"
+  },
+  "batidas": [
+    {
+      "fala": "A professora recebeu uma reclamação porque estava dando nota para a mãe de um aluno. O detalhe é que aquela mãe nunca tinha entrado na sala de aula.",
+      "expr": "chocada",
+      "foto": "school notebook",
+      "zoom": true
+    },
+    {
+      "fala": "Todo dia, Vinícius levava o dever com uma segunda folha dentro do caderno. A letra era tremida, enorme, cheia de palavras apagadas. E não era dele.",
+      "expr": "desconfiada",
+      "foto": "pencil eraser notebook"
+    },
+    {
+      "fala": "A professora Lúcia perguntou de quem era. O menino explicou baixinho: minha mãe faz depois que eu durmo. Ela quer aprender, mas tem vergonha de perguntar para alguém.",
+      "expr": "triste",
+      "foto": "kitchen table notebook"
+    },
+    {
+      "fala": "Célia tinha deixado a escola ainda criança. Agora trabalhava na limpeza de um mercado e decorava as embalagens para não precisar ler as etiquetas na frente dos outros.",
+      "expr": "neutra",
+      "foto": "supermarket shelves"
+    },
+    {
+      "fala": "Lúcia começou a devolver aquela folha com pequenas orientações, sem nota. Um dia escreveu: gostei da sua persistência. Célia guardou o papel na bolsa como se fosse um diploma.",
+      "expr": "neutra",
+      "foto": "handbag folded paper"
+    },
+    {
+      "fala": "Só que Vinícius contou a novidade para um colega. A história correu torta, e chegou à direção como se a professora estivesse fazendo o dever no lugar da família.",
+      "expr": "desconfiada",
+      "foto": "school corridor"
+    },
+    {
+      "fala": "Chamaram Célia para conversar. Ela apareceu com a roupa do trabalho e o caderno apertado contra o peito. Antes de sentar, pediu desculpas por estar atrapalhando a escola.",
+      "expr": "triste",
+      "foto": "closed notebook desk"
+    },
+    {
+      "fala": "Lúcia colocou as primeiras folhas ao lado das mais recentes. Na primeira, Célia mal escrevia o próprio nome. Na última, havia uma lista de compras inteira, feita sem copiar.",
+      "expr": "neutra",
+      "foto": "grocery list pencil"
+    },
+    {
+      "fala": "A diretora entendeu o mal-entendido e explicou que ela não tinha feito nada errado. Apresentou uma turma de educação de adultos perto da casa dela, com aulas à noite.",
+      "expr": "neutra",
+      "foto": "classroom blackboard"
+    },
+    {
+      "fala": "Célia hesitou por causa do horário. A irmã se ofereceu para ficar com Vinícius duas noites por semana. Dessa vez, ela aceitou ajuda antes de inventar uma desculpa para desistir.",
+      "expr": "neutra",
+      "foto": "wall clock kitchen"
+    },
+    {
+      "fala": "Meses depois, voltou à escola com uma carta para Lúcia. Leu devagar, parando nas palavras compridas: obrigada por corrigir meu caderno sem me fazer sentir pequena.",
+      "expr": "triste",
+      "foto": "handwritten letter envelope"
+    },
+    {
+      "fala": "Vinícius pediu para colocar a carta na geladeira. Célia riu: agora tem lição de dois alunos nesta casa. Quem te deu coragem para recomeçar? Conta e segue a Nina para a próxima história.",
+      "expr": "neutra",
+      "foto": "refrigerator note magnet"
+    }
+  ],
+  "fim": "NUNCA É TARDE PARA APRENDER",
+  "legenda_post": "Uma folha escondida no caderno do filho revelou o sonho que a mãe tinha vergonha de contar. 📒💛\nQuem te deu coragem para recomeçar?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Recomeco"
+}
