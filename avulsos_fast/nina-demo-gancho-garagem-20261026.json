@@ -1,0 +1,84 @@
+{
+  "id": "nina-demo-gancho-garagem-20261026",
+  "avulso": true,
+  "titulo": "A VAGA DA GARAGEM — DEMONSTRAÇÃO",
+  "temporada": "TikTok diário",
+  "cenario": "tarde",
+  "visual_images": {
+    "auto_visual_images": true,
+    "hide_inner_caption_when_image": true,
+    "bottom_caption_only": true,
+    "min_images": 4,
+    "max_images": 8,
+    "target_images": 6,
+    "fallback": "original_art"
+  },
+  "batidas": [
+    {
+      "fala": "Ela anunciou a própria vaga de garagem. Dez minutos depois, o marido ligou perguntando por que estava tentando alugar uma vaga que já tinha inquilino.",
+      "expr": "chocada",
+      "foto": "apartment parking garage",
+      "zoom": true
+    },
+    {
+      "fala": "Renata tinha vendido o carro para pagar um curso. A vaga ficou vazia, e ela resolveu anunciar no grupo do prédio. Queria recuperar uma parte do dinheiro todo mês.",
+      "expr": "neutra",
+      "foto": "empty parking space"
+    },
+    {
+      "fala": "Antes de terminar o café, recebeu uma mensagem do vizinho: mas eu já pago essa vaga ao seu marido desde março. Inclusive, acabei de transferir o aluguel de outubro.",
+      "expr": "desconfiada",
+      "foto": "smartphone coffee table"
+    },
+    {
+      "fala": "Renata pediu os comprovantes. O vizinho mandou tudo, achando que era uma simples confusão. Eram oito pagamentos. Ela abriu a calculadora e ficou olhando para o total.",
+      "expr": "chocada",
+      "foto": "calculator notebook"
+    },
+    {
+      "fala": "Quando Sérgio chegou, encontrou os comprovantes impressos em cima da mesa. Disse que pretendia contar. Renata perguntou em qual mês, porque o calendário já estava acabando.",
+      "expr": "ironica",
+      "foto": "calendar desk"
+    },
+    {
+      "fala": "Ele explicou que guardava o dinheiro para uma viagem surpresa dos dois. Ela pediu para ver a reserva. Não tinha. Pediu para ver a poupança. Também não tinha.",
+      "expr": "desconfiada",
+      "foto": "travel suitcase"
+    },
+    {
+      "fala": "Então veio a verdade: Sérgio comprara um computador para jogar, parcelado. O aluguel da vaga pagava as prestações. Ele sabia que Renata estava vendendo coisas para bancar o curso.",
+      "expr": "triste",
+      "foto": "computer keyboard desk"
+    },
+    {
+      "fala": "Ela não gritou. Foi até o escritório, olhou para o computador e perguntou se a surpresa da viagem era passar as férias dentro daquele jogo. Ele não respondeu.",
+      "expr": "ironica",
+      "foto": "computer monitor keyboard"
+    },
+    {
+      "fala": "Naquela noite, Renata deixou claro: a vaga era dela, e ele não podia decidir escondido o destino daquele dinheiro. Sérgio admitiu a mentira e abriu as contas, sem inventar outra surpresa.",
+      "expr": "neutra",
+      "foto": "bills on table"
+    },
+    {
+      "fala": "Combinaram a devolução dos oito aluguéis em parcelas, saindo dos gastos pessoais dele. O vizinho passou a pagar diretamente para Renata. Tudo ficou escrito, com valores e datas.",
+      "expr": "neutra",
+      "foto": "pen signed document"
+    },
+    {
+      "fala": "No mês seguinte, ela pagou a mensalidade do curso com o primeiro aluguel recebido. A confiança ainda precisava de tempo. Mas o dinheiro, pelo menos, já tinha encontrado o endereço certo.",
+      "expr": "neutra",
+      "foto": "notebook study desk"
+    },
+    {
+      "fala": "E o computador? Sérgio anunciou para vender. Renata só avisou: coloca no grupo certo, porque a garagem já está ocupada. Você aceitaria esse acordo? Me conta nos comentários.",
+      "expr": "ironica",
+      "foto": "parking garage"
+    }
+  ],
+  "fim": "A VAGA TINHA DONA",
+  "legenda_post": "Ela anunciou a vaga de garagem e descobriu que o marido já recebia o aluguel havia oito meses. 🚗😳\nVocê aceitaria esse acordo?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Relacionamento",
+  "gancho_versao": "gancho-descoberta-20261026-v1",
+  "gancho_modelo": "abertura_direta_existente",
+  "publicar_automaticamente": false
+}
