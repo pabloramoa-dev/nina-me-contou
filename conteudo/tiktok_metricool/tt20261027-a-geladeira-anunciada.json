@@ -5,7 +5,7 @@
   "account": "ninamecontou",
   "id": 407920786,
   "uuid": "4090470456330109783",
-  "status": "agendado",
+  "status": "publicado",
   "publicationDate": {
     "dateTime": "2026-10-27T18:00:00",
     "timezone": "America/Sao_Paulo"
@@ -25,5 +25,9 @@
     "audio_mean_db": -19.9,
     "visual_frames_checked": true
   },
-  "caption": "Ela encontrou a própria geladeira à venda. O marido dizia no anúncio que morava sozinho. 🧊😂\nVocê teria revelado antes que era a compradora?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Humor"
+  "caption": "Ela encontrou a própria geladeira à venda. O marido dizia no anúncio que morava sozinho. 🧊😂\nVocê teria revelado antes que era a compradora?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Humor",
+  "providerStatus": "PUBLISHED",
+  "providerDetailedStatus": "Published",
+  "tiktokVideoId": "7701456099525790997",
+  "publicUrl": "https://www.tiktok.com/@ninamecontou/video/7701456099525790997"
 }
