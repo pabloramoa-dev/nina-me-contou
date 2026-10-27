@@ -5,7 +5,7 @@
   "account": "ninamecontou",
   "id": 406724660,
   "uuid": "-6425822288175347047",
-  "status": "agendado",
+  "status": "publicado",
   "publicationDate": {
     "dateTime": "2026-10-26T18:00:00",
     "timezone": "America/Sao_Paulo"
@@ -25,5 +25,9 @@
     "audio_mean_db": -19.8,
     "visual_frames_checked": true
   },
-  "caption": "Uma folha escondida no caderno do filho revelou o sonho que a mãe tinha vergonha de contar. 📒💛\nQuem te deu coragem para recomeçar?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Recomeco"
+  "caption": "Uma folha escondida no caderno do filho revelou o sonho que a mãe tinha vergonha de contar. 📒💛\nQuem te deu coragem para recomeçar?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Recomeco",
+  "providerStatus": "PUBLISHED",
+  "providerDetailedStatus": "Published",
+  "tiktokVideoId": "7701085122543602965",
+  "publicUrl": "https://www.tiktok.com/@ninamecontou/video/7701085122543602965"
 }
