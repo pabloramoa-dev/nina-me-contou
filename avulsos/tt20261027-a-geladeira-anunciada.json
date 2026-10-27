@@ -1,0 +1,81 @@
+{
+  "id": "tt20261027-a-geladeira-anunciada",
+  "avulso": true,
+  "titulo": "A GELADEIRA ANUNCIADA",
+  "temporada": "TikTok diário",
+  "cenario": "tarde",
+  "visual_images": {
+    "auto_visual_images": true,
+    "hide_inner_caption_when_image": true,
+    "bottom_caption_only": true,
+    "min_images": 4,
+    "max_images": 8,
+    "target_images": 6,
+    "fallback": "original_art"
+  },
+  "batidas": [
+    {
+      "fala": "O marido anunciou a geladeira da própria casa como se estivesse solteiro. E só descobriu quem era a compradora quando ela pediu desconto.",
+      "expr": "chocada",
+      "foto": "refrigerator kitchen",
+      "zoom": true
+    },
+    {
+      "fala": "Patrícia estava no ônibus quando uma amiga mandou um anúncio: geladeira impecável, pouco uso, motivo da venda, mudança. Na foto, tinha um ímã de abacaxi igual ao dela.",
+      "expr": "desconfiada",
+      "foto": "phone bus seat"
+    },
+    {
+      "fala": "Ela ampliou a imagem. No canto da porta aparecia o risco que tinha feito com uma panela. Era a geladeira dela. E ninguém naquela casa estava de mudança.",
+      "expr": "chocada",
+      "foto": "refrigerator magnet"
+    },
+    {
+      "fala": "O vendedor era Marcos, seu marido. Patrícia mandou mensagem perguntando o que ele estava fazendo. Ele respondeu: resolvendo umas coisas do trabalho. Ela decidiu descobrir quais.",
+      "expr": "desconfiada",
+      "foto": "laptop kitchen table"
+    },
+    {
+      "fala": "Pelo perfil da irmã, perguntou se o eletrodoméstico ainda estava disponível. Marcos respondeu na hora. Disse que morava sozinho e precisava liberar espaço. A mulher quase desceu no ponto errado.",
+      "expr": "ironica",
+      "foto": "empty kitchen"
+    },
+    {
+      "fala": "Ela marcou uma visita para o fim da tarde. Antes disso, ligou para ele: vou chegar mais cedo. Marcos ficou nervoso e pediu que passasse primeiro no mercado. Precisava ganhar tempo.",
+      "expr": "desconfiada",
+      "foto": "grocery shopping basket"
+    },
+    {
+      "fala": "Patrícia entrou em casa justamente quando ele terminava de tirar os alimentos. Em cima da mesa havia leite, verduras e um pote de feijão ainda congelado.",
+      "expr": "chocada",
+      "foto": "frozen food kitchen counter"
+    },
+    {
+      "fala": "Ela perguntou onde estava a geladeira nova. Marcos baixou os olhos. Não tinha geladeira nova. Tinha uma bicicleta usada esperando pagamento, anunciada por um colega.",
+      "expr": "neutra",
+      "foto": "bicycle against wall"
+    },
+    {
+      "fala": "Ele achou que venderia aquela, compraria uma menor e usaria a diferença na bicicleta. Só esqueceu de combinar com quem dividia a casa, as contas e as compras do mês.",
+      "expr": "ironica",
+      "foto": "calculator grocery receipt"
+    },
+    {
+      "fala": "Patrícia mostrou a conversa: e desde quando você mora sozinho? Ele tentou dizer que era para facilitar a negociação. Ela respondeu: então facilita explicar onde eu guardo a comida amanhã.",
+      "expr": "desconfiada",
+      "foto": "phone kitchen counter"
+    },
+    {
+      "fala": "Marcos cancelou o anúncio e avisou ao colega que não compraria a bicicleta. Os dois combinaram um valor mensal para gastos pessoais, sem vender os bens da casa pelas costas do outro.",
+      "expr": "neutra",
+      "foto": "notebook calculator"
+    },
+    {
+      "fala": "Naquela noite, ele perguntou quem era a compradora que tinha sumido. Patrícia colou um papel na geladeira: vendida para a sua esposa, por zero reais. Você teria revelado antes? Conta e segue a Nina para a próxima história.",
+      "expr": "ironica",
+      "foto": "refrigerator paper note"
+    }
+  ],
+  "fim": "VENDIDA PARA A PRÓPRIA ESPOSA",
+  "legenda_post": "Ela encontrou a própria geladeira à venda. O marido dizia no anúncio que morava sozinho. 🧊😂\nVocê teria revelado antes que era a compradora?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Humor"
+}
