@@ -1,0 +1,29 @@
+{
+  "episode": "tt20261027-a-geladeira-anunciada",
+  "brandId": 7228264,
+  "network": "tiktok",
+  "account": "ninamecontou",
+  "id": 407920786,
+  "uuid": "4090470456330109783",
+  "status": "agendado",
+  "publicationDate": {
+    "dateTime": "2026-10-27T18:00:00",
+    "timezone": "America/Sao_Paulo"
+  },
+  "autoPublish": true,
+  "mediaUrl": "https://raw.githubusercontent.com/pabloramoa-dev/nina-me-contou/main/avulsos_prontos/tt20261027-a-geladeira-anunciada.mp4",
+  "metricoolMediaUrl": "https://static.metricool.com/planner/202610/7228264-file-11965452542839562295.mp4",
+  "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7228264&openWithPostUuid=4090470456330109783",
+  "run_id": 40498509551,
+  "validation": {
+    "width": 1080,
+    "height": 1920,
+    "duration_seconds": 116.4,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "audio_peak_db": -4.5,
+    "audio_mean_db": -19.9,
+    "visual_frames_checked": true
+  },
+  "caption": "Ela encontrou a própria geladeira à venda. O marido dizia no anúncio que morava sozinho. 🧊😂\nVocê teria revelado antes que era a compradora?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Humor"
+}
