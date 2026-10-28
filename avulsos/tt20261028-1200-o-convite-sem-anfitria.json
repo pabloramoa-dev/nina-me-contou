@@ -1,0 +1,131 @@
+{
+  "id": "tt20261028-1200-o-convite-sem-anfitria",
+  "avulso": true,
+  "titulo": "O CONVITE SEM ANFITRIÃ",
+  "temporada": "Nina — episódios diários",
+  "cenario": "tarde",
+  "voice_engine": "kokoro",
+  "kokoro_voice": "pf_dora",
+  "kokoro_speed": 1.02,
+  "visual_images": {
+    "auto_visual_images": true,
+    "hide_inner_caption_when_image": true,
+    "bottom_caption_only": true,
+    "min_images": 6,
+    "max_images": 8,
+    "target_images": 8,
+    "fallback": "original_art"
+  },
+  "batidas": [
+    {
+      "fala": "Ela abriu o celular e descobriu que tinha uma festa marcada em seu nome. Salão alugado, cinquenta convidados e até um bolo. Só havia um detalhe: ela não tinha organizado festa nenhuma.",
+      "expr": "chocada",
+      "foto": "party invitation smartphone",
+      "zoom": true,
+      "hf": {
+        "titulo": "A FESTA ERA DELA?"
+      }
+    },
+    {
+      "fala": "Camila trabalhava numa papelaria e estava juntando dinheiro para trocar a geladeira. Por isso, quando recebeu a mensagem de confirmação do salão, achou que era golpe.",
+      "expr": "desconfiada",
+      "foto": "phone notification kitchen table",
+      "zoom": false,
+      "hf": {
+        "titulo": "SALÃO RESERVADO"
+      }
+    },
+    {
+      "fala": "Mas a mensagem tinha seu nome completo, a data de sábado e o endereço de um espaço de eventos perto de casa. A entrada já estava paga.",
+      "expr": "chocada",
+      "foto": "event venue exterior",
+      "zoom": false,
+      "hf": {
+        "titulo": "ENTRADA PAGA"
+      }
+    },
+    {
+      "fala": "Ela telefonou para o salão. A atendente confirmou tudo e ainda perguntou se os balões seriam dourados ou prateados. Camila respondeu: moça, eu nem sabia da festa!",
+      "expr": "ironica",
+      "foto": "gold and silver balloons",
+      "zoom": true,
+      "hf": {
+        "titulo": "BALÕES?"
+      }
+    },
+    {
+      "fala": "A atendente explicou que a reserva tinha sido feita por uma mulher chamada Teresa. Camila gelou. Teresa era sua irmã, com quem não conversava havia quase um ano.",
+      "expr": "desconfiada",
+      "foto": "two women old family photo",
+      "zoom": false,
+      "hf": {
+        "titulo": "O NOME DA IRMÃ"
+      }
+    },
+    {
+      "fala": "As duas tinham brigado por causa da venda da casa da mãe. Desde então, qualquer tentativa de conversa terminava em silêncio. Camila pensou que fosse alguma provocação.",
+      "expr": "triste",
+      "foto": "old family house",
+      "zoom": false,
+      "hf": {
+        "titulo": "UM ANO SEM SE FALAR"
+      }
+    },
+    {
+      "fala": "Ela procurou Teresa e perguntou por que estava usando seu nome. A irmã não negou. Só disse: se eu contar agora, você não vai aparecer. Camila desligou.",
+      "expr": "brava",
+      "foto": "phone call screen",
+      "zoom": false,
+      "hf": {
+        "titulo": "NÃO VOU APARECER"
+      }
+    },
+    {
+      "fala": "No sábado, a curiosidade venceu. Camila foi ao salão decidida a exigir explicações. Ao entrar, não encontrou música alta nem convidados dançando. Havia uma mesa com fotografias antigas.",
+      "expr": "desconfiada",
+      "foto": "quiet event hall family photographs",
+      "zoom": false,
+      "hf": {
+        "titulo": "NADA DE FESTA"
+      }
+    },
+    {
+      "fala": "No centro da mesa estava a máquina de costura da mãe, que as duas acreditavam ter sido vendida junto com a casa. Ao lado, um envelope com o nome de Camila.",
+      "expr": "chocada",
+      "foto": "vintage sewing machine envelope",
+      "zoom": true,
+      "hf": {
+        "titulo": "A MÁQUINA DA MÃE"
+      }
+    },
+    {
+      "fala": "Teresa explicou que tinha guardado a máquina antes da mudança. Passara meses consertando e reunindo os cadernos de moldes que a mãe deixara. Chamou os antigos clientes para devolver as lembranças.",
+      "expr": "triste",
+      "foto": "sewing patterns old notebooks",
+      "zoom": false,
+      "hf": {
+        "titulo": "ELA GUARDOU TUDO"
+      }
+    },
+    {
+      "fala": "Camila abriu o envelope. Dentro havia uma carta da mãe, escrita anos antes: se um dia vocês brigarem, lembrem que sempre trabalharam melhor juntas. As duas ficaram sem saber o que dizer.",
+      "expr": "triste",
+      "foto": "handwritten letter sewing table",
+      "zoom": true,
+      "hf": {
+        "titulo": "A CARTA"
+      }
+    },
+    {
+      "fala": "A festa não apagou a briga, mas começou uma conversa que estava atrasada havia um ano. Camila voltou para casa com a máquina e uma pergunta: você iria a uma festa surpresa organizada por alguém com quem brigou? Conta aqui e segue a Nina!",
+      "expr": "neutra",
+      "foto": "two sisters at sewing machine",
+      "zoom": false,
+      "hf": {
+        "titulo": "VOCÊ IRIA?"
+      }
+    }
+  ],
+  "fim": "A FESTA ERA UMA SEGUNDA CHANCE",
+  "legenda_post": "Ela descobriu uma festa marcada em seu nome — e quem tinha reservado o salão era a irmã com quem não falava há quase um ano! 😳🎉 Você teria ido? História fictícia. #NinaMeContou #Storytime #Reviravolta #Historias #Ficcao"
+}
