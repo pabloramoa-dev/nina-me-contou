@@ -1,0 +1,42 @@
+name: Validar entrega Telegram Nina (sem envio)
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/telegram_nina.py'
+      - '.github/workflows/validar_telegram.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Instalar ferramentas do teste
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          python -m pip install requests
+      - name: Criar MP4 sintético de teste (não é episódio real)
+        run: |
+          mkdir -p teste_entrega
+          ffmpeg -hide_banner -loglevel error -y \
+            -f lavfi -i color=c=black:s=320x568:r=24 \
+            -f lavfi -i sine=frequency=440:sample_rate=44100 \
+            -t 4 -c:v libx264 -pix_fmt yuv420p -c:a aac \
+            teste_entrega/ep045-p1.mp4
+      - name: Validar MP4 e descrição TikTok, sem acesso ao Telegram
+        run: |
+          python tools/telegram_nina.py --video-dir teste_entrega --dry-run | tee /tmp/teste-telegram.txt
+          grep -F 'DRY RUN ep045-p1.mp4' /tmp/teste-telegram.txt
+          grep -F '#tiktokbrasil' /tmp/teste-telegram.txt
+          grep -F '#ninamecontou' /tmp/teste-telegram.txt
+          echo 'Validação local concluída. Nenhum arquivo foi enviado.'
