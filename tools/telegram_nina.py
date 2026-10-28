@@ -71,6 +71,24 @@ def http_telegram(token: str, method: str, data: dict, arquivo: Path | None = No
     return result["result"]
 
 
+def validar_mp4(video: Path) -> None:
+    """Só envia arquivos finalizados, com vídeo, áudio e duração legível."""
+    if not video.is_file() or video.stat().st_size < 1024:
+        raise RuntimeError(f"{video.name}: MP4 ausente ou vazio")
+    try:
+        info = json.loads(subprocess.check_output(
+            ["ffprobe", "-v", "error", "-show_entries",
+             "format=duration:stream=codec_type", "-of", "json", str(video)],
+            text=True, stderr=subprocess.DEVNULL, timeout=45,
+        ))
+        duracao = float(info.get("format", {}).get("duration", 0))
+        tipos = {s.get("codec_type") for s in info.get("streams", [])}
+    except (subprocess.SubprocessError, ValueError, TypeError, KeyError):
+        raise RuntimeError(f"{video.name}: MP4 ainda incompleto ou inválido") from None
+    if not 3 <= duracao <= 3600 or not {"video", "audio"} <= tipos:
+        raise RuntimeError(f"{video.name}: faltam vídeo, áudio ou duração válida")
+
+
 def preparar_arquivo(video: Path, pasta: Path) -> Path:
     if video.stat().st_size <= MAX_UPLOAD:
         return video
@@ -118,6 +136,9 @@ def main() -> int:
     enviados = 0
     with tempfile.TemporaryDirectory(prefix="nina-telegram-") as tmp:
         for video in videos:
+            # O workflow já concluiu o render e baixou o artifact. Confirmar
+            # também que o MP4 contém áudio e vídeo antes de qualquer envio.
+            validar_mp4(video)
             episodio_path = ROOT / "episodios" / f"{video.stem}.json"
             if not episodio_path.exists():
                 raise FileNotFoundError(f"Roteiro do MP4 não encontrado: {episodio_path.name}")
@@ -136,6 +157,7 @@ def main() -> int:
                 continue
 
             arquivo = preparar_arquivo(video, Path(tmp))
+            validar_mp4(arquivo)
             cabecalho = f"🎬 Nina Me Contou — {episodio.get('titulo', video.stem)} | Parte {episodio.get('parte', '?')}\nMP4 para publicar no TikTok. Descrição na próxima mensagem."
             resultado = http_telegram(
                 token, "sendDocument",
