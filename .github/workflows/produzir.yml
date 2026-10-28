@@ -163,7 +163,11 @@ jobs:
         with:
           pattern: reel-*
           merge-multiple: true
-          path: reels/
+          path: entrega_nina/
+      - name: Copiar os MP4s recém-renderizados para a fila
+        run: |
+          mkdir -p reels/
+          cp -a entrega_nina/. reels/
       - name: Conferir a fila
         run: python -m src.fila || true
       - name: Gravar no repositório
@@ -174,5 +178,32 @@ jobs:
           git diff --cached --quiet && exit 0
           git commit -m "estúdio: episódios renderizados [skip ci]"
           for i in 1 2 3; do git pull --rebase && git push && exit 0; sleep 5; done
+          exit 1
+      - name: Enviar MP4 e descrição pronta para TikTok pelo Telegram
+        env:
+          TELEGRAM_BOT_TOKEN_NINA: ${{ secrets.TELEGRAM_BOT_TOKEN_NINA }}
+          TELEGRAM_CHAT_ID_NINA: ${{ secrets.TELEGRAM_CHAT_ID_NINA }}
+        run: |
+          python -m pip install requests
+          python tools/telegram_nina.py --video-dir entrega_nina
+      - name: Registrar recibos de entrega no Telegram
+        if: success()
+        run: |
+          if [ ! -f conteudo/telegram_entregues.json ]; then
+            echo "Nenhum envio novo para registrar."
+            exit 0
+          fi
+          git config user.name "nina-bot"
+          git config user.email "actions@github.com"
+          git add conteudo/telegram_entregues.json
+          if git diff --cached --quiet; then
+            echo "Recibos do Telegram já registrados."
+            exit 0
+          fi
+          git commit -m "telegram: MP4s da Nina entregues [skip ci]"
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push origin main && exit 0
+            sleep 5
+          done
           exit 1
 
