@@ -1,0 +1,131 @@
+{
+  "id": "tt20261028-0900-o-envelope-da-foto-3x4",
+  "avulso": true,
+  "titulo": "O ENVELOPE DA FOTO 3X4",
+  "temporada": "Nina — episódios diários",
+  "cenario": "tarde",
+  "voice_engine": "kokoro",
+  "kokoro_voice": "pf_dora",
+  "kokoro_speed": 1.02,
+  "visual_images": {
+    "auto_visual_images": true,
+    "hide_inner_caption_when_image": true,
+    "bottom_caption_only": true,
+    "min_images": 6,
+    "max_images": 8,
+    "target_images": 8,
+    "fallback": "original_art"
+  },
+  "batidas": [
+    {
+      "fala": "Ela foi renovar o documento do marido e encontrou uma foto três por quatro de uma mulher que nunca tinha visto. No verso, só uma frase: não conte para a Helena.",
+      "expr": "chocada",
+      "foto": "passport photo envelope",
+      "zoom": true,
+      "hf": {
+        "titulo": "A FOTO ESCONDIDA"
+      }
+    },
+    {
+      "fala": "Helena e Gustavo estavam juntos havia onze anos. Ele tinha pedido que ela buscasse uma pasta de documentos antes de uma viagem de trabalho. A foto caiu de dentro de um envelope pardo.",
+      "expr": "desconfiada",
+      "foto": "brown paper document folder",
+      "zoom": false,
+      "hf": {
+        "titulo": "O ENVELOPE PARDO"
+      }
+    },
+    {
+      "fala": "Helena não reconheceu o rosto. A mulher parecia ter a idade dela. Junto da foto havia uma data recente e o nome de um cartório de outra cidade.",
+      "expr": "desconfiada",
+      "foto": "notary office documents",
+      "zoom": false,
+      "hf": {
+        "titulo": "O NOME DO CARTÓRIO"
+      }
+    },
+    {
+      "fala": "Ela ligou para Gustavo e perguntou se ele tinha esquecido alguma coisa na pasta. Ele respondeu depressa demais: não abre o envelope menor, é coisa do escritório.",
+      "expr": "chocada",
+      "foto": "smartphone on wooden desk",
+      "zoom": true,
+      "hf": {
+        "titulo": "NÃO ABRA"
+      }
+    },
+    {
+      "fala": "O problema é que o envelope já estava aberto. Helena encontrou um comprovante de reconhecimento de firma e uma autorização para retirada de documentos. A assinatura era de Gustavo.",
+      "expr": "neutra",
+      "foto": "stamped paper document",
+      "zoom": false,
+      "hf": {
+        "titulo": "A ASSINATURA"
+      }
+    },
+    {
+      "fala": "Naquela noite, ela colocou a foto na mesa e perguntou quem era. Gustavo ficou imóvel. Primeiro disse que era uma colega. Depois pediu para explicar tudo antes que ela imaginasse o pior.",
+      "expr": "desconfiada",
+      "foto": "passport photo on kitchen table",
+      "zoom": true,
+      "hf": {
+        "titulo": "QUEM É ELA?"
+      }
+    },
+    {
+      "fala": "A mulher se chamava Lívia. Era irmã de Gustavo por parte de pai. Os dois tinham se conhecido só naquele mês, depois que ela encontrou o nome dele em uma certidão antiga.",
+      "expr": "neutra",
+      "foto": "old birth certificate",
+      "zoom": false,
+      "hf": {
+        "titulo": "UMA IRMÃ?"
+      }
+    },
+    {
+      "fala": "Helena perguntou por que precisava ser segredo. Gustavo confessou que o pai tinha mantido duas famílias sem que nenhuma soubesse da outra. E ele tinha vergonha de repetir aquela história dentro da própria casa.",
+      "expr": "triste",
+      "foto": "old family photo album",
+      "zoom": false,
+      "hf": {
+        "titulo": "DUAS FAMÍLIAS"
+      }
+    },
+    {
+      "fala": "Só que havia uma segunda surpresa. Lívia não procurara Gustavo para pedir dinheiro. Ela queria uma foto do pai, que tinha morrido antes de ela conseguir conhecê-lo. Gustavo guardava a única que restava.",
+      "expr": "neutra",
+      "foto": "vintage portrait photograph",
+      "zoom": false,
+      "hf": {
+        "titulo": "A ÚNICA FOTO"
+      }
+    },
+    {
+      "fala": "Ele tinha ido ao cartório para confirmar o parentesco e entregar a fotografia pessoalmente. A foto três por quatro era a imagem que Lívia mandara para que ele a reconhecesse na rodoviária.",
+      "expr": "neutra",
+      "foto": "bus station entrance",
+      "zoom": true,
+      "hf": {
+        "titulo": "O ENCONTRO"
+      }
+    },
+    {
+      "fala": "Helena ouviu tudo, mas não fingiu que o segredo não doeu. Disse: você não escolheu o erro do seu pai, mas escolheu mentir para mim. Gustavo pediu desculpas e mostrou as mensagens desde o começo.",
+      "expr": "triste",
+      "foto": "phone messages coffee table",
+      "zoom": false,
+      "hf": {
+        "titulo": "O SEGREDO DOEU"
+      }
+    },
+    {
+      "fala": "No domingo, Helena foi com Gustavo conhecer Lívia. Levaram a fotografia antiga numa moldura simples. E, antes do abraço, Helena disse: da próxima vez, me conta a verdade primeiro. Você perdoaria esse segredo? Comenta e segue a Nina para mais histórias.",
+      "expr": "neutra",
+      "foto": "simple picture frame on table",
+      "zoom": false,
+      "hf": {
+        "titulo": "VOCÊ PERDOARIA?"
+      }
+    }
+  ],
+  "fim": "O SEGREDO NÃO ERA UMA AMANTE",
+  "legenda_post": "Uma foto 3x4 escondida na pasta do marido. No verso: “não conte para a Helena”. 😳 O que você faria ao encontrar esse envelope? História fictícia. #NinaMeContou #Storytime #Historias #Reviravolta #Ficcao"
+}
