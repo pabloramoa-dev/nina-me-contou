@@ -1,124 +1,124 @@
 {
-  "id": "tt20261027-a-festa-de-divorcio",
-  "avulso": true,
-  "titulo": "A FESTA DE DIVÓRCIO",
-  "temporada": "Episódio especial — Nina Me Contou",
-  "cenario": "noite",
-  "voice_engine": "kokoro",
-  "kokoro_voice": "pf_dora",
-  "kokoro_speed": 1.02,
-  "visual_images": {
-    "auto_visual_images": true,
-    "hide_inner_caption_when_image": true,
-    "bottom_caption_only": true,
-    "min_images": 6,
-    "max_images": 8,
-    "target_images": 8,
-    "fallback": "original_art"
+ "id": "tt20261027-a-festa-de-divorcio",
+ "avulso": true,
+ "titulo": "A FESTA DE DIVÓRCIO",
+ "temporada": "Episódio especial — Nina Me Contou",
+ "cenario": "noite",
+ "voice_engine": "kokoro",
+ "kokoro_voice": "pf_dora",
+ "kokoro_speed": 1.02,
+ "visual_images": {
+  "auto_visual_images": true,
+  "hide_inner_caption_when_image": true,
+  "bottom_caption_only": true,
+  "min_images": 6,
+  "max_images": 8,
+  "target_images": 8,
+  "fallback": "original_art"
+ },
+ "batidas": [
+  {
+   "fala": "Marina recebeu um convite para a festa de divórcio do próprio marido. O detalhe? Eduardo ainda não tinha contado que queria se separar. Naquela manhã, ele até perguntou se tinha café!",
+   "expr": "chocada",
+   "foto": "party invitation smartphone",
+   "zoom": true,
+   "hf": {
+    "titulo": "A FESTA DE DIVÓRCIO"
+   }
   },
-  "batidas": [
-    {
-      "fala": "Marina recebeu um convite para a festa de divórcio do próprio marido. O detalhe? Eduardo ainda não tinha contado que queria se separar. Naquela manhã, ele até perguntou se tinha café!",
-      "expr": "chocada",
-      "foto": "party invitation smartphone",
-      "zoom": true,
-      "hf": {
-        "titulo": "A FESTA DE DIVÓRCIO"
-      }
-    },
-    {
-      "fala": "O convite chegou pela amiga Bia, que viu tudo num grupo de conhecidos. Tinha data, endereço, DJ e até nome do evento: a liberdade do Eduardo. Seria no sábado.",
-      "expr": "desconfiada",
-      "foto": "event invitation calendar",
-      "zoom": false,
-      "hf": {
-        "titulo": "A LIBERDADE DO EDUARDO"
-      }
-    },
-    {
-      "fala": "Marina leu três vezes. Eduardo dizia que passaria o sábado numa reunião de antigos colegas. E, na mesma noite, pediu que ela passasse a camisa azul. A cara de pau estava passada!",
-      "expr": "ironica",
-      "foto": "blue shirt ironing board",
-      "zoom": false,
-      "hf": {
-        "titulo": "A CAMISA AZUL"
-      }
-    },
-    {
-      "fala": "Ela não gritou. Conferiu as despesas do casal e encontrou o sinal do salão pago com a conta conjunta. Era uma festa de liberdade financiada pelos dois, sem que ela soubesse.",
-      "expr": "chocada",
-      "foto": "bank statement calculator",
-      "zoom": false,
-      "hf": {
-        "titulo": "A CONTA CONJUNTA"
-      }
-    },
-    {
-      "fala": "Marina chamou Eduardo para conversar. Ele desconversou, disse que estava cansado e prometeu explicar umas coisas depois. Ela respondeu: ótimo, depois a gente conversa com calma. Mas já tinha entendido o recado.",
-      "expr": "desconfiada",
-      "foto": "coffee cup kitchen table",
-      "zoom": false,
-      "hf": {
-        "titulo": "A CONVERSA"
-      }
-    },
-    {
-      "fala": "Bia perguntou se ela queria fazer barraco. Marina respondeu: quero que ele pague a própria festa. Guardou os comprovantes, procurou orientação sobre a separação e preparou um envelope.",
-      "expr": "neutra",
-      "foto": "paper envelope receipts",
-      "zoom": false,
-      "hf": {
-        "titulo": "O ENVELOPE"
-      }
-    },
-    {
-      "fala": "No sábado, o salão estava cheio. Havia um painel escrito vida nova e um bolo de três andares. Eduardo ergueu o copo para discursar. Foi quando a porta se abriu.",
-      "expr": "chocada",
-      "foto": "party cake balloons",
-      "zoom": true,
-      "hf": {
-        "titulo": "A PORTA SE ABRIU"
-      }
-    },
-    {
-      "fala": "Marina entrou com Bia e um sorriso tranquilo. Eduardo quase derrubou o copo. Alguém perguntou se ela era da decoração. Ela respondeu: não, sou a sócia involuntária desta festa.",
-      "expr": "ironica",
-      "foto": "champagne glass party table",
-      "zoom": false,
-      "hf": {
-        "titulo": "A CONVIDADA SURPRESA"
-      }
-    },
-    {
-      "fala": "Ela entregou o envelope e falou baixo, mas perto do microfone: aqui estão os gastos da nossa conta. Se você quer comemorar sua liberdade, comece pagando a sua parte. O DJ desligou a música.",
-      "expr": "chocada",
-      "foto": "receipts microphone table",
-      "zoom": true,
-      "hf": {
-        "titulo": "A CONTA DA FESTA"
-      }
-    },
-    {
-      "fala": "Marina foi embora sem discutir. Dias depois, os dois começaram a acertar a separação e as despesas. Eduardo ficou com o bolo, a decoração e a obrigação de explicar aquela festa aos convidados.",
-      "expr": "ironica",
-      "foto": "empty party room cake",
-      "zoom": false,
-      "hf": {
-        "titulo": "O BOLO FICOU"
-      }
-    },
-    {
-      "fala": "Quando a festa terminou, veio a última surpresa: o salão cobrou de Eduardo o restante do valor. Bia contou tudo para Marina, que resumiu: ele queria uma festa de liberdade e ganhou um boleto de lembrancinha! Você teria ido à festa? Conta nos comentários e segue a Nina!",
-      "expr": "ironica",
-      "foto": "restaurant bill receipt cake",
-      "zoom": false,
-      "hf": {
-        "titulo": "VOCÊ IRIA À FESTA?"
-      }
-    }
-  ],
-  "fim": "ELE FEZ A FESTA... E ELA MANDOU A CONTA!",
-  "legenda_post": "Ela recebeu o convite para a festa de divórcio do próprio marido — antes de ele contar que queria se separar. 😳🎂 E ainda descobriu quem pagou o salão! Você teria aparecido? História fictícia. #NinaMeContou #Storytime #Ficcao #PlotTwist #Historias",
-  "gancho_versao": "gancho-direto-20261027-v1",
-  "gancho_modelo": "abrir_no_conflito"
+  {
+   "fala": "O convite chegou pela amiga Bia, que viu tudo num grupo de conhecidos. Tinha data, endereço, DJ e até nome do evento: a liberdade do Eduardo. Seria no sábado.",
+   "expr": "desconfiada",
+   "foto": "event invitation calendar",
+   "zoom": false,
+   "hf": {
+    "titulo": "A LIBERDADE DO EDUARDO"
+   }
+  },
+  {
+   "fala": "Marina leu três vezes. Eduardo dizia que passaria o sábado numa reunião de antigos colegas. E, na mesma noite, pediu que ela passasse a camisa azul. A cara de pau estava passada!",
+   "expr": "ironica",
+   "foto": "blue shirt ironing board",
+   "zoom": false,
+   "hf": {
+    "titulo": "A CAMISA AZUL"
+   }
+  },
+  {
+   "fala": "Ela não gritou. Conferiu as despesas do casal e encontrou o sinal do salão pago com a conta conjunta. Era uma festa de liberdade financiada pelos dois, sem que ela soubesse.",
+   "expr": "chocada",
+   "foto": "bank statement calculator",
+   "zoom": false,
+   "hf": {
+    "titulo": "A CONTA CONJUNTA"
+   }
+  },
+  {
+   "fala": "Marina chamou Eduardo para conversar. Ele desconversou, disse que estava cansado e prometeu explicar umas coisas depois. Ela respondeu: ótimo, depois a gente conversa com calma. Mas já tinha entendido o recado.",
+   "expr": "desconfiada",
+   "foto": "coffee cup kitchen table",
+   "zoom": false,
+   "hf": {
+    "titulo": "A CONVERSA"
+   }
+  },
+  {
+   "fala": "Bia perguntou se ela queria fazer barraco. Marina respondeu: quero que ele pague a própria festa. Guardou os comprovantes, procurou orientação sobre a separação e preparou um envelope.",
+   "expr": "neutra",
+   "foto": "paper envelope receipts",
+   "zoom": false,
+   "hf": {
+    "titulo": "O ENVELOPE"
+   }
+  },
+  {
+   "fala": "No sábado, o salão estava cheio. Havia um painel escrito vida nova e um bolo de três andares. Eduardo ergueu o copo para discursar. Foi quando a porta se abriu.",
+   "expr": "chocada",
+   "foto": "party cake balloons",
+   "zoom": true,
+   "hf": {
+    "titulo": "A PORTA SE ABRIU"
+   }
+  },
+  {
+   "fala": "Marina entrou com Bia e um sorriso tranquilo. Eduardo quase derrubou o copo. Alguém perguntou se ela era da decoração. Ela respondeu: não, sou a sócia involuntária desta festa.",
+   "expr": "ironica",
+   "foto": "champagne glass party table",
+   "zoom": false,
+   "hf": {
+    "titulo": "A CONVIDADA SURPRESA"
+   }
+  },
+  {
+   "fala": "Ela entregou o envelope e falou baixo, mas perto do microfone: aqui estão os gastos da nossa conta. Se você quer comemorar sua liberdade, comece pagando a sua parte. O DJ desligou a música.",
+   "expr": "chocada",
+   "foto": "receipts microphone table",
+   "zoom": true,
+   "hf": {
+    "titulo": "A CONTA DA FESTA"
+   }
+  },
+  {
+   "fala": "Marina foi embora sem discutir. Dias depois, os dois começaram a acertar a separação e as despesas. Eduardo ficou com o bolo, a decoração e a obrigação de explicar aquela festa aos convidados.",
+   "expr": "ironica",
+   "foto": "empty party room cake",
+   "zoom": false,
+   "hf": {
+    "titulo": "O BOLO FICOU"
+   }
+  },
+  {
+   "fala": "Quando a festa terminou, veio a última surpresa: o salão cobrou de Eduardo o restante do valor. Bia contou tudo para Marina, que resumiu: ele queria uma festa de liberdade e ganhou um boleto de lembrancinha! Você teria ido à festa? Conta nos comentários e segue a Nina!",
+   "expr": "ironica",
+   "foto": "restaurant bill receipt cake",
+   "zoom": false,
+   "hf": {
+    "titulo": "VOCÊ IRIA À FESTA?"
+   }
+  }
+ ],
+ "fim": "ELE FEZ A FESTA... E ELA MANDOU A CONTA!",
+ "legenda_post": "Ela recebeu o convite para a festa de divórcio do próprio marido — antes de ele contar que queria se separar. 😳🎂 E ainda descobriu quem pagou o salão! Você teria aparecido? História fictícia. #NinaMeContou #Storytime #Ficcao #PlotTwist #Historias",
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
 }
