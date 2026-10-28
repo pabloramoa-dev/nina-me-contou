@@ -1,0 +1,81 @@
+{
+  "id": "tt20261028-a-caixa-de-ferramentas",
+  "avulso": true,
+  "titulo": "A CAIXA DE FERRAMENTAS",
+  "temporada": "TikTok diário",
+  "cenario": "tarde",
+  "visual_images": {
+    "auto_visual_images": true,
+    "hide_inner_caption_when_image": true,
+    "bottom_caption_only": true,
+    "min_images": 4,
+    "max_images": 8,
+    "target_images": 6,
+    "fallback": "original_art"
+  },
+  "batidas": [
+    {
+      "fala": "Ela vendeu a caixa de ferramentas do pai por cinquenta reais. Duas horas depois, o comprador voltou com uma gaveta na mão e se recusou a ir embora.",
+      "expr": "chocada",
+      "foto": "old metal toolbox",
+      "zoom": true
+    },
+    {
+      "fala": "Depois que o pai morreu, Daniela passou meses evitando a oficina nos fundos de casa. Quando decidiu alugar o imóvel, começou a separar tudo. Aquela caixa enferrujada parecia não ter utilidade.",
+      "expr": "triste",
+      "foto": "empty old workshop"
+    },
+    {
+      "fala": "Seu Antônio, um vizinho que consertava bicicletas, comprou as ferramentas. Daniela até agradeceu por ele carregar o peso sozinho. Fechou o portão e voltou a empilhar caixas na sala.",
+      "expr": "neutra",
+      "foto": "cardboard moving boxes"
+    },
+    {
+      "fala": "No meio da tarde, a campainha tocou. Era Antônio, segurando a pequena gaveta que ficava embaixo das chaves. Ele perguntou: você chegou a olhar o fundo disso aqui?",
+      "expr": "desconfiada",
+      "foto": "toolbox drawer"
+    },
+    {
+      "fala": "Daniela respondeu que tinha visto só parafusos e poeira. O vizinho levantou uma placa fina de madeira. Debaixo dela havia um envelope dobrado, com o nome de Daniela escrito a lápis.",
+      "expr": "chocada",
+      "foto": "old paper envelope"
+    },
+    {
+      "fala": "Ela sentou no degrau antes de abrir. Dentro estavam três recibos de um curso de enfermagem. O mesmo curso que abandonara aos dezenove anos porque precisava trabalhar para ajudar em casa.",
+      "expr": "triste",
+      "foto": "paper receipts wooden table"
+    },
+    {
+      "fala": "O pai tinha guardado dinheiro para ela voltar, mas adoeceu antes de conseguir contar. Junto dos recibos havia um bilhete: quando você quiser tentar de novo, a primeira parte já está paga.",
+      "expr": "triste",
+      "foto": "handwritten note pencil"
+    },
+    {
+      "fala": "Daniela chorou e depois ficou com raiva do tempo perdido. Aqueles papéis tinham anos. A escola podia ter fechado, o dinheiro podia não valer mais. Antônio deixou a gaveta e esperou em silêncio.",
+      "expr": "neutra",
+      "foto": "wooden doorstep"
+    },
+    {
+      "fala": "Na manhã seguinte, ela ligou para a escola. O crédito antigo ainda constava no cadastro do pai. Não pagava o curso inteiro, mas cobria a matrícula e as primeiras mensalidades.",
+      "expr": "neutra",
+      "foto": "telephone notebook"
+    },
+    {
+      "fala": "Daniela fez as contas, pediu mudança de turno no trabalho e se matriculou numa turma noturna. Não foi um milagre pronto: foram ônibus cheios, sono e muitas páginas estudadas na mesa da cozinha.",
+      "expr": "neutra",
+      "foto": "textbooks kitchen table"
+    },
+    {
+      "fala": "Quando recebeu o primeiro certificado, levou uma cópia para Antônio. Ele colocou na parede da oficina. Daniela ofereceu devolver os cinquenta reais. O vizinho recusou: as ferramentas continuam trabalhando aqui.",
+      "expr": "neutra",
+      "foto": "certificate workshop wall"
+    },
+    {
+      "fala": "Ela ficou com a gavetinha, agora cheia de canetas. Na frente, escreveu: ainda dá tempo. Qual sonho você guardou para depois? Conta nos comentários e segue a Nina para a próxima história.",
+      "expr": "neutra",
+      "foto": "pencils wooden drawer"
+    }
+  ],
+  "fim": "AINDA DÁ TEMPO",
+  "legenda_post": "Ela vendeu as ferramentas do pai. O comprador devolveu uma gaveta com um sonho escondido. 🧰💛\nQual sonho você guardou para depois?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Recomeco"
+}
