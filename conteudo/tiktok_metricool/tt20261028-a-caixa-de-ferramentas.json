@@ -5,7 +5,7 @@
   "account": "ninamecontou",
   "id": 408923654,
   "uuid": "7455163191864281888",
-  "status": "agendado",
+  "status": "publicado",
   "publicationDate": {
     "dateTime": "2026-10-28T10:00:00",
     "timezone": "America/Sao_Paulo"
@@ -25,5 +25,9 @@
     "audio_mean_db": -20.2,
     "visual_frames_checked": true
   },
-  "caption": "Ela vendeu as ferramentas do pai. O comprador devolveu uma gaveta com um sonho escondido. 🧰💛\nQual sonho você guardou para depois?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Recomeco"
+  "caption": "Ela vendeu as ferramentas do pai. O comprador devolveu uma gaveta com um sonho escondido. 🧰💛\nQual sonho você guardou para depois?\nHistória fictícia, criada para entretenimento.\n#NinaMeContou #Ficcao #Storytime #Recomeco",
+  "providerStatus": "PUBLISHED",
+  "providerDetailedStatus": "Published",
+  "tiktokVideoId": "7701704119823764754",
+  "publicUrl": "https://www.tiktok.com/@ninamecontou/video/7701704119823764754"
 }
