@@ -1,13 +1,13 @@
 name: Publicar Reel
 
 on:
-  # 4 vídeos por dia, em sequência (parte 1 → parte 2 → próximo episódio).
-  # 8h e 20h também vão pros Stories. Minuto 7 = fora do pico do GitHub (menos atraso).
+  # Meta: 4 Reels diarios, independente do momento em que o render terminar.
+  # Tentativas extras recuperam horarios perdidos; o ledger impede duplicatas.
+  # Horarios abaixo em UTC; os comentarios indicam Brasilia (UTC-3).
   schedule:
-    - cron: "7 11 * * *"    # 08:07 Brasília — Reel + Story
-    - cron: "7 15 * * *"    # 12:07 Brasília — Reel
-    - cron: "7 19 * * *"    # 16:07 Brasília — Reel
-    - cron: "7 23 * * *"    # 20:07 Brasília — Reel + Story
+    - cron: "7 11,13,15,17,19,21,23 * * *"  # 08:07, 10:07, 12:07, 14:07, 16:07, 18:07, 20:07 BRT
+    - cron: "7 1 * * *"                 # 22:07 BRT (dia UTC seguinte)
+    - cron: "37 2 * * *"                # 23:37 BRT (ultima tentativa do dia)
   workflow_dispatch:
     inputs:
       horario:
@@ -58,7 +58,12 @@ jobs:
           GRAPH_API_VERSION: ${{ vars.GRAPH_API_VERSION }}
           PUBLICAR_ATIVO: ${{ vars.PUBLICAR_ATIVO }}
           DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && (inputs.dry_run && 'true' || 'false') || 'false' }}
-        run: python -m src.publicar --horario ${{ steps.h.outputs.h }}
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            python tools/recuperar_publicacoes.py
+          else
+            python -m src.publicar --horario "${{ steps.h.outputs.h }}"
+          fi
 
       - name: Registrar no histórico
         if: always()
