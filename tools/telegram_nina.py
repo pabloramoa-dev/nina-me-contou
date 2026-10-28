@@ -17,6 +17,7 @@ import re
 import subprocess
 import sys
 import tempfile
+import time
 from pathlib import Path
 
 import requests
@@ -122,7 +123,11 @@ def main() -> int:
                 raise FileNotFoundError(f"Roteiro do MP4 não encontrado: {episodio_path.name}")
             episodio = json.loads(episodio_path.read_text(encoding="utf-8"))
             descricao = descricao_tiktok(episodio)
-            hash_mp4 = hashlib.sha256(video.read_bytes()).hexdigest()
+            with video.open("rb") as stream:
+                digest = hashlib.sha256()
+                for chunk in iter(lambda: stream.read(1024 * 1024), b""):
+                    digest.update(chunk)
+                hash_mp4 = digest.hexdigest()
             if recebidos.get(video.stem, {}).get("hash") == hash_mp4:
                 print(f"Já entregue: {video.name}")
                 continue
@@ -137,6 +142,8 @@ def main() -> int:
                 {"chat_id": chat_id, "caption": cabecalho[:1000]},
                 arquivo=arquivo,
             )
+            # Evitar ultrapassar a taxa de mensagens da conversa no Telegram.
+            time.sleep(1.1)
             # Enviar texto separado: o usuário copia apenas a legenda no TikTok.
             http_telegram(token, "sendMessage", {"chat_id": chat_id, "text": descricao})
             recebidos[video.stem] = {
