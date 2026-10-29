@@ -7,6 +7,9 @@ on:
     paths:
       - 'tools/telegram_nina.py'
       - '.github/workflows/validar_telegram.yml'
+      - '.github/workflows/entregar_telegram.yml'
+      - 'motor/limpar_reels.py'
+      - 'tests/test_telegram_nina.py'
 
 permissions:
   contents: read
@@ -40,3 +43,6 @@ jobs:
           grep -F '#tiktokbrasil' /tmp/teste-telegram.txt
           grep -F '#ninamecontou' /tmp/teste-telegram.txt
           echo 'Validação local concluída. Nenhum arquivo foi enviado.'
+
+      - name: Testar falhas, duplicatas e retenção de mídia
+        run: python -m unittest discover -s tests -p test_telegram_nina.py -v
