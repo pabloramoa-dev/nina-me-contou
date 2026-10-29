@@ -1,0 +1,117 @@
+{
+  "id": "nina-cinema2d-20261029-o-pix-de-um-centavo",
+  "avulso": true,
+  "titulo": "O PIX DE UM CENTAVO",
+  "temporada": "Teste cinema 2D outubro 2026",
+  "cenario": "tarde",
+  "voice_engine": "kokoro",
+  "kokoro_voice": "pf_dora",
+  "kokoro_speed": 1.02,
+  "visual_style": "cinematic_2d",
+  "visual_images": {
+    "auto_visual_images": true,
+    "hide_inner_caption_when_image": true,
+    "bottom_caption_only": true,
+    "min_images": 6,
+    "max_images": 8,
+    "target_images": 8,
+    "fallback": "original_art"
+  },
+  "batidas": [
+    {
+      "fala": "Ela recebeu um PIX de um centavo com uma mensagem: não entregue a chave para o seu irmão. Duas horas depois, ele apareceu sorrindo na porta.",
+      "expr": "chocada",
+      "foto": "smartphone pix notification",
+      "zoom": true,
+      "hf": {
+        "titulo": "O PIX DE UM CENTAVO"
+      }
+    },
+    {
+      "fala": "Luísa tinha acabado de herdar da avó um pequeno apartamento junto com o irmão, Rafael. Os dois combinaram que ninguém faria nada com o imóvel sem conversar primeiro.",
+      "expr": "neutra",
+      "foto": "small apartment interior family photo",
+      "zoom": false,
+      "hf": {
+        "titulo": "O ACORDO DOS IRMÃOS"
+      }
+    },
+    {
+      "fala": "Naquela manhã, Rafael disse que passaria só para pegar umas caixas. Mas o nome de quem enviou o PIX fez Luísa parar: era a corretora que tinha mostrado o apartamento para a família.",
+      "expr": "desconfiada",
+      "foto": "real estate office keys",
+      "zoom": false,
+      "hf": {
+        "titulo": "QUEM AVISOU?"
+      }
+    },
+    {
+      "fala": "Luísa telefonou para a corretora. A mulher contou que Rafael havia marcado uma visita com possíveis inquilinos para aquela tarde. E o contrato já estava pronto, só faltava a assinatura.",
+      "expr": "chocada",
+      "foto": "rental contract on desk",
+      "zoom": true,
+      "hf": {
+        "titulo": "CONTRATO PRONTO?"
+      }
+    },
+    {
+      "fala": "Quando Rafael chegou, Luísa não abriu logo o portão. Perguntou se ele queria as caixas ou se tinha trazido alguém para conhecer a casa. O sorriso dele desapareceu.",
+      "expr": "desconfiada",
+      "foto": "house gate man with folder",
+      "zoom": false,
+      "hf": {
+        "titulo": "A PERGUNTA NO PORTÃO"
+      }
+    },
+    {
+      "fala": "Ele tentou explicar que seria uma surpresa boa. Alugaria o apartamento, ficaria com a primeira renda para pagar uma dívida e depois dividiria os próximos pagamentos com ela.",
+      "expr": "ironica",
+      "foto": "apartment keys bills calculator",
+      "zoom": false,
+      "hf": {
+        "titulo": "UMA SURPRESA BOA?"
+      }
+    },
+    {
+      "fala": "Só que a corretora também mandara uma foto do anúncio. No texto, Rafael aparecia como único proprietário. E havia outro detalhe: o anúncio oferecia os móveis antigos da avó como parte do aluguel.",
+      "expr": "chocada",
+      "foto": "vintage furniture family apartment",
+      "zoom": true,
+      "hf": {
+        "titulo": "OS MÓVEIS DA AVÓ"
+      }
+    },
+    {
+      "fala": "Luísa colocou a foto do anúncio sobre a mesa. Rafael ficou em silêncio. A irmã explicou que não estava discutindo apenas dinheiro: estava discutindo uma decisão tomada escondida, sobre algo dos dois.",
+      "expr": "brava",
+      "foto": "siblings conversation at kitchen table",
+      "zoom": false,
+      "hf": {
+        "titulo": "A FOTO NA MESA"
+      }
+    },
+    {
+      "fala": "A visita foi cancelada, e o anúncio saiu do ar. Rafael precisou procurar outra forma de resolver a dívida. Dias depois, os irmãos sentaram com papel, caneta e todas as contas para decidir o futuro do apartamento.",
+      "expr": "neutra",
+      "foto": "notebook pen apartment window",
+      "zoom": false,
+      "hf": {
+        "titulo": "AGORA, TUDO ÀS CLARAS"
+      }
+    },
+    {
+      "fala": "E sabe o que Luísa fez com aquele PIX de um centavo? Guardou o comprovante. Disse que tinha sido a consulta financeira mais barata e mais importante da vida. Você teria entregado a chave? Conta para a Nina!",
+      "expr": "ironica",
+      "foto": "smartphone keys coffee table",
+      "zoom": false,
+      "hf": {
+        "titulo": "VOCÊ ENTREGARIA A CHAVE?"
+      }
+    }
+  ],
+  "fim": "UM CENTAVO REVELOU TUDO",
+  "legenda_post": "Um PIX de apenas R$ 0,01 chegou com um aviso sobre o próprio irmão. E o que veio depois mudou tudo. 😳🔑 Você entregaria a chave? História fictícia, criada para entretenimento. #NinaMeContou #Storytime #Reviravolta #Historias",
+  "gancho_versao": "gancho-descoberta-20261026-v1",
+  "gancho_modelo": "abertura_direta_existente",
+  "publicar_automaticamente": false
+}
