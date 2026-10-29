@@ -13,5 +13,10 @@
     "hash": "3b85ff191c527deabc67927623d43a7c810beab3f96893b5b8bb9424f11fcab8",
     "status": "retry_video",
     "tentativas_incertas": 0
+  },
+  "ep048-p2": {
+    "hash": "9a490ef51219a07d2956e2576313fc5419244df440ff1b5659dd043ea359dec3",
+    "status": "sending_video",
+    "tentativas_incertas": 0
   }
 }
