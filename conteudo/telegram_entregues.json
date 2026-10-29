@@ -236,11 +236,12 @@
   },
   "ep113-p2": {
     "hash": "cb9683c6ca474f83444d90bff3765e224afcedd76ecdb6ff460928f27f4411d9",
-    "status": "sending_description",
-    "tentativas_incertas": 0,
+    "status": "complete",
     "telegram_message_id": 35,
     "file_id": "BQACAgEAAxkDAAMjauOnCseXHWOSJb9U5-416RGbcKQAAhULAAK5EhhHtqV1WAx9EnE9BA",
     "file_size": 19300351,
-    "comprimido": false
+    "comprimido": false,
+    "description_message_id": 36,
+    "entregue_em": "2026-10-29T20:05:35Z"
   }
 }
