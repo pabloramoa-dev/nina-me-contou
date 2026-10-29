@@ -176,7 +176,11 @@
   },
   "ep110-p2": {
     "hash": "f6c90fa90c27fecf7474b290f6a7094308cea90d6f2fdd5b8e82d333f244662f",
-    "status": "sending_video",
-    "tentativas_incertas": 0
+    "status": "video_sent",
+    "tentativas_incertas": 0,
+    "telegram_message_id": 23,
+    "file_id": "BQACAgEAAxkDAAMXauOmzxKm2YghR85t4Mn5ixAjf10AAg4LAAK5EhhH7B5Gvyp2r0Q9BA",
+    "file_size": 19071103,
+    "comprimido": false
   }
 }
