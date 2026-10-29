@@ -86,7 +86,7 @@
   },
   "ep106-p1": {
     "hash": "0a10171c837b48fe36739bab6c4f7dc368706327d54d69a4a58874b90dd5d9af",
-    "status": "video_sent",
+    "status": "sending_description",
     "tentativas_incertas": 0,
     "telegram_message_id": 5,
     "file_id": "BQACAgEAAxkDAAMFauOcf1AxfxOp1lC1KtPBaRzc-FIAAukKAAK5EhhHFxom4CyDnTU9BA",
