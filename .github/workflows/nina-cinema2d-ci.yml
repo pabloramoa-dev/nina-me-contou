@@ -1,0 +1,57 @@
+name: Nina - validar cinema 2D em CPU (sem publicar)
+on:
+  push:
+    branches: [feat/nina-cinema2d-20261029, main]
+    paths:
+      - 'motor/cinematic_story_art.py'
+      - 'motor/visual_images.py'
+      - 'motor/remotion_final.py'
+      - 'motor/render_version.py'
+      - 'video/remotion/src/NinaUpgrade.tsx'
+      - 'tests/test_nina_cinema2d.py'
+      - '.github/workflows/nina-cinema2d-ci.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'motor/cinematic_story_art.py'
+      - 'motor/visual_images.py'
+      - 'motor/remotion_final.py'
+      - 'motor/render_version.py'
+      - 'video/remotion/src/NinaUpgrade.tsx'
+      - 'tests/test_nina_cinema2d.py'
+permissions:
+  contents: read
+jobs:
+  imagens-e-composicao:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          sparse-checkout: |
+            motor
+            tests
+            tools
+            video/remotion
+          sparse-checkout-cone-mode: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Instalar dependencias minimas (sem APIs)
+        run: |
+          python -m pip install pillow requests
+          npm install --prefix video/remotion --no-audit --no-fund
+      - name: Verificar imagens 2D por cena, intervalos e rollback
+        run: |
+          python -m compileall -q motor/cinematic_story_art.py motor/visual_images.py motor/remotion_final.py motor/render_version.py
+          python -m unittest discover -s tests -p test_nina_cinema2d.py -v
+          python -m unittest discover -s tests -p test_remotion_prod.py -v
+          python -m unittest discover -s tests -p test_nina_imagens_cpu.py -v
+      - name: Compilar compositor Remotion sem renderizar ou publicar
+        run: |
+          cd video/remotion
+          npx --no-install remotion bundle src/index.ts /tmp/nina-cinema-bundle --log=error
