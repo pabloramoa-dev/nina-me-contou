@@ -186,11 +186,12 @@
   },
   "ep111-p1": {
     "hash": "ec0e96bb8392944158a1d6dc554279e56d7eccd42a038f9ae8ebc6837052f836",
-    "status": "sending_description",
-    "tentativas_incertas": 0,
+    "status": "complete",
     "telegram_message_id": 25,
     "file_id": "BQACAgEAAxkDAAMZauOm2SyNR1mjiQPE4NmyvsvDsSwAAg8LAAK5EhhHhbYfl_UNekM9BA",
     "file_size": 18491445,
-    "comprimido": false
+    "comprimido": false,
+    "description_message_id": 26,
+    "entregue_em": "2026-10-29T20:04:45Z"
   }
 }
