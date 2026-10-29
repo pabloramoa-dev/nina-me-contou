@@ -19,11 +19,14 @@ Arquivos acima de 49 MB recebem uma cópia comprimida; o original é preservado.
 Todas as execuções de entrega usam a mesma trava de concorrência.
 
 Cada etapa grava e envia um checkpoint ao Git antes de avançar. O recibo distingue
-vídeo e descrição. Rejeições explícitas do Telegram podem ser repetidas na próxima
-execução. Quando ocorre timeout ou interrupção sem resposta, o estado permanece
-`sending_video` ou `sending_description`: exige conferência manual antes de repetir,
-pois a API não oferece uma chave de idempotência para garantir envio exatamente uma vez.
-Nunca redefina esses estados sem conferir a conversa do destinatário.
+vídeo e descrição. Rejeições explícitas do Telegram são repetidas na próxima execução.
+Quando ocorre timeout ou interrupção sem resposta, o estado fica `sending_video` ou
+`sending_description`; a execução seguinte repete automaticamente (até 3 vezes) para a
+fila não travar. Se a descrição falhou, só a descrição é reenviada, nunca o vídeo.
+Um MP4 com problema não impede a entrega dos demais; a execução termina com erro para avisar.
+
+A descrição para TikTok vem como resposta ao próprio vídeo, com título, "Parte X/2",
+texto do episódio, CTA para a parte 2 e hashtags da história, da temporada e do canal.
 
 A limpeza só remove o conjunto de mídia quando existe um recibo completo cujo
 SHA-256 corresponde ao MP4 atual. Renders novos ou entregas pendentes ficam protegidos.
