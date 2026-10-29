@@ -3,13 +3,14 @@
   "hide_inner_caption_when_image": true,
   "bottom_caption_only": true,
   "min_images": 4,
-  "max_images": 8,
-  "target_images": 6,
-  "image_model": "gpt-image-2",
+  "max_images": 10,
+  "target_images": 10,
+  "image_model": "black-forest-labs/FLUX.1-schnell",
   "image_quality": "medium",
-  "image_size": "1536x1024",
-  "image_background": "transparent",
+  "image_size": "768x512",
+  "image_background": "opaque",
   "image_timeout_seconds": 180,
-  "image_retries": 1,
-  "fallback": "story_frame_text"
+  "image_retries": 0,
+  "fallback": "story_frame_text",
+  "image_provider": "siliconflow"
 }
