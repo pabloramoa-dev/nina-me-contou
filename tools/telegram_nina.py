@@ -28,25 +28,55 @@ RX_MP4 = re.compile(r"^ep\d{3,}-p[12]\.mp4$")
 MAX_UPLOAD = 49_000_000  # margem de segurança para o limite padrão de 50 MB dos bots
 
 
+TAGS_TEMPORADA = {
+    "casais": ["#casais", "#relacionamento", "#traicao"],
+    "trabalho": ["#trabalho", "#colegasdetrabalho", "#escritorio"],
+    "segredos": ["#segredos", "#misterio", "#reviravolta"],
+    "amizades": ["#amizade", "#amigas", "#falsaamizade"],
+    "familia": ["#familia", "#dramafamiliar", "#parentes"],
+    "família": ["#familia", "#dramafamiliar", "#parentes"],
+    "vizinhos": ["#vizinhos", "#condominio"],
+    "superacao": ["#superacao", "#motivacao"],
+    "superação": ["#superacao", "#motivacao"],
+}
+TAGS_FIXAS = ["#ninamecontou", "#historia", "#storytime", "#fyp", "#parati", "#tiktokbrasil"]
+RX_TAG = re.compile(r"#[\wÀ-ÿ]+", re.UNICODE)
+
+
+def hashtags_historia(episodio: dict, texto: str) -> list[str]:
+    """Hashtags da própria história + temporada + fixas do canal, sem repetir."""
+    tags: list[str] = []
+    temporada = str(episodio.get("temporada", "")).strip().lower()
+    candidatas = RX_TAG.findall(texto) + TAGS_TEMPORADA.get(temporada, []) + TAGS_FIXAS
+    for tag in candidatas:
+        if tag.lower() not in {t.lower() for t in tags}:
+            tags.append(tag)
+    return tags[:12]
+
+
 def descricao_tiktok(episodio: dict) -> str:
-    """Legenda editável, com os detalhes reais do roteiro e sem spoilers adicionados."""
+    """Legenda pronta para TikTok, com os detalhes reais do roteiro."""
     titulo = str(episodio.get("titulo", "História da Nina")).strip()
     parte = str(episodio.get("parte", "")).strip()
-    cabecalho = f"{titulo} — Parte {parte}" if parte in ("1", "2") else titulo
+    cabecalho = f"{titulo} — Parte {parte}/2" if parte in ("1", "2") else titulo
     texto = str(episodio.get("legenda_post", "")).strip()
     if not texto:
         batidas = episodio.get("batidas") or []
         texto = str((batidas[0] if batidas else {}).get("fala", "")).strip()
         texto += "\n\nO que você faria? Conte nos comentários."
         texto += "\n\nHistória de ficção."
-    tags = [] if "#ninamecontou" in texto.lower() else ["#ninamecontou"]
-    if "#tiktokbrasil" not in texto.lower():
-        tags.append("#tiktokbrasil")
-    descricao = cabecalho + "\n\n" + texto
-    if tags:
-        descricao += "\n\n" + " ".join(tags)
-    # A mensagem é isolada para facilitar copiar e colar no TikTok.
-    return descricao[:3900]
+    tags = hashtags_historia(episodio, texto)
+    # Remove as hashtags do corpo: elas vão juntas, numa linha só, no final.
+    so_tags = lambda linha: bool(linha.split()) and all(w.startswith("#") for w in linha.split())
+    corpo = "\n".join(l for l in texto.splitlines() if not so_tags(l))
+    corpo = re.sub(r"\n{3,}", "\n\n", corpo).strip()
+    # Corrige a crase/contração que o gerador de roteiros às vezes deixa ("a o", "a a").
+    corpo = re.sub(r"\ba o\b", "ao", corpo)
+    corpo = re.sub(r"\ba a\b", "à", corpo)
+    if parte == "1":
+        corpo = corpo.replace("A continuação está no perfil.", "Me segue pra ver a parte 2 — já está no perfil.")
+    descricao = f"{cabecalho}\n\n{corpo}\n\n{' '.join(tags)}"
+    return descricao[:2200]  # limite da legenda do TikTok
 
 
 class TelegramRejected(RuntimeError):
@@ -139,6 +169,89 @@ def recibos_salvar(dados: dict, persistir: bool = False) -> None:
         raise RuntimeError("Falha ao persistir recibo; interrompendo para evitar duplicatas")
 
 
+MAX_TENTATIVAS_INCERTAS = 3
+
+
+def hash_arquivo(video: Path) -> str:
+    digest = hashlib.sha256()
+    with video.open("rb") as stream:
+        for chunk in iter(lambda: stream.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def entregar(video: Path, token: str, chat_id: str, recebidos: dict, persistir: bool, tmp: Path) -> bool:
+    """Entrega um MP4 + descrição. Retorna True se algo foi enviado agora."""
+    episodio_path = ROOT / "episodios" / f"{video.stem}.json"
+    if not episodio_path.exists():
+        raise FileNotFoundError(f"Roteiro do MP4 não encontrado: {episodio_path.name}")
+    episodio = json.loads(episodio_path.read_text(encoding="utf-8"))
+    descricao = descricao_tiktok(episodio)
+    hash_mp4 = hash_arquivo(video)
+    recibo = recebidos.get(video.stem, {})
+    mesmo = recibo.get("hash") == hash_mp4
+    if mesmo and (recibo.get("status") == "complete" or ("status" not in recibo and recibo.get("telegram_message_id"))):
+        print(f"Já entregue: {video.name}")
+        return False
+
+    if mesmo and recibo.get("status") in ("sending_video", "sending_description"):
+        # Execução anterior caiu sem resposta do Telegram (timeout/runner cancelado).
+        # Repetir é melhor do que travar a fila para sempre; no máximo 3 vezes.
+        tentativas = int(recibo.get("tentativas_incertas", 0)) + 1
+        if tentativas > MAX_TENTATIVAS_INCERTAS:
+            raise RuntimeError(f"{video.name}: {MAX_TENTATIVAS_INCERTAS} envios sem confirmação; conferir o Telegram")
+        print(f"::warning::{video.name}: envio anterior sem confirmação; repetindo (tentativa {tentativas})")
+        recibo["tentativas_incertas"] = tentativas
+        if recibo["status"] == "sending_video":
+            recibo.pop("telegram_message_id", None)
+        else:
+            recibo["status"] = "video_sent"
+
+    if not (mesmo and recibo.get("telegram_message_id")):
+        arquivo = preparar_arquivo(video, tmp)
+        validar_mp4(arquivo)
+        recibo = {"hash": hash_mp4, "status": "sending_video",
+                  "tentativas_incertas": recibo.get("tentativas_incertas", 0) if mesmo else 0}
+        recebidos[video.stem] = recibo
+        recibos_salvar(recebidos, persistir)
+        parte = episodio.get("parte", "?")
+        legenda = (f"🎬 Nina Me Contou — {video.stem}\n"
+                   f"Episódio {episodio.get('ep', '?')} · Parte {parte}/2 · {episodio.get('titulo', '')}\n"
+                   f"Temporada: {episodio.get('temporada', '-')}\n"
+                   "MP4 pronto para baixar. A descrição do TikTok vem na próxima mensagem.")
+        try:
+            resultado = http_telegram(token, "sendDocument", {"chat_id": chat_id, "caption": legenda[:1000]}, arquivo=arquivo)
+        except TelegramRejected:
+            recibo["status"] = "retry_video"
+            recibos_salvar(recebidos, persistir)
+            raise
+        if not resultado.get("message_id") or not resultado.get("document", {}).get("file_id"):
+            raise RuntimeError("Telegram não confirmou o documento")
+        recibo.update(status="video_sent", telegram_message_id=resultado["message_id"],
+                      file_id=resultado["document"]["file_id"],
+                      file_size=resultado["document"].get("file_size"),
+                      comprimido=arquivo != video)
+        recibos_salvar(recebidos, persistir)
+    time.sleep(1.1)
+    recibo["status"] = "sending_description"
+    recibos_salvar(recebidos, persistir)
+    try:
+        mensagem = http_telegram(token, "sendMessage", {
+            "chat_id": chat_id, "text": descricao,
+            "reply_to_message_id": recibo["telegram_message_id"],
+            "allow_sending_without_reply": "true"})
+    except TelegramRejected:
+        recibo["status"] = "video_sent"
+        recibos_salvar(recebidos, persistir)
+        raise
+    recibo.update(status="complete", description_message_id=mensagem["message_id"],
+                  entregue_em=time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()))
+    recibo.pop("tentativas_incertas", None)
+    recibos_salvar(recebidos, persistir)
+    print(f"Entregue {video.name} e descrição para TikTok")
+    return True
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--video-dir", type=Path, default=ROOT / "entrega_nina")
@@ -156,71 +269,35 @@ def main() -> int:
         print("::error::Configure TELEGRAM_BOT_TOKEN_NINA e TELEGRAM_CHAT_ID_NINA.")
         return 1
 
-    recebidos = recibos_ler()
-    enviados = 0
-    with tempfile.TemporaryDirectory(prefix="nina-telegram-") as tmp:
+    if args.dry_run:
         for video in videos:
-            # O workflow já concluiu o render e baixou o artifact. Confirmar
-            # também que o MP4 contém áudio e vídeo antes de qualquer envio.
             validar_mp4(video)
             episodio_path = ROOT / "episodios" / f"{video.stem}.json"
             if not episodio_path.exists():
                 raise FileNotFoundError(f"Roteiro do MP4 não encontrado: {episodio_path.name}")
             episodio = json.loads(episodio_path.read_text(encoding="utf-8"))
-            descricao = descricao_tiktok(episodio)
-            with video.open("rb") as stream:
-                digest = hashlib.sha256()
-                for chunk in iter(lambda: stream.read(1024 * 1024), b""):
-                    digest.update(chunk)
-                hash_mp4 = digest.hexdigest()
-            recibo = recebidos.get(video.stem, {})
-            mesmo = recibo.get("hash") == hash_mp4
-            completo = recibo.get("status") == "complete" or ("status" not in recibo and recibo.get("telegram_message_id"))
-            if mesmo and completo and not args.dry_run:
-                print(f"Já entregue: {video.name}")
-                continue
-            if args.dry_run:
-                print(f"DRY RUN {video.name}\n{descricao}\n")
-                continue
+            print(f"DRY RUN {video.name}\n{descricao_tiktok(episodio)}\n")
+        return 0
 
+    recebidos = recibos_ler()
+    enviados = 0
+    falhas: list[str] = []
+    with tempfile.TemporaryDirectory(prefix="nina-telegram-") as tmp:
+        for video in videos:
             if args.limit and enviados >= args.limit:
                 break
-            if mesmo and recibo.get("status") in ("sending_video", "sending_description"):
-                raise RuntimeError(f"{video.name}: envio com resultado incerto; conferir Telegram antes de repetir")
-            if not (mesmo and recibo.get("telegram_message_id")):
-                arquivo = preparar_arquivo(video, Path(tmp))
-                validar_mp4(arquivo)
-                recibo = {"hash": hash_mp4, "status": "sending_video"}
-                recebidos[video.stem] = recibo
-                recibos_salvar(recebidos, args.persist_receipts)
-                cabecalho = f"🎬 Nina Me Contou — {video.stem} | {episodio.get('titulo', video.stem)} | Parte {episodio.get('parte', '?')}\nMP4 para baixar. Descrição na próxima mensagem."
-                try:
-                    resultado = http_telegram(token, "sendDocument", {"chat_id": chat_id, "caption": cabecalho[:1000]}, arquivo=arquivo)
-                except TelegramRejected:
-                    recibo["status"] = "retry_video"
-                    recibos_salvar(recebidos, args.persist_receipts)
-                    raise
-                if not resultado.get("message_id") or not resultado.get("document", {}).get("file_id"):
-                    raise RuntimeError("Telegram não confirmou o documento")
-                recibo.update(status="video_sent", telegram_message_id=resultado["message_id"],
-                              file_id=resultado["document"]["file_id"],
-                              file_size=resultado["document"].get("file_size"))
-                recibos_salvar(recebidos, args.persist_receipts)
-            time.sleep(1.1)
-            recibo["status"] = "sending_description"
-            recibos_salvar(recebidos, args.persist_receipts)
             try:
-                mensagem = http_telegram(token, "sendMessage", {"chat_id": chat_id, "text": f"{video.stem}\n\n{descricao}"})
-            except TelegramRejected:
-                recibo["status"] = "video_sent"
-                recibos_salvar(recebidos, args.persist_receipts)
-                raise
-            recibo.update(status="complete", description_message_id=mensagem["message_id"])
-            recibos_salvar(recebidos, args.persist_receipts)
-            enviados += 1
-            print(f"Entregue {video.name} e descrição para TikTok")
-    print(f"Enviados: {enviados}; MP4 novos encontrados: {len(videos)}")
-    return 0
+                # O MP4 só existe em reels/ depois que o render terminou e foi
+                # gravado; ainda assim confere áudio, vídeo e duração.
+                validar_mp4(video)
+                if entregar(video, token, chat_id, recebidos, args.persist_receipts, Path(tmp)):
+                    enviados += 1
+            except Exception as exc:  # um vídeo com problema não trava os outros
+                msg = str(exc).replace(token, "[REDACTED]") if token else str(exc)
+                print(f"::error::{video.name}: {msg}")
+                falhas.append(video.name)
+    print(f"Enviados: {enviados}; MP4 encontrados: {len(videos)}; falhas: {len(falhas)}")
+    return 1 if falhas else 0
 
 
 if __name__ == "__main__":
