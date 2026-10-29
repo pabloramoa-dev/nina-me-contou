@@ -24,7 +24,7 @@ import requests
 
 ROOT = Path(__file__).resolve().parents[1]
 RECIBOS = ROOT / "conteudo" / "telegram_entregues.json"
-RX_MP4 = re.compile(r"^ep\d{3}-p[12]\.mp4$")
+RX_MP4 = re.compile(r"^ep\d{3,}-p[12]\.mp4$")
 MAX_UPLOAD = 49_000_000  # margem de segurança para o limite padrão de 50 MB dos bots
 
 
@@ -49,6 +49,10 @@ def descricao_tiktok(episodio: dict) -> str:
     return descricao[:3900]
 
 
+class TelegramRejected(RuntimeError):
+    """Telegram confirmou que não aceitou a mensagem; pode tentar novamente."""
+
+
 def http_telegram(token: str, method: str, data: dict, arquivo: Path | None = None) -> dict:
     url = f"https://api.telegram.org/bot{token}/{method}"
     try:
@@ -66,8 +70,8 @@ def http_telegram(token: str, method: str, data: dict, arquivo: Path | None = No
         # A URL de exceções HTTP pode conter o token: nunca imprimi-la.
         raise RuntimeError(f"Falha ao acessar Telegram ({type(exc).__name__})") from None
     if not response.ok or not result.get("ok"):
-        erro = str(result.get("description", "erro sem detalhes"))[:200]
-        raise RuntimeError(f"Telegram rejeitou {method}: {erro}")
+        erro = str(result.get("description", "erro sem detalhes")).replace(token, "[REDACTED]")[:200]
+        raise TelegramRejected(f"Telegram rejeitou {method}: {erro}")
     return result["result"]
 
 
@@ -117,10 +121,30 @@ def recibos_ler() -> dict:
     return {}
 
 
+def recibos_salvar(dados: dict, persistir: bool = False) -> None:
+    RECIBOS.parent.mkdir(parents=True, exist_ok=True)
+    tmp = RECIBOS.with_suffix(".tmp")
+    tmp.write_text(json.dumps(dados, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    tmp.replace(RECIBOS)
+    if persistir:
+        subprocess.run(["git", "add", str(RECIBOS)], cwd=ROOT, check=True)
+        if subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=ROOT).returncode == 0:
+            return
+        subprocess.run(["git", "commit", "-m", "telegram: checkpoint de entrega [skip ci]"], cwd=ROOT, check=True)
+        for _ in range(5):
+            pull = subprocess.run(["git", "pull", "--rebase", "origin", "main"], cwd=ROOT)
+            if pull.returncode == 0 and subprocess.run(["git", "push", "origin", "HEAD:main"], cwd=ROOT).returncode == 0:
+                return
+            time.sleep(3)
+        raise RuntimeError("Falha ao persistir recibo; interrompendo para evitar duplicatas")
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--video-dir", type=Path, default=ROOT / "entrega_nina")
     parser.add_argument("--dry-run", action="store_true", help="Mostra legendas sem enviar")
+    parser.add_argument("--persist-receipts", action="store_true")
+    parser.add_argument("--limit", type=int, default=0)
     args = parser.parse_args()
     videos = sorted(p for p in args.video_dir.glob("*.mp4") if RX_MP4.fullmatch(p.name))
     if not videos:
@@ -129,8 +153,8 @@ def main() -> int:
     token = os.environ.get("TELEGRAM_BOT_TOKEN_NINA", "").strip()
     chat_id = os.environ.get("TELEGRAM_CHAT_ID_NINA", "").strip()
     if not args.dry_run and (not token or not chat_id):
-        print("::warning::Envio Telegram ainda não ativado: configure os dois GitHub Secrets.")
-        return 0
+        print("::error::Configure TELEGRAM_BOT_TOKEN_NINA e TELEGRAM_CHAT_ID_NINA.")
+        return 1
 
     recebidos = recibos_ler()
     enviados = 0
@@ -149,34 +173,50 @@ def main() -> int:
                 for chunk in iter(lambda: stream.read(1024 * 1024), b""):
                     digest.update(chunk)
                 hash_mp4 = digest.hexdigest()
-            if recebidos.get(video.stem, {}).get("hash") == hash_mp4:
+            recibo = recebidos.get(video.stem, {})
+            mesmo = recibo.get("hash") == hash_mp4
+            completo = recibo.get("status") == "complete" or ("status" not in recibo and recibo.get("telegram_message_id"))
+            if mesmo and completo and not args.dry_run:
                 print(f"Já entregue: {video.name}")
                 continue
             if args.dry_run:
                 print(f"DRY RUN {video.name}\n{descricao}\n")
                 continue
 
-            arquivo = preparar_arquivo(video, Path(tmp))
-            validar_mp4(arquivo)
-            cabecalho = f"🎬 Nina Me Contou — {episodio.get('titulo', video.stem)} | Parte {episodio.get('parte', '?')}\nMP4 para publicar no TikTok. Descrição na próxima mensagem."
-            resultado = http_telegram(
-                token, "sendDocument",
-                {"chat_id": chat_id, "caption": cabecalho[:1000]},
-                arquivo=arquivo,
-            )
-            # Evitar ultrapassar a taxa de mensagens da conversa no Telegram.
+            if args.limit and enviados >= args.limit:
+                break
+            if mesmo and recibo.get("status") in ("sending_video", "sending_description"):
+                raise RuntimeError(f"{video.name}: envio com resultado incerto; conferir Telegram antes de repetir")
+            if not (mesmo and recibo.get("telegram_message_id")):
+                arquivo = preparar_arquivo(video, Path(tmp))
+                validar_mp4(arquivo)
+                recibo = {"hash": hash_mp4, "status": "sending_video"}
+                recebidos[video.stem] = recibo
+                recibos_salvar(recebidos, args.persist_receipts)
+                cabecalho = f"🎬 Nina Me Contou — {video.stem} | {episodio.get('titulo', video.stem)} | Parte {episodio.get('parte', '?')}\nMP4 para baixar. Descrição na próxima mensagem."
+                try:
+                    resultado = http_telegram(token, "sendDocument", {"chat_id": chat_id, "caption": cabecalho[:1000]}, arquivo=arquivo)
+                except TelegramRejected:
+                    recibo["status"] = "retry_video"
+                    recibos_salvar(recebidos, args.persist_receipts)
+                    raise
+                if not resultado.get("message_id") or not resultado.get("document", {}).get("file_id"):
+                    raise RuntimeError("Telegram não confirmou o documento")
+                recibo.update(status="video_sent", telegram_message_id=resultado["message_id"],
+                              file_id=resultado["document"]["file_id"],
+                              file_size=resultado["document"].get("file_size"))
+                recibos_salvar(recebidos, args.persist_receipts)
             time.sleep(1.1)
-            # Enviar texto separado: o usuário copia apenas a legenda no TikTok.
-            http_telegram(token, "sendMessage", {"chat_id": chat_id, "text": descricao})
-            recebidos[video.stem] = {
-                "hash": hash_mp4,
-                "telegram_message_id": resultado.get("message_id"),
-            }
-            RECIBOS.parent.mkdir(parents=True, exist_ok=True)
-            RECIBOS.write_text(
-                json.dumps(recebidos, ensure_ascii=False, indent=2) + "\n",
-                encoding="utf-8",
-            )
+            recibo["status"] = "sending_description"
+            recibos_salvar(recebidos, args.persist_receipts)
+            try:
+                mensagem = http_telegram(token, "sendMessage", {"chat_id": chat_id, "text": f"{video.stem}\n\n{descricao}"})
+            except TelegramRejected:
+                recibo["status"] = "video_sent"
+                recibos_salvar(recebidos, args.persist_receipts)
+                raise
+            recibo.update(status="complete", description_message_id=mensagem["message_id"])
+            recibos_salvar(recebidos, args.persist_receipts)
             enviados += 1
             print(f"Entregue {video.name} e descrição para TikTok")
     print(f"Enviados: {enviados}; MP4 novos encontrados: {len(videos)}")
@@ -185,3 +225,4 @@ def main() -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
+
