@@ -62,7 +62,10 @@ def finalizar(ep, pasta, raiz):
         raise ValueError("NINA_STORY_STYLE invalido")
     frames = []
     if estilo == "cinematic_2d":
-        from cinematic_story_art import preparar_quadros
+        try:
+            from .cinematic_story_art import preparar_quadros
+        except ImportError:
+            from cinematic_story_art import preparar_quadros
         report_path = pasta / "visual_images.json"
         report = json.loads(report_path.read_text(encoding="utf-8")) if report_path.exists() else {}
         frames = preparar_quadros(ep, segs, duration, public, base_assets=base, visual_report=report)
