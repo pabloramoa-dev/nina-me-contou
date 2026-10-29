@@ -222,16 +222,21 @@ def entregar(video: Path, token: str, chat_id: str, recebidos: dict, persistir: 
                    f"Temporada: {episodio.get('temporada', '-')}\n"
                    "MP4 pronto para baixar. A descrição do TikTok vem na próxima mensagem.")
         try:
-            resultado = http_telegram(token, "sendDocument", {"chat_id": chat_id, "caption": legenda[:1000]}, arquivo=arquivo)
+            resultado = http_telegram(token, "sendDocument", {"chat_id": chat_id, "caption": legenda[:1000],
+                                     "disable_content_type_detection": "true"}, arquivo=arquivo)
         except TelegramRejected:
             recibo["status"] = "retry_video"
             recibos_salvar(recebidos, persistir)
             raise
-        if not resultado.get("message_id") or not resultado.get("document", {}).get("file_id"):
-            raise RuntimeError("Telegram não confirmou o documento")
+        # Dependendo do arquivo, o Telegram devolve o MP4 em "document", "video"
+        # ou "animation". Qualquer um com file_id confirma que o arquivo chegou.
+        midia = next((resultado[k] for k in ("document", "video", "animation")
+                      if isinstance(resultado.get(k), dict) and resultado[k].get("file_id")), None)
+        if not resultado.get("message_id") or midia is None:
+            raise RuntimeError("Telegram não confirmou o arquivo")
         recibo.update(status="video_sent", telegram_message_id=resultado["message_id"],
-                      file_id=resultado["document"]["file_id"],
-                      file_size=resultado["document"].get("file_size"),
+                      file_id=midia["file_id"],
+                      file_size=midia.get("file_size"),
                       comprimido=arquivo != video)
         recibos_salvar(recebidos, persistir)
     time.sleep(1.1)
