@@ -196,7 +196,7 @@
   },
   "ep111-p2": {
     "hash": "8c151b65dec22fca7850d5ea73a6ccd6471f70d92f65298a63e73dcd71e04231",
-    "status": "video_sent",
+    "status": "sending_description",
     "tentativas_incertas": 0,
     "telegram_message_id": 27,
     "file_id": "BQACAgEAAxkDAAMbauOm4_UFP9-BwHKI9IAObsmvAyYAAhALAAK5EhhHkKEhvnoiUeo9BA",
