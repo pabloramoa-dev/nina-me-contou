@@ -9,7 +9,7 @@
   ],
   "fps": 30,
   "voz": "pf_dora",
-  "audio": "pedalboard",
+  "audio": "ffmpeg",
   "sfx": 46,
   "visual": "v4",
   "lip": "rhubarb",

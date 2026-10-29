@@ -2,14 +2,14 @@
   "motor": "remotion",
   "versao": "nina-hyperframes-8-direcao-gratuita-qa",
   "fotos": 0,
-  "duracao": 27.833333333333332,
+  "duracao": 27.8,
   "resolucao": [
     1080,
     1920
   ],
   "fps": 30,
   "voz": "pf_dora",
-  "audio": "pedalboard",
+  "audio": "ffmpeg",
   "sfx": 10,
   "visual": "v4",
   "lip": "rhubarb",
