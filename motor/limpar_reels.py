@@ -12,6 +12,7 @@ Uso:
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import re
 from pathlib import Path
@@ -83,8 +84,21 @@ def limpar(alvo: int = 8, simular: bool = False) -> dict:
     grupos = arquivos_por_id()
     manter = selecionar_mantidos(alvo, feitos, grupos)
 
+    recibos_path = RAIZ / "conteudo" / "telegram_entregues.json"
+    recibos = json.loads(recibos_path.read_text(encoding="utf-8")) if recibos_path.exists() else {}
     remover: list[Path] = []
     for ep_id, arquivos in grupos.items():
+        video = REELS / f"{ep_id}.mp4"
+        recibo = recibos.get(ep_id, {})
+        completo = recibo.get("status") == "complete" or ("status" not in recibo and recibo.get("telegram_message_id"))
+        if not completo or not video.exists():
+            manter.add(ep_id)
+            continue
+        with video.open("rb") as stream:
+            digest = hashlib.file_digest(stream, "sha256").hexdigest()
+        if recibo.get("hash") != digest:
+            manter.add(ep_id)
+            continue
         if ep_id in feitos or ep_id not in manter:
             remover.extend(arquivos)
 
@@ -113,3 +127,4 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
