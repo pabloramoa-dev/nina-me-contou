@@ -70,6 +70,24 @@ class NinaCinema2D(unittest.TestCase):
             self.assertEqual(out[2]["origin"],"approved")
             self.assertEqual(out[3]["origin"],"cinematic_cpu")
 
+    def test_imagens_api_substituem_quadros_cpu_no_painel_superior(self):
+        with tempfile.TemporaryDirectory() as folder:
+            base=Path(folder)/"assets"
+            base.mkdir()
+            Image.new("RGB",(768,512),"orange").save(base/"visual-scene-00.png")
+            Image.new("RGB",(768,512),"skyblue").save(base/"visual-scene-01.png")
+            manifest={"scenes":[
+                {"status":"generated","start":0,"end":15,"asset":"visual-scene-00.png"},
+                {"status":"cache","start":15,"end":23,"asset":"visual-scene-01.png"},
+            ]}
+            out=C.preparar_quadros(self.ep,self.segs,23,Path(folder)/"public",
+                                   base_assets=base,visual_report=manifest)
+            self.assertEqual([x["origin"] for x in out], ["generated","generated","generated","cache"])
+            self.assertEqual(Image.open(Path(folder)/"public"/out[0]["src"]).getpixel((50,50)),
+                             (255,165,0))
+            self.assertEqual(Image.open(Path(folder)/"public"/out[3]["src"]).getpixel((50,50)),
+                             (135,206,235))
+
     def test_fallback_grafico_gratuito_sem_rede(self):
         import os
         with tempfile.TemporaryDirectory() as folder:

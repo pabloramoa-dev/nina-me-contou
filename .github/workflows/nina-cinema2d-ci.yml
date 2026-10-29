@@ -9,6 +9,9 @@ on:
       - 'motor/render_version.py'
       - 'video/remotion/src/NinaUpgrade.tsx'
       - 'tests/test_nina_cinema2d.py'
+      - 'tests/test_siliconflow_nina.py'
+      - 'motor/visual_images.json'
+      - 'motor/cena_hyperframes.py'
       - '.github/workflows/nina-cinema2d-ci.yml'
   pull_request:
     branches: [main]
@@ -19,6 +22,9 @@ on:
       - 'motor/render_version.py'
       - 'video/remotion/src/NinaUpgrade.tsx'
       - 'tests/test_nina_cinema2d.py'
+      - 'tests/test_siliconflow_nina.py'
+      - 'motor/visual_images.json'
+      - 'motor/cena_hyperframes.py'
 permissions:
   contents: read
 jobs:
@@ -49,6 +55,7 @@ jobs:
         run: |
           python -m compileall -q motor/cinematic_story_art.py motor/visual_images.py motor/remotion_final.py motor/render_version.py
           python -m unittest discover -s tests -p test_nina_cinema2d.py -v
+          python -m unittest discover -s tests -p test_siliconflow_nina.py -v
           python -m unittest discover -s tests -p test_remotion_prod.py -v
           python -m unittest discover -s tests -p test_nina_imagens_cpu.py -v
       - name: Compilar compositor Remotion sem renderizar ou publicar

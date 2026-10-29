@@ -136,6 +136,9 @@ jobs:
         id: r
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          SILICONFLOW_API_KEY: ${{ secrets.SILICONFLOW_API_KEY }}
+          # Só libera cobrança com variável do repositório explicitamente igual a 1
+          NINA_ALLOW_PAID_IMAGE_API: ${{ vars.NINA_ALLOW_PAID_IMAGE_API || '0' }}
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}   # opcional (fotos "banco"); sem ela usa Openverse CC0
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }} # opcional
         run: |
