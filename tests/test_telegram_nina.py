@@ -87,6 +87,17 @@ class DeliveryTests(unittest.TestCase):
             self.assertIn(tag, d)
         self.assertEqual(d.count('#storytime'), 1)
         self.assertIn('parte 2', d)
+    def test_config_error_stops_and_limit_counts_attempts(self):
+        other = self.video_dir / 'ep046-p1.mp4'
+        other.write_bytes(self.video.read_bytes())
+        (self.root / 'episodios/ep046-p1.json').write_text(json.dumps({'titulo': 'B', 'parte': 1}))
+        with patch.object(tg, 'http_telegram', side_effect=tg.TelegramRejected('Telegram rejeitou sendDocument: Bad Request: chat not found')) as api:
+            self.assertEqual(self.run_delivery(), 1)
+            self.assertEqual(api.call_count, 1)
+        with patch.object(sys, 'argv', ['telegram_nina', '--video-dir', str(self.video_dir), '--limit', '1']), \
+             patch.object(tg, 'http_telegram', side_effect=RuntimeError('timeout')) as api:
+            self.assertEqual(tg.main(), 1)
+            self.assertEqual(api.call_count, 1)
     def test_invalid_video_rejected(self):
         self.video.write_bytes(b'x' * 2048)
         with patch.object(tg, 'http_telegram') as api:
