@@ -38,5 +38,10 @@
     "hash": "9e40cc1c2dc9a9610f053c97e58b8229bdd4577b4112ba1bbc727ece3872ddde",
     "status": "retry_video",
     "tentativas_incertas": 0
+  },
+  "ep051-p1": {
+    "hash": "a53d8241a599123df21d4702a221c0bd6b8b6dfbdf0cdcd544a6bd89bf277550",
+    "status": "sending_video",
+    "tentativas_incertas": 0
   }
 }
