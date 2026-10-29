@@ -1,28 +1,42 @@
-# Nina Me Contou — receber MP4 + descrição para TikTok no Telegram
+# Entrega automática dos MP4s da Nina
 
-Este fluxo **não publica no TikTok**: manda o arquivo MP4 para baixar no seu Telegram e, logo depois, uma mensagem com a descrição pronta para copiar.
+O Instagram mantém seu fluxo existente. Nenhum vídeo é publicado automaticamente no TikTok.
 
-## Ativar uma única vez
+## Configuração
 
-1. No Telegram, procure o bot oficial **@BotFather** (conta verificada) e envie `/newbot`. Escolha um nome e um nome de usuário para o seu bot. O BotFather fornece um token secreto. **Não mande esse token no ChatGPT, em mensagens públicas, em commits nem nos logs do GitHub.**
-2. Abra a conversa privada com o bot recém-criado e toque em **Iniciar** ou envie `/start`. Bots não podem iniciar conversas privadas antes de você fazer isso.
-3. Obtenha o seu `chat_id` privado usando o método `getUpdates` da API oficial do Telegram, com o token **somente em um ambiente privado** (ex.: uma sessão segura no Work). Na resposta, encontre `message.chat.id` referente à mensagem `/start` que você enviou. Não use IDs de outras conversas.
-4. No repositório `pabloramoa-dev/nina-me-contou`, abra **Settings → Secrets and variables → Actions → New repository secret**. Cadastre:
-   - `TELEGRAM_BOT_TOKEN_NINA`: token obtido no BotFather;
-   - `TELEGRAM_CHAT_ID_NINA`: número do chat privado.
-5. Para verificar sem enviar mensagens, execute **Actions → Validar entrega Telegram Nina (sem envio) → Run workflow**. Esse teste cria apenas um MP4 sintético, valida imagem e áudio e monta uma legenda.
-6. Depois, a próxima execução que efetivamente renderizar um episódio em **Actions → Produzir episódios** enviará, ao terminar, o MP4 correspondente e a descrição para o TikTok.
+Crie o bot no @BotFather oficial, envie /start para o bot e cadastre os secrets
+TELEGRAM_BOT_TOKEN_NINA e TELEGRAM_CHAT_ID_NINA nas configurações de Actions.
+Nunca coloque o token em conversa, código, URL compartilhada ou logs.
+O chat deve ser a conversa privada do próprio usuário, verificada pelo /start.
 
-## Como funciona
+## Entrega e recuperação
 
-- `motor/produzir.py` renderiza cada parte (vídeo e áudio).
-- Só quando o artefato MP4 da parte já foi produzido e salvo no GitHub Actions é que `gravar` o baixa para `entrega_nina/`.
-- `tools/telegram_nina.py` verifica o vídeo com FFprobe, incluindo áudio, imagem e duração. Se não estiver pronto, **não envia**.
-- Quando o arquivo tem menos de aproximadamente 49 MB, envia o MP4 original como documento baixável no Telegram. Se for maior, cria uma cópia comprimida apenas para envio, mantendo o original no pipeline.
-- Em seguida envia uma **mensagem separada** contendo título, indicação da parte 1 ou 2, o texto `legenda_post` do roteiro e hashtags. Você pode copiar e colar diretamente no TikTok.
-- Um registro por vídeo e assinatura evita envios repetidos do mesmo arquivo.
-- Falhas de conexão, limite do Telegram e erros de renderização ficam nos logs do workflow. Arquivos não são declarados entregues se o Telegram não tiver aceitado ambas as mensagens.
+O workflow `Entregar MP4 Nina no Telegram` roda após `Produzir episódios` terminar
+(inclusive quando algumas partes falharem) e a cada hora para recuperar pendentes.
+Lê a main atual, valida áudio/vídeo/duração com FFprobe e envia o arquivo por
+sendDocument. Envia depois a descrição TikTok com hashtags e identificação.
+Arquivos acima de 49 MB recebem uma cópia comprimida; o original é preservado.
+Todas as execuções de entrega usam a mesma trava de concorrência.
 
-## Importante
+Cada etapa grava e envia um checkpoint ao Git antes de avançar. O recibo distingue
+vídeo e descrição. Rejeições explícitas do Telegram podem ser repetidas na próxima
+execução. Quando ocorre timeout ou interrupção sem resposta, o estado permanece
+`sending_video` ou `sending_description`: exige conferência manual antes de repetir,
+pois a API não oferece uma chave de idempotência para garantir envio exatamente uma vez.
+Nunca redefina esses estados sem conferir a conversa do destinatário.
 
-Sem os dois GitHub Secrets acima, o workflow registra um aviso e **não envia vídeos**. Configuração salva no repositório **não é prova de entrega**; confirme que recebeu um MP4 e seu texto no Telegram. Mantenha o bot privado e não compartilhe o token.
+A limpeza só remove o conjunto de mídia quando existe um recibo completo cujo
+SHA-256 corresponde ao MP4 atual. Renders novos ou entregas pendentes ficam protegidos.
+O estúdio tenta repor o estoque quatro vezes por dia e não cancela um render em curso.
+A publicação mantém a meta existente de quatro Reels por dia em Brasília e suas
+retentativas; quantidade efetiva depende de renders e API do Instagram disponíveis.
+
+## Testes
+
+`Validar entrega Telegram Nina (sem envio)` usa MP4 sintético e API simulada.
+Testa sucesso, repetição, vídeo inválido, secrets ausentes, falha na descrição e limpeza.
+Não constitui prova de entrega real.
+
+Para teste real, execute `Entregar MP4 Nina no Telegram` com limite 1. Confira o
+recibo completo, abra o MP4 recebido e verifique reprodução e download no Telegram.
+Sem os dois secrets o envio falha explicitamente; nenhum sucesso fictício é registrado.
