@@ -45,6 +45,9 @@ class DeliveryTests(unittest.TestCase):
             p.stop()
         self.tmp.cleanup()
     def run_delivery(self):
+        with patch.object(tg, 'diagnostico', return_value=None):
+            return self._run()
+    def _run(self):
         with patch.object(sys, 'argv', ['telegram_nina', '--video-dir', str(self.video_dir)]):
             return tg.main()
     def test_delivery_and_no_duplicate(self):
@@ -96,7 +99,8 @@ class DeliveryTests(unittest.TestCase):
             self.assertEqual(api.call_count, 1)
         with patch.object(sys, 'argv', ['telegram_nina', '--video-dir', str(self.video_dir), '--limit', '1']), \
              patch.object(tg, 'http_telegram', side_effect=RuntimeError('timeout')) as api:
-            self.assertEqual(tg.main(), 1)
+            with patch.object(tg, 'diagnostico', return_value=None):
+                self.assertEqual(tg.main(), 1)
             self.assertEqual(api.call_count, 1)
     def test_invalid_video_rejected(self):
         self.video.write_bytes(b'x' * 2048)
