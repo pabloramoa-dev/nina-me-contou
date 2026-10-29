@@ -116,11 +116,12 @@
   },
   "ep107-p2": {
     "hash": "cec300366cfa4bc74b3a399eb93db9dcf3a3cf67a9f33b958ed58a9b5c600526",
-    "status": "sending_description",
-    "tentativas_incertas": 0,
+    "status": "complete",
     "telegram_message_id": 11,
     "file_id": "BQACAgEAAxkDAAMLauOcnHCMS9EyDti0djqqWxQ7ve0AAu0KAAK5EhhHlI8BbRwH59c9BA",
     "file_size": 18960904,
-    "comprimido": false
+    "comprimido": false,
+    "description_message_id": 12,
+    "entregue_em": "2026-10-29T19:21:06Z"
   }
 }
