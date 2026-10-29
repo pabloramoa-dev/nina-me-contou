@@ -1,107 +1,109 @@
 {
-  "id": "ep174-p2",
-  "ep": 174,
-  "parte": 2,
-  "titulo": "O ROSTO DA FORMATURA",
-  "temporada": "Novas histórias originais — viral 2026",
-  "cenario": "noite",
-  "batidas": [
-    {
-      "fala": "Na primeira parte, Talita descobriu uma situação que não fazia sentido. Agora vem o detalhe que muda toda a história.",
-      "expr": "chocada",
-      "arte": [
-        "titulo"
-      ],
-      "destaque": [
-        "primeira",
-        "descobriu"
-      ]
-    },
-    {
-      "fala": "A pista não podia mais ser ignorada. Era um antigo professor que ajudara sua mãe a voltar aos estudos muitos anos antes.",
-      "expr": "neutra",
-      "arte": [
-        "conversa",
-        "TALITA"
-      ],
-      "destaque": [
-        "ignorada.",
-        "professor"
-      ]
-    },
-    {
-      "fala": "O envelope continha uma carta de parabéns que ele não conseguira entregar durante a cerimônia.",
-      "expr": "triste",
-      "arte": [
-        "celular"
-      ],
-      "destaque": [
-        "envelope",
-        "continha"
-      ]
-    },
-    {
-      "fala": "Ninguém ali tinha uma solução pronta. Os envolvidos precisaram reconhecer o que sabiam, o que estavam escondendo e o que cada um realmente podia decidir.",
-      "expr": "neutra",
-      "arte": [
-        "foto"
-      ],
-      "destaque": [
-        "Ninguém",
-        "solução"
-      ]
-    },
-    {
-      "fala": "Talita levou o presente à mãe e ouviu pela primeira vez a história completa daquela ajuda.",
-      "expr": "desconfiada",
-      "arte": [
-        "manchete_v",
-        "A VERDADE APARECEU"
-      ],
-      "destaque": [
-        "presente",
-        "primeira"
-      ]
-    },
-    {
-      "fala": "E foi aí que o rumo da conversa mudou: não bastava explicar o passado, também era preciso assumir responsabilidade pelo que aconteceria depois.",
-      "expr": "ironica",
-      "arte": [
-        "notificacao"
-      ],
-      "destaque": [
-        "conversa",
-        "bastava"
-      ]
-    },
-    {
-      "fala": "A fotografia ganhou significado quando deixou de ser um mistério e virou gratidão.",
-      "expr": "neutra",
-      "arte": [
-        "coracao"
-      ],
-      "destaque": [
-        "fotografia",
-        "significado"
-      ]
-    },
-    {
-      "fala": "Se você estivesse no lugar de Talita, faria a mesma escolha? Eu quero saber nos comentários, porque a parte mais interessante é o que a gente aprende com o final.",
-      "expr": "neutra",
-      "arte": [
-        "conversa",
-        "TALITA"
-      ],
-      "destaque": [
-        "estivesse",
-        "Talita,"
-      ]
-    }
-  ],
-  "fim": "SEGUE A NINA",
-  "legenda_post": "🎭 O ROSTO DA FORMATURA\n\nA história de Talita chegou ao desfecho. Você faria diferente?\n\nHistória de ficção. Personagens e acontecimentos inventados com base em temas narrativos populares.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
-  "legenda_tiktok": "🎭 O ROSTO DA FORMATURA — parte 2.\nHistória de ficção. #storytime #historias #ninamecontou",
-  "gerado_automaticamente": false,
-  "lote": "100-novas-historias-20261029",
-  "categoria": "ficcao_original"
+ "id": "ep174-p2",
+ "ep": 174,
+ "parte": 2,
+ "titulo": "O ROSTO DA FORMATURA",
+ "temporada": "Novas histórias originais — viral 2026",
+ "cenario": "noite",
+ "batidas": [
+  {
+   "fala": "Na primeira parte, Talita descobriu uma situação que não fazia sentido. Agora vem o detalhe que muda toda a história.",
+   "expr": "chocada",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "primeira",
+    "descobriu"
+   ]
+  },
+  {
+   "fala": "A pista não podia mais ser ignorada. Era um antigo professor que ajudara sua mãe a voltar aos estudos muitos anos antes.",
+   "expr": "neutra",
+   "arte": [
+    "conversa",
+    "TALITA"
+   ],
+   "destaque": [
+    "ignorada.",
+    "professor"
+   ]
+  },
+  {
+   "fala": "O envelope continha uma carta de parabéns que ele não conseguira entregar durante a cerimônia.",
+   "expr": "triste",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "envelope",
+    "continha"
+   ]
+  },
+  {
+   "fala": "Ninguém ali tinha uma solução pronta. Os envolvidos precisaram reconhecer o que sabiam, o que estavam escondendo e o que cada um realmente podia decidir.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "Ninguém",
+    "solução"
+   ]
+  },
+  {
+   "fala": "Talita levou o presente à mãe e ouviu pela primeira vez a história completa daquela ajuda.",
+   "expr": "desconfiada",
+   "arte": [
+    "manchete_v",
+    "A VERDADE APARECEU"
+   ],
+   "destaque": [
+    "presente",
+    "primeira"
+   ]
+  },
+  {
+   "fala": "E foi aí que o rumo da conversa mudou: não bastava explicar o passado, também era preciso assumir responsabilidade pelo que aconteceria depois.",
+   "expr": "ironica",
+   "arte": [
+    "notificacao"
+   ],
+   "destaque": [
+    "conversa",
+    "bastava"
+   ]
+  },
+  {
+   "fala": "A fotografia ganhou significado quando deixou de ser um mistério e virou gratidão.",
+   "expr": "neutra",
+   "arte": [
+    "coracao"
+   ],
+   "destaque": [
+    "fotografia",
+    "significado"
+   ]
+  },
+  {
+   "fala": "Se você estivesse no lugar de Talita, faria a mesma escolha? Eu quero saber nos comentários, porque a parte mais interessante é o que a gente aprende com o final.",
+   "expr": "neutra",
+   "arte": [
+    "conversa",
+    "TALITA"
+   ],
+   "destaque": [
+    "estivesse",
+    "Talita,"
+   ]
+  }
+ ],
+ "fim": "SEGUE A NINA",
+ "legenda_post": "🎭 O ROSTO DA FORMATURA\n\nA história de Talita chegou ao desfecho. Você faria diferente?\n\nHistória de ficção. Personagens e acontecimentos inventados com base em temas narrativos populares.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+ "legenda_tiktok": "🎭 O ROSTO DA FORMATURA — parte 2.\nHistória de ficção. #storytime #historias #ninamecontou",
+ "gerado_automaticamente": false,
+ "lote": "100-novas-historias-20261029",
+ "categoria": "ficcao_original",
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
 }

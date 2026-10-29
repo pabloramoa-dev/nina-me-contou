@@ -1,107 +1,109 @@
 {
-  "id": "ep156-p2",
-  "ep": 156,
-  "parte": 2,
-  "titulo": "A HERANÇA DO ALMOÇO",
-  "temporada": "Novas histórias originais — viral 2026",
-  "cenario": "noite",
-  "batidas": [
-    {
-      "fala": "Na primeira parte, Elisa descobriu uma situação que não fazia sentido. Agora vem o detalhe que muda toda a história.",
-      "expr": "chocada",
-      "arte": [
-        "titulo"
-      ],
-      "destaque": [
-        "primeira",
-        "descobriu"
-      ]
-    },
-    {
-      "fala": "A pista não podia mais ser ignorada. O advogado da família explicou que a distribuição ainda estava sendo discutida e nenhuma decisão era final.",
-      "expr": "neutra",
-      "arte": [
-        "conversa",
-        "ELISA"
-      ],
-      "destaque": [
-        "ignorada.",
-        "advogado"
-      ]
-    },
-    {
-      "fala": "Os parentes reconheceram que conversaram entre si sem incluir Elisa, supondo que ela não teria interesse.",
-      "expr": "triste",
-      "arte": [
-        "celular"
-      ],
-      "destaque": [
-        "parentes",
-        "reconheceram"
-      ]
-    },
-    {
-      "fala": "Ninguém ali tinha uma solução pronta. Os envolvidos precisaram reconhecer o que sabiam, o que estavam escondendo e o que cada um realmente podia decidir.",
-      "expr": "neutra",
-      "arte": [
-        "foto"
-      ],
-      "destaque": [
-        "Ninguém",
-        "solução"
-      ]
-    },
-    {
-      "fala": "Ela passou a participar das reuniões e exigiu que cada decisão fosse registrada e compartilhada com todos.",
-      "expr": "desconfiada",
-      "arte": [
-        "manchete_v",
-        "A VERDADE APARECEU"
-      ],
-      "destaque": [
-        "participar",
-        "reuniões"
-      ]
-    },
-    {
-      "fala": "E foi aí que o rumo da conversa mudou: não bastava explicar o passado, também era preciso assumir responsabilidade pelo que aconteceria depois.",
-      "expr": "ironica",
-      "arte": [
-        "notificacao"
-      ],
-      "destaque": [
-        "conversa",
-        "bastava"
-      ]
-    },
-    {
-      "fala": "O almoço terminou tenso, mas a herança deixou de ser assunto tratado às escondidas.",
-      "expr": "neutra",
-      "arte": [
-        "coracao"
-      ],
-      "destaque": [
-        "terminou",
-        "herança"
-      ]
-    },
-    {
-      "fala": "Se você estivesse no lugar de Elisa, faria a mesma escolha? Eu quero saber nos comentários, porque a parte mais interessante é o que a gente aprende com o final.",
-      "expr": "neutra",
-      "arte": [
-        "conversa",
-        "ELISA"
-      ],
-      "destaque": [
-        "estivesse",
-        "escolha?"
-      ]
-    }
-  ],
-  "fim": "SEGUE A NINA",
-  "legenda_post": "🎭 A HERANÇA DO ALMOÇO\n\nA história de Elisa chegou ao desfecho. Você faria diferente?\n\nHistória de ficção. Personagens e acontecimentos inventados com base em temas narrativos populares.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
-  "legenda_tiktok": "🎭 A HERANÇA DO ALMOÇO — parte 2.\nHistória de ficção. #storytime #historias #ninamecontou",
-  "gerado_automaticamente": false,
-  "lote": "100-novas-historias-20261029",
-  "categoria": "ficcao_original"
+ "id": "ep156-p2",
+ "ep": 156,
+ "parte": 2,
+ "titulo": "A HERANÇA DO ALMOÇO",
+ "temporada": "Novas histórias originais — viral 2026",
+ "cenario": "noite",
+ "batidas": [
+  {
+   "fala": "Na primeira parte, Elisa descobriu uma situação que não fazia sentido. Agora vem o detalhe que muda toda a história.",
+   "expr": "chocada",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "primeira",
+    "descobriu"
+   ]
+  },
+  {
+   "fala": "A pista não podia mais ser ignorada. O advogado da família explicou que a distribuição ainda estava sendo discutida e nenhuma decisão era final.",
+   "expr": "neutra",
+   "arte": [
+    "conversa",
+    "ELISA"
+   ],
+   "destaque": [
+    "ignorada.",
+    "advogado"
+   ]
+  },
+  {
+   "fala": "Os parentes reconheceram que conversaram entre si sem incluir Elisa, supondo que ela não teria interesse.",
+   "expr": "triste",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "parentes",
+    "reconheceram"
+   ]
+  },
+  {
+   "fala": "Ninguém ali tinha uma solução pronta. Os envolvidos precisaram reconhecer o que sabiam, o que estavam escondendo e o que cada um realmente podia decidir.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "Ninguém",
+    "solução"
+   ]
+  },
+  {
+   "fala": "Ela passou a participar das reuniões e exigiu que cada decisão fosse registrada e compartilhada com todos.",
+   "expr": "desconfiada",
+   "arte": [
+    "manchete_v",
+    "A VERDADE APARECEU"
+   ],
+   "destaque": [
+    "participar",
+    "reuniões"
+   ]
+  },
+  {
+   "fala": "E foi aí que o rumo da conversa mudou: não bastava explicar o passado, também era preciso assumir responsabilidade pelo que aconteceria depois.",
+   "expr": "ironica",
+   "arte": [
+    "notificacao"
+   ],
+   "destaque": [
+    "conversa",
+    "bastava"
+   ]
+  },
+  {
+   "fala": "O almoço terminou tenso, mas a herança deixou de ser assunto tratado às escondidas.",
+   "expr": "neutra",
+   "arte": [
+    "coracao"
+   ],
+   "destaque": [
+    "terminou",
+    "herança"
+   ]
+  },
+  {
+   "fala": "Se você estivesse no lugar de Elisa, faria a mesma escolha? Eu quero saber nos comentários, porque a parte mais interessante é o que a gente aprende com o final.",
+   "expr": "neutra",
+   "arte": [
+    "conversa",
+    "ELISA"
+   ],
+   "destaque": [
+    "estivesse",
+    "escolha?"
+   ]
+  }
+ ],
+ "fim": "SEGUE A NINA",
+ "legenda_post": "🎭 A HERANÇA DO ALMOÇO\n\nA história de Elisa chegou ao desfecho. Você faria diferente?\n\nHistória de ficção. Personagens e acontecimentos inventados com base em temas narrativos populares.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+ "legenda_tiktok": "🎭 A HERANÇA DO ALMOÇO — parte 2.\nHistória de ficção. #storytime #historias #ninamecontou",
+ "gerado_automaticamente": false,
+ "lote": "100-novas-historias-20261029",
+ "categoria": "ficcao_original",
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
 }

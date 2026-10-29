@@ -1,107 +1,109 @@
 {
-  "id": "ep163-p1",
-  "ep": 163,
-  "parte": 1,
-  "titulo": "AS DUAS CARTAS DA MÃE",
-  "temporada": "Novas histórias originais — viral 2026",
-  "cenario": "tarde",
-  "batidas": [
-    {
-      "fala": "Uma falava de saudade; a outra, de um pedido de desculpas antigo.",
-      "expr": "chocada",
-      "arte": [
-        "titulo"
-      ],
-      "destaque": [
-        "saudade;",
-        "desculpas"
-      ]
-    },
-    {
-      "fala": "Essa é a história de Daniela. Daniela recebeu uma carta da mãe idosa e descobriu que o irmão ganhara uma mensagem completamente diferente.",
-      "expr": "neutra",
-      "arte": [
-        "conversa",
-        "DANIELA"
-      ],
-      "destaque": [
-        "história",
-        "Daniela."
-      ]
-    },
-    {
-      "fala": "Até ali, os detalhes pareciam desconectados. Mas uma pergunta simples fez a situação ficar muito menos tranquila do que parecia à primeira vista.",
-      "expr": "triste",
-      "arte": [
-        "celular"
-      ],
-      "destaque": [
-        "detalhes",
-        "pareciam"
-      ]
-    },
-    {
-      "fala": "Os irmãos acharam que a mãe tentava colocá-los um contra o outro.",
-      "expr": "neutra",
-      "arte": [
-        "foto"
-      ],
-      "destaque": [
-        "acharam",
-        "tentava"
-      ]
-    },
-    {
-      "fala": "Foi nesse momento que Daniela decidiu não aceitar apenas rumores. Ela precisava descobrir o que realmente tinha acontecido, antes que alguém tirasse conclusões por ela.",
-      "expr": "desconfiada",
-      "arte": [
-        "manchete_v",
-        "UMA NOVA PISTA"
-      ],
-      "destaque": [
-        "momento",
-        "Daniela"
-      ]
-    },
-    {
-      "fala": "Na conversa, ela explicou que escrevera para cada filho o que não conseguira dizer em voz alta.",
-      "expr": "ironica",
-      "arte": [
-        "notificacao"
-      ],
-      "destaque": [
-        "conversa,",
-        "explicou"
-      ]
-    },
-    {
-      "fala": "A conversa começou cheia de justificativas e pausas, como se ninguém quisesse ser a primeira pessoa a contar a parte mais importante.",
-      "expr": "neutra",
-      "arte": [
-        "coracao"
-      ],
-      "destaque": [
-        "conversa",
-        "começou"
-      ]
-    },
-    {
-      "fala": "E olha: a explicação completa veio acompanhada de uma escolha difícil. Na parte dois eu conto o que Daniela descobriu e como essa história terminou.",
-      "expr": "neutra",
-      "arte": [
-        "conversa",
-        "DANIELA"
-      ],
-      "destaque": [
-        "explicação",
-        "completa"
-      ]
-    }
-  ],
-  "fim": "CONTINUA NA PARTE 2",
-  "legenda_post": "🎭 AS DUAS CARTAS DA MÃE\n\nUma descoberta inesperada muda a vida de Daniela. A conclusão vem na parte 2.\n\nHistória de ficção. Personagens e acontecimentos inventados com base em temas narrativos populares.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
-  "legenda_tiktok": "🎭 AS DUAS CARTAS DA MÃE — parte 1.\nHistória de ficção. #storytime #historias #ninamecontou",
-  "gerado_automaticamente": false,
-  "lote": "100-novas-historias-20261029",
-  "categoria": "ficcao_original"
+ "id": "ep163-p1",
+ "ep": 163,
+ "parte": 1,
+ "titulo": "AS DUAS CARTAS DA MÃE",
+ "temporada": "Novas histórias originais — viral 2026",
+ "cenario": "tarde",
+ "batidas": [
+  {
+   "fala": "Uma falava de saudade; a outra, de um pedido de desculpas antigo.",
+   "expr": "chocada",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "saudade;",
+    "desculpas"
+   ]
+  },
+  {
+   "fala": "Essa é a história de Daniela. Daniela recebeu uma carta da mãe idosa e descobriu que o irmão ganhara uma mensagem completamente diferente.",
+   "expr": "neutra",
+   "arte": [
+    "conversa",
+    "DANIELA"
+   ],
+   "destaque": [
+    "história",
+    "Daniela."
+   ]
+  },
+  {
+   "fala": "Até ali, os detalhes pareciam desconectados. Mas uma pergunta simples fez a situação ficar muito menos tranquila do que parecia à primeira vista.",
+   "expr": "triste",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "detalhes",
+    "pareciam"
+   ]
+  },
+  {
+   "fala": "Os irmãos acharam que a mãe tentava colocá-los um contra o outro.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "acharam",
+    "tentava"
+   ]
+  },
+  {
+   "fala": "Foi nesse momento que Daniela decidiu não aceitar apenas rumores. Ela precisava descobrir o que realmente tinha acontecido, antes que alguém tirasse conclusões por ela.",
+   "expr": "desconfiada",
+   "arte": [
+    "manchete_v",
+    "UMA NOVA PISTA"
+   ],
+   "destaque": [
+    "momento",
+    "Daniela"
+   ]
+  },
+  {
+   "fala": "Na conversa, ela explicou que escrevera para cada filho o que não conseguira dizer em voz alta.",
+   "expr": "ironica",
+   "arte": [
+    "notificacao"
+   ],
+   "destaque": [
+    "conversa,",
+    "explicou"
+   ]
+  },
+  {
+   "fala": "A conversa começou cheia de justificativas e pausas, como se ninguém quisesse ser a primeira pessoa a contar a parte mais importante.",
+   "expr": "neutra",
+   "arte": [
+    "coracao"
+   ],
+   "destaque": [
+    "conversa",
+    "começou"
+   ]
+  },
+  {
+   "fala": "E olha: a explicação completa veio acompanhada de uma escolha difícil. Na parte dois eu conto o que Daniela descobriu e como essa história terminou.",
+   "expr": "neutra",
+   "arte": [
+    "conversa",
+    "DANIELA"
+   ],
+   "destaque": [
+    "explicação",
+    "completa"
+   ]
+  }
+ ],
+ "fim": "CONTINUA NA PARTE 2",
+ "legenda_post": "🎭 AS DUAS CARTAS DA MÃE\n\nUma descoberta inesperada muda a vida de Daniela. A conclusão vem na parte 2.\n\nHistória de ficção. Personagens e acontecimentos inventados com base em temas narrativos populares.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+ "legenda_tiktok": "🎭 AS DUAS CARTAS DA MÃE — parte 1.\nHistória de ficção. #storytime #historias #ninamecontou",
+ "gerado_automaticamente": false,
+ "lote": "100-novas-historias-20261029",
+ "categoria": "ficcao_original",
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
 }

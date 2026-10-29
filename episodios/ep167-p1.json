@@ -1,107 +1,109 @@
 {
-  "id": "ep167-p1",
-  "ep": 167,
-  "parte": 1,
-  "titulo": "O PROJETO COM OUTRO NOME",
-  "temporada": "Novas histórias originais — viral 2026",
-  "cenario": "tarde",
-  "batidas": [
-    {
-      "fala": "O chefe elogiava a inovação sem mencionar quem havia participado das reuniões iniciais.",
-      "expr": "chocada",
-      "arte": [
-        "titulo"
-      ],
-      "destaque": [
-        "elogiava",
-        "inovação"
-      ]
-    },
-    {
-      "fala": "Essa é a história de Amanda. Amanda reconheceu seus desenhos numa apresentação premiada em nome de um colega.",
-      "expr": "neutra",
-      "arte": [
-        "conversa",
-        "AMANDA"
-      ],
-      "destaque": [
-        "história",
-        "Amanda."
-      ]
-    },
-    {
-      "fala": "Até ali, os detalhes pareciam desconectados. Mas uma pergunta simples fez a situação ficar muito menos tranquila do que parecia à primeira vista.",
-      "expr": "triste",
-      "arte": [
-        "celular"
-      ],
-      "destaque": [
-        "detalhes",
-        "pareciam"
-      ]
-    },
-    {
-      "fala": "Ela reuniu arquivos datados e mensagens de trabalho para documentar sua contribuição.",
-      "expr": "neutra",
-      "arte": [
-        "foto"
-      ],
-      "destaque": [
-        "arquivos",
-        "datados"
-      ]
-    },
-    {
-      "fala": "Foi nesse momento que Amanda decidiu não aceitar apenas rumores. Ela precisava descobrir o que realmente tinha acontecido, antes que alguém tirasse conclusões por ela.",
-      "expr": "desconfiada",
-      "arte": [
-        "manchete_v",
-        "UMA NOVA PISTA"
-      ],
-      "destaque": [
-        "momento",
-        "decidiu"
-      ]
-    },
-    {
-      "fala": "Na revisão do projeto, ficou claro que o colega apresentara o trabalho como se fosse individual.",
-      "expr": "ironica",
-      "arte": [
-        "notificacao"
-      ],
-      "destaque": [
-        "revisão",
-        "projeto,"
-      ]
-    },
-    {
-      "fala": "A conversa começou cheia de justificativas e pausas, como se ninguém quisesse ser a primeira pessoa a contar a parte mais importante.",
-      "expr": "neutra",
-      "arte": [
-        "coracao"
-      ],
-      "destaque": [
-        "conversa",
-        "começou"
-      ]
-    },
-    {
-      "fala": "E olha: a explicação completa veio acompanhada de uma escolha difícil. Na parte dois eu conto o que Amanda descobriu e como essa história terminou.",
-      "expr": "neutra",
-      "arte": [
-        "conversa",
-        "AMANDA"
-      ],
-      "destaque": [
-        "explicação",
-        "completa"
-      ]
-    }
-  ],
-  "fim": "CONTINUA NA PARTE 2",
-  "legenda_post": "🎭 O PROJETO COM OUTRO NOME\n\nUma descoberta inesperada muda a vida de Amanda. A conclusão vem na parte 2.\n\nHistória de ficção. Personagens e acontecimentos inventados com base em temas narrativos populares.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
-  "legenda_tiktok": "🎭 O PROJETO COM OUTRO NOME — parte 1.\nHistória de ficção. #storytime #historias #ninamecontou",
-  "gerado_automaticamente": false,
-  "lote": "100-novas-historias-20261029",
-  "categoria": "ficcao_original"
+ "id": "ep167-p1",
+ "ep": 167,
+ "parte": 1,
+ "titulo": "O PROJETO COM OUTRO NOME",
+ "temporada": "Novas histórias originais — viral 2026",
+ "cenario": "tarde",
+ "batidas": [
+  {
+   "fala": "O chefe elogiava a inovação sem mencionar quem havia participado das reuniões iniciais.",
+   "expr": "chocada",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "elogiava",
+    "inovação"
+   ]
+  },
+  {
+   "fala": "Essa é a história de Amanda. Amanda reconheceu seus desenhos numa apresentação premiada em nome de um colega.",
+   "expr": "neutra",
+   "arte": [
+    "conversa",
+    "AMANDA"
+   ],
+   "destaque": [
+    "história",
+    "Amanda."
+   ]
+  },
+  {
+   "fala": "Até ali, os detalhes pareciam desconectados. Mas uma pergunta simples fez a situação ficar muito menos tranquila do que parecia à primeira vista.",
+   "expr": "triste",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "detalhes",
+    "pareciam"
+   ]
+  },
+  {
+   "fala": "Ela reuniu arquivos datados e mensagens de trabalho para documentar sua contribuição.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "arquivos",
+    "datados"
+   ]
+  },
+  {
+   "fala": "Foi nesse momento que Amanda decidiu não aceitar apenas rumores. Ela precisava descobrir o que realmente tinha acontecido, antes que alguém tirasse conclusões por ela.",
+   "expr": "desconfiada",
+   "arte": [
+    "manchete_v",
+    "UMA NOVA PISTA"
+   ],
+   "destaque": [
+    "momento",
+    "decidiu"
+   ]
+  },
+  {
+   "fala": "Na revisão do projeto, ficou claro que o colega apresentara o trabalho como se fosse individual.",
+   "expr": "ironica",
+   "arte": [
+    "notificacao"
+   ],
+   "destaque": [
+    "revisão",
+    "projeto,"
+   ]
+  },
+  {
+   "fala": "A conversa começou cheia de justificativas e pausas, como se ninguém quisesse ser a primeira pessoa a contar a parte mais importante.",
+   "expr": "neutra",
+   "arte": [
+    "coracao"
+   ],
+   "destaque": [
+    "conversa",
+    "começou"
+   ]
+  },
+  {
+   "fala": "E olha: a explicação completa veio acompanhada de uma escolha difícil. Na parte dois eu conto o que Amanda descobriu e como essa história terminou.",
+   "expr": "neutra",
+   "arte": [
+    "conversa",
+    "AMANDA"
+   ],
+   "destaque": [
+    "explicação",
+    "completa"
+   ]
+  }
+ ],
+ "fim": "CONTINUA NA PARTE 2",
+ "legenda_post": "🎭 O PROJETO COM OUTRO NOME\n\nUma descoberta inesperada muda a vida de Amanda. A conclusão vem na parte 2.\n\nHistória de ficção. Personagens e acontecimentos inventados com base em temas narrativos populares.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+ "legenda_tiktok": "🎭 O PROJETO COM OUTRO NOME — parte 1.\nHistória de ficção. #storytime #historias #ninamecontou",
+ "gerado_automaticamente": false,
+ "lote": "100-novas-historias-20261029",
+ "categoria": "ficcao_original",
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
 }

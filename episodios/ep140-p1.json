@@ -1,107 +1,109 @@
 {
-  "id": "ep140-p1",
-  "ep": 140,
-  "parte": 1,
-  "titulo": "O ÁUDIO DA DESPEDIDA DE SOLTEIRA",
-  "temporada": "Novas histórias originais — viral 2026",
-  "cenario": "tarde",
-  "batidas": [
-    {
-      "fala": "No áudio, duas amigas riam do valor da festa e falavam como se ela fosse obrigada a pagar tudo.",
-      "expr": "chocada",
-      "arte": [
-        "titulo"
-      ],
-      "destaque": [
-        "falavam",
-        "obrigada"
-      ]
-    },
-    {
-      "fala": "Essa é a história de Tânia. Tânia recebeu por engano uma gravação do grupo que organizava sua despedida de solteira.",
-      "expr": "neutra",
-      "arte": [
-        "conversa",
-        "TÂNIA"
-      ],
-      "destaque": [
-        "história",
-        "recebeu"
-      ]
-    },
-    {
-      "fala": "Até ali, os detalhes pareciam desconectados. Mas uma pergunta simples fez a situação ficar muito menos tranquila do que parecia à primeira vista.",
-      "expr": "triste",
-      "arte": [
-        "celular"
-      ],
-      "destaque": [
-        "detalhes",
-        "pareciam"
-      ]
-    },
-    {
-      "fala": "Um trecho cortado fez parecer que a melhor amiga queria arruinar a celebração.",
-      "expr": "neutra",
-      "arte": [
-        "foto"
-      ],
-      "destaque": [
-        "cortado",
-        "parecer"
-      ]
-    },
-    {
-      "fala": "Foi nesse momento que Tânia decidiu não aceitar apenas rumores. Ela precisava descobrir o que realmente tinha acontecido, antes que alguém tirasse conclusões por ela.",
-      "expr": "desconfiada",
-      "arte": [
-        "manchete_v",
-        "UMA NOVA PISTA"
-      ],
-      "destaque": [
-        "momento",
-        "decidiu"
-      ]
-    },
-    {
-      "fala": "Tânia comparou a gravação com mensagens anteriores e pediu que as amigas explicassem sem discussão pública.",
-      "expr": "ironica",
-      "arte": [
-        "notificacao"
-      ],
-      "destaque": [
-        "comparou",
-        "gravação"
-      ]
-    },
-    {
-      "fala": "A conversa começou cheia de justificativas e pausas, como se ninguém quisesse ser a primeira pessoa a contar a parte mais importante.",
-      "expr": "neutra",
-      "arte": [
-        "coracao"
-      ],
-      "destaque": [
-        "conversa",
-        "começou"
-      ]
-    },
-    {
-      "fala": "E olha: a explicação completa veio acompanhada de uma escolha difícil. Na parte dois eu conto o que Tânia descobriu e como essa história terminou.",
-      "expr": "neutra",
-      "arte": [
-        "conversa",
-        "TÂNIA"
-      ],
-      "destaque": [
-        "explicação",
-        "completa"
-      ]
-    }
-  ],
-  "fim": "CONTINUA NA PARTE 2",
-  "legenda_post": "🎭 O ÁUDIO DA DESPEDIDA DE SOLTEIRA\n\nUma descoberta inesperada muda a vida de Tânia. A conclusão vem na parte 2.\n\nHistória de ficção. Personagens e acontecimentos inventados com base em temas narrativos populares.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
-  "legenda_tiktok": "🎭 O ÁUDIO DA DESPEDIDA DE SOLTEIRA — parte 1.\nHistória de ficção. #storytime #historias #ninamecontou",
-  "gerado_automaticamente": false,
-  "lote": "100-novas-historias-20261029",
-  "categoria": "ficcao_original"
+ "id": "ep140-p1",
+ "ep": 140,
+ "parte": 1,
+ "titulo": "O ÁUDIO DA DESPEDIDA DE SOLTEIRA",
+ "temporada": "Novas histórias originais — viral 2026",
+ "cenario": "tarde",
+ "batidas": [
+  {
+   "fala": "No áudio, duas amigas riam do valor da festa e falavam como se ela fosse obrigada a pagar tudo.",
+   "expr": "chocada",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "falavam",
+    "obrigada"
+   ]
+  },
+  {
+   "fala": "Essa é a história de Tânia. Tânia recebeu por engano uma gravação do grupo que organizava sua despedida de solteira.",
+   "expr": "neutra",
+   "arte": [
+    "conversa",
+    "TÂNIA"
+   ],
+   "destaque": [
+    "história",
+    "recebeu"
+   ]
+  },
+  {
+   "fala": "Até ali, os detalhes pareciam desconectados. Mas uma pergunta simples fez a situação ficar muito menos tranquila do que parecia à primeira vista.",
+   "expr": "triste",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "detalhes",
+    "pareciam"
+   ]
+  },
+  {
+   "fala": "Um trecho cortado fez parecer que a melhor amiga queria arruinar a celebração.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "cortado",
+    "parecer"
+   ]
+  },
+  {
+   "fala": "Foi nesse momento que Tânia decidiu não aceitar apenas rumores. Ela precisava descobrir o que realmente tinha acontecido, antes que alguém tirasse conclusões por ela.",
+   "expr": "desconfiada",
+   "arte": [
+    "manchete_v",
+    "UMA NOVA PISTA"
+   ],
+   "destaque": [
+    "momento",
+    "decidiu"
+   ]
+  },
+  {
+   "fala": "Tânia comparou a gravação com mensagens anteriores e pediu que as amigas explicassem sem discussão pública.",
+   "expr": "ironica",
+   "arte": [
+    "notificacao"
+   ],
+   "destaque": [
+    "comparou",
+    "gravação"
+   ]
+  },
+  {
+   "fala": "A conversa começou cheia de justificativas e pausas, como se ninguém quisesse ser a primeira pessoa a contar a parte mais importante.",
+   "expr": "neutra",
+   "arte": [
+    "coracao"
+   ],
+   "destaque": [
+    "conversa",
+    "começou"
+   ]
+  },
+  {
+   "fala": "E olha: a explicação completa veio acompanhada de uma escolha difícil. Na parte dois eu conto o que Tânia descobriu e como essa história terminou.",
+   "expr": "neutra",
+   "arte": [
+    "conversa",
+    "TÂNIA"
+   ],
+   "destaque": [
+    "explicação",
+    "completa"
+   ]
+  }
+ ],
+ "fim": "CONTINUA NA PARTE 2",
+ "legenda_post": "🎭 O ÁUDIO DA DESPEDIDA DE SOLTEIRA\n\nUma descoberta inesperada muda a vida de Tânia. A conclusão vem na parte 2.\n\nHistória de ficção. Personagens e acontecimentos inventados com base em temas narrativos populares.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+ "legenda_tiktok": "🎭 O ÁUDIO DA DESPEDIDA DE SOLTEIRA — parte 1.\nHistória de ficção. #storytime #historias #ninamecontou",
+ "gerado_automaticamente": false,
+ "lote": "100-novas-historias-20261029",
+ "categoria": "ficcao_original",
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
 }

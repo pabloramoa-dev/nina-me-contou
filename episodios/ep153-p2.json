@@ -1,106 +1,108 @@
 {
-  "id": "ep153-p2",
-  "ep": 153,
-  "parte": 2,
-  "titulo": "A AMIGA DE SÁBADO",
-  "temporada": "Novas histórias originais — viral 2026",
-  "cenario": "noite",
-  "batidas": [
-    {
-      "fala": "Na primeira parte, Fernanda descobriu uma situação que não fazia sentido. Agora vem o detalhe que muda toda a história.",
-      "expr": "chocada",
-      "arte": [
-        "titulo"
-      ],
-      "destaque": [
-        "primeira",
-        "Fernanda"
-      ]
-    },
-    {
-      "fala": "A pista não podia mais ser ignorada. A loja era uma pequena oficina comunitária onde a amiga aprendia costura para mudar de profissão.",
-      "expr": "neutra",
-      "arte": [
-        "conversa",
-        "FERNANDA"
-      ],
-      "destaque": [
-        "ignorada.",
-        "pequena"
-      ]
-    },
-    {
-      "fala": "Ela não contou antes por medo de ouvir que estava perdendo tempo com um sonho novo.",
-      "expr": "triste",
-      "arte": [
-        "celular"
-      ],
-      "destaque": [
-        "perdendo"
-      ]
-    },
-    {
-      "fala": "Ninguém ali tinha uma solução pronta. Os envolvidos precisaram reconhecer o que sabiam, o que estavam escondendo e o que cada um realmente podia decidir.",
-      "expr": "neutra",
-      "arte": [
-        "foto"
-      ],
-      "destaque": [
-        "Ninguém",
-        "solução"
-      ]
-    },
-    {
-      "fala": "Fernanda se desculpou por especular e ofereceu ajuda para divulgar a primeira feira da oficina.",
-      "expr": "desconfiada",
-      "arte": [
-        "manchete_v",
-        "A VERDADE APARECEU"
-      ],
-      "destaque": [
-        "Fernanda",
-        "desculpou"
-      ]
-    },
-    {
-      "fala": "E foi aí que o rumo da conversa mudou: não bastava explicar o passado, também era preciso assumir responsabilidade pelo que aconteceria depois.",
-      "expr": "ironica",
-      "arte": [
-        "notificacao"
-      ],
-      "destaque": [
-        "conversa",
-        "bastava"
-      ]
-    },
-    {
-      "fala": "A amizade ficou mais leve quando ambas pararam de confundir privacidade com traição.",
-      "expr": "neutra",
-      "arte": [
-        "coracao"
-      ],
-      "destaque": [
-        "amizade",
-        "pararam"
-      ]
-    },
-    {
-      "fala": "Se você estivesse no lugar de Fernanda, faria a mesma escolha? Eu quero saber nos comentários, porque a parte mais interessante é o que a gente aprende com o final.",
-      "expr": "neutra",
-      "arte": [
-        "conversa",
-        "FERNANDA"
-      ],
-      "destaque": [
-        "estivesse",
-        "Fernanda,"
-      ]
-    }
-  ],
-  "fim": "SEGUE A NINA",
-  "legenda_post": "🎭 A AMIGA DE SÁBADO\n\nA história de Fernanda chegou ao desfecho. Você faria diferente?\n\nHistória de ficção. Personagens e acontecimentos inventados com base em temas narrativos populares.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
-  "legenda_tiktok": "🎭 A AMIGA DE SÁBADO — parte 2.\nHistória de ficção. #storytime #historias #ninamecontou",
-  "gerado_automaticamente": false,
-  "lote": "100-novas-historias-20261029",
-  "categoria": "ficcao_original"
+ "id": "ep153-p2",
+ "ep": 153,
+ "parte": 2,
+ "titulo": "A AMIGA DE SÁBADO",
+ "temporada": "Novas histórias originais — viral 2026",
+ "cenario": "noite",
+ "batidas": [
+  {
+   "fala": "Na primeira parte, Fernanda descobriu uma situação que não fazia sentido. Agora vem o detalhe que muda toda a história.",
+   "expr": "chocada",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "primeira",
+    "Fernanda"
+   ]
+  },
+  {
+   "fala": "A pista não podia mais ser ignorada. A loja era uma pequena oficina comunitária onde a amiga aprendia costura para mudar de profissão.",
+   "expr": "neutra",
+   "arte": [
+    "conversa",
+    "FERNANDA"
+   ],
+   "destaque": [
+    "ignorada.",
+    "pequena"
+   ]
+  },
+  {
+   "fala": "Ela não contou antes por medo de ouvir que estava perdendo tempo com um sonho novo.",
+   "expr": "triste",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "perdendo"
+   ]
+  },
+  {
+   "fala": "Ninguém ali tinha uma solução pronta. Os envolvidos precisaram reconhecer o que sabiam, o que estavam escondendo e o que cada um realmente podia decidir.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "Ninguém",
+    "solução"
+   ]
+  },
+  {
+   "fala": "Fernanda se desculpou por especular e ofereceu ajuda para divulgar a primeira feira da oficina.",
+   "expr": "desconfiada",
+   "arte": [
+    "manchete_v",
+    "A VERDADE APARECEU"
+   ],
+   "destaque": [
+    "Fernanda",
+    "desculpou"
+   ]
+  },
+  {
+   "fala": "E foi aí que o rumo da conversa mudou: não bastava explicar o passado, também era preciso assumir responsabilidade pelo que aconteceria depois.",
+   "expr": "ironica",
+   "arte": [
+    "notificacao"
+   ],
+   "destaque": [
+    "conversa",
+    "bastava"
+   ]
+  },
+  {
+   "fala": "A amizade ficou mais leve quando ambas pararam de confundir privacidade com traição.",
+   "expr": "neutra",
+   "arte": [
+    "coracao"
+   ],
+   "destaque": [
+    "amizade",
+    "pararam"
+   ]
+  },
+  {
+   "fala": "Se você estivesse no lugar de Fernanda, faria a mesma escolha? Eu quero saber nos comentários, porque a parte mais interessante é o que a gente aprende com o final.",
+   "expr": "neutra",
+   "arte": [
+    "conversa",
+    "FERNANDA"
+   ],
+   "destaque": [
+    "estivesse",
+    "Fernanda,"
+   ]
+  }
+ ],
+ "fim": "SEGUE A NINA",
+ "legenda_post": "🎭 A AMIGA DE SÁBADO\n\nA história de Fernanda chegou ao desfecho. Você faria diferente?\n\nHistória de ficção. Personagens e acontecimentos inventados com base em temas narrativos populares.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+ "legenda_tiktok": "🎭 A AMIGA DE SÁBADO — parte 2.\nHistória de ficção. #storytime #historias #ninamecontou",
+ "gerado_automaticamente": false,
+ "lote": "100-novas-historias-20261029",
+ "categoria": "ficcao_original",
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
 }

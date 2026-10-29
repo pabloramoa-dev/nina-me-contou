@@ -1,107 +1,109 @@
 {
-  "id": "ep182-p2",
-  "ep": 182,
-  "parte": 2,
-  "titulo": "AS FOTOS RECORTADAS",
-  "temporada": "Novas histórias originais — viral 2026",
-  "cenario": "noite",
-  "batidas": [
-    {
-      "fala": "Na primeira parte, Vera descobriu uma situação que não fazia sentido. Agora vem o detalhe que muda toda a história.",
-      "expr": "chocada",
-      "arte": [
-        "titulo"
-      ],
-      "destaque": [
-        "primeira",
-        "descobriu"
-      ]
-    },
-    {
-      "fala": "A pista não podia mais ser ignorada. A pessoa retirada era um antigo fotógrafo de eventos que pedia cópias com exclusividade e nunca autorizara divulgação.",
-      "expr": "neutra",
-      "arte": [
-        "conversa",
-        "VERA"
-      ],
-      "destaque": [
-        "ignorada.",
-        "retirada"
-      ]
-    },
-    {
-      "fala": "A avó havia cortado as fotos para montar um mural doméstico depois de uma discussão comercial.",
-      "expr": "triste",
-      "arte": [
-        "celular"
-      ],
-      "destaque": [
-        "cortado",
-        "doméstico"
-      ]
-    },
-    {
-      "fala": "Ninguém ali tinha uma solução pronta. Os envolvidos precisaram reconhecer o que sabiam, o que estavam escondendo e o que cada um realmente podia decidir.",
-      "expr": "neutra",
-      "arte": [
-        "foto"
-      ],
-      "destaque": [
-        "Ninguém",
-        "solução"
-      ]
-    },
-    {
-      "fala": "Vera encontrou negativos antigos, refez as cópias e anotou o contexto correto no álbum.",
-      "expr": "desconfiada",
-      "arte": [
-        "manchete_v",
-        "A VERDADE APARECEU"
-      ],
-      "destaque": [
-        "encontrou",
-        "negativos"
-      ]
-    },
-    {
-      "fala": "E foi aí que o rumo da conversa mudou: não bastava explicar o passado, também era preciso assumir responsabilidade pelo que aconteceria depois.",
-      "expr": "ironica",
-      "arte": [
-        "notificacao"
-      ],
-      "destaque": [
-        "conversa",
-        "bastava"
-      ]
-    },
-    {
-      "fala": "O mistério revelou mais sobre memórias incompletas do que sobre segredos familiares.",
-      "expr": "neutra",
-      "arte": [
-        "coracao"
-      ],
-      "destaque": [
-        "mistério",
-        "revelou"
-      ]
-    },
-    {
-      "fala": "Se você estivesse no lugar de Vera, faria a mesma escolha? Eu quero saber nos comentários, porque a parte mais interessante é o que a gente aprende com o final.",
-      "expr": "neutra",
-      "arte": [
-        "conversa",
-        "VERA"
-      ],
-      "destaque": [
-        "estivesse",
-        "escolha?"
-      ]
-    }
-  ],
-  "fim": "SEGUE A NINA",
-  "legenda_post": "🎭 AS FOTOS RECORTADAS\n\nA história de Vera chegou ao desfecho. Você faria diferente?\n\nHistória de ficção. Personagens e acontecimentos inventados com base em temas narrativos populares.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
-  "legenda_tiktok": "🎭 AS FOTOS RECORTADAS — parte 2.\nHistória de ficção. #storytime #historias #ninamecontou",
-  "gerado_automaticamente": false,
-  "lote": "100-novas-historias-20261029",
-  "categoria": "ficcao_original"
+ "id": "ep182-p2",
+ "ep": 182,
+ "parte": 2,
+ "titulo": "AS FOTOS RECORTADAS",
+ "temporada": "Novas histórias originais — viral 2026",
+ "cenario": "noite",
+ "batidas": [
+  {
+   "fala": "Na primeira parte, Vera descobriu uma situação que não fazia sentido. Agora vem o detalhe que muda toda a história.",
+   "expr": "chocada",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "primeira",
+    "descobriu"
+   ]
+  },
+  {
+   "fala": "A pista não podia mais ser ignorada. A pessoa retirada era um antigo fotógrafo de eventos que pedia cópias com exclusividade e nunca autorizara divulgação.",
+   "expr": "neutra",
+   "arte": [
+    "conversa",
+    "VERA"
+   ],
+   "destaque": [
+    "ignorada.",
+    "retirada"
+   ]
+  },
+  {
+   "fala": "A avó havia cortado as fotos para montar um mural doméstico depois de uma discussão comercial.",
+   "expr": "triste",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "cortado",
+    "doméstico"
+   ]
+  },
+  {
+   "fala": "Ninguém ali tinha uma solução pronta. Os envolvidos precisaram reconhecer o que sabiam, o que estavam escondendo e o que cada um realmente podia decidir.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "Ninguém",
+    "solução"
+   ]
+  },
+  {
+   "fala": "Vera encontrou negativos antigos, refez as cópias e anotou o contexto correto no álbum.",
+   "expr": "desconfiada",
+   "arte": [
+    "manchete_v",
+    "A VERDADE APARECEU"
+   ],
+   "destaque": [
+    "encontrou",
+    "negativos"
+   ]
+  },
+  {
+   "fala": "E foi aí que o rumo da conversa mudou: não bastava explicar o passado, também era preciso assumir responsabilidade pelo que aconteceria depois.",
+   "expr": "ironica",
+   "arte": [
+    "notificacao"
+   ],
+   "destaque": [
+    "conversa",
+    "bastava"
+   ]
+  },
+  {
+   "fala": "O mistério revelou mais sobre memórias incompletas do que sobre segredos familiares.",
+   "expr": "neutra",
+   "arte": [
+    "coracao"
+   ],
+   "destaque": [
+    "mistério",
+    "revelou"
+   ]
+  },
+  {
+   "fala": "Se você estivesse no lugar de Vera, faria a mesma escolha? Eu quero saber nos comentários, porque a parte mais interessante é o que a gente aprende com o final.",
+   "expr": "neutra",
+   "arte": [
+    "conversa",
+    "VERA"
+   ],
+   "destaque": [
+    "estivesse",
+    "escolha?"
+   ]
+  }
+ ],
+ "fim": "SEGUE A NINA",
+ "legenda_post": "🎭 AS FOTOS RECORTADAS\n\nA história de Vera chegou ao desfecho. Você faria diferente?\n\nHistória de ficção. Personagens e acontecimentos inventados com base em temas narrativos populares.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+ "legenda_tiktok": "🎭 AS FOTOS RECORTADAS — parte 2.\nHistória de ficção. #storytime #historias #ninamecontou",
+ "gerado_automaticamente": false,
+ "lote": "100-novas-historias-20261029",
+ "categoria": "ficcao_original",
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
 }

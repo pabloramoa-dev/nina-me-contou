@@ -1,107 +1,109 @@
 {
-  "id": "ep170-p1",
-  "ep": 170,
-  "parte": 1,
-  "titulo": "O JANTAR QUE NÃO FOI COMPRADO",
-  "temporada": "Novas histórias originais — viral 2026",
-  "cenario": "tarde",
-  "batidas": [
-    {
-      "fala": "O recibo da noite mostrava outra pessoa responsável pelo pagamento.",
-      "expr": "chocada",
-      "arte": [
-        "titulo"
-      ],
-      "destaque": [
-        "mostrava",
-        "responsável"
-      ]
-    },
-    {
-      "fala": "Essa é a história de Nádia. Nádia viu uma influenciadora publicar que pagara um jantar para toda a equipe do restaurante.",
-      "expr": "neutra",
-      "arte": [
-        "conversa",
-        "NÁDIA"
-      ],
-      "destaque": [
-        "história",
-        "influenciadora"
-      ]
-    },
-    {
-      "fala": "Até ali, os detalhes pareciam desconectados. Mas uma pergunta simples fez a situação ficar muito menos tranquila do que parecia à primeira vista.",
-      "expr": "triste",
-      "arte": [
-        "celular"
-      ],
-      "destaque": [
-        "detalhes",
-        "pareciam"
-      ]
-    },
-    {
-      "fala": "Uma funcionária explicou que o jantar tinha sido oferecido em uma campanha comercial, mas a publicação omitia a parceria.",
-      "expr": "neutra",
-      "arte": [
-        "foto"
-      ],
-      "destaque": [
-        "funcionária",
-        "explicou"
-      ]
-    },
-    {
-      "fala": "Foi nesse momento que Nádia decidiu não aceitar apenas rumores. Ela precisava descobrir o que realmente tinha acontecido, antes que alguém tirasse conclusões por ela.",
-      "expr": "desconfiada",
-      "arte": [
-        "manchete_v",
-        "UMA NOVA PISTA"
-      ],
-      "destaque": [
-        "momento",
-        "decidiu"
-      ]
-    },
-    {
-      "fala": "A gerente entrou em contato e pediu que a descrição fosse corrigida com transparência.",
-      "expr": "ironica",
-      "arte": [
-        "notificacao"
-      ],
-      "destaque": [
-        "gerente",
-        "contato"
-      ]
-    },
-    {
-      "fala": "A conversa começou cheia de justificativas e pausas, como se ninguém quisesse ser a primeira pessoa a contar a parte mais importante.",
-      "expr": "neutra",
-      "arte": [
-        "coracao"
-      ],
-      "destaque": [
-        "conversa",
-        "começou"
-      ]
-    },
-    {
-      "fala": "E olha: a explicação completa veio acompanhada de uma escolha difícil. Na parte dois eu conto o que Nádia descobriu e como essa história terminou.",
-      "expr": "neutra",
-      "arte": [
-        "conversa",
-        "NÁDIA"
-      ],
-      "destaque": [
-        "explicação",
-        "completa"
-      ]
-    }
-  ],
-  "fim": "CONTINUA NA PARTE 2",
-  "legenda_post": "🎭 O JANTAR QUE NÃO FOI COMPRADO\n\nUma descoberta inesperada muda a vida de Nádia. A conclusão vem na parte 2.\n\nHistória de ficção. Personagens e acontecimentos inventados com base em temas narrativos populares.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
-  "legenda_tiktok": "🎭 O JANTAR QUE NÃO FOI COMPRADO — parte 1.\nHistória de ficção. #storytime #historias #ninamecontou",
-  "gerado_automaticamente": false,
-  "lote": "100-novas-historias-20261029",
-  "categoria": "ficcao_original"
+ "id": "ep170-p1",
+ "ep": 170,
+ "parte": 1,
+ "titulo": "O JANTAR QUE NÃO FOI COMPRADO",
+ "temporada": "Novas histórias originais — viral 2026",
+ "cenario": "tarde",
+ "batidas": [
+  {
+   "fala": "O recibo da noite mostrava outra pessoa responsável pelo pagamento.",
+   "expr": "chocada",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "mostrava",
+    "responsável"
+   ]
+  },
+  {
+   "fala": "Essa é a história de Nádia. Nádia viu uma influenciadora publicar que pagara um jantar para toda a equipe do restaurante.",
+   "expr": "neutra",
+   "arte": [
+    "conversa",
+    "NÁDIA"
+   ],
+   "destaque": [
+    "história",
+    "influenciadora"
+   ]
+  },
+  {
+   "fala": "Até ali, os detalhes pareciam desconectados. Mas uma pergunta simples fez a situação ficar muito menos tranquila do que parecia à primeira vista.",
+   "expr": "triste",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "detalhes",
+    "pareciam"
+   ]
+  },
+  {
+   "fala": "Uma funcionária explicou que o jantar tinha sido oferecido em uma campanha comercial, mas a publicação omitia a parceria.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "funcionária",
+    "explicou"
+   ]
+  },
+  {
+   "fala": "Foi nesse momento que Nádia decidiu não aceitar apenas rumores. Ela precisava descobrir o que realmente tinha acontecido, antes que alguém tirasse conclusões por ela.",
+   "expr": "desconfiada",
+   "arte": [
+    "manchete_v",
+    "UMA NOVA PISTA"
+   ],
+   "destaque": [
+    "momento",
+    "decidiu"
+   ]
+  },
+  {
+   "fala": "A gerente entrou em contato e pediu que a descrição fosse corrigida com transparência.",
+   "expr": "ironica",
+   "arte": [
+    "notificacao"
+   ],
+   "destaque": [
+    "gerente",
+    "contato"
+   ]
+  },
+  {
+   "fala": "A conversa começou cheia de justificativas e pausas, como se ninguém quisesse ser a primeira pessoa a contar a parte mais importante.",
+   "expr": "neutra",
+   "arte": [
+    "coracao"
+   ],
+   "destaque": [
+    "conversa",
+    "começou"
+   ]
+  },
+  {
+   "fala": "E olha: a explicação completa veio acompanhada de uma escolha difícil. Na parte dois eu conto o que Nádia descobriu e como essa história terminou.",
+   "expr": "neutra",
+   "arte": [
+    "conversa",
+    "NÁDIA"
+   ],
+   "destaque": [
+    "explicação",
+    "completa"
+   ]
+  }
+ ],
+ "fim": "CONTINUA NA PARTE 2",
+ "legenda_post": "🎭 O JANTAR QUE NÃO FOI COMPRADO\n\nUma descoberta inesperada muda a vida de Nádia. A conclusão vem na parte 2.\n\nHistória de ficção. Personagens e acontecimentos inventados com base em temas narrativos populares.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+ "legenda_tiktok": "🎭 O JANTAR QUE NÃO FOI COMPRADO — parte 1.\nHistória de ficção. #storytime #historias #ninamecontou",
+ "gerado_automaticamente": false,
+ "lote": "100-novas-historias-20261029",
+ "categoria": "ficcao_original",
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
 }
