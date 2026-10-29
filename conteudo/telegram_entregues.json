@@ -106,7 +106,11 @@
   },
   "ep107-p1": {
     "hash": "131fc2b530b1249cec98800c4d954ebaf7efb21174957eeb6760086e79cf313d",
-    "status": "sending_video",
-    "tentativas_incertas": 0
+    "status": "video_sent",
+    "tentativas_incertas": 0,
+    "telegram_message_id": 9,
+    "file_id": "BQACAgEAAxkDAAMJauOck-fPiPrAitl_i_OEYlf1ZN8AAuwKAAK5EhhHTQOAypqXdN09BA",
+    "file_size": 18867238,
+    "comprimido": false
   }
 }
