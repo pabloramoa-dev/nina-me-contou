@@ -123,5 +123,10 @@
     "comprimido": false,
     "description_message_id": 12,
     "entregue_em": "2026-10-29T19:21:06Z"
+  },
+  "ep108-p1": {
+    "hash": "365698407e535fe0b1d6fce19185718a1f57002fd19185080fb0250ac33ef0e4",
+    "status": "sending_video",
+    "tentativas_incertas": 0
   }
 }
