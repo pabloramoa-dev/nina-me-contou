@@ -54,7 +54,7 @@ export const NinaUpgrade:React.FC<NinaProps>=({scenes,visuals=[]})=>{
    </div>
    {/* Cenas cinematograficas ocupam somente a faixa superior.
        A Nina e as legendas oficiais permanecem totalmente visiveis. */}
-   {picture ? <div style={{position:'absolute',top:216,left:75,width:930,height:548,
+   {picture ? <div style={{position:'absolute',top:205,left:50,width:980,height:660,
      overflow:'hidden',background:'#f6e8d6',border:'6px solid #34283a',
      borderRadius:26,boxShadow:'14px 17px 0 #38253b55',boxSizing:'border-box',
      opacity:clamp(pictureFade,0,1)}}>
