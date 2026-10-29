@@ -6,7 +6,7 @@
   },
   "ep013-p1": {
     "hash": "a45d17efde2d50b392ac807851dd91f5cc8995cd50ebdcfecec16648b5798646",
-    "status": "sending_video",
+    "status": "retry_video",
     "tentativas_incertas": 0
   },
   "ep048-p1": {
