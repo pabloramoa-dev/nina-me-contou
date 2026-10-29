@@ -56,7 +56,7 @@
   },
   "ep052-p2": {
     "hash": "10c8ddd05f3340c41edae20cd7c4eedee5094993d5591c6634acb9be2e5222c2",
-    "status": "sending_video",
+    "status": "retry_video",
     "tentativas_incertas": 0
   }
 }
