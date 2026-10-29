@@ -234,12 +234,18 @@ def preparar(ep, segs, assets, pasta, generator=None):
             # original offline se faltar a API, sem depender de fotos externas.
             if cfg['auto_visual_images']:
                 try:
-                    from local_story_art import render as render_local
+                    estilo = str(ep.get("visual_style") or os.environ.get("NINA_STORY_STYLE", "cinematic_2d")).strip().lower()
+                    if estilo == "cinematic_2d":
+                        from cinematic_story_art import render as render_local
+                    elif estilo == "classic":
+                        from local_story_art import render as render_local
+                    else:
+                        raise ValueError("NINA_STORY_STYLE invalido: use cinematic_2d ou classic")
                     local_data = validar_imagem(render_local(scene, ep))
                     name = f'visual-scene-{scene["scene"]:02d}.png'
                     (assets/name).write_bytes(local_data)
                     scene.update(status='local_fallback', mode='story_frame_image',
-                                 asset=name, image_origin='pillow_illustration',
+                                 asset=name, image_origin='cinematic_2d_cpu' if estilo == 'cinematic_2d' else 'pillow_illustration',
                                  fallback_reason=reason)
                     for i in scene['beats']:
                         mapping[i] = name
