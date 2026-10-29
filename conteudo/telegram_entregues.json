@@ -45,8 +45,8 @@
     "tentativas_incertas": 0
   },
   "ep051-p2": {
-    "hash": "c2cf294847f30008cd1279b420c2a5363f6a15430bd4a15eae5975142741c442",
-    "status": "retry_video",
+    "hash": "80fbd194f34c4da78a8c8eab889c4154cfed28cd958d0b5a013c4a45951c3615",
+    "status": "sending_video",
     "tentativas_incertas": 0
   }
 }
