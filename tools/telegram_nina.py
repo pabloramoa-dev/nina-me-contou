@@ -254,6 +254,13 @@ def entregar(video: Path, token: str, chat_id: str, recebidos: dict, persistir: 
     return True
 
 
+def diagnostico(token: str, chat_id: str) -> None:
+    bot = http_telegram(token, "getMe", {})
+    print(f"Bot do token: @{bot.get('username')}")
+    http_telegram(token, "getChat", {"chat_id": chat_id})
+    print("Chat de destino encontrado pelo bot.")
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--video-dir", type=Path, default=ROOT / "entrega_nina")
@@ -280,6 +287,16 @@ def main() -> int:
             episodio = json.loads(episodio_path.read_text(encoding="utf-8"))
             print(f"DRY RUN {video.name}\n{descricao_tiktok(episodio)}\n")
         return 0
+
+    # Diagnóstico sem expor segredo: mostra qual bot o token representa
+    # (nome público) e confere se o bot já consegue falar com o chat.
+    try:
+        diagnostico(token, chat_id)
+    except Exception as exc:
+        msg = str(exc).replace(token, "[REDACTED]")
+        print(f"::error::Telegram não está pronto: {msg}. "
+              "Envie /start para o bot acima no Telegram e rode de novo.")
+        return 1
 
     recebidos = recibos_ler()
     enviados = 0
