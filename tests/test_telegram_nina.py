@@ -102,6 +102,11 @@ class DeliveryTests(unittest.TestCase):
             with patch.object(tg, 'diagnostico', return_value=None):
                 self.assertEqual(tg.main(), 1)
             self.assertEqual(api.call_count, 1)
+    def test_video_field_in_response_is_accepted(self):
+        with patch.object(tg, 'http_telegram', side_effect=[
+            {'message_id': 1, 'video': {'file_id': 'v', 'file_size': 10}}, {'message_id': 2}]):
+            self.assertEqual(self.run_delivery(), 0)
+        self.assertEqual(json.loads(self.receipts.read_text())['ep045-p1']['status'], 'complete')
     def test_invalid_video_rejected(self):
         self.video.write_bytes(b'x' * 2048)
         with patch.object(tg, 'http_telegram') as api:
