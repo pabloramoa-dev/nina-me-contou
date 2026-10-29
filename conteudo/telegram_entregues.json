@@ -28,5 +28,10 @@
     "hash": "9e20e012ee753094be2e43ca7c8b83561ac8ab6e42a90f93ef946a74e7b0ddfc",
     "status": "retry_video",
     "tentativas_incertas": 0
+  },
+  "ep050-p1": {
+    "hash": "75b306f7f3e55822f6d7420bef4d178709b99dd4c42f590fd585c39979d62c44",
+    "status": "sending_video",
+    "tentativas_incertas": 0
   }
 }
