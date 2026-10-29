@@ -136,11 +136,12 @@
   },
   "ep108-p2": {
     "hash": "3f76697365f42eedce1c66b707643650e4241f8a55437bbb58103d23cafcf832",
-    "status": "sending_description",
-    "tentativas_incertas": 0,
+    "status": "complete",
     "telegram_message_id": 15,
     "file_id": "BQACAgEAAxkDAAMPauOctO9DKwvelsCSICVA9imVMaEAAu8KAAK5EhhHTrm62nSsCgw9BA",
     "file_size": 19228983,
-    "comprimido": false
+    "comprimido": false,
+    "description_message_id": 16,
+    "entregue_em": "2026-10-29T19:21:30Z"
   }
 }
