@@ -21,7 +21,7 @@
   },
   "ep049-p1": {
     "hash": "44e92f5453a4652c3761253a79f4034d8f7bab5dc84627cc55b86791af1948e9",
-    "status": "retry_video",
+    "status": "sending_video",
     "tentativas_incertas": 0
   },
   "ep049-p2": {
