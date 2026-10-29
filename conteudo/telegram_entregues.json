@@ -173,5 +173,10 @@
     "comprimido": false,
     "description_message_id": 22,
     "entregue_em": "2026-10-29T20:04:26Z"
+  },
+  "ep110-p2": {
+    "hash": "f6c90fa90c27fecf7474b290f6a7094308cea90d6f2fdd5b8e82d333f244662f",
+    "status": "sending_video",
+    "tentativas_incertas": 0
   }
 }
