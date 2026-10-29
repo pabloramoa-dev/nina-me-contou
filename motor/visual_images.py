@@ -236,9 +236,15 @@ def preparar(ep, segs, assets, pasta, generator=None):
                 try:
                     estilo = str(ep.get("visual_style") or os.environ.get("NINA_STORY_STYLE", "cinematic_2d")).strip().lower()
                     if estilo == "cinematic_2d":
-                        from cinematic_story_art import render as render_local
+                        try:
+                            from .cinematic_story_art import render as render_local
+                        except ImportError:
+                            from cinematic_story_art import render as render_local
                     elif estilo == "classic":
-                        from local_story_art import render as render_local
+                        try:
+                            from .local_story_art import render as render_local
+                        except ImportError:
+                            from local_story_art import render as render_local
                     else:
                         raise ValueError("NINA_STORY_STYLE invalido: use cinematic_2d ou classic")
                     local_data = validar_imagem(render_local(scene, ep))
