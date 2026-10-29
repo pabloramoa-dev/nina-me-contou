@@ -233,5 +233,10 @@
     "comprimido": false,
     "description_message_id": 34,
     "entregue_em": "2026-10-29T20:05:24Z"
+  },
+  "ep113-p2": {
+    "hash": "cb9683c6ca474f83444d90bff3765e224afcedd76ecdb6ff460928f27f4411d9",
+    "status": "sending_video",
+    "tentativas_incertas": 0
   }
 }
