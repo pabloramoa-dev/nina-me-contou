@@ -1,0 +1,107 @@
+{
+  "id": "ep173-p1",
+  "ep": 173,
+  "parte": 1,
+  "titulo": "O CONVITE QUE NUNCA CHEGOU",
+  "temporada": "Novas histórias originais — viral 2026",
+  "cenario": "tarde",
+  "batidas": [
+    {
+      "fala": "As confirmações apareciam no sistema, mas ninguém tinha recebido mensagem.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "confirmações",
+        "apareciam"
+      ]
+    },
+    {
+      "fala": "Essa é a história de Cássia. Cássia preparou uma festa de reencontro e descobriu que metade dos convidados sequer sabia da data.",
+      "expr": "neutra",
+      "arte": [
+        "conversa",
+        "CÁSSIA"
+      ],
+      "destaque": [
+        "história",
+        "Cássia."
+      ]
+    },
+    {
+      "fala": "Até ali, os detalhes pareciam desconectados. Mas uma pergunta simples fez a situação ficar muito menos tranquila do que parecia à primeira vista.",
+      "expr": "triste",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "detalhes",
+        "pareciam"
+      ]
+    },
+    {
+      "fala": "A empresa de eventos mostrou uma planilha alterada na coluna de endereços.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "empresa",
+        "eventos"
+      ]
+    },
+    {
+      "fala": "Foi nesse momento que Cássia decidiu não aceitar apenas rumores. Ela precisava descobrir o que realmente tinha acontecido, antes que alguém tirasse conclusões por ela.",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete_v",
+        "UMA NOVA PISTA"
+      ],
+      "destaque": [
+        "momento",
+        "decidiu"
+      ]
+    },
+    {
+      "fala": "Um familiar bem-intencionado havia usado contatos antigos, achando que eram os mais atualizados.",
+      "expr": "ironica",
+      "arte": [
+        "notificacao"
+      ],
+      "destaque": [
+        "familiar",
+        "bem-intencionado"
+      ]
+    },
+    {
+      "fala": "A conversa começou cheia de justificativas e pausas, como se ninguém quisesse ser a primeira pessoa a contar a parte mais importante.",
+      "expr": "neutra",
+      "arte": [
+        "coracao"
+      ],
+      "destaque": [
+        "conversa",
+        "começou"
+      ]
+    },
+    {
+      "fala": "E olha: a explicação completa veio acompanhada de uma escolha difícil. Na parte dois eu conto o que Cássia descobriu e como essa história terminou.",
+      "expr": "neutra",
+      "arte": [
+        "conversa",
+        "CÁSSIA"
+      ],
+      "destaque": [
+        "explicação",
+        "completa"
+      ]
+    }
+  ],
+  "fim": "CONTINUA NA PARTE 2",
+  "legenda_post": "🎭 O CONVITE QUE NUNCA CHEGOU\n\nUma descoberta inesperada muda a vida de Cássia. A conclusão vem na parte 2.\n\nHistória de ficção. Personagens e acontecimentos inventados com base em temas narrativos populares.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+  "legenda_tiktok": "🎭 O CONVITE QUE NUNCA CHEGOU — parte 1.\nHistória de ficção. #storytime #historias #ninamecontou",
+  "gerado_automaticamente": false,
+  "lote": "100-novas-historias-20261029",
+  "categoria": "ficcao_original"
+}

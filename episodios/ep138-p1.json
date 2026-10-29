@@ -1,0 +1,107 @@
+{
+  "id": "ep138-p1",
+  "ep": 138,
+  "parte": 1,
+  "titulo": "A SOGRA VESTIDA DE NOIVA",
+  "temporada": "Novas histórias originais — viral 2026",
+  "cenario": "tarde",
+  "batidas": [
+    {
+      "fala": "A sogra afirmava que era apenas uma roupa elegante, mas tinha pedido ao fotógrafo retratos individuais no altar.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "afirmava",
+        "elegante,"
+      ]
+    },
+    {
+      "fala": "Essa é a história de Juliana. Juliana chegava à igreja para seu casamento com Fábio quando viu a sogra com um vestido branco semelhante ao seu.",
+      "expr": "neutra",
+      "arte": [
+        "conversa",
+        "JULIANA"
+      ],
+      "destaque": [
+        "história",
+        "Juliana."
+      ]
+    },
+    {
+      "fala": "Até ali, os detalhes pareciam desconectados. Mas uma pergunta simples fez a situação ficar muito menos tranquila do que parecia à primeira vista.",
+      "expr": "triste",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "detalhes",
+        "pareciam"
+      ]
+    },
+    {
+      "fala": "Os convidados cochicharam, e Juliana quase desistiu de entrar antes de ouvir a opinião de Fábio.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "convidados",
+        "cochicharam,"
+      ]
+    },
+    {
+      "fala": "Foi nesse momento que Juliana decidiu não aceitar apenas rumores. Ela precisava descobrir o que realmente tinha acontecido, antes que alguém tirasse conclusões por ela.",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete_v",
+        "UMA NOVA PISTA"
+      ],
+      "destaque": [
+        "momento",
+        "Juliana"
+      ]
+    },
+    {
+      "fala": "Uma tia mostrou a mensagem em que a sogra perguntara se conseguiria surpreender os noivos com sua roupa.",
+      "expr": "ironica",
+      "arte": [
+        "notificacao"
+      ],
+      "destaque": [
+        "mostrou",
+        "mensagem"
+      ]
+    },
+    {
+      "fala": "A conversa começou cheia de justificativas e pausas, como se ninguém quisesse ser a primeira pessoa a contar a parte mais importante.",
+      "expr": "neutra",
+      "arte": [
+        "coracao"
+      ],
+      "destaque": [
+        "conversa",
+        "começou"
+      ]
+    },
+    {
+      "fala": "E olha: a explicação completa veio acompanhada de uma escolha difícil. Na parte dois eu conto o que Juliana descobriu e como essa história terminou.",
+      "expr": "neutra",
+      "arte": [
+        "conversa",
+        "JULIANA"
+      ],
+      "destaque": [
+        "explicação",
+        "completa"
+      ]
+    }
+  ],
+  "fim": "CONTINUA NA PARTE 2",
+  "legenda_post": "🎭 A SOGRA VESTIDA DE NOIVA\n\nUma descoberta inesperada muda a vida de Juliana. A conclusão vem na parte 2.\n\nHistória de ficção. Personagens e acontecimentos inventados com base em temas narrativos populares.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+  "legenda_tiktok": "🎭 A SOGRA VESTIDA DE NOIVA — parte 1.\nHistória de ficção. #storytime #historias #ninamecontou",
+  "gerado_automaticamente": false,
+  "lote": "100-novas-historias-20261029",
+  "categoria": "ficcao_original"
+}

@@ -1,0 +1,107 @@
+{
+  "id": "ep158-p1",
+  "ep": 158,
+  "parte": 1,
+  "titulo": "O PAI QUE RECEBEU SÓ A CONTA",
+  "temporada": "Novas histórias originais — viral 2026",
+  "cenario": "tarde",
+  "batidas": [
+    {
+      "fala": "Uma tia tinha encaminhado o orçamento e escrito que ele ajudaria como sempre.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "encaminhado",
+        "orçamento"
+      ]
+    },
+    {
+      "fala": "Essa é a história de Helena. Helena soube que o pai recebera a cobrança do buffet antes do convite para a sua festa.",
+      "expr": "neutra",
+      "arte": [
+        "conversa",
+        "HELENA"
+      ],
+      "destaque": [
+        "história",
+        "Helena."
+      ]
+    },
+    {
+      "fala": "Até ali, os detalhes pareciam desconectados. Mas uma pergunta simples fez a situação ficar muito menos tranquila do que parecia à primeira vista.",
+      "expr": "triste",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "detalhes",
+        "pareciam"
+      ]
+    },
+    {
+      "fala": "Helena procurou o pai e percebeu que ele estava magoado por ser lembrado apenas como pagador.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "procurou",
+        "percebeu"
+      ]
+    },
+    {
+      "fala": "Foi nesse momento que Helena decidiu não aceitar apenas rumores. Ela precisava descobrir o que realmente tinha acontecido, antes que alguém tirasse conclusões por ela.",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete_v",
+        "UMA NOVA PISTA"
+      ],
+      "destaque": [
+        "momento",
+        "decidiu"
+      ]
+    },
+    {
+      "fala": "A tia confessou que assumira uma tradição da família sem perguntar a nenhum dos dois.",
+      "expr": "ironica",
+      "arte": [
+        "notificacao"
+      ],
+      "destaque": [
+        "confessou",
+        "assumira"
+      ]
+    },
+    {
+      "fala": "A conversa começou cheia de justificativas e pausas, como se ninguém quisesse ser a primeira pessoa a contar a parte mais importante.",
+      "expr": "neutra",
+      "arte": [
+        "coracao"
+      ],
+      "destaque": [
+        "conversa",
+        "começou"
+      ]
+    },
+    {
+      "fala": "E olha: a explicação completa veio acompanhada de uma escolha difícil. Na parte dois eu conto o que Helena descobriu e como essa história terminou.",
+      "expr": "neutra",
+      "arte": [
+        "conversa",
+        "HELENA"
+      ],
+      "destaque": [
+        "explicação",
+        "completa"
+      ]
+    }
+  ],
+  "fim": "CONTINUA NA PARTE 2",
+  "legenda_post": "🎭 O PAI QUE RECEBEU SÓ A CONTA\n\nUma descoberta inesperada muda a vida de Helena. A conclusão vem na parte 2.\n\nHistória de ficção. Personagens e acontecimentos inventados com base em temas narrativos populares.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+  "legenda_tiktok": "🎭 O PAI QUE RECEBEU SÓ A CONTA — parte 1.\nHistória de ficção. #storytime #historias #ninamecontou",
+  "gerado_automaticamente": false,
+  "lote": "100-novas-historias-20261029",
+  "categoria": "ficcao_original"
+}

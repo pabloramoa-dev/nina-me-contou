@@ -1,0 +1,107 @@
+{
+  "id": "ep142-p1",
+  "ep": 142,
+  "parte": 1,
+  "titulo": "O PRESENTE COM DUAS DEDICATÓRIAS",
+  "temporada": "Novas histórias originais — viral 2026",
+  "cenario": "tarde",
+  "batidas": [
+    {
+      "fala": "Nas duas caixas aparecia a mesma frase, escrita com a mesma caligrafia e a mesma data.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "aparecia",
+        "escrita"
+      ]
+    },
+    {
+      "fala": "Essa é a história de Cecília. Cecília ganhou um colar do namorado e encontrou a fotografia de uma joia idêntica no perfil de outra mulher.",
+      "expr": "neutra",
+      "arte": [
+        "conversa",
+        "CECÍLIA"
+      ],
+      "destaque": [
+        "história",
+        "Cecília."
+      ]
+    },
+    {
+      "fala": "Até ali, os detalhes pareciam desconectados. Mas uma pergunta simples fez a situação ficar muito menos tranquila do que parecia à primeira vista.",
+      "expr": "triste",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "detalhes",
+        "pareciam"
+      ]
+    },
+    {
+      "fala": "Ela procurou a loja para confirmar se havia ocorrido uma troca de encomendas.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "procurou",
+        "confirmar"
+      ]
+    },
+    {
+      "fala": "Foi nesse momento que Cecília decidiu não aceitar apenas rumores. Ela precisava descobrir o que realmente tinha acontecido, antes que alguém tirasse conclusões por ela.",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete_v",
+        "UMA NOVA PISTA"
+      ],
+      "destaque": [
+        "momento",
+        "Cecília"
+      ]
+    },
+    {
+      "fala": "A vendedora explicou que os dois colares pertenciam a um pedido de presentes corporativos feito pelo namorado.",
+      "expr": "ironica",
+      "arte": [
+        "notificacao"
+      ],
+      "destaque": [
+        "vendedora",
+        "explicou"
+      ]
+    },
+    {
+      "fala": "A conversa começou cheia de justificativas e pausas, como se ninguém quisesse ser a primeira pessoa a contar a parte mais importante.",
+      "expr": "neutra",
+      "arte": [
+        "coracao"
+      ],
+      "destaque": [
+        "conversa",
+        "começou"
+      ]
+    },
+    {
+      "fala": "E olha: a explicação completa veio acompanhada de uma escolha difícil. Na parte dois eu conto o que Cecília descobriu e como essa história terminou.",
+      "expr": "neutra",
+      "arte": [
+        "conversa",
+        "CECÍLIA"
+      ],
+      "destaque": [
+        "explicação",
+        "completa"
+      ]
+    }
+  ],
+  "fim": "CONTINUA NA PARTE 2",
+  "legenda_post": "🎭 O PRESENTE COM DUAS DEDICATÓRIAS\n\nUma descoberta inesperada muda a vida de Cecília. A conclusão vem na parte 2.\n\nHistória de ficção. Personagens e acontecimentos inventados com base em temas narrativos populares.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+  "legenda_tiktok": "🎭 O PRESENTE COM DUAS DEDICATÓRIAS — parte 1.\nHistória de ficção. #storytime #historias #ninamecontou",
+  "gerado_automaticamente": false,
+  "lote": "100-novas-historias-20261029",
+  "categoria": "ficcao_original"
+}

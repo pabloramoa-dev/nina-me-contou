@@ -1,0 +1,107 @@
+{
+  "id": "ep170-p2",
+  "ep": 170,
+  "parte": 2,
+  "titulo": "O JANTAR QUE NÃO FOI COMPRADO",
+  "temporada": "Novas histórias originais — viral 2026",
+  "cenario": "noite",
+  "batidas": [
+    {
+      "fala": "Na primeira parte, Nádia descobriu uma situação que não fazia sentido. Agora vem o detalhe que muda toda a história.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "primeira",
+        "descobriu"
+      ]
+    },
+    {
+      "fala": "A pista não podia mais ser ignorada. A gerente entrou em contato e pediu que a descrição fosse corrigida com transparência.",
+      "expr": "neutra",
+      "arte": [
+        "conversa",
+        "NÁDIA"
+      ],
+      "destaque": [
+        "ignorada.",
+        "gerente"
+      ]
+    },
+    {
+      "fala": "A influenciadora atualizou a postagem e reconheceu o erro de comunicar a situação.",
+      "expr": "triste",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "influenciadora",
+        "atualizou"
+      ]
+    },
+    {
+      "fala": "Ninguém ali tinha uma solução pronta. Os envolvidos precisaram reconhecer o que sabiam, o que estavam escondendo e o que cada um realmente podia decidir.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "Ninguém",
+        "solução"
+      ]
+    },
+    {
+      "fala": "Nádia propôs novas regras para registrar permutas e convites dali em diante.",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete_v",
+        "A VERDADE APARECEU"
+      ],
+      "destaque": [
+        "registrar",
+        "permutas"
+      ]
+    },
+    {
+      "fala": "E foi aí que o rumo da conversa mudou: não bastava explicar o passado, também era preciso assumir responsabilidade pelo que aconteceria depois.",
+      "expr": "ironica",
+      "arte": [
+        "notificacao"
+      ],
+      "destaque": [
+        "conversa",
+        "bastava"
+      ]
+    },
+    {
+      "fala": "O jantar continuou gostoso; a história falsa sobre quem pagou é que saiu do cardápio.",
+      "expr": "neutra",
+      "arte": [
+        "coracao"
+      ],
+      "destaque": [
+        "continuou",
+        "gostoso;"
+      ]
+    },
+    {
+      "fala": "Se você estivesse no lugar de Nádia, faria a mesma escolha? Eu quero saber nos comentários, porque a parte mais interessante é o que a gente aprende com o final.",
+      "expr": "neutra",
+      "arte": [
+        "conversa",
+        "NÁDIA"
+      ],
+      "destaque": [
+        "estivesse",
+        "escolha?"
+      ]
+    }
+  ],
+  "fim": "SEGUE A NINA",
+  "legenda_post": "🎭 O JANTAR QUE NÃO FOI COMPRADO\n\nA história de Nádia chegou ao desfecho. Você faria diferente?\n\nHistória de ficção. Personagens e acontecimentos inventados com base em temas narrativos populares.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+  "legenda_tiktok": "🎭 O JANTAR QUE NÃO FOI COMPRADO — parte 2.\nHistória de ficção. #storytime #historias #ninamecontou",
+  "gerado_automaticamente": false,
+  "lote": "100-novas-historias-20261029",
+  "categoria": "ficcao_original"
+}

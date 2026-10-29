@@ -1,0 +1,107 @@
+{
+  "id": "ep160-p1",
+  "ep": 160,
+  "parte": 1,
+  "titulo": "O TERRENO DAS DUAS ASSINATURAS",
+  "temporada": "Novas histórias originais — viral 2026",
+  "cenario": "tarde",
+  "batidas": [
+    {
+      "fala": "O corretor tinha mostrado apenas uma cópia antiga, sem a transferência final.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "corretor",
+        "mostrado"
+      ]
+    },
+    {
+      "fala": "Essa é a história de Vanessa. Vanessa foi solicitar o alvará da construção e descobriu que o terreno não estava registrado como imaginava.",
+      "expr": "neutra",
+      "arte": [
+        "conversa",
+        "VANESSA"
+      ],
+      "destaque": [
+        "história",
+        "Vanessa."
+      ]
+    },
+    {
+      "fala": "Até ali, os detalhes pareciam desconectados. Mas uma pergunta simples fez a situação ficar muito menos tranquila do que parecia à primeira vista.",
+      "expr": "triste",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "detalhes",
+        "pareciam"
+      ]
+    },
+    {
+      "fala": "Ela procurou o cartório e encontrou duas assinaturas no processo de propriedade.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "procurou",
+        "cartório"
+      ]
+    },
+    {
+      "fala": "Foi nesse momento que Vanessa decidiu não aceitar apenas rumores. Ela precisava descobrir o que realmente tinha acontecido, antes que alguém tirasse conclusões por ela.",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete_v",
+        "UMA NOVA PISTA"
+      ],
+      "destaque": [
+        "momento",
+        "Vanessa"
+      ]
+    },
+    {
+      "fala": "Uma delas pertencia à tia que ajudara na compra e nunca tivera seu nome esclarecido no acordo.",
+      "expr": "ironica",
+      "arte": [
+        "notificacao"
+      ],
+      "destaque": [
+        "pertencia",
+        "ajudara"
+      ]
+    },
+    {
+      "fala": "A conversa começou cheia de justificativas e pausas, como se ninguém quisesse ser a primeira pessoa a contar a parte mais importante.",
+      "expr": "neutra",
+      "arte": [
+        "coracao"
+      ],
+      "destaque": [
+        "conversa",
+        "começou"
+      ]
+    },
+    {
+      "fala": "E olha: a explicação completa veio acompanhada de uma escolha difícil. Na parte dois eu conto o que Vanessa descobriu e como essa história terminou.",
+      "expr": "neutra",
+      "arte": [
+        "conversa",
+        "VANESSA"
+      ],
+      "destaque": [
+        "explicação",
+        "completa"
+      ]
+    }
+  ],
+  "fim": "CONTINUA NA PARTE 2",
+  "legenda_post": "🎭 O TERRENO DAS DUAS ASSINATURAS\n\nUma descoberta inesperada muda a vida de Vanessa. A conclusão vem na parte 2.\n\nHistória de ficção. Personagens e acontecimentos inventados com base em temas narrativos populares.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+  "legenda_tiktok": "🎭 O TERRENO DAS DUAS ASSINATURAS — parte 1.\nHistória de ficção. #storytime #historias #ninamecontou",
+  "gerado_automaticamente": false,
+  "lote": "100-novas-historias-20261029",
+  "categoria": "ficcao_original"
+}

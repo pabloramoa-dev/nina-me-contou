@@ -1,0 +1,107 @@
+{
+  "id": "ep145-p1",
+  "ep": 145,
+  "parte": 1,
+  "titulo": "OS DEZESSETE CONVIDADOS",
+  "temporada": "Novas histórias originais — viral 2026",
+  "cenario": "tarde",
+  "batidas": [
+    {
+      "fala": "Todos tinham usado o mesmo endereço de e-mail, e o serviço de buffet já havia cobrado lugares extras.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "endereço",
+        "e-mail,"
+      ]
+    },
+    {
+      "fala": "Essa é a história de Patrícia. Patrícia percebeu que dezessete pessoas desconhecidas apareciam como confirmadas para a festa de seu casamento.",
+      "expr": "neutra",
+      "arte": [
+        "conversa",
+        "PATRÍCIA"
+      ],
+      "destaque": [
+        "história",
+        "Patrícia."
+      ]
+    },
+    {
+      "fala": "Até ali, os detalhes pareciam desconectados. Mas uma pergunta simples fez a situação ficar muito menos tranquila do que parecia à primeira vista.",
+      "expr": "triste",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "detalhes",
+        "pareciam"
+      ]
+    },
+    {
+      "fala": "Ela investigou com a organizadora, que mostrou uma planilha editada por alguém da família.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "investigou",
+        "organizadora,"
+      ]
+    },
+    {
+      "fala": "Foi nesse momento que Patrícia decidiu não aceitar apenas rumores. Ela precisava descobrir o que realmente tinha acontecido, antes que alguém tirasse conclusões por ela.",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete_v",
+        "UMA NOVA PISTA"
+      ],
+      "destaque": [
+        "momento",
+        "Patrícia"
+      ]
+    },
+    {
+      "fala": "O endereço pertencia ao primo que organizava uma apresentação musical como surpresa para os noivos.",
+      "expr": "ironica",
+      "arte": [
+        "notificacao"
+      ],
+      "destaque": [
+        "endereço",
+        "pertencia"
+      ]
+    },
+    {
+      "fala": "A conversa começou cheia de justificativas e pausas, como se ninguém quisesse ser a primeira pessoa a contar a parte mais importante.",
+      "expr": "neutra",
+      "arte": [
+        "coracao"
+      ],
+      "destaque": [
+        "conversa",
+        "começou"
+      ]
+    },
+    {
+      "fala": "E olha: a explicação completa veio acompanhada de uma escolha difícil. Na parte dois eu conto o que Patrícia descobriu e como essa história terminou.",
+      "expr": "neutra",
+      "arte": [
+        "conversa",
+        "PATRÍCIA"
+      ],
+      "destaque": [
+        "explicação",
+        "completa"
+      ]
+    }
+  ],
+  "fim": "CONTINUA NA PARTE 2",
+  "legenda_post": "🎭 OS DEZESSETE CONVIDADOS\n\nUma descoberta inesperada muda a vida de Patrícia. A conclusão vem na parte 2.\n\nHistória de ficção. Personagens e acontecimentos inventados com base em temas narrativos populares.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+  "legenda_tiktok": "🎭 OS DEZESSETE CONVIDADOS — parte 1.\nHistória de ficção. #storytime #historias #ninamecontou",
+  "gerado_automaticamente": false,
+  "lote": "100-novas-historias-20261029",
+  "categoria": "ficcao_original"
+}

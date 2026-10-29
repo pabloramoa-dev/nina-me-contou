@@ -1,0 +1,107 @@
+{
+  "id": "ep171-p1",
+  "ep": 171,
+  "parte": 1,
+  "titulo": "A AVALIAÇÃO DE UMA VISITA QUE NÃO HOUVE",
+  "temporada": "Novas histórias originais — viral 2026",
+  "cenario": "tarde",
+  "batidas": [
+    {
+      "fala": "O comentário descrevia um prato retirado do cardápio havia meses.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "comentário",
+        "descrevia"
+      ]
+    },
+    {
+      "fala": "Essa é a história de Cristina. Cristina recebeu uma avaliação devastadora de seu restaurante num dia em que a casa estava fechada.",
+      "expr": "neutra",
+      "arte": [
+        "conversa",
+        "CRISTINA"
+      ],
+      "destaque": [
+        "história",
+        "Cristina."
+      ]
+    },
+    {
+      "fala": "Até ali, os detalhes pareciam desconectados. Mas uma pergunta simples fez a situação ficar muito menos tranquila do que parecia à primeira vista.",
+      "expr": "triste",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "detalhes",
+        "pareciam"
+      ]
+    },
+    {
+      "fala": "Ela verificou registros e pediu à plataforma revisão da postagem sem divulgar o nome do autor.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "verificou",
+        "registros"
+      ]
+    },
+    {
+      "fala": "Foi nesse momento que Cristina decidiu não aceitar apenas rumores. Ela precisava descobrir o que realmente tinha acontecido, antes que alguém tirasse conclusões por ela.",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete_v",
+        "UMA NOVA PISTA"
+      ],
+      "destaque": [
+        "momento",
+        "Cristina"
+      ]
+    },
+    {
+      "fala": "A pessoa que avaliara confundira o estabelecimento com outro restaurante de nome parecido.",
+      "expr": "ironica",
+      "arte": [
+        "notificacao"
+      ],
+      "destaque": [
+        "avaliara",
+        "confundira"
+      ]
+    },
+    {
+      "fala": "A conversa começou cheia de justificativas e pausas, como se ninguém quisesse ser a primeira pessoa a contar a parte mais importante.",
+      "expr": "neutra",
+      "arte": [
+        "coracao"
+      ],
+      "destaque": [
+        "conversa",
+        "começou"
+      ]
+    },
+    {
+      "fala": "E olha: a explicação completa veio acompanhada de uma escolha difícil. Na parte dois eu conto o que Cristina descobriu e como essa história terminou.",
+      "expr": "neutra",
+      "arte": [
+        "conversa",
+        "CRISTINA"
+      ],
+      "destaque": [
+        "explicação",
+        "completa"
+      ]
+    }
+  ],
+  "fim": "CONTINUA NA PARTE 2",
+  "legenda_post": "🎭 A AVALIAÇÃO DE UMA VISITA QUE NÃO HOUVE\n\nUma descoberta inesperada muda a vida de Cristina. A conclusão vem na parte 2.\n\nHistória de ficção. Personagens e acontecimentos inventados com base em temas narrativos populares.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+  "legenda_tiktok": "🎭 A AVALIAÇÃO DE UMA VISITA QUE NÃO HOUVE — parte 1.\nHistória de ficção. #storytime #historias #ninamecontou",
+  "gerado_automaticamente": false,
+  "lote": "100-novas-historias-20261029",
+  "categoria": "ficcao_original"
+}

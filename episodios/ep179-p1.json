@@ -1,0 +1,107 @@
+{
+  "id": "ep179-p1",
+  "ep": 179,
+  "parte": 1,
+  "titulo": "A CHAVE DE VINTE ANOS",
+  "temporada": "Novas histórias originais — viral 2026",
+  "cenario": "tarde",
+  "batidas": [
+    {
+      "fala": "O remetente tinha apenas um sobrenome familiar e um endereço de outra cidade.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "remetente",
+        "sobrenome"
+      ]
+    },
+    {
+      "fala": "Essa é a história de Irene. Irene recebeu uma chave antiga pelo correio, junto com a frase agora você pode abrir a caixa.",
+      "expr": "neutra",
+      "arte": [
+        "conversa",
+        "IRENE"
+      ],
+      "destaque": [
+        "história",
+        "recebeu"
+      ]
+    },
+    {
+      "fala": "Até ali, os detalhes pareciam desconectados. Mas uma pergunta simples fez a situação ficar muito menos tranquila do que parecia à primeira vista.",
+      "expr": "triste",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "detalhes",
+        "pareciam"
+      ]
+    },
+    {
+      "fala": "Ela contatou o parente por telefone antes de visitar o local e descobriu um depósito guardado pelo avô.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "contatou",
+        "parente"
+      ]
+    },
+    {
+      "fala": "Foi nesse momento que Irene decidiu não aceitar apenas rumores. Ela precisava descobrir o que realmente tinha acontecido, antes que alguém tirasse conclusões por ela.",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete_v",
+        "UMA NOVA PISTA"
+      ],
+      "destaque": [
+        "momento",
+        "decidiu"
+      ]
+    },
+    {
+      "fala": "A chave abria um baú com ferramentas e desenhos de brinquedos feitos à mão.",
+      "expr": "ironica",
+      "arte": [
+        "notificacao"
+      ],
+      "destaque": [
+        "ferramentas",
+        "desenhos"
+      ]
+    },
+    {
+      "fala": "A conversa começou cheia de justificativas e pausas, como se ninguém quisesse ser a primeira pessoa a contar a parte mais importante.",
+      "expr": "neutra",
+      "arte": [
+        "coracao"
+      ],
+      "destaque": [
+        "conversa",
+        "começou"
+      ]
+    },
+    {
+      "fala": "E olha: a explicação completa veio acompanhada de uma escolha difícil. Na parte dois eu conto o que Irene descobriu e como essa história terminou.",
+      "expr": "neutra",
+      "arte": [
+        "conversa",
+        "IRENE"
+      ],
+      "destaque": [
+        "explicação",
+        "completa"
+      ]
+    }
+  ],
+  "fim": "CONTINUA NA PARTE 2",
+  "legenda_post": "🎭 A CHAVE DE VINTE ANOS\n\nUma descoberta inesperada muda a vida de Irene. A conclusão vem na parte 2.\n\nHistória de ficção. Personagens e acontecimentos inventados com base em temas narrativos populares.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+  "legenda_tiktok": "🎭 A CHAVE DE VINTE ANOS — parte 1.\nHistória de ficção. #storytime #historias #ninamecontou",
+  "gerado_automaticamente": false,
+  "lote": "100-novas-historias-20261029",
+  "categoria": "ficcao_original"
+}

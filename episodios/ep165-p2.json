@@ -1,0 +1,107 @@
+{
+  "id": "ep165-p2",
+  "ep": 165,
+  "parte": 2,
+  "titulo": "A NOTÍCIA PELO INSTAGRAM",
+  "temporada": "Novas histórias originais — viral 2026",
+  "cenario": "noite",
+  "batidas": [
+    {
+      "fala": "Na primeira parte, Lívia descobriu uma situação que não fazia sentido. Agora vem o detalhe que muda toda a história.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "primeira",
+        "descobriu"
+      ]
+    },
+    {
+      "fala": "A pista não podia mais ser ignorada. O pai contou que havia trocado de contato havia meses e pensara que a filha não queria sua presença.",
+      "expr": "neutra",
+      "arte": [
+        "conversa",
+        "LÍVIA"
+      ],
+      "destaque": [
+        "ignorada.",
+        "trocado"
+      ]
+    },
+    {
+      "fala": "Lívia se desculpou pelo desencontro sem transformar a situação numa cobrança pública.",
+      "expr": "triste",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "desculpou",
+        "desencontro"
+      ]
+    },
+    {
+      "fala": "Ninguém ali tinha uma solução pronta. Os envolvidos precisaram reconhecer o que sabiam, o que estavam escondendo e o que cada um realmente podia decidir.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "Ninguém",
+        "solução"
+      ]
+    },
+    {
+      "fala": "Organizou um jantar para mostrar as fotografias e contar como tinha sido a formatura.",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete_v",
+        "A VERDADE APARECEU"
+      ],
+      "destaque": [
+        "Organizou",
+        "mostrar"
+      ]
+    },
+    {
+      "fala": "E foi aí que o rumo da conversa mudou: não bastava explicar o passado, também era preciso assumir responsabilidade pelo que aconteceria depois.",
+      "expr": "ironica",
+      "arte": [
+        "notificacao"
+      ],
+      "destaque": [
+        "conversa",
+        "bastava"
+      ]
+    },
+    {
+      "fala": "Não substituiu a cerimônia perdida, mas ajudou os dois a pararem de adivinhar as intenções um do outro.",
+      "expr": "neutra",
+      "arte": [
+        "coracao"
+      ],
+      "destaque": [
+        "substituiu",
+        "cerimônia"
+      ]
+    },
+    {
+      "fala": "Se você estivesse no lugar de Lívia, faria a mesma escolha? Eu quero saber nos comentários, porque a parte mais interessante é o que a gente aprende com o final.",
+      "expr": "neutra",
+      "arte": [
+        "conversa",
+        "LÍVIA"
+      ],
+      "destaque": [
+        "estivesse",
+        "escolha?"
+      ]
+    }
+  ],
+  "fim": "SEGUE A NINA",
+  "legenda_post": "🎭 A NOTÍCIA PELO INSTAGRAM\n\nA história de Lívia chegou ao desfecho. Você faria diferente?\n\nHistória de ficção. Personagens e acontecimentos inventados com base em temas narrativos populares.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+  "legenda_tiktok": "🎭 A NOTÍCIA PELO INSTAGRAM — parte 2.\nHistória de ficção. #storytime #historias #ninamecontou",
+  "gerado_automaticamente": false,
+  "lote": "100-novas-historias-20261029",
+  "categoria": "ficcao_original"
+}

@@ -1,0 +1,107 @@
+{
+  "id": "ep181-p1",
+  "ep": 181,
+  "parte": 1,
+  "titulo": "O NOME NO GRUPO DO CONDOMÍNIO",
+  "temporada": "Novas histórias originais — viral 2026",
+  "cenario": "tarde",
+  "batidas": [
+    {
+      "fala": "Vizinhos falavam de uma promessa relacionada ao apartamento recém-comprado.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "Vizinhos",
+        "falavam"
+      ]
+    },
+    {
+      "fala": "Essa é a história de Ana. Ana entrou no grupo do prédio e encontrou mensagens antigas sobre uma pessoa que nunca conhecera.",
+      "expr": "neutra",
+      "arte": [
+        "conversa",
+        "ANA"
+      ],
+      "destaque": [
+        "história",
+        "encontrou"
+      ]
+    },
+    {
+      "fala": "Até ali, os detalhes pareciam desconectados. Mas uma pergunta simples fez a situação ficar muito menos tranquila do que parecia à primeira vista.",
+      "expr": "triste",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "detalhes",
+        "pareciam"
+      ]
+    },
+    {
+      "fala": "Ela perguntou ao síndico e recebeu atas de reuniões anteriores.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "perguntou",
+        "síndico"
+      ]
+    },
+    {
+      "fala": "Foi nesse momento que Ana decidiu não aceitar apenas rumores. Ela precisava descobrir o que realmente tinha acontecido, antes que alguém tirasse conclusões por ela.",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete_v",
+        "UMA NOVA PISTA"
+      ],
+      "destaque": [
+        "momento",
+        "decidiu"
+      ]
+    },
+    {
+      "fala": "Descobriu que a moradora antiga coordenava uma horta na área comum e deixara caixas de sementes para os vizinhos.",
+      "expr": "ironica",
+      "arte": [
+        "notificacao"
+      ],
+      "destaque": [
+        "Descobriu",
+        "moradora"
+      ]
+    },
+    {
+      "fala": "A conversa começou cheia de justificativas e pausas, como se ninguém quisesse ser a primeira pessoa a contar a parte mais importante.",
+      "expr": "neutra",
+      "arte": [
+        "coracao"
+      ],
+      "destaque": [
+        "conversa",
+        "começou"
+      ]
+    },
+    {
+      "fala": "E olha: a explicação completa veio acompanhada de uma escolha difícil. Na parte dois eu conto o que Ana descobriu e como essa história terminou.",
+      "expr": "neutra",
+      "arte": [
+        "conversa",
+        "ANA"
+      ],
+      "destaque": [
+        "explicação",
+        "completa"
+      ]
+    }
+  ],
+  "fim": "CONTINUA NA PARTE 2",
+  "legenda_post": "🎭 O NOME NO GRUPO DO CONDOMÍNIO\n\nUma descoberta inesperada muda a vida de Ana. A conclusão vem na parte 2.\n\nHistória de ficção. Personagens e acontecimentos inventados com base em temas narrativos populares.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+  "legenda_tiktok": "🎭 O NOME NO GRUPO DO CONDOMÍNIO — parte 1.\nHistória de ficção. #storytime #historias #ninamecontou",
+  "gerado_automaticamente": false,
+  "lote": "100-novas-historias-20261029",
+  "categoria": "ficcao_original"
+}

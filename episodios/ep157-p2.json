@@ -1,0 +1,107 @@
+{
+  "id": "ep157-p2",
+  "ep": 157,
+  "parte": 2,
+  "titulo": "O ALUGUEL DA PRÓPRIA MÃE",
+  "temporada": "Novas histórias originais — viral 2026",
+  "cenario": "noite",
+  "batidas": [
+    {
+      "fala": "Na primeira parte, Mariana descobriu uma situação que não fazia sentido. Agora vem o detalhe que muda toda a história.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "primeira",
+        "Mariana"
+      ]
+    },
+    {
+      "fala": "A pista não podia mais ser ignorada. Os documentos mostraram que a mãe havia concordado com contribuição para manutenção, mas não com o valor cobrado.",
+      "expr": "neutra",
+      "arte": [
+        "conversa",
+        "MARIANA"
+      ],
+      "destaque": [
+        "ignorada.",
+        "documentos"
+      ]
+    },
+    {
+      "fala": "As irmãs revisaram os gastos com a mãe presente, sem decidir por ela.",
+      "expr": "triste",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "revisaram",
+        "presente,"
+      ]
+    },
+    {
+      "fala": "Ninguém ali tinha uma solução pronta. Os envolvidos precisaram reconhecer o que sabiam, o que estavam escondendo e o que cada um realmente podia decidir.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "Ninguém",
+        "solução"
+      ]
+    },
+    {
+      "fala": "O pagamento foi ajustado de forma transparente e a família resolveu registrar as combinações por escrito.",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete_v",
+        "A VERDADE APARECEU"
+      ],
+      "destaque": [
+        "pagamento",
+        "ajustado"
+      ]
+    },
+    {
+      "fala": "E foi aí que o rumo da conversa mudou: não bastava explicar o passado, também era preciso assumir responsabilidade pelo que aconteceria depois.",
+      "expr": "ironica",
+      "arte": [
+        "notificacao"
+      ],
+      "destaque": [
+        "conversa",
+        "bastava"
+      ]
+    },
+    {
+      "fala": "Mariana descobriu que proteger alguém começa por ouvir a própria pessoa.",
+      "expr": "neutra",
+      "arte": [
+        "coracao"
+      ],
+      "destaque": [
+        "Mariana",
+        "descobriu"
+      ]
+    },
+    {
+      "fala": "Se você estivesse no lugar de Mariana, faria a mesma escolha? Eu quero saber nos comentários, porque a parte mais interessante é o que a gente aprende com o final.",
+      "expr": "neutra",
+      "arte": [
+        "conversa",
+        "MARIANA"
+      ],
+      "destaque": [
+        "estivesse",
+        "Mariana,"
+      ]
+    }
+  ],
+  "fim": "SEGUE A NINA",
+  "legenda_post": "🎭 O ALUGUEL DA PRÓPRIA MÃE\n\nA história de Mariana chegou ao desfecho. Você faria diferente?\n\nHistória de ficção. Personagens e acontecimentos inventados com base em temas narrativos populares.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+  "legenda_tiktok": "🎭 O ALUGUEL DA PRÓPRIA MÃE — parte 2.\nHistória de ficção. #storytime #historias #ninamecontou",
+  "gerado_automaticamente": false,
+  "lote": "100-novas-historias-20261029",
+  "categoria": "ficcao_original"
+}

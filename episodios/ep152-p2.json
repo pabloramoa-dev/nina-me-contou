@@ -1,0 +1,107 @@
+{
+  "id": "ep152-p2",
+  "ep": 152,
+  "parte": 2,
+  "titulo": "O RELÓGIO NA OUTRA FESTA",
+  "temporada": "Novas histórias originais — viral 2026",
+  "cenario": "noite",
+  "batidas": [
+    {
+      "fala": "Na primeira parte, Camila descobriu uma situação que não fazia sentido. Agora vem o detalhe que muda toda a história.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "primeira",
+        "descobriu"
+      ]
+    },
+    {
+      "fala": "A pista não podia mais ser ignorada. O namorado admitiu que passava por dificuldades financeiras, mas preferiu vender o presente a conversar.",
+      "expr": "neutra",
+      "arte": [
+        "conversa",
+        "CAMILA"
+      ],
+      "destaque": [
+        "ignorada.",
+        "namorado"
+      ]
+    },
+    {
+      "fala": "Camila disse que ele podia dispor de um objeto recebido, porém não aceitar que inventasse uma história sobre tê-lo perdido.",
+      "expr": "triste",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "recebido,",
+        "aceitar"
+      ]
+    },
+    {
+      "fala": "Ninguém ali tinha uma solução pronta. Os envolvidos precisaram reconhecer o que sabiam, o que estavam escondendo e o que cada um realmente podia decidir.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "Ninguém",
+        "solução"
+      ]
+    },
+    {
+      "fala": "Os dois decidiram suspender planos caros e conversar com transparência sobre a situação.",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete_v",
+        "A VERDADE APARECEU"
+      ],
+      "destaque": [
+        "decidiram",
+        "suspender"
+      ]
+    },
+    {
+      "fala": "E foi aí que o rumo da conversa mudou: não bastava explicar o passado, também era preciso assumir responsabilidade pelo que aconteceria depois.",
+      "expr": "ironica",
+      "arte": [
+        "notificacao"
+      ],
+      "destaque": [
+        "conversa",
+        "bastava"
+      ]
+    },
+    {
+      "fala": "O relógio não voltou, mas a discussão mostrou que o valor mais importante era a confiança.",
+      "expr": "neutra",
+      "arte": [
+        "coracao"
+      ],
+      "destaque": [
+        "relógio",
+        "voltou,"
+      ]
+    },
+    {
+      "fala": "Se você estivesse no lugar de Camila, faria a mesma escolha? Eu quero saber nos comentários, porque a parte mais interessante é o que a gente aprende com o final.",
+      "expr": "neutra",
+      "arte": [
+        "conversa",
+        "CAMILA"
+      ],
+      "destaque": [
+        "estivesse",
+        "Camila,"
+      ]
+    }
+  ],
+  "fim": "SEGUE A NINA",
+  "legenda_post": "🎭 O RELÓGIO NA OUTRA FESTA\n\nA história de Camila chegou ao desfecho. Você faria diferente?\n\nHistória de ficção. Personagens e acontecimentos inventados com base em temas narrativos populares.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+  "legenda_tiktok": "🎭 O RELÓGIO NA OUTRA FESTA — parte 2.\nHistória de ficção. #storytime #historias #ninamecontou",
+  "gerado_automaticamente": false,
+  "lote": "100-novas-historias-20261029",
+  "categoria": "ficcao_original"
+}

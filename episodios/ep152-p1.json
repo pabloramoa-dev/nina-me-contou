@@ -1,0 +1,107 @@
+{
+  "id": "ep152-p1",
+  "ep": 152,
+  "parte": 1,
+  "titulo": "O RELÓGIO NA OUTRA FESTA",
+  "temporada": "Novas histórias originais — viral 2026",
+  "cenario": "tarde",
+  "batidas": [
+    {
+      "fala": "Uma fotografia de uma festa mostrou o mesmo modelo, com a pulseira azul personalizada.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "fotografia",
+        "mostrou"
+      ]
+    },
+    {
+      "fala": "Essa é a história de Camila. Camila viu no braço de um desconhecido o relógio que tinha dado de presente ao namorado.",
+      "expr": "neutra",
+      "arte": [
+        "conversa",
+        "CAMILA"
+      ],
+      "destaque": [
+        "história",
+        "Camila."
+      ]
+    },
+    {
+      "fala": "Até ali, os detalhes pareciam desconectados. Mas uma pergunta simples fez a situação ficar muito menos tranquila do que parecia à primeira vista.",
+      "expr": "triste",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "detalhes",
+        "pareciam"
+      ]
+    },
+    {
+      "fala": "Ela perguntou de onde viera o relógio e descobriu que havia sido vendido num brechó.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "perguntou",
+        "relógio"
+      ]
+    },
+    {
+      "fala": "Foi nesse momento que Camila decidiu não aceitar apenas rumores. Ela precisava descobrir o que realmente tinha acontecido, antes que alguém tirasse conclusões por ela.",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete_v",
+        "UMA NOVA PISTA"
+      ],
+      "destaque": [
+        "momento",
+        "decidiu"
+      ]
+    },
+    {
+      "fala": "O namorado admitiu que passava por dificuldades financeiras, mas preferiu vender o presente a conversar.",
+      "expr": "ironica",
+      "arte": [
+        "notificacao"
+      ],
+      "destaque": [
+        "namorado",
+        "admitiu"
+      ]
+    },
+    {
+      "fala": "A conversa começou cheia de justificativas e pausas, como se ninguém quisesse ser a primeira pessoa a contar a parte mais importante.",
+      "expr": "neutra",
+      "arte": [
+        "coracao"
+      ],
+      "destaque": [
+        "conversa",
+        "começou"
+      ]
+    },
+    {
+      "fala": "E olha: a explicação completa veio acompanhada de uma escolha difícil. Na parte dois eu conto o que Camila descobriu e como essa história terminou.",
+      "expr": "neutra",
+      "arte": [
+        "conversa",
+        "CAMILA"
+      ],
+      "destaque": [
+        "explicação",
+        "completa"
+      ]
+    }
+  ],
+  "fim": "CONTINUA NA PARTE 2",
+  "legenda_post": "🎭 O RELÓGIO NA OUTRA FESTA\n\nUma descoberta inesperada muda a vida de Camila. A conclusão vem na parte 2.\n\nHistória de ficção. Personagens e acontecimentos inventados com base em temas narrativos populares.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+  "legenda_tiktok": "🎭 O RELÓGIO NA OUTRA FESTA — parte 1.\nHistória de ficção. #storytime #historias #ninamecontou",
+  "gerado_automaticamente": false,
+  "lote": "100-novas-historias-20261029",
+  "categoria": "ficcao_original"
+}

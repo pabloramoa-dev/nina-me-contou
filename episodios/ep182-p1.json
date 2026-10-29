@@ -1,0 +1,107 @@
+{
+  "id": "ep182-p1",
+  "ep": 182,
+  "parte": 1,
+  "titulo": "AS FOTOS RECORTADAS",
+  "temporada": "Novas histórias originais — viral 2026",
+  "cenario": "tarde",
+  "batidas": [
+    {
+      "fala": "Em todas havia uma borda irregular e uma pequena marca feita com caneta azul.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "irregular",
+        "pequena"
+      ]
+    },
+    {
+      "fala": "Essa é a história de Vera. Vera percebeu que alguém tinha sido recortado de muitas fotografias do álbum da família.",
+      "expr": "neutra",
+      "arte": [
+        "conversa",
+        "VERA"
+      ],
+      "destaque": [
+        "história",
+        "percebeu"
+      ]
+    },
+    {
+      "fala": "Até ali, os detalhes pareciam desconectados. Mas uma pergunta simples fez a situação ficar muito menos tranquila do que parecia à primeira vista.",
+      "expr": "triste",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "detalhes",
+        "pareciam"
+      ]
+    },
+    {
+      "fala": "Ela perguntou aos parentes mais velhos antes de inventar uma história de traição ou abandono.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "perguntou",
+        "parentes"
+      ]
+    },
+    {
+      "fala": "Foi nesse momento que Vera decidiu não aceitar apenas rumores. Ela precisava descobrir o que realmente tinha acontecido, antes que alguém tirasse conclusões por ela.",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete_v",
+        "UMA NOVA PISTA"
+      ],
+      "destaque": [
+        "momento",
+        "decidiu"
+      ]
+    },
+    {
+      "fala": "A pessoa retirada era um antigo fotógrafo de eventos que pedia cópias com exclusividade e nunca autorizara divulgação.",
+      "expr": "ironica",
+      "arte": [
+        "notificacao"
+      ],
+      "destaque": [
+        "retirada",
+        "fotógrafo"
+      ]
+    },
+    {
+      "fala": "A conversa começou cheia de justificativas e pausas, como se ninguém quisesse ser a primeira pessoa a contar a parte mais importante.",
+      "expr": "neutra",
+      "arte": [
+        "coracao"
+      ],
+      "destaque": [
+        "conversa",
+        "começou"
+      ]
+    },
+    {
+      "fala": "E olha: a explicação completa veio acompanhada de uma escolha difícil. Na parte dois eu conto o que Vera descobriu e como essa história terminou.",
+      "expr": "neutra",
+      "arte": [
+        "conversa",
+        "VERA"
+      ],
+      "destaque": [
+        "explicação",
+        "completa"
+      ]
+    }
+  ],
+  "fim": "CONTINUA NA PARTE 2",
+  "legenda_post": "🎭 AS FOTOS RECORTADAS\n\nUma descoberta inesperada muda a vida de Vera. A conclusão vem na parte 2.\n\nHistória de ficção. Personagens e acontecimentos inventados com base em temas narrativos populares.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+  "legenda_tiktok": "🎭 AS FOTOS RECORTADAS — parte 1.\nHistória de ficção. #storytime #historias #ninamecontou",
+  "gerado_automaticamente": false,
+  "lote": "100-novas-historias-20261029",
+  "categoria": "ficcao_original"
+}

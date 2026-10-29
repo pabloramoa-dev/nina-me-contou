@@ -303,18 +303,24 @@ def gerar_um(n: int, seq: int) -> tuple[dict, dict]:
 def abastecer(alvo: int) -> dict:
     # Não preencher a fila com histórias genéricas enquanto houver o lote viral original pendente.
     EP_DIR.mkdir(parents=True, exist_ok=True)
-    lote = ROOT / "conteudo" / "lote_virais_20261029.json"
-    if lote.exists():
-        pacote = _ler_json(lote, {})
-        publicacoes = _ler_json(PUB, [])
-        enviados = {p.get("id") for p in publicacoes if not p.get("ensaio")}
-        restantes = [n for n in pacote.get("episodios", []) if f"ep{n:03d}-p2" not in enviados]
-        if restantes:
-            estado = _estado()
-            estado["reserva_antes"] = len(restantes)
-            estado["reserva_depois"] = len(restantes)
-            estado["gerados_nesta_execucao"] = 0
-            return {"gerados": [], "corrigidos": 0, "estado": estado}
+    # Preserva a prioridade dos dois lotes originais: o gerador não deve
+    # introduzir histórias genéricas enquanto houver uma história nova pendente.
+    pacotes = [
+        ROOT / "conteudo" / "lote_virais_20261029.json",
+        ROOT / "conteudo" / "lote_100_novas_20261029.json",
+    ]
+    enviados = _publicados()
+    restantes = []
+    for pacote_path in pacotes:
+        pacote = _ler_json(pacote_path, {})
+        restantes.extend(n for n in pacote.get("episodios", [])
+                         if f"ep{n:03d}-p2" not in enviados)
+    if restantes:
+        estado = _estado()
+        estado["reserva_antes"] = len(restantes)
+        estado["reserva_depois"] = len(restantes)
+        estado["gerados_nesta_execucao"] = 0
+        return {"gerados": [], "corrigidos": 0, "estado": estado}
     corrigidos = _corrigir_existentes()
     state = _estado()
     reserva = _reserva_atual()

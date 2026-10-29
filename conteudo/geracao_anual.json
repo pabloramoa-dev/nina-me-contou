@@ -1,13 +1,14 @@
 {
   "inicio": 14,
-  "proximo": 136,
+  "proximo": 186,
   "total_planejado": 730,
   "criado_em": "2026-10-06T19:50:54+00:00",
   "descricao": "730 historias x 2 partes = 1460 videos, suficientes para 365 dias a 4 videos/dia",
-  "atualizado_em": "2026-10-29T18:03:43+00:00",
+  "atualizado_em": "2026-10-29",
   "reserva_antes": 60,
   "reserva_depois": 60,
   "gerados_nesta_execucao": 0,
   "restantes_no_plano": 638,
-  "nota_lote_20261029": "Roteiros antigos não publicados foram substituídos por 30 histórias originais ep106..ep135."
+  "nota_lote_20261029": "Roteiros antigos não publicados foram substituídos por 30 histórias originais ep106..ep135.",
+  "nota_lote_novo": "Nina ep136..185: 50 histórias originais acrescentadas após ep106..135"
 }

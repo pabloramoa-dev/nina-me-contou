@@ -1,0 +1,107 @@
+{
+  "id": "ep165-p1",
+  "ep": 165,
+  "parte": 1,
+  "titulo": "A NOTÍCIA PELO INSTAGRAM",
+  "temporada": "Novas histórias originais — viral 2026",
+  "cenario": "tarde",
+  "batidas": [
+    {
+      "fala": "Ela acreditava que a irmã havia enviado todos os convites.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "acreditava",
+        "enviado"
+      ]
+    },
+    {
+      "fala": "Essa é a história de Lívia. Lívia publicou fotos da formatura e recebeu um comentário magoado do pai, que não sabia da cerimônia.",
+      "expr": "neutra",
+      "arte": [
+        "conversa",
+        "LÍVIA"
+      ],
+      "destaque": [
+        "história",
+        "publicou"
+      ]
+    },
+    {
+      "fala": "Até ali, os detalhes pareciam desconectados. Mas uma pergunta simples fez a situação ficar muito menos tranquila do que parecia à primeira vista.",
+      "expr": "triste",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "detalhes",
+        "pareciam"
+      ]
+    },
+    {
+      "fala": "A irmã mostrou uma mensagem de e-mail que voltou por endereço incorreto.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "mostrou",
+        "mensagem"
+      ]
+    },
+    {
+      "fala": "Foi nesse momento que Lívia decidiu não aceitar apenas rumores. Ela precisava descobrir o que realmente tinha acontecido, antes que alguém tirasse conclusões por ela.",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete_v",
+        "UMA NOVA PISTA"
+      ],
+      "destaque": [
+        "momento",
+        "decidiu"
+      ]
+    },
+    {
+      "fala": "O pai contou que havia trocado de contato havia meses e pensara que a filha não queria sua presença.",
+      "expr": "ironica",
+      "arte": [
+        "notificacao"
+      ],
+      "destaque": [
+        "trocado",
+        "contato"
+      ]
+    },
+    {
+      "fala": "A conversa começou cheia de justificativas e pausas, como se ninguém quisesse ser a primeira pessoa a contar a parte mais importante.",
+      "expr": "neutra",
+      "arte": [
+        "coracao"
+      ],
+      "destaque": [
+        "conversa",
+        "começou"
+      ]
+    },
+    {
+      "fala": "E olha: a explicação completa veio acompanhada de uma escolha difícil. Na parte dois eu conto o que Lívia descobriu e como essa história terminou.",
+      "expr": "neutra",
+      "arte": [
+        "conversa",
+        "LÍVIA"
+      ],
+      "destaque": [
+        "explicação",
+        "completa"
+      ]
+    }
+  ],
+  "fim": "CONTINUA NA PARTE 2",
+  "legenda_post": "🎭 A NOTÍCIA PELO INSTAGRAM\n\nUma descoberta inesperada muda a vida de Lívia. A conclusão vem na parte 2.\n\nHistória de ficção. Personagens e acontecimentos inventados com base em temas narrativos populares.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+  "legenda_tiktok": "🎭 A NOTÍCIA PELO INSTAGRAM — parte 1.\nHistória de ficção. #storytime #historias #ninamecontou",
+  "gerado_automaticamente": false,
+  "lote": "100-novas-historias-20261029",
+  "categoria": "ficcao_original"
+}

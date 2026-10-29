@@ -1,0 +1,107 @@
+{
+  "id": "ep148-p1",
+  "ep": 148,
+  "parte": 1,
+  "titulo": "O PERFIL QUE CONTINUAVA ATIVO",
+  "temporada": "Novas histórias originais — viral 2026",
+  "cenario": "tarde",
+  "batidas": [
+    {
+      "fala": "A foto era recente, mas havia sido tirada no aniversário da irmã dele, não numa sessão de perfil.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "recente,",
+        "aniversário"
+      ]
+    },
+    {
+      "fala": "Essa é a história de Bianca. Bianca recebeu uma captura de tela mostrando que o namorado ainda aparecia num aplicativo de encontros.",
+      "expr": "neutra",
+      "arte": [
+        "conversa",
+        "BIANCA"
+      ],
+      "destaque": [
+        "história",
+        "Bianca."
+      ]
+    },
+    {
+      "fala": "Até ali, os detalhes pareciam desconectados. Mas uma pergunta simples fez a situação ficar muito menos tranquila do que parecia à primeira vista.",
+      "expr": "triste",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "detalhes",
+        "pareciam"
+      ]
+    },
+    {
+      "fala": "Ela pediu que ele abrisse o aplicativo e explicasse a atualização, sem transformar prints em sentença.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "abrisse",
+        "aplicativo"
+      ]
+    },
+    {
+      "fala": "Foi nesse momento que Bianca decidiu não aceitar apenas rumores. Ela precisava descobrir o que realmente tinha acontecido, antes que alguém tirasse conclusões por ela.",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete_v",
+        "UMA NOVA PISTA"
+      ],
+      "destaque": [
+        "momento",
+        "decidiu"
+      ]
+    },
+    {
+      "fala": "O sistema mostrava um cadastro antigo conectado a uma rede social, mas havia mensagens novas recebidas.",
+      "expr": "ironica",
+      "arte": [
+        "notificacao"
+      ],
+      "destaque": [
+        "sistema",
+        "mostrava"
+      ]
+    },
+    {
+      "fala": "A conversa começou cheia de justificativas e pausas, como se ninguém quisesse ser a primeira pessoa a contar a parte mais importante.",
+      "expr": "neutra",
+      "arte": [
+        "coracao"
+      ],
+      "destaque": [
+        "conversa",
+        "começou"
+      ]
+    },
+    {
+      "fala": "E olha: a explicação completa veio acompanhada de uma escolha difícil. Na parte dois eu conto o que Bianca descobriu e como essa história terminou.",
+      "expr": "neutra",
+      "arte": [
+        "conversa",
+        "BIANCA"
+      ],
+      "destaque": [
+        "explicação",
+        "completa"
+      ]
+    }
+  ],
+  "fim": "CONTINUA NA PARTE 2",
+  "legenda_post": "🎭 O PERFIL QUE CONTINUAVA ATIVO\n\nUma descoberta inesperada muda a vida de Bianca. A conclusão vem na parte 2.\n\nHistória de ficção. Personagens e acontecimentos inventados com base em temas narrativos populares.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+  "legenda_tiktok": "🎭 O PERFIL QUE CONTINUAVA ATIVO — parte 1.\nHistória de ficção. #storytime #historias #ninamecontou",
+  "gerado_automaticamente": false,
+  "lote": "100-novas-historias-20261029",
+  "categoria": "ficcao_original"
+}

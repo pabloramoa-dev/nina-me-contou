@@ -1,0 +1,107 @@
+{
+  "id": "ep169-p1",
+  "ep": 169,
+  "parte": 1,
+  "titulo": "A CLIENTE DO VESTIDO CANCELADO",
+  "temporada": "Novas histórias originais — viral 2026",
+  "cenario": "tarde",
+  "batidas": [
+    {
+      "fala": "Dias depois, uma fotografia mostrava um vestido idêntico sendo usado numa festa.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "depois,",
+        "fotografia"
+      ]
+    },
+    {
+      "fala": "Essa é a história de Flávia. Flávia costurou um vestido por encomenda, mas a cliente disse que nunca recebera a peça e pediu reembolso.",
+      "expr": "neutra",
+      "arte": [
+        "conversa",
+        "FLÁVIA"
+      ],
+      "destaque": [
+        "história",
+        "Flávia."
+      ]
+    },
+    {
+      "fala": "Até ali, os detalhes pareciam desconectados. Mas uma pergunta simples fez a situação ficar muito menos tranquila do que parecia à primeira vista.",
+      "expr": "triste",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "detalhes",
+        "pareciam"
+      ]
+    },
+    {
+      "fala": "A costureira conferiu mensagens, medidas e o registro da entrega antes de responder publicamente.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "costureira",
+        "conferiu"
+      ]
+    },
+    {
+      "fala": "Foi nesse momento que Flávia decidiu não aceitar apenas rumores. Ela precisava descobrir o que realmente tinha acontecido, antes que alguém tirasse conclusões por ela.",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete_v",
+        "UMA NOVA PISTA"
+      ],
+      "destaque": [
+        "momento",
+        "decidiu"
+      ]
+    },
+    {
+      "fala": "A cliente admitiu ter recebido a peça, mas alegava que não ficou satisfeita com os ajustes.",
+      "expr": "ironica",
+      "arte": [
+        "notificacao"
+      ],
+      "destaque": [
+        "cliente",
+        "admitiu"
+      ]
+    },
+    {
+      "fala": "A conversa começou cheia de justificativas e pausas, como se ninguém quisesse ser a primeira pessoa a contar a parte mais importante.",
+      "expr": "neutra",
+      "arte": [
+        "coracao"
+      ],
+      "destaque": [
+        "conversa",
+        "começou"
+      ]
+    },
+    {
+      "fala": "E olha: a explicação completa veio acompanhada de uma escolha difícil. Na parte dois eu conto o que Flávia descobriu e como essa história terminou.",
+      "expr": "neutra",
+      "arte": [
+        "conversa",
+        "FLÁVIA"
+      ],
+      "destaque": [
+        "explicação",
+        "completa"
+      ]
+    }
+  ],
+  "fim": "CONTINUA NA PARTE 2",
+  "legenda_post": "🎭 A CLIENTE DO VESTIDO CANCELADO\n\nUma descoberta inesperada muda a vida de Flávia. A conclusão vem na parte 2.\n\nHistória de ficção. Personagens e acontecimentos inventados com base em temas narrativos populares.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+  "legenda_tiktok": "🎭 A CLIENTE DO VESTIDO CANCELADO — parte 1.\nHistória de ficção. #storytime #historias #ninamecontou",
+  "gerado_automaticamente": false,
+  "lote": "100-novas-historias-20261029",
+  "categoria": "ficcao_original"
+}

@@ -1,0 +1,107 @@
+{
+  "id": "ep162-p1",
+  "ep": 162,
+  "parte": 1,
+  "titulo": "O TESTAMENTO NO LIVRO DE RECEITAS",
+  "temporada": "Novas histórias originais — viral 2026",
+  "cenario": "tarde",
+  "batidas": [
+    {
+      "fala": "O papel explicava que uma irmã seria responsável pelo antigo negócio de família.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "explicava",
+        "responsável"
+      ]
+    },
+    {
+      "fala": "Essa é a história de Marta. Marta encontrou um envelope com a palavra testamento dentro do livro de receitas da mãe.",
+      "expr": "neutra",
+      "arte": [
+        "conversa",
+        "MARTA"
+      ],
+      "destaque": [
+        "história",
+        "encontrou"
+      ]
+    },
+    {
+      "fala": "Até ali, os detalhes pareciam desconectados. Mas uma pergunta simples fez a situação ficar muito menos tranquila do que parecia à primeira vista.",
+      "expr": "triste",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "detalhes",
+        "pareciam"
+      ]
+    },
+    {
+      "fala": "Marta procurou orientação e descobriu que aquilo era uma carta de intenção, não um documento sucessório formal.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "procurou",
+        "orientação"
+      ]
+    },
+    {
+      "fala": "Foi nesse momento que Marta decidiu não aceitar apenas rumores. Ela precisava descobrir o que realmente tinha acontecido, antes que alguém tirasse conclusões por ela.",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete_v",
+        "UMA NOVA PISTA"
+      ],
+      "destaque": [
+        "momento",
+        "decidiu"
+      ]
+    },
+    {
+      "fala": "A mãe escrevera o texto quando a irmã começara a trabalhar no negócio, mas nunca conversara com os outros filhos.",
+      "expr": "ironica",
+      "arte": [
+        "notificacao"
+      ],
+      "destaque": [
+        "escrevera",
+        "começara"
+      ]
+    },
+    {
+      "fala": "A conversa começou cheia de justificativas e pausas, como se ninguém quisesse ser a primeira pessoa a contar a parte mais importante.",
+      "expr": "neutra",
+      "arte": [
+        "coracao"
+      ],
+      "destaque": [
+        "conversa",
+        "começou"
+      ]
+    },
+    {
+      "fala": "E olha: a explicação completa veio acompanhada de uma escolha difícil. Na parte dois eu conto o que Marta descobriu e como essa história terminou.",
+      "expr": "neutra",
+      "arte": [
+        "conversa",
+        "MARTA"
+      ],
+      "destaque": [
+        "explicação",
+        "completa"
+      ]
+    }
+  ],
+  "fim": "CONTINUA NA PARTE 2",
+  "legenda_post": "🎭 O TESTAMENTO NO LIVRO DE RECEITAS\n\nUma descoberta inesperada muda a vida de Marta. A conclusão vem na parte 2.\n\nHistória de ficção. Personagens e acontecimentos inventados com base em temas narrativos populares.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+  "legenda_tiktok": "🎭 O TESTAMENTO NO LIVRO DE RECEITAS — parte 1.\nHistória de ficção. #storytime #historias #ninamecontou",
+  "gerado_automaticamente": false,
+  "lote": "100-novas-historias-20261029",
+  "categoria": "ficcao_original"
+}

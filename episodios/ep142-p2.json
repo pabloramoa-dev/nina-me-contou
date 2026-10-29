@@ -1,0 +1,107 @@
+{
+  "id": "ep142-p2",
+  "ep": 142,
+  "parte": 2,
+  "titulo": "O PRESENTE COM DUAS DEDICATÓRIAS",
+  "temporada": "Novas histórias originais — viral 2026",
+  "cenario": "noite",
+  "batidas": [
+    {
+      "fala": "Na primeira parte, Cecília descobriu uma situação que não fazia sentido. Agora vem o detalhe que muda toda a história.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "primeira",
+        "Cecília"
+      ]
+    },
+    {
+      "fala": "A pista não podia mais ser ignorada. A vendedora explicou que os dois colares pertenciam a um pedido de presentes corporativos feito pelo namorado.",
+      "expr": "neutra",
+      "arte": [
+        "conversa",
+        "CECÍLIA"
+      ],
+      "destaque": [
+        "ignorada.",
+        "vendedora"
+      ]
+    },
+    {
+      "fala": "Ele admitiu que usara a mesma dedicatória para Cecília e para uma colega, sem perceber o que a mensagem insinuava.",
+      "expr": "triste",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "admitiu",
+        "dedicatória"
+      ]
+    },
+    {
+      "fala": "Ninguém ali tinha uma solução pronta. Os envolvidos precisaram reconhecer o que sabiam, o que estavam escondendo e o que cada um realmente podia decidir.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "Ninguém",
+        "solução"
+      ]
+    },
+    {
+      "fala": "Cecília explicou por que aquilo afetava a confiança e exigiu que ele esclarecesse a situação com respeito.",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete_v",
+        "A VERDADE APARECEU"
+      ],
+      "destaque": [
+        "Cecília",
+        "explicou"
+      ]
+    },
+    {
+      "fala": "E foi aí que o rumo da conversa mudou: não bastava explicar o passado, também era preciso assumir responsabilidade pelo que aconteceria depois.",
+      "expr": "ironica",
+      "arte": [
+        "notificacao"
+      ],
+      "destaque": [
+        "conversa",
+        "bastava"
+      ]
+    },
+    {
+      "fala": "O problema não era uma joia repetida, mas tratar palavras importantes como etiqueta de embalagem.",
+      "expr": "neutra",
+      "arte": [
+        "coracao"
+      ],
+      "destaque": [
+        "problema",
+        "repetida,"
+      ]
+    },
+    {
+      "fala": "Se você estivesse no lugar de Cecília, faria a mesma escolha? Eu quero saber nos comentários, porque a parte mais interessante é o que a gente aprende com o final.",
+      "expr": "neutra",
+      "arte": [
+        "conversa",
+        "CECÍLIA"
+      ],
+      "destaque": [
+        "estivesse",
+        "Cecília,"
+      ]
+    }
+  ],
+  "fim": "SEGUE A NINA",
+  "legenda_post": "🎭 O PRESENTE COM DUAS DEDICATÓRIAS\n\nA história de Cecília chegou ao desfecho. Você faria diferente?\n\nHistória de ficção. Personagens e acontecimentos inventados com base em temas narrativos populares.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+  "legenda_tiktok": "🎭 O PRESENTE COM DUAS DEDICATÓRIAS — parte 2.\nHistória de ficção. #storytime #historias #ninamecontou",
+  "gerado_automaticamente": false,
+  "lote": "100-novas-historias-20261029",
+  "categoria": "ficcao_original"
+}

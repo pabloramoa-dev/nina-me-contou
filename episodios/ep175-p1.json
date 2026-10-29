@@ -1,0 +1,107 @@
+{
+  "id": "ep175-p1",
+  "ep": 175,
+  "parte": 1,
+  "titulo": "A SÓCIA QUE SUMIU NA INAUGURAÇÃO",
+  "temporada": "Novas histórias originais — viral 2026",
+  "cenario": "tarde",
+  "batidas": [
+    {
+      "fala": "O celular estava desligado e os convidados começaram a perguntar se a parceria tinha acabado.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "celular",
+        "desligado"
+      ]
+    },
+    {
+      "fala": "Essa é a história de Érica. Érica abriu a loja e percebeu que a sócia não aparecera, deixando documentos sobre o balcão.",
+      "expr": "neutra",
+      "arte": [
+        "conversa",
+        "ÉRICA"
+      ],
+      "destaque": [
+        "história",
+        "percebeu"
+      ]
+    },
+    {
+      "fala": "Até ali, os detalhes pareciam desconectados. Mas uma pergunta simples fez a situação ficar muito menos tranquila do que parecia à primeira vista.",
+      "expr": "triste",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "detalhes",
+        "pareciam"
+      ]
+    },
+    {
+      "fala": "Érica conferiu a pasta e encontrou uma proposta de alteração no contrato social.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "conferiu",
+        "encontrou"
+      ]
+    },
+    {
+      "fala": "Foi nesse momento que Érica decidiu não aceitar apenas rumores. Ela precisava descobrir o que realmente tinha acontecido, antes que alguém tirasse conclusões por ela.",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete_v",
+        "UMA NOVA PISTA"
+      ],
+      "destaque": [
+        "momento",
+        "decidiu"
+      ]
+    },
+    {
+      "fala": "A sócia havia ido conversar com o contador sobre uma cláusula que não entendia e não avisara do atraso.",
+      "expr": "ironica",
+      "arte": [
+        "notificacao"
+      ],
+      "destaque": [
+        "conversar",
+        "contador"
+      ]
+    },
+    {
+      "fala": "A conversa começou cheia de justificativas e pausas, como se ninguém quisesse ser a primeira pessoa a contar a parte mais importante.",
+      "expr": "neutra",
+      "arte": [
+        "coracao"
+      ],
+      "destaque": [
+        "conversa",
+        "começou"
+      ]
+    },
+    {
+      "fala": "E olha: a explicação completa veio acompanhada de uma escolha difícil. Na parte dois eu conto o que Érica descobriu e como essa história terminou.",
+      "expr": "neutra",
+      "arte": [
+        "conversa",
+        "ÉRICA"
+      ],
+      "destaque": [
+        "explicação",
+        "completa"
+      ]
+    }
+  ],
+  "fim": "CONTINUA NA PARTE 2",
+  "legenda_post": "🎭 A SÓCIA QUE SUMIU NA INAUGURAÇÃO\n\nUma descoberta inesperada muda a vida de Érica. A conclusão vem na parte 2.\n\nHistória de ficção. Personagens e acontecimentos inventados com base em temas narrativos populares.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+  "legenda_tiktok": "🎭 A SÓCIA QUE SUMIU NA INAUGURAÇÃO — parte 1.\nHistória de ficção. #storytime #historias #ninamecontou",
+  "gerado_automaticamente": false,
+  "lote": "100-novas-historias-20261029",
+  "categoria": "ficcao_original"
+}

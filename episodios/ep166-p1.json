@@ -1,0 +1,107 @@
+{
+  "id": "ep166-p1",
+  "ep": 166,
+  "parte": 1,
+  "titulo": "ELA TREINOU SUA SUBSTITUTA",
+  "temporada": "Novas histórias originais — viral 2026",
+  "cenario": "tarde",
+  "batidas": [
+    {
+      "fala": "A direção dizia que a moça era apenas reforço para o período movimentado.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "direção",
+        "reforço"
+      ]
+    },
+    {
+      "fala": "Essa é a história de Lorena. Lorena passou duas semanas ensinando uma recém-contratada e descobriu que ela ocuparia seu cargo.",
+      "expr": "neutra",
+      "arte": [
+        "conversa",
+        "LORENA"
+      ],
+      "destaque": [
+        "história",
+        "Lorena."
+      ]
+    },
+    {
+      "fala": "Até ali, os detalhes pareciam desconectados. Mas uma pergunta simples fez a situação ficar muito menos tranquila do que parecia à primeira vista.",
+      "expr": "triste",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "detalhes",
+        "pareciam"
+      ]
+    },
+    {
+      "fala": "Um documento de organização mostrou a mudança planejada sem qualquer conversa prévia.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "documento",
+        "organização"
+      ]
+    },
+    {
+      "fala": "Foi nesse momento que Lorena decidiu não aceitar apenas rumores. Ela precisava descobrir o que realmente tinha acontecido, antes que alguém tirasse conclusões por ela.",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete_v",
+        "UMA NOVA PISTA"
+      ],
+      "destaque": [
+        "momento",
+        "decidiu"
+      ]
+    },
+    {
+      "fala": "Lorena procurou o setor responsável, pediu esclarecimentos formais e reuniu seus registros de trabalho.",
+      "expr": "ironica",
+      "arte": [
+        "notificacao"
+      ],
+      "destaque": [
+        "procurou",
+        "responsável,"
+      ]
+    },
+    {
+      "fala": "A conversa começou cheia de justificativas e pausas, como se ninguém quisesse ser a primeira pessoa a contar a parte mais importante.",
+      "expr": "neutra",
+      "arte": [
+        "coracao"
+      ],
+      "destaque": [
+        "conversa",
+        "começou"
+      ]
+    },
+    {
+      "fala": "E olha: a explicação completa veio acompanhada de uma escolha difícil. Na parte dois eu conto o que Lorena descobriu e como essa história terminou.",
+      "expr": "neutra",
+      "arte": [
+        "conversa",
+        "LORENA"
+      ],
+      "destaque": [
+        "explicação",
+        "completa"
+      ]
+    }
+  ],
+  "fim": "CONTINUA NA PARTE 2",
+  "legenda_post": "🎭 ELA TREINOU SUA SUBSTITUTA\n\nUma descoberta inesperada muda a vida de Lorena. A conclusão vem na parte 2.\n\nHistória de ficção. Personagens e acontecimentos inventados com base em temas narrativos populares.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+  "legenda_tiktok": "🎭 ELA TREINOU SUA SUBSTITUTA — parte 1.\nHistória de ficção. #storytime #historias #ninamecontou",
+  "gerado_automaticamente": false,
+  "lote": "100-novas-historias-20261029",
+  "categoria": "ficcao_original"
+}

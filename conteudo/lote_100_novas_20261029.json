@@ -1,0 +1,263 @@
+{
+  "tipo": "ficcao_original",
+  "personagem": "Nina",
+  "data": "2026-10-29",
+  "id": "100-novas-historias-20261029",
+  "quantidade": 50,
+  "arquivos": 100,
+  "episodios": [
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185
+  ],
+  "pautas": [
+    {
+      "ep": 136,
+      "titulo": "O NOIVO QUE INVENTOU UMA EMPRESA"
+    },
+    {
+      "ep": 137,
+      "titulo": "A MADRINHA EXPULSA NO CASAMENTO"
+    },
+    {
+      "ep": 138,
+      "titulo": "A SOGRA VESTIDA DE NOIVA"
+    },
+    {
+      "ep": 139,
+      "titulo": "O VESTIDO ALTERADO EM SEGREDO"
+    },
+    {
+      "ep": 140,
+      "titulo": "O ÁUDIO DA DESPEDIDA DE SOLTEIRA"
+    },
+    {
+      "ep": 141,
+      "titulo": "A EX-NOIVA NA MESA PRINCIPAL"
+    },
+    {
+      "ep": 142,
+      "titulo": "O PRESENTE COM DUAS DEDICATÓRIAS"
+    },
+    {
+      "ep": 143,
+      "titulo": "O PADRINHO QUE SABIA DEMAIS"
+    },
+    {
+      "ep": 144,
+      "titulo": "A ALIANÇA COM O NOME ERRADO"
+    },
+    {
+      "ep": 145,
+      "titulo": "OS DEZESSETE CONVIDADOS"
+    },
+    {
+      "ep": 146,
+      "titulo": "O IRMÃO QUE NUNCA EXISTIU"
+    },
+    {
+      "ep": 147,
+      "titulo": "O ESCRITÓRIO DE FOTOGRAFIA"
+    },
+    {
+      "ep": 148,
+      "titulo": "O PERFIL QUE CONTINUAVA ATIVO"
+    },
+    {
+      "ep": 149,
+      "titulo": "A CARTA QUE NÃO ERA PARA ELA"
+    },
+    {
+      "ep": 150,
+      "titulo": "O ALUGUEL DA OUTRA CASA"
+    },
+    {
+      "ep": 151,
+      "titulo": "O COLAR DE INICIAIS"
+    },
+    {
+      "ep": 152,
+      "titulo": "O RELÓGIO NA OUTRA FESTA"
+    },
+    {
+      "ep": 153,
+      "titulo": "A AMIGA DE SÁBADO"
+    },
+    {
+      "ep": 154,
+      "titulo": "O BUQUÊ NO ENDEREÇO ERRADO"
+    },
+    {
+      "ep": 155,
+      "titulo": "O DOCUMENTO DA GAVETA"
+    },
+    {
+      "ep": 156,
+      "titulo": "A HERANÇA DO ALMOÇO"
+    },
+    {
+      "ep": 157,
+      "titulo": "O ALUGUEL DA PRÓPRIA MÃE"
+    },
+    {
+      "ep": 158,
+      "titulo": "O PAI QUE RECEBEU SÓ A CONTA"
+    },
+    {
+      "ep": 159,
+      "titulo": "AS FOTOS NO BRECHÓ"
+    },
+    {
+      "ep": 160,
+      "titulo": "O TERRENO DAS DUAS ASSINATURAS"
+    },
+    {
+      "ep": 161,
+      "titulo": "A CHAVE DA AVÓ"
+    },
+    {
+      "ep": 162,
+      "titulo": "O TESTAMENTO NO LIVRO DE RECEITAS"
+    },
+    {
+      "ep": 163,
+      "titulo": "AS DUAS CARTAS DA MÃE"
+    },
+    {
+      "ep": 164,
+      "titulo": "O APARTAMENTO DAS IRMÃS"
+    },
+    {
+      "ep": 165,
+      "titulo": "A NOTÍCIA PELO INSTAGRAM"
+    },
+    {
+      "ep": 166,
+      "titulo": "ELA TREINOU SUA SUBSTITUTA"
+    },
+    {
+      "ep": 167,
+      "titulo": "O PROJETO COM OUTRO NOME"
+    },
+    {
+      "ep": 168,
+      "titulo": "A DONA DA LOJA COMO CLIENTE"
+    },
+    {
+      "ep": 169,
+      "titulo": "A CLIENTE DO VESTIDO CANCELADO"
+    },
+    {
+      "ep": 170,
+      "titulo": "O JANTAR QUE NÃO FOI COMPRADO"
+    },
+    {
+      "ep": 171,
+      "titulo": "A AVALIAÇÃO DE UMA VISITA QUE NÃO HOUVE"
+    },
+    {
+      "ep": 172,
+      "titulo": "A FESTA QUE ELA PAGOU SOZINHA"
+    },
+    {
+      "ep": 173,
+      "titulo": "O CONVITE QUE NUNCA CHEGOU"
+    },
+    {
+      "ep": 174,
+      "titulo": "O ROSTO DA FORMATURA"
+    },
+    {
+      "ep": 175,
+      "titulo": "A SÓCIA QUE SUMIU NA INAUGURAÇÃO"
+    },
+    {
+      "ep": 176,
+      "titulo": "AS ENCOMENDAS DA VIZINHA"
+    },
+    {
+      "ep": 177,
+      "titulo": "O BARULHO DO APARTAMENTO FECHADO"
+    },
+    {
+      "ep": 178,
+      "titulo": "O LIVRO COM A DEDICATÓRIA"
+    },
+    {
+      "ep": 179,
+      "titulo": "A CHAVE DE VINTE ANOS"
+    },
+    {
+      "ep": 180,
+      "titulo": "A CASA ANUNCIADA PARA ALUGAR"
+    },
+    {
+      "ep": 181,
+      "titulo": "O NOME NO GRUPO DO CONDOMÍNIO"
+    },
+    {
+      "ep": 182,
+      "titulo": "AS FOTOS RECORTADAS"
+    },
+    {
+      "ep": 183,
+      "titulo": "A CASA MODIFICADA NO FERIADO"
+    },
+    {
+      "ep": 184,
+      "titulo": "A FESTA UM DIA ADIANTADA"
+    },
+    {
+      "ep": 185,
+      "titulo": "O ÁUDIO DE SETE SEGUNDOS"
+    }
+  ],
+  "regra": "apendice, sem substituir scripts anteriores; duas partes antes da publicação"
+}

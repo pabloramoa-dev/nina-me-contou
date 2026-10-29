@@ -1,0 +1,107 @@
+{
+  "id": "ep172-p1",
+  "ep": 172,
+  "parte": 1,
+  "titulo": "A FESTA QUE ELA PAGOU SOZINHA",
+  "temporada": "Novas histórias originais — viral 2026",
+  "cenario": "tarde",
+  "batidas": [
+    {
+      "fala": "No grupo, todos comentavam as fotos, mas ninguém respondia sobre as despesas.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "comentavam",
+        "ninguém"
+      ]
+    },
+    {
+      "fala": "Essa é a história de Priscila. Priscila organizou o aniversário coletivo dos amigos e descobriu que nenhum tinha transferido o valor combinado.",
+      "expr": "neutra",
+      "arte": [
+        "conversa",
+        "PRISCILA"
+      ],
+      "destaque": [
+        "história",
+        "Priscila."
+      ]
+    },
+    {
+      "fala": "Até ali, os detalhes pareciam desconectados. Mas uma pergunta simples fez a situação ficar muito menos tranquila do que parecia à primeira vista.",
+      "expr": "triste",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "detalhes",
+        "pareciam"
+      ]
+    },
+    {
+      "fala": "Ela enviou um resumo simples dos custos e explicou que não conseguiria assumir tudo sozinha.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "simples",
+        "explicou"
+      ]
+    },
+    {
+      "fala": "Foi nesse momento que Priscila decidiu não aceitar apenas rumores. Ela precisava descobrir o que realmente tinha acontecido, antes que alguém tirasse conclusões por ela.",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete_v",
+        "UMA NOVA PISTA"
+      ],
+      "destaque": [
+        "momento",
+        "Priscila"
+      ]
+    },
+    {
+      "fala": "Descobriu que parte do grupo pensava que o evento era um presente oferecido por outra pessoa.",
+      "expr": "ironica",
+      "arte": [
+        "notificacao"
+      ],
+      "destaque": [
+        "Descobriu",
+        "pensava"
+      ]
+    },
+    {
+      "fala": "A conversa começou cheia de justificativas e pausas, como se ninguém quisesse ser a primeira pessoa a contar a parte mais importante.",
+      "expr": "neutra",
+      "arte": [
+        "coracao"
+      ],
+      "destaque": [
+        "conversa",
+        "começou"
+      ]
+    },
+    {
+      "fala": "E olha: a explicação completa veio acompanhada de uma escolha difícil. Na parte dois eu conto o que Priscila descobriu e como essa história terminou.",
+      "expr": "neutra",
+      "arte": [
+        "conversa",
+        "PRISCILA"
+      ],
+      "destaque": [
+        "explicação",
+        "completa"
+      ]
+    }
+  ],
+  "fim": "CONTINUA NA PARTE 2",
+  "legenda_post": "🎭 A FESTA QUE ELA PAGOU SOZINHA\n\nUma descoberta inesperada muda a vida de Priscila. A conclusão vem na parte 2.\n\nHistória de ficção. Personagens e acontecimentos inventados com base em temas narrativos populares.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+  "legenda_tiktok": "🎭 A FESTA QUE ELA PAGOU SOZINHA — parte 1.\nHistória de ficção. #storytime #historias #ninamecontou",
+  "gerado_automaticamente": false,
+  "lote": "100-novas-historias-20261029",
+  "categoria": "ficcao_original"
+}
