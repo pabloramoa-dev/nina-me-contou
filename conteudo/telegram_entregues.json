@@ -126,7 +126,11 @@
   },
   "ep108-p1": {
     "hash": "365698407e535fe0b1d6fce19185718a1f57002fd19185080fb0250ac33ef0e4",
-    "status": "sending_video",
-    "tentativas_incertas": 0
+    "status": "video_sent",
+    "tentativas_incertas": 0,
+    "telegram_message_id": 13,
+    "file_id": "BQACAgEAAxkDAAMNauOcqXohi28S8nvu0lEqQnUdPAsAAu4KAAK5EhhHrT0lBWwSAxc9BA",
+    "file_size": 18249003,
+    "comprimido": false
   }
 }
