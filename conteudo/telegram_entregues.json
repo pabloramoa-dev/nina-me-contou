@@ -206,7 +206,11 @@
   },
   "ep112-p1": {
     "hash": "509c86f2a18536b9e4eed0afcd30f8773cb1574929e5f785f0102b0466db4385",
-    "status": "sending_video",
-    "tentativas_incertas": 0
+    "status": "video_sent",
+    "tentativas_incertas": 0,
+    "telegram_message_id": 29,
+    "file_id": "BQACAgEAAxkDAAMdauOm7Nv321GOsQbSY0CIjyuwYXAAAhELAAK5EhhHVls7TsVSk8c9BA",
+    "file_size": 18445339,
+    "comprimido": false
   }
 }
