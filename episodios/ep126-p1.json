@@ -1,104 +1,106 @@
 {
-  "id": "ep126-p1",
-  "ep": 126,
-  "parte": 1,
-  "titulo": "A VIAGEM COM DATA ERRADA",
-  "temporada": "Histórias adaptadas 2026",
-  "cenario": "tarde",
-  "batidas": [
-    {
-      "fala": "Mônica atravessou o país para surpreender a namorada e encontrou na porta um cartaz de mudança com o endereço de outra cidade.",
-      "expr": "chocada",
-      "arte": [
-        "titulo"
-      ],
-      "destaque": [
-        "Mônica",
-        "atravessou"
-      ]
-    },
-    {
-      "fala": "A protagonista desta história é Mônica. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
-      "expr": "neutra",
-      "arte": [
-        "celular"
-      ],
-      "destaque": [
-        "protagonista",
-        "história"
-      ]
-    },
-    {
-      "fala": "Ela tinha comprado a passagem após ouvir que a namorada passaria o fim de semana livre, mas não confirmou a data.",
-      "expr": "neutra",
-      "arte": [
-        "conversa"
-      ],
-      "destaque": [
-        "comprado",
-        "passagem"
-      ]
-    },
-    {
-      "fala": "No prédio antigo, a porteira entregou um envelope com uma foto das duas e uma pergunta escrita em letras grandes.",
-      "expr": "neutra",
-      "arte": [
-        "foto"
-      ],
-      "destaque": [
-        "prédio",
-        "antigo,"
-      ]
-    },
-    {
-      "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
-      "expr": "desconfiada",
-      "arte": [
-        "manchete_v"
-      ],
-      "destaque": [
-        "detalhe",
-        "parecia"
-      ]
-    },
-    {
-      "fala": "Mônica abriu a carta imaginando uma despedida e encontrou um desenho de duas malas e um pedido para telefonar antes de aparecer.",
-      "expr": "ironica",
-      "arte": [
-        "celular"
-      ],
-      "destaque": [
-        "Mônica",
-        "imaginando"
-      ]
-    },
-    {
-      "fala": "E aqui começa a parte mais surpreendente: Mônica decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
-      "expr": "neutra",
-      "arte": [
-        "conversa"
-      ],
-      "destaque": [
-        "começa",
-        "surpreendente:"
-      ]
-    },
-    {
-      "fala": "Na parte dois, vem a explicação completa e uma decisão que mudou o rumo dessa história.",
-      "expr": "neutra",
-      "arte": [
-        "foto"
-      ],
-      "destaque": [
-        "explicação",
-        "completa"
-      ]
-    }
-  ],
-  "fim": "CONTINUA NA PARTE 2",
-  "legenda_post": "🎭 A VIAGEM COM DATA ERRADA. Uma pista muda a história. Parte 2 em breve.\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
-  "legenda_tiktok": "🎭 A VIAGEM COM DATA ERRADA. Parte 1. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
-  "origem_inspiracao_numero": 30,
-  "lote": "virais-originais-20261029",
-  "gerado_automaticamente": false
+ "id": "ep126-p1",
+ "ep": 126,
+ "parte": 1,
+ "titulo": "A VIAGEM COM DATA ERRADA",
+ "temporada": "Histórias adaptadas 2026",
+ "cenario": "tarde",
+ "batidas": [
+  {
+   "fala": "Mônica atravessou o país para surpreender a namorada e encontrou na porta um cartaz de mudança com o endereço de outra cidade.",
+   "expr": "chocada",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "Mônica",
+    "atravessou"
+   ]
+  },
+  {
+   "fala": "A protagonista desta história é Mônica. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
+   "expr": "neutra",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "protagonista",
+    "história"
+   ]
+  },
+  {
+   "fala": "Ela tinha comprado a passagem após ouvir que a namorada passaria o fim de semana livre, mas não confirmou a data.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "comprado",
+    "passagem"
+   ]
+  },
+  {
+   "fala": "No prédio antigo, a porteira entregou um envelope com uma foto das duas e uma pergunta escrita em letras grandes.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "prédio",
+    "antigo,"
+   ]
+  },
+  {
+   "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
+   "expr": "desconfiada",
+   "arte": [
+    "manchete_v"
+   ],
+   "destaque": [
+    "detalhe",
+    "parecia"
+   ]
+  },
+  {
+   "fala": "Mônica abriu a carta imaginando uma despedida e encontrou um desenho de duas malas e um pedido para telefonar antes de aparecer.",
+   "expr": "ironica",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "Mônica",
+    "imaginando"
+   ]
+  },
+  {
+   "fala": "E aqui começa a parte mais surpreendente: Mônica decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "começa",
+    "surpreendente:"
+   ]
+  },
+  {
+   "fala": "Na parte dois, vem a explicação completa e uma decisão que mudou o rumo dessa história.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "explicação",
+    "completa"
+   ]
+  }
+ ],
+ "fim": "CONTINUA NA PARTE 2",
+ "legenda_post": "🎭 A VIAGEM COM DATA ERRADA. Uma pista muda a história. Parte 2 em breve.\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+ "legenda_tiktok": "🎭 A VIAGEM COM DATA ERRADA. Parte 1. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
+ "origem_inspiracao_numero": 30,
+ "lote": "virais-originais-20261029",
+ "gerado_automaticamente": false,
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
 }

@@ -1,104 +1,106 @@
 {
-  "id": "ep117-p1",
-  "ep": 117,
-  "parte": 1,
-  "titulo": "O ALERTA DA MALA AZUL",
-  "temporada": "Histórias adaptadas 2026",
-  "cenario": "tarde",
-  "batidas": [
-    {
-      "fala": "Jéssica estava prestes a viajar com o namorado quando encontrou três etiquetas de bagagem diferentes na mesma mala azul.",
-      "expr": "chocada",
-      "arte": [
-        "titulo"
-      ],
-      "destaque": [
-        "Jéssica",
-        "estava"
-      ]
-    },
-    {
-      "fala": "A protagonista desta história é Jéssica. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
-      "expr": "neutra",
-      "arte": [
-        "celular"
-      ],
-      "destaque": [
-        "protagonista",
-        "história"
-      ]
-    },
-    {
-      "fala": "Cada etiqueta tinha um nome feminino e uma data que coincidia com viagens que ele dizia fazer sozinho a trabalho.",
-      "expr": "neutra",
-      "arte": [
-        "conversa"
-      ],
-      "destaque": [
-        "etiqueta",
-        "feminino"
-      ]
-    },
-    {
-      "fala": "Ele brincou que a mala tinha história, mas ficou irritado quando ela perguntou por que os nomes ainda estavam ali.",
-      "expr": "neutra",
-      "arte": [
-        "foto"
-      ],
-      "destaque": [
-        "brincou",
-        "história,"
-      ]
-    },
-    {
-      "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
-      "expr": "desconfiada",
-      "arte": [
-        "manchete_v"
-      ],
-      "destaque": [
-        "detalhe",
-        "parecia"
-      ]
-    },
-    {
-      "fala": "Jéssica descobriu um perfil de viagens com fotos do namorado em cidades onde ele nunca admitiu ter ido.",
-      "expr": "ironica",
-      "arte": [
-        "celular"
-      ],
-      "destaque": [
-        "Jéssica",
-        "descobriu"
-      ]
-    },
-    {
-      "fala": "E aqui começa a parte mais surpreendente: Jéssica decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
-      "expr": "neutra",
-      "arte": [
-        "conversa"
-      ],
-      "destaque": [
-        "começa",
-        "surpreendente:"
-      ]
-    },
-    {
-      "fala": "Na parte dois, vem a explicação completa e uma decisão que mudou o rumo dessa história.",
-      "expr": "neutra",
-      "arte": [
-        "foto"
-      ],
-      "destaque": [
-        "explicação",
-        "completa"
-      ]
-    }
-  ],
-  "fim": "CONTINUA NA PARTE 2",
-  "legenda_post": "🎭 O ALERTA DA MALA AZUL. Uma pista muda a história. Parte 2 em breve.\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
-  "legenda_tiktok": "🎭 O ALERTA DA MALA AZUL. Parte 1. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
-  "origem_inspiracao_numero": 16,
-  "lote": "virais-originais-20261029",
-  "gerado_automaticamente": false
+ "id": "ep117-p1",
+ "ep": 117,
+ "parte": 1,
+ "titulo": "O ALERTA DA MALA AZUL",
+ "temporada": "Histórias adaptadas 2026",
+ "cenario": "tarde",
+ "batidas": [
+  {
+   "fala": "Jéssica estava prestes a viajar com o namorado quando encontrou três etiquetas de bagagem diferentes na mesma mala azul.",
+   "expr": "chocada",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "Jéssica",
+    "estava"
+   ]
+  },
+  {
+   "fala": "A protagonista desta história é Jéssica. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
+   "expr": "neutra",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "protagonista",
+    "história"
+   ]
+  },
+  {
+   "fala": "Cada etiqueta tinha um nome feminino e uma data que coincidia com viagens que ele dizia fazer sozinho a trabalho.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "etiqueta",
+    "feminino"
+   ]
+  },
+  {
+   "fala": "Ele brincou que a mala tinha história, mas ficou irritado quando ela perguntou por que os nomes ainda estavam ali.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "brincou",
+    "história,"
+   ]
+  },
+  {
+   "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
+   "expr": "desconfiada",
+   "arte": [
+    "manchete_v"
+   ],
+   "destaque": [
+    "detalhe",
+    "parecia"
+   ]
+  },
+  {
+   "fala": "Jéssica descobriu um perfil de viagens com fotos do namorado em cidades onde ele nunca admitiu ter ido.",
+   "expr": "ironica",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "Jéssica",
+    "descobriu"
+   ]
+  },
+  {
+   "fala": "E aqui começa a parte mais surpreendente: Jéssica decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "começa",
+    "surpreendente:"
+   ]
+  },
+  {
+   "fala": "Na parte dois, vem a explicação completa e uma decisão que mudou o rumo dessa história.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "explicação",
+    "completa"
+   ]
+  }
+ ],
+ "fim": "CONTINUA NA PARTE 2",
+ "legenda_post": "🎭 O ALERTA DA MALA AZUL. Uma pista muda a história. Parte 2 em breve.\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+ "legenda_tiktok": "🎭 O ALERTA DA MALA AZUL. Parte 1. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
+ "origem_inspiracao_numero": 16,
+ "lote": "virais-originais-20261029",
+ "gerado_automaticamente": false,
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
 }

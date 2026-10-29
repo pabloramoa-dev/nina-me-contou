@@ -1,104 +1,106 @@
 {
-  "id": "ep128-p1",
-  "ep": 128,
-  "parte": 1,
-  "titulo": "ELA ESCOLHEU O DINHEIRO",
-  "temporada": "Histórias adaptadas 2026",
-  "cenario": "tarde",
-  "batidas": [
-    {
-      "fala": "Lorena terminou um namoro porque recebeu uma proposta de emprego muito melhor em outra cidade, e todos disseram que ela escolheu dinheiro.",
-      "expr": "chocada",
-      "arte": [
-        "titulo"
-      ],
-      "destaque": [
-        "Lorena",
-        "terminou"
-      ]
-    },
-    {
-      "fala": "A protagonista desta história é Lorena. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
-      "expr": "neutra",
-      "arte": [
-        "celular"
-      ],
-      "destaque": [
-        "protagonista",
-        "história"
-      ]
-    },
-    {
-      "fala": "O namorado queria que ela desistisse da vaga para manter a rotina, mesmo sabendo que o salário atual não pagava suas contas.",
-      "expr": "neutra",
-      "arte": [
-        "conversa"
-      ],
-      "destaque": [
-        "namorado",
-        "queria"
-      ]
-    },
-    {
-      "fala": "Um amigo publicou uma foto fora de contexto e a história virou fofoca de que Lorena havia trocado amor por luxo.",
-      "expr": "neutra",
-      "arte": [
-        "foto"
-      ],
-      "destaque": [
-        "publicou",
-        "contexto"
-      ]
-    },
-    {
-      "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
-      "expr": "desconfiada",
-      "arte": [
-        "manchete_v"
-      ],
-      "destaque": [
-        "detalhe",
-        "parecia"
-      ]
-    },
-    {
-      "fala": "Lorena guardou silêncio até descobrir que sua mãe tinha recebido mensagens ofensivas por causa daquela versão.",
-      "expr": "ironica",
-      "arte": [
-        "celular"
-      ],
-      "destaque": [
-        "Lorena",
-        "guardou"
-      ]
-    },
-    {
-      "fala": "E aqui começa a parte mais surpreendente: Lorena decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
-      "expr": "neutra",
-      "arte": [
-        "conversa"
-      ],
-      "destaque": [
-        "começa",
-        "surpreendente:"
-      ]
-    },
-    {
-      "fala": "Na parte dois, vem a explicação completa e uma decisão que mudou o rumo dessa história.",
-      "expr": "neutra",
-      "arte": [
-        "foto"
-      ],
-      "destaque": [
-        "explicação",
-        "completa"
-      ]
-    }
-  ],
-  "fim": "CONTINUA NA PARTE 2",
-  "legenda_post": "🎭 ELA ESCOLHEU O DINHEIRO. Uma pista muda a história. Parte 2 em breve.\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
-  "legenda_tiktok": "🎭 ELA ESCOLHEU O DINHEIRO. Parte 1. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
-  "origem_inspiracao_numero": 35,
-  "lote": "virais-originais-20261029",
-  "gerado_automaticamente": false
+ "id": "ep128-p1",
+ "ep": 128,
+ "parte": 1,
+ "titulo": "ELA ESCOLHEU O DINHEIRO",
+ "temporada": "Histórias adaptadas 2026",
+ "cenario": "tarde",
+ "batidas": [
+  {
+   "fala": "Lorena terminou um namoro porque recebeu uma proposta de emprego muito melhor em outra cidade, e todos disseram que ela escolheu dinheiro.",
+   "expr": "chocada",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "Lorena",
+    "terminou"
+   ]
+  },
+  {
+   "fala": "A protagonista desta história é Lorena. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
+   "expr": "neutra",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "protagonista",
+    "história"
+   ]
+  },
+  {
+   "fala": "O namorado queria que ela desistisse da vaga para manter a rotina, mesmo sabendo que o salário atual não pagava suas contas.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "namorado",
+    "queria"
+   ]
+  },
+  {
+   "fala": "Um amigo publicou uma foto fora de contexto e a história virou fofoca de que Lorena havia trocado amor por luxo.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "publicou",
+    "contexto"
+   ]
+  },
+  {
+   "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
+   "expr": "desconfiada",
+   "arte": [
+    "manchete_v"
+   ],
+   "destaque": [
+    "detalhe",
+    "parecia"
+   ]
+  },
+  {
+   "fala": "Lorena guardou silêncio até descobrir que sua mãe tinha recebido mensagens ofensivas por causa daquela versão.",
+   "expr": "ironica",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "Lorena",
+    "guardou"
+   ]
+  },
+  {
+   "fala": "E aqui começa a parte mais surpreendente: Lorena decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "começa",
+    "surpreendente:"
+   ]
+  },
+  {
+   "fala": "Na parte dois, vem a explicação completa e uma decisão que mudou o rumo dessa história.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "explicação",
+    "completa"
+   ]
+  }
+ ],
+ "fim": "CONTINUA NA PARTE 2",
+ "legenda_post": "🎭 ELA ESCOLHEU O DINHEIRO. Uma pista muda a história. Parte 2 em breve.\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+ "legenda_tiktok": "🎭 ELA ESCOLHEU O DINHEIRO. Parte 1. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
+ "origem_inspiracao_numero": 35,
+ "lote": "virais-originais-20261029",
+ "gerado_automaticamente": false,
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
 }

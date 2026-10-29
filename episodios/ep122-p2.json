@@ -1,104 +1,106 @@
 {
-  "id": "ep122-p2",
-  "ep": 122,
-  "parte": 2,
-  "titulo": "A APRESENTAÇÃO DOS NOIVOS",
-  "temporada": "Histórias adaptadas 2026",
-  "cenario": "noite",
-  "batidas": [
-    {
-      "fala": "Na primeira parte, Luana encontrou uma pista que não fazia sentido. Agora olha como essa situação realmente terminou.",
-      "expr": "chocada",
-      "arte": [
-        "titulo"
-      ],
-      "destaque": [
-        "primeira",
-        "parte,"
-      ]
-    },
-    {
-      "fala": "A foto tinha sido feita por uma vizinha durante uma campanha de doação de livros; os dois aparecem ao fundo, em filas diferentes.",
-      "expr": "neutra",
-      "arte": [
-        "celular"
-      ],
-      "destaque": [
-        "vizinha",
-        "durante"
-      ]
-    },
-    {
-      "fala": "Não foi uma resposta que chegou pronta. Primeiro vieram dúvidas, depois uma conversa desconfortável e, só então, a informação que faltava para entender o que estava acontecendo.",
-      "expr": "neutra",
-      "arte": [
-        "conversa"
-      ],
-      "destaque": [
-        "resposta",
-        "chegou"
-      ]
-    },
-    {
-      "fala": "A vizinha guardou o registro e contou à família quando reconheceu o casal no convite da cerimônia.",
-      "expr": "neutra",
-      "arte": [
-        "foto"
-      ],
-      "destaque": [
-        "vizinha",
-        "guardou"
-      ]
-    },
-    {
-      "fala": "Os noivos acrescentaram a imagem ao álbum oficial, sem inventar que o destino tinha feito promessas especiais.",
-      "expr": "desconfiada",
-      "arte": [
-        "manchete_v"
-      ],
-      "destaque": [
-        "noivos",
-        "acrescentaram"
-      ]
-    },
-    {
-      "fala": "Quem estava envolvido teve de assumir as próprias escolhas. E foi justamente nessa conversa, sem plateia, que a história ganhou outra direção.",
-      "expr": "ironica",
-      "arte": [
-        "celular"
-      ],
-      "destaque": [
-        "estava",
-        "envolvido"
-      ]
-    },
-    {
-      "fala": "A apresentação terminou com uma lembrança: às vezes uma história começa antes mesmo de os protagonistas perceberem.",
-      "expr": "neutra",
-      "arte": [
-        "conversa"
-      ],
-      "destaque": [
-        "apresentação",
-        "terminou"
-      ]
-    },
-    {
-      "fala": "Se fosse com você, teria reagido como Luana ou feito diferente? Me conta, porque eu quero saber o que vocês acharam dessa virada.",
-      "expr": "neutra",
-      "arte": [
-        "foto"
-      ],
-      "destaque": [
-        "reagido",
-        "diferente?"
-      ]
-    }
-  ],
-  "fim": "SEGUE A NINA",
-  "legenda_post": "🎭 A APRESENTAÇÃO DOS NOIVOS. A conclusão veio com uma reviravolta. Você teria feito diferente?\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
-  "legenda_tiktok": "🎭 A APRESENTAÇÃO DOS NOIVOS. Parte 2. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
-  "origem_inspiracao_numero": 26,
-  "lote": "virais-originais-20261029",
-  "gerado_automaticamente": false
+ "id": "ep122-p2",
+ "ep": 122,
+ "parte": 2,
+ "titulo": "A APRESENTAÇÃO DOS NOIVOS",
+ "temporada": "Histórias adaptadas 2026",
+ "cenario": "noite",
+ "batidas": [
+  {
+   "fala": "Na primeira parte, Luana encontrou uma pista que não fazia sentido. Agora olha como essa situação realmente terminou.",
+   "expr": "chocada",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "primeira",
+    "parte,"
+   ]
+  },
+  {
+   "fala": "A foto tinha sido feita por uma vizinha durante uma campanha de doação de livros; os dois aparecem ao fundo, em filas diferentes.",
+   "expr": "neutra",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "vizinha",
+    "durante"
+   ]
+  },
+  {
+   "fala": "Não foi uma resposta que chegou pronta. Primeiro vieram dúvidas, depois uma conversa desconfortável e, só então, a informação que faltava para entender o que estava acontecendo.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "resposta",
+    "chegou"
+   ]
+  },
+  {
+   "fala": "A vizinha guardou o registro e contou à família quando reconheceu o casal no convite da cerimônia.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "vizinha",
+    "guardou"
+   ]
+  },
+  {
+   "fala": "Os noivos acrescentaram a imagem ao álbum oficial, sem inventar que o destino tinha feito promessas especiais.",
+   "expr": "desconfiada",
+   "arte": [
+    "manchete_v"
+   ],
+   "destaque": [
+    "noivos",
+    "acrescentaram"
+   ]
+  },
+  {
+   "fala": "Quem estava envolvido teve de assumir as próprias escolhas. E foi justamente nessa conversa, sem plateia, que a história ganhou outra direção.",
+   "expr": "ironica",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "estava",
+    "envolvido"
+   ]
+  },
+  {
+   "fala": "A apresentação terminou com uma lembrança: às vezes uma história começa antes mesmo de os protagonistas perceberem.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "apresentação",
+    "terminou"
+   ]
+  },
+  {
+   "fala": "Se fosse com você, teria reagido como Luana ou feito diferente? Me conta, porque eu quero saber o que vocês acharam dessa virada.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "reagido",
+    "diferente?"
+   ]
+  }
+ ],
+ "fim": "SEGUE A NINA",
+ "legenda_post": "🎭 A APRESENTAÇÃO DOS NOIVOS. A conclusão veio com uma reviravolta. Você teria feito diferente?\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+ "legenda_tiktok": "🎭 A APRESENTAÇÃO DOS NOIVOS. Parte 2. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
+ "origem_inspiracao_numero": 26,
+ "lote": "virais-originais-20261029",
+ "gerado_automaticamente": false,
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
 }

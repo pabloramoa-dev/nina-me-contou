@@ -1,104 +1,106 @@
 {
-  "id": "ep113-p1",
-  "ep": 113,
-  "parte": 1,
-  "titulo": "MEU EX CASOU COM MINHA AMIGA",
-  "temporada": "Histórias adaptadas 2026",
-  "cenario": "tarde",
-  "batidas": [
-    {
-      "fala": "Cecília recebeu uma foto de casamento e reconheceu os noivos: seu ex-namorado e a amiga com quem dividia apartamento.",
-      "expr": "chocada",
-      "arte": [
-        "titulo"
-      ],
-      "destaque": [
-        "Cecília",
-        "recebeu"
-      ]
-    },
-    {
-      "fala": "A protagonista desta história é Cecília. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
-      "expr": "neutra",
-      "arte": [
-        "celular"
-      ],
-      "destaque": [
-        "protagonista",
-        "história"
-      ]
-    },
-    {
-      "fala": "Ela não falava com nenhum dos dois havia dois anos, desde que uma mudança de cidade acabou misturando despedidas e mágoas.",
-      "expr": "neutra",
-      "arte": [
-        "conversa"
-      ],
-      "destaque": [
-        "falava",
-        "nenhum"
-      ]
-    },
-    {
-      "fala": "Quando abriu a mensagem, percebeu que o convite trazia uma dedicatória que a deixou mais confusa do que indignada.",
-      "expr": "neutra",
-      "arte": [
-        "foto"
-      ],
-      "destaque": [
-        "Quando",
-        "mensagem,"
-      ]
-    },
-    {
-      "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
-      "expr": "desconfiada",
-      "arte": [
-        "manchete_v"
-      ],
-      "destaque": [
-        "detalhe",
-        "parecia"
-      ]
-    },
-    {
-      "fala": "A amiga escreveu: você foi a primeira pessoa que acreditou que eu podia recomeçar; por isso precisava te contar pessoalmente.",
-      "expr": "ironica",
-      "arte": [
-        "celular"
-      ],
-      "destaque": [
-        "escreveu:",
-        "primeira"
-      ]
-    },
-    {
-      "fala": "E aqui começa a parte mais surpreendente: Cecília decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
-      "expr": "neutra",
-      "arte": [
-        "conversa"
-      ],
-      "destaque": [
-        "começa",
-        "surpreendente:"
-      ]
-    },
-    {
-      "fala": "Na parte dois, vem a explicação completa e uma decisão que mudou o rumo dessa história.",
-      "expr": "neutra",
-      "arte": [
-        "foto"
-      ],
-      "destaque": [
-        "explicação",
-        "completa"
-      ]
-    }
-  ],
-  "fim": "CONTINUA NA PARTE 2",
-  "legenda_post": "🎭 MEU EX CASOU COM MINHA AMIGA. Uma pista muda a história. Parte 2 em breve.\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
-  "legenda_tiktok": "🎭 MEU EX CASOU COM MINHA AMIGA. Parte 1. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
-  "origem_inspiracao_numero": 10,
-  "lote": "virais-originais-20261029",
-  "gerado_automaticamente": false
+ "id": "ep113-p1",
+ "ep": 113,
+ "parte": 1,
+ "titulo": "MEU EX CASOU COM MINHA AMIGA",
+ "temporada": "Histórias adaptadas 2026",
+ "cenario": "tarde",
+ "batidas": [
+  {
+   "fala": "Cecília recebeu uma foto de casamento e reconheceu os noivos: seu ex-namorado e a amiga com quem dividia apartamento.",
+   "expr": "chocada",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "Cecília",
+    "recebeu"
+   ]
+  },
+  {
+   "fala": "A protagonista desta história é Cecília. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
+   "expr": "neutra",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "protagonista",
+    "história"
+   ]
+  },
+  {
+   "fala": "Ela não falava com nenhum dos dois havia dois anos, desde que uma mudança de cidade acabou misturando despedidas e mágoas.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "falava",
+    "nenhum"
+   ]
+  },
+  {
+   "fala": "Quando abriu a mensagem, percebeu que o convite trazia uma dedicatória que a deixou mais confusa do que indignada.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "Quando",
+    "mensagem,"
+   ]
+  },
+  {
+   "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
+   "expr": "desconfiada",
+   "arte": [
+    "manchete_v"
+   ],
+   "destaque": [
+    "detalhe",
+    "parecia"
+   ]
+  },
+  {
+   "fala": "A amiga escreveu: você foi a primeira pessoa que acreditou que eu podia recomeçar; por isso precisava te contar pessoalmente.",
+   "expr": "ironica",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "escreveu:",
+    "primeira"
+   ]
+  },
+  {
+   "fala": "E aqui começa a parte mais surpreendente: Cecília decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "começa",
+    "surpreendente:"
+   ]
+  },
+  {
+   "fala": "Na parte dois, vem a explicação completa e uma decisão que mudou o rumo dessa história.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "explicação",
+    "completa"
+   ]
+  }
+ ],
+ "fim": "CONTINUA NA PARTE 2",
+ "legenda_post": "🎭 MEU EX CASOU COM MINHA AMIGA. Uma pista muda a história. Parte 2 em breve.\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+ "legenda_tiktok": "🎭 MEU EX CASOU COM MINHA AMIGA. Parte 1. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
+ "origem_inspiracao_numero": 10,
+ "lote": "virais-originais-20261029",
+ "gerado_automaticamente": false,
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
 }

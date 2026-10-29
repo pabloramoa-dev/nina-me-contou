@@ -1,104 +1,106 @@
 {
-  "id": "ep129-p2",
-  "ep": 129,
-  "parte": 2,
-  "titulo": "O CAPACETE DO FOTÓGRAFO",
-  "temporada": "Histórias adaptadas 2026",
-  "cenario": "noite",
-  "batidas": [
-    {
-      "fala": "Na primeira parte, Tereza encontrou uma pista que não fazia sentido. Agora olha como essa situação realmente terminou.",
-      "expr": "chocada",
-      "arte": [
-        "titulo"
-      ],
-      "destaque": [
-        "primeira",
-        "parte,"
-      ]
-    },
-    {
-      "fala": "O fotógrafo era um ex-aluno que ajudava a turma a arrecadar fundos para uma exposição de invenções feitas pelos estudantes.",
-      "expr": "neutra",
-      "arte": [
-        "celular"
-      ],
-      "destaque": [
-        "fotógrafo",
-        "ex-aluno"
-      ]
-    },
-    {
-      "fala": "Não foi uma resposta que chegou pronta. Primeiro vieram dúvidas, depois uma conversa desconfortável e, só então, a informação que faltava para entender o que estava acontecendo.",
-      "expr": "neutra",
-      "arte": [
-        "conversa"
-      ],
-      "destaque": [
-        "resposta",
-        "chegou"
-      ]
-    },
-    {
-      "fala": "O capacete era uma peça decorativa criada pela equipe; ele o vestira para chamar atenção para o projeto, não para esconder o rosto.",
-      "expr": "neutra",
-      "arte": [
-        "foto"
-      ],
-      "destaque": [
-        "capacete",
-        "decorativa"
-      ]
-    },
-    {
-      "fala": "Depois das fotos, o salão abriu espaço para uma pequena demonstração dos robôs de papel e luz construídos pelos jovens.",
-      "expr": "desconfiada",
-      "arte": [
-        "manchete_v"
-      ],
-      "destaque": [
-        "Depois",
-        "fotos,"
-      ]
-    },
-    {
-      "fala": "Quem estava envolvido teve de assumir as próprias escolhas. E foi justamente nessa conversa, sem plateia, que a história ganhou outra direção.",
-      "expr": "ironica",
-      "arte": [
-        "celular"
-      ],
-      "destaque": [
-        "estava",
-        "envolvido"
-      ]
-    },
-    {
-      "fala": "Tereza disse que o acessório mais estranho da festa conseguiu o que muitos discursos não fazem: todo mundo perguntou sobre a escola.",
-      "expr": "neutra",
-      "arte": [
-        "conversa"
-      ],
-      "destaque": [
-        "Tereza",
-        "acessório"
-      ]
-    },
-    {
-      "fala": "Se fosse com você, teria reagido como Tereza ou feito diferente? Me conta, porque eu quero saber o que vocês acharam dessa virada.",
-      "expr": "neutra",
-      "arte": [
-        "foto"
-      ],
-      "destaque": [
-        "reagido",
-        "Tereza"
-      ]
-    }
-  ],
-  "fim": "SEGUE A NINA",
-  "legenda_post": "🎭 O CAPACETE DO FOTÓGRAFO. A conclusão veio com uma reviravolta. Você teria feito diferente?\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
-  "legenda_tiktok": "🎭 O CAPACETE DO FOTÓGRAFO. Parte 2. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
-  "origem_inspiracao_numero": 36,
-  "lote": "virais-originais-20261029",
-  "gerado_automaticamente": false
+ "id": "ep129-p2",
+ "ep": 129,
+ "parte": 2,
+ "titulo": "O CAPACETE DO FOTÓGRAFO",
+ "temporada": "Histórias adaptadas 2026",
+ "cenario": "noite",
+ "batidas": [
+  {
+   "fala": "Na primeira parte, Tereza encontrou uma pista que não fazia sentido. Agora olha como essa situação realmente terminou.",
+   "expr": "chocada",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "primeira",
+    "parte,"
+   ]
+  },
+  {
+   "fala": "O fotógrafo era um ex-aluno que ajudava a turma a arrecadar fundos para uma exposição de invenções feitas pelos estudantes.",
+   "expr": "neutra",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "fotógrafo",
+    "ex-aluno"
+   ]
+  },
+  {
+   "fala": "Não foi uma resposta que chegou pronta. Primeiro vieram dúvidas, depois uma conversa desconfortável e, só então, a informação que faltava para entender o que estava acontecendo.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "resposta",
+    "chegou"
+   ]
+  },
+  {
+   "fala": "O capacete era uma peça decorativa criada pela equipe; ele o vestira para chamar atenção para o projeto, não para esconder o rosto.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "capacete",
+    "decorativa"
+   ]
+  },
+  {
+   "fala": "Depois das fotos, o salão abriu espaço para uma pequena demonstração dos robôs de papel e luz construídos pelos jovens.",
+   "expr": "desconfiada",
+   "arte": [
+    "manchete_v"
+   ],
+   "destaque": [
+    "Depois",
+    "fotos,"
+   ]
+  },
+  {
+   "fala": "Quem estava envolvido teve de assumir as próprias escolhas. E foi justamente nessa conversa, sem plateia, que a história ganhou outra direção.",
+   "expr": "ironica",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "estava",
+    "envolvido"
+   ]
+  },
+  {
+   "fala": "Tereza disse que o acessório mais estranho da festa conseguiu o que muitos discursos não fazem: todo mundo perguntou sobre a escola.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "Tereza",
+    "acessório"
+   ]
+  },
+  {
+   "fala": "Se fosse com você, teria reagido como Tereza ou feito diferente? Me conta, porque eu quero saber o que vocês acharam dessa virada.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "reagido",
+    "Tereza"
+   ]
+  }
+ ],
+ "fim": "SEGUE A NINA",
+ "legenda_post": "🎭 O CAPACETE DO FOTÓGRAFO. A conclusão veio com uma reviravolta. Você teria feito diferente?\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+ "legenda_tiktok": "🎭 O CAPACETE DO FOTÓGRAFO. Parte 2. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
+ "origem_inspiracao_numero": 36,
+ "lote": "virais-originais-20261029",
+ "gerado_automaticamente": false,
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
 }

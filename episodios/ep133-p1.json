@@ -1,104 +1,106 @@
 {
-  "id": "ep133-p1",
-  "ep": 133,
-  "parte": 1,
-  "titulo": "A INFLUENCIADORA ESCOLHIDA PELOS SOGROS",
-  "temporada": "Histórias adaptadas 2026",
-  "cenario": "tarde",
-  "batidas": [
-    {
-      "fala": "Rute descobriu que os sogros tinham convidado uma influenciadora para o jantar em que ela conheceria oficialmente a família.",
-      "expr": "chocada",
-      "arte": [
-        "titulo"
-      ],
-      "destaque": [
-        "descobriu",
-        "sogros"
-      ]
-    },
-    {
-      "fala": "A protagonista desta história é Rute. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
-      "expr": "neutra",
-      "arte": [
-        "celular"
-      ],
-      "destaque": [
-        "protagonista",
-        "história"
-      ]
-    },
-    {
-      "fala": "Os pais do namorado queriam uma nora famosa e passaram a comparar a profissão de Rute com a vida exibida nas redes.",
-      "expr": "neutra",
-      "arte": [
-        "conversa"
-      ],
-      "destaque": [
-        "namorado",
-        "queriam"
-      ]
-    },
-    {
-      "fala": "Na sobremesa, a convidada tirou o celular da bolsa e perguntou quem havia autorizado usar sua presença como uma surpresa.",
-      "expr": "neutra",
-      "arte": [
-        "foto"
-      ],
-      "destaque": [
-        "sobremesa,",
-        "convidada"
-      ]
-    },
-    {
-      "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
-      "expr": "desconfiada",
-      "arte": [
-        "manchete_v"
-      ],
-      "destaque": [
-        "detalhe",
-        "parecia"
-      ]
-    },
-    {
-      "fala": "Rute ficou pronta para ir embora quando os sogros disseram que era só uma brincadeira para incentivar ambição.",
-      "expr": "ironica",
-      "arte": [
-        "celular"
-      ],
-      "destaque": [
-        "pronta",
-        "embora"
-      ]
-    },
-    {
-      "fala": "E aqui começa a parte mais surpreendente: Rute decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
-      "expr": "neutra",
-      "arte": [
-        "conversa"
-      ],
-      "destaque": [
-        "começa",
-        "surpreendente:"
-      ]
-    },
-    {
-      "fala": "Na parte dois, vem a explicação completa e uma decisão que mudou o rumo dessa história.",
-      "expr": "neutra",
-      "arte": [
-        "foto"
-      ],
-      "destaque": [
-        "explicação",
-        "completa"
-      ]
-    }
-  ],
-  "fim": "CONTINUA NA PARTE 2",
-  "legenda_post": "🎭 A INFLUENCIADORA ESCOLHIDA PELOS SOGROS. Uma pista muda a história. Parte 2 em breve.\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
-  "legenda_tiktok": "🎭 A INFLUENCIADORA ESCOLHIDA PELOS SOGROS. Parte 1. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
-  "origem_inspiracao_numero": 42,
-  "lote": "virais-originais-20261029",
-  "gerado_automaticamente": false
+ "id": "ep133-p1",
+ "ep": 133,
+ "parte": 1,
+ "titulo": "A INFLUENCIADORA ESCOLHIDA PELOS SOGROS",
+ "temporada": "Histórias adaptadas 2026",
+ "cenario": "tarde",
+ "batidas": [
+  {
+   "fala": "Rute descobriu que os sogros tinham convidado uma influenciadora para o jantar em que ela conheceria oficialmente a família.",
+   "expr": "chocada",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "descobriu",
+    "sogros"
+   ]
+  },
+  {
+   "fala": "A protagonista desta história é Rute. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
+   "expr": "neutra",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "protagonista",
+    "história"
+   ]
+  },
+  {
+   "fala": "Os pais do namorado queriam uma nora famosa e passaram a comparar a profissão de Rute com a vida exibida nas redes.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "namorado",
+    "queriam"
+   ]
+  },
+  {
+   "fala": "Na sobremesa, a convidada tirou o celular da bolsa e perguntou quem havia autorizado usar sua presença como uma surpresa.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "sobremesa,",
+    "convidada"
+   ]
+  },
+  {
+   "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
+   "expr": "desconfiada",
+   "arte": [
+    "manchete_v"
+   ],
+   "destaque": [
+    "detalhe",
+    "parecia"
+   ]
+  },
+  {
+   "fala": "Rute ficou pronta para ir embora quando os sogros disseram que era só uma brincadeira para incentivar ambição.",
+   "expr": "ironica",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "pronta",
+    "embora"
+   ]
+  },
+  {
+   "fala": "E aqui começa a parte mais surpreendente: Rute decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "começa",
+    "surpreendente:"
+   ]
+  },
+  {
+   "fala": "Na parte dois, vem a explicação completa e uma decisão que mudou o rumo dessa história.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "explicação",
+    "completa"
+   ]
+  }
+ ],
+ "fim": "CONTINUA NA PARTE 2",
+ "legenda_post": "🎭 A INFLUENCIADORA ESCOLHIDA PELOS SOGROS. Uma pista muda a história. Parte 2 em breve.\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+ "legenda_tiktok": "🎭 A INFLUENCIADORA ESCOLHIDA PELOS SOGROS. Parte 1. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
+ "origem_inspiracao_numero": 42,
+ "lote": "virais-originais-20261029",
+ "gerado_automaticamente": false,
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
 }

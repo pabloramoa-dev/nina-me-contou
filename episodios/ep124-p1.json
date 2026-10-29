@@ -1,104 +1,106 @@
 {
-  "id": "ep124-p1",
-  "ep": 124,
-  "parte": 1,
-  "titulo": "O QUADRO QUE CHEGOU DEPOIS",
-  "temporada": "Histórias adaptadas 2026",
-  "cenario": "tarde",
-  "batidas": [
-    {
-      "fala": "Débora recebeu uma caixa endereçada ao marido com a frase abra quando ela chegar, e pensou que fosse surpresa de outra mulher.",
-      "expr": "chocada",
-      "arte": [
-        "titulo"
-      ],
-      "destaque": [
-        "Débora",
-        "recebeu"
-      ]
-    },
-    {
-      "fala": "A protagonista desta história é Débora. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
-      "expr": "neutra",
-      "arte": [
-        "celular"
-      ],
-      "destaque": [
-        "protagonista",
-        "história"
-      ]
-    },
-    {
-      "fala": "Ele tentou esconder o pacote até o jantar e pediu que ela esperasse a chegada de uma pessoa que nunca tinha mencionado.",
-      "expr": "neutra",
-      "arte": [
-        "conversa"
-      ],
-      "destaque": [
-        "tentou",
-        "esconder"
-      ]
-    },
-    {
-      "fala": "Quando a campainha tocou, era uma senhora com um porta-retrato vazio e um álbum de fotografias antigas.",
-      "expr": "neutra",
-      "arte": [
-        "foto"
-      ],
-      "destaque": [
-        "Quando",
-        "campainha"
-      ]
-    },
-    {
-      "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
-      "expr": "desconfiada",
-      "arte": [
-        "manchete_v"
-      ],
-      "destaque": [
-        "detalhe",
-        "parecia"
-      ]
-    },
-    {
-      "fala": "Débora reconheceu na primeira foto a mãe do marido, que já não estava viva havia muitos anos.",
-      "expr": "ironica",
-      "arte": [
-        "celular"
-      ],
-      "destaque": [
-        "Débora",
-        "reconheceu"
-      ]
-    },
-    {
-      "fala": "E aqui começa a parte mais surpreendente: Débora decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
-      "expr": "neutra",
-      "arte": [
-        "conversa"
-      ],
-      "destaque": [
-        "começa",
-        "surpreendente:"
-      ]
-    },
-    {
-      "fala": "Na parte dois, vem a explicação completa e uma decisão que mudou o rumo dessa história.",
-      "expr": "neutra",
-      "arte": [
-        "foto"
-      ],
-      "destaque": [
-        "explicação",
-        "completa"
-      ]
-    }
-  ],
-  "fim": "CONTINUA NA PARTE 2",
-  "legenda_post": "🎭 O QUADRO QUE CHEGOU DEPOIS. Uma pista muda a história. Parte 2 em breve.\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
-  "legenda_tiktok": "🎭 O QUADRO QUE CHEGOU DEPOIS. Parte 1. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
-  "origem_inspiracao_numero": 28,
-  "lote": "virais-originais-20261029",
-  "gerado_automaticamente": false
+ "id": "ep124-p1",
+ "ep": 124,
+ "parte": 1,
+ "titulo": "O QUADRO QUE CHEGOU DEPOIS",
+ "temporada": "Histórias adaptadas 2026",
+ "cenario": "tarde",
+ "batidas": [
+  {
+   "fala": "Débora recebeu uma caixa endereçada ao marido com a frase abra quando ela chegar, e pensou que fosse surpresa de outra mulher.",
+   "expr": "chocada",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "Débora",
+    "recebeu"
+   ]
+  },
+  {
+   "fala": "A protagonista desta história é Débora. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
+   "expr": "neutra",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "protagonista",
+    "história"
+   ]
+  },
+  {
+   "fala": "Ele tentou esconder o pacote até o jantar e pediu que ela esperasse a chegada de uma pessoa que nunca tinha mencionado.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "tentou",
+    "esconder"
+   ]
+  },
+  {
+   "fala": "Quando a campainha tocou, era uma senhora com um porta-retrato vazio e um álbum de fotografias antigas.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "Quando",
+    "campainha"
+   ]
+  },
+  {
+   "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
+   "expr": "desconfiada",
+   "arte": [
+    "manchete_v"
+   ],
+   "destaque": [
+    "detalhe",
+    "parecia"
+   ]
+  },
+  {
+   "fala": "Débora reconheceu na primeira foto a mãe do marido, que já não estava viva havia muitos anos.",
+   "expr": "ironica",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "Débora",
+    "reconheceu"
+   ]
+  },
+  {
+   "fala": "E aqui começa a parte mais surpreendente: Débora decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "começa",
+    "surpreendente:"
+   ]
+  },
+  {
+   "fala": "Na parte dois, vem a explicação completa e uma decisão que mudou o rumo dessa história.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "explicação",
+    "completa"
+   ]
+  }
+ ],
+ "fim": "CONTINUA NA PARTE 2",
+ "legenda_post": "🎭 O QUADRO QUE CHEGOU DEPOIS. Uma pista muda a história. Parte 2 em breve.\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+ "legenda_tiktok": "🎭 O QUADRO QUE CHEGOU DEPOIS. Parte 1. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
+ "origem_inspiracao_numero": 28,
+ "lote": "virais-originais-20261029",
+ "gerado_automaticamente": false,
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
 }

@@ -1,104 +1,106 @@
 {
-  "id": "ep129-p1",
-  "ep": 129,
-  "parte": 1,
-  "titulo": "O CAPACETE DO FOTÓGRAFO",
-  "temporada": "Histórias adaptadas 2026",
-  "cenario": "tarde",
-  "batidas": [
-    {
-      "fala": "Tereza contratou um fotógrafo para a formatura e ele apareceu usando um capacete brilhante até dentro do salão.",
-      "expr": "chocada",
-      "arte": [
-        "titulo"
-      ],
-      "destaque": [
-        "Tereza",
-        "contratou"
-      ]
-    },
-    {
-      "fala": "A protagonista desta história é Tereza. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
-      "expr": "neutra",
-      "arte": [
-        "celular"
-      ],
-      "destaque": [
-        "protagonista",
-        "história"
-      ]
-    },
-    {
-      "fala": "Os convidados acharam que era uma fantasia, mas ele respondia a qualquer pergunta com a mesma frase: faz parte do trabalho.",
-      "expr": "neutra",
-      "arte": [
-        "conversa"
-      ],
-      "destaque": [
-        "convidados",
-        "acharam"
-      ]
-    },
-    {
-      "fala": "Quando chegou a hora das fotos oficiais, alguém percebeu que havia um pequeno símbolo colado no capacete.",
-      "expr": "neutra",
-      "arte": [
-        "foto"
-      ],
-      "destaque": [
-        "Quando",
-        "chegou"
-      ]
-    },
-    {
-      "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
-      "expr": "desconfiada",
-      "arte": [
-        "manchete_v"
-      ],
-      "destaque": [
-        "detalhe",
-        "parecia"
-      ]
-    },
-    {
-      "fala": "Tereza reconheceu o desenho: era o logotipo do clube de robótica da escola onde ela tinha estudado anos antes.",
-      "expr": "ironica",
-      "arte": [
-        "celular"
-      ],
-      "destaque": [
-        "Tereza",
-        "reconheceu"
-      ]
-    },
-    {
-      "fala": "E aqui começa a parte mais surpreendente: Tereza decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
-      "expr": "neutra",
-      "arte": [
-        "conversa"
-      ],
-      "destaque": [
-        "começa",
-        "surpreendente:"
-      ]
-    },
-    {
-      "fala": "Na parte dois, vem a explicação completa e uma decisão que mudou o rumo dessa história.",
-      "expr": "neutra",
-      "arte": [
-        "foto"
-      ],
-      "destaque": [
-        "explicação",
-        "completa"
-      ]
-    }
-  ],
-  "fim": "CONTINUA NA PARTE 2",
-  "legenda_post": "🎭 O CAPACETE DO FOTÓGRAFO. Uma pista muda a história. Parte 2 em breve.\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
-  "legenda_tiktok": "🎭 O CAPACETE DO FOTÓGRAFO. Parte 1. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
-  "origem_inspiracao_numero": 36,
-  "lote": "virais-originais-20261029",
-  "gerado_automaticamente": false
+ "id": "ep129-p1",
+ "ep": 129,
+ "parte": 1,
+ "titulo": "O CAPACETE DO FOTÓGRAFO",
+ "temporada": "Histórias adaptadas 2026",
+ "cenario": "tarde",
+ "batidas": [
+  {
+   "fala": "Tereza contratou um fotógrafo para a formatura e ele apareceu usando um capacete brilhante até dentro do salão.",
+   "expr": "chocada",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "Tereza",
+    "contratou"
+   ]
+  },
+  {
+   "fala": "A protagonista desta história é Tereza. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
+   "expr": "neutra",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "protagonista",
+    "história"
+   ]
+  },
+  {
+   "fala": "Os convidados acharam que era uma fantasia, mas ele respondia a qualquer pergunta com a mesma frase: faz parte do trabalho.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "convidados",
+    "acharam"
+   ]
+  },
+  {
+   "fala": "Quando chegou a hora das fotos oficiais, alguém percebeu que havia um pequeno símbolo colado no capacete.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "Quando",
+    "chegou"
+   ]
+  },
+  {
+   "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
+   "expr": "desconfiada",
+   "arte": [
+    "manchete_v"
+   ],
+   "destaque": [
+    "detalhe",
+    "parecia"
+   ]
+  },
+  {
+   "fala": "Tereza reconheceu o desenho: era o logotipo do clube de robótica da escola onde ela tinha estudado anos antes.",
+   "expr": "ironica",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "Tereza",
+    "reconheceu"
+   ]
+  },
+  {
+   "fala": "E aqui começa a parte mais surpreendente: Tereza decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "começa",
+    "surpreendente:"
+   ]
+  },
+  {
+   "fala": "Na parte dois, vem a explicação completa e uma decisão que mudou o rumo dessa história.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "explicação",
+    "completa"
+   ]
+  }
+ ],
+ "fim": "CONTINUA NA PARTE 2",
+ "legenda_post": "🎭 O CAPACETE DO FOTÓGRAFO. Uma pista muda a história. Parte 2 em breve.\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+ "legenda_tiktok": "🎭 O CAPACETE DO FOTÓGRAFO. Parte 1. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
+ "origem_inspiracao_numero": 36,
+ "lote": "virais-originais-20261029",
+ "gerado_automaticamente": false,
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
 }

@@ -1,104 +1,106 @@
 {
-  "id": "ep121-p1",
-  "ep": 121,
-  "parte": 1,
-  "titulo": "A DANÇA QUE O PAI ENSAIOU",
-  "temporada": "Histórias adaptadas 2026",
-  "cenario": "tarde",
-  "batidas": [
-    {
-      "fala": "Bruna achou que o pai não iria dançar no seu casamento, até ouvir um sapato bater no chão atrás da cortina.",
-      "expr": "chocada",
-      "arte": [
-        "titulo"
-      ],
-      "destaque": [
-        "dançar",
-        "casamento,"
-      ]
-    },
-    {
-      "fala": "A protagonista desta história é Bruna. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
-      "expr": "neutra",
-      "arte": [
-        "celular"
-      ],
-      "destaque": [
-        "protagonista",
-        "história"
-      ]
-    },
-    {
-      "fala": "Ele sempre dizia ter dois pés esquerdos e fugia até das festas da escola, o que deixou a filha conformada.",
-      "expr": "neutra",
-      "arte": [
-        "conversa"
-      ],
-      "destaque": [
-        "sempre",
-        "esquerdos"
-      ]
-    },
-    {
-      "fala": "Uma semana antes, Bruna encontrou um recibo de aulas de dança no bolso do paletó e pensou que fosse presente para alguém.",
-      "expr": "neutra",
-      "arte": [
-        "foto"
-      ],
-      "destaque": [
-        "semana",
-        "antes,"
-      ]
-    },
-    {
-      "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
-      "expr": "desconfiada",
-      "arte": [
-        "manchete_v"
-      ],
-      "destaque": [
-        "detalhe",
-        "parecia"
-      ]
-    },
-    {
-      "fala": "No dia da cerimônia, o pai pediu que a banda parasse por um minuto e mostrou um pequeno vídeo gravado em casa.",
-      "expr": "ironica",
-      "arte": [
-        "celular"
-      ],
-      "destaque": [
-        "cerimônia,",
-        "parasse"
-      ]
-    },
-    {
-      "fala": "E aqui começa a parte mais surpreendente: Bruna decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
-      "expr": "neutra",
-      "arte": [
-        "conversa"
-      ],
-      "destaque": [
-        "começa",
-        "surpreendente:"
-      ]
-    },
-    {
-      "fala": "Na parte dois, vem a explicação completa e uma decisão que mudou o rumo dessa história.",
-      "expr": "neutra",
-      "arte": [
-        "foto"
-      ],
-      "destaque": [
-        "explicação",
-        "completa"
-      ]
-    }
-  ],
-  "fim": "CONTINUA NA PARTE 2",
-  "legenda_post": "🎭 A DANÇA QUE O PAI ENSAIOU. Uma pista muda a história. Parte 2 em breve.\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
-  "legenda_tiktok": "🎭 A DANÇA QUE O PAI ENSAIOU. Parte 1. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
-  "origem_inspiracao_numero": 24,
-  "lote": "virais-originais-20261029",
-  "gerado_automaticamente": false
+ "id": "ep121-p1",
+ "ep": 121,
+ "parte": 1,
+ "titulo": "A DANÇA QUE O PAI ENSAIOU",
+ "temporada": "Histórias adaptadas 2026",
+ "cenario": "tarde",
+ "batidas": [
+  {
+   "fala": "Bruna achou que o pai não iria dançar no seu casamento, até ouvir um sapato bater no chão atrás da cortina.",
+   "expr": "chocada",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "dançar",
+    "casamento,"
+   ]
+  },
+  {
+   "fala": "A protagonista desta história é Bruna. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
+   "expr": "neutra",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "protagonista",
+    "história"
+   ]
+  },
+  {
+   "fala": "Ele sempre dizia ter dois pés esquerdos e fugia até das festas da escola, o que deixou a filha conformada.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "sempre",
+    "esquerdos"
+   ]
+  },
+  {
+   "fala": "Uma semana antes, Bruna encontrou um recibo de aulas de dança no bolso do paletó e pensou que fosse presente para alguém.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "semana",
+    "antes,"
+   ]
+  },
+  {
+   "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
+   "expr": "desconfiada",
+   "arte": [
+    "manchete_v"
+   ],
+   "destaque": [
+    "detalhe",
+    "parecia"
+   ]
+  },
+  {
+   "fala": "No dia da cerimônia, o pai pediu que a banda parasse por um minuto e mostrou um pequeno vídeo gravado em casa.",
+   "expr": "ironica",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "cerimônia,",
+    "parasse"
+   ]
+  },
+  {
+   "fala": "E aqui começa a parte mais surpreendente: Bruna decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "começa",
+    "surpreendente:"
+   ]
+  },
+  {
+   "fala": "Na parte dois, vem a explicação completa e uma decisão que mudou o rumo dessa história.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "explicação",
+    "completa"
+   ]
+  }
+ ],
+ "fim": "CONTINUA NA PARTE 2",
+ "legenda_post": "🎭 A DANÇA QUE O PAI ENSAIOU. Uma pista muda a história. Parte 2 em breve.\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+ "legenda_tiktok": "🎭 A DANÇA QUE O PAI ENSAIOU. Parte 1. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
+ "origem_inspiracao_numero": 24,
+ "lote": "virais-originais-20261029",
+ "gerado_automaticamente": false,
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
 }

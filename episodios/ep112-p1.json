@@ -1,104 +1,106 @@
 {
-  "id": "ep112-p1",
-  "ep": 112,
-  "parte": 1,
-  "titulo": "A MADRINHA SURPRESA",
-  "temporada": "Histórias adaptadas 2026",
-  "cenario": "tarde",
-  "batidas": [
-    {
-      "fala": "Tânia foi convidada para ser madrinha de casamento e descobriu que a outra madrinha era a melhor amiga do noivo, que a evitava há anos.",
-      "expr": "chocada",
-      "arte": [
-        "titulo"
-      ],
-      "destaque": [
-        "convidada",
-        "madrinha"
-      ]
-    },
-    {
-      "fala": "A protagonista desta história é Tânia. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
-      "expr": "neutra",
-      "arte": [
-        "celular"
-      ],
-      "destaque": [
-        "protagonista",
-        "história"
-      ]
-    },
-    {
-      "fala": "O convite tinha uma condição estranha: as duas precisavam preparar juntas uma caixa de recordações para os recém-casados.",
-      "expr": "neutra",
-      "arte": [
-        "conversa"
-      ],
-      "destaque": [
-        "convite",
-        "condição"
-      ]
-    },
-    {
-      "fala": "Durante os preparativos, Tânia percebeu que alguém havia arrancado páginas do álbum da época da faculdade.",
-      "expr": "neutra",
-      "arte": [
-        "foto"
-      ],
-      "destaque": [
-        "Durante",
-        "preparativos,"
-      ]
-    },
-    {
-      "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
-      "expr": "desconfiada",
-      "arte": [
-        "manchete_v"
-      ],
-      "destaque": [
-        "detalhe",
-        "parecia"
-      ]
-    },
-    {
-      "fala": "A amiga do noivo disse que não faltavam fotos, faltava coragem para contar uma conversa que mudara o rumo da amizade.",
-      "expr": "ironica",
-      "arte": [
-        "celular"
-      ],
-      "destaque": [
-        "faltavam",
-        "fotos,"
-      ]
-    },
-    {
-      "fala": "E aqui começa a parte mais surpreendente: Tânia decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
-      "expr": "neutra",
-      "arte": [
-        "conversa"
-      ],
-      "destaque": [
-        "começa",
-        "surpreendente:"
-      ]
-    },
-    {
-      "fala": "Na parte dois, vem a explicação completa e uma decisão que mudou o rumo dessa história.",
-      "expr": "neutra",
-      "arte": [
-        "foto"
-      ],
-      "destaque": [
-        "explicação",
-        "completa"
-      ]
-    }
-  ],
-  "fim": "CONTINUA NA PARTE 2",
-  "legenda_post": "🎭 A MADRINHA SURPRESA. Uma pista muda a história. Parte 2 em breve.\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
-  "legenda_tiktok": "🎭 A MADRINHA SURPRESA. Parte 1. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
-  "origem_inspiracao_numero": 9,
-  "lote": "virais-originais-20261029",
-  "gerado_automaticamente": false
+ "id": "ep112-p1",
+ "ep": 112,
+ "parte": 1,
+ "titulo": "A MADRINHA SURPRESA",
+ "temporada": "Histórias adaptadas 2026",
+ "cenario": "tarde",
+ "batidas": [
+  {
+   "fala": "Tânia foi convidada para ser madrinha de casamento e descobriu que a outra madrinha era a melhor amiga do noivo, que a evitava há anos.",
+   "expr": "chocada",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "convidada",
+    "madrinha"
+   ]
+  },
+  {
+   "fala": "A protagonista desta história é Tânia. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
+   "expr": "neutra",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "protagonista",
+    "história"
+   ]
+  },
+  {
+   "fala": "O convite tinha uma condição estranha: as duas precisavam preparar juntas uma caixa de recordações para os recém-casados.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "convite",
+    "condição"
+   ]
+  },
+  {
+   "fala": "Durante os preparativos, Tânia percebeu que alguém havia arrancado páginas do álbum da época da faculdade.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "Durante",
+    "preparativos,"
+   ]
+  },
+  {
+   "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
+   "expr": "desconfiada",
+   "arte": [
+    "manchete_v"
+   ],
+   "destaque": [
+    "detalhe",
+    "parecia"
+   ]
+  },
+  {
+   "fala": "A amiga do noivo disse que não faltavam fotos, faltava coragem para contar uma conversa que mudara o rumo da amizade.",
+   "expr": "ironica",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "faltavam",
+    "fotos,"
+   ]
+  },
+  {
+   "fala": "E aqui começa a parte mais surpreendente: Tânia decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "começa",
+    "surpreendente:"
+   ]
+  },
+  {
+   "fala": "Na parte dois, vem a explicação completa e uma decisão que mudou o rumo dessa história.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "explicação",
+    "completa"
+   ]
+  }
+ ],
+ "fim": "CONTINUA NA PARTE 2",
+ "legenda_post": "🎭 A MADRINHA SURPRESA. Uma pista muda a história. Parte 2 em breve.\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+ "legenda_tiktok": "🎭 A MADRINHA SURPRESA. Parte 1. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
+ "origem_inspiracao_numero": 9,
+ "lote": "virais-originais-20261029",
+ "gerado_automaticamente": false,
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
 }

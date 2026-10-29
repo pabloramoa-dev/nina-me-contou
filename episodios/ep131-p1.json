@@ -1,104 +1,106 @@
 {
-  "id": "ep131-p1",
-  "ep": 131,
-  "parte": 1,
-  "titulo": "O NAMORADO DO CARRO VELHO",
-  "temporada": "Histórias adaptadas 2026",
-  "cenario": "tarde",
-  "batidas": [
-    {
-      "fala": "Rafaela terminou com o namorado depois de ver um carro velho na garagem e acreditar que ele havia mentido sobre a vida financeira.",
-      "expr": "chocada",
-      "arte": [
-        "titulo"
-      ],
-      "destaque": [
-        "Rafaela",
-        "terminou"
-      ]
-    },
-    {
-      "fala": "A protagonista desta história é Rafaela. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
-      "expr": "neutra",
-      "arte": [
-        "celular"
-      ],
-      "destaque": [
-        "protagonista",
-        "história"
-      ]
-    },
-    {
-      "fala": "Ela queria viajar e frequentar lugares caros; ele dizia que estava juntando dinheiro, mas nunca explicava exatamente para quê.",
-      "expr": "neutra",
-      "arte": [
-        "conversa"
-      ],
-      "destaque": [
-        "queria",
-        "viajar"
-      ]
-    },
-    {
-      "fala": "Um conhecido espalhou que o rapaz era rico e fingia pobreza, e Rafaela decidiu confrontá-lo na frente dos amigos.",
-      "expr": "neutra",
-      "arte": [
-        "foto"
-      ],
-      "destaque": [
-        "conhecido",
-        "espalhou"
-      ]
-    },
-    {
-      "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
-      "expr": "desconfiada",
-      "arte": [
-        "manchete_v"
-      ],
-      "destaque": [
-        "detalhe",
-        "parecia"
-      ]
-    },
-    {
-      "fala": "No meio da discussão, ele recebeu uma ligação e saiu correndo para levar a avó a uma consulta agendada.",
-      "expr": "ironica",
-      "arte": [
-        "celular"
-      ],
-      "destaque": [
-        "discussão,",
-        "recebeu"
-      ]
-    },
-    {
-      "fala": "E aqui começa a parte mais surpreendente: Rafaela decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
-      "expr": "neutra",
-      "arte": [
-        "conversa"
-      ],
-      "destaque": [
-        "começa",
-        "surpreendente:"
-      ]
-    },
-    {
-      "fala": "Na parte dois, vem a explicação completa e uma decisão que mudou o rumo dessa história.",
-      "expr": "neutra",
-      "arte": [
-        "foto"
-      ],
-      "destaque": [
-        "explicação",
-        "completa"
-      ]
-    }
-  ],
-  "fim": "CONTINUA NA PARTE 2",
-  "legenda_post": "🎭 O NAMORADO DO CARRO VELHO. Uma pista muda a história. Parte 2 em breve.\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
-  "legenda_tiktok": "🎭 O NAMORADO DO CARRO VELHO. Parte 1. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
-  "origem_inspiracao_numero": 39,
-  "lote": "virais-originais-20261029",
-  "gerado_automaticamente": false
+ "id": "ep131-p1",
+ "ep": 131,
+ "parte": 1,
+ "titulo": "O NAMORADO DO CARRO VELHO",
+ "temporada": "Histórias adaptadas 2026",
+ "cenario": "tarde",
+ "batidas": [
+  {
+   "fala": "Rafaela terminou com o namorado depois de ver um carro velho na garagem e acreditar que ele havia mentido sobre a vida financeira.",
+   "expr": "chocada",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "Rafaela",
+    "terminou"
+   ]
+  },
+  {
+   "fala": "A protagonista desta história é Rafaela. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
+   "expr": "neutra",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "protagonista",
+    "história"
+   ]
+  },
+  {
+   "fala": "Ela queria viajar e frequentar lugares caros; ele dizia que estava juntando dinheiro, mas nunca explicava exatamente para quê.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "queria",
+    "viajar"
+   ]
+  },
+  {
+   "fala": "Um conhecido espalhou que o rapaz era rico e fingia pobreza, e Rafaela decidiu confrontá-lo na frente dos amigos.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "conhecido",
+    "espalhou"
+   ]
+  },
+  {
+   "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
+   "expr": "desconfiada",
+   "arte": [
+    "manchete_v"
+   ],
+   "destaque": [
+    "detalhe",
+    "parecia"
+   ]
+  },
+  {
+   "fala": "No meio da discussão, ele recebeu uma ligação e saiu correndo para levar a avó a uma consulta agendada.",
+   "expr": "ironica",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "discussão,",
+    "recebeu"
+   ]
+  },
+  {
+   "fala": "E aqui começa a parte mais surpreendente: Rafaela decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "começa",
+    "surpreendente:"
+   ]
+  },
+  {
+   "fala": "Na parte dois, vem a explicação completa e uma decisão que mudou o rumo dessa história.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "explicação",
+    "completa"
+   ]
+  }
+ ],
+ "fim": "CONTINUA NA PARTE 2",
+ "legenda_post": "🎭 O NAMORADO DO CARRO VELHO. Uma pista muda a história. Parte 2 em breve.\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+ "legenda_tiktok": "🎭 O NAMORADO DO CARRO VELHO. Parte 1. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
+ "origem_inspiracao_numero": 39,
+ "lote": "virais-originais-20261029",
+ "gerado_automaticamente": false,
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
 }

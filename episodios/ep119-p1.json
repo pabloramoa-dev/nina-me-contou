@@ -1,104 +1,106 @@
 {
-  "id": "ep119-p1",
-  "ep": 119,
-  "parte": 1,
-  "titulo": "AS UNHAS AMARELAS DO NOIVADO",
-  "temporada": "Histórias adaptadas 2026",
-  "cenario": "tarde",
-  "batidas": [
-    {
-      "fala": "Paula acordou com as unhas amarelas na véspera do noivado e suspeitou que alguém tivesse estragado sua manicure de propósito.",
-      "expr": "chocada",
-      "arte": [
-        "titulo"
-      ],
-      "destaque": [
-        "acordou",
-        "amarelas"
-      ]
-    },
-    {
-      "fala": "A protagonista desta história é Paula. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
-      "expr": "neutra",
-      "arte": [
-        "celular"
-      ],
-      "destaque": [
-        "protagonista",
-        "história"
-      ]
-    },
-    {
-      "fala": "Ela trabalhava numa cozinha experimental e jurava que usara luvas durante o turno, sem lembrar da mistura de temperos.",
-      "expr": "neutra",
-      "arte": [
-        "conversa"
-      ],
-      "destaque": [
-        "trabalhava",
-        "cozinha"
-      ]
-    },
-    {
-      "fala": "Uma colega mostrou uma foto de Paula segurando uma embalagem aberta e a internet do bairro começou a inventar culpados.",
-      "expr": "neutra",
-      "arte": [
-        "foto"
-      ],
-      "destaque": [
-        "colega",
-        "mostrou"
-      ]
-    },
-    {
-      "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
-      "expr": "desconfiada",
-      "arte": [
-        "manchete_v"
-      ],
-      "destaque": [
-        "detalhe",
-        "parecia"
-      ]
-    },
-    {
-      "fala": "Paula decidiu refazer o caminho do trabalho antes de acusar a manicure que havia atendido sua família por anos.",
-      "expr": "ironica",
-      "arte": [
-        "celular"
-      ],
-      "destaque": [
-        "decidiu",
-        "refazer"
-      ]
-    },
-    {
-      "fala": "E aqui começa a parte mais surpreendente: Paula decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
-      "expr": "neutra",
-      "arte": [
-        "conversa"
-      ],
-      "destaque": [
-        "começa",
-        "surpreendente:"
-      ]
-    },
-    {
-      "fala": "Na parte dois, vem a explicação completa e uma decisão que mudou o rumo dessa história.",
-      "expr": "neutra",
-      "arte": [
-        "foto"
-      ],
-      "destaque": [
-        "explicação",
-        "completa"
-      ]
-    }
-  ],
-  "fim": "CONTINUA NA PARTE 2",
-  "legenda_post": "🎭 AS UNHAS AMARELAS DO NOIVADO. Uma pista muda a história. Parte 2 em breve.\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
-  "legenda_tiktok": "🎭 AS UNHAS AMARELAS DO NOIVADO. Parte 1. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
-  "origem_inspiracao_numero": 21,
-  "lote": "virais-originais-20261029",
-  "gerado_automaticamente": false
+ "id": "ep119-p1",
+ "ep": 119,
+ "parte": 1,
+ "titulo": "AS UNHAS AMARELAS DO NOIVADO",
+ "temporada": "Histórias adaptadas 2026",
+ "cenario": "tarde",
+ "batidas": [
+  {
+   "fala": "Paula acordou com as unhas amarelas na véspera do noivado e suspeitou que alguém tivesse estragado sua manicure de propósito.",
+   "expr": "chocada",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "acordou",
+    "amarelas"
+   ]
+  },
+  {
+   "fala": "A protagonista desta história é Paula. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
+   "expr": "neutra",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "protagonista",
+    "história"
+   ]
+  },
+  {
+   "fala": "Ela trabalhava numa cozinha experimental e jurava que usara luvas durante o turno, sem lembrar da mistura de temperos.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "trabalhava",
+    "cozinha"
+   ]
+  },
+  {
+   "fala": "Uma colega mostrou uma foto de Paula segurando uma embalagem aberta e a internet do bairro começou a inventar culpados.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "colega",
+    "mostrou"
+   ]
+  },
+  {
+   "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
+   "expr": "desconfiada",
+   "arte": [
+    "manchete_v"
+   ],
+   "destaque": [
+    "detalhe",
+    "parecia"
+   ]
+  },
+  {
+   "fala": "Paula decidiu refazer o caminho do trabalho antes de acusar a manicure que havia atendido sua família por anos.",
+   "expr": "ironica",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "decidiu",
+    "refazer"
+   ]
+  },
+  {
+   "fala": "E aqui começa a parte mais surpreendente: Paula decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "começa",
+    "surpreendente:"
+   ]
+  },
+  {
+   "fala": "Na parte dois, vem a explicação completa e uma decisão que mudou o rumo dessa história.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "explicação",
+    "completa"
+   ]
+  }
+ ],
+ "fim": "CONTINUA NA PARTE 2",
+ "legenda_post": "🎭 AS UNHAS AMARELAS DO NOIVADO. Uma pista muda a história. Parte 2 em breve.\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+ "legenda_tiktok": "🎭 AS UNHAS AMARELAS DO NOIVADO. Parte 1. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
+ "origem_inspiracao_numero": 21,
+ "lote": "virais-originais-20261029",
+ "gerado_automaticamente": false,
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
 }

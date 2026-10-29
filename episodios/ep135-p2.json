@@ -1,104 +1,106 @@
 {
-  "id": "ep135-p2",
-  "ep": 135,
-  "parte": 2,
-  "titulo": "AS DUAS DO MESMO DESTINO",
-  "temporada": "Histórias adaptadas 2026",
-  "cenario": "noite",
-  "batidas": [
-    {
-      "fala": "Na primeira parte, Amanda encontrou uma pista que não fazia sentido. Agora olha como essa situação realmente terminou.",
-      "expr": "chocada",
-      "arte": [
-        "titulo"
-      ],
-      "destaque": [
-        "primeira",
-        "parte,"
-      ]
-    },
-    {
-      "fala": "As duas encontraram promessas e reservas incompatíveis; perceberam que o homem vinha oferecendo a mesma viagem a pessoas diferentes.",
-      "expr": "neutra",
-      "arte": [
-        "celular"
-      ],
-      "destaque": [
-        "encontraram",
-        "promessas"
-      ]
-    },
-    {
-      "fala": "Não foi uma resposta que chegou pronta. Primeiro vieram dúvidas, depois uma conversa desconfortável e, só então, a informação que faltava para entender o que estava acontecendo.",
-      "expr": "neutra",
-      "arte": [
-        "conversa"
-      ],
-      "destaque": [
-        "resposta",
-        "chegou"
-      ]
-    },
-    {
-      "fala": "Decidiram cancelar as próprias reservas e resolver as despesas diretamente com o estabelecimento, sem fazer espetáculo nas redes.",
-      "expr": "neutra",
-      "arte": [
-        "foto"
-      ],
-      "destaque": [
-        "Decidiram",
-        "cancelar"
-      ]
-    },
-    {
-      "fala": "O mais inesperado aconteceu meses depois, quando voltaram a conversar sobre destinos e abriram um clube pequeno de passeios entre amigas.",
-      "expr": "desconfiada",
-      "arte": [
-        "manchete_v"
-      ],
-      "destaque": [
-        "inesperado",
-        "aconteceu"
-      ]
-    },
-    {
-      "fala": "Quem estava envolvido teve de assumir as próprias escolhas. E foi justamente nessa conversa, sem plateia, que a história ganhou outra direção.",
-      "expr": "ironica",
-      "arte": [
-        "celular"
-      ],
-      "destaque": [
-        "estava",
-        "envolvido"
-      ]
-    },
-    {
-      "fala": "Quando alguém perguntava como se conheceram, respondiam: por uma reserva errada. O resto foi uma decisão nossa.",
-      "expr": "neutra",
-      "arte": [
-        "conversa"
-      ],
-      "destaque": [
-        "Quando",
-        "alguém"
-      ]
-    },
-    {
-      "fala": "Se fosse com você, teria reagido como Amanda ou feito diferente? Me conta, porque eu quero saber o que vocês acharam dessa virada.",
-      "expr": "neutra",
-      "arte": [
-        "foto"
-      ],
-      "destaque": [
-        "reagido",
-        "Amanda"
-      ]
-    }
-  ],
-  "fim": "SEGUE A NINA",
-  "legenda_post": "🎭 AS DUAS DO MESMO DESTINO. A conclusão veio com uma reviravolta. Você teria feito diferente?\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
-  "legenda_tiktok": "🎭 AS DUAS DO MESMO DESTINO. Parte 2. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
-  "origem_inspiracao_numero": 48,
-  "lote": "virais-originais-20261029",
-  "gerado_automaticamente": false
+ "id": "ep135-p2",
+ "ep": 135,
+ "parte": 2,
+ "titulo": "AS DUAS DO MESMO DESTINO",
+ "temporada": "Histórias adaptadas 2026",
+ "cenario": "noite",
+ "batidas": [
+  {
+   "fala": "Na primeira parte, Amanda encontrou uma pista que não fazia sentido. Agora olha como essa situação realmente terminou.",
+   "expr": "chocada",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "primeira",
+    "parte,"
+   ]
+  },
+  {
+   "fala": "As duas encontraram promessas e reservas incompatíveis; perceberam que o homem vinha oferecendo a mesma viagem a pessoas diferentes.",
+   "expr": "neutra",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "encontraram",
+    "promessas"
+   ]
+  },
+  {
+   "fala": "Não foi uma resposta que chegou pronta. Primeiro vieram dúvidas, depois uma conversa desconfortável e, só então, a informação que faltava para entender o que estava acontecendo.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "resposta",
+    "chegou"
+   ]
+  },
+  {
+   "fala": "Decidiram cancelar as próprias reservas e resolver as despesas diretamente com o estabelecimento, sem fazer espetáculo nas redes.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "Decidiram",
+    "cancelar"
+   ]
+  },
+  {
+   "fala": "O mais inesperado aconteceu meses depois, quando voltaram a conversar sobre destinos e abriram um clube pequeno de passeios entre amigas.",
+   "expr": "desconfiada",
+   "arte": [
+    "manchete_v"
+   ],
+   "destaque": [
+    "inesperado",
+    "aconteceu"
+   ]
+  },
+  {
+   "fala": "Quem estava envolvido teve de assumir as próprias escolhas. E foi justamente nessa conversa, sem plateia, que a história ganhou outra direção.",
+   "expr": "ironica",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "estava",
+    "envolvido"
+   ]
+  },
+  {
+   "fala": "Quando alguém perguntava como se conheceram, respondiam: por uma reserva errada. O resto foi uma decisão nossa.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "Quando",
+    "alguém"
+   ]
+  },
+  {
+   "fala": "Se fosse com você, teria reagido como Amanda ou feito diferente? Me conta, porque eu quero saber o que vocês acharam dessa virada.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "reagido",
+    "Amanda"
+   ]
+  }
+ ],
+ "fim": "SEGUE A NINA",
+ "legenda_post": "🎭 AS DUAS DO MESMO DESTINO. A conclusão veio com uma reviravolta. Você teria feito diferente?\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+ "legenda_tiktok": "🎭 AS DUAS DO MESMO DESTINO. Parte 2. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
+ "origem_inspiracao_numero": 48,
+ "lote": "virais-originais-20261029",
+ "gerado_automaticamente": false,
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
 }

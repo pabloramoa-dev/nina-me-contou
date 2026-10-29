@@ -1,104 +1,106 @@
 {
-  "id": "ep120-p1",
-  "ep": 120,
-  "parte": 1,
-  "titulo": "TRÊS DECLARAÇÕES NO GRUPO",
-  "temporada": "Histórias adaptadas 2026",
-  "cenario": "tarde",
-  "batidas": [
-    {
-      "fala": "Isis escreveu três declarações de amor e, por engano, enviou todas para o grupo da família na mesma noite.",
-      "expr": "chocada",
-      "arte": [
-        "titulo"
-      ],
-      "destaque": [
-        "escreveu",
-        "declarações"
-      ]
-    },
-    {
-      "fala": "A protagonista desta história é Isis. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
-      "expr": "neutra",
-      "arte": [
-        "celular"
-      ],
-      "destaque": [
-        "protagonista",
-        "história"
-      ]
-    },
-    {
-      "fala": "Ela tinha prometido ajudar três amigas a escrever mensagens para seus parceiros, mas salvou os rascunhos com nomes parecidos.",
-      "expr": "neutra",
-      "arte": [
-        "conversa"
-      ],
-      "destaque": [
-        "prometido",
-        "ajudar"
-      ]
-    },
-    {
-      "fala": "A primeira resposta foi da tia perguntando qual dos três textos era para o namorado de Isis, que também estava no grupo.",
-      "expr": "neutra",
-      "arte": [
-        "foto"
-      ],
-      "destaque": [
-        "primeira",
-        "resposta"
-      ]
-    },
-    {
-      "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
-      "expr": "desconfiada",
-      "arte": [
-        "manchete_v"
-      ],
-      "destaque": [
-        "detalhe",
-        "parecia"
-      ]
-    },
-    {
-      "fala": "Em cinco minutos, parentes já faziam apostas e o namorado apareceu na porta com cara de quem recebera uma novela inteira.",
-      "expr": "ironica",
-      "arte": [
-        "celular"
-      ],
-      "destaque": [
-        "minutos,",
-        "parentes"
-      ]
-    },
-    {
-      "fala": "E aqui começa a parte mais surpreendente: Isis decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
-      "expr": "neutra",
-      "arte": [
-        "conversa"
-      ],
-      "destaque": [
-        "começa",
-        "surpreendente:"
-      ]
-    },
-    {
-      "fala": "Na parte dois, vem a explicação completa e uma decisão que mudou o rumo dessa história.",
-      "expr": "neutra",
-      "arte": [
-        "foto"
-      ],
-      "destaque": [
-        "explicação",
-        "completa"
-      ]
-    }
-  ],
-  "fim": "CONTINUA NA PARTE 2",
-  "legenda_post": "🎭 TRÊS DECLARAÇÕES NO GRUPO. Uma pista muda a história. Parte 2 em breve.\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
-  "legenda_tiktok": "🎭 TRÊS DECLARAÇÕES NO GRUPO. Parte 1. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
-  "origem_inspiracao_numero": 23,
-  "lote": "virais-originais-20261029",
-  "gerado_automaticamente": false
+ "id": "ep120-p1",
+ "ep": 120,
+ "parte": 1,
+ "titulo": "TRÊS DECLARAÇÕES NO GRUPO",
+ "temporada": "Histórias adaptadas 2026",
+ "cenario": "tarde",
+ "batidas": [
+  {
+   "fala": "Isis escreveu três declarações de amor e, por engano, enviou todas para o grupo da família na mesma noite.",
+   "expr": "chocada",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "escreveu",
+    "declarações"
+   ]
+  },
+  {
+   "fala": "A protagonista desta história é Isis. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
+   "expr": "neutra",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "protagonista",
+    "história"
+   ]
+  },
+  {
+   "fala": "Ela tinha prometido ajudar três amigas a escrever mensagens para seus parceiros, mas salvou os rascunhos com nomes parecidos.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "prometido",
+    "ajudar"
+   ]
+  },
+  {
+   "fala": "A primeira resposta foi da tia perguntando qual dos três textos era para o namorado de Isis, que também estava no grupo.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "primeira",
+    "resposta"
+   ]
+  },
+  {
+   "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
+   "expr": "desconfiada",
+   "arte": [
+    "manchete_v"
+   ],
+   "destaque": [
+    "detalhe",
+    "parecia"
+   ]
+  },
+  {
+   "fala": "Em cinco minutos, parentes já faziam apostas e o namorado apareceu na porta com cara de quem recebera uma novela inteira.",
+   "expr": "ironica",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "minutos,",
+    "parentes"
+   ]
+  },
+  {
+   "fala": "E aqui começa a parte mais surpreendente: Isis decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "começa",
+    "surpreendente:"
+   ]
+  },
+  {
+   "fala": "Na parte dois, vem a explicação completa e uma decisão que mudou o rumo dessa história.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "explicação",
+    "completa"
+   ]
+  }
+ ],
+ "fim": "CONTINUA NA PARTE 2",
+ "legenda_post": "🎭 TRÊS DECLARAÇÕES NO GRUPO. Uma pista muda a história. Parte 2 em breve.\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+ "legenda_tiktok": "🎭 TRÊS DECLARAÇÕES NO GRUPO. Parte 1. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
+ "origem_inspiracao_numero": 23,
+ "lote": "virais-originais-20261029",
+ "gerado_automaticamente": false,
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
 }

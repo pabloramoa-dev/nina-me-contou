@@ -1,104 +1,106 @@
 {
-  "id": "ep134-p2",
-  "ep": 134,
-  "parte": 2,
-  "titulo": "O DONO DO PRÉDIO E O CORAL",
-  "temporada": "Histórias adaptadas 2026",
-  "cenario": "noite",
-  "batidas": [
-    {
-      "fala": "Na primeira parte, Elisa encontrou uma pista que não fazia sentido. Agora olha como essa situação realmente terminou.",
-      "expr": "chocada",
-      "arte": [
-        "titulo"
-      ],
-      "destaque": [
-        "primeira",
-        "parte,"
-      ]
-    },
-    {
-      "fala": "Elisa mostrou gravações de apresentações feitas para arrecadar livros e materiais escolares, inclusive uma com a mãe dele quando jovem.",
-      "expr": "neutra",
-      "arte": [
-        "celular"
-      ],
-      "destaque": [
-        "mostrou",
-        "gravações"
-      ]
-    },
-    {
-      "fala": "Não foi uma resposta que chegou pronta. Primeiro vieram dúvidas, depois uma conversa desconfortável e, só então, a informação que faltava para entender o que estava acontecendo.",
-      "expr": "neutra",
-      "arte": [
-        "conversa"
-      ],
-      "destaque": [
-        "resposta",
-        "chegou"
-      ]
-    },
-    {
-      "fala": "O homem admitiu que não conhecia aquela parte da história do imóvel e concordou em estudar outra disposição para o espaço.",
-      "expr": "neutra",
-      "arte": [
-        "foto"
-      ],
-      "destaque": [
-        "admitiu",
-        "conhecia"
-      ]
-    },
-    {
-      "fala": "Os moradores organizaram uma proposta de uso compartilhado e um calendário para não prejudicar a reforma.",
-      "expr": "desconfiada",
-      "arte": [
-        "manchete_v"
-      ],
-      "destaque": [
-        "moradores",
-        "organizaram"
-      ]
-    },
-    {
-      "fala": "Quem estava envolvido teve de assumir as próprias escolhas. E foi justamente nessa conversa, sem plateia, que a história ganhou outra direção.",
-      "expr": "ironica",
-      "arte": [
-        "celular"
-      ],
-      "destaque": [
-        "estava",
-        "envolvido"
-      ]
-    },
-    {
-      "fala": "O coral voltou a ensaiar com metade das cadeiras. Na primeira música, o dono sentou na última fila, sem pedir lugar de destaque.",
-      "expr": "neutra",
-      "arte": [
-        "conversa"
-      ],
-      "destaque": [
-        "voltou",
-        "ensaiar"
-      ]
-    },
-    {
-      "fala": "Se fosse com você, teria reagido como Elisa ou feito diferente? Me conta, porque eu quero saber o que vocês acharam dessa virada.",
-      "expr": "neutra",
-      "arte": [
-        "foto"
-      ],
-      "destaque": [
-        "reagido",
-        "diferente?"
-      ]
-    }
-  ],
-  "fim": "SEGUE A NINA",
-  "legenda_post": "🎭 O DONO DO PRÉDIO E O CORAL. A conclusão veio com uma reviravolta. Você teria feito diferente?\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
-  "legenda_tiktok": "🎭 O DONO DO PRÉDIO E O CORAL. Parte 2. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
-  "origem_inspiracao_numero": 43,
-  "lote": "virais-originais-20261029",
-  "gerado_automaticamente": false
+ "id": "ep134-p2",
+ "ep": 134,
+ "parte": 2,
+ "titulo": "O DONO DO PRÉDIO E O CORAL",
+ "temporada": "Histórias adaptadas 2026",
+ "cenario": "noite",
+ "batidas": [
+  {
+   "fala": "Na primeira parte, Elisa encontrou uma pista que não fazia sentido. Agora olha como essa situação realmente terminou.",
+   "expr": "chocada",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "primeira",
+    "parte,"
+   ]
+  },
+  {
+   "fala": "Elisa mostrou gravações de apresentações feitas para arrecadar livros e materiais escolares, inclusive uma com a mãe dele quando jovem.",
+   "expr": "neutra",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "mostrou",
+    "gravações"
+   ]
+  },
+  {
+   "fala": "Não foi uma resposta que chegou pronta. Primeiro vieram dúvidas, depois uma conversa desconfortável e, só então, a informação que faltava para entender o que estava acontecendo.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "resposta",
+    "chegou"
+   ]
+  },
+  {
+   "fala": "O homem admitiu que não conhecia aquela parte da história do imóvel e concordou em estudar outra disposição para o espaço.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "admitiu",
+    "conhecia"
+   ]
+  },
+  {
+   "fala": "Os moradores organizaram uma proposta de uso compartilhado e um calendário para não prejudicar a reforma.",
+   "expr": "desconfiada",
+   "arte": [
+    "manchete_v"
+   ],
+   "destaque": [
+    "moradores",
+    "organizaram"
+   ]
+  },
+  {
+   "fala": "Quem estava envolvido teve de assumir as próprias escolhas. E foi justamente nessa conversa, sem plateia, que a história ganhou outra direção.",
+   "expr": "ironica",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "estava",
+    "envolvido"
+   ]
+  },
+  {
+   "fala": "O coral voltou a ensaiar com metade das cadeiras. Na primeira música, o dono sentou na última fila, sem pedir lugar de destaque.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "voltou",
+    "ensaiar"
+   ]
+  },
+  {
+   "fala": "Se fosse com você, teria reagido como Elisa ou feito diferente? Me conta, porque eu quero saber o que vocês acharam dessa virada.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "reagido",
+    "diferente?"
+   ]
+  }
+ ],
+ "fim": "SEGUE A NINA",
+ "legenda_post": "🎭 O DONO DO PRÉDIO E O CORAL. A conclusão veio com uma reviravolta. Você teria feito diferente?\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+ "legenda_tiktok": "🎭 O DONO DO PRÉDIO E O CORAL. Parte 2. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
+ "origem_inspiracao_numero": 43,
+ "lote": "virais-originais-20261029",
+ "gerado_automaticamente": false,
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
 }

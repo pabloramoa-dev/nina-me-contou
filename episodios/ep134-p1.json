@@ -1,104 +1,106 @@
 {
-  "id": "ep134-p1",
-  "ep": 134,
-  "parte": 1,
-  "titulo": "O DONO DO PRÉDIO E O CORAL",
-  "temporada": "Histórias adaptadas 2026",
-  "cenario": "tarde",
-  "batidas": [
-    {
-      "fala": "Elisa recebeu uma carta dizendo que o salão do prédio seria fechado e percebeu que todas as cadeiras do coral tinham sumido.",
-      "expr": "chocada",
-      "arte": [
-        "titulo"
-      ],
-      "destaque": [
-        "recebeu",
-        "dizendo"
-      ]
-    },
-    {
-      "fala": "A protagonista desta história é Elisa. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
-      "expr": "neutra",
-      "arte": [
-        "celular"
-      ],
-      "destaque": [
-        "protagonista",
-        "história"
-      ]
-    },
-    {
-      "fala": "O dono queria reformar o espaço e tratou os ensaios semanais dos moradores como um detalhe sem importância.",
-      "expr": "neutra",
-      "arte": [
-        "conversa"
-      ],
-      "destaque": [
-        "queria",
-        "reformar"
-      ]
-    },
-    {
-      "fala": "Elisa reuniu fotografias antigas do salão e encontrou ali registros de um projeto comunitário que funcionava havia décadas.",
-      "expr": "neutra",
-      "arte": [
-        "foto"
-      ],
-      "destaque": [
-        "reuniu",
-        "fotografias"
-      ]
-    },
-    {
-      "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
-      "expr": "desconfiada",
-      "arte": [
-        "manchete_v"
-      ],
-      "destaque": [
-        "detalhe",
-        "parecia"
-      ]
-    },
-    {
-      "fala": "Na visita marcada para discutir a reforma, o proprietário viu um piano coberto e perguntou quem ainda tocava naquele lugar.",
-      "expr": "ironica",
-      "arte": [
-        "celular"
-      ],
-      "destaque": [
-        "visita",
-        "marcada"
-      ]
-    },
-    {
-      "fala": "E aqui começa a parte mais surpreendente: Elisa decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
-      "expr": "neutra",
-      "arte": [
-        "conversa"
-      ],
-      "destaque": [
-        "começa",
-        "surpreendente:"
-      ]
-    },
-    {
-      "fala": "Na parte dois, vem a explicação completa e uma decisão que mudou o rumo dessa história.",
-      "expr": "neutra",
-      "arte": [
-        "foto"
-      ],
-      "destaque": [
-        "explicação",
-        "completa"
-      ]
-    }
-  ],
-  "fim": "CONTINUA NA PARTE 2",
-  "legenda_post": "🎭 O DONO DO PRÉDIO E O CORAL. Uma pista muda a história. Parte 2 em breve.\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
-  "legenda_tiktok": "🎭 O DONO DO PRÉDIO E O CORAL. Parte 1. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
-  "origem_inspiracao_numero": 43,
-  "lote": "virais-originais-20261029",
-  "gerado_automaticamente": false
+ "id": "ep134-p1",
+ "ep": 134,
+ "parte": 1,
+ "titulo": "O DONO DO PRÉDIO E O CORAL",
+ "temporada": "Histórias adaptadas 2026",
+ "cenario": "tarde",
+ "batidas": [
+  {
+   "fala": "Elisa recebeu uma carta dizendo que o salão do prédio seria fechado e percebeu que todas as cadeiras do coral tinham sumido.",
+   "expr": "chocada",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "recebeu",
+    "dizendo"
+   ]
+  },
+  {
+   "fala": "A protagonista desta história é Elisa. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
+   "expr": "neutra",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "protagonista",
+    "história"
+   ]
+  },
+  {
+   "fala": "O dono queria reformar o espaço e tratou os ensaios semanais dos moradores como um detalhe sem importância.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "queria",
+    "reformar"
+   ]
+  },
+  {
+   "fala": "Elisa reuniu fotografias antigas do salão e encontrou ali registros de um projeto comunitário que funcionava havia décadas.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "reuniu",
+    "fotografias"
+   ]
+  },
+  {
+   "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
+   "expr": "desconfiada",
+   "arte": [
+    "manchete_v"
+   ],
+   "destaque": [
+    "detalhe",
+    "parecia"
+   ]
+  },
+  {
+   "fala": "Na visita marcada para discutir a reforma, o proprietário viu um piano coberto e perguntou quem ainda tocava naquele lugar.",
+   "expr": "ironica",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "visita",
+    "marcada"
+   ]
+  },
+  {
+   "fala": "E aqui começa a parte mais surpreendente: Elisa decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "começa",
+    "surpreendente:"
+   ]
+  },
+  {
+   "fala": "Na parte dois, vem a explicação completa e uma decisão que mudou o rumo dessa história.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "explicação",
+    "completa"
+   ]
+  }
+ ],
+ "fim": "CONTINUA NA PARTE 2",
+ "legenda_post": "🎭 O DONO DO PRÉDIO E O CORAL. Uma pista muda a história. Parte 2 em breve.\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+ "legenda_tiktok": "🎭 O DONO DO PRÉDIO E O CORAL. Parte 1. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
+ "origem_inspiracao_numero": 43,
+ "lote": "virais-originais-20261029",
+ "gerado_automaticamente": false,
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
 }

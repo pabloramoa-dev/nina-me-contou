@@ -1,104 +1,106 @@
 {
-  "id": "ep107-p1",
-  "ep": 107,
-  "parte": 1,
-  "titulo": "OS BILHETES DO MENINO",
-  "temporada": "Histórias adaptadas 2026",
-  "cenario": "tarde",
-  "batidas": [
-    {
-      "fala": "Todo mundo achou que o filho de Lara estava aprontando de novo, até um bilhete aparecer dentro do sapato do avô.",
-      "expr": "chocada",
-      "arte": [
-        "titulo"
-      ],
-      "destaque": [
-        "estava",
-        "aprontando"
-      ]
-    },
-    {
-      "fala": "A protagonista desta história é Lara. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
-      "expr": "neutra",
-      "arte": [
-        "celular"
-      ],
-      "destaque": [
-        "protagonista",
-        "história"
-      ]
-    },
-    {
-      "fala": "Durante uma semana, bilhetes anônimos tinham surgido na cozinha: um mandava regar a planta, outro recomendava ouvir rádio na varanda.",
-      "expr": "neutra",
-      "arte": [
-        "conversa"
-      ],
-      "destaque": [
-        "Durante",
-        "semana,"
-      ]
-    },
-    {
-      "fala": "Lara culpou o menino de nove anos pelas pegadinhas, especialmente quando encontrou um mapa colorido preso atrás do relógio.",
-      "expr": "neutra",
-      "arte": [
-        "foto"
-      ],
-      "destaque": [
-        "culpou",
-        "menino"
-      ]
-    },
-    {
-      "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
-      "expr": "desconfiada",
-      "arte": [
-        "manchete_v"
-      ],
-      "destaque": [
-        "detalhe",
-        "parecia"
-      ]
-    },
-    {
-      "fala": "O mapa mostrava dois caminhos pelo quintal e terminava na porta da casa da avó, fechada desde uma discussão de família.",
-      "expr": "ironica",
-      "arte": [
-        "celular"
-      ],
-      "destaque": [
-        "mostrava",
-        "caminhos"
-      ]
-    },
-    {
-      "fala": "E aqui começa a parte mais surpreendente: Lara decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
-      "expr": "neutra",
-      "arte": [
-        "conversa"
-      ],
-      "destaque": [
-        "começa",
-        "surpreendente:"
-      ]
-    },
-    {
-      "fala": "Na parte dois, vem a explicação completa e uma decisão que mudou o rumo dessa história.",
-      "expr": "neutra",
-      "arte": [
-        "foto"
-      ],
-      "destaque": [
-        "explicação",
-        "completa"
-      ]
-    }
-  ],
-  "fim": "CONTINUA NA PARTE 2",
-  "legenda_post": "🎭 OS BILHETES DO MENINO. Uma pista muda a história. Parte 2 em breve.\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
-  "legenda_tiktok": "🎭 OS BILHETES DO MENINO. Parte 1. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
-  "origem_inspiracao_numero": 3,
-  "lote": "virais-originais-20261029",
-  "gerado_automaticamente": false
+ "id": "ep107-p1",
+ "ep": 107,
+ "parte": 1,
+ "titulo": "OS BILHETES DO MENINO",
+ "temporada": "Histórias adaptadas 2026",
+ "cenario": "tarde",
+ "batidas": [
+  {
+   "fala": "Todo mundo achou que o filho de Lara estava aprontando de novo, até um bilhete aparecer dentro do sapato do avô.",
+   "expr": "chocada",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "estava",
+    "aprontando"
+   ]
+  },
+  {
+   "fala": "A protagonista desta história é Lara. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
+   "expr": "neutra",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "protagonista",
+    "história"
+   ]
+  },
+  {
+   "fala": "Durante uma semana, bilhetes anônimos tinham surgido na cozinha: um mandava regar a planta, outro recomendava ouvir rádio na varanda.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "Durante",
+    "semana,"
+   ]
+  },
+  {
+   "fala": "Lara culpou o menino de nove anos pelas pegadinhas, especialmente quando encontrou um mapa colorido preso atrás do relógio.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "culpou",
+    "menino"
+   ]
+  },
+  {
+   "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
+   "expr": "desconfiada",
+   "arte": [
+    "manchete_v"
+   ],
+   "destaque": [
+    "detalhe",
+    "parecia"
+   ]
+  },
+  {
+   "fala": "O mapa mostrava dois caminhos pelo quintal e terminava na porta da casa da avó, fechada desde uma discussão de família.",
+   "expr": "ironica",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "mostrava",
+    "caminhos"
+   ]
+  },
+  {
+   "fala": "E aqui começa a parte mais surpreendente: Lara decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "começa",
+    "surpreendente:"
+   ]
+  },
+  {
+   "fala": "Na parte dois, vem a explicação completa e uma decisão que mudou o rumo dessa história.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "explicação",
+    "completa"
+   ]
+  }
+ ],
+ "fim": "CONTINUA NA PARTE 2",
+ "legenda_post": "🎭 OS BILHETES DO MENINO. Uma pista muda a história. Parte 2 em breve.\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+ "legenda_tiktok": "🎭 OS BILHETES DO MENINO. Parte 1. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
+ "origem_inspiracao_numero": 3,
+ "lote": "virais-originais-20261029",
+ "gerado_automaticamente": false,
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
 }

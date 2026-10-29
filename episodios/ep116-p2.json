@@ -1,104 +1,106 @@
 {
-  "id": "ep116-p2",
-  "ep": 116,
-  "parte": 2,
-  "titulo": "AMIGAS DA EX",
-  "temporada": "Histórias adaptadas 2026",
-  "cenario": "noite",
-  "batidas": [
-    {
-      "fala": "Na primeira parte, Marina encontrou uma pista que não fazia sentido. Agora olha como essa situação realmente terminou.",
-      "expr": "chocada",
-      "arte": [
-        "titulo"
-      ],
-      "destaque": [
-        "primeira",
-        "parte,"
-      ]
-    },
-    {
-      "fala": "Ela não queria recuperar o relacionamento; queria que a nova companheira conhecesse a rotina das crianças sem disputar espaço.",
-      "expr": "neutra",
-      "arte": [
-        "celular"
-      ],
-      "destaque": [
-        "queria",
-        "recuperar"
-      ]
-    },
-    {
-      "fala": "Não foi uma resposta que chegou pronta. Primeiro vieram dúvidas, depois uma conversa desconfortável e, só então, a informação que faltava para entender o que estava acontecendo.",
-      "expr": "neutra",
-      "arte": [
-        "conversa"
-      ],
-      "destaque": [
-        "resposta",
-        "chegou"
-      ]
-    },
-    {
-      "fala": "Marina admitiu que temia ser vista como intrusa e a ex reconheceu que também havia exagerado em algumas cobranças.",
-      "expr": "neutra",
-      "arte": [
-        "foto"
-      ],
-      "destaque": [
-        "Marina",
-        "admitiu"
-      ]
-    },
-    {
-      "fala": "Elas criaram um calendário simples para festas e datas escolares, evitando que as crianças ficassem no meio de discussões.",
-      "expr": "desconfiada",
-      "arte": [
-        "manchete_v"
-      ],
-      "destaque": [
-        "criaram",
-        "calendário"
-      ]
-    },
-    {
-      "fala": "Quem estava envolvido teve de assumir as próprias escolhas. E foi justamente nessa conversa, sem plateia, que a história ganhou outra direção.",
-      "expr": "ironica",
-      "arte": [
-        "celular"
-      ],
-      "destaque": [
-        "estava",
-        "envolvido"
-      ]
-    },
-    {
-      "fala": "Na primeira apresentação da escola, ambas torceram na mesma fila. O marido percebeu que aquela amizade não era contra ninguém.",
-      "expr": "neutra",
-      "arte": [
-        "conversa"
-      ],
-      "destaque": [
-        "primeira",
-        "apresentação"
-      ]
-    },
-    {
-      "fala": "Se fosse com você, teria reagido como Marina ou feito diferente? Me conta, porque eu quero saber o que vocês acharam dessa virada.",
-      "expr": "neutra",
-      "arte": [
-        "foto"
-      ],
-      "destaque": [
-        "reagido",
-        "Marina"
-      ]
-    }
-  ],
-  "fim": "SEGUE A NINA",
-  "legenda_post": "🎭 AMIGAS DA EX. A conclusão veio com uma reviravolta. Você teria feito diferente?\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
-  "legenda_tiktok": "🎭 AMIGAS DA EX. Parte 2. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
-  "origem_inspiracao_numero": 15,
-  "lote": "virais-originais-20261029",
-  "gerado_automaticamente": false
+ "id": "ep116-p2",
+ "ep": 116,
+ "parte": 2,
+ "titulo": "AMIGAS DA EX",
+ "temporada": "Histórias adaptadas 2026",
+ "cenario": "noite",
+ "batidas": [
+  {
+   "fala": "Na primeira parte, Marina encontrou uma pista que não fazia sentido. Agora olha como essa situação realmente terminou.",
+   "expr": "chocada",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "primeira",
+    "parte,"
+   ]
+  },
+  {
+   "fala": "Ela não queria recuperar o relacionamento; queria que a nova companheira conhecesse a rotina das crianças sem disputar espaço.",
+   "expr": "neutra",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "queria",
+    "recuperar"
+   ]
+  },
+  {
+   "fala": "Não foi uma resposta que chegou pronta. Primeiro vieram dúvidas, depois uma conversa desconfortável e, só então, a informação que faltava para entender o que estava acontecendo.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "resposta",
+    "chegou"
+   ]
+  },
+  {
+   "fala": "Marina admitiu que temia ser vista como intrusa e a ex reconheceu que também havia exagerado em algumas cobranças.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "Marina",
+    "admitiu"
+   ]
+  },
+  {
+   "fala": "Elas criaram um calendário simples para festas e datas escolares, evitando que as crianças ficassem no meio de discussões.",
+   "expr": "desconfiada",
+   "arte": [
+    "manchete_v"
+   ],
+   "destaque": [
+    "criaram",
+    "calendário"
+   ]
+  },
+  {
+   "fala": "Quem estava envolvido teve de assumir as próprias escolhas. E foi justamente nessa conversa, sem plateia, que a história ganhou outra direção.",
+   "expr": "ironica",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "estava",
+    "envolvido"
+   ]
+  },
+  {
+   "fala": "Na primeira apresentação da escola, ambas torceram na mesma fila. O marido percebeu que aquela amizade não era contra ninguém.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "primeira",
+    "apresentação"
+   ]
+  },
+  {
+   "fala": "Se fosse com você, teria reagido como Marina ou feito diferente? Me conta, porque eu quero saber o que vocês acharam dessa virada.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "reagido",
+    "Marina"
+   ]
+  }
+ ],
+ "fim": "SEGUE A NINA",
+ "legenda_post": "🎭 AMIGAS DA EX. A conclusão veio com uma reviravolta. Você teria feito diferente?\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+ "legenda_tiktok": "🎭 AMIGAS DA EX. Parte 2. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
+ "origem_inspiracao_numero": 15,
+ "lote": "virais-originais-20261029",
+ "gerado_automaticamente": false,
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
 }

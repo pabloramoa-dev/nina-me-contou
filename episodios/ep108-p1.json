@@ -1,104 +1,106 @@
 {
-  "id": "ep108-p1",
-  "ep": 108,
-  "parte": 1,
-  "titulo": "A CAMPAINHA DAS TRÊS",
-  "temporada": "Histórias adaptadas 2026",
-  "cenario": "tarde",
-  "batidas": [
-    {
-      "fala": "Clara ouvia três toques na porta toda madrugada, sempre na mesma hora, e nenhum vizinho aparecia nas câmeras do corredor.",
-      "expr": "chocada",
-      "arte": [
-        "titulo"
-      ],
-      "destaque": [
-        "toques",
-        "madrugada,"
-      ]
-    },
-    {
-      "fala": "A protagonista desta história é Clara. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
-      "expr": "neutra",
-      "arte": [
-        "celular"
-      ],
-      "destaque": [
-        "protagonista",
-        "história"
-      ]
-    },
-    {
-      "fala": "Aconteceu primeiro depois que ela herdou o apartamento da tia, uma mulher conhecida por cultivar plantas e conversar com todos.",
-      "expr": "neutra",
-      "arte": [
-        "conversa"
-      ],
-      "destaque": [
-        "Aconteceu",
-        "primeiro"
-      ]
-    },
-    {
-      "fala": "Os vizinhos atribuíram os toques a algo misterioso; Clara começou a anotar os horários num caderno ao lado da cama.",
-      "expr": "neutra",
-      "arte": [
-        "foto"
-      ],
-      "destaque": [
-        "vizinhos",
-        "atribuíram"
-      ]
-    },
-    {
-      "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
-      "expr": "desconfiada",
-      "arte": [
-        "manchete_v"
-      ],
-      "destaque": [
-        "detalhe",
-        "parecia"
-      ]
-    },
-    {
-      "fala": "Na quarta noite, um papel deslizou por baixo da porta com três palavras: confira o relógio.",
-      "expr": "ironica",
-      "arte": [
-        "celular"
-      ],
-      "destaque": [
-        "quarta",
-        "noite,"
-      ]
-    },
-    {
-      "fala": "E aqui começa a parte mais surpreendente: Clara decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
-      "expr": "neutra",
-      "arte": [
-        "conversa"
-      ],
-      "destaque": [
-        "começa",
-        "surpreendente:"
-      ]
-    },
-    {
-      "fala": "Na parte dois, vem a explicação completa e uma decisão que mudou o rumo dessa história.",
-      "expr": "neutra",
-      "arte": [
-        "foto"
-      ],
-      "destaque": [
-        "explicação",
-        "completa"
-      ]
-    }
-  ],
-  "fim": "CONTINUA NA PARTE 2",
-  "legenda_post": "🎭 A CAMPAINHA DAS TRÊS. Uma pista muda a história. Parte 2 em breve.\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
-  "legenda_tiktok": "🎭 A CAMPAINHA DAS TRÊS. Parte 1. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
-  "origem_inspiracao_numero": 4,
-  "lote": "virais-originais-20261029",
-  "gerado_automaticamente": false
+ "id": "ep108-p1",
+ "ep": 108,
+ "parte": 1,
+ "titulo": "A CAMPAINHA DAS TRÊS",
+ "temporada": "Histórias adaptadas 2026",
+ "cenario": "tarde",
+ "batidas": [
+  {
+   "fala": "Clara ouvia três toques na porta toda madrugada, sempre na mesma hora, e nenhum vizinho aparecia nas câmeras do corredor.",
+   "expr": "chocada",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "toques",
+    "madrugada,"
+   ]
+  },
+  {
+   "fala": "A protagonista desta história é Clara. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
+   "expr": "neutra",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "protagonista",
+    "história"
+   ]
+  },
+  {
+   "fala": "Aconteceu primeiro depois que ela herdou o apartamento da tia, uma mulher conhecida por cultivar plantas e conversar com todos.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "Aconteceu",
+    "primeiro"
+   ]
+  },
+  {
+   "fala": "Os vizinhos atribuíram os toques a algo misterioso; Clara começou a anotar os horários num caderno ao lado da cama.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "vizinhos",
+    "atribuíram"
+   ]
+  },
+  {
+   "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
+   "expr": "desconfiada",
+   "arte": [
+    "manchete_v"
+   ],
+   "destaque": [
+    "detalhe",
+    "parecia"
+   ]
+  },
+  {
+   "fala": "Na quarta noite, um papel deslizou por baixo da porta com três palavras: confira o relógio.",
+   "expr": "ironica",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "quarta",
+    "noite,"
+   ]
+  },
+  {
+   "fala": "E aqui começa a parte mais surpreendente: Clara decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "começa",
+    "surpreendente:"
+   ]
+  },
+  {
+   "fala": "Na parte dois, vem a explicação completa e uma decisão que mudou o rumo dessa história.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "explicação",
+    "completa"
+   ]
+  }
+ ],
+ "fim": "CONTINUA NA PARTE 2",
+ "legenda_post": "🎭 A CAMPAINHA DAS TRÊS. Uma pista muda a história. Parte 2 em breve.\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+ "legenda_tiktok": "🎭 A CAMPAINHA DAS TRÊS. Parte 1. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
+ "origem_inspiracao_numero": 4,
+ "lote": "virais-originais-20261029",
+ "gerado_automaticamente": false,
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
 }
