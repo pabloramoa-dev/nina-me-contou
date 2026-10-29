@@ -170,6 +170,8 @@ def recibos_salvar(dados: dict, persistir: bool = False) -> None:
 
 
 MAX_TENTATIVAS_INCERTAS = 3
+# Erros que valem para todos os vídeos: não adianta tentar os próximos.
+ERROS_CONFIG = ("chat not found", "Unauthorized", "bot was blocked", "user is deactivated", "Forbidden")
 
 
 def hash_arquivo(video: Path) -> str:
@@ -282,10 +284,16 @@ def main() -> int:
     recebidos = recibos_ler()
     enviados = 0
     falhas: list[str] = []
+    tentados = 0
     with tempfile.TemporaryDirectory(prefix="nina-telegram-") as tmp:
         for video in videos:
-            if args.limit and enviados >= args.limit:
+            # O limite conta tentativas (sucesso ou falha), não só sucessos:
+            # "limite 1" nunca tenta enviar a fila inteira.
+            if args.limit and tentados >= args.limit:
                 break
+            recibo = recebidos.get(video.stem, {})
+            if recibo.get("status") != "complete":
+                tentados += 1
             try:
                 # O MP4 só existe em reels/ depois que o render terminou e foi
                 # gravado; ainda assim confere áudio, vídeo e duração.
@@ -296,6 +304,10 @@ def main() -> int:
                 msg = str(exc).replace(token, "[REDACTED]") if token else str(exc)
                 print(f"::error::{video.name}: {msg}")
                 falhas.append(video.name)
+                if any(x in msg for x in ERROS_CONFIG):
+                    print("::error::Configuração do Telegram inválida (token errado ou /start não enviado ao bot). "
+                          "Interrompendo sem tentar os demais vídeos.")
+                    break
     print(f"Enviados: {enviados}; MP4 encontrados: {len(videos)}; falhas: {len(falhas)}")
     return 1 if falhas else 0
 
