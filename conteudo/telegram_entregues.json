@@ -136,7 +136,7 @@
   },
   "ep108-p2": {
     "hash": "3f76697365f42eedce1c66b707643650e4241f8a55437bbb58103d23cafcf832",
-    "status": "video_sent",
+    "status": "sending_description",
     "tentativas_incertas": 0,
     "telegram_message_id": 15,
     "file_id": "BQACAgEAAxkDAAMPauOctO9DKwvelsCSICVA9imVMaEAAu8KAAK5EhhHTrm62nSsCgw9BA",
