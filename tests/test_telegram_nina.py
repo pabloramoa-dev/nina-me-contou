@@ -55,20 +55,42 @@ class DeliveryTests(unittest.TestCase):
             self.assertEqual(self.run_delivery(), 0)
             self.assertEqual(api.call_count, 2)
         self.assertEqual(json.loads(self.receipts.read_text())['ep045-p1']['status'], 'complete')
-    def test_uncertain_description_never_resends_video(self):
+    def test_uncertain_description_resends_only_description(self):
         with patch.object(tg, 'http_telegram', side_effect=[
             {'message_id': 1, 'document': {'file_id': 'test-file'}}, RuntimeError('timeout')]):
-            with self.assertRaises(RuntimeError):
-                self.run_delivery()
-        with patch.object(tg, 'http_telegram') as api:
-            with self.assertRaisesRegex(RuntimeError, 'incerto'):
-                self.run_delivery()
-            api.assert_not_called()
+            self.assertEqual(self.run_delivery(), 1)
+        with patch.object(tg, 'http_telegram', return_value={'message_id': 3}) as api:
+            self.assertEqual(self.run_delivery(), 0)
+            self.assertEqual(api.call_count, 1)
+            self.assertEqual(api.call_args.args[1], 'sendMessage')
+        self.assertEqual(json.loads(self.receipts.read_text())['ep045-p1']['status'], 'complete')
+    def test_uncertain_video_gives_up_after_limit(self):
+        with patch.object(tg, 'http_telegram', side_effect=RuntimeError('timeout')) as api:
+            for _ in range(4):
+                self.assertEqual(self.run_delivery(), 1)
+            self.assertEqual(api.call_count, 4)  # 1 envio + 3 repetições, depois para
+            self.assertEqual(self.run_delivery(), 1)
+            self.assertEqual(api.call_count, 4)
+    def test_one_bad_video_does_not_block_others(self):
+        bad = self.video_dir / 'ep044-p2.mp4'
+        bad.write_bytes(b'x' * 2048)
+        with patch.object(tg, 'http_telegram', side_effect=[
+            {'message_id': 1, 'document': {'file_id': 'f'}}, {'message_id': 2}]) as api:
+            self.assertEqual(self.run_delivery(), 1)
+            self.assertEqual(api.call_count, 2)
+        self.assertEqual(json.loads(self.receipts.read_text())['ep045-p1']['status'], 'complete')
+    def test_tiktok_description_has_story_tags_and_part(self):
+        d = tg.descricao_tiktok({'titulo': 'CARTÃO', 'parte': 1, 'temporada': 'Casais',
+            'legenda_post': 'Isabela achou um cartão. A continuação está no perfil.\n\n#storytime #fofoca'})
+        self.assertIn('CARTÃO — Parte 1/2', d)
+        for tag in ('#fofoca', '#casais', '#traicao', '#ninamecontou', '#tiktokbrasil'):
+            self.assertIn(tag, d)
+        self.assertEqual(d.count('#storytime'), 1)
+        self.assertIn('parte 2', d)
     def test_invalid_video_rejected(self):
         self.video.write_bytes(b'x' * 2048)
         with patch.object(tg, 'http_telegram') as api:
-            with self.assertRaises(RuntimeError):
-                self.run_delivery()
+            self.assertEqual(self.run_delivery(), 1)
             api.assert_not_called()
     def test_missing_credentials_fails(self):
         with patch.dict(os.environ, {'TELEGRAM_BOT_TOKEN_NINA': ''}):
