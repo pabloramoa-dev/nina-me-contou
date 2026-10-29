@@ -18,7 +18,7 @@ def duracao_ffprobe(path):
     ], text=True)
     return float(out.strip())
 
-def montar_props(ep, segs, dur):
+def montar_props(ep, segs, dur, visual_frames=None):
     if len(segs) != len(ep["batidas"]):
         raise ValueError("Cenas e falas não correspondem")
     scenes = []
@@ -38,7 +38,10 @@ def montar_props(ep, segs, dur):
             "start": start, "end": end, "title": str(titulo),
             "fala": b["fala"], "expr": b.get("expr", "neutra")
         })
-    return {"durationFrames": math.ceil(dur * 30), "scenes": scenes}
+    result = {"durationFrames": math.ceil(dur * 30), "scenes": scenes}
+    if visual_frames:
+        result["visuals"] = visual_frames
+    return result
 
 def finalizar(ep, pasta, raiz):
     pasta, raiz = Path(pasta), Path(raiz)
@@ -54,7 +57,21 @@ def finalizar(ep, pasta, raiz):
     shutil.copy2(base / "mix.wav", public / "mix.wav")
     segs = json.loads((pasta / "segs.json").read_text(encoding="utf-8"))
     duration = duracao_ffprobe(public / "nina-base.mp4")
-    props = montar_props(ep, segs, duration)
+    estilo = str(ep.get("visual_style") or os.environ.get("NINA_STORY_STYLE", "cinematic_2d")).strip().lower()
+    if estilo not in ("cinematic_2d", "classic"):
+        raise ValueError("NINA_STORY_STYLE invalido")
+    frames = []
+    if estilo == "cinematic_2d":
+        try:
+            from .cinematic_story_art import preparar_quadros
+        except ImportError:
+            from cinematic_story_art import preparar_quadros
+        report_path = pasta / "visual_images.json"
+        report = json.loads(report_path.read_text(encoding="utf-8")) if report_path.exists() else {}
+        frames = preparar_quadros(ep, segs, duration, public, base_assets=base, visual_report=report)
+        if not frames:
+            raise ValueError("Cinema 2D ativado mas nao existem quadros")
+    props = montar_props(ep, segs, duration, visual_frames=frames)
     propsfile = pasta / "remotion-props.json"
     propsfile.write_text(json.dumps(props, ensure_ascii=False, indent=2), encoding="utf-8")
     # Instala em diretório separado: NÃO substitui nem altera o HyperFrames.
@@ -81,7 +98,9 @@ def finalizar(ep, pasta, raiz):
                 legenda="solta_sem_faixa_inferior",
                 voz=ep.get("kokoro_voice") if ep.get("voice_engine") == "kokoro"
                     else "pt-BR-ThalitaNeural",
-                duracao=esperado)
+                duracao=esperado,
+                estilo_cenas=estilo, cenas_cinema_2d=len(frames),
+                intervalo_cinema_2d_segundos=7 if frames else None)
     metap.write_text(json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"[Remotion] aprovado: {final} ({esperado:.1f}s)", flush=True)
     return final

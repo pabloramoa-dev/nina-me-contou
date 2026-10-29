@@ -119,3 +119,30 @@ Configuração: `motor/visual_images.json`; detalhes em [docs/visual-images.md](
 nos secrets do repositório. Até cadastrar essa chave, novos episódios usam o fallback
 configurado. O teste promocional de layout usa explicitamente seis imagens aprovadas;
 isso não comprova geração nova pela API. A voz principal Kokoro Dora e a apresentadora original são preservadas.
+
+## Cinema 2D nas historias da Nina (29/10/2026)
+
+Aprovado a partir do piloto de cenas cinematograficas do Caixeiro. Os videos
+novos da Nina ganham ilustrações 2D originais feitas com Pillow/CPU, cenarios
+com profundidade, personagens secundarios FICTICIOS e objetos escolhidos a
+partir do texto de cada cena (celular, fotos, aliança, carta, carro, casa etc.).
+Nao existe chave de API paga nem necessidade de GPU para essas artes.
+
+O Remotion, compositor final padrao, agora incorpora as imagens de apoio
+na faixa superior e troca o quadro **a cada 7 segundos**, com movimento
+suave de camera (pan/zoom). A apresentadora, a voz Kokoro Dora, o lip-sync
+e as legendas inferiores continuam como antes. A composição HyperFrames
+também utiliza o novo estilo nos quadros locais de reserva.
+
+- Padrao: `NINA_STORY_STYLE=cinematic_2d`.
+- Rollback: `NINA_STORY_STYLE=classic` (mantem acabamento anterior).
+- Opcional por roteiro: `"visual_style": "classic"`.
+- Imagens explicitamente aprovadas (`approved_visual_assets`) têm
+  prioridade, inclusive no acabamento Remotion.
+- `NINA_ALLOW_PAID_IMAGE_API=0` continua protegendo de custos por API.
+- Nenhum fluxo de publicação ou configuração de conta foi alterado.
+- A nova assinatura de render afeta apenas episodios pendentes, sem
+  republicar os que ja saíram.
+
+O movimento e feito na camera sobre ilustracoes 2D, nao e
+animacao independente de braços/pernas dos personagens secundarios.
