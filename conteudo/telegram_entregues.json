@@ -146,11 +146,12 @@
   },
   "ep109-p1": {
     "hash": "3f49239c6fa17296403b47590ba2497aaceda19d0231a74f1e9c2a9abbd2bf41",
-    "status": "sending_description",
-    "tentativas_incertas": 0,
+    "status": "complete",
     "telegram_message_id": 17,
     "file_id": "BQACAgEAAxkDAAMRauOcv0HvUq1Q6FqKarqnQcSbth8AAvAKAAK5EhhH7SlpNt6n2hw9BA",
     "file_size": 18567241,
-    "comprimido": false
+    "comprimido": false,
+    "description_message_id": 18,
+    "entregue_em": "2026-10-29T19:21:39Z"
   }
 }
