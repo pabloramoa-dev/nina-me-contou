@@ -1,7 +1,7 @@
 {
   "ep012-p1": {
     "hash": "fd8af31e189f114d9000ed2c049f941e220a0a98bad40a7ef2c12efe643d67c9",
-    "status": "video_sent",
+    "status": "sending_description",
     "tentativas_incertas": 1,
     "telegram_message_id": 3,
     "file_id": "BQACAgEAAxkDAAMDauNf_VRLpLP1XhmAUsEpf2FG9lEAAkkIAAI8kBhHmzlKHpbEIKk9BA",
