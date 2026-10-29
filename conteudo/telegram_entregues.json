@@ -156,7 +156,11 @@
   },
   "ep109-p2": {
     "hash": "5c55de8de95bae71912f724045855e6001ecec3d3f01a0b30d5891082dc03f2a",
-    "status": "sending_video",
-    "tentativas_incertas": 0
+    "status": "video_sent",
+    "tentativas_incertas": 0,
+    "telegram_message_id": 19,
+    "file_id": "BQACAgEAAxkDAAMTauOcyI_8k71nT_0XgVMCbN-yeI8AAvEKAAK5EhhHLPea4LCUIS09BA",
+    "file_size": 18361356,
+    "comprimido": false
   }
 }
