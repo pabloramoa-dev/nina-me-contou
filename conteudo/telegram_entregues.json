@@ -226,7 +226,7 @@
   },
   "ep113-p1": {
     "hash": "dcc3957cc3f83f7fb5ce7e0d14b4021cf542f69e55fb93fed38b07146c8edc31",
-    "status": "video_sent",
+    "status": "sending_description",
     "tentativas_incertas": 0,
     "telegram_message_id": 33,
     "file_id": "BQACAgEAAxkDAAMhauOm_4AK2axhYrD0nnYEkGH6V2QAAhMLAAK5EhhHt8J3HRkuYGo9BA",
