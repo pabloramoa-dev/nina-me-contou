@@ -12,7 +12,7 @@ on:
     branches: [main]
     paths: ["episodios/**", "motor/**", "src/fila.py", "video/**", ".github/actions/setup-hyperframes/**", ".github/workflows/produzir.yml", "requirements-estudio.txt"]
   schedule:
-    - cron: "40 4 * * *"    # 01:40 Brasília — rede de segurança para o que ficou pra trás
+    - cron: "40 4,10,16,22 * * *"    # Repor estoque e repetir renders pendentes ao longo do dia
   workflow_dispatch:
     inputs:
       limite:
@@ -21,9 +21,8 @@ on:
 
 concurrency:
   group: nina-estudio-v2
-  # A execução mais nova recalcula todos os pendentes; priorizar o motor novo
-  # evita acumular renders obsoletos.
-  cancel-in-progress: true
+  # Renders em andamento devem terminar antes da próxima tentativa.
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -147,7 +146,7 @@ jobs:
         with:
           name: reel-${{ steps.r.outputs.id }}
           path: saida_reels/
-          retention-days: 3
+          retention-days: 7
 
   gravar:
     needs: renderizar
@@ -179,31 +178,3 @@ jobs:
           git commit -m "estúdio: episódios renderizados [skip ci]"
           for i in 1 2 3; do git pull --rebase && git push && exit 0; sleep 5; done
           exit 1
-      - name: Enviar MP4 e descrição pronta para TikTok pelo Telegram
-        env:
-          TELEGRAM_BOT_TOKEN_NINA: ${{ secrets.TELEGRAM_BOT_TOKEN_NINA }}
-          TELEGRAM_CHAT_ID_NINA: ${{ secrets.TELEGRAM_CHAT_ID_NINA }}
-        run: |
-          python -m pip install requests
-          python tools/telegram_nina.py --video-dir entrega_nina
-      - name: Registrar recibos de entrega no Telegram
-        if: success()
-        run: |
-          if [ ! -f conteudo/telegram_entregues.json ]; then
-            echo "Nenhum envio novo para registrar."
-            exit 0
-          fi
-          git config user.name "nina-bot"
-          git config user.email "actions@github.com"
-          git add conteudo/telegram_entregues.json
-          if git diff --cached --quiet; then
-            echo "Recibos do Telegram já registrados."
-            exit 0
-          fi
-          git commit -m "telegram: MP4s da Nina entregues [skip ci]"
-          for i in 1 2 3 4 5; do
-            git pull --rebase origin main && git push origin main && exit 0
-            sleep 5
-          done
-          exit 1
-
