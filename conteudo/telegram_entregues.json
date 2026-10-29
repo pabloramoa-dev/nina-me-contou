@@ -1,7 +1,7 @@
 {
   "ep012-p1": {
     "hash": "fd8af31e189f114d9000ed2c049f941e220a0a98bad40a7ef2c12efe643d67c9",
-    "status": "retry_video",
+    "status": "sending_video",
     "tentativas_incertas": 0
   },
   "ep013-p1": {
