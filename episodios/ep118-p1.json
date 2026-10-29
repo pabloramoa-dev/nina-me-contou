@@ -1,0 +1,104 @@
+{
+  "id": "ep118-p1",
+  "ep": 118,
+  "parte": 1,
+  "titulo": "A ÚLTIMA MÚSICA DO CLUBE",
+  "temporada": "Histórias adaptadas 2026",
+  "cenario": "tarde",
+  "batidas": [
+    {
+      "fala": "Dalva herdou a chave de um antigo clube de música fechado desde os anos setenta e encontrou uma cadeira posta no palco.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "herdou",
+        "antigo"
+      ]
+    },
+    {
+      "fala": "A protagonista desta história é Dalva. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
+      "expr": "neutra",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "protagonista",
+        "história"
+      ]
+    },
+    {
+      "fala": "O avô dizia que o lugar guardava uma promessa nunca cumprida, mas nunca revelava de quem era o assento vazio.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "guardava",
+        "promessa"
+      ]
+    },
+    {
+      "fala": "No porão havia cartazes, discos sem capa e uma lista de mulheres que tocaram ali quando ninguém lhes oferecia espaço.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "cartazes,",
+        "discos"
+      ]
+    },
+    {
+      "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete_v"
+      ],
+      "destaque": [
+        "detalhe",
+        "parecia"
+      ]
+    },
+    {
+      "fala": "Dalva seguiu os nomes até encontrar uma pianista aposentada que se emocionou ao ver a fotografia do palco.",
+      "expr": "ironica",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "seguiu",
+        "encontrar"
+      ]
+    },
+    {
+      "fala": "E aqui começa a parte mais surpreendente: Dalva decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "começa",
+        "surpreendente:"
+      ]
+    },
+    {
+      "fala": "Na parte dois, vem a explicação completa e uma decisão que mudou o rumo dessa história.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "explicação",
+        "completa"
+      ]
+    }
+  ],
+  "fim": "CONTINUA NA PARTE 2",
+  "legenda_post": "🎭 A ÚLTIMA MÚSICA DO CLUBE. Uma pista muda a história. Parte 2 em breve.\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+  "legenda_tiktok": "🎭 A ÚLTIMA MÚSICA DO CLUBE. Parte 1. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
+  "origem_inspiracao_numero": 17,
+  "lote": "virais-originais-20261029",
+  "gerado_automaticamente": false
+}

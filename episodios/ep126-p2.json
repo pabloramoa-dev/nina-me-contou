@@ -1,0 +1,104 @@
+{
+  "id": "ep126-p2",
+  "ep": 126,
+  "parte": 2,
+  "titulo": "A VIAGEM COM DATA ERRADA",
+  "temporada": "Histórias adaptadas 2026",
+  "cenario": "noite",
+  "batidas": [
+    {
+      "fala": "Na primeira parte, Mônica encontrou uma pista que não fazia sentido. Agora olha como essa situação realmente terminou.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "primeira",
+        "parte,"
+      ]
+    },
+    {
+      "fala": "A namorada havia conseguido uma oportunidade de trabalho e já estava na cidade onde Mônica morava, tentando preparar sua própria surpresa.",
+      "expr": "neutra",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "namorada",
+        "conseguido"
+      ]
+    },
+    {
+      "fala": "Não foi uma resposta que chegou pronta. Primeiro vieram dúvidas, depois uma conversa desconfortável e, só então, a informação que faltava para entender o que estava acontecendo.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "resposta",
+        "chegou"
+      ]
+    },
+    {
+      "fala": "As duas se procuraram em aeroportos diferentes por horas até finalmente conversar e perceber que tinham trocado os planos.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "procuraram",
+        "aeroportos"
+      ]
+    },
+    {
+      "fala": "Marcaram uma videochamada, riram do desencontro e combinaram de não transformar segredo em teste de adivinhação.",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete_v"
+      ],
+      "destaque": [
+        "Marcaram",
+        "videochamada,"
+      ]
+    },
+    {
+      "fala": "Quem estava envolvido teve de assumir as próprias escolhas. E foi justamente nessa conversa, sem plateia, que a história ganhou outra direção.",
+      "expr": "ironica",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "estava",
+        "envolvido"
+      ]
+    },
+    {
+      "fala": "Quando se reencontraram, não havia aeroporto lotado nem música de filme, só uma pizza fria e a decisão de conversar melhor.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "Quando",
+        "reencontraram,"
+      ]
+    },
+    {
+      "fala": "Se fosse com você, teria reagido como Mônica ou feito diferente? Me conta, porque eu quero saber o que vocês acharam dessa virada.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "reagido",
+        "Mônica"
+      ]
+    }
+  ],
+  "fim": "SEGUE A NINA",
+  "legenda_post": "🎭 A VIAGEM COM DATA ERRADA. A conclusão veio com uma reviravolta. Você teria feito diferente?\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+  "legenda_tiktok": "🎭 A VIAGEM COM DATA ERRADA. Parte 2. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
+  "origem_inspiracao_numero": 30,
+  "lote": "virais-originais-20261029",
+  "gerado_automaticamente": false
+}

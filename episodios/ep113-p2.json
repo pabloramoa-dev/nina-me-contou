@@ -1,0 +1,104 @@
+{
+  "id": "ep113-p2",
+  "ep": 113,
+  "parte": 2,
+  "titulo": "MEU EX CASOU COM MINHA AMIGA",
+  "temporada": "Histórias adaptadas 2026",
+  "cenario": "noite",
+  "batidas": [
+    {
+      "fala": "Na primeira parte, Cecília encontrou uma pista que não fazia sentido. Agora olha como essa situação realmente terminou.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "primeira",
+        "parte,"
+      ]
+    },
+    {
+      "fala": "Cecília descobriu que os dois só se conheceram meses depois do término, numa campanha de arrecadação do bairro.",
+      "expr": "neutra",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "Cecília",
+        "descobriu"
+      ]
+    },
+    {
+      "fala": "Não foi uma resposta que chegou pronta. Primeiro vieram dúvidas, depois uma conversa desconfortável e, só então, a informação que faltava para entender o que estava acontecendo.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "resposta",
+        "chegou"
+      ]
+    },
+    {
+      "fala": "A amiga admitiu que não contou o namoro antes por medo de machucar Cecília e reconheceu que o silêncio também machucava.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "admitiu",
+        "contou"
+      ]
+    },
+    {
+      "fala": "Cecília não foi ao casamento, mas respondeu com uma mensagem simples desejando que fossem honestos desde o começo.",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete_v"
+      ],
+      "destaque": [
+        "Cecília",
+        "casamento,"
+      ]
+    },
+    {
+      "fala": "Quem estava envolvido teve de assumir as próprias escolhas. E foi justamente nessa conversa, sem plateia, que a história ganhou outra direção.",
+      "expr": "ironica",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "estava",
+        "envolvido"
+      ]
+    },
+    {
+      "fala": "Anos depois elas voltaram a conversar sem forçar intimidade. Algumas amizades mudam de formato; isso não apaga o que foram.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "depois",
+        "voltaram"
+      ]
+    },
+    {
+      "fala": "Se fosse com você, teria reagido como Cecília ou feito diferente? Me conta, porque eu quero saber o que vocês acharam dessa virada.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "reagido",
+        "Cecília"
+      ]
+    }
+  ],
+  "fim": "SEGUE A NINA",
+  "legenda_post": "🎭 MEU EX CASOU COM MINHA AMIGA. A conclusão veio com uma reviravolta. Você teria feito diferente?\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+  "legenda_tiktok": "🎭 MEU EX CASOU COM MINHA AMIGA. Parte 2. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
+  "origem_inspiracao_numero": 10,
+  "lote": "virais-originais-20261029",
+  "gerado_automaticamente": false
+}

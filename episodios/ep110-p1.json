@@ -1,0 +1,104 @@
+{
+  "id": "ep110-p1",
+  "ep": 110,
+  "parte": 1,
+  "titulo": "O DIÁRIO DA TRAVESSIA",
+  "temporada": "Histórias adaptadas 2026",
+  "cenario": "tarde",
+  "batidas": [
+    {
+      "fala": "Um diário encontrado numa mala antiga descrevia uma travessia no mar e terminava com a frase: voltei, mas ninguém soube.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "diário",
+        "encontrado"
+      ]
+    },
+    {
+      "fala": "A protagonista desta história é Malu. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
+      "expr": "neutra",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "protagonista",
+        "história"
+      ]
+    },
+    {
+      "fala": "Malu era restauradora de livros e recebeu o caderno de uma senhora que desejava entender a história da própria bisavó.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "restauradora",
+        "livros"
+      ]
+    },
+    {
+      "fala": "As páginas mencionavam uma tempestade, passageiros acolhidos por pescadores e um medalhão de cobre sem qualquer identificação.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "páginas",
+        "mencionavam"
+      ]
+    },
+    {
+      "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete_v"
+      ],
+      "destaque": [
+        "detalhe",
+        "parecia"
+      ]
+    },
+    {
+      "fala": "Quando Malu encontrou uma fotografia com o mesmo medalhão, percebeu que a narrativa não terminara naquela última página.",
+      "expr": "ironica",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "Quando",
+        "encontrou"
+      ]
+    },
+    {
+      "fala": "E aqui começa a parte mais surpreendente: Malu decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "começa",
+        "surpreendente:"
+      ]
+    },
+    {
+      "fala": "Na parte dois, vem a explicação completa e uma decisão que mudou o rumo dessa história.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "explicação",
+        "completa"
+      ]
+    }
+  ],
+  "fim": "CONTINUA NA PARTE 2",
+  "legenda_post": "🎭 O DIÁRIO DA TRAVESSIA. Uma pista muda a história. Parte 2 em breve.\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+  "legenda_tiktok": "🎭 O DIÁRIO DA TRAVESSIA. Parte 1. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
+  "origem_inspiracao_numero": 7,
+  "lote": "virais-originais-20261029",
+  "gerado_automaticamente": false
+}

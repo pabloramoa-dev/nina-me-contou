@@ -1,0 +1,104 @@
+{
+  "id": "ep107-p2",
+  "ep": 107,
+  "parte": 2,
+  "titulo": "OS BILHETES DO MENINO",
+  "temporada": "Histórias adaptadas 2026",
+  "cenario": "noite",
+  "batidas": [
+    {
+      "fala": "Na primeira parte, Lara encontrou uma pista que não fazia sentido. Agora olha como essa situação realmente terminou.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "primeira",
+        "parte,"
+      ]
+    },
+    {
+      "fala": "Lara percebeu que os bilhetes repetiam frases ditas pelos avós quando ainda viviam juntos, antes de um mal-entendido bobo.",
+      "expr": "neutra",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "percebeu",
+        "bilhetes"
+      ]
+    },
+    {
+      "fala": "Não foi uma resposta que chegou pronta. Primeiro vieram dúvidas, depois uma conversa desconfortável e, só então, a informação que faltava para entender o que estava acontecendo.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "resposta",
+        "chegou"
+      ]
+    },
+    {
+      "fala": "O menino tinha ouvido os dois dizerem que sentiam saudade um do outro, mas nenhum queria tomar a iniciativa.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "menino",
+        "ouvido"
+      ]
+    },
+    {
+      "fala": "Quando os avós seguiram o mapa, encontraram duas cadeiras, café e uma pergunta escrita: vocês ainda sabem conversar?",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete_v"
+      ],
+      "destaque": [
+        "Quando",
+        "seguiram"
+      ]
+    },
+    {
+      "fala": "Quem estava envolvido teve de assumir as próprias escolhas. E foi justamente nessa conversa, sem plateia, que a história ganhou outra direção.",
+      "expr": "ironica",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "estava",
+        "envolvido"
+      ]
+    },
+    {
+      "fala": "Ninguém voltou a morar junto naquela tarde; eles apenas conversaram por horas. E o menino ganhou o apelido de carteiro da paz.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "Ninguém",
+        "voltou"
+      ]
+    },
+    {
+      "fala": "Se fosse com você, teria reagido como Lara ou feito diferente? Me conta, porque eu quero saber o que vocês acharam dessa virada.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "reagido",
+        "diferente?"
+      ]
+    }
+  ],
+  "fim": "SEGUE A NINA",
+  "legenda_post": "🎭 OS BILHETES DO MENINO. A conclusão veio com uma reviravolta. Você teria feito diferente?\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+  "legenda_tiktok": "🎭 OS BILHETES DO MENINO. Parte 2. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
+  "origem_inspiracao_numero": 3,
+  "lote": "virais-originais-20261029",
+  "gerado_automaticamente": false
+}

@@ -1,0 +1,104 @@
+{
+  "id": "ep121-p2",
+  "ep": 121,
+  "parte": 2,
+  "titulo": "A DANÇA QUE O PAI ENSAIOU",
+  "temporada": "Histórias adaptadas 2026",
+  "cenario": "noite",
+  "batidas": [
+    {
+      "fala": "Na primeira parte, Bruna encontrou uma pista que não fazia sentido. Agora olha como essa situação realmente terminou.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "primeira",
+        "parte,"
+      ]
+    },
+    {
+      "fala": "Ele havia treinado passos simples com a irmã de Bruna toda terça-feira, sem querer transformar a apresentação em espetáculo.",
+      "expr": "neutra",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "treinado",
+        "passos"
+      ]
+    },
+    {
+      "fala": "Não foi uma resposta que chegou pronta. Primeiro vieram dúvidas, depois uma conversa desconfortável e, só então, a informação que faltava para entender o que estava acontecendo.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "resposta",
+        "chegou"
+      ]
+    },
+    {
+      "fala": "No vídeo, errava, voltava ao começo e dizia que seu medo não era dançar mal, era faltar àquele momento da filha.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "vídeo,",
+        "errava,"
+      ]
+    },
+    {
+      "fala": "Quando a música original feita pela família começou, Bruna abandonou a coreografia planejada e dançou do jeito deles.",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete_v"
+      ],
+      "destaque": [
+        "Quando",
+        "música"
+      ]
+    },
+    {
+      "fala": "Quem estava envolvido teve de assumir as próprias escolhas. E foi justamente nessa conversa, sem plateia, que a história ganhou outra direção.",
+      "expr": "ironica",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "estava",
+        "envolvido"
+      ]
+    },
+    {
+      "fala": "O salão inteiro acompanhou com palmas. O melhor passo daquela noite não foi ensaiado: foi o pai finalmente aceitando participar.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "inteiro",
+        "acompanhou"
+      ]
+    },
+    {
+      "fala": "Se fosse com você, teria reagido como Bruna ou feito diferente? Me conta, porque eu quero saber o que vocês acharam dessa virada.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "reagido",
+        "diferente?"
+      ]
+    }
+  ],
+  "fim": "SEGUE A NINA",
+  "legenda_post": "🎭 A DANÇA QUE O PAI ENSAIOU. A conclusão veio com uma reviravolta. Você teria feito diferente?\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+  "legenda_tiktok": "🎭 A DANÇA QUE O PAI ENSAIOU. Parte 2. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
+  "origem_inspiracao_numero": 24,
+  "lote": "virais-originais-20261029",
+  "gerado_automaticamente": false
+}

@@ -1,0 +1,104 @@
+{
+  "id": "ep106-p2",
+  "ep": 106,
+  "parte": 2,
+  "titulo": "O ENCONTRO QUE MINHA MÃE MARCOU",
+  "temporada": "Histórias adaptadas 2026",
+  "cenario": "noite",
+  "batidas": [
+    {
+      "fala": "Na primeira parte, Bia encontrou uma pista que não fazia sentido. Agora olha como essa situação realmente terminou.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "primeira",
+        "parte,"
+      ]
+    },
+    {
+      "fala": "Na parte de trás, ele explicava que a mãe de Bia tinha sido professora dele e guardara a carta quando ambos ainda eram crianças.",
+      "expr": "neutra",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "explicava",
+        "professora"
+      ]
+    },
+    {
+      "fala": "Não foi uma resposta que chegou pronta. Primeiro vieram dúvidas, depois uma conversa desconfortável e, só então, a informação que faltava para entender o que estava acontecendo.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "resposta",
+        "chegou"
+      ]
+    },
+    {
+      "fala": "Ele não estava tentando namorar Bia: queria agradecer por ela ter defendido um colega que todos ignoravam.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "estava",
+        "tentando"
+      ]
+    },
+    {
+      "fala": "A mãe confessou que inventou o encontro porque a filha nunca aceitava convites para rever amigos do passado.",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete_v"
+      ],
+      "destaque": [
+        "confessou",
+        "inventou"
+      ]
+    },
+    {
+      "fala": "Quem estava envolvido teve de assumir as próprias escolhas. E foi justamente nessa conversa, sem plateia, que a história ganhou outra direção.",
+      "expr": "ironica",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "estava",
+        "envolvido"
+      ]
+    },
+    {
+      "fala": "Bia saiu sem romance, mas com uma amizade recuperada e uma foto das duas mães rindo do encontro mais desajeitado do ano.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "romance,",
+        "amizade"
+      ]
+    },
+    {
+      "fala": "Se fosse com você, teria reagido como Bia ou feito diferente? Me conta, porque eu quero saber o que vocês acharam dessa virada.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "reagido",
+        "diferente?"
+      ]
+    }
+  ],
+  "fim": "SEGUE A NINA",
+  "legenda_post": "🎭 O ENCONTRO QUE MINHA MÃE MARCOU. A conclusão veio com uma reviravolta. Você teria feito diferente?\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+  "legenda_tiktok": "🎭 O ENCONTRO QUE MINHA MÃE MARCOU. Parte 2. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
+  "origem_inspiracao_numero": 1,
+  "lote": "virais-originais-20261029",
+  "gerado_automaticamente": false
+}

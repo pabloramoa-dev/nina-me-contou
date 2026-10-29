@@ -1,0 +1,104 @@
+{
+  "id": "ep109-p2",
+  "ep": 109,
+  "parte": 2,
+  "titulo": "A CASA DA FILHA",
+  "temporada": "Histórias adaptadas 2026",
+  "cenario": "noite",
+  "batidas": [
+    {
+      "fala": "Na primeira parte, Dona Rosa encontrou uma pista que não fazia sentido. Agora olha como essa situação realmente terminou.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "primeira",
+        "parte,"
+      ]
+    },
+    {
+      "fala": "A filha havia alugado um pequeno ponto no bairro, mas faltava coragem para contar que tinha deixado o antigo emprego.",
+      "expr": "neutra",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "alugado",
+        "pequeno"
+      ]
+    },
+    {
+      "fala": "Não foi uma resposta que chegou pronta. Primeiro vieram dúvidas, depois uma conversa desconfortável e, só então, a informação que faltava para entender o que estava acontecendo.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "resposta",
+        "chegou"
+      ]
+    },
+    {
+      "fala": "Ela não queria que a mãe trabalhasse: queria usar as receitas com permissão e dividir os lucros com a família.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "queria",
+        "trabalhasse:"
+      ]
+    },
+    {
+      "fala": "As etiquetas serviam apenas para decidir que móveis restaurar e levar ao novo salão, inclusive a cadeira de balanço.",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete_v"
+      ],
+      "destaque": [
+        "etiquetas",
+        "serviam"
+      ]
+    },
+    {
+      "fala": "Quem estava envolvido teve de assumir as próprias escolhas. E foi justamente nessa conversa, sem plateia, que a história ganhou outra direção.",
+      "expr": "ironica",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "estava",
+        "envolvido"
+      ]
+    },
+    {
+      "fala": "Rosa exigiu uma coisa em troca: o primeiro pão da inauguração seria oferecido gratuitamente à vizinha que sempre a ajudara.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "exigiu",
+        "troca:"
+      ]
+    },
+    {
+      "fala": "Se fosse com você, teria reagido como Dona Rosa ou feito diferente? Me conta, porque eu quero saber o que vocês acharam dessa virada.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "reagido",
+        "diferente?"
+      ]
+    }
+  ],
+  "fim": "SEGUE A NINA",
+  "legenda_post": "🎭 A CASA DA FILHA. A conclusão veio com uma reviravolta. Você teria feito diferente?\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+  "legenda_tiktok": "🎭 A CASA DA FILHA. Parte 2. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
+  "origem_inspiracao_numero": 5,
+  "lote": "virais-originais-20261029",
+  "gerado_automaticamente": false
+}

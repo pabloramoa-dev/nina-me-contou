@@ -1,0 +1,104 @@
+{
+  "id": "ep110-p2",
+  "ep": 110,
+  "parte": 2,
+  "titulo": "O DIÁRIO DA TRAVESSIA",
+  "temporada": "Histórias adaptadas 2026",
+  "cenario": "noite",
+  "batidas": [
+    {
+      "fala": "Na primeira parte, Malu encontrou uma pista que não fazia sentido. Agora olha como essa situação realmente terminou.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "primeira",
+        "parte,"
+      ]
+    },
+    {
+      "fala": "O registro do porto mostrou que a mulher do diário havia retornado em outro navio, meses depois, sob o sobrenome da mãe.",
+      "expr": "neutra",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "registro",
+        "mostrou"
+      ]
+    },
+    {
+      "fala": "Não foi uma resposta que chegou pronta. Primeiro vieram dúvidas, depois uma conversa desconfortável e, só então, a informação que faltava para entender o que estava acontecendo.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "resposta",
+        "chegou"
+      ]
+    },
+    {
+      "fala": "Ela preferiu recomeçar em outra cidade porque tinha perdido o contato com parentes depois da mudança da família.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "preferiu",
+        "recomeçar"
+      ]
+    },
+    {
+      "fala": "Na contracapa havia um endereço: o antigo ateliê onde a bisavó deu aulas de bordado a crianças do bairro.",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete_v"
+      ],
+      "destaque": [
+        "contracapa",
+        "endereço:"
+      ]
+    },
+    {
+      "fala": "Quem estava envolvido teve de assumir as próprias escolhas. E foi justamente nessa conversa, sem plateia, que a história ganhou outra direção.",
+      "expr": "ironica",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "estava",
+        "envolvido"
+      ]
+    },
+    {
+      "fala": "Malu entregou à família não uma lenda sobre desaparecimento, mas as cartas e desenhos de dezenas de alunos que lembravam dela.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "entregou",
+        "família"
+      ]
+    },
+    {
+      "fala": "Se fosse com você, teria reagido como Malu ou feito diferente? Me conta, porque eu quero saber o que vocês acharam dessa virada.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "reagido",
+        "diferente?"
+      ]
+    }
+  ],
+  "fim": "SEGUE A NINA",
+  "legenda_post": "🎭 O DIÁRIO DA TRAVESSIA. A conclusão veio com uma reviravolta. Você teria feito diferente?\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+  "legenda_tiktok": "🎭 O DIÁRIO DA TRAVESSIA. Parte 2. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
+  "origem_inspiracao_numero": 7,
+  "lote": "virais-originais-20261029",
+  "gerado_automaticamente": false
+}

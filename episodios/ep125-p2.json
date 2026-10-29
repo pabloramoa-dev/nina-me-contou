@@ -1,0 +1,104 @@
+{
+  "id": "ep125-p2",
+  "ep": 125,
+  "parte": 2,
+  "titulo": "QUARENTA E OITO HORAS PARA CASAR",
+  "temporada": "Histórias adaptadas 2026",
+  "cenario": "noite",
+  "batidas": [
+    {
+      "fala": "Na primeira parte, Aline encontrou uma pista que não fazia sentido. Agora olha como essa situação realmente terminou.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "primeira",
+        "parte,"
+      ]
+    },
+    {
+      "fala": "Não era um salão improvisado qualquer: a biblioteca tinha sido o lugar onde o casal se conheceu durante um clube de leitura.",
+      "expr": "neutra",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "improvisado",
+        "qualquer:"
+      ]
+    },
+    {
+      "fala": "Não foi uma resposta que chegou pronta. Primeiro vieram dúvidas, depois uma conversa desconfortável e, só então, a informação que faltava para entender o que estava acontecendo.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "resposta",
+        "chegou"
+      ]
+    },
+    {
+      "fala": "A comunidade conseguiu autorização para receber a cerimônia e reorganizou o espaço, respeitando livros e regras da casa.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "comunidade",
+        "conseguiu"
+      ]
+    },
+    {
+      "fala": "Aline decidiu reduzir a festa e convidar apenas quem ajudaria a transformar aquele gesto em lembrança.",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete_v"
+      ],
+      "destaque": [
+        "decidiu",
+        "reduzir"
+      ]
+    },
+    {
+      "fala": "Quem estava envolvido teve de assumir as próprias escolhas. E foi justamente nessa conversa, sem plateia, que a história ganhou outra direção.",
+      "expr": "ironica",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "estava",
+        "envolvido"
+      ]
+    },
+    {
+      "fala": "Na hora dos votos, o noivo colocou sobre a mesa o primeiro livro que os dois haviam discutido. O imprevisto virou escolha.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "votos,",
+        "colocou"
+      ]
+    },
+    {
+      "fala": "Se fosse com você, teria reagido como Aline ou feito diferente? Me conta, porque eu quero saber o que vocês acharam dessa virada.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "reagido",
+        "diferente?"
+      ]
+    }
+  ],
+  "fim": "SEGUE A NINA",
+  "legenda_post": "🎭 QUARENTA E OITO HORAS PARA CASAR. A conclusão veio com uma reviravolta. Você teria feito diferente?\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+  "legenda_tiktok": "🎭 QUARENTA E OITO HORAS PARA CASAR. Parte 2. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
+  "origem_inspiracao_numero": 29,
+  "lote": "virais-originais-20261029",
+  "gerado_automaticamente": false
+}

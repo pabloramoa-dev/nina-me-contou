@@ -1,0 +1,104 @@
+{
+  "id": "ep132-p2",
+  "ep": 132,
+  "parte": 2,
+  "titulo": "A MÃE QUE TODOS JULGAVAM",
+  "temporada": "Histórias adaptadas 2026",
+  "cenario": "noite",
+  "batidas": [
+    {
+      "fala": "Na primeira parte, Verônica encontrou uma pista que não fazia sentido. Agora olha como essa situação realmente terminou.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "primeira",
+        "parte,"
+      ]
+    },
+    {
+      "fala": "A mulher trabalhava à noite e fazia reparos nos livros pela manhã para que as crianças pudessem continuar emprestando.",
+      "expr": "neutra",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "mulher",
+        "trabalhava"
+      ]
+    },
+    {
+      "fala": "Não foi uma resposta que chegou pronta. Primeiro vieram dúvidas, depois uma conversa desconfortável e, só então, a informação que faltava para entender o que estava acontecendo.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "resposta",
+        "chegou"
+      ]
+    },
+    {
+      "fala": "Ela não havia pedido reconhecimento; apenas não conseguia estar presente nas reuniões marcadas no meio do expediente.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "pedido",
+        "reconhecimento;"
+      ]
+    },
+    {
+      "fala": "Verônica pediu desculpas e sugeriu que a escola oferecesse horários variados para ouvir mais famílias.",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete_v"
+      ],
+      "destaque": [
+        "Verônica",
+        "desculpas"
+      ]
+    },
+    {
+      "fala": "Quem estava envolvido teve de assumir as próprias escolhas. E foi justamente nessa conversa, sem plateia, que a história ganhou outra direção.",
+      "expr": "ironica",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "estava",
+        "envolvido"
+      ]
+    },
+    {
+      "fala": "Na feira do livro seguinte, a mulher compareceu ao lado de outras pessoas antes excluídas pelos horários. O gesto mudou a rotina de todos.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "seguinte,",
+        "mulher"
+      ]
+    },
+    {
+      "fala": "Se fosse com você, teria reagido como Verônica ou feito diferente? Me conta, porque eu quero saber o que vocês acharam dessa virada.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "reagido",
+        "Verônica"
+      ]
+    }
+  ],
+  "fim": "SEGUE A NINA",
+  "legenda_post": "🎭 A MÃE QUE TODOS JULGAVAM. A conclusão veio com uma reviravolta. Você teria feito diferente?\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+  "legenda_tiktok": "🎭 A MÃE QUE TODOS JULGAVAM. Parte 2. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
+  "origem_inspiracao_numero": 40,
+  "lote": "virais-originais-20261029",
+  "gerado_automaticamente": false
+}

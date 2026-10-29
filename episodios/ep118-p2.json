@@ -1,0 +1,104 @@
+{
+  "id": "ep118-p2",
+  "ep": 118,
+  "parte": 2,
+  "titulo": "A ÚLTIMA MÚSICA DO CLUBE",
+  "temporada": "Histórias adaptadas 2026",
+  "cenario": "noite",
+  "batidas": [
+    {
+      "fala": "Na primeira parte, Dalva encontrou uma pista que não fazia sentido. Agora olha como essa situação realmente terminou.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "primeira",
+        "parte,"
+      ]
+    },
+    {
+      "fala": "A cadeira era reservada à professora que ensinava música de graça para jovens do bairro e se mudou antes do último concerto.",
+      "expr": "neutra",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "cadeira",
+        "reservada"
+      ]
+    },
+    {
+      "fala": "Não foi uma resposta que chegou pronta. Primeiro vieram dúvidas, depois uma conversa desconfortável e, só então, a informação que faltava para entender o que estava acontecendo.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "resposta",
+        "chegou"
+      ]
+    },
+    {
+      "fala": "O avô de Dalva prometera reunir as antigas alunas, mas o clube fechou quando a rua inteira foi reformada.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "prometera",
+        "reunir"
+      ]
+    },
+    {
+      "fala": "Dalva organizou um encontro sem venda de ingressos; cada musicista levou uma composição própria e contou uma memória.",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete_v"
+      ],
+      "destaque": [
+        "organizou",
+        "encontro"
+      ]
+    },
+    {
+      "fala": "Quem estava envolvido teve de assumir as próprias escolhas. E foi justamente nessa conversa, sem plateia, que a história ganhou outra direção.",
+      "expr": "ironica",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "estava",
+        "envolvido"
+      ]
+    },
+    {
+      "fala": "A cadeira finalmente foi ocupada pela professora, que ouviu sua antiga turma tocar uma canção nova para ela.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "cadeira",
+        "finalmente"
+      ]
+    },
+    {
+      "fala": "Se fosse com você, teria reagido como Dalva ou feito diferente? Me conta, porque eu quero saber o que vocês acharam dessa virada.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "reagido",
+        "diferente?"
+      ]
+    }
+  ],
+  "fim": "SEGUE A NINA",
+  "legenda_post": "🎭 A ÚLTIMA MÚSICA DO CLUBE. A conclusão veio com uma reviravolta. Você teria feito diferente?\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+  "legenda_tiktok": "🎭 A ÚLTIMA MÚSICA DO CLUBE. Parte 2. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
+  "origem_inspiracao_numero": 17,
+  "lote": "virais-originais-20261029",
+  "gerado_automaticamente": false
+}

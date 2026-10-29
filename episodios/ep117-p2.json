@@ -1,0 +1,104 @@
+{
+  "id": "ep117-p2",
+  "ep": 117,
+  "parte": 2,
+  "titulo": "O ALERTA DA MALA AZUL",
+  "temporada": "Histórias adaptadas 2026",
+  "cenario": "noite",
+  "batidas": [
+    {
+      "fala": "Na primeira parte, Jéssica encontrou uma pista que não fazia sentido. Agora olha como essa situação realmente terminou.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "primeira",
+        "parte,"
+      ]
+    },
+    {
+      "fala": "As mulheres eram clientes de uma agência informal e a mala pertencia ao irmão dele, que alugava equipamentos de viagem.",
+      "expr": "neutra",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "mulheres",
+        "clientes"
+      ]
+    },
+    {
+      "fala": "Não foi uma resposta que chegou pronta. Primeiro vieram dúvidas, depois uma conversa desconfortável e, só então, a informação que faltava para entender o que estava acontecendo.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "resposta",
+        "chegou"
+      ]
+    },
+    {
+      "fala": "O verdadeiro problema apareceu depois: o namorado havia mentido sobre estar desempregado e fingia viagens de trabalho para esconder vergonha.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "verdadeiro",
+        "problema"
+      ]
+    },
+    {
+      "fala": "Jéssica aceitou ouvir a explicação, mas recusou a ideia de que uma mentira só é grave quando envolve outra pessoa.",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete_v"
+      ],
+      "destaque": [
+        "Jéssica",
+        "aceitou"
+      ]
+    },
+    {
+      "fala": "Quem estava envolvido teve de assumir as próprias escolhas. E foi justamente nessa conversa, sem plateia, que a história ganhou outra direção.",
+      "expr": "ironica",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "estava",
+        "envolvido"
+      ]
+    },
+    {
+      "fala": "Eles cancelaram a viagem e conversaram sobre o futuro com calma. A mala azul deixou de ser mistério, não de ser aviso.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "cancelaram",
+        "viagem"
+      ]
+    },
+    {
+      "fala": "Se fosse com você, teria reagido como Jéssica ou feito diferente? Me conta, porque eu quero saber o que vocês acharam dessa virada.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "reagido",
+        "Jéssica"
+      ]
+    }
+  ],
+  "fim": "SEGUE A NINA",
+  "legenda_post": "🎭 O ALERTA DA MALA AZUL. A conclusão veio com uma reviravolta. Você teria feito diferente?\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+  "legenda_tiktok": "🎭 O ALERTA DA MALA AZUL. Parte 2. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
+  "origem_inspiracao_numero": 16,
+  "lote": "virais-originais-20261029",
+  "gerado_automaticamente": false
+}

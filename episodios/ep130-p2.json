@@ -1,0 +1,104 @@
+{
+  "id": "ep130-p2",
+  "ep": 130,
+  "parte": 2,
+  "titulo": "ELE FOI EMBORA, ELA ABRIU A LOJA",
+  "temporada": "Histórias adaptadas 2026",
+  "cenario": "noite",
+  "batidas": [
+    {
+      "fala": "Na primeira parte, Irene encontrou uma pista que não fazia sentido. Agora olha como essa situação realmente terminou.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "primeira",
+        "parte,"
+      ]
+    },
+    {
+      "fala": "Ela queria comprar peças da oficina para uma feira, porque acompanhava o trabalho de Irene havia anos, mesmo sem elogiar.",
+      "expr": "neutra",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "queria",
+        "comprar"
+      ]
+    },
+    {
+      "fala": "Não foi uma resposta que chegou pronta. Primeiro vieram dúvidas, depois uma conversa desconfortável e, só então, a informação que faltava para entender o que estava acontecendo.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "resposta",
+        "chegou"
+      ]
+    },
+    {
+      "fala": "As duas passaram a organizar pedidos e descobriram que discordavam sobre muita coisa, mas não sobre a qualidade das peças.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "passaram",
+        "organizar"
+      ]
+    },
+    {
+      "fala": "Irene não usou o negócio para provocar o ex; investiu em aprender preço, entrega e atendimento com calma.",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete_v"
+      ],
+      "destaque": [
+        "negócio",
+        "provocar"
+      ]
+    },
+    {
+      "fala": "Quem estava envolvido teve de assumir as próprias escolhas. E foi justamente nessa conversa, sem plateia, que a história ganhou outra direção.",
+      "expr": "ironica",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "estava",
+        "envolvido"
+      ]
+    },
+    {
+      "fala": "No dia em que abriu a pequena loja, a sogra foi a primeira cliente e disse: minha família mudou, meu respeito pelo seu trabalho não.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "pequena",
+        "primeira"
+      ]
+    },
+    {
+      "fala": "Se fosse com você, teria reagido como Irene ou feito diferente? Me conta, porque eu quero saber o que vocês acharam dessa virada.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "reagido",
+        "diferente?"
+      ]
+    }
+  ],
+  "fim": "SEGUE A NINA",
+  "legenda_post": "🎭 ELE FOI EMBORA, ELA ABRIU A LOJA. A conclusão veio com uma reviravolta. Você teria feito diferente?\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+  "legenda_tiktok": "🎭 ELE FOI EMBORA, ELA ABRIU A LOJA. Parte 2. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
+  "origem_inspiracao_numero": 38,
+  "lote": "virais-originais-20261029",
+  "gerado_automaticamente": false
+}

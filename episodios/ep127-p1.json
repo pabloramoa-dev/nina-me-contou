@@ -1,0 +1,104 @@
+{
+  "id": "ep127-p1",
+  "ep": 127,
+  "parte": 1,
+  "titulo": "A PLANILHA DO CASAMENTO",
+  "temporada": "Histórias adaptadas 2026",
+  "cenario": "tarde",
+  "batidas": [
+    {
+      "fala": "Flávia publicou quanto gastou no casamento e um número inexplicável na planilha virou assunto de toda a família.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "Flávia",
+        "publicou"
+      ]
+    },
+    {
+      "fala": "A protagonista desta história é Flávia. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
+      "expr": "neutra",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "protagonista",
+        "história"
+      ]
+    },
+    {
+      "fala": "Os convidados achavam que ela tinha recebido tudo de graça, mas as colunas mostravam dezenas de pequenas economias.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "convidados",
+        "achavam"
+      ]
+    },
+    {
+      "fala": "Uma linha chamada convidados invisíveis custava quase tanto quanto o bolo e ninguém conseguia entender o motivo.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "chamada",
+        "convidados"
+      ]
+    },
+    {
+      "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete_v"
+      ],
+      "destaque": [
+        "detalhe",
+        "parecia"
+      ]
+    },
+    {
+      "fala": "Flávia deixou a planilha aberta por engano durante uma reunião e ouviu parentes concluindo que existia uma lista secreta de convidados.",
+      "expr": "ironica",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "Flávia",
+        "deixou"
+      ]
+    },
+    {
+      "fala": "E aqui começa a parte mais surpreendente: Flávia decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "começa",
+        "surpreendente:"
+      ]
+    },
+    {
+      "fala": "Na parte dois, vem a explicação completa e uma decisão que mudou o rumo dessa história.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "explicação",
+        "completa"
+      ]
+    }
+  ],
+  "fim": "CONTINUA NA PARTE 2",
+  "legenda_post": "🎭 A PLANILHA DO CASAMENTO. Uma pista muda a história. Parte 2 em breve.\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+  "legenda_tiktok": "🎭 A PLANILHA DO CASAMENTO. Parte 1. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
+  "origem_inspiracao_numero": 31,
+  "lote": "virais-originais-20261029",
+  "gerado_automaticamente": false
+}

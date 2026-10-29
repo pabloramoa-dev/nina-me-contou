@@ -1,0 +1,104 @@
+{
+  "id": "ep123-p1",
+  "ep": 123,
+  "parte": 1,
+  "titulo": "A ABELHA NO PRIMEIRO ENCONTRO",
+  "temporada": "Histórias adaptadas 2026",
+  "cenario": "tarde",
+  "batidas": [
+    {
+      "fala": "Camila jurava que o primeiro encontro tinha sido arruinado por uma abelha, até descobrir por que o rapaz carregava três vasos vazios.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "Camila",
+        "jurava"
+      ]
+    },
+    {
+      "fala": "A protagonista desta história é Camila. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
+      "expr": "neutra",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "protagonista",
+        "história"
+      ]
+    },
+    {
+      "fala": "Os dois combinaram um café num jardim e ele insistiu em sentar perto de flores, mesmo com o vento mudando toda hora.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "combinaram",
+        "jardim"
+      ]
+    },
+    {
+      "fala": "Depois de um susto com uma abelha, Camila quis ir embora e percebeu que havia uma pequena placa de homenagem perto do banco.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "Depois",
+        "abelha,"
+      ]
+    },
+    {
+      "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete_v"
+      ],
+      "destaque": [
+        "detalhe",
+        "parecia"
+      ]
+    },
+    {
+      "fala": "O rapaz contou que costumava visitar aquele jardim com a avó e que voltara para entregar mudas que ela havia cultivado.",
+      "expr": "ironica",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "contou",
+        "costumava"
+      ]
+    },
+    {
+      "fala": "E aqui começa a parte mais surpreendente: Camila decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "começa",
+        "surpreendente:"
+      ]
+    },
+    {
+      "fala": "Na parte dois, vem a explicação completa e uma decisão que mudou o rumo dessa história.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "explicação",
+        "completa"
+      ]
+    }
+  ],
+  "fim": "CONTINUA NA PARTE 2",
+  "legenda_post": "🎭 A ABELHA NO PRIMEIRO ENCONTRO. Uma pista muda a história. Parte 2 em breve.\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+  "legenda_tiktok": "🎭 A ABELHA NO PRIMEIRO ENCONTRO. Parte 1. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
+  "origem_inspiracao_numero": 27,
+  "lote": "virais-originais-20261029",
+  "gerado_automaticamente": false
+}

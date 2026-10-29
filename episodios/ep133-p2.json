@@ -1,0 +1,104 @@
+{
+  "id": "ep133-p2",
+  "ep": 133,
+  "parte": 2,
+  "titulo": "A INFLUENCIADORA ESCOLHIDA PELOS SOGROS",
+  "temporada": "Histórias adaptadas 2026",
+  "cenario": "noite",
+  "batidas": [
+    {
+      "fala": "Na primeira parte, Rute encontrou uma pista que não fazia sentido. Agora olha como essa situação realmente terminou.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "primeira",
+        "parte,"
+      ]
+    },
+    {
+      "fala": "A influenciadora explicou que tinha sido contratada para falar sobre um projeto de comunicação, não para competir por namorado.",
+      "expr": "neutra",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "influenciadora",
+        "explicou"
+      ]
+    },
+    {
+      "fala": "Não foi uma resposta que chegou pronta. Primeiro vieram dúvidas, depois uma conversa desconfortável e, só então, a informação que faltava para entender o que estava acontecendo.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "resposta",
+        "chegou"
+      ]
+    },
+    {
+      "fala": "O filho dos anfitriões pediu desculpas a Rute por não ter impedido o constrangimento e disse que decidiria sua própria vida.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "anfitriões",
+        "desculpas"
+      ]
+    },
+    {
+      "fala": "A convidada saiu, mas antes sugeriu que a família investisse a energia do jantar em apoiar o negócio que Rute começava.",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete_v"
+      ],
+      "destaque": [
+        "convidada",
+        "sugeriu"
+      ]
+    },
+    {
+      "fala": "Quem estava envolvido teve de assumir as próprias escolhas. E foi justamente nessa conversa, sem plateia, que a história ganhou outra direção.",
+      "expr": "ironica",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "estava",
+        "envolvido"
+      ]
+    },
+    {
+      "fala": "Rute aceitou conversar de novo com o namorado, não com a promessa de agradar aos sogros. Respeito não é um concurso.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "aceitou",
+        "conversar"
+      ]
+    },
+    {
+      "fala": "Se fosse com você, teria reagido como Rute ou feito diferente? Me conta, porque eu quero saber o que vocês acharam dessa virada.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "reagido",
+        "diferente?"
+      ]
+    }
+  ],
+  "fim": "SEGUE A NINA",
+  "legenda_post": "🎭 A INFLUENCIADORA ESCOLHIDA PELOS SOGROS. A conclusão veio com uma reviravolta. Você teria feito diferente?\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+  "legenda_tiktok": "🎭 A INFLUENCIADORA ESCOLHIDA PELOS SOGROS. Parte 2. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
+  "origem_inspiracao_numero": 42,
+  "lote": "virais-originais-20261029",
+  "gerado_automaticamente": false
+}

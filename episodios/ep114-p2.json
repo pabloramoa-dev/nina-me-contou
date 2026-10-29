@@ -1,0 +1,104 @@
+{
+  "id": "ep114-p2",
+  "ep": 114,
+  "parte": 2,
+  "titulo": "A FOTO QUE PARECIA OUTRA VIDA",
+  "temporada": "Histórias adaptadas 2026",
+  "cenario": "noite",
+  "batidas": [
+    {
+      "fala": "Na primeira parte, Sofia encontrou uma pista que não fazia sentido. Agora olha como essa situação realmente terminou.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "primeira",
+        "parte,"
+      ]
+    },
+    {
+      "fala": "O nome era de uma antiga vizinha que cuidava de Sofia enquanto a mãe trabalhava durante a noite.",
+      "expr": "neutra",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "antiga",
+        "vizinha"
+      ]
+    },
+    {
+      "fala": "Não foi uma resposta que chegou pronta. Primeiro vieram dúvidas, depois uma conversa desconfortável e, só então, a informação que faltava para entender o que estava acontecendo.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "resposta",
+        "chegou"
+      ]
+    },
+    {
+      "fala": "A rua dos sonhos era real; ela passara muitas tardes ali antes de a família se mudar às pressas por causa do emprego.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "sonhos",
+        "passara"
+      ]
+    },
+    {
+      "fala": "Quando voltou ao bairro, Sofia encontrou a padaria reformada e a vizinha que guardara seus desenhos numa caixa de lata.",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete_v"
+      ],
+      "destaque": [
+        "Quando",
+        "voltou"
+      ]
+    },
+    {
+      "fala": "Quem estava envolvido teve de assumir as próprias escolhas. E foi justamente nessa conversa, sem plateia, que a história ganhou outra direção.",
+      "expr": "ironica",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "estava",
+        "envolvido"
+      ]
+    },
+    {
+      "fala": "Ela descobriu que a memória inventa caminhos, mas às vezes basta uma foto para reencontrar o lugar que fez alguém se sentir em casa.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "descobriu",
+        "memória"
+      ]
+    },
+    {
+      "fala": "Se fosse com você, teria reagido como Sofia ou feito diferente? Me conta, porque eu quero saber o que vocês acharam dessa virada.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "reagido",
+        "diferente?"
+      ]
+    }
+  ],
+  "fim": "SEGUE A NINA",
+  "legenda_post": "🎭 A FOTO QUE PARECIA OUTRA VIDA. A conclusão veio com uma reviravolta. Você teria feito diferente?\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+  "legenda_tiktok": "🎭 A FOTO QUE PARECIA OUTRA VIDA. Parte 2. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
+  "origem_inspiracao_numero": 11,
+  "lote": "virais-originais-20261029",
+  "gerado_automaticamente": false
+}

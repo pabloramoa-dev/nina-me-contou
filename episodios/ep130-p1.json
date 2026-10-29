@@ -1,0 +1,104 @@
+{
+  "id": "ep130-p1",
+  "ep": 130,
+  "parte": 1,
+  "titulo": "ELE FOI EMBORA, ELA ABRIU A LOJA",
+  "temporada": "Histórias adaptadas 2026",
+  "cenario": "tarde",
+  "batidas": [
+    {
+      "fala": "Irene descobriu que o marido planejava sair de casa e ficou ainda mais surpresa ao receber uma ligação da própria sogra.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "descobriu",
+        "marido"
+      ]
+    },
+    {
+      "fala": "A protagonista desta história é Irene. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
+      "expr": "neutra",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "protagonista",
+        "história"
+      ]
+    },
+    {
+      "fala": "Ele disse que queria recomeçar a vida com outra pessoa e deixou sobre a mesa uma lista de objetos que pretendia levar.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "queria",
+        "recomeçar"
+      ]
+    },
+    {
+      "fala": "Irene não discutiu sobre os móveis naquela noite; estava preocupada com a oficina de cerâmica que mantinha no quintal.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "discutiu",
+        "móveis"
+      ]
+    },
+    {
+      "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete_v"
+      ],
+      "destaque": [
+        "detalhe",
+        "parecia"
+      ]
+    },
+    {
+      "fala": "A sogra apareceu com um caderno de encomendas e fez uma proposta que Irene não esperava escutar.",
+      "expr": "ironica",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "apareceu",
+        "caderno"
+      ]
+    },
+    {
+      "fala": "E aqui começa a parte mais surpreendente: Irene decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "começa",
+        "surpreendente:"
+      ]
+    },
+    {
+      "fala": "Na parte dois, vem a explicação completa e uma decisão que mudou o rumo dessa história.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "explicação",
+        "completa"
+      ]
+    }
+  ],
+  "fim": "CONTINUA NA PARTE 2",
+  "legenda_post": "🎭 ELE FOI EMBORA, ELA ABRIU A LOJA. Uma pista muda a história. Parte 2 em breve.\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+  "legenda_tiktok": "🎭 ELE FOI EMBORA, ELA ABRIU A LOJA. Parte 1. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
+  "origem_inspiracao_numero": 38,
+  "lote": "virais-originais-20261029",
+  "gerado_automaticamente": false
+}

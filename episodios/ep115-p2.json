@@ -1,0 +1,104 @@
+{
+  "id": "ep115-p2",
+  "ep": 115,
+  "parte": 2,
+  "titulo": "A PIOR ESPOSA DO BAIRRO",
+  "temporada": "Histórias adaptadas 2026",
+  "cenario": "noite",
+  "batidas": [
+    {
+      "fala": "Na primeira parte, Mirela encontrou uma pista que não fazia sentido. Agora olha como essa situação realmente terminou.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "primeira",
+        "parte,"
+      ]
+    },
+    {
+      "fala": "Mirela respondeu que ninguém precisava de uma planilha para reconhecer respeito e que não aceitaria mais humilhação pública.",
+      "expr": "neutra",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "Mirela",
+        "respondeu"
+      ]
+    },
+    {
+      "fala": "Não foi uma resposta que chegou pronta. Primeiro vieram dúvidas, depois uma conversa desconfortável e, só então, a informação que faltava para entender o que estava acontecendo.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "resposta",
+        "chegou"
+      ]
+    },
+    {
+      "fala": "O caderno não era arma para uma discussão; era a prova para ela mesma de quanto havia deixado seus projetos de lado.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "caderno",
+        "discussão;"
+      ]
+    },
+    {
+      "fala": "Ela dividiu responsabilidades por escrito e retomou um curso de fotografia que adiava havia anos.",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete_v"
+      ],
+      "destaque": [
+        "dividiu",
+        "responsabilidades"
+      ]
+    },
+    {
+      "fala": "Quem estava envolvido teve de assumir as próprias escolhas. E foi justamente nessa conversa, sem plateia, que a história ganhou outra direção.",
+      "expr": "ironica",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "estava",
+        "envolvido"
+      ]
+    },
+    {
+      "fala": "O marido aceitou procurar ajuda para mudar a relação, mas a decisão dela não ficou condicionada a uma promessa bonita.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "marido",
+        "aceitou"
+      ]
+    },
+    {
+      "fala": "Se fosse com você, teria reagido como Mirela ou feito diferente? Me conta, porque eu quero saber o que vocês acharam dessa virada.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "reagido",
+        "Mirela"
+      ]
+    }
+  ],
+  "fim": "SEGUE A NINA",
+  "legenda_post": "🎭 A PIOR ESPOSA DO BAIRRO. A conclusão veio com uma reviravolta. Você teria feito diferente?\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+  "legenda_tiktok": "🎭 A PIOR ESPOSA DO BAIRRO. Parte 2. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
+  "origem_inspiracao_numero": 12,
+  "lote": "virais-originais-20261029",
+  "gerado_automaticamente": false
+}

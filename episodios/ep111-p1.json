@@ -1,0 +1,104 @@
+{
+  "id": "ep111-p1",
+  "ep": 111,
+  "parte": 1,
+  "titulo": "A AGENDA DAS QUINTAS",
+  "temporada": "Histórias adaptadas 2026",
+  "cenario": "tarde",
+  "batidas": [
+    {
+      "fala": "Nádia pensou que seu casamento estava acabando quando encontrou no celular do marido uma agenda chamada nossa outra vida.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "pensou",
+        "casamento"
+      ]
+    },
+    {
+      "fala": "A protagonista desta história é Nádia. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
+      "expr": "neutra",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "protagonista",
+        "história"
+      ]
+    },
+    {
+      "fala": "As entradas apareciam toda quinta, com o nome de uma mulher e valores que ninguém explicava nas contas da casa.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "entradas",
+        "apareciam"
+      ]
+    },
+    {
+      "fala": "Ele disse que era assunto pessoal e saiu para uma reunião, deixando Nádia com uma chave numerada sobre a mesa.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "assunto",
+        "pessoal"
+      ]
+    },
+    {
+      "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete_v"
+      ],
+      "destaque": [
+        "detalhe",
+        "parecia"
+      ]
+    },
+    {
+      "fala": "Ela foi até o endereço da agenda e viu o marido entrar numa sala onde outras pessoas carregavam caixas idênticas.",
+      "expr": "ironica",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "endereço",
+        "agenda"
+      ]
+    },
+    {
+      "fala": "E aqui começa a parte mais surpreendente: Nádia decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "começa",
+        "surpreendente:"
+      ]
+    },
+    {
+      "fala": "Na parte dois, vem a explicação completa e uma decisão que mudou o rumo dessa história.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "explicação",
+        "completa"
+      ]
+    }
+  ],
+  "fim": "CONTINUA NA PARTE 2",
+  "legenda_post": "🎭 A AGENDA DAS QUINTAS. Uma pista muda a história. Parte 2 em breve.\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+  "legenda_tiktok": "🎭 A AGENDA DAS QUINTAS. Parte 1. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
+  "origem_inspiracao_numero": 8,
+  "lote": "virais-originais-20261029",
+  "gerado_automaticamente": false
+}

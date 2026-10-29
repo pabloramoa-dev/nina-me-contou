@@ -1,0 +1,104 @@
+{
+  "id": "ep115-p1",
+  "ep": 115,
+  "parte": 1,
+  "titulo": "A PIOR ESPOSA DO BAIRRO",
+  "temporada": "Histórias adaptadas 2026",
+  "cenario": "tarde",
+  "batidas": [
+    {
+      "fala": "O marido de Mirela contou a todos que ela era a pior esposa do bairro, mas esqueceu que ela guardava o caderno das despesas.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "marido",
+        "Mirela"
+      ]
+    },
+    {
+      "fala": "A protagonista desta história é Mirela. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
+      "expr": "neutra",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "protagonista",
+        "história"
+      ]
+    },
+    {
+      "fala": "No aniversário da sogra, ele fez piada dizendo que Mirela nunca ajudava em casa, diante de uma mesa cheia de convidados.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "aniversário",
+        "sogra,"
+      ]
+    },
+    {
+      "fala": "Ela não discutiu na hora. Naquela noite abriu o caderno e percebeu que havia desistido de contar o próprio esforço.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "discutiu",
+        "Naquela"
+      ]
+    },
+    {
+      "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete_v"
+      ],
+      "destaque": [
+        "detalhe",
+        "parecia"
+      ]
+    },
+    {
+      "fala": "Na manhã seguinte, o marido pediu que ela organizasse outra festa e disse que não precisava agradecer por tarefas normais.",
+      "expr": "ironica",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "seguinte,",
+        "marido"
+      ]
+    },
+    {
+      "fala": "E aqui começa a parte mais surpreendente: Mirela decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "começa",
+        "surpreendente:"
+      ]
+    },
+    {
+      "fala": "Na parte dois, vem a explicação completa e uma decisão que mudou o rumo dessa história.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "explicação",
+        "completa"
+      ]
+    }
+  ],
+  "fim": "CONTINUA NA PARTE 2",
+  "legenda_post": "🎭 A PIOR ESPOSA DO BAIRRO. Uma pista muda a história. Parte 2 em breve.\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+  "legenda_tiktok": "🎭 A PIOR ESPOSA DO BAIRRO. Parte 1. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
+  "origem_inspiracao_numero": 12,
+  "lote": "virais-originais-20261029",
+  "gerado_automaticamente": false
+}

@@ -1,0 +1,104 @@
+{
+  "id": "ep106-p1",
+  "ep": 106,
+  "parte": 1,
+  "titulo": "O ENCONTRO QUE MINHA MÃE MARCOU",
+  "temporada": "Histórias adaptadas 2026",
+  "cenario": "tarde",
+  "batidas": [
+    {
+      "fala": "Minha mãe marcou um encontro às cegas para Bia e, quando ela chegou, havia duas reservas com seu nome e nenhum pretendente à vista.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "marcou",
+        "encontro"
+      ]
+    },
+    {
+      "fala": "A protagonista desta história é Bia. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
+      "expr": "neutra",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "protagonista",
+        "história"
+      ]
+    },
+    {
+      "fala": "A mãe jurava que era coincidência, mas Bia reconheceu no guardanapo o desenho de uma bicicleta que tinha perdido na adolescência.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "jurava",
+        "coincidência,"
+      ]
+    },
+    {
+      "fala": "O garçom trouxe um envelope antigo e avisou que alguém esperava havia quinze anos para devolver uma coisa que era dela.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "garçom",
+        "trouxe"
+      ]
+    },
+    {
+      "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete_v"
+      ],
+      "destaque": [
+        "detalhe",
+        "parecia"
+      ]
+    },
+    {
+      "fala": "Bia abriu só a primeira página: uma carta do rapaz que ela ajudou depois de um acidente de bicicleta na escola.",
+      "expr": "ironica",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "primeira",
+        "página:"
+      ]
+    },
+    {
+      "fala": "E aqui começa a parte mais surpreendente: Bia decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "começa",
+        "surpreendente:"
+      ]
+    },
+    {
+      "fala": "Na parte dois, vem a explicação completa e uma decisão que mudou o rumo dessa história.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "explicação",
+        "completa"
+      ]
+    }
+  ],
+  "fim": "CONTINUA NA PARTE 2",
+  "legenda_post": "🎭 O ENCONTRO QUE MINHA MÃE MARCOU. Uma pista muda a história. Parte 2 em breve.\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+  "legenda_tiktok": "🎭 O ENCONTRO QUE MINHA MÃE MARCOU. Parte 1. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
+  "origem_inspiracao_numero": 1,
+  "lote": "virais-originais-20261029",
+  "gerado_automaticamente": false
+}

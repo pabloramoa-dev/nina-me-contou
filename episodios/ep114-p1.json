@@ -1,0 +1,104 @@
+{
+  "id": "ep114-p1",
+  "ep": 114,
+  "parte": 1,
+  "titulo": "A FOTO QUE PARECIA OUTRA VIDA",
+  "temporada": "Histórias adaptadas 2026",
+  "cenario": "tarde",
+  "batidas": [
+    {
+      "fala": "Sofia jurava conhecer aquela rua dos sonhos, até encontrar uma foto do lugar dentro de uma caixa que nunca tinha aberto.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "jurava",
+        "conhecer"
+      ]
+    },
+    {
+      "fala": "A protagonista desta história é Sofia. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
+      "expr": "neutra",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "protagonista",
+        "história"
+      ]
+    },
+    {
+      "fala": "A imagem mostrava uma padaria, uma bicicleta vermelha e uma janela azul, exatamente como ela descrevera no caderno.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "imagem",
+        "mostrava"
+      ]
+    },
+    {
+      "fala": "A mãe disse que era só coincidência, mas ficou em silêncio quando Sofia perguntou por que a foto estava rasgada.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "coincidência,",
+        "silêncio"
+      ]
+    },
+    {
+      "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete_v"
+      ],
+      "destaque": [
+        "detalhe",
+        "parecia"
+      ]
+    },
+    {
+      "fala": "No verso havia a data de um passeio de infância que ninguém comentava e um nome escrito com letra muito conhecida.",
+      "expr": "ironica",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "passeio",
+        "infância"
+      ]
+    },
+    {
+      "fala": "E aqui começa a parte mais surpreendente: Sofia decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "começa",
+        "surpreendente:"
+      ]
+    },
+    {
+      "fala": "Na parte dois, vem a explicação completa e uma decisão que mudou o rumo dessa história.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "explicação",
+        "completa"
+      ]
+    }
+  ],
+  "fim": "CONTINUA NA PARTE 2",
+  "legenda_post": "🎭 A FOTO QUE PARECIA OUTRA VIDA. Uma pista muda a história. Parte 2 em breve.\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+  "legenda_tiktok": "🎭 A FOTO QUE PARECIA OUTRA VIDA. Parte 1. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
+  "origem_inspiracao_numero": 11,
+  "lote": "virais-originais-20261029",
+  "gerado_automaticamente": false
+}

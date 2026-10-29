@@ -1,0 +1,104 @@
+{
+  "id": "ep119-p2",
+  "ep": 119,
+  "parte": 2,
+  "titulo": "AS UNHAS AMARELAS DO NOIVADO",
+  "temporada": "Histórias adaptadas 2026",
+  "cenario": "noite",
+  "batidas": [
+    {
+      "fala": "Na primeira parte, Paula encontrou uma pista que não fazia sentido. Agora olha como essa situação realmente terminou.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "primeira",
+        "parte,"
+      ]
+    },
+    {
+      "fala": "Na bancada encontrou um pote de cúrcuma usado numa receita nova e lembrou de ter retirado as luvas para fotografar o prato.",
+      "expr": "neutra",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "bancada",
+        "encontrou"
+      ]
+    },
+    {
+      "fala": "Não foi uma resposta que chegou pronta. Primeiro vieram dúvidas, depois uma conversa desconfortável e, só então, a informação que faltava para entender o que estava acontecendo.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "resposta",
+        "chegou"
+      ]
+    },
+    {
+      "fala": "A manicure explicou como a pigmentação poderia sair com o tempo e ofereceu uma cor diferente para a festa.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "manicure",
+        "explicou"
+      ]
+    },
+    {
+      "fala": "Paula pediu desculpas publicamente à colega que fora atacada sem motivo e publicou a receita do prato responsável.",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete_v"
+      ],
+      "destaque": [
+        "desculpas",
+        "publicamente"
+      ]
+    },
+    {
+      "fala": "Quem estava envolvido teve de assumir as próprias escolhas. E foi justamente nessa conversa, sem plateia, que a história ganhou outra direção.",
+      "expr": "ironica",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "estava",
+        "envolvido"
+      ]
+    },
+    {
+      "fala": "Na festa, exibiu as unhas pintadas de azul e fez um brinde à melhor lição daquele mês: investigar antes de espalhar uma história.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "festa,",
+        "exibiu"
+      ]
+    },
+    {
+      "fala": "Se fosse com você, teria reagido como Paula ou feito diferente? Me conta, porque eu quero saber o que vocês acharam dessa virada.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "reagido",
+        "diferente?"
+      ]
+    }
+  ],
+  "fim": "SEGUE A NINA",
+  "legenda_post": "🎭 AS UNHAS AMARELAS DO NOIVADO. A conclusão veio com uma reviravolta. Você teria feito diferente?\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+  "legenda_tiktok": "🎭 AS UNHAS AMARELAS DO NOIVADO. Parte 2. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
+  "origem_inspiracao_numero": 21,
+  "lote": "virais-originais-20261029",
+  "gerado_automaticamente": false
+}

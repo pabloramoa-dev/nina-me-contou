@@ -1,0 +1,104 @@
+{
+  "id": "ep125-p1",
+  "ep": 125,
+  "parte": 1,
+  "titulo": "QUARENTA E OITO HORAS PARA CASAR",
+  "temporada": "Histórias adaptadas 2026",
+  "cenario": "tarde",
+  "batidas": [
+    {
+      "fala": "Aline perdeu o salão do casamento a quarenta e oito horas da cerimônia e recebeu um convite para conhecer uma biblioteca fechada.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": [
+        "perdeu",
+        "casamento"
+      ]
+    },
+    {
+      "fala": "A protagonista desta história é Aline. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
+      "expr": "neutra",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "protagonista",
+        "história"
+      ]
+    },
+    {
+      "fala": "O espaço reservado teve um problema de manutenção, e cada telefonema parecia trazer uma solução mais cara do que a anterior.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "espaço",
+        "reservado"
+      ]
+    },
+    {
+      "fala": "A costureira ouviu a notícia enquanto ajustava o vestido e pediu que Aline levasse uma caixa de fotos para a biblioteca.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "costureira",
+        "notícia"
+      ]
+    },
+    {
+      "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
+      "expr": "desconfiada",
+      "arte": [
+        "manchete_v"
+      ],
+      "destaque": [
+        "detalhe",
+        "parecia"
+      ]
+    },
+    {
+      "fala": "Quando chegou, encontrou vizinhos medindo mesas, uma professora testando iluminação e uma faixa dobrada sobre os livros.",
+      "expr": "ironica",
+      "arte": [
+        "celular"
+      ],
+      "destaque": [
+        "Quando",
+        "chegou,"
+      ]
+    },
+    {
+      "fala": "E aqui começa a parte mais surpreendente: Aline decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": [
+        "começa",
+        "surpreendente:"
+      ]
+    },
+    {
+      "fala": "Na parte dois, vem a explicação completa e uma decisão que mudou o rumo dessa história.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": [
+        "explicação",
+        "completa"
+      ]
+    }
+  ],
+  "fim": "CONTINUA NA PARTE 2",
+  "legenda_post": "🎭 QUARENTA E OITO HORAS PARA CASAR. Uma pista muda a história. Parte 2 em breve.\n\nFicção original inspirada em temas populares nas redes, não é relato verificado.\nHistória de ficção.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+  "legenda_tiktok": "🎭 QUARENTA E OITO HORAS PARA CASAR. Parte 1. O que você faria?\nHistória de ficção. #storytime #ninamecontou #historias",
+  "origem_inspiracao_numero": 29,
+  "lote": "virais-originais-20261029",
+  "gerado_automaticamente": false
+}
