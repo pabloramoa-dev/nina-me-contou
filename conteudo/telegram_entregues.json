@@ -11,7 +11,7 @@
   },
   "ep048-p1": {
     "hash": "3b85ff191c527deabc67927623d43a7c810beab3f96893b5b8bb9424f11fcab8",
-    "status": "retry_video",
+    "status": "sending_video",
     "tentativas_incertas": 0
   },
   "ep048-p2": {
