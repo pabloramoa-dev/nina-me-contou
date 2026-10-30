@@ -266,7 +266,7 @@
   },
   "ep115-p1": {
     "hash": "a17b6d789bea50bbf9f765474ce69be81a630f77987366253a8d01268154b95b",
-    "status": "video_sent",
+    "status": "sending_description",
     "tentativas_incertas": 0,
     "telegram_message_id": 41,
     "file_id": "BQACAgEAAxkDAAMpauR-NX_rWXR93MJHe47b3wwibFcAAoEKAAK5EiBH9nhT2NIF0qQ9BA",
