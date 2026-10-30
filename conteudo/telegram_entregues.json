@@ -246,7 +246,11 @@
   },
   "ep114-p1": {
     "hash": "0ed2e0785ba34ea08c1650a0cc088e846aa4b9c92acb73baa88cfa7dc37cf243",
-    "status": "sending_video",
-    "tentativas_incertas": 0
+    "status": "video_sent",
+    "tentativas_incertas": 0,
+    "telegram_message_id": 37,
+    "file_id": "BQACAgEAAxkDAAMlauQFzwYqmm1FLb9owRODQ1EPIJsAAmUJAAK5EiBHgKDjCCpSKNk9BA",
+    "file_size": 18205871,
+    "comprimido": false
   }
 }
