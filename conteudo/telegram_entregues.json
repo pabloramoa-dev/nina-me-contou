@@ -276,7 +276,11 @@
   },
   "ep115-p2": {
     "hash": "aff7023fb630ec1307bd406786b0cea20a33d170d1d84000589e4ec94ad37c73",
-    "status": "sending_video",
-    "tentativas_incertas": 0
+    "status": "video_sent",
+    "tentativas_incertas": 0,
+    "telegram_message_id": 43,
+    "file_id": "BQACAgEAAxkDAAMrauR-QJQ5FTGxmT7Nst2tIiTgTgEAAoIKAAK5EiBHocCtImCfrkU9BA",
+    "file_size": 19026075,
+    "comprimido": false
   }
 }
