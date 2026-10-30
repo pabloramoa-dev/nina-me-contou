@@ -256,7 +256,11 @@
   },
   "ep114-p2": {
     "hash": "727ad2b514df10e5f213740d39391d5df6812621a203f35465c5275b8af10fe4",
-    "status": "sending_video",
-    "tentativas_incertas": 0
+    "status": "video_sent",
+    "tentativas_incertas": 0,
+    "telegram_message_id": 39,
+    "file_id": "BQACAgEAAxkDAAMnauQF2oxOV5WN3CYUdp_44vzthgQAAmYJAAK5EiBHRiGzs9bMJx09BA",
+    "file_size": 18308565,
+    "comprimido": false
   }
 }
