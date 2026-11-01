@@ -2,7 +2,7 @@
 
 garantir_cta(ep) devolve uma cópia do episódio em que:
   - qualquer batida "me segue" fora do final é retirada;
-  - a última batida é sempre o convite pra seguir e não perder a continuação.
+  - a última batida convida a seguir para OUTRAS histórias, nunca outra parte.
 
 O produzir.py aplica isso antes de gerar voz e vídeo, então vale para todo
 roteiro, mesmo que o JSON venha com o CTA no começo ou sem CTA nenhum.
@@ -31,7 +31,7 @@ def eh_cta(b: dict) -> bool:
 def garantir_cta(ep: dict) -> dict:
     ep = copy.deepcopy(ep)
     bats = [b for b in ep["batidas"] if not eh_cta(b)]
-    if ep.get("avulso"):
+    if ep.get("avulso") or ep.get("parte") == "unica":
         bats.append({"fala": CTA_AVULSO, "expr": "ironica", "arte": ["seguir", PLACA_AVULSO],
                      "destaque": ["segue", "próxima."]})
         ep["batidas"] = bats
