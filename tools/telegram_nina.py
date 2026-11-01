@@ -217,8 +217,9 @@ def entregar(video: Path, token: str, chat_id: str, recebidos: dict, persistir: 
         recebidos[video.stem] = recibo
         recibos_salvar(recebidos, persistir)
         parte = episodio.get("parte", "?")
+        formato = "História completa" if parte == "unica" else f"Parte {parte}/2"
         legenda = (f"🎬 Nina Me Contou — {video.stem}\n"
-                   f"Episódio {episodio.get('ep', '?')} · Parte {parte}/2 · {episodio.get('titulo', '')}\n"
+                   f"Episódio {episodio.get('ep', '?')} · {formato} · {episodio.get('titulo', '')}\n"
                    f"Temporada: {episodio.get('temporada', '-')}\n"
                    "MP4 pronto para baixar. A descrição do TikTok vem na próxima mensagem.")
         try:

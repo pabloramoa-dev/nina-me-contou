@@ -163,5 +163,205 @@
     "comprimido": false,
     "description_message_id": 20,
     "entregue_em": "2026-10-29T19:21:49Z"
+  },
+  "ep110-p1": {
+    "hash": "85e3ce3db811d0c91180c1484b9d4300a7c31406114cdc3b7d2522368adfe107",
+    "status": "complete",
+    "telegram_message_id": 21,
+    "file_id": "BQACAgEAAxkDAAMVauOmxUbYXDIytDnO7-qwNHN3XnkAAg0LAAK5EhhHtDSBFi732lM9BA",
+    "file_size": 19122914,
+    "comprimido": false,
+    "description_message_id": 22,
+    "entregue_em": "2026-10-29T20:04:26Z"
+  },
+  "ep110-p2": {
+    "hash": "f6c90fa90c27fecf7474b290f6a7094308cea90d6f2fdd5b8e82d333f244662f",
+    "status": "complete",
+    "telegram_message_id": 23,
+    "file_id": "BQACAgEAAxkDAAMXauOmzxKm2YghR85t4Mn5ixAjf10AAg4LAAK5EhhH7B5Gvyp2r0Q9BA",
+    "file_size": 19071103,
+    "comprimido": false,
+    "description_message_id": 24,
+    "entregue_em": "2026-10-29T20:04:36Z"
+  },
+  "ep111-p1": {
+    "hash": "ec0e96bb8392944158a1d6dc554279e56d7eccd42a038f9ae8ebc6837052f836",
+    "status": "complete",
+    "telegram_message_id": 25,
+    "file_id": "BQACAgEAAxkDAAMZauOm2SyNR1mjiQPE4NmyvsvDsSwAAg8LAAK5EhhHhbYfl_UNekM9BA",
+    "file_size": 18491445,
+    "comprimido": false,
+    "description_message_id": 26,
+    "entregue_em": "2026-10-29T20:04:45Z"
+  },
+  "ep111-p2": {
+    "hash": "8c151b65dec22fca7850d5ea73a6ccd6471f70d92f65298a63e73dcd71e04231",
+    "status": "complete",
+    "telegram_message_id": 27,
+    "file_id": "BQACAgEAAxkDAAMbauOm4_UFP9-BwHKI9IAObsmvAyYAAhALAAK5EhhHkKEhvnoiUeo9BA",
+    "file_size": 19476435,
+    "comprimido": false,
+    "description_message_id": 28,
+    "entregue_em": "2026-10-29T20:04:55Z"
+  },
+  "ep112-p1": {
+    "hash": "509c86f2a18536b9e4eed0afcd30f8773cb1574929e5f785f0102b0466db4385",
+    "status": "complete",
+    "telegram_message_id": 29,
+    "file_id": "BQACAgEAAxkDAAMdauOm7Nv321GOsQbSY0CIjyuwYXAAAhELAAK5EhhHVls7TsVSk8c9BA",
+    "file_size": 18445339,
+    "comprimido": false,
+    "description_message_id": 30,
+    "entregue_em": "2026-10-29T20:05:05Z"
+  },
+  "ep112-p2": {
+    "hash": "8b86da62aa94bd1fdde701976cae7acaf3fb7fc31f4e2f445d231c34076c91df",
+    "status": "complete",
+    "telegram_message_id": 31,
+    "file_id": "BQACAgEAAxkDAAMfauOm9nYG7NRDGdwozC8Kh_NQQ-gAAhILAAK5EhhHmFyf1U6z-q09BA",
+    "file_size": 19425980,
+    "comprimido": false,
+    "description_message_id": 32,
+    "entregue_em": "2026-10-29T20:05:14Z"
+  },
+  "ep113-p1": {
+    "hash": "dcc3957cc3f83f7fb5ce7e0d14b4021cf542f69e55fb93fed38b07146c8edc31",
+    "status": "complete",
+    "telegram_message_id": 33,
+    "file_id": "BQACAgEAAxkDAAMhauOm_4AK2axhYrD0nnYEkGH6V2QAAhMLAAK5EhhHt8J3HRkuYGo9BA",
+    "file_size": 18827904,
+    "comprimido": false,
+    "description_message_id": 34,
+    "entregue_em": "2026-10-29T20:05:24Z"
+  },
+  "ep113-p2": {
+    "hash": "cb9683c6ca474f83444d90bff3765e224afcedd76ecdb6ff460928f27f4411d9",
+    "status": "complete",
+    "telegram_message_id": 35,
+    "file_id": "BQACAgEAAxkDAAMjauOnCseXHWOSJb9U5-416RGbcKQAAhULAAK5EhhHtqV1WAx9EnE9BA",
+    "file_size": 19300351,
+    "comprimido": false,
+    "description_message_id": 36,
+    "entregue_em": "2026-10-29T20:05:35Z"
+  },
+  "ep114-p1": {
+    "hash": "0ed2e0785ba34ea08c1650a0cc088e846aa4b9c92acb73baa88cfa7dc37cf243",
+    "status": "complete",
+    "telegram_message_id": 37,
+    "file_id": "BQACAgEAAxkDAAMlauQFzwYqmm1FLb9owRODQ1EPIJsAAmUJAAK5EiBHgKDjCCpSKNk9BA",
+    "file_size": 18205871,
+    "comprimido": false,
+    "description_message_id": 38,
+    "entregue_em": "2026-10-30T02:49:56Z"
+  },
+  "ep114-p2": {
+    "hash": "727ad2b514df10e5f213740d39391d5df6812621a203f35465c5275b8af10fe4",
+    "status": "complete",
+    "telegram_message_id": 39,
+    "file_id": "BQACAgEAAxkDAAMnauQF2oxOV5WN3CYUdp_44vzthgQAAmYJAAK5EiBHRiGzs9bMJx09BA",
+    "file_size": 18308565,
+    "comprimido": false,
+    "description_message_id": 40,
+    "entregue_em": "2026-10-30T02:50:07Z"
+  },
+  "ep115-p1": {
+    "hash": "a17b6d789bea50bbf9f765474ce69be81a630f77987366253a8d01268154b95b",
+    "status": "complete",
+    "telegram_message_id": 41,
+    "file_id": "BQACAgEAAxkDAAMpauR-NX_rWXR93MJHe47b3wwibFcAAoEKAAK5EiBH9nhT2NIF0qQ9BA",
+    "file_size": 19097909,
+    "comprimido": false,
+    "description_message_id": 42,
+    "entregue_em": "2026-10-30T11:23:38Z"
+  },
+  "ep115-p2": {
+    "hash": "aff7023fb630ec1307bd406786b0cea20a33d170d1d84000589e4ec94ad37c73",
+    "status": "complete",
+    "telegram_message_id": 43,
+    "file_id": "BQACAgEAAxkDAAMrauR-QJQ5FTGxmT7Nst2tIiTgTgEAAoIKAAK5EiBHocCtImCfrkU9BA",
+    "file_size": 19026075,
+    "comprimido": false,
+    "description_message_id": 44,
+    "entregue_em": "2026-10-30T11:23:49Z"
+  },
+  "ep116-p1": {
+    "hash": "959fd3ecb40304aaac770ed2464834e061a3103a53b96711a2239f5dc20fef8c",
+    "status": "complete",
+    "telegram_message_id": 45,
+    "file_id": "BQACAgEAAxkDAAMtauVOY2EO-WX1SnZ33kOPpBVOeN4AApUJAAK5EihHwCfKXXvfAjo9BA",
+    "file_size": 18944838,
+    "comprimido": false,
+    "description_message_id": 46,
+    "entregue_em": "2026-10-31T02:11:51Z"
+  },
+  "ep116-p2": {
+    "hash": "111718bf54ca9af6fe490fe7882629a4efe6fa6fe703dc4c6a103e842f1481a3",
+    "status": "complete",
+    "telegram_message_id": 47,
+    "file_id": "BQACAgEAAxkDAAMvauVObF5Xc2zxtScdgaB7q_-tKP0AApYJAAK5EihHj8Nsl0ylZfc9BA",
+    "file_size": 19464306,
+    "comprimido": false,
+    "description_message_id": 48,
+    "entregue_em": "2026-10-31T02:12:00Z"
+  },
+  "ep117-p1": {
+    "hash": "059046e1b75273317666e90f9e7bca69da14f9ec94ab5b897c51fefb6ca5f626",
+    "status": "complete",
+    "telegram_message_id": 49,
+    "file_id": "BQACAgEAAxkDAAMxauXJqqgU2tZaQI31WA8S-xMrz8EAAiQIAALGkTFH0VotLlI_3I09BA",
+    "file_size": 18685057,
+    "comprimido": false,
+    "description_message_id": 50,
+    "entregue_em": "2026-10-31T10:57:52Z"
+  },
+  "ep117-p2": {
+    "hash": "0efb87c364e3dd3eb1b1c7d9c38cbb87613b62178d76f67a73680906ab2f7ec7",
+    "status": "complete",
+    "telegram_message_id": 51,
+    "file_id": "BQACAgEAAxkDAAMzauXJthQ7n2x52OWAPpDSZtzV5_YAAiYIAALGkTFHGXcCdIzj7k49BA",
+    "file_size": 19558333,
+    "comprimido": false,
+    "description_message_id": 52,
+    "entregue_em": "2026-10-31T10:58:03Z"
+  },
+  "ep118-p1": {
+    "hash": "48690da6d6896c2124489078094f249ccf83a7af0a0d2c0b772c06726fdd61d5",
+    "status": "complete",
+    "telegram_message_id": 53,
+    "file_id": "BQACAgEAAxkDAAM1auac6K42q6ZBibV6KX1MLZpf0fwAAtQIAALGkTlH-Vysnr-wvaM9BA",
+    "file_size": 18453118,
+    "comprimido": false,
+    "description_message_id": 54,
+    "entregue_em": "2026-11-01T01:59:10Z"
+  },
+  "ep118-p2": {
+    "hash": "73bbf0adf44350ed3d08aef6822d7cd3ca3bea7560325e5ba2f862a910f4422f",
+    "status": "complete",
+    "telegram_message_id": 55,
+    "file_id": "BQACAgEAAxkDAAM3auac85nqlMADF8BTKOIRHTcoj4oAAtUIAALGkTlHMLPKLCB8WZM9BA",
+    "file_size": 18924713,
+    "comprimido": false,
+    "description_message_id": 56,
+    "entregue_em": "2026-11-01T01:59:20Z"
+  },
+  "ep119-p1": {
+    "hash": "7b9f0836b4b968a7e61bd3f107304b0e4eb8a98ceddecef4a1d8a662077d8a59",
+    "status": "complete",
+    "telegram_message_id": 57,
+    "file_id": "BQACAgEAAxkDAAM5auc2Or_XGlB1CEQYLVWimJgXSDUAAjoHAALGkUFHDRHvxzkH6Tc9BA",
+    "file_size": 19248906,
+    "comprimido": false,
+    "description_message_id": 58,
+    "entregue_em": "2026-11-01T12:53:19Z"
+  },
+  "ep119-p2": {
+    "hash": "e18ca31a938bfeb3d4bec7f73fca187acb63756509335725d9b01a74571b4735",
+    "status": "complete",
+    "telegram_message_id": 59,
+    "file_id": "BQACAgEAAxkDAAM7auc2RiEUWSuRn0mQyMZhZcGGy3UAAjsHAALGkUFHKaD0kZRXO0M9BA",
+    "file_size": 19485239,
+    "comprimido": false,
+    "description_message_id": 60,
+    "entregue_em": "2026-11-01T12:53:31Z"
   }
 }

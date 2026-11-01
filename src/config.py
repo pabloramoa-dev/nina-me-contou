@@ -11,11 +11,11 @@ EPISODIOS = RAIZ / "episodios"
 REELS = RAIZ / "reels"
 PUBLICADOS_JSON = RAIZ / "conteudo" / "publicados.json"
 
-RESERVA_MINIMA = 8        # episódios completos prontos = 4 dias; abaixo disso abre alerta
+RESERVA_MINIMA = 8        # 8 vídeos completos prontos; abaixo disso abre alerta
 HORARIOS = {"manha": "08h", "almoco": "12h", "tarde": "16h", "noite": "20h"}
 COM_STORY = {"manha", "noite"}   # esses horários também vão pros Stories
-DURACAO_MIN_S = 15.0
-DURACAO_MAX_S = 90.0
+DURACAO_MIN_S = 135.0  # perto dos 3 minutos, com variação de ritmo
+DURACAO_MAX_S = 225.0
 
 
 @dataclass(frozen=True)

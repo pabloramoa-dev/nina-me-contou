@@ -23,11 +23,11 @@ from src.publicar import main as publicar_reel
 
 META_DIARIA = 4
 HORARIOS = tuple(config.HORARIOS)
-PADRAO_REEL = re.compile(r"^ep\d{3}-p[12]$")
+PADRAO_REEL = re.compile(r"^ep\d{3}(?:-p[12])?$")
 
 
 def publicados_no_dia(dia: date) -> set[str]:
-    """Conta apenas Reels de verdade, nao Stories nem ensaios; usa BRT."""
+    """Conta apenas Reels de verdade, antigos ou únicos, não Stories/ensaios; usa BRT."""
     ids: set[str] = set()
     for registro in fila.ler_publicados():
         ep_id = str(registro.get("id", ""))

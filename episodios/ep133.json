@@ -1,0 +1,210 @@
+{
+ "id": "ep133",
+ "ep": 133,
+ "parte": "unica",
+ "titulo": "A INFLUENCIADORA ESCOLHIDA PELOS SOGROS",
+ "temporada": "Histórias adaptadas 2026",
+ "cenario": "tarde",
+ "batidas": [
+  {
+   "fala": "Rute descobriu que os sogros tinham convidado uma influenciadora para o jantar em que ela conheceria oficialmente a família.",
+   "expr": "chocada",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "descobriu",
+    "sogros"
+   ]
+  },
+  {
+   "fala": "A protagonista desta história é Rute. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
+   "expr": "neutra",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "protagonista",
+    "história"
+   ]
+  },
+  {
+   "fala": "Os pais do namorado queriam uma nora famosa e passaram a comparar a profissão de Rute com a vida exibida nas redes.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "namorado",
+    "queriam"
+   ]
+  },
+  {
+   "fala": "Na sobremesa, a convidada tirou o celular da bolsa e perguntou quem havia autorizado usar sua presença como uma surpresa.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "sobremesa,",
+    "convidada"
+   ]
+  },
+  {
+   "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
+   "expr": "desconfiada",
+   "arte": [
+    "manchete_v"
+   ],
+   "destaque": [
+    "detalhe",
+    "parecia"
+   ]
+  },
+  {
+   "fala": "Rute ficou pronta para ir embora quando os sogros disseram que era só uma brincadeira para incentivar ambição.",
+   "expr": "ironica",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "pronta",
+    "embora"
+   ]
+  },
+  {
+   "fala": "E aqui começa a parte mais surpreendente: Rute decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "começa",
+    "surpreendente:"
+   ]
+  },
+  {
+   "fala": "Antes de tomar uma decisão, era preciso entender a ordem das coisas. Um detalhe contado fora de contexto pode fazer uma história parecer completamente diferente.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": []
+  },
+  {
+   "fala": "O silêncio também estava pesando. Não por revelar uma resposta, mas porque deixou cada dúvida crescer até parecer maior que os próprios acontecimentos.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": []
+  },
+  {
+   "fala": "A influenciadora explicou que tinha sido contratada para falar sobre um projeto de comunicação, não para competir por namorado.",
+   "expr": "neutra",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "influenciadora",
+    "explicou"
+   ]
+  },
+  {
+   "fala": "O curioso é como os detalhes se encaixam depois que alguém resolve perguntar, em vez de simplesmente adivinhar. Uma palavra fora do lugar pode mudar toda a interpretação.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": []
+  },
+  {
+   "fala": "Não foi uma resposta que chegou pronta. Primeiro vieram dúvidas, depois uma conversa desconfortável e, só então, a informação que faltava para entender o que estava acontecendo.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "resposta",
+    "chegou"
+   ]
+  },
+  {
+   "fala": "O filho dos anfitriões pediu desculpas a Rute por não ter impedido o constrangimento e disse que decidiria sua própria vida.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "anfitriões",
+    "desculpas"
+   ]
+  },
+  {
+   "fala": "A convidada saiu, mas antes sugeriu que a família investisse a energia do jantar em apoiar o negócio que Rute começava.",
+   "expr": "desconfiada",
+   "arte": [
+    "manchete_v"
+   ],
+   "destaque": [
+    "convidada",
+    "sugeriu"
+   ]
+  },
+  {
+   "fala": "Quem estava envolvido teve de assumir as próprias escolhas. E foi justamente nessa conversa, sem plateia, que a história ganhou outra direção.",
+   "expr": "ironica",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "estava",
+    "envolvido"
+   ]
+  },
+  {
+   "fala": "Rute aceitou conversar de novo com o namorado, não com a promessa de agradar aos sogros. Respeito não é um concurso.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "aceitou",
+    "conversar"
+   ]
+  },
+  {
+   "fala": "Se fosse com você, teria reagido como Rute ou feito diferente? Me conta, porque eu quero saber o que vocês acharam dessa virada.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "reagido",
+    "diferente?"
+   ]
+  },
+  {
+   "fala": "No fim, a conversa trouxe consequências reais. As pessoas envolvidas precisaram assumir suas escolhas e decidir como seguir, sem deixar perguntas essenciais sem resposta.",
+   "expr": "neutra",
+   "arte": [
+    "manchete_v",
+    "O DESFECHO"
+   ],
+   "destaque": [
+    "escolhas"
+   ]
+  }
+ ],
+ "fim": "HISTÓRIA COMPLETA",
+ "legenda_post": "A INFLUENCIADORA ESCOLHIDA PELOS SOGROS\n\nRute descobriu que os sogros tinham convidado uma influenciadora para o jantar em que ela conheceria oficialmente a família.\n\nA história tem começo, reviravolta e desfecho neste vídeo. Qual seria sua decisão?\n\nHistória de ficção. Personagens e acontecimentos fictícios.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+ "legenda_tiktok": "A INFLUENCIADORA ESCOLHIDA PELOS SOGROS\n\nRute descobriu que os sogros tinham convidado uma influenciadora para o jantar em que ela conheceria oficialmente a família.\n\nA história tem começo, reviravolta e desfecho neste vídeo. Qual seria sua decisão?\n\nHistória de ficção. Personagens e acontecimentos fictícios.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+ "gerado_automaticamente": false,
+ "origem_roteiros": [
+  "ep133-p1",
+  "ep133-p2"
+ ],
+ "formato": "historia_unica_3min",
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
+}

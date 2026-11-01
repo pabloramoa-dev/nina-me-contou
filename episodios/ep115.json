@@ -1,0 +1,210 @@
+{
+ "id": "ep115",
+ "ep": 115,
+ "parte": "unica",
+ "titulo": "A PIOR ESPOSA DO BAIRRO",
+ "temporada": "Histórias adaptadas 2026",
+ "cenario": "tarde",
+ "batidas": [
+  {
+   "fala": "O marido de Mirela contou a todos que ela era a pior esposa do bairro, mas esqueceu que ela guardava o caderno das despesas.",
+   "expr": "chocada",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "marido",
+    "Mirela"
+   ]
+  },
+  {
+   "fala": "A protagonista desta história é Mirela. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
+   "expr": "neutra",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "protagonista",
+    "história"
+   ]
+  },
+  {
+   "fala": "No aniversário da sogra, ele fez piada dizendo que Mirela nunca ajudava em casa, diante de uma mesa cheia de convidados.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "aniversário",
+    "sogra,"
+   ]
+  },
+  {
+   "fala": "Ela não discutiu na hora. Naquela noite abriu o caderno e percebeu que havia desistido de contar o próprio esforço.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "discutiu",
+    "Naquela"
+   ]
+  },
+  {
+   "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
+   "expr": "desconfiada",
+   "arte": [
+    "manchete_v"
+   ],
+   "destaque": [
+    "detalhe",
+    "parecia"
+   ]
+  },
+  {
+   "fala": "Na manhã seguinte, o marido pediu que ela organizasse outra festa e disse que não precisava agradecer por tarefas normais.",
+   "expr": "ironica",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "seguinte,",
+    "marido"
+   ]
+  },
+  {
+   "fala": "E aqui começa a parte mais surpreendente: Mirela decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "começa",
+    "surpreendente:"
+   ]
+  },
+  {
+   "fala": "Até aquele momento, cada pessoa enxergava só um pedaço do que aconteceu. A diferença começou quando as versões foram colocadas lado a lado, sem atalhos.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": []
+  },
+  {
+   "fala": "E enquanto a história avançava, uma pergunta ficava no ar: o que mudou de fato? A resposta dependia menos do susto inicial e mais das atitudes seguintes.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": []
+  },
+  {
+   "fala": "Mirela respondeu que ninguém precisava de uma planilha para reconhecer respeito e que não aceitaria mais humilhação pública.",
+   "expr": "neutra",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "Mirela",
+    "respondeu"
+   ]
+  },
+  {
+   "fala": "A cada pergunta, surgia um novo ângulo da mesma situação. E o que parecia apenas uma coincidência começou a exigir uma conversa de verdade.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": []
+  },
+  {
+   "fala": "Não foi uma resposta que chegou pronta. Primeiro vieram dúvidas, depois uma conversa desconfortável e, só então, a informação que faltava para entender o que estava acontecendo.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "resposta",
+    "chegou"
+   ]
+  },
+  {
+   "fala": "O caderno não era arma para uma discussão; era a prova para ela mesma de quanto havia deixado seus projetos de lado.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "caderno",
+    "discussão;"
+   ]
+  },
+  {
+   "fala": "Ela dividiu responsabilidades por escrito e retomou um curso de fotografia que adiava havia anos.",
+   "expr": "desconfiada",
+   "arte": [
+    "manchete_v"
+   ],
+   "destaque": [
+    "dividiu",
+    "responsabilidades"
+   ]
+  },
+  {
+   "fala": "Quem estava envolvido teve de assumir as próprias escolhas. E foi justamente nessa conversa, sem plateia, que a história ganhou outra direção.",
+   "expr": "ironica",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "estava",
+    "envolvido"
+   ]
+  },
+  {
+   "fala": "O marido aceitou procurar ajuda para mudar a relação, mas a decisão dela não ficou condicionada a uma promessa bonita.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "marido",
+    "aceitou"
+   ]
+  },
+  {
+   "fala": "Se fosse com você, teria reagido como Mirela ou feito diferente? Me conta, porque eu quero saber o que vocês acharam dessa virada.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "reagido",
+    "Mirela"
+   ]
+  },
+  {
+   "fala": "No fim, a conversa trouxe consequências reais. As pessoas envolvidas precisaram assumir suas escolhas e decidir como seguir, sem deixar perguntas essenciais sem resposta.",
+   "expr": "neutra",
+   "arte": [
+    "manchete_v",
+    "O DESFECHO"
+   ],
+   "destaque": [
+    "escolhas"
+   ]
+  }
+ ],
+ "fim": "HISTÓRIA COMPLETA",
+ "legenda_post": "A PIOR ESPOSA DO BAIRRO\n\nO marido de Mirela contou a todos que ela era a pior esposa do bairro, mas esqueceu que ela guardava o caderno das despesas.\n\nA história tem começo, reviravolta e desfecho neste vídeo. Qual seria sua decisão?\n\nHistória de ficção. Personagens e acontecimentos fictícios.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+ "legenda_tiktok": "A PIOR ESPOSA DO BAIRRO\n\nO marido de Mirela contou a todos que ela era a pior esposa do bairro, mas esqueceu que ela guardava o caderno das despesas.\n\nA história tem começo, reviravolta e desfecho neste vídeo. Qual seria sua decisão?\n\nHistória de ficção. Personagens e acontecimentos fictícios.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+ "gerado_automaticamente": false,
+ "origem_roteiros": [
+  "ep115-p1",
+  "ep115-p2"
+ ],
+ "formato": "historia_unica_3min",
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
+}

@@ -1,0 +1,210 @@
+{
+ "id": "ep126",
+ "ep": 126,
+ "parte": "unica",
+ "titulo": "A VIAGEM COM DATA ERRADA",
+ "temporada": "Histórias adaptadas 2026",
+ "cenario": "tarde",
+ "batidas": [
+  {
+   "fala": "Mônica atravessou o país para surpreender a namorada e encontrou na porta um cartaz de mudança com o endereço de outra cidade.",
+   "expr": "chocada",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "Mônica",
+    "atravessou"
+   ]
+  },
+  {
+   "fala": "A protagonista desta história é Mônica. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
+   "expr": "neutra",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "protagonista",
+    "história"
+   ]
+  },
+  {
+   "fala": "Ela tinha comprado a passagem após ouvir que a namorada passaria o fim de semana livre, mas não confirmou a data.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "comprado",
+    "passagem"
+   ]
+  },
+  {
+   "fala": "No prédio antigo, a porteira entregou um envelope com uma foto das duas e uma pergunta escrita em letras grandes.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "prédio",
+    "antigo,"
+   ]
+  },
+  {
+   "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
+   "expr": "desconfiada",
+   "arte": [
+    "manchete_v"
+   ],
+   "destaque": [
+    "detalhe",
+    "parecia"
+   ]
+  },
+  {
+   "fala": "Mônica abriu a carta imaginando uma despedida e encontrou um desenho de duas malas e um pedido para telefonar antes de aparecer.",
+   "expr": "ironica",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "Mônica",
+    "imaginando"
+   ]
+  },
+  {
+   "fala": "E aqui começa a parte mais surpreendente: Mônica decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "começa",
+    "surpreendente:"
+   ]
+  },
+  {
+   "fala": "A cada pergunta, surgia um novo ângulo da mesma situação. E o que parecia apenas uma coincidência começou a exigir uma conversa de verdade.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": []
+  },
+  {
+   "fala": "Ninguém precisava transformar a situação num espetáculo. O que faltava era ouvir a explicação inteira e separar o que alguém imaginou daquilo que realmente aconteceu.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": []
+  },
+  {
+   "fala": "A namorada havia conseguido uma oportunidade de trabalho e já estava na cidade onde Mônica morava, tentando preparar sua própria surpresa.",
+   "expr": "neutra",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "namorada",
+    "conseguido"
+   ]
+  },
+  {
+   "fala": "E enquanto a história avançava, uma pergunta ficava no ar: o que mudou de fato? A resposta dependia menos do susto inicial e mais das atitudes seguintes.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": []
+  },
+  {
+   "fala": "Não foi uma resposta que chegou pronta. Primeiro vieram dúvidas, depois uma conversa desconfortável e, só então, a informação que faltava para entender o que estava acontecendo.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "resposta",
+    "chegou"
+   ]
+  },
+  {
+   "fala": "As duas se procuraram em aeroportos diferentes por horas até finalmente conversar e perceber que tinham trocado os planos.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "procuraram",
+    "aeroportos"
+   ]
+  },
+  {
+   "fala": "Marcaram uma videochamada, riram do desencontro e combinaram de não transformar segredo em teste de adivinhação.",
+   "expr": "desconfiada",
+   "arte": [
+    "manchete_v"
+   ],
+   "destaque": [
+    "Marcaram",
+    "videochamada,"
+   ]
+  },
+  {
+   "fala": "Quem estava envolvido teve de assumir as próprias escolhas. E foi justamente nessa conversa, sem plateia, que a história ganhou outra direção.",
+   "expr": "ironica",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "estava",
+    "envolvido"
+   ]
+  },
+  {
+   "fala": "Quando se reencontraram, não havia aeroporto lotado nem música de filme, só uma pizza fria e a decisão de conversar melhor.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "Quando",
+    "reencontraram,"
+   ]
+  },
+  {
+   "fala": "Se fosse com você, teria reagido como Mônica ou feito diferente? Me conta, porque eu quero saber o que vocês acharam dessa virada.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "reagido",
+    "Mônica"
+   ]
+  },
+  {
+   "fala": "No fim, a conversa trouxe consequências reais. As pessoas envolvidas precisaram assumir suas escolhas e decidir como seguir, sem deixar perguntas essenciais sem resposta.",
+   "expr": "neutra",
+   "arte": [
+    "manchete_v",
+    "O DESFECHO"
+   ],
+   "destaque": [
+    "escolhas"
+   ]
+  }
+ ],
+ "fim": "HISTÓRIA COMPLETA",
+ "legenda_post": "A VIAGEM COM DATA ERRADA\n\nMônica atravessou o país para surpreender a namorada e encontrou na porta um cartaz de mudança com o endereço de outra cidade.\n\nA história tem começo, reviravolta e desfecho neste vídeo. Qual seria sua decisão?\n\nHistória de ficção. Personagens e acontecimentos fictícios.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+ "legenda_tiktok": "A VIAGEM COM DATA ERRADA\n\nMônica atravessou o país para surpreender a namorada e encontrou na porta um cartaz de mudança com o endereço de outra cidade.\n\nA história tem começo, reviravolta e desfecho neste vídeo. Qual seria sua decisão?\n\nHistória de ficção. Personagens e acontecimentos fictícios.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+ "gerado_automaticamente": false,
+ "origem_roteiros": [
+  "ep126-p1",
+  "ep126-p2"
+ ],
+ "formato": "historia_unica_3min",
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
+}

@@ -1,0 +1,210 @@
+{
+ "id": "ep117",
+ "ep": 117,
+ "parte": "unica",
+ "titulo": "O ALERTA DA MALA AZUL",
+ "temporada": "Histórias adaptadas 2026",
+ "cenario": "tarde",
+ "batidas": [
+  {
+   "fala": "Jéssica estava prestes a viajar com o namorado quando encontrou três etiquetas de bagagem diferentes na mesma mala azul.",
+   "expr": "chocada",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "Jéssica",
+    "estava"
+   ]
+  },
+  {
+   "fala": "A protagonista desta história é Jéssica. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
+   "expr": "neutra",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "protagonista",
+    "história"
+   ]
+  },
+  {
+   "fala": "Cada etiqueta tinha um nome feminino e uma data que coincidia com viagens que ele dizia fazer sozinho a trabalho.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "etiqueta",
+    "feminino"
+   ]
+  },
+  {
+   "fala": "Ele brincou que a mala tinha história, mas ficou irritado quando ela perguntou por que os nomes ainda estavam ali.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "brincou",
+    "história,"
+   ]
+  },
+  {
+   "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
+   "expr": "desconfiada",
+   "arte": [
+    "manchete_v"
+   ],
+   "destaque": [
+    "detalhe",
+    "parecia"
+   ]
+  },
+  {
+   "fala": "Jéssica descobriu um perfil de viagens com fotos do namorado em cidades onde ele nunca admitiu ter ido.",
+   "expr": "ironica",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "Jéssica",
+    "descobriu"
+   ]
+  },
+  {
+   "fala": "E aqui começa a parte mais surpreendente: Jéssica decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "começa",
+    "surpreendente:"
+   ]
+  },
+  {
+   "fala": "E tinha uma coisa importante naquela história: não era possível voltar no tempo e apagar o que já tinha sido dito. Restava descobrir o que fazer com a verdade.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": []
+  },
+  {
+   "fala": "Até aquele momento, cada pessoa enxergava só um pedaço do que aconteceu. A diferença começou quando as versões foram colocadas lado a lado, sem atalhos.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": []
+  },
+  {
+   "fala": "As mulheres eram clientes de uma agência informal e a mala pertencia ao irmão dele, que alugava equipamentos de viagem.",
+   "expr": "neutra",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "mulheres",
+    "clientes"
+   ]
+  },
+  {
+   "fala": "O mais difícil não era encontrar outro indício. Era aceitar que os fatos pediam calma, mesmo com tanta coisa parecendo urgente naquela hora.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": []
+  },
+  {
+   "fala": "Não foi uma resposta que chegou pronta. Primeiro vieram dúvidas, depois uma conversa desconfortável e, só então, a informação que faltava para entender o que estava acontecendo.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "resposta",
+    "chegou"
+   ]
+  },
+  {
+   "fala": "O verdadeiro problema apareceu depois: o namorado havia mentido sobre estar desempregado e fingia viagens de trabalho para esconder vergonha.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "verdadeiro",
+    "problema"
+   ]
+  },
+  {
+   "fala": "Jéssica aceitou ouvir a explicação, mas recusou a ideia de que uma mentira só é grave quando envolve outra pessoa.",
+   "expr": "desconfiada",
+   "arte": [
+    "manchete_v"
+   ],
+   "destaque": [
+    "Jéssica",
+    "aceitou"
+   ]
+  },
+  {
+   "fala": "Quem estava envolvido teve de assumir as próprias escolhas. E foi justamente nessa conversa, sem plateia, que a história ganhou outra direção.",
+   "expr": "ironica",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "estava",
+    "envolvido"
+   ]
+  },
+  {
+   "fala": "Eles cancelaram a viagem e conversaram sobre o futuro com calma. A mala azul deixou de ser mistério, não de ser aviso.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "cancelaram",
+    "viagem"
+   ]
+  },
+  {
+   "fala": "Se fosse com você, teria reagido como Jéssica ou feito diferente? Me conta, porque eu quero saber o que vocês acharam dessa virada.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "reagido",
+    "Jéssica"
+   ]
+  },
+  {
+   "fala": "No fim, a conversa trouxe consequências reais. As pessoas envolvidas precisaram assumir suas escolhas e decidir como seguir, sem deixar perguntas essenciais sem resposta.",
+   "expr": "neutra",
+   "arte": [
+    "manchete_v",
+    "O DESFECHO"
+   ],
+   "destaque": [
+    "escolhas"
+   ]
+  }
+ ],
+ "fim": "HISTÓRIA COMPLETA",
+ "legenda_post": "O ALERTA DA MALA AZUL\n\nJéssica estava prestes a viajar com o namorado quando encontrou três etiquetas de bagagem diferentes na mesma mala azul.\n\nA história tem começo, reviravolta e desfecho neste vídeo. Qual seria sua decisão?\n\nHistória de ficção. Personagens e acontecimentos fictícios.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+ "legenda_tiktok": "O ALERTA DA MALA AZUL\n\nJéssica estava prestes a viajar com o namorado quando encontrou três etiquetas de bagagem diferentes na mesma mala azul.\n\nA história tem começo, reviravolta e desfecho neste vídeo. Qual seria sua decisão?\n\nHistória de ficção. Personagens e acontecimentos fictícios.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+ "gerado_automaticamente": false,
+ "origem_roteiros": [
+  "ep117-p1",
+  "ep117-p2"
+ ],
+ "formato": "historia_unica_3min",
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
+}

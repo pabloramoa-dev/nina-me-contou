@@ -5,7 +5,7 @@
     python -m src.publicar --horario tarde      # 16h: Reel
     python -m src.publicar --horario noite      # 20h: Reel + Story
 
-A ordem é sempre a da fila (parte 1 → parte 2 → próximo episódio).
+A ordem é de episódios completos e inéditos, sem parte 1/parte 2.
 Com DRY_RUN=true ou PUBLICAR_ATIVO=false, faz tudo menos publicar.
 """
 from __future__ import annotations
@@ -44,7 +44,7 @@ def main() -> int:
     capa = f"{cfg.raw_base_url}/reels/{ep_id}-capa.jpg"
     legenda = ep["legenda_post"]
     rel = {"horario": config.HORARIOS[a.horario], "id": ep_id, "titulo": ep["titulo"],
-           "parte": ep["parte"], "video": video, "capa": capa, "story": com_story,
+           "parte": ep.get("parte", "unica"), "video": video, "capa": capa, "story": com_story,
            "duracao": round(fila.duracao(config.REELS / f"{ep_id}.mp4"), 1)}
 
     if cfg.dry_run or not cfg.publicar_ativo:

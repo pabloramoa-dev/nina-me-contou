@@ -1,0 +1,199 @@
+{
+ "id": "ep129",
+ "ep": 129,
+ "parte": "unica",
+ "titulo": "O CAPACETE DO FOTÓGRAFO",
+ "temporada": "Histórias adaptadas 2026",
+ "cenario": "tarde",
+ "batidas": [
+  {
+   "fala": "Tereza contratou um fotógrafo para a formatura e ele apareceu usando um capacete brilhante até dentro do salão.",
+   "expr": "chocada",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "Tereza",
+    "contratou"
+   ]
+  },
+  {
+   "fala": "A protagonista desta história é Tereza. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
+   "expr": "neutra",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "protagonista",
+    "história"
+   ]
+  },
+  {
+   "fala": "Os convidados acharam que era uma fantasia, mas ele respondia a qualquer pergunta com a mesma frase: faz parte do trabalho.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "convidados",
+    "acharam"
+   ]
+  },
+  {
+   "fala": "Quando chegou a hora das fotos oficiais, alguém percebeu que havia um pequeno símbolo colado no capacete.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "Quando",
+    "chegou"
+   ]
+  },
+  {
+   "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
+   "expr": "desconfiada",
+   "arte": [
+    "manchete_v"
+   ],
+   "destaque": [
+    "detalhe",
+    "parecia"
+   ]
+  },
+  {
+   "fala": "Tereza reconheceu o desenho: era o logotipo do clube de robótica da escola onde ela tinha estudado anos antes.",
+   "expr": "ironica",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "Tereza",
+    "reconheceu"
+   ]
+  },
+  {
+   "fala": "E aqui começa a parte mais surpreendente: Tereza decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "começa",
+    "surpreendente:"
+   ]
+  },
+  {
+   "fala": "E tinha uma coisa importante naquela história: não era possível voltar no tempo e apagar o que já tinha sido dito. Restava descobrir o que fazer com a verdade.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": []
+  },
+  {
+   "fala": "Até aquele momento, cada pessoa enxergava só um pedaço do que aconteceu. A diferença começou quando as versões foram colocadas lado a lado, sem atalhos.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": []
+  },
+  {
+   "fala": "O fotógrafo era um ex-aluno que ajudava a turma a arrecadar fundos para uma exposição de invenções feitas pelos estudantes.",
+   "expr": "neutra",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "fotógrafo",
+    "ex-aluno"
+   ]
+  },
+  {
+   "fala": "O mais difícil não era encontrar outro indício. Era aceitar que os fatos pediam calma, mesmo com tanta coisa parecendo urgente naquela hora.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": []
+  },
+  {
+   "fala": "Não foi uma resposta que chegou pronta. Primeiro vieram dúvidas, depois uma conversa desconfortável e, só então, a informação que faltava para entender o que estava acontecendo.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "resposta",
+    "chegou"
+   ]
+  },
+  {
+   "fala": "O capacete era uma peça decorativa criada pela equipe; ele o vestira para chamar atenção para o projeto, não para esconder o rosto.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "capacete",
+    "decorativa"
+   ]
+  },
+  {
+   "fala": "Depois das fotos, o salão abriu espaço para uma pequena demonstração dos robôs de papel e luz construídos pelos jovens.",
+   "expr": "desconfiada",
+   "arte": [
+    "manchete_v"
+   ],
+   "destaque": [
+    "Depois",
+    "fotos,"
+   ]
+  },
+  {
+   "fala": "Quem estava envolvido teve de assumir as próprias escolhas. E foi justamente nessa conversa, sem plateia, que a história ganhou outra direção.",
+   "expr": "ironica",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "estava",
+    "envolvido"
+   ]
+  },
+  {
+   "fala": "Tereza disse que o acessório mais estranho da festa conseguiu o que muitos discursos não fazem: todo mundo perguntou sobre a escola.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "Tereza",
+    "acessório"
+   ]
+  },
+  {
+   "fala": "Se fosse com você, teria reagido como Tereza ou feito diferente? Me conta, porque eu quero saber o que vocês acharam dessa virada.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "reagido",
+    "Tereza"
+   ]
+  }
+ ],
+ "fim": "HISTÓRIA COMPLETA",
+ "legenda_post": "O CAPACETE DO FOTÓGRAFO\n\nTereza contratou um fotógrafo para a formatura e ele apareceu usando um capacete brilhante até dentro do salão.\n\nA história tem começo, reviravolta e desfecho neste vídeo. Qual seria sua decisão?\n\nHistória de ficção. Personagens e acontecimentos fictícios.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+ "legenda_tiktok": "O CAPACETE DO FOTÓGRAFO\n\nTereza contratou um fotógrafo para a formatura e ele apareceu usando um capacete brilhante até dentro do salão.\n\nA história tem começo, reviravolta e desfecho neste vídeo. Qual seria sua decisão?\n\nHistória de ficção. Personagens e acontecimentos fictícios.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+ "gerado_automaticamente": false,
+ "origem_roteiros": [
+  "ep129-p1",
+  "ep129-p2"
+ ],
+ "formato": "historia_unica_3min",
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
+}

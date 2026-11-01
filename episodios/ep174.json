@@ -1,0 +1,227 @@
+{
+ "id": "ep174",
+ "ep": 174,
+ "parte": "unica",
+ "titulo": "O ROSTO DA FORMATURA",
+ "temporada": "Novas histórias originais — viral 2026",
+ "cenario": "tarde",
+ "batidas": [
+  {
+   "fala": "Ele estava ao fundo, segurando um envelope e olhando para o palco.",
+   "expr": "chocada",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "segurando",
+    "envelope"
+   ]
+  },
+  {
+   "fala": "Essa é a história de Talita. Talita viu numa foto da formatura um homem que reconheceu apenas pelas histórias da mãe.",
+   "expr": "neutra",
+   "arte": [
+    "conversa",
+    "TALITA"
+   ],
+   "destaque": [
+    "história",
+    "Talita."
+   ]
+  },
+  {
+   "fala": "Até ali, os detalhes pareciam desconectados. Mas uma pergunta simples fez a situação ficar muito menos tranquila do que parecia à primeira vista.",
+   "expr": "triste",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "detalhes",
+    "pareciam"
+   ]
+  },
+  {
+   "fala": "Ela procurou a comissão do evento para descobrir se o homem era funcionário da organização.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "procurou",
+    "comissão"
+   ]
+  },
+  {
+   "fala": "Foi nesse momento que Talita decidiu não aceitar apenas rumores. Ela precisava descobrir o que realmente tinha acontecido, antes que alguém tirasse conclusões por ela.",
+   "expr": "desconfiada",
+   "arte": [
+    "manchete_v",
+    "UMA NOVA PISTA"
+   ],
+   "destaque": [
+    "momento",
+    "decidiu"
+   ]
+  },
+  {
+   "fala": "Era um antigo professor que ajudara sua mãe a voltar aos estudos muitos anos antes.",
+   "expr": "ironica",
+   "arte": [
+    "notificacao"
+   ],
+   "destaque": [
+    "professor",
+    "ajudara"
+   ]
+  },
+  {
+   "fala": "A cada pergunta, surgia um novo ângulo da mesma situação. E o que parecia apenas uma coincidência começou a exigir uma conversa de verdade.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": []
+  },
+  {
+   "fala": "Ninguém precisava transformar a situação num espetáculo. O que faltava era ouvir a explicação inteira e separar o que alguém imaginou daquilo que realmente aconteceu.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": []
+  },
+  {
+   "fala": "A Nina conta isso porque uma pista isolada pode parecer definitiva. Mas, quando a conversa avança, até o detalhe que parecia mais óbvio ganha outro sentido.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": []
+  },
+  {
+   "fala": "A conversa começou cheia de justificativas e pausas, como se ninguém quisesse ser a primeira pessoa a contar a parte mais importante.",
+   "expr": "neutra",
+   "arte": [
+    "coracao"
+   ],
+   "destaque": [
+    "conversa",
+    "começou"
+   ]
+  },
+  {
+   "fala": "O envelope continha uma carta de parabéns que ele não conseguira entregar durante a cerimônia.",
+   "expr": "triste",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "envelope",
+    "continha"
+   ]
+  },
+  {
+   "fala": "Antes de tomar uma decisão, era preciso entender a ordem das coisas. Um detalhe contado fora de contexto pode fazer uma história parecer completamente diferente.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": []
+  },
+  {
+   "fala": "Quem acompanha uma história assim sabe que nem toda surpresa é uma confirmação. É preciso esperar os detalhes se revelarem antes de escolher um lado.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": []
+  },
+  {
+   "fala": "E enquanto a história avançava, uma pergunta ficava no ar: o que mudou de fato? A resposta dependia menos do susto inicial e mais das atitudes seguintes.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": []
+  },
+  {
+   "fala": "Ninguém ali tinha uma solução pronta. Os envolvidos precisaram reconhecer o que sabiam, o que estavam escondendo e o que cada um realmente podia decidir.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "Ninguém",
+    "solução"
+   ]
+  },
+  {
+   "fala": "Talita levou o presente à mãe e ouviu pela primeira vez a história completa daquela ajuda.",
+   "expr": "desconfiada",
+   "arte": [
+    "manchete_v",
+    "A VERDADE APARECEU"
+   ],
+   "destaque": [
+    "presente",
+    "primeira"
+   ]
+  },
+  {
+   "fala": "E foi aí que o rumo da conversa mudou: não bastava explicar o passado, também era preciso assumir responsabilidade pelo que aconteceria depois.",
+   "expr": "ironica",
+   "arte": [
+    "notificacao"
+   ],
+   "destaque": [
+    "conversa",
+    "bastava"
+   ]
+  },
+  {
+   "fala": "A fotografia ganhou significado quando deixou de ser um mistério e virou gratidão.",
+   "expr": "neutra",
+   "arte": [
+    "coracao"
+   ],
+   "destaque": [
+    "fotografia",
+    "significado"
+   ]
+  },
+  {
+   "fala": "Se você estivesse no lugar de Talita, faria a mesma escolha? Eu quero saber nos comentários, porque a parte mais interessante é o que a gente aprende com o final.",
+   "expr": "neutra",
+   "arte": [
+    "conversa",
+    "TALITA"
+   ],
+   "destaque": [
+    "estivesse",
+    "Talita,"
+   ]
+  },
+  {
+   "fala": "No fim, a conversa trouxe consequências reais. As pessoas envolvidas precisaram assumir suas escolhas e decidir como seguir, sem deixar perguntas essenciais sem resposta.",
+   "expr": "neutra",
+   "arte": [
+    "manchete_v",
+    "O DESFECHO"
+   ],
+   "destaque": [
+    "escolhas"
+   ]
+  }
+ ],
+ "fim": "HISTÓRIA COMPLETA",
+ "legenda_post": "O ROSTO DA FORMATURA\n\nEle estava ao fundo, segurando um envelope e olhando para o palco.\n\nA história tem começo, reviravolta e desfecho neste vídeo. Qual seria sua decisão?\n\nHistória de ficção. Personagens e acontecimentos fictícios.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+ "legenda_tiktok": "O ROSTO DA FORMATURA\n\nEle estava ao fundo, segurando um envelope e olhando para o palco.\n\nA história tem começo, reviravolta e desfecho neste vídeo. Qual seria sua decisão?\n\nHistória de ficção. Personagens e acontecimentos fictícios.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+ "gerado_automaticamente": false,
+ "origem_roteiros": [
+  "ep174-p1",
+  "ep174-p2"
+ ],
+ "formato": "historia_unica_3min",
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
+}

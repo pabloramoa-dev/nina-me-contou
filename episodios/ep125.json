@@ -1,0 +1,199 @@
+{
+ "id": "ep125",
+ "ep": 125,
+ "parte": "unica",
+ "titulo": "QUARENTA E OITO HORAS PARA CASAR",
+ "temporada": "Histórias adaptadas 2026",
+ "cenario": "tarde",
+ "batidas": [
+  {
+   "fala": "Aline perdeu o salão do casamento a quarenta e oito horas da cerimônia e recebeu um convite para conhecer uma biblioteca fechada.",
+   "expr": "chocada",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "perdeu",
+    "casamento"
+   ]
+  },
+  {
+   "fala": "A protagonista desta história é Aline. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
+   "expr": "neutra",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "protagonista",
+    "história"
+   ]
+  },
+  {
+   "fala": "O espaço reservado teve um problema de manutenção, e cada telefonema parecia trazer uma solução mais cara do que a anterior.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "espaço",
+    "reservado"
+   ]
+  },
+  {
+   "fala": "A costureira ouviu a notícia enquanto ajustava o vestido e pediu que Aline levasse uma caixa de fotos para a biblioteca.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "costureira",
+    "notícia"
+   ]
+  },
+  {
+   "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
+   "expr": "desconfiada",
+   "arte": [
+    "manchete_v"
+   ],
+   "destaque": [
+    "detalhe",
+    "parecia"
+   ]
+  },
+  {
+   "fala": "Quando chegou, encontrou vizinhos medindo mesas, uma professora testando iluminação e uma faixa dobrada sobre os livros.",
+   "expr": "ironica",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "Quando",
+    "chegou,"
+   ]
+  },
+  {
+   "fala": "E aqui começa a parte mais surpreendente: Aline decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "começa",
+    "surpreendente:"
+   ]
+  },
+  {
+   "fala": "E enquanto a história avançava, uma pergunta ficava no ar: o que mudou de fato? A resposta dependia menos do susto inicial e mais das atitudes seguintes.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": []
+  },
+  {
+   "fala": "Quem acompanha uma história assim sabe que nem toda surpresa é uma confirmação. É preciso esperar os detalhes se revelarem antes de escolher um lado.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": []
+  },
+  {
+   "fala": "Não era um salão improvisado qualquer: a biblioteca tinha sido o lugar onde o casal se conheceu durante um clube de leitura.",
+   "expr": "neutra",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "improvisado",
+    "qualquer:"
+   ]
+  },
+  {
+   "fala": "Ninguém precisava transformar a situação num espetáculo. O que faltava era ouvir a explicação inteira e separar o que alguém imaginou daquilo que realmente aconteceu.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": []
+  },
+  {
+   "fala": "Não foi uma resposta que chegou pronta. Primeiro vieram dúvidas, depois uma conversa desconfortável e, só então, a informação que faltava para entender o que estava acontecendo.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "resposta",
+    "chegou"
+   ]
+  },
+  {
+   "fala": "A comunidade conseguiu autorização para receber a cerimônia e reorganizou o espaço, respeitando livros e regras da casa.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "comunidade",
+    "conseguiu"
+   ]
+  },
+  {
+   "fala": "Aline decidiu reduzir a festa e convidar apenas quem ajudaria a transformar aquele gesto em lembrança.",
+   "expr": "desconfiada",
+   "arte": [
+    "manchete_v"
+   ],
+   "destaque": [
+    "decidiu",
+    "reduzir"
+   ]
+  },
+  {
+   "fala": "Quem estava envolvido teve de assumir as próprias escolhas. E foi justamente nessa conversa, sem plateia, que a história ganhou outra direção.",
+   "expr": "ironica",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "estava",
+    "envolvido"
+   ]
+  },
+  {
+   "fala": "Na hora dos votos, o noivo colocou sobre a mesa o primeiro livro que os dois haviam discutido. O imprevisto virou escolha.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "votos,",
+    "colocou"
+   ]
+  },
+  {
+   "fala": "Se fosse com você, teria reagido como Aline ou feito diferente? Me conta, porque eu quero saber o que vocês acharam dessa virada.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "reagido",
+    "diferente?"
+   ]
+  }
+ ],
+ "fim": "HISTÓRIA COMPLETA",
+ "legenda_post": "QUARENTA E OITO HORAS PARA CASAR\n\nAline perdeu o salão do casamento a quarenta e oito horas da cerimônia e recebeu um convite para conhecer uma biblioteca fechada.\n\nA história tem começo, reviravolta e desfecho neste vídeo. Qual seria sua decisão?\n\nHistória de ficção. Personagens e acontecimentos fictícios.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+ "legenda_tiktok": "QUARENTA E OITO HORAS PARA CASAR\n\nAline perdeu o salão do casamento a quarenta e oito horas da cerimônia e recebeu um convite para conhecer uma biblioteca fechada.\n\nA história tem começo, reviravolta e desfecho neste vídeo. Qual seria sua decisão?\n\nHistória de ficção. Personagens e acontecimentos fictícios.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+ "gerado_automaticamente": false,
+ "origem_roteiros": [
+  "ep125-p1",
+  "ep125-p2"
+ ],
+ "formato": "historia_unica_3min",
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
+}
