@@ -2,9 +2,9 @@
 """Remove mídia já consumida e impede o estoque de MP4 de crescer sem limite.
 
 Os roteiros em episodios/ e o ledger conteudo/publicados.json nunca são apagados.
-Mantemos:
-- a parte 2 de qualquer história cuja parte 1 já foi publicada;
-- no máximo os próximos N episódios completos ainda não publicados.
+Mantemos até N episódios únicos completos e inéditos.
+Os pares antigos são apenas histórico; a limpeza respeita a confirmação
+de entrega do Telegram e nunca remove arquivos sem recibo válido.
 
 Uso:
     python motor/limpar_reels.py --alvo 8
@@ -20,7 +20,7 @@ from pathlib import Path
 RAIZ = Path(__file__).resolve().parents[1]
 REELS = RAIZ / "reels"
 PUBLICADOS = RAIZ / "conteudo" / "publicados.json"
-RX = re.compile(r"^(ep\d{3}-p[12])")
+RX = re.compile(r"^(ep\d{3}(?:-p[12])?)(?=\.|-)")
 
 
 def publicados() -> set[str]:
@@ -52,31 +52,14 @@ def _tem(grupos: dict[str, list[Path]], ep_id: str, sufixo: str) -> bool:
 
 
 def selecionar_mantidos(alvo: int, feitos: set[str], grupos: dict[str, list[Path]]) -> set[str]:
-    nums = sorted({int(ep_id[2:5]) for ep_id in grupos})
-    manter: set[str] = set()
-
-    # Continuação pronta nunca é removida.
-    for n in nums:
-        p1, p2 = f"ep{n:03d}-p1", f"ep{n:03d}-p2"
-        if p1 in feitos and p2 not in feitos and _tem(grupos, p2, ".mp4") and _tem(grupos, p2, "-capa.jpg"):
-            manter.add(p2)
-
-    completos: list[int] = []
-    for n in nums:
-        p1, p2 = f"ep{n:03d}-p1", f"ep{n:03d}-p2"
-        if p1 in feitos:
-            continue
-        if (
-            _tem(grupos, p1, ".mp4")
-            and _tem(grupos, p1, "-capa.jpg")
-            and _tem(grupos, p2, ".mp4")
-            and _tem(grupos, p2, "-capa.jpg")
-        ):
-            completos.append(n)
-
-    for n in completos[:alvo]:
-        manter.update({f"ep{n:03d}-p1", f"ep{n:03d}-p2"})
-    return manter
+    """Só os futuros epNNN entram no estoque. Preserva o registro histórico."""
+    disponiveis = sorted(ep_id for ep_id in grupos
+                         if re.fullmatch(r"ep\d{3}", ep_id)
+                         and all(x not in feitos for x in
+                                 (ep_id, ep_id + "-p1", ep_id + "-p2"))
+                         and _tem(grupos, ep_id, ".mp4")
+                         and _tem(grupos, ep_id, "-capa.jpg"))
+    return set(disponiveis[:alvo])
 
 
 def limpar(alvo: int = 8, simular: bool = False) -> dict:
