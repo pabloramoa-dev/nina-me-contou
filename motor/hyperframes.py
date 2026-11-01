@@ -131,7 +131,7 @@ def compor(ep,segs,pasta):
     for i,(b,s) in enumerate(zip(ep['batidas'],segs)):
         a=float(s['ini']);z=float(s['fim']);d=z-a
         spec=b.get('arte') or [None];tipo=spec[0];arg=spec[1] if len(spec)>1 else None
-        tag=b.get('hf',{}).get('selo') or ('NINA CONTA · HISTÓRIA COMPLETA' if ep.get('avulso') else f'EP {ep.get("ep",0):02d} · PARTE {ep.get("parte",1)} · NINA CONTA')
+        tag=b.get('hf',{}).get('selo') or ('NINA CONTA · HISTÓRIA COMPLETA' if ep.get('avulso') or ep.get('parte') == 'unica' else f'EP {ep.get("ep",0):02d} · PARTE {ep.get("parte",1)} · NINA CONTA')
         has_image=i in visuals or i in fotos or tipo=='imagem'
         mode='story_frame_image' if has_image else 'story_frame_text'
         if v4:
@@ -258,7 +258,7 @@ def conferir(mp4,dur):
 def renderizar(ep,pasta,raiz):
     pasta=Path(pasta);raiz=Path(raiz);segs=json.loads((pasta/'segs.json').read_text())
     dur=validar_timeline(ep,segs)
-    maxdur=float(os.environ.get('NINA_MAX_DUR','90'))   # avulsos: até 180 s
+    maxdur=float(os.environ.get('NINA_MAX_DUR','225' if ep.get('parte') == 'unica' else '90'))  # duração-alvo ~3 min
     if not 15 <= dur <= maxdur:raise ValueError(f'Duração de produção fora de 15–{maxdur:g} s: {dur}')
     audio=sf.info(pasta/'voz.wav')
     if abs(audio.frames/audio.samplerate-segs[-1]['fim'])>.3:raise ValueError('Áudio e timeline divergentes')
