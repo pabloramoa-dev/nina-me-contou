@@ -2,7 +2,7 @@ name: Produzir episódios
 
 # Renderiza todo episódio de episodios/ que ainda não tem MP4 em reels/ (ou que
 # teve o roteiro/versão de render editado depois do render) e grava MP4 + capa + versão Story.
-# Cada parte roda numa máquina própria, em paralelo. Nada é publicado aqui.
+# Cada história completa (~3 min) roda numa máquina própria. Nada é publicado aqui.
 # Todo vídeo sai com o CTA de seguir no FINAL (motor/cta.py).
 # Voz principal: Kokoro Dora pf_dora (local, conforme teste aprovado).
 # Visual final: Remotion, legendas leves embaixo; Nina e lip sync originais.
@@ -16,7 +16,7 @@ on:
   workflow_dispatch:
     inputs:
       limite:
-        description: "Máximo de partes a renderizar nesta execução"
+        description: "Máximo de vídeos únicos a renderizar nesta execução"
         default: "8"
 
 concurrency:
@@ -50,6 +50,7 @@ jobs:
       - name: Garantir 30 dias de roteiros
         run: |
           python -m unittest discover -s tests -p test_ganchos.py -v
+          python -m unittest discover -s tests -p test_episodio_unico.py -v
           python motor/normalizar_ganchos.py
           python motor/gerar_roteiros.py --alvo 60
       - name: Persistir a reserva anual
