@@ -1,0 +1,52 @@
+name: Nina — validar episódios únicos de 3 minutos
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'motor/episodio_unico.py'
+      - 'motor/gerar_roteiros.py'
+      - 'motor/pendentes.py'
+      - 'motor/cta.py'
+      - 'src/fila.py'
+      - 'tests/test_episodio_unico.py'
+      - '.github/workflows/nina-episodio-unico-ci.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'motor/episodio_unico.py'
+      - 'motor/gerar_roteiros.py'
+      - 'motor/pendentes.py'
+      - 'src/fila.py'
+      - 'tests/test_episodio_unico.py'
+      - '.github/workflows/nina-episodio-unico-ci.yml'
+permissions:
+  contents: read
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          sparse-checkout: |
+            motor
+            src
+            tests
+            episodios
+            conteudo
+          sparse-checkout-cone-mode: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Compilar e testar roteiros de parte única
+        run: |
+          python -m compileall -q motor src tools 2>/dev/null || python -m compileall -q motor src
+          python -m unittest discover -s tests -p test_episodio_unico.py -v
+      - name: Verificar seleção da fila
+        run: |
+          python motor/gerar_roteiros.py --alvo 60
+          python motor/pendentes.py --rel --alvo-prontos 8 --limite 8 > /tmp/nina_selecao.txt
+          cat /tmp/nina_selecao.txt
+          test -s /tmp/nina_selecao.txt
+          if grep -E 'ep[0-9]+-p[12]\.json' /tmp/nina_selecao.txt; then exit 1; fi
