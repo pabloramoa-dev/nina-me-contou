@@ -346,7 +346,11 @@
   },
   "ep119-p1": {
     "hash": "7b9f0836b4b968a7e61bd3f107304b0e4eb8a98ceddecef4a1d8a662077d8a59",
-    "status": "sending_video",
-    "tentativas_incertas": 0
+    "status": "video_sent",
+    "tentativas_incertas": 0,
+    "telegram_message_id": 57,
+    "file_id": "BQACAgEAAxkDAAM5auc2Or_XGlB1CEQYLVWimJgXSDUAAjoHAALGkUFHDRHvxzkH6Tc9BA",
+    "file_size": 19248906,
+    "comprimido": false
   }
 }
