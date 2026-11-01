@@ -90,7 +90,8 @@ def legenda(txt, destaque=()):
 
 
 def selo_topo():
-    t = Text(f"NINA CONTA · EP {EP['ep']:02d} · PARTE {EP['parte']}", font=V.FONTE, weight=BOLD,
+    rotulo = "NINA CONTA · HISTÓRIA COMPLETA" if EP.get("parte") == "unica" else f"NINA CONTA · EP {EP['ep']:02d} · PARTE {EP['parte']}"
+    t = Text(rotulo, font=V.FONTE, weight=BOLD,
              font_size=40, color="#111111").scale(0.62)
     fb = V.recorte(t.width + 0.4, t.height + 0.26, cor="recorte", semente=17, girar=-0.02)
     return VGroup(fb, t.move_to(fb)).move_to([0, 6.55, 0])
@@ -132,7 +133,7 @@ def montar_arte(arte):
     if tipo == "imagem":
         return _imagem_do_repo(arg)
     if tipo == "titulo":
-        m = O.titulo(arg or EP["titulo"], None, EP["parte"])
+        m = O.titulo(arg or EP["titulo"]) if EP.get("parte") == "unica" else O.titulo(arg or EP["titulo"], None, EP["parte"])
     else:
         m = O.arte(tipo, arg)
     if m.width > 6.8:
@@ -224,7 +225,7 @@ class Capa(Scene):
         expr = "desconfiada" if EP.get("parte", 1) == 1 else "chocada"
         p = NL.posicionar(NL.nina(expr, EP["cenario"]), escala=1.9, pos=np.array([0.1, -3.6, 0]))
         V.colar(self, p, espessura=22)
-        if EP.get("avulso"):   # vídeo avulso: só o nome da história, sem "EP · PARTE"
+        if EP.get("avulso") or EP.get("parte") == "unica":  # vídeo completo: sem "EP · PARTE"
             sel = O.titulo(EP["titulo"])
         else:
             sel = O.titulo(EP["titulo"], EP["ep"], EP["parte"])
