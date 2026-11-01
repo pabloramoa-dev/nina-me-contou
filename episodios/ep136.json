@@ -1,0 +1,206 @@
+{
+ "id": "ep136",
+ "ep": 136,
+ "parte": "unica",
+ "titulo": "O NOIVO QUE INVENTOU UMA EMPRESA",
+ "temporada": "Novas histórias originais — viral 2026",
+ "cenario": "tarde",
+ "batidas": [
+  {
+   "fala": "Um desconhecido tocou a campainha perguntando por um pagamento da empresa que Leandro garantia ser bem-sucedida.",
+   "expr": "chocada",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "desconhecido",
+    "campainha"
+   ]
+  },
+  {
+   "fala": "Essa é a história de Marina. Marina estava organizando a mudança para morar com Leandro, que dizia dirigir uma consultoria de tecnologia.",
+   "expr": "neutra",
+   "arte": [
+    "conversa",
+    "MARINA"
+   ],
+   "destaque": [
+    "história",
+    "Marina."
+   ]
+  },
+  {
+   "fala": "Até ali, os detalhes pareciam desconectados. Mas uma pergunta simples fez a situação ficar muito menos tranquila do que parecia à primeira vista.",
+   "expr": "triste",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "detalhes",
+    "pareciam"
+   ]
+  },
+  {
+   "fala": "No cartão de visitas havia um endereço comercial, mas a sala indicada estava vazia havia meses.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "visitas",
+    "endereço"
+   ]
+  },
+  {
+   "fala": "Foi nesse momento que Marina decidiu não aceitar apenas rumores. Ela precisava descobrir o que realmente tinha acontecido, antes que alguém tirasse conclusões por ela.",
+   "expr": "desconfiada",
+   "arte": [
+    "manchete_v",
+    "UMA NOVA PISTA"
+   ],
+   "destaque": [
+    "momento",
+    "decidiu"
+   ]
+  },
+  {
+   "fala": "Marina encontrou contratos com assinaturas diferentes e pediu uma explicação, em vez de publicar acusações.",
+   "expr": "ironica",
+   "arte": [
+    "notificacao"
+   ],
+   "destaque": [
+    "encontrou",
+    "contratos"
+   ]
+  },
+  {
+   "fala": "Ninguém precisava transformar a situação num espetáculo. O que faltava era ouvir a explicação inteira e separar o que alguém imaginou daquilo que realmente aconteceu.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": []
+  },
+  {
+   "fala": "A Nina conta isso porque uma pista isolada pode parecer definitiva. Mas, quando a conversa avança, até o detalhe que parecia mais óbvio ganha outro sentido.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": []
+  },
+  {
+   "fala": "O curioso é como os detalhes se encaixam depois que alguém resolve perguntar, em vez de simplesmente adivinhar. Uma palavra fora do lugar pode mudar toda a interpretação.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": []
+  },
+  {
+   "fala": "A conversa começou cheia de justificativas e pausas, como se ninguém quisesse ser a primeira pessoa a contar a parte mais importante.",
+   "expr": "neutra",
+   "arte": [
+    "coracao"
+   ],
+   "destaque": [
+    "conversa",
+    "começou"
+   ]
+  },
+  {
+   "fala": "Leandro admitiu que a firma tinha fechado e que continuava fingindo trabalhar por vergonha de contar sobre o fracasso.",
+   "expr": "triste",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "Leandro",
+    "admitiu"
+   ]
+  },
+  {
+   "fala": "Antes de tomar uma decisão, era preciso entender a ordem das coisas. Um detalhe contado fora de contexto pode fazer uma história parecer completamente diferente.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": []
+  },
+  {
+   "fala": "Quem acompanha uma história assim sabe que nem toda surpresa é uma confirmação. É preciso esperar os detalhes se revelarem antes de escolher um lado.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": []
+  },
+  {
+   "fala": "Ninguém ali tinha uma solução pronta. Os envolvidos precisaram reconhecer o que sabiam, o que estavam escondendo e o que cada um realmente podia decidir.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "Ninguém",
+    "solução"
+   ]
+  },
+  {
+   "fala": "Marina exigiu transparência sobre dívidas e adiou a mudança enquanto ambos buscavam reorganizar suas contas.",
+   "expr": "desconfiada",
+   "arte": [
+    "manchete_v",
+    "A VERDADE APARECEU"
+   ],
+   "destaque": [
+    "transparência",
+    "dívidas"
+   ]
+  },
+  {
+   "fala": "E foi aí que o rumo da conversa mudou: não bastava explicar o passado, também era preciso assumir responsabilidade pelo que aconteceria depois.",
+   "expr": "ironica",
+   "arte": [
+    "notificacao"
+   ],
+   "destaque": [
+    "conversa",
+    "bastava"
+   ]
+  },
+  {
+   "fala": "Eles não resolveram o relacionamento num abraço: pela primeira vez, sentaram diante de números verdadeiros.",
+   "expr": "neutra",
+   "arte": [
+    "coracao"
+   ],
+   "destaque": [
+    "resolveram",
+    "relacionamento"
+   ]
+  },
+  {
+   "fala": "Se você estivesse no lugar de Marina, faria a mesma escolha? Eu quero saber nos comentários, porque a parte mais interessante é o que a gente aprende com o final.",
+   "expr": "neutra",
+   "arte": [
+    "conversa",
+    "MARINA"
+   ],
+   "destaque": [
+    "estivesse",
+    "Marina,"
+   ]
+  }
+ ],
+ "fim": "HISTÓRIA COMPLETA",
+ "legenda_post": "O NOIVO QUE INVENTOU UMA EMPRESA\n\nUm desconhecido tocou a campainha perguntando por um pagamento da empresa que Leandro garantia ser bem-sucedida.\n\nA história tem começo, reviravolta e desfecho neste vídeo. Qual seria sua decisão?\n\nHistória de ficção. Personagens e acontecimentos fictícios.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+ "legenda_tiktok": "O NOIVO QUE INVENTOU UMA EMPRESA\n\nUm desconhecido tocou a campainha perguntando por um pagamento da empresa que Leandro garantia ser bem-sucedida.\n\nA história tem começo, reviravolta e desfecho neste vídeo. Qual seria sua decisão?\n\nHistória de ficção. Personagens e acontecimentos fictícios.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+ "gerado_automaticamente": false,
+ "origem_roteiros": [
+  "ep136-p1",
+  "ep136-p2"
+ ],
+ "formato": "historia_unica_3min"
+}

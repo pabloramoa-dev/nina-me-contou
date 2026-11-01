@@ -1,0 +1,197 @@
+{
+ "id": "ep123",
+ "ep": 123,
+ "parte": "unica",
+ "titulo": "A ABELHA NO PRIMEIRO ENCONTRO",
+ "temporada": "Histórias adaptadas 2026",
+ "cenario": "tarde",
+ "batidas": [
+  {
+   "fala": "Camila jurava que o primeiro encontro tinha sido arruinado por uma abelha, até descobrir por que o rapaz carregava três vasos vazios.",
+   "expr": "chocada",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "Camila",
+    "jurava"
+   ]
+  },
+  {
+   "fala": "A protagonista desta história é Camila. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
+   "expr": "neutra",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "protagonista",
+    "história"
+   ]
+  },
+  {
+   "fala": "Os dois combinaram um café num jardim e ele insistiu em sentar perto de flores, mesmo com o vento mudando toda hora.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "combinaram",
+    "jardim"
+   ]
+  },
+  {
+   "fala": "Depois de um susto com uma abelha, Camila quis ir embora e percebeu que havia uma pequena placa de homenagem perto do banco.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "Depois",
+    "abelha,"
+   ]
+  },
+  {
+   "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
+   "expr": "desconfiada",
+   "arte": [
+    "manchete_v"
+   ],
+   "destaque": [
+    "detalhe",
+    "parecia"
+   ]
+  },
+  {
+   "fala": "O rapaz contou que costumava visitar aquele jardim com a avó e que voltara para entregar mudas que ela havia cultivado.",
+   "expr": "ironica",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "contou",
+    "costumava"
+   ]
+  },
+  {
+   "fala": "E aqui começa a parte mais surpreendente: Camila decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "começa",
+    "surpreendente:"
+   ]
+  },
+  {
+   "fala": "Quem acompanha uma história assim sabe que nem toda surpresa é uma confirmação. É preciso esperar os detalhes se revelarem antes de escolher um lado.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": []
+  },
+  {
+   "fala": "Antes de tomar uma decisão, era preciso entender a ordem das coisas. Um detalhe contado fora de contexto pode fazer uma história parecer completamente diferente.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": []
+  },
+  {
+   "fala": "Camila encontrou a jardineira responsável e soube que o jardim estava prestes a perder as flores por falta de voluntários.",
+   "expr": "neutra",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "Camila",
+    "encontrou"
+   ]
+  },
+  {
+   "fala": "A Nina conta isso porque uma pista isolada pode parecer definitiva. Mas, quando a conversa avança, até o detalhe que parecia mais óbvio ganha outro sentido.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": []
+  },
+  {
+   "fala": "Não foi uma resposta que chegou pronta. Primeiro vieram dúvidas, depois uma conversa desconfortável e, só então, a informação que faltava para entender o que estava acontecendo.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "resposta",
+    "chegou"
+   ]
+  },
+  {
+   "fala": "O encontro virou uma tarde de trabalho leve, com os dois distribuindo vasos e conversando mais do que planejavam.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "encontro",
+    "trabalho"
+   ]
+  },
+  {
+   "fala": "Eles não começaram um namoro cinematográfico naquele dia, mas passaram a cuidar do canteiro aos sábados.",
+   "expr": "desconfiada",
+   "arte": [
+    "manchete_v"
+   ],
+   "destaque": [
+    "começaram",
+    "namoro"
+   ]
+  },
+  {
+   "fala": "Quem estava envolvido teve de assumir as próprias escolhas. E foi justamente nessa conversa, sem plateia, que a história ganhou outra direção.",
+   "expr": "ironica",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "estava",
+    "envolvido"
+   ]
+  },
+  {
+   "fala": "Meses depois, Camila disse que o melhor encontro não foi o café, mas descobrir alguém que cumpria uma promessa pequena.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "depois,",
+    "Camila"
+   ]
+  },
+  {
+   "fala": "Se fosse com você, teria reagido como Camila ou feito diferente? Me conta, porque eu quero saber o que vocês acharam dessa virada.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "reagido",
+    "Camila"
+   ]
+  }
+ ],
+ "fim": "HISTÓRIA COMPLETA",
+ "legenda_post": "A ABELHA NO PRIMEIRO ENCONTRO\n\nCamila jurava que o primeiro encontro tinha sido arruinado por uma abelha, até descobrir por que o rapaz carregava três vasos vazios.\n\nA história tem começo, reviravolta e desfecho neste vídeo. Qual seria sua decisão?\n\nHistória de ficção. Personagens e acontecimentos fictícios.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+ "legenda_tiktok": "A ABELHA NO PRIMEIRO ENCONTRO\n\nCamila jurava que o primeiro encontro tinha sido arruinado por uma abelha, até descobrir por que o rapaz carregava três vasos vazios.\n\nA história tem começo, reviravolta e desfecho neste vídeo. Qual seria sua decisão?\n\nHistória de ficção. Personagens e acontecimentos fictícios.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+ "gerado_automaticamente": false,
+ "origem_roteiros": [
+  "ep123-p1",
+  "ep123-p2"
+ ],
+ "formato": "historia_unica_3min"
+}

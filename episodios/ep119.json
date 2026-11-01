@@ -1,0 +1,205 @@
+{
+ "id": "ep119",
+ "ep": 119,
+ "parte": "unica",
+ "titulo": "AS UNHAS AMARELAS DO NOIVADO",
+ "temporada": "Histórias adaptadas 2026",
+ "cenario": "tarde",
+ "batidas": [
+  {
+   "fala": "Paula acordou com as unhas amarelas na véspera do noivado e suspeitou que alguém tivesse estragado sua manicure de propósito.",
+   "expr": "chocada",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "acordou",
+    "amarelas"
+   ]
+  },
+  {
+   "fala": "A protagonista desta história é Paula. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
+   "expr": "neutra",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "protagonista",
+    "história"
+   ]
+  },
+  {
+   "fala": "Ela trabalhava numa cozinha experimental e jurava que usara luvas durante o turno, sem lembrar da mistura de temperos.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "trabalhava",
+    "cozinha"
+   ]
+  },
+  {
+   "fala": "Uma colega mostrou uma foto de Paula segurando uma embalagem aberta e a internet do bairro começou a inventar culpados.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "colega",
+    "mostrou"
+   ]
+  },
+  {
+   "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
+   "expr": "desconfiada",
+   "arte": [
+    "manchete_v"
+   ],
+   "destaque": [
+    "detalhe",
+    "parecia"
+   ]
+  },
+  {
+   "fala": "Paula decidiu refazer o caminho do trabalho antes de acusar a manicure que havia atendido sua família por anos.",
+   "expr": "ironica",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "decidiu",
+    "refazer"
+   ]
+  },
+  {
+   "fala": "E aqui começa a parte mais surpreendente: Paula decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "começa",
+    "surpreendente:"
+   ]
+  },
+  {
+   "fala": "O silêncio também estava pesando. Não por revelar uma resposta, mas porque deixou cada dúvida crescer até parecer maior que os próprios acontecimentos.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": []
+  },
+  {
+   "fala": "E tinha uma coisa importante naquela história: não era possível voltar no tempo e apagar o que já tinha sido dito. Restava descobrir o que fazer com a verdade.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": []
+  },
+  {
+   "fala": "Na bancada encontrou um pote de cúrcuma usado numa receita nova e lembrou de ter retirado as luvas para fotografar o prato.",
+   "expr": "neutra",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "bancada",
+    "encontrou"
+   ]
+  },
+  {
+   "fala": "O mais difícil não era encontrar outro indício. Era aceitar que os fatos pediam calma, mesmo com tanta coisa parecendo urgente naquela hora.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": []
+  },
+  {
+   "fala": "Só que nenhuma explicação resolve tudo automaticamente. Depois da descoberta ainda vêm as conversas, as escolhas e as consequências para quem estava envolvido.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": []
+  },
+  {
+   "fala": "Não foi uma resposta que chegou pronta. Primeiro vieram dúvidas, depois uma conversa desconfortável e, só então, a informação que faltava para entender o que estava acontecendo.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "resposta",
+    "chegou"
+   ]
+  },
+  {
+   "fala": "A manicure explicou como a pigmentação poderia sair com o tempo e ofereceu uma cor diferente para a festa.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "manicure",
+    "explicou"
+   ]
+  },
+  {
+   "fala": "Paula pediu desculpas publicamente à colega que fora atacada sem motivo e publicou a receita do prato responsável.",
+   "expr": "desconfiada",
+   "arte": [
+    "manchete_v"
+   ],
+   "destaque": [
+    "desculpas",
+    "publicamente"
+   ]
+  },
+  {
+   "fala": "Quem estava envolvido teve de assumir as próprias escolhas. E foi justamente nessa conversa, sem plateia, que a história ganhou outra direção.",
+   "expr": "ironica",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "estava",
+    "envolvido"
+   ]
+  },
+  {
+   "fala": "Na festa, exibiu as unhas pintadas de azul e fez um brinde à melhor lição daquele mês: investigar antes de espalhar uma história.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "festa,",
+    "exibiu"
+   ]
+  },
+  {
+   "fala": "Se fosse com você, teria reagido como Paula ou feito diferente? Me conta, porque eu quero saber o que vocês acharam dessa virada.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "reagido",
+    "diferente?"
+   ]
+  }
+ ],
+ "fim": "HISTÓRIA COMPLETA",
+ "legenda_post": "AS UNHAS AMARELAS DO NOIVADO\n\nPaula acordou com as unhas amarelas na véspera do noivado e suspeitou que alguém tivesse estragado sua manicure de propósito.\n\nA história tem começo, reviravolta e desfecho neste vídeo. Qual seria sua decisão?\n\nHistória de ficção. Personagens e acontecimentos fictícios.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+ "legenda_tiktok": "AS UNHAS AMARELAS DO NOIVADO\n\nPaula acordou com as unhas amarelas na véspera do noivado e suspeitou que alguém tivesse estragado sua manicure de propósito.\n\nA história tem começo, reviravolta e desfecho neste vídeo. Qual seria sua decisão?\n\nHistória de ficção. Personagens e acontecimentos fictícios.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+ "gerado_automaticamente": false,
+ "origem_roteiros": [
+  "ep119-p1",
+  "ep119-p2"
+ ],
+ "formato": "historia_unica_3min"
+}

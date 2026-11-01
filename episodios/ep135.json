@@ -1,0 +1,205 @@
+{
+ "id": "ep135",
+ "ep": 135,
+ "parte": "unica",
+ "titulo": "AS DUAS DO MESMO DESTINO",
+ "temporada": "Histórias adaptadas 2026",
+ "cenario": "tarde",
+ "batidas": [
+  {
+   "fala": "Amanda descobriu que a viagem romântica que o namorado prometera também estava reservada no nome de outra mulher.",
+   "expr": "chocada",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "Amanda",
+    "descobriu"
+   ]
+  },
+  {
+   "fala": "A protagonista desta história é Amanda. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
+   "expr": "neutra",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "protagonista",
+    "história"
+   ]
+  },
+  {
+   "fala": "Um erro de confirmação enviou dois recibos ao e-mail de Amanda, com o mesmo chalé e datas que não combinavam.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "confirmação",
+    "enviou"
+   ]
+  },
+  {
+   "fala": "Ela ligou para o estabelecimento para corrigir o cadastro e ouviu um nome desconhecido ligado ao pagamento.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "estabelecimento",
+    "corrigir"
+   ]
+  },
+  {
+   "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
+   "expr": "desconfiada",
+   "arte": [
+    "manchete_v"
+   ],
+   "destaque": [
+    "detalhe",
+    "parecia"
+   ]
+  },
+  {
+   "fala": "Em vez de publicar a foto do namorado, Amanda procurou a outra mulher e pediu para comparar as informações antes de concluir qualquer coisa.",
+   "expr": "ironica",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "publicar",
+    "namorado,"
+   ]
+  },
+  {
+   "fala": "E aqui começa a parte mais surpreendente: Amanda decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "começa",
+    "surpreendente:"
+   ]
+  },
+  {
+   "fala": "Quem acompanha uma história assim sabe que nem toda surpresa é uma confirmação. É preciso esperar os detalhes se revelarem antes de escolher um lado.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": []
+  },
+  {
+   "fala": "Antes de tomar uma decisão, era preciso entender a ordem das coisas. Um detalhe contado fora de contexto pode fazer uma história parecer completamente diferente.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": []
+  },
+  {
+   "fala": "As duas encontraram promessas e reservas incompatíveis; perceberam que o homem vinha oferecendo a mesma viagem a pessoas diferentes.",
+   "expr": "neutra",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "encontraram",
+    "promessas"
+   ]
+  },
+  {
+   "fala": "O curioso é como os detalhes se encaixam depois que alguém resolve perguntar, em vez de simplesmente adivinhar. Uma palavra fora do lugar pode mudar toda a interpretação.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": []
+  },
+  {
+   "fala": "A Nina conta isso porque uma pista isolada pode parecer definitiva. Mas, quando a conversa avança, até o detalhe que parecia mais óbvio ganha outro sentido.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": []
+  },
+  {
+   "fala": "Não foi uma resposta que chegou pronta. Primeiro vieram dúvidas, depois uma conversa desconfortável e, só então, a informação que faltava para entender o que estava acontecendo.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "resposta",
+    "chegou"
+   ]
+  },
+  {
+   "fala": "Decidiram cancelar as próprias reservas e resolver as despesas diretamente com o estabelecimento, sem fazer espetáculo nas redes.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "Decidiram",
+    "cancelar"
+   ]
+  },
+  {
+   "fala": "O mais inesperado aconteceu meses depois, quando voltaram a conversar sobre destinos e abriram um clube pequeno de passeios entre amigas.",
+   "expr": "desconfiada",
+   "arte": [
+    "manchete_v"
+   ],
+   "destaque": [
+    "inesperado",
+    "aconteceu"
+   ]
+  },
+  {
+   "fala": "Quem estava envolvido teve de assumir as próprias escolhas. E foi justamente nessa conversa, sem plateia, que a história ganhou outra direção.",
+   "expr": "ironica",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [
+    "estava",
+    "envolvido"
+   ]
+  },
+  {
+   "fala": "Quando alguém perguntava como se conheceram, respondiam: por uma reserva errada. O resto foi uma decisão nossa.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [
+    "Quando",
+    "alguém"
+   ]
+  },
+  {
+   "fala": "Se fosse com você, teria reagido como Amanda ou feito diferente? Me conta, porque eu quero saber o que vocês acharam dessa virada.",
+   "expr": "neutra",
+   "arte": [
+    "foto"
+   ],
+   "destaque": [
+    "reagido",
+    "Amanda"
+   ]
+  }
+ ],
+ "fim": "HISTÓRIA COMPLETA",
+ "legenda_post": "AS DUAS DO MESMO DESTINO\n\nAmanda descobriu que a viagem romântica que o namorado prometera também estava reservada no nome de outra mulher.\n\nA história tem começo, reviravolta e desfecho neste vídeo. Qual seria sua decisão?\n\nHistória de ficção. Personagens e acontecimentos fictícios.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+ "legenda_tiktok": "AS DUAS DO MESMO DESTINO\n\nAmanda descobriu que a viagem romântica que o namorado prometera também estava reservada no nome de outra mulher.\n\nA história tem começo, reviravolta e desfecho neste vídeo. Qual seria sua decisão?\n\nHistória de ficção. Personagens e acontecimentos fictícios.\n\n#storytime #historias #fofoca #reviravolta #ninamecontou",
+ "gerado_automaticamente": false,
+ "origem_roteiros": [
+  "ep135-p1",
+  "ep135-p2"
+ ],
+ "formato": "historia_unica_3min"
+}
