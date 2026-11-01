@@ -326,11 +326,12 @@
   },
   "ep118-p1": {
     "hash": "48690da6d6896c2124489078094f249ccf83a7af0a0d2c0b772c06726fdd61d5",
-    "status": "sending_description",
-    "tentativas_incertas": 0,
+    "status": "complete",
     "telegram_message_id": 53,
     "file_id": "BQACAgEAAxkDAAM1auac6K42q6ZBibV6KX1MLZpf0fwAAtQIAALGkTlH-Vysnr-wvaM9BA",
     "file_size": 18453118,
-    "comprimido": false
+    "comprimido": false,
+    "description_message_id": 54,
+    "entregue_em": "2026-11-01T01:59:10Z"
   }
 }
