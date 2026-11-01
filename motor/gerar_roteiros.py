@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 """Gera histórias ficcionais da Nina e mantém um buffer automático.
 
-O canal publica 4 vídeos/dia = 2 histórias completas/dia. O plano anual reserva
-730 histórias (1460 partes), suficientes para 365 dias. Para não lotar o Git
-com centenas de vídeos de uma vez, só os roteiros do buffer são materializados;
-à medida que são publicados, novos pares entram automaticamente.
+O canal publica 4 vídeos completos/dia, cada um com início, meio e fim.
+O plano anual reserva 1460 histórias completas para 365 dias.
+Os roteiros legados são consolidados, sem republicar histórias já postadas.
 """
 from __future__ import annotations
 
@@ -18,8 +17,8 @@ EP_DIR = ROOT / "episodios"
 PUB = ROOT / "conteudo" / "publicados.json"
 STATE = ROOT / "conteudo" / "geracao_anual.json"
 
-TOTAL_ANUAL = 730
-ALVO_PADRAO = 60  # 30 dias a 2 histórias/dia
+TOTAL_ANUAL = 1460
+ALVO_PADRAO = 60  # 15 dias a 4 histórias completas/dia
 
 NOMES = [
     "Mariana","Paula","Renata","Camila","Bianca","Fernanda","Larissa","Bruna",
@@ -114,11 +113,9 @@ def _salvar(path: Path, dados):
 
 def _nums_existentes() -> list[int]:
     nums = []
-    for p in EP_DIR.glob("ep*-p1.json"):
-        try:
+    for p in EP_DIR.glob("ep*.json"):
+        if p.stem.startswith("ep") and p.stem[2:5].isdigit():
             nums.append(int(p.stem[2:5]))
-        except Exception:
-            pass
     return sorted(set(nums))
 
 def _publicados() -> set[str]:
@@ -133,14 +130,17 @@ def _estado() -> dict:
         "proximo": atual,
         "total_planejado": TOTAL_ANUAL,
         "criado_em": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-        "descricao": "730 historias x 2 partes = 1460 videos, suficientes para 365 dias a 4 videos/dia",
+        "descricao": "1460 historias completas, 1 video por historia, 4 videos por dia",
     }
 
 def _reserva_atual() -> int:
     feitos = _publicados()
     total = 0
     for n in _nums_existentes():
-        if f"ep{n:03d}-p2" not in feitos:
+        ep_id = f"ep{n:03d}"
+        if (EP_DIR / f"{ep_id}.json").exists() and not any(
+            p in feitos for p in (ep_id, ep_id + "-p1", ep_id + "-p2")
+        ):
             total += 1
     return total
 
@@ -254,7 +254,7 @@ def _beats_parte2(seq: int, a: str, b: str, c: str, objeto: str, arte: str,
          "arte": ["manchete_v", "O QUE VOCÊ FARIA?"], "destaque": ["você"]},
     ]
 
-def gerar_um(n: int, seq: int) -> tuple[dict, dict]:
+def gerar_um(n: int, seq: int) -> dict:
     a = NOMES[(seq * 3) % 16]  # mantém a narradora da história no feminino
     b = NOMES[(seq * 5 + 7) % len(NOMES)]
     c = NOMES[(seq * 7 + 13) % len(NOMES)]
@@ -298,11 +298,22 @@ def gerar_um(n: int, seq: int) -> tuple[dict, dict]:
         "gerado_automaticamente": True, "serie_anual": seq + 1,
     }
     from ganchos import aplicar_gancho
-    return aplicar_gancho(p1), aplicar_gancho(p2)
+    from episodio_unico import consolidar
+    # O par existe só internamente para estruturar a história completa.
+    desfechos = (
+        f"{a} decidiu não aceitar explicações incompletas: pediu os documentos e estabeleceu limites claros antes de retomar qualquer acordo com {b}.",
+        f"{a} encerrou aquela conversa e preferiu reconstruir os próprios planos, sem depender de novas promessas de {b}.",
+        f"{a} ouviu a versão de {c}, voltou a conversar com {b} e decidiu que a confiança só poderia voltar com atitudes verificáveis.",
+        f"{a} tomou sua decisão: suspendeu os planos em conjunto com {b} até que a história inteira fosse esclarecida.",
+    )
+    p2["batidas"][-3] = {"fala": desfechos[seq % len(desfechos)], "expr": "neutra", "arte": ["conversa"], "destaque": ["decidiu"]}
+    return consolidar(aplicar_gancho(p1), aplicar_gancho(p2))
 
 def abastecer(alvo: int) -> dict:
     # Não preencher a fila com histórias genéricas enquanto houver o lote viral original pendente.
     EP_DIR.mkdir(parents=True, exist_ok=True)
+    from episodio_unico import converter_pendentes
+    convertidos = converter_pendentes()  # faz a migração sem alterar pares antigos
     # Preserva a prioridade dos dois lotes originais: o gerador não deve
     # introduzir histórias genéricas enquanto houver uma história nova pendente.
     pacotes = [
@@ -314,15 +325,19 @@ def abastecer(alvo: int) -> dict:
     for pacote_path in pacotes:
         pacote = _ler_json(pacote_path, {})
         restantes.extend(n for n in pacote.get("episodios", [])
-                         if f"ep{n:03d}-p2" not in enviados)
+                         if not any(x in enviados for x in (
+                             f"ep{n:03d}", f"ep{n:03d}-p1", f"ep{n:03d}-p2"))
+                         and (EP_DIR / f"ep{n:03d}.json").exists())
     if restantes:
         estado = _estado()
         estado["reserva_antes"] = len(restantes)
         estado["reserva_depois"] = len(restantes)
         estado["gerados_nesta_execucao"] = 0
-        return {"gerados": [], "corrigidos": 0, "estado": estado}
+        return {"gerados": convertidos, "corrigidos": 0, "estado": estado}
     corrigidos = _corrigir_existentes()
     state = _estado()
+    state["total_planejado"] = TOTAL_ANUAL
+    state["descricao"] = "1460 historias completas, um video por episodio, quatro videos por dia"
     reserva = _reserva_atual()
     faltam = max(0, alvo - reserva)
     limite = int(state["inicio"]) + int(state.get("total_planejado", TOTAL_ANUAL))
@@ -330,9 +345,8 @@ def abastecer(alvo: int) -> dict:
     while faltam > 0 and int(state["proximo"]) < limite:
         n = int(state["proximo"])
         seq = n - int(state["inicio"])
-        p1, p2 = gerar_um(n, seq)
-        _salvar(EP_DIR / f"{p1['id']}.json", p1)
-        _salvar(EP_DIR / f"{p2['id']}.json", p2)
+        ep = gerar_um(n, seq)
+        _salvar(EP_DIR / f"{ep['id']}.json", ep)
         gerados.append(n)
         state["proximo"] = n + 1
         faltam -= 1
@@ -342,7 +356,7 @@ def abastecer(alvo: int) -> dict:
     state["gerados_nesta_execucao"] = len(gerados)
     state["restantes_no_plano"] = max(0, limite - int(state["proximo"]))
     _salvar(STATE, state)
-    return {"gerados": gerados, "corrigidos": corrigidos, "estado": state}
+    return {"gerados": convertidos + gerados, "corrigidos": corrigidos, "estado": state}
 
 def main() -> int:
     ap = argparse.ArgumentParser()
