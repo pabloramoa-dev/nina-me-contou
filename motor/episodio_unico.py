@@ -63,7 +63,7 @@ def _repeticao(batida: dict, anteriores: list[dict]) -> bool:
     )
 
 def _ponte(numero: int, pos: int) -> dict:
-    fala = PONTES[(numero * 7 + pos * 3) % len(PONTES)]
+    fala = PONTES[(numero * 7 + pos * 5) % len(PONTES)]
     return {"fala": fala, "expr": "neutra",
             "arte": ["conversa"], "destaque": []}
 
@@ -111,7 +111,7 @@ def consolidar(p1: dict, p2: dict, alvo_palavras: int = 385) -> dict:
         batidas.append({
             "fala": "No fim, a conversa trouxe consequências reais. As pessoas envolvidas "
                     "precisaram assumir suas escolhas e decidir como seguir, sem deixar "
-                    "a história suspensa numa promessa de continuação.",
+                    "perguntas essenciais sem resposta.",
             "expr": "neutra", "arte": ["manchete_v", "O DESFECHO"],
             "destaque": ["escolhas"],
         })
