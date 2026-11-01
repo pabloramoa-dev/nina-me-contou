@@ -1,28 +1,42 @@
-# Nina Me Contou — piloto automático
+# Nina Me Contou — episódios únicos de ~3 minutos
 
-Canal @ninamecontou (Instagram). Histórias FICCIONAIS de traição contadas pela
-Nina, em duas partes. **4 vídeos por dia: 8h, 12h, 16h e 20h** (horário de Brasília),
-sempre em sequência — 8h parte 1, 12h parte 2, 16h parte 1, 20h parte 2 (2 episódios/dia).
-Os vídeos das **8h e das 20h também vão para os Stories**. Todo vídeo termina com o
-CTA de seguir pra não perder a continuação (`motor/cta.py`).
+Canal @ninamecontou. A partir desta atualização, **cada vídeo conta uma
+história ficcional inteira**, com gancho no início, desenvolvimento, revelação
+e desfecho no próprio Reel. **Não existem mais publicações 'parte 1' e 'parte 2'.**
+A meta anterior de 4 Reels diários às 8h, 12h, 16h e 20h (Brasília) continua:
+agora são 4 **histórias diferentes e completas** por dia. O Reel das 8h e
+das 20h também gera um recorte de até 59 segundos para Stories.
 
 ## Como funciona
 
-1. O workflow **Produzir episódios** começa pelo abastecedor automático
-   (`motor/gerar_roteiros.py`), que mantém **60 histórias completas** na reserva.
-   O plano anual possui **730 histórias / 1.460 vídeos**, suficientes para 365 dias no ritmo atual.
-   Cada história entra em `episodios/` como `epNNN-p1.json` + `epNNN-p2.json`.
-2. Na mesma execução, o estúdio pega os roteiros ainda sem MP4
-   (uma máquina por parte, em paralelo): gera voz (**Kokoro Dora pf_dora, local**), lip sync, vídeo
-   (Nina original/HyperFrames + acabamento Remotion), capa e a versão Story (≤59 s, mantendo o CTA final), e grava em `reels/`.
-   Roteiro ou versão de render alterado depois do render volta sozinho pro estúdio (`reels/<id>.hash`).
-3. O workflow **Publicar Reel** roda às 8h, 12h, 16h e 20h e publica o próximo da
-   sequência: continuação pendente primeiro, depois a parte 1 do próximo episódio
-   completo. Às 8h e às 20h publica também o Story.
-   Nunca publica o mesmo vídeo duas vezes (`conteudo/publicados.json`).
-4. **Vigia da fila** (6h30): se houver menos de 8 episódios prontos (4 dias), abre um aviso.
-   O aviso agora significa falha de produção/render, porque os roteiros são reabastecidos automaticamente.
-5. **Renovar a credencial** (segunda, 5h): renova o token de 60 dias sozinho.
+1. O workflow **Produzir episódios** consolida os roteiros históricos inéditos
+   de `epNNN-p1.json` e `epNNN-p2.json` em um arquivo novo
+   `episodios/epNNN.json`. Elimina recapitulações e chamadas de continuação,
+   preserva a revelação e o final, e acrescenta transições para duração
+   estimada próxima de três minutos.
+2. Os pares históricos ficam intactos como arquivo. Histórias com qualquer
+   parte já publicada ficam **fora** da fila nova (evita republicação).
+3. Os episódios totalmente novos passam a ser escritos diretamente como
+   `epNNN.json`. O plano anual prevê 1.460 histórias/ano a 4 vídeos/dia.
+   A reserva mantém 60 roteiros (~15 dias).
+4. O estúdio gera **um MP4 por história**, voz Kokoro Dora, Nina/HyperFrames,
+   acabamento Remotion, imagens de apoio, legendas inferiores, capa e Story.
+   O hash detecta alterações de roteiro antes da publicação.
+5. O workflow **Publicar Reel** escolhe apenas episódios únicos e inéditos
+   com MP4/capa atuais. O CTA final incentiva a seguir a Nina para assistir
+   a **outras histórias**, nunca a uma segunda parte.
+6. **Vigia da fila** verifica diariamente se há pelo menos 8 episódios prontos;
+   a rotina de renovação das credenciais continua independente.
+
+Arquivos centrais: `motor/episodio_unico.py` (consolidação),
+`motor/gerar_roteiros.py` (abastecimento), `motor/pendentes.py` (seleção
+para render) e `src/fila.py` (seleção para publicação).
+
+## Teste sem publicar
+
+Execute: `python -m unittest discover -s tests -p test_episodio_unico.py -v`
+e `python -m src.fila --resumo`. Para validar um Reel da fila, use o
+workflow **Publicar Reel** em modo de ensaio (`dry_run=true`).
 
 ## Voz principal da Nina (aprovada em 23/10/2026)
 
@@ -67,11 +81,11 @@ História de ficção, inspirada em causo de família.
 
 Os próximos episódios usam o visual aprovado: Nina original, **voz Kokoro Dora**, varanda diurna ou noturna, recortes com fita e sombra, textura de papel, câmera, legendas com destaque, transições, mensagens, ilustrações animadas e trilha/efeitos originais sob a narração. A duração acompanha a fala, sem acelerar a voz para forçar um minuto.
 
-Instale `requirements-estudio.txt`, execute `npm ci --prefix video` e `cd video && npx --no-install hyperframes browser ensure`. O workflow instala tudo automaticamente. Exporte normalmente com `python motor/produzir.py episodios/epNNN-p1.json --publicar-em saida_reels`.
+Instale `requirements-estudio.txt`, execute `npm ci --prefix video` e `cd video && npx --no-install hyperframes browser ensure`. O workflow instala tudo automaticamente. Exporte normalmente com `python motor/produzir.py episodios/epNNN.json --publicar-em saida_reels`.
 
 As artes existentes do roteiro são preservadas, inclusive imagens `.b64` e todo o catálogo `objetos.py`. Títulos e painéis são derivados das falas; opcionalmente, cada batida pode trazer `"hf": {"titulo": "Texto curto", "selo": "Uma pista"}`. Não há frases fixas do episódio de teste nos próximos vídeos.
 
-A assinatura da fila inclui a versão visual/voz. Os vídeos ainda não publicados com o motor antigo retornam ao estúdio; o histórico de publicação é preservado. Só entram na fila as duas partes prontas. O CTA continua exclusivamente no final. Capa e Story acompanham o novo render.
+A assinatura da fila inclui a versão visual/voz. Os vídeos ainda não publicados com o motor antigo retornam ao estúdio; o histórico de publicação é preservado. Só entra na fila um episódio único pronto. O CTA para a próxima história continua exclusivamente no final. Capa e Story acompanham o novo render.
 
 `NINA_MOTOR=manim` permite usar o motor anterior em uma execução explícita. HyperFrames é o padrão. Telemetria do compositor está desativada no estúdio e no CI. O workflow **Validar Nina HyperFrames** testa a composição, renderização, voz, capa e Story sem publicar.
 
