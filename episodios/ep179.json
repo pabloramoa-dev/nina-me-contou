@@ -221,5 +221,7 @@
   "ep179-p1",
   "ep179-p2"
  ],
- "formato": "historia_unica_3min"
+ "formato": "historia_unica_3min",
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
 }
