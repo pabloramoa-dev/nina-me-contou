@@ -326,7 +326,7 @@
   },
   "ep118-p1": {
     "hash": "48690da6d6896c2124489078094f249ccf83a7af0a0d2c0b772c06726fdd61d5",
-    "status": "video_sent",
+    "status": "sending_description",
     "tentativas_incertas": 0,
     "telegram_message_id": 53,
     "file_id": "BQACAgEAAxkDAAM1auac6K42q6ZBibV6KX1MLZpf0fwAAtQIAALGkTlH-Vysnr-wvaM9BA",
