@@ -83,6 +83,7 @@ def _pedir_plano(ep: dict, cenas: list[dict], model: str) -> dict:
                 "personagens, objeto, gesto, emoção, local, plano e iluminação "
                 "ESPECÍFICOS do trecho; inclua no campo visual a âncora LITERAL, sem a modificar. Se a frase for abstrata, identifique "
                 "um gesto ou objeto observável no trecho e não fabrique acontecimentos. "
+                "No último quadro, ignore pedidos de seguir, curtir e o CTA: retrate só o desfecho. "
                 "Nunca desenhe uma situação de cena posterior nem invente novos "
                 "personagens, traições ou provas que não estejam no roteiro. "
                 "Evite repetição de enquadramentos, relógios, silhuetas genéricas "
