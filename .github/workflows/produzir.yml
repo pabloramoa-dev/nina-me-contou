@@ -140,11 +140,11 @@ jobs:
           NINA_ALLOW_PAID_IMAGE_API: '1'
           NINA_REQUIRE_SILICONFLOW: '1'  # Instagram: bloqueia qualquer imagem local
           NINA_REQUIRE_AI_STORYBOARD: '1' # Antes da SiliconFlow, validar 10 prompts ligados ao roteiro
-          NINA_STORYBOARD_MODEL: 'gpt-4o-mini'
+          NINA_STORYBOARD_PROVIDER: 'siliconflow'
+          NINA_STORYBOARD_MODEL: 'Qwen/Qwen3-30B-A3B-Instruct-2507'
           NINA_IMAGE_RETRIES: '0'
           NINA_TARGET_IMAGES: '10'
           NINA_MAX_IMAGES: '10'
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}   # opcional (fotos "banco"); sem ela usa Openverse CC0
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }} # opcional
         run: |
