@@ -1,0 +1,53 @@
+name: Nina — imagens SiliconFlow obrigatórias no Instagram
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'motor/siliconflow_policy.py'
+      - 'motor/visual_images.py'
+      - 'motor/cinematic_story_art.py'
+      - 'motor/remotion_final.py'
+      - 'motor/produzir.py'
+      - 'motor/hyperframes.py'
+      - 'motor/render_version.py'
+      - 'src/fila.py'
+      - 'src/publicar.py'
+      - 'tests/test_siliconflow_policy.py'
+      - '.github/workflows/produzir.yml'
+      - '.github/workflows/nina-siliconflow-policy-ci.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'motor/siliconflow_policy.py'
+      - 'motor/cinematic_story_art.py'
+      - 'motor/visual_images.py'
+      - 'src/fila.py'
+      - 'tests/test_siliconflow_policy.py'
+      - '.github/workflows/nina-siliconflow-policy-ci.yml'
+permissions:
+  contents: read
+jobs:
+  validar-sem-cobranca:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          sparse-checkout: |
+            motor
+            src
+            tools
+            tests
+            video/remotion
+          sparse-checkout-cone-mode: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Instalar somente dependencias locais dos testes
+        run: python -m pip install Pillow requests
+      - name: Testar bloqueio de imagens locais e ausencia de API
+        run: |
+          python -m unittest discover -s tests -p 'test_siliconflow_policy.py' -v
+          python -m unittest discover -s tests -p 'test_nina_cinema2d.py' -v
+          python -m compileall -q motor src
