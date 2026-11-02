@@ -81,7 +81,7 @@ def _pedir_plano(ep: dict, cenas: list[dict], model: str) -> dict:
                 "CONSECUTIVAS de 'trecho' da própria cena; 'visual' é um prompt "
                 "cinematográfico em português, de 90 a 500 caracteres, com "
                 "personagens, objeto, gesto, emoção, local, plano e iluminação "
-                "ESPECÍFICOS do trecho. Se a frase for abstrata, identifique "
+                "ESPECÍFICOS do trecho; inclua no campo visual a âncora LITERAL, sem a modificar. Se a frase for abstrata, identifique "
                 "um gesto ou objeto observável no trecho e não fabrique acontecimentos. "
                 "Nunca desenhe uma situação de cena posterior nem invente novos "
                 "personagens, traições ou provas que não estejam no roteiro. "
