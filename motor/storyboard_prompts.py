@@ -16,7 +16,7 @@ from pathlib import Path
 
 import requests
 
-VERSAO = "nina-storyboard-20261102-v2-siliconflow-texto"
+VERSAO = "nina-storyboard-20261102-v3-ficha-curta"
 DEFAULT_MODEL = "Qwen/Qwen3-30B-A3B-Instruct-2507"
 DEFAULT_PROVIDER = "siliconflow"
 LIMITE_PROMPT = 2400
@@ -101,6 +101,8 @@ def _pedir_plano(ep: dict, cenas: list[dict], model: str) -> dict:
                 "para os personagens principais, fictícios e adultos, e ambiente "
                 "recorrente, sem contradizer os detalhes explícitos do texto; "
                 "não transforme personagens em Nina apresentadora. "
+                "A ficha personagens DEVE ter entre 100 e 600 caracteres, em UMA string. "
+                "Use uma frase curta por personagem e outra para os locais recorrentes. "
                 "Em cada visual, inclua literalmente a ancora_sugerida da cena na descrição. "
                 "As imagens NÃO devem conter qualquer texto, letras, placas, "
                 "logotipos ou balões. Responda APENAS JSON conforme o esquema."
@@ -129,6 +131,28 @@ def _pedir_plano(ep: dict, cenas: list[dict], model: str) -> dict:
         return json.loads(msg["content"])
     except (requests.RequestException, ValueError, KeyError, IndexError, TypeError) as exc:
         raise StoryboardError("Não foi possível gerar o storyboard textual válido") from exc
+
+
+def _ajustar_ficha_personagens(plano: dict) -> dict:
+    """Limita excesso de prosa do Qwen sem inventar personagens ou eventos.
+
+    A resposta continua sendo obrigatoriamente um storyboard da IA. Somente
+    a ficha longa (um campo descritivo) é abreviada para caber nos prompts.
+    Não altera cenas, ações, âncoras, índices ou a origem do storyboard.
+    """
+    if not isinstance(plano, dict):
+        return plano
+    bible = plano.get("personagens")
+    if not isinstance(bible, str) or len(bible) <= 850:
+        return plano
+    short = bible[:780].rstrip()
+    # Prefira cortar após uma frase completa; não descarte todo o conteúdo.
+    boundary = max(short.rfind(". "), short.rfind("; "), short.rfind(".\\n"))
+    if boundary >= 300:
+        short = short[:boundary + 1].rstrip()
+    result = dict(plano)
+    result["personagens"] = short
+    return result
 
 
 def _validar_plano(plano: dict, cenas: list[dict], style: str) -> list[str]:
@@ -191,8 +215,9 @@ def preparar(ep: dict, cenas: list[dict], pasta: Path, style: str,
             anterior = json.loads(saved.read_text(encoding="utf-8"))
             modo_esperado = provider + "_roteiro"
             if anterior.get("hash") == fingerprint and anterior.get("modo") == modo_esperado:
-                prompts = _validar_plano(anterior["plano"], cenas, style)
-                resultado = (prompts, modo_esperado, anterior["plano"])
+                plano_salvo = _ajustar_ficha_personagens(anterior["plano"])
+                prompts = _validar_plano(plano_salvo, cenas, style)
+                resultado = (prompts, modo_esperado, plano_salvo)
         except (ValueError, KeyError, TypeError):
             pass
     if resultado is None:
@@ -204,6 +229,7 @@ def preparar(ep: dict, cenas: list[dict], pasta: Path, style: str,
                 # tentativa; nunca passar prompts sem as dez âncoras verificadas.
                 for tentativa in range(2):
                     plano = planner(ep, cenas, model) if planner is not None else _pedir_plano(ep, cenas, model)
+                    plano = _ajustar_ficha_personagens(plano)
                     try:
                         prompts = _validar_plano(plano, cenas, style)
                         resultado = (prompts, provider + "_roteiro", plano)
