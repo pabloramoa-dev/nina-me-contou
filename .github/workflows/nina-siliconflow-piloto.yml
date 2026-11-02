@@ -1,0 +1,78 @@
+name: Nina - piloto SiliconFlow autorizado
+on:
+  push:
+    branches: [feat/nina-siliconflow-painel-20261029]
+    paths: [pilotos/nina-siliconflow-piloto-20261101.json]
+permissions:
+  contents: read
+concurrency:
+  group: nina-siliconflow-piloto-20261101
+  cancel-in-progress: false
+jobs:
+  piloto:
+    if: github.run_attempt == 1 && contains(github.event.head_commit.message, '[piloto-siliconflow-autorizado]')
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          sparse-checkout: |
+            .github
+            motor
+            video
+            tools
+            src
+            tests
+            pilotos
+            requirements-estudio.txt
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Dependências de sistema
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg pkg-config libcairo2-dev libpango1.0-dev espeak-ng fonts-dejavu-core
+      - name: Dependências Python
+        run: pip install -r requirements-estudio.txt
+      - name: Testes sem cobrança
+        run: |
+          python -m unittest discover -s tests -p test_siliconflow_nina.py -v
+          python -m unittest discover -s tests -p test_nina_cinema2d.py -v
+      - uses: ./.github/actions/setup-hyperframes
+      - name: Validar credencial sem exibir
+        env:
+          SILICONFLOW_API_KEY: ${{ secrets.SILICONFLOW_API_KEY }}
+        run: |
+          test -n "$SILICONFLOW_API_KEY" || { echo "Secret ausente"; exit 1; }
+      - name: Produzir somente o piloto autorizado
+        env:
+          SILICONFLOW_API_KEY: ${{ secrets.SILICONFLOW_API_KEY }}
+          NINA_ALLOW_PAID_IMAGE_API: '1'
+          NINA_IMAGE_RETRIES: '0'
+          NINA_TARGET_IMAGES: '10'
+          NINA_MAX_IMAGES: '10'
+          NINA_MAX_DUR: '100'
+        run: python motor/produzir.py pilotos/nina-siliconflow-piloto-20261101.json
+      - name: Verificar dez imagens reais
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('saida/nina-siliconflow-piloto-20261101')
+          report=json.loads((p/'visual_images.json').read_text())
+          assert len(report['scenes']) == 10
+          assert all(s['status'] in ('generated','cache') for s in report['scenes']), 'Imagens pagas incompletas'
+          assert (p/'nina-siliconflow-piloto-20261101.mp4').stat().st_size > 10000
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: nina-siliconflow-piloto
+          retention-days: 7
+          path: |
+            saida/nina-siliconflow-piloto-20261101/*.mp4
+            saida/nina-siliconflow-piloto-20261101/*.json
+            saida/nina-siliconflow-piloto-20261101/legenda.txt
+            saida/nina-siliconflow-piloto-20261101/hyperframes/assets/visual-scene-*.png

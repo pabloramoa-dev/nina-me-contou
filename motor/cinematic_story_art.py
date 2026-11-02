@@ -223,21 +223,25 @@ def preparar_quadros(ep,segs,dur,public,base_assets=None,visual_report=None,inte
     # O diretório public pode sobreviver a renders no mesmo runner.
     for old in destino.glob("frame-*.png"):
         old.unlink()
-    aprovadas=[]
+    # Priorizar ilustrações da API/cache e materiais aprovados no painel da Nina.
+    # A versão anterior descartava imagens de API e reconstruía tudo em CPU.
+    ilustracoes=[]
     for scene in (visual_report or {}).get("scenes",[]):
-        if scene.get("status")=="approved_asset":
+        if scene.get("status") in ("approved_asset", "generated", "cache", "local_fallback"):
             name=scene.get("asset","")
             if re.fullmatch(r"visual-scene-[0-9]+\.png",name):
-                aprovadas.append((float(scene["start"]),float(scene["end"]),name))
+                ilustracoes.append((float(scene["start"]),float(scene["end"]),
+                                   name,scene["status"]))
     frames=planejar_quadros(ep,segs,dur,intervalo=intervalo)
     ready=[]
     for spec in frames:
         file=f"frame-{spec['scene']:03d}.png"
         dest=destino/file
-        match=next((name for a,b,name in aprovadas if a<=spec["start"]<b),None)
-        if match and base_assets and (Path(base_assets)/match).is_file():
-            shutil.copyfile(Path(base_assets)/match,dest)
-            origin="approved"
+        match=next(((name,status) for a,b,name,status in ilustracoes
+                    if a<=spec["start"]<b),None)
+        if match and base_assets and (Path(base_assets)/match[0]).is_file():
+            shutil.copyfile(Path(base_assets)/match[0],dest)
+            origin="approved" if match[1]=="approved_asset" else match[1]
         else:
             dest.write_bytes(render(spec,ep))
             origin="cinematic_cpu"

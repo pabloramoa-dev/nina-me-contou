@@ -23,7 +23,7 @@ class NinaBase(Scene):
         cues=json.loads((P/'lip.json').read_text())
         bats=EP['batidas'];cenario=EP.get('cenario','tarde')
         self.add(N.varanda(cenario)['grupo'])
-        p=N.posicionar(N.nina(bats[0].get('expr','neutra'),cenario),escala=1.65,pos=np.array([0,-2.25,0]))
+        p=N.posicionar(N.nina(bats[0].get('expr','neutra'),cenario),escala=1.43,pos=np.array([0,-2.68,0]))
         V.colar(self,p,espessura=22)
         home=p['grupo'].get_center().copy();state={'i':0}
         inicio_braco=p['braco_esq'].get_start().copy()

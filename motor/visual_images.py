@@ -21,18 +21,18 @@ from PIL import Image
 
 CONFIG = Path(__file__).with_name('visual_images.json')
 STYLE = (
-    'Ilustração digital cartoon editorial premium em forma de adesivo recortado, '
-    'contornos limpos castanho-escuros, olhos expressivos quando houver pessoas, '
-    'formas arredondadas, cores vibrantes e sombreamento suave com volume 2.5D, '
-    'acabamento polido, pequeno contorno branco. Paleta consistente: jeans azul, '
-    'creme, coral e amarelo dourado. Composição horizontal simples com um foco '
-    'narrativo central grande e no máximo três objetos de apoio. '
-    'Personagens fictícios; manter aparência e roupas consistentes no episódio. '
-    'Se a cena mostrar uma criadora genérica, usar cabelo castanho em coque solto '
-    'e roupa casual; ela NÃO é a apresentadora Nina. Nunca redesenhar a apresentadora. '
-    'Fundo totalmente transparente, sem cenário de fundo, sem xadrez, sem moldura. '
-    'Margem transparente de 8% em todos os lados, nada cortado. '
-    'NÃO incluir letras, legendas, títulos, números, balões de fala, marcas ou logotipos. '
+    'Ilustração editorial moderna em estilo revistinha digital, comic magazine, '
+    'arte 2D colorida com contornos nítidos e arredondados, desenho de revista '
+    'contemporânea, expressões marcantes e enquadramento cinematográfico simples. '
+    'NÃO é fotografia nem anime realista. '
+    'Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal '
+    'no centro com margens para corte seguro. Paleta alegre: coral, dourado, '
+    'azul-petróleo, creme, harmonizada entre todas as cenas. '
+    'Personagens fictícios adultos, traços e roupas constantes dentro do episódio; '
+    'eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. '
+    'Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. '
+    'Não incluir letras, legendas, títulos, números, balões, marcas, molduras '
+    'ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. '
 )
 
 
@@ -57,9 +57,11 @@ def config(ep=None):
         cfg[key] = _bool(cfg[key])
     for key in ('min_images', 'max_images', 'target_images', 'image_retries', 'image_timeout_seconds'):
         cfg[key] = int(cfg[key])
-    if not 4 <= cfg['min_images'] <= cfg['max_images'] <= 8:
-        raise ValueError('Quantidade de imagens deve respeitar 4 <= mínimo <= máximo <= 8')
+    if not 4 <= cfg['min_images'] <= cfg['max_images'] <= 10:
+        raise ValueError('Quantidade de imagens deve respeitar 4 <= mínimo <= máximo <= 10')
     cfg['target_images'] = max(cfg['min_images'], min(cfg['max_images'], cfg['target_images']))
+    if cfg.get('image_provider', 'openai') not in ('openai', 'siliconflow'):
+        raise ValueError('image_provider deve ser openai ou siliconflow')
     if cfg['fallback'] not in ('story_frame_text', 'original_art'):
         raise ValueError('fallback deve ser story_frame_text ou original_art')
     if not 0 <= cfg['image_retries'] <= 2 or not 10 <= cfg['image_timeout_seconds'] <= 300:
@@ -129,21 +131,35 @@ class ImageFailure(RuntimeError):
 
 
 def gerar(prompt, cfg):
-    # O pipeline gratuito nunca faz requisicao a API paga por padrao.
-    # Qualquer gasto exige uma segunda autorizacao explicita no ambiente.
+    """Geração paga opt-in; sem chave ou autorização fica no fallback local."""
     if not _bool(os.environ.get('NINA_ALLOW_PAID_IMAGE_API', '0')):
         raise ImageFailure('paid_image_api_disabled')
-    key = os.environ.get('OPENAI_API_KEY', '').strip()
+
+    provider = cfg.get('image_provider', 'openai')
+    key_env = 'SILICONFLOW_API_KEY' if provider == 'siliconflow' else 'OPENAI_API_KEY'
+    key = os.environ.get(key_env, '').strip()
     if not key:
-        raise ImageFailure('missing_openai_api_key')
-    payload = {'model': cfg['image_model'], 'prompt': prompt, 'n': 1,
-               'size': cfg['image_size'], 'quality': cfg['image_quality'],
-               'background': cfg['image_background'], 'output_format': 'png'}
-    for attempt in range(cfg['image_retries']+1):
+        raise ImageFailure('missing_' + key_env.lower())
+
+    if provider == 'siliconflow':
+        # Endpoint internacional oficial. Nunca enviar chaves no log/manifesto.
+        endpoint = 'https://api.siliconflow.com/v1/images/generations'
+        payload = {
+            'model': cfg['image_model'],
+            'prompt': prompt,
+            'image_size': cfg['image_size'],
+            'seed': int(hashlib.sha256(prompt.encode('utf-8')).hexdigest()[:8], 16),
+        }
+    else:
+        endpoint = 'https://api.openai.com/v1/images/generations'
+        payload = {'model': cfg['image_model'], 'prompt': prompt, 'n': 1,
+                   'size': cfg['image_size'], 'quality': cfg['image_quality'],
+                   'background': cfg['image_background'], 'output_format': 'png'}
+
+    for attempt in range(cfg['image_retries'] + 1):
         try:
-            response = requests.post('https://api.openai.com/v1/images/generations',
-                                     headers={'Authorization': 'Bearer '+key}, json=payload,
-                                     timeout=(15, cfg['image_timeout_seconds']))
+            response = requests.post(endpoint, headers={'Authorization': 'Bearer ' + key},
+                                     json=payload, timeout=(15, cfg['image_timeout_seconds']))
         except requests.RequestException:
             if attempt < cfg['image_retries']:
                 time.sleep(2)
@@ -151,14 +167,26 @@ def gerar(prompt, cfg):
             raise ImageFailure('image_network_error') from None
         if response.status_code == 200:
             try:
+                if provider == 'siliconflow':
+                    # A URL expira em 1 hora: baixar imediatamente, antes do render.
+                    from urllib.parse import urlsplit
+                    image_url = response.json()['images'][0]['url']
+                    url = urlsplit(image_url)
+                    if url.scheme != 'https' or not url.hostname or url.username or url.password:
+                        raise ValueError('invalid image url')
+                    image_response = requests.get(image_url, timeout=(15, cfg['image_timeout_seconds']))
+                    image_response.raise_for_status()
+                    if len(image_response.content) > 20_000_000:
+                        raise ValueError('oversized image')
+                    return image_response.content
                 return base64.b64decode(response.json()['data'][0]['b64_json'], validate=True)
-            except (ValueError, KeyError, IndexError):
+            except (ValueError, KeyError, IndexError, TypeError, requests.RequestException):
                 raise ImageFailure('invalid_image_response') from None
         if (response.status_code == 429 or response.status_code >= 500) and attempt < cfg['image_retries']:
             time.sleep(2)
             continue
-        # Never log request headers, tokens or entire error bodies.
         raise ImageFailure(f'image_http_{response.status_code}')
+
 
 
 def validar_imagem(data):
@@ -185,7 +213,7 @@ def preparar(ep, segs, assets, pasta, generator=None):
     mapping = {}
     circuit = None
     for scene in scenes:
-        request = {k: cfg[k] for k in ('image_model', 'image_quality', 'image_size', 'image_background')}
+        request = {k: cfg[k] for k in ('image_provider', 'image_model', 'image_quality', 'image_size', 'image_background')}
         request['prompt'] = scene['prompt']
         digest = hashlib.sha256(json.dumps(request, sort_keys=True).encode()).hexdigest()
         cached = cache/(digest+'.png')
@@ -228,7 +256,7 @@ def preparar(ep, segs, assets, pasta, generator=None):
                              error='invalid_approved_asset')
                 print(f"visual scene {scene['scene']}: approved asset invalido", flush=True)
                 continue
-            if reason in ('missing_openai_api_key', 'image_http_401', 'image_http_403', 'image_http_429'):
+            if reason in ('missing_openai_api_key', 'missing_siliconflow_api_key', 'image_http_401', 'image_http_403', 'image_http_429'):
                 circuit = reason
             # Áudio/roteiro não mudam. Avulsos recebem ilustração editorial
             # original offline se faltar a API, sem depender de fotos externas.
