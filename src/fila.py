@@ -13,6 +13,7 @@ from datetime import datetime, timezone, timedelta
 
 from src import config
 from motor.render_version import versao
+from motor.siliconflow_policy import validar_arquivo_publicacao
 
 BRT = timezone(timedelta(hours=-3))
 RX = re.compile(r"^ep(\d{3})$")
@@ -52,6 +53,9 @@ def assinatura(ep_id: str) -> str:
 
 def desatualizado(ep_id: str) -> bool:
     if not (config.REELS / f"{ep_id}.mp4").exists():
+        return True
+    # Fail closed: nada de vídeo local, incompleto ou sem manifesto SiliconFlow.
+    if not validar_arquivo_publicacao(config.REELS, ep_id):
         return True
     h = config.REELS / f"{ep_id}.hash"
     if h.exists():
