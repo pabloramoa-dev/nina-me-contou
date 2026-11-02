@@ -46,9 +46,9 @@ jobs:
       - name: Renderizar EP187 com dez imagens pagas obrigatórias
         env:
           SILICONFLOW_API_KEY: ${{ secrets.SILICONFLOW_API_KEY }}
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           NINA_REQUIRE_AI_STORYBOARD: '1'
-          NINA_STORYBOARD_MODEL: 'gpt-4o-mini'
+          NINA_STORYBOARD_PROVIDER: 'siliconflow'
+          NINA_STORYBOARD_MODEL: 'Qwen/Qwen3-30B-A3B-Instruct-2507'
           NINA_ALLOW_PAID_IMAGE_API: '1'
           NINA_REQUIRE_SILICONFLOW: '1'
           NINA_IMAGE_RETRIES: '0'
@@ -64,7 +64,7 @@ jobs:
           p = Path('saida_reels')
           meta = json.loads((p/'ep187-render.json').read_text(encoding='utf-8'))
           validar_metadados(meta)
-          assert meta['storyboard_mode'] == 'openai_roteiro' and meta['storyboard_scenes'] == 10
+          assert meta['storyboard_mode'] == 'siliconflow_roteiro' and meta['storyboard_scenes'] == 10
           assert meta['gancho_antecipacao_modelo'] in ('antecipacao_existente_validada','antecipacao_pista_concreta','antecipacao_pergunta_concreta')
           assert (p/'ep187.mp4').is_file() and (p/'ep187.mp4').stat().st_size > 100_000
           print('EP187 aprovado: gancho antecipado, storyboard de 10 prompts, dez imagens SiliconFlow, sem quadro local e MP4 gerado.')
