@@ -156,5 +156,14 @@
   "fim": "PLANTÃO OU OUTRA FAMÍLIA?",
   "legenda_post": "Ele dizia que estava de plantão... mas tinha outra esposa e dois filhos! 😱 Você enfrentaria essa conversa junto com a outra mulher? #NinaMeContou #Storytime #Fofoca #Traição",
   "gancho_versao": "antecipacao-20261102",
-  "gancho_modelo": "abertura_direta_existente"
+  "gancho_modelo": "abertura_direta_existente",
+  "visual_images": {
+    "image_provider": "siliconflow",
+    "auto_visual_images": true,
+    "min_images": 10,
+    "max_images": 10,
+    "target_images": 10
+  },
+  "visual_style": "cinematic_2d",
+  "revisao": "siliconflow-10-cenas-20261102"
 }
