@@ -31,14 +31,6 @@
       "destaque": []
     },
     {
-      "fala": "Ela fingiu acreditar. Reuniu os amigos, encomendou salgadinhos, escolheu a música favorita dele e comprou um bolo de chocolate com trinta velinhas.",
-      "expr": "ironica",
-      "arte": [
-        "conversa"
-      ],
-      "destaque": []
-    },
-    {
       "fala": "O primeiro sinal estranho veio quando o restaurante perguntou se a segunda decoração também deveria ser montada no salão reservado por Malu.",
       "expr": "desconfiada",
       "arte": [
@@ -151,14 +143,6 @@
       "destaque": []
     },
     {
-      "fala": "A parte mais triste foi perceber que cada uma havia defendido Ícaro diante dos próprios amigos, acreditando nas desculpas que agora apareciam lado a lado.",
-      "expr": "triste",
-      "arte": [
-        "foto"
-      ],
-      "destaque": []
-    },
-    {
       "fala": "Renata explicou que nunca soube da existência de Malu. Malu acreditou, porque as mensagens mostravam o mesmo roteiro de mentiras para ambas.",
       "expr": "neutra",
       "arte": [
@@ -187,14 +171,6 @@
       "expr": "neutra",
       "arte": [
         "foto"
-      ],
-      "destaque": []
-    },
-    {
-      "fala": "Renata levou metade de um bolo para casa. Malu ficou com a outra metade. Nenhuma das duas levou uma nova mentira para a semana seguinte.",
-      "expr": "neutra",
-      "arte": [
-        "presente"
       ],
       "destaque": []
     },
