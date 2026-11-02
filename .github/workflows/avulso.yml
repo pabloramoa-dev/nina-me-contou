@@ -125,10 +125,25 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+          SILICONFLOW_API_KEY: ${{ secrets.SILICONFLOW_API_KEY }}
+          NINA_ALLOW_PAID_IMAGE_API: "1"
+          NINA_REQUIRE_SILICONFLOW: "1"
+          NINA_STORYBOARD_PROVIDER: "siliconflow"
+          NINA_MOTOR: "hyperframes"
+          NINA_FINAL_COMPOSITOR: "remotion"
           NINA_MAX_DUR: "180"
         run: |
           F="${{ matrix.roteiro }}"; ID=$(basename "$F" .json)
           python motor/produzir.py "$F"
+          python - "$ID" <<'PY'
+          import json, sys
+          sys.path.insert(0, "motor")
+          from siliconflow_policy import validar_metadados
+          path = f"saida/{sys.argv[1]}/render.json"
+          with open(path, encoding="utf-8") as f:
+              validar_metadados(json.load(f))
+          print("SiliconFlow: 10 imagens confirmadas")
+          PY
           mkdir -p out
           cp "saida/$ID/$ID.mp4" "out/$ID.mp4"
           python -c "from PIL import Image;Image.open('saida/$ID/capa.png').convert('RGB').save('out/$ID-capa.jpg',quality=90)"
