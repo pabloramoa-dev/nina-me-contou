@@ -1,53 +1,55 @@
 {
-  "id": "ep999",
-  "parte": "unica",
-  "titulo": "O SEGREDO DOS QUINHENTOS REAIS",
-  "cenario": "tarde",
-  "voice_engine": "kokoro",
-  "kokoro_voice": "pf_dora",
-  "visual_style": "cinematic_2d",
-  "batidas": [
-    {
-      "fala": "Imagina descobrir que a sua melhor amiga estava recebendo dinheiro da sua mãe, escondido, durante seis meses. Foi exatamente o que aconteceu com Clara. E o pior: no comprovante aparecia a frase 'não conte para ela'.",
-      "expr": "chocada"
-    },
-    {
-      "fala": "Clara tinha uma confeitaria pequena e lutava para manter as portas abertas. Sua amiga Júlia ajudava aos sábados, sem cobrar nada. As duas se conheciam desde a escola e juravam que nunca teriam segredos uma com a outra.",
-      "expr": "neutra"
-    },
-    {
-      "fala": "Numa manhã, o celular de Júlia ficou sobre a bancada. Uma notificação mostrou uma transferência da mãe de Clara: quinhentos reais. Logo abaixo, outra mensagem dizia: 'Obrigada por continuar fazendo isso. Ela não pode descobrir antes de sexta'.",
-      "expr": "desconfiada"
-    },
-    {
-      "fala": "Clara sentiu o rosto esquentar. Júlia vivia dizendo que não tinha dinheiro nem para comprar uma bolsa nova. Por que recebia depósitos da mãe dela? E que coisa tão importante estavam escondendo até sexta-feira?",
-      "expr": "desconfiada"
-    },
-    {
-      "fala": "Em vez de perguntar, Clara começou a investigar. Procurou recibos, observou as entregas e estranhou quando Júlia saiu da cozinha levando uma caixa enorme embrulhada em papel pardo. Seguiu a amiga até uma antiga escola de bairro.",
-      "expr": "desconfiada"
-    },
-    {
-      "fala": "Da calçada, Clara viu Júlia entregar a caixa à diretora. Ouviu apenas algumas palavras: 'A mãe dela mandou o restante. Se a Clara souber, a surpresa acaba'. Aquilo pareceu uma confirmação de que estavam tramando alguma coisa pelas costas dela.",
-      "expr": "chocada"
-    },
-    {
-      "fala": "Na sexta, Clara chegou cedo à confeitaria e colocou Júlia contra a parede. 'Eu vi as transferências. Vi a caixa. Se tem alguma coisa para me contar, é agora'. Júlia ficou quieta por alguns segundos e pediu que ela fosse até a escola.",
-      "expr": "brava"
-    },
-    {
-      "fala": "Clara entrou contrariada no salão. Em vez de uma reunião secreta, encontrou dezenas de crianças diante de uma mesa cheia de bolos. Na parede havia um cartaz: 'Oficina de confeitaria da Clara'. A diretora explicou que todos tinham participado de aulas gratuitas.",
-      "expr": "chocada"
-    },
-    {
-      "fala": "Júlia contou que Clara sempre sonhara em ensinar confeitaria às crianças do bairro, mas nunca conseguira pagar os ingredientes. A mãe dela bancara a primeira turma. Os depósitos cobriam farinha, chocolate e transporte. As caixas carregavam utensílios e formas.",
-      "expr": "neutra"
-    },
-    {
-      "fala": "Clara pediu desculpas por ter desconfiado e agradeceu às duas. Então teve uma ideia: reservar uma tarde por mês para novas turmas, com ajuda dos comerciantes locais. Moral da história? Às vezes uma mensagem escondida não é traição; é uma surpresa muito bem guardada. Segue a Nina para mais histórias.",
-      "expr": "ironica"
-    }
-  ],
-  "fim": "O SEGREDO ERA UMA SURPRESA",
-  "legenda_post": "Ela descobriu transferências escondidas entre a mãe e a melhor amiga. O que encontrou na escola mudou tudo! História de ficção. #NinaMeContou #Historias #Storytime #Revistinha"
+ "id": "ep999",
+ "parte": "unica",
+ "titulo": "O SEGREDO DOS QUINHENTOS REAIS",
+ "cenario": "tarde",
+ "voice_engine": "kokoro",
+ "kokoro_voice": "pf_dora",
+ "visual_style": "cinematic_2d",
+ "batidas": [
+  {
+   "fala": "Imagina descobrir que a sua melhor amiga estava recebendo dinheiro da sua mãe, escondido, durante seis meses. Foi exatamente o que aconteceu com Clara. E o pior: no comprovante aparecia a frase 'não conte para ela'.",
+   "expr": "chocada"
+  },
+  {
+   "fala": "Clara tinha uma confeitaria pequena e lutava para manter as portas abertas. Sua amiga Júlia ajudava aos sábados, sem cobrar nada. As duas se conheciam desde a escola e juravam que nunca teriam segredos uma com a outra.",
+   "expr": "neutra"
+  },
+  {
+   "fala": "Numa manhã, o celular de Júlia ficou sobre a bancada. Uma notificação mostrou uma transferência da mãe de Clara: quinhentos reais. Logo abaixo, outra mensagem dizia: 'Obrigada por continuar fazendo isso. Ela não pode descobrir antes de sexta'.",
+   "expr": "desconfiada"
+  },
+  {
+   "fala": "Clara sentiu o rosto esquentar. Júlia vivia dizendo que não tinha dinheiro nem para comprar uma bolsa nova. Por que recebia depósitos da mãe dela? E que coisa tão importante estavam escondendo até sexta-feira?",
+   "expr": "desconfiada"
+  },
+  {
+   "fala": "Em vez de perguntar, Clara começou a investigar. Procurou recibos, observou as entregas e estranhou quando Júlia saiu da cozinha levando uma caixa enorme embrulhada em papel pardo. Seguiu a amiga até uma antiga escola de bairro.",
+   "expr": "desconfiada"
+  },
+  {
+   "fala": "Da calçada, Clara viu Júlia entregar a caixa à diretora. Ouviu apenas algumas palavras: 'A mãe dela mandou o restante. Se a Clara souber, a surpresa acaba'. Aquilo pareceu uma confirmação de que estavam tramando alguma coisa pelas costas dela.",
+   "expr": "chocada"
+  },
+  {
+   "fala": "Na sexta, Clara chegou cedo à confeitaria e colocou Júlia contra a parede. 'Eu vi as transferências. Vi a caixa. Se tem alguma coisa para me contar, é agora'. Júlia ficou quieta por alguns segundos e pediu que ela fosse até a escola.",
+   "expr": "brava"
+  },
+  {
+   "fala": "Clara entrou contrariada no salão. Em vez de uma reunião secreta, encontrou dezenas de crianças diante de uma mesa cheia de bolos. Na parede havia um cartaz: 'Oficina de confeitaria da Clara'. A diretora explicou que todos tinham participado de aulas gratuitas.",
+   "expr": "chocada"
+  },
+  {
+   "fala": "Júlia contou que Clara sempre sonhara em ensinar confeitaria às crianças do bairro, mas nunca conseguira pagar os ingredientes. A mãe dela bancara a primeira turma. Os depósitos cobriam farinha, chocolate e transporte. As caixas carregavam utensílios e formas.",
+   "expr": "neutra"
+  },
+  {
+   "fala": "Clara pediu desculpas por ter desconfiado e agradeceu às duas. Então teve uma ideia: reservar uma tarde por mês para novas turmas, com ajuda dos comerciantes locais. Moral da história? Às vezes uma mensagem escondida não é traição; é uma surpresa muito bem guardada. Segue a Nina para mais histórias.",
+   "expr": "ironica"
+  }
+ ],
+ "fim": "O SEGREDO ERA UMA SURPRESA",
+ "legenda_post": "Ela descobriu transferências escondidas entre a mãe e a melhor amiga. O que encontrou na escola mudou tudo! História de ficção. #NinaMeContou #Historias #Storytime #Revistinha",
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
 }
