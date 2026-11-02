@@ -47,6 +47,7 @@ jobs:
         env:
           SILICONFLOW_API_KEY: ${{ secrets.SILICONFLOW_API_KEY }}
           NINA_REQUIRE_AI_STORYBOARD: '1'
+          # Storyboard v3: Qwen com ficha de personagens concisa, validada antes das imagens.
           NINA_STORYBOARD_PROVIDER: 'siliconflow'
           NINA_STORYBOARD_MODEL: 'Qwen/Qwen3-30B-A3B-Instruct-2507'
           NINA_ALLOW_PAID_IMAGE_API: '1'
