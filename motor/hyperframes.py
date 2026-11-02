@@ -339,6 +339,10 @@ def renderizar(ep,pasta,raiz):
         raise ValueError('Qualidade técnica reprovada: '+ '; '.join(relatorio['erros']))
     info={'motor':'hyperframes','versao':HYPERFRAMES_VERSION,'fotos':len(ep['_fotos']),'duracao':dur,'resolucao':[1080,1920],'fps':30,'voz':'pt-BR-ThalitaNeural','audio':'pedalboard' if audio_fx.disponivel() else 'ffmpeg','sfx':len(SFX.eventos(ep,segs)),'visual':'v4' if usa_v4() else 'v3','lip':os.environ.get('NINA_LIP','rhubarb'),'cenario':ep.get('cenario','tarde'),'batidas':len(segs)}
     info.update(visual_images_ready=visual_report['ready'],visual_images_requested=visual_report['requested'],visual_images_fallbacks=visual_report['fallbacks'],visual_photo_fallbacks=len(ep['_fotos']),visual_total_ready=visual_report['ready']+len(ep['_fotos']), direcao_automatica=diretor_ativo, gestos_distintos=len({x['gesto'] for x in plano}),qualidade_tecnica=relatorio['aprovado_tecnicamente'])
+    storyboard=visual_report.get('storyboard') or {}
+    info.update(storyboard_mode=storyboard.get('modo'),storyboard_scenes=storyboard.get('cenas'),
+                storyboard_version=storyboard.get('versao'),gancho_antecipacao_versao=ep.get('gancho_antecipacao_versao'),
+                gancho_antecipacao_modelo=ep.get('gancho_antecipacao_modelo'))
     if str(ep.get('voice_engine') or os.environ.get('NINA_VOICE_ENGINE','thalita')).lower()=='kokoro':
         info['voz']=ep.get('kokoro_voice') or os.environ.get('NINA_KOKORO_VOICE','pf_dora')
     (pasta/'render.json').write_text(json.dumps(info,ensure_ascii=False,indent=2))

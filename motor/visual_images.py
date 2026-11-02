@@ -103,6 +103,13 @@ def planejar(ep, segs, cfg=None):
     count = min(len(beats), cfg['target_images'])
     # Each beat is a narrative unit. Merge adjacent shortest units until budget fits.
     groups = [[i] for i in range(len(beats))]
+    # O CTA nunca ganha uma das 10 imagens: a imagem final representa o
+    # desfecho da história, não o texto genérico de seguir a Nina.
+    if len(groups) > 1 and (
+        (beats[-1].get('arte') or [None])[0] == 'seguir' or
+        re.search(r'\b(?:me segue|siga a nina|segue a nina)\b', beats[-1].get('fala', ''), re.I)
+    ):
+        groups[-2].extend(groups.pop())
     while len(groups) > count:
         def cost(i):
             inds = groups[i] + groups[i+1]
@@ -208,6 +215,12 @@ def preparar(ep, segs, assets, pasta, generator=None):
     scenes = planejar(ep, segs, cfg)
     assets, pasta = Path(assets), Path(pasta)
     assets.mkdir(parents=True, exist_ok=True)
+    # O storyboard gera e valida todos os prompts ANTES de qualquer cobrança.
+    try:
+        from .storyboard_prompts import preparar as planejar_prompts
+    except ImportError:
+        from storyboard_prompts import preparar as planejar_prompts
+    scenes, storyboard = planejar_prompts(ep, scenes, pasta, STYLE)
     cache = pasta/'visual_cache'
     cache.mkdir(parents=True, exist_ok=True)
     mapping = {}
@@ -291,6 +304,7 @@ def preparar(ep, segs, assets, pasta, generator=None):
             scene.update(status='fallback', mode='story_frame_text', error=reason)
             print(f'visual scene {scene["scene"]}: {reason}; fallback={cfg["fallback"]}', flush=True)
     report = {'config': cfg, 'requested': len(scenes), 'ready': sum(s['status'] != 'fallback' for s in scenes),
-              'fallbacks': sum(s['status'] == 'fallback' for s in scenes), 'scenes': scenes}
+              'fallbacks': sum(s['status'] == 'fallback' for s in scenes),
+              'storyboard': storyboard, 'scenes': scenes}
     (pasta/'visual_images.json').write_text(json.dumps(report, ensure_ascii=False, indent=2))
     return mapping, report

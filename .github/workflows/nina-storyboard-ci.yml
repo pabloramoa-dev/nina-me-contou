@@ -1,0 +1,52 @@
+name: Nina — testar antecipação e direção de prompts
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'motor/antecipacao.py'
+      - 'motor/storyboard_prompts.py'
+      - 'motor/visual_images.py'
+      - 'motor/produzir.py'
+      - 'motor/hyperframes.py'
+      - 'motor/siliconflow_policy.py'
+      - 'motor/render_version.py'
+      - 'tests/test_storyboard_antecipacao.py'
+      - 'tests/test_siliconflow_policy.py'
+      - '.github/workflows/produzir.yml'
+      - '.github/workflows/nina-storyboard-ci.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'motor/antecipacao.py'
+      - 'motor/storyboard_prompts.py'
+      - 'motor/visual_images.py'
+      - 'tests/test_storyboard_antecipacao.py'
+      - '.github/workflows/nina-storyboard-ci.yml'
+permissions:
+  contents: read
+jobs:
+  testar-sem-cobrar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          sparse-checkout: |
+            motor
+            src
+            tools
+            tests
+            video/remotion
+          sparse-checkout-cone-mode: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Dependências mínimas
+        run: python -m pip install Pillow requests numpy
+      - name: Compilar e validar antecipação e 10 prompts antes da API paga
+        run: |
+          python -m compileall -q motor src
+          python -m unittest discover -s tests -p 'test_storyboard_antecipacao.py' -v
+          python -m unittest discover -s tests -p 'test_siliconflow_policy.py' -v
+          python -m unittest discover -s tests -p 'test_ganchos.py' -v

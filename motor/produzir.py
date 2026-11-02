@@ -41,8 +41,10 @@ def main():
     ep_json = os.path.abspath(a.episodio)
     sys.path.insert(0, MOTOR)
     from cta import garantir_cta
+    from antecipacao import antecipar
     from render_version import versao
-    ep = garantir_cta(json.load(open(ep_json, encoding="utf-8")))   # CTA de seguir sempre no final
+    # A antecipação é criada ANTES da voz: a primeira fala é a do MP4 real.
+    ep = garantir_cta(antecipar(json.load(open(ep_json, encoding="utf-8"))))
     from visual_images import preparar_roteiro, config as visual_config
     ep = preparar_roteiro(ep)
     ep['visual_images'] = visual_config(ep)

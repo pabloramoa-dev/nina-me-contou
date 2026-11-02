@@ -88,7 +88,10 @@ def validar_metadados(meta: dict) -> None:
             or meta.get("motor") != "remotion"
             or meta.get("visual_images_requested") != 10
             or meta.get("visual_images_ready") != 10
-            or meta.get("visual_images_fallbacks") != 0):
+            or meta.get("visual_images_fallbacks") != 0
+            or meta.get("storyboard_mode") != "openai_roteiro"
+            or meta.get("storyboard_scenes") != 10
+            or meta.get("gancho_antecipacao_versao") != "nina-antecipacao-20261102-v2"):
         raise SiliconFlowObrigatoria("Vídeo sem confirmação de 10 imagens SiliconFlow")
 
 
