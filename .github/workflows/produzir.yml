@@ -139,6 +139,8 @@ jobs:
           SILICONFLOW_API_KEY: ${{ secrets.SILICONFLOW_API_KEY }}
           NINA_ALLOW_PAID_IMAGE_API: '1'
           NINA_REQUIRE_SILICONFLOW: '1'  # Instagram: bloqueia qualquer imagem local
+          NINA_REQUIRE_AI_STORYBOARD: '1' # Antes da SiliconFlow, validar 10 prompts ligados ao roteiro
+          NINA_STORYBOARD_MODEL: 'gpt-4o-mini'
           NINA_IMAGE_RETRIES: '0'
           NINA_TARGET_IMAGES: '10'
           NINA_MAX_IMAGES: '10'
