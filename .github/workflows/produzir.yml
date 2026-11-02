@@ -138,6 +138,7 @@ jobs:
         env:
           SILICONFLOW_API_KEY: ${{ secrets.SILICONFLOW_API_KEY }}
           NINA_ALLOW_PAID_IMAGE_API: '1'
+          NINA_REQUIRE_SILICONFLOW: '1'  # Instagram: bloqueia qualquer imagem local
           NINA_IMAGE_RETRIES: '0'
           NINA_TARGET_IMAGES: '10'
           NINA_MAX_IMAGES: '10'
