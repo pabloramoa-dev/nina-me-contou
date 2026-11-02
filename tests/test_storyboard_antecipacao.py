@@ -161,6 +161,34 @@ class TestarStoryboard(unittest.TestCase):
                 self.assertEqual(kwargs["json"]["response_format"], {"type": "json_object"})
                 self.assertEqual(kwargs["json"]["model"], "Qwen/Qwen3-30B-A3B-Instruct-2507")
 
+    def test_qwen_ficha_muito_longa_e_abreviada_sem_mudar_cenas(self):
+        ep, shots = episodio(), cenas()
+        def plano_longo(ep, scenes, model):
+            plano = plano_ok(ep, scenes, model)
+            plano["personagens"] += " Ambiente de apartamento e restaurante." * 80
+            return plano
+        with tempfile.TemporaryDirectory() as tmp:
+            planned, report = S.preparar(ep, shots, Path(tmp), V.STYLE,
+                                         planner=plano_longo, strict=True)
+            self.assertEqual(report["modo"], "siliconflow_roteiro")
+            self.assertEqual(len(planned), 10)
+            documento = json.loads((Path(tmp) / "prompts_planejados.json").read_text())
+            self.assertLessEqual(len(documento["plano"]["personagens"]), 850)
+            self.assertEqual([x["ancora"] for x in documento["plano"]["cenas"]],
+                             [" ".join(x["text"].split()[:4]) for x in shots])
+            self.assertTrue(all("PERSONAGENS" in x["prompt"] for x in planned))
+
+    def test_ficha_curta_invalida_continua_bloqueada(self):
+        ep, shots = episodio(), cenas()
+        def plano_curto(ep, scenes, model):
+            plano = plano_ok(ep, scenes, model)
+            plano["personagens"] = "curto"
+            return plano
+        with tempfile.TemporaryDirectory() as tmp:
+            with self.assertRaises(S.StoryboardError):
+                S.preparar(ep, shots, Path(tmp), V.STYLE,
+                           planner=plano_curto, strict=True)
+
     def test_bloqueia_prompts_desconectados_antes_de_cobrar_siliconflow(self):
         def inventar(ep, scenes, model):
             plano = plano_ok(ep, scenes, model)
