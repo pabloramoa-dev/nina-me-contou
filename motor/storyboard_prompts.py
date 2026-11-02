@@ -161,6 +161,8 @@ def preparar(ep: dict, cenas: list[dict], pasta: Path, style: str,
         return cenas, {"modo": "sem_cenas", "cenas": 0, "versao": VERSAO}
     if strict is None:
         strict = os.environ.get("NINA_REQUIRE_AI_STORYBOARD", "0").strip().lower() in ("1", "true", "sim")
+    if strict and len(cenas) != 10:
+        raise StoryboardError("Instagram exige 10 cenas planejadas ANTES de cobrar imagens")
     model = os.getenv("NINA_STORYBOARD_MODEL", DEFAULT_MODEL)
     fingerprint = hashlib.sha256(json.dumps({
         "versao": VERSAO, "modelo": model, "estilo": style,
