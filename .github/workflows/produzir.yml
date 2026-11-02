@@ -136,6 +136,11 @@ jobs:
       - name: Renderizar
         id: r
         env:
+          SILICONFLOW_API_KEY: ${{ secrets.SILICONFLOW_API_KEY }}
+          NINA_ALLOW_PAID_IMAGE_API: '1'
+          NINA_IMAGE_RETRIES: '0'
+          NINA_TARGET_IMAGES: '10'
+          NINA_MAX_IMAGES: '10'
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}   # opcional (fotos "banco"); sem ela usa Openverse CC0
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }} # opcional
