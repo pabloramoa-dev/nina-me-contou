@@ -36,6 +36,8 @@ def metadados():
         "siliconflow_confirmado": True, "siliconflow_provedor": "siliconflow",
         "siliconflow_ilustracoes": 10, "siliconflow_quadros": 6,
         "siliconflow_quadros_locais": 0,
+        "storyboard_mode": "openai_roteiro", "storyboard_scenes": 10,
+        "gancho_antecipacao_versao": "nina-antecipacao-20261102-v2",
     }
 
 
