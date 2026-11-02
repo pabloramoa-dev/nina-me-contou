@@ -1,6 +1,6 @@
 {
   "motor": "remotion",
-  "versao": "nina-hyperframes-9-cinema2d-remotion",
+  "versao": "nina-hyperframes-10-siliconflow-instagram-obrigatoria",
   "fotos": 0,
   "duracao": 161.4,
   "resolucao": [
@@ -28,5 +28,11 @@
   "legenda": "solta_sem_faixa_inferior",
   "estilo_cenas": "cinematic_2d",
   "cenas_cinema_2d": 24,
-  "intervalo_cinema_2d_segundos": 7
+  "intervalo_cinema_2d_segundos": 7,
+  "siliconflow_confirmado": true,
+  "siliconflow_provedor": "siliconflow",
+  "siliconflow_modelo": "black-forest-labs/FLUX.1-schnell",
+  "siliconflow_ilustracoes": 10,
+  "siliconflow_quadros": 24,
+  "siliconflow_quadros_locais": 0
 }
