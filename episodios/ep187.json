@@ -1,0 +1,206 @@
+{
+  "id": "ep187",
+  "ep": 187,
+  "parte": "unica",
+  "titulo": "O ÁUDIO DA SOGRA NO GRUPO ERRADO",
+  "temporada": "Histórias inéditas da Nina 2026",
+  "cenario": "tarde",
+  "batidas": [
+    {
+      "fala": "A sogra gravou um áudio dizendo que Lívia nunca poderia descobrir o dinheiro. Mas enviou justamente no grupo em que a nora estava.",
+      "expr": "chocada",
+      "arte": [
+        "celular"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "Lívia ouviu a mensagem na cozinha, cercada por caixas de mudança. O áudio durou onze segundos, e o silêncio depois pareceu muito maior.",
+      "expr": "desconfiada",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "Tudo começou no chá de casa nova. A família tinha combinado ajudar o casal com presentes em dinheiro para terminar de mobiliar o apartamento.",
+      "expr": "neutra",
+      "arte": [
+        "presente"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "Dona Celeste, a sogra, organizou os convites e ofereceu sua chave Pix para facilitar os depósitos dos parentes mais velhos.",
+      "expr": "neutra",
+      "arte": [
+        "celular"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "Na segunda-feira, Celeste contou que tinha recebido menos da metade do esperado. Lívia estranhou, mas preferiu não desconfiar de ninguém.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "Até que chegou o áudio no grupo. Celeste dizia à irmã: não conta para Lívia que usei aquele dinheiro. Otávio já sabe de tudo.",
+      "expr": "chocada",
+      "arte": [
+        "celular"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "Alguém respondeu com um ponto de interrogação. Em seguida, Celeste apagou a gravação, mas quatro pessoas já tinham escutado.",
+      "expr": "ironica",
+      "arte": [
+        "celular"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "Lívia ligou para o marido. Otávio primeiro disse que devia existir um engano; depois pediu que conversassem pessoalmente, longe do grupo.",
+      "expr": "desconfiada",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "Quando ele chegou, Lívia colocou sobre a mesa a lista de convidados e perguntou apenas uma coisa: quanto entrou, e para onde foi?",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "Otávio tirou o telefone do bolso, abriu o aplicativo do banco e mostrou uma transferência de quatro mil e oitocentos reais.",
+      "expr": "chocada",
+      "arte": [
+        "celular"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "O dinheiro tinha ido para o irmão dele, que estava com o aluguel atrasado. Celeste achou melhor emprestar sem contar à nora.",
+      "expr": "triste",
+      "arte": [
+        "foto"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "E aí veio a segunda surpresa: Otávio sabia do empréstimo desde o início. Tinha prometido devolver antes que Lívia percebesse a diferença.",
+      "expr": "desconfiada",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "Lívia não discutiu o problema do cunhado. O que a incomodou foi descobrir que duas pessoas tinham decidido sobre o dinheiro do casal sem perguntar.",
+      "expr": "brava",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "Naquela noite, ela levou um caderno à casa de Celeste. Nada de discussão na frente dos vizinhos: queria datas, valores e comprovantes.",
+      "expr": "neutra",
+      "arte": [
+        "documento"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "Celeste ficou constrangida. Mostrou os depósitos que recebeu, separou os pagamentos da festa e admitiu que não havia pedido autorização.",
+      "expr": "triste",
+      "arte": [
+        "celular"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "O cunhado, ao saber da confusão, apareceu na sala com os recibos do aluguel. Ele também achava que o empréstimo tinha sido combinado.",
+      "expr": "neutra",
+      "arte": [
+        "documento"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "Pela primeira vez, os três perceberam que cada um tinha ouvido uma versão diferente. E nenhuma delas tinha passado por Lívia.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "Otávio pediu desculpas sem colocar a culpa na mãe. Disse que deveria ter conversado antes de autorizar qualquer transferência.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "O cunhado propôs devolver o valor em parcelas, com datas registradas. Celeste concordou em transferir imediatamente todo o restante dos presentes.",
+      "expr": "neutra",
+      "arte": [
+        "celular"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "Lívia aceitou o acordo, mas deixou uma regra clara: dali em diante, ajuda à família seria conversada pelos dois, nunca decidida em segredo.",
+      "expr": "desconfiada",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "O chá de casa nova virou um jantar simples, com pizza sobre caixas ainda fechadas. Faltava um sofá, mas não faltava assunto.",
+      "expr": "ironica",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "E sabe qual foi a ironia? Celeste criou outro grupo para organizar as próximas compras. Dessa vez, Lívia virou administradora.",
+      "expr": "ironica",
+      "arte": [
+        "celular"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "Agora me conta: você ficaria mais chateada com o dinheiro emprestado ou com o fato de todo mundo saber, menos você?",
+      "expr": "neutra",
+      "arte": [
+        "manchete_v",
+        "O QUE VOCÊ FARIA?"
+      ],
+      "destaque": []
+    }
+  ],
+  "fim": "HISTÓRIA COMPLETA",
+  "gerado_automaticamente": false,
+  "formato": "historia_unica_3min",
+  "producao_prioritaria": true,
+  "visual_style": "cinematic_2d",
+  "voice_engine": "kokoro",
+  "kokoro_voice": "pf_dora",
+  "legenda_post": "O ÁUDIO DA SOGRA NO GRUPO ERRADO 🎙️😳\n\nDona Celeste mandou um áudio sobre o dinheiro do casal… justamente no grupo onde a nora estava! Quando Lívia pediu explicações, descobriu que o marido também sabia.\n\nVocê ficaria mais chateada com o empréstimo ou com o segredo?\n\nHistória de ficção. Personagens e acontecimentos fictícios.\n\n#ninamecontou #histórias #fofoca #storytime #reviravolta #reelsbrasil",
+  "legenda_tiktok": "O ÁUDIO DA SOGRA NO GRUPO ERRADO 😱\n\nA sogra apertou enviar no grupo errado e revelou um segredo que até o marido sabia. O dinheiro era do casal!\n\nO que você faria no lugar da Lívia?\n\nHistória de ficção. Personagens e acontecimentos fictícios.\n\n#NinaMeContou #Fofoca #Storytime #Historias #Reviravolta",
+  "gancho_versao": "gancho-descoberta-20261026-v1",
+  "gancho_modelo": "abertura_direta_existente"
+}
