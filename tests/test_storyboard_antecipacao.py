@@ -82,6 +82,28 @@ class TestarAntecipacao(unittest.TestCase):
 
 
 class TestarStoryboard(unittest.TestCase):
+    def test_cta_nao_vira_a_decima_ilustracao(self):
+        ep = episodio()
+        ep["batidas"].append({"fala": "Me segue para ouvir mais histórias.",
+                              "arte": ["seguir"]})
+        segs = [{"ini":i*6,"fim":(i+1)*6} for i in range(11)]
+        shots = V.planejar(ep, segs)
+        self.assertEqual(len(shots), 10)
+        self.assertEqual(shots[-1]["beats"], [9, 10])
+
+    def test_chave_disponivel_nao_gera_custo_sem_optin(self):
+        with tempfile.TemporaryDirectory() as tmp, patch.dict(os.environ, {
+            "OPENAI_API_KEY": "chave-ficticia",
+            "NINA_REQUIRE_AI_STORYBOARD": "0",
+            "NINA_USE_AI_STORYBOARD": "0",
+        }):
+            with patch.object(S.requests, "post",
+                              side_effect=AssertionError("rede inesperada")) as request:
+                _, report = S.preparar(episodio(), cenas(), Path(tmp),
+                                       V.STYLE, strict=False)
+                request.assert_not_called()
+                self.assertEqual(report["modo"], "roteiro_local")
+
     def test_dez_prompts_compostos_antes_de_ilustrar(self):
         ep, scenes = episodio(), cenas()
         with tempfile.TemporaryDirectory() as tmp:
