@@ -1,0 +1,160 @@
+{
+  "id": "nina-20261102-plantao-duas-familias",
+  "avulso": true,
+  "titulo": "O PLANTÃO QUE NÃO EXISTIA",
+  "temporada": "Avulsos",
+  "cenario": "noite",
+  "batidas": [
+    {
+      "fala": "O marido policial dizia que estava de plantão. Só que a esposa descobriu que o verdadeiro plantão era cuidar de outra família! E a mulher que revelou tudo também era esposa dele.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ]
+    },
+    {
+      "fala": "Renata era casada com Marcelo havia oito anos. Eles tinham uma filha, Sofia, de seis anos. E ele sempre parecia trabalhar dobrado.",
+      "expr": "neutra",
+      "arte": [
+        "direct"
+      ]
+    },
+    {
+      "fala": "Natal, aniversário, fim de semana: Marcelo vivia escalado. Renata até defendia o marido quando alguém reclamava das ausências.",
+      "expr": "neutra",
+      "arte": [
+        "calendario"
+      ]
+    },
+    {
+      "fala": "Ele dizia que no serviço não podia atender telefone. E Renata acreditava, porque confiava nele.",
+      "expr": "neutra",
+      "arte": [
+        "celular"
+      ]
+    },
+    {
+      "fala": "Até que numa sexta-feira chegou uma mensagem: moça, seu marido se chama Marcelo? Ele é policial militar?",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ]
+    },
+    {
+      "fala": "Renata respondeu que sim. A desconhecida mandou uma fotografia dele com uma mulher, dois meninos e um bolo de aniversário.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ]
+    },
+    {
+      "fala": "Na legenda, uma frase de arrepiar: dez anos de casamento com o melhor marido e pai do mundo.",
+      "expr": "chocada",
+      "arte": [
+        "manchete"
+      ]
+    },
+    {
+      "fala": "Dez anos? Renata só tinha oito anos de casamento! A mulher da foto se chamava Patrícia.",
+      "expr": "neutra",
+      "arte": [
+        "interrogacao"
+      ]
+    },
+    {
+      "fala": "As duas conversaram, compararam datas e perceberam que Marcelo alternava as casas usando o trabalho como desculpa.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ]
+    },
+    {
+      "fala": "Quando estava de plantão para Renata, passava a noite com Patrícia. Quando tinha serviço para Patrícia, voltava para Renata.",
+      "expr": "neutra",
+      "arte": [
+        "relogio"
+      ]
+    },
+    {
+      "fala": "Patrícia encontrou Renata depois de descobrir um desenho infantil no carro: para o melhor papai do mundo, com amor, Sofia.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ]
+    },
+    {
+      "fala": "Foi aí que perceberam: não era só uma traição. Eram duas famílias inteiras vivendo uma mentira.",
+      "expr": "neutra",
+      "arte": [
+        "manchete"
+      ]
+    },
+    {
+      "fala": "As duas combinaram de conversar com ele juntas. Naquela noite Marcelo avisou Renata: amor, vou ficar de plantão até amanhã.",
+      "expr": "neutra",
+      "arte": [
+        "celular"
+      ]
+    },
+    {
+      "fala": "Renata respondeu: bom plantão, querido. E foi esperar na sala de Patrícia.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ]
+    },
+    {
+      "fala": "Quando Marcelo abriu a porta, encontrou as duas sentadas no sofá. Ficou imóvel, sem saber o que dizer.",
+      "expr": "neutra",
+      "arte": [
+        "porta"
+      ]
+    },
+    {
+      "fala": "Renata perguntou: e aí, Marcelo? O plantão hoje é em qual família? Patrícia completou: queremos ver essa escala!",
+      "expr": "chocada",
+      "arte": [
+        "conversa"
+      ]
+    },
+    {
+      "fala": "Ele disse que estava confuso, que amava as duas e que não queria perder ninguém.",
+      "expr": "ironica",
+      "arte": [
+        "conversa"
+      ]
+    },
+    {
+      "fala": "Renata respondeu: confuso? Você tinha uma agenda muito bem organizada! Só esqueceu de contar para nós.",
+      "expr": "ironica",
+      "arte": [
+        "manchete"
+      ]
+    },
+    {
+      "fala": "As duas decidiram encerrar os relacionamentos e organizar, com orientação, as responsabilidades dele com as crianças.",
+      "expr": "neutra",
+      "arte": [
+        "direct"
+      ]
+    },
+    {
+      "fala": "Meses depois, Renata e Patrícia mantiveram contato. Marcelo precisou aprender que ser pai não é um plantão inventado.",
+      "expr": "neutra",
+      "arte": [
+        "calendario"
+      ]
+    },
+    {
+      "fala": "E você? Teria coragem de esperar o marido com a outra esposa no sofá? Conta nos comentários!",
+      "expr": "neutra",
+      "arte": [
+        "manchete_v"
+      ]
+    }
+  ],
+  "fim": "PLANTÃO OU OUTRA FAMÍLIA?",
+  "legenda_post": "Ele dizia que estava de plantão... mas tinha outra esposa e dois filhos! 😱 Você enfrentaria essa conversa junto com a outra mulher? #NinaMeContou #Storytime #Fofoca #Traição",
+  "gancho_versao": "antecipacao-20261102",
+  "gancho_modelo": "abertura_direta_existente"
+}
