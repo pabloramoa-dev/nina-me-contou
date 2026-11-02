@@ -18,7 +18,7 @@ import requests
 
 VERSAO = "nina-storyboard-20261102-v1"
 DEFAULT_MODEL = "gpt-4o-mini"
-LIMITE_PROMPT = 1400
+LIMITE_PROMPT = 2400
 
 
 class StoryboardError(ValueError):
