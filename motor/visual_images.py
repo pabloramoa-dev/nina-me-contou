@@ -105,8 +105,9 @@ def planejar(ep, segs, cfg=None):
     groups = [[i] for i in range(len(beats))]
     # O CTA nunca ganha uma das 10 imagens: a imagem final representa o
     # desfecho da história, não o texto genérico de seguir a Nina.
-    if len(groups) > 1 and (\n        (beats[-1].get('arte') or [None])[0] == 'seguir' or
-        re.search(r'\\b(?:me segue|siga a nina|segue a nina)\\b', beats[-1].get('fala', ''), re.I)
+    if len(groups) > 1 and (
+        (beats[-1].get('arte') or [None])[0] == 'seguir' or
+        re.search(r'\b(?:me segue|siga a nina|segue a nina)\b', beats[-1].get('fala', ''), re.I)
     ):
         groups[-2].extend(groups.pop())
     while len(groups) > count:
