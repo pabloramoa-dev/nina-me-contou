@@ -39,6 +39,8 @@ def main() -> int:
                          ensure_ascii=False))
         return 0
 
+    if not fila.pronto(ep_id):
+        raise RuntimeError(f"{ep_id} bloqueado: falta validação SiliconFlow para Instagram")
     ep = fila.carregar_ep(ep_id)
     video = f"{cfg.raw_base_url}/reels/{ep_id}.mp4"
     capa = f"{cfg.raw_base_url}/reels/{ep_id}-capa.jpg"

@@ -272,6 +272,9 @@ def renderizar(ep,pasta,raiz):
     plano=DN.planejar(ep,segs) if diretor_ativo else []
     (pasta/'direcao.json').write_text(json.dumps(plano,ensure_ascii=False,indent=2),encoding='utf-8')
     ep['_visual_images'],visual_report=VI.preparar(ep,segs,assets,pasta)
+    from siliconflow_policy import obrigatoria, validar_relatorio
+    if obrigatoria():
+        validar_relatorio(visual_report)  # 'ready=10' pode incluir imagens locais; rejeitá-las
     cfg=VI.config(ep)
     # Generated illustrations replace stock photography in automatic mode.
     # A falta de chave de ilustrações não pode deixar as histórias avulsas sem apoio visual.

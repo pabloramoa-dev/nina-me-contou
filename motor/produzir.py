@@ -46,6 +46,8 @@ def main():
     from visual_images import preparar_roteiro, config as visual_config
     ep = preparar_roteiro(ep)
     ep['visual_images'] = visual_config(ep)
+    from siliconflow_policy import validar_configuracao
+    validar_configuracao(ep['visual_images'], ep)
     # A nova voz principal é a mesma do vídeo Remotion aprovado (Kokoro Dora).
     # Uma voz definida explicitamente no roteiro continua sendo respeitada.
     ep["voice_engine"] = str(ep.get("voice_engine") or os.environ.get("NINA_VOICE_ENGINE", "kokoro")).lower()
@@ -158,6 +160,9 @@ def main():
         print("acabamento do episódio original:", apply_from_metadata(final, ep, RAIZ), flush=True)
 
     if a.publicar_em:
+        from siliconflow_policy import obrigatoria, validar_metadados
+        if obrigatoria():
+            validar_metadados(json.load(open(P('render.json'), encoding='utf-8')))
         from PIL import Image
         dest = os.path.abspath(a.publicar_em)
         os.makedirs(dest, exist_ok=True)

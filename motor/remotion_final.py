@@ -60,7 +60,10 @@ def finalizar(ep, pasta, raiz):
     estilo = str(ep.get("visual_style") or os.environ.get("NINA_STORY_STYLE", "cinematic_2d")).strip().lower()
     if estilo not in ("cinematic_2d", "classic"):
         raise ValueError("NINA_STORY_STYLE invalido")
+    from motor.siliconflow_policy import obrigatoria, validar_relatorio, validar_quadros
+    exige_silicon = obrigatoria()
     frames = []
+    relatorio_visual = {}
     if estilo == "cinematic_2d":
         try:
             from .cinematic_story_art import preparar_quadros
@@ -68,9 +71,15 @@ def finalizar(ep, pasta, raiz):
             from cinematic_story_art import preparar_quadros
         report_path = pasta / "visual_images.json"
         report = json.loads(report_path.read_text(encoding="utf-8")) if report_path.exists() else {}
-        frames = preparar_quadros(ep, segs, duration, public, base_assets=base, visual_report=report)
+        if exige_silicon:
+            validar_relatorio(report)
+        relatorio_visual = report
+        frames = preparar_quadros(ep, segs, duration, public, base_assets=base,
+                                 visual_report=report, strict_siliconflow=exige_silicon)
         if not frames:
             raise ValueError("Cinema 2D ativado mas nao existem quadros")
+    if exige_silicon:
+        validar_quadros(frames)
     props = montar_props(ep, segs, duration, visual_frames=frames)
     propsfile = pasta / "remotion-props.json"
     propsfile.write_text(json.dumps(props, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -101,6 +110,11 @@ def finalizar(ep, pasta, raiz):
                 duracao=esperado,
                 estilo_cenas=estilo, cenas_cinema_2d=len(frames),
                 intervalo_cinema_2d_segundos=7 if frames else None)
+    if exige_silicon:
+        meta.update(siliconflow_confirmado=True, siliconflow_provedor="siliconflow",
+                    siliconflow_modelo=relatorio_visual["config"]["image_model"],
+                    siliconflow_ilustracoes=10, siliconflow_quadros=len(frames),
+                    siliconflow_quadros_locais=0)
     metap.write_text(json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"[Remotion] aprovado: {final} ({esperado:.1f}s)", flush=True)
     return final
