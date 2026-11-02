@@ -1,7 +1,7 @@
 """Versão visual/voz usada pelo estúdio e pela fila; não carrega o renderizador."""
 import os,json,hashlib
 from pathlib import Path
-HYPERFRAMES_VERSION = 'nina-hyperframes-10-siliconflow-instagram-obrigatoria'
+HYPERFRAMES_VERSION = 'nina-hyperframes-11-antecipacao-storyboard-openai'
 def versao():
     motor = os.environ.get('NINA_MOTOR', 'hyperframes')
     if motor not in ('hyperframes', 'manim'):
