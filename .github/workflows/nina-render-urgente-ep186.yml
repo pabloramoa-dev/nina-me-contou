@@ -1,0 +1,90 @@
+name: Nina — render urgente EP186 com SiliconFlow
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/nina-render-urgente-ep186.yml'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nina-ep186-render-paralelo
+  cancel-in-progress: false
+
+jobs:
+  render-ep186:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - name: Dependências do estúdio
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg pkg-config libcairo2-dev libpango1.0-dev espeak-ng fonts-dejavu-core
+          mkdir -p ~/.fonts
+          for p in Bold Regular; do
+            curl -sSL -o ~/.fonts/Poppins-$p.ttf "https://github.com/google/fonts/raw/main/ofl/poppins/Poppins-$p.ttf"
+          done
+          fc-cache -f
+          SETUPTOOLS_USE_DISTUTILS=stdlib pip install --no-build-isolation srt || true
+          pip install -r requirements-estudio.txt
+      - uses: ./.github/actions/setup-hyperframes
+      - name: Cache da voz local
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/dvh_kokoro
+          key: ${{ runner.os }}-${{ runner.arch }}-cache-kokoro-nina-v1
+      - name: Renderizar EP186 com dez imagens pagas obrigatórias
+        env:
+          SILICONFLOW_API_KEY: ${{ secrets.SILICONFLOW_API_KEY }}
+          NINA_ALLOW_PAID_IMAGE_API: '1'
+          NINA_REQUIRE_SILICONFLOW: '1'
+          NINA_IMAGE_RETRIES: '0'
+          NINA_TARGET_IMAGES: '10'
+          NINA_MAX_IMAGES: '10'
+        run: python motor/produzir.py episodios/ep186.json --publicar-em saida_reels
+      - name: Conferir MP4 e proveniência das ilustrações
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from motor.siliconflow_policy import validar_metadados
+          p = Path('saida_reels')
+          meta = json.loads((p/'ep186-render.json').read_text(encoding='utf-8'))
+          validar_metadados(meta)
+          assert (p/'ep186.mp4').is_file() and (p/'ep186.mp4').stat().st_size > 100_000
+          print('EP186 aprovado: 10 imagens SiliconFlow, sem quadro local e MP4 gerado.')
+          PY
+          ffprobe -v error -show_entries format=duration,size -of json saida_reels/ep186.mp4
+      - name: Entregar arquivo MP4 para download no GitHub Actions
+        uses: actions/upload-artifact@v4
+        with:
+          name: nina-ep186-siliconflow
+          path: saida_reels/
+          retention-days: 7
+      - name: Guardar EP186 na fila original de Reels
+        run: |
+          mkdir -p reels
+          cp -a saida_reels/. reels/
+          git config user.name "nina-bot"
+          git config user.email "actions@github.com"
+          git add reels/ep186*
+          if git diff --cached --quiet; then
+            echo 'EP186 já consta na fila.'
+            exit 0
+          fi
+          git commit -m "estudio: ep186 com SiliconFlow comprovada [skip ci]"
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push origin main && exit 0
+            sleep 5
+          done
+          exit 1
