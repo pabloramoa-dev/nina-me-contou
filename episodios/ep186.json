@@ -1,0 +1,222 @@
+{
+  "id": "ep186",
+  "ep": 186,
+  "parte": "unica",
+  "titulo": "DUAS FESTAS PARA O MESMO NAMORADO",
+  "temporada": "Histórias inéditas da Nina 2026",
+  "cenario": "noite",
+  "batidas": [
+    {
+      "fala": "Malu preparou uma festa surpresa para o namorado. Quando apagaram as luzes, outra mulher entrou carregando um bolo escrito: para o meu amor, Ícaro.",
+      "expr": "chocada",
+      "arte": [
+        "titulo"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "E o pior nem foi o bolo. As duas tinham reservado o mesmo restaurante, na mesma noite, para comemorar o aniversário do mesmo homem.",
+      "expr": "desconfiada",
+      "arte": [
+        "foto"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "Malu namorava Ícaro havia três anos. Naquela sexta-feira, ele jurou que trabalharia até tarde e pediu para ninguém aparecer no escritório.",
+      "expr": "neutra",
+      "arte": [
+        "celular"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "Ela fingiu acreditar. Reuniu os amigos, encomendou salgadinhos, escolheu a música favorita dele e comprou um bolo de chocolate com trinta velinhas.",
+      "expr": "ironica",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "O primeiro sinal estranho veio quando o restaurante perguntou se a segunda decoração também deveria ser montada no salão reservado por Malu.",
+      "expr": "desconfiada",
+      "arte": [
+        "celular"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "Segunda decoração? Malu pensou que fosse um engano da equipe. A atendente apenas respondeu que existia outra reserva para Ícaro, no mesmo horário.",
+      "expr": "chocada",
+      "arte": [
+        "interrogacao"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "Uma amiga sugeriu que talvez a família dele estivesse preparando outra surpresa. Malu decidiu esperar, porque estragar a festa por suspeita parecia exagero.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "Às oito e quinze, a porta abriu. Entrou Renata, com balões dourados, uma sacola de presentes e um bolo quase igual ao que já estava na mesa.",
+      "expr": "chocada",
+      "arte": [
+        "porta"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "Renata olhou para a decoração e perguntou, animada, se todo mundo também tinha vindo para o aniversário do namorado dela, Ícaro.",
+      "expr": "ironica",
+      "arte": [
+        "manchete_v"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "O salão ficou tão silencioso que dava para ouvir o gelo caindo nos copos. Malu foi a primeira a perguntar há quanto tempo eles estavam juntos.",
+      "expr": "desconfiada",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "Oito meses, respondeu Renata. Malu respirou fundo e disse: três anos. Por alguns segundos, cada uma achou que a outra estivesse inventando.",
+      "expr": "chocada",
+      "arte": [
+        "foto"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "Só que Renata abriu o celular. Tinha fotos em viagens, mensagens de bom-dia e até uma chave da casa que Ícaro dizia usar sozinho.",
+      "expr": "desconfiada",
+      "arte": [
+        "celular"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "Malu reconheceu o apartamento imediatamente. O sofá cinza, a planta torta na janela e o quadro da sala eram os mesmos das fotos dela.",
+      "expr": "brava",
+      "arte": [
+        "foto"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "Foi quando a música começou sozinha. Alguém tinha esquecido a playlist programada. Tocou o parabéns, mas ninguém conseguiu cantar uma única palavra.",
+      "expr": "ironica",
+      "arte": [
+        "relogio"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "Às oito e meia, Ícaro apareceu na porta, sorrindo. Viu os dois bolos, depois as duas mulheres, e perdeu a coragem antes de dar um passo.",
+      "expr": "chocada",
+      "arte": [
+        "porta"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "Ele tentou dizer que tudo não passava de um mal-entendido. Renata perguntou se as fotos também tinham entendido errado. Ícaro não respondeu.",
+      "expr": "brava",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "Malu não gritou. Pediu que ninguém filmasse aquela conversa e convidou Renata para falar com ela longe dos convidados, sem transformar aquilo em espetáculo.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "As duas compararam as datas das mensagens. Descobriram que, nas noites em que Ícaro dizia estar viajando, ele estava com a outra.",
+      "expr": "desconfiada",
+      "arte": [
+        "calendario"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "A parte mais triste foi perceber que cada uma havia defendido Ícaro diante dos próprios amigos, acreditando nas desculpas que agora apareciam lado a lado.",
+      "expr": "triste",
+      "arte": [
+        "foto"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "Renata explicou que nunca soube da existência de Malu. Malu acreditou, porque as mensagens mostravam o mesmo roteiro de mentiras para ambas.",
+      "expr": "neutra",
+      "arte": [
+        "celular"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "As duas decidiram encerrar os relacionamentos. Ícaro quis conversar depois, mas nenhuma aceitou uma explicação improvisada diante de todos.",
+      "expr": "brava",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "O gerente ofereceu cancelar os pedidos. Malu e Renata preferiram ficar com os bolos, dividir a mesa com os amigos e aproveitar o que já estava pago.",
+      "expr": "ironica",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "No fim da noite, alguém trocou a música do parabéns por uma canção animada. Os convidados dançaram, e Ícaro foi embora sem apagar nenhuma vela.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "Renata levou metade de um bolo para casa. Malu ficou com a outra metade. Nenhuma das duas levou uma nova mentira para a semana seguinte.",
+      "expr": "neutra",
+      "arte": [
+        "presente"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "Agora me conta: se você estivesse naquela festa, teria ido embora imediatamente ou ficado para comer o bolo? Porque surpresa mesmo foi para o aniversariante.",
+      "expr": "ironica",
+      "arte": [
+        "manchete_v",
+        "O QUE VOCÊ FARIA?"
+      ],
+      "destaque": []
+    }
+  ],
+  "fim": "HISTÓRIA COMPLETA",
+  "legenda_post": "DUAS FESTAS PARA O MESMO NAMORADO 🎂\n\nMalu organizou uma festa surpresa para Ícaro. Mas outra mulher chegou ao mesmo restaurante com um segundo bolo... para o mesmo namorado! 😳\n\nE você, teria ido embora ou ficado para comer o bolo?\n\nHistória de ficção. Personagens e acontecimentos fictícios.\n\n#ninamecontou #historias #storytime #fofoca #reviravolta #reelsbrasil",
+  "legenda_tiktok": "DUAS FESTAS PARA O MESMO NAMORADO 😳🎂\n\nImagina preparar uma surpresa e descobrir que outra pessoa preparou a MESMA surpresa... para o MESMO homem! O final dessa festa foi inesperado.\n\nVocê ficaria para comer o bolo? 👀\n\nHistória de ficção. Personagens e acontecimentos fictícios.\n\n#NinaMeContou #Storytime #Fofoca #Reviravolta #Historias",
+  "gerado_automaticamente": false,
+  "formato": "historia_unica_3min",
+  "producao_prioritaria": true,
+  "visual_style": "cinematic_2d",
+  "voice_engine": "kokoro",
+  "kokoro_voice": "pf_dora",
+  "gancho_versao": "gancho-descoberta-20261026-v1",
+  "gancho_modelo": "abertura_direta_existente"
+}
