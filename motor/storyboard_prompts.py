@@ -178,7 +178,8 @@ def preparar(ep: dict, cenas: list[dict], pasta: Path, style: str,
         except (ValueError, KeyError, TypeError):
             pass
     if resultado is None:
-        if planner is not None or strict or os.getenv("OPENAI_API_KEY"):
+        usar_ia = os.getenv("NINA_USE_AI_STORYBOARD", "0").strip().lower() in ("1", "true", "sim")
+        if planner is not None or strict or usar_ia:
             try:
                 plano = planner(ep, cenas, model) if planner is not None else _pedir_plano(ep, cenas, model)
                 prompts = _validar_plano(plano, cenas, style)
