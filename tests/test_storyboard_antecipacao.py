@@ -109,7 +109,7 @@ class TestarStoryboard(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             planned, report = S.preparar(ep, scenes, Path(tmp), V.STYLE,
                                          planner=plano_ok, strict=True)
-            self.assertEqual(report["modo"], "openai_roteiro")
+            self.assertEqual(report["modo"], "siliconflow_roteiro")
             self.assertEqual(report["cenas"], 10)
             self.assertTrue((Path(tmp) / "prompts_planejados.json").exists())
             for i, scene in enumerate(planned):
@@ -126,7 +126,40 @@ class TestarStoryboard(unittest.TestCase):
             planned, report = S.preparar(ep, cenas(), Path(tmp), V.STYLE,
                                          planner=erro, strict=True)
             self.assertEqual(len(planned), 10)
-            self.assertEqual(report["modo"], "openai_roteiro")
+            self.assertEqual(report["modo"], "siliconflow_roteiro")
+
+    def test_mesma_chave_siliconflow_gera_os_prompts_sem_openai(self):
+        ep = episodio()
+        approved = plano_ok(ep, cenas(), "Qwen/Qwen3-30B-A3B-Instruct-2507")
+
+        class Retorno:
+            status_code = 200
+
+            def raise_for_status(self):
+                return None
+
+            def json(self):
+                return {"choices": [{"message": {
+                    "content": json.dumps(approved, ensure_ascii=False)
+                }}]}
+
+        with tempfile.TemporaryDirectory() as tmp, patch.dict(os.environ, {
+            "OPENAI_API_KEY": "",
+            "SILICONFLOW_API_KEY": "chave-siliconflow-de-teste",
+            "NINA_STORYBOARD_PROVIDER": "siliconflow",
+            "NINA_REQUIRE_AI_STORYBOARD": "1",
+            "NINA_STORYBOARD_MODEL": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+        }):
+            with patch.object(S.requests, "post", return_value=Retorno()) as fake:
+                scenes, report = S.preparar(ep, cenas(), Path(tmp), V.STYLE, strict=True)
+                self.assertEqual(report["modo"], "siliconflow_roteiro")
+                self.assertEqual(report["provedor"], "siliconflow")
+                self.assertEqual(len(scenes), 10)
+                self.assertEqual(fake.call_count, 1)
+                args, kwargs = fake.call_args
+                self.assertEqual(args[0], "https://api.siliconflow.com/v1/chat/completions")
+                self.assertEqual(kwargs["json"]["response_format"], {"type": "json_object"})
+                self.assertEqual(kwargs["json"]["model"], "Qwen/Qwen3-30B-A3B-Instruct-2507")
 
     def test_bloqueia_prompts_desconectados_antes_de_cobrar_siliconflow(self):
         def inventar(ep, scenes, model):
@@ -141,7 +174,9 @@ class TestarStoryboard(unittest.TestCase):
 
     def test_ausencia_da_chave_abortada_sem_chamada_siliconflow(self):
         with tempfile.TemporaryDirectory() as tmp, patch.dict(
-            os.environ, {"OPENAI_API_KEY": "", "NINA_REQUIRE_AI_STORYBOARD": "1",
+            os.environ, {"OPENAI_API_KEY": "", "SILICONFLOW_API_KEY": "",
+                         "NINA_STORYBOARD_PROVIDER": "siliconflow",
+                         "NINA_REQUIRE_AI_STORYBOARD": "1",
                          "NINA_ALLOW_PAID_IMAGE_API": "1"}, clear=False
         ):
             with patch.object(V, "gerar", side_effect=AssertionError("SiliconFlow não pode ser chamada")) as generate:
@@ -173,7 +208,7 @@ class TestarStoryboard(unittest.TestCase):
                 "siliconflow_quadros_locais": 0}
         with self.assertRaises(SiliconFlowObrigatoria):
             validar_metadados(meta)
-        meta.update(storyboard_mode="openai_roteiro", storyboard_scenes=10,
+        meta.update(storyboard_mode="siliconflow_roteiro", storyboard_scenes=10,
                     gancho_antecipacao_versao=HOOK_VERSION)
         validar_metadados(meta)
 
