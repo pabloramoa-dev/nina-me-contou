@@ -16,8 +16,9 @@ from pathlib import Path
 
 import requests
 
-VERSAO = "nina-storyboard-20261102-v1"
-DEFAULT_MODEL = "gpt-4o-mini"
+VERSAO = "nina-storyboard-20261102-v2-siliconflow-texto"
+DEFAULT_MODEL = "Qwen/Qwen3-30B-A3B-Instruct-2507"
+DEFAULT_PROVIDER = "siliconflow"
 LIMITE_PROMPT = 2400
 
 
@@ -57,9 +58,15 @@ def _fallback(scene: dict, style: str) -> str:
 
 
 def _pedir_plano(ep: dict, cenas: list[dict], model: str) -> dict:
-    key = os.getenv("OPENAI_API_KEY", "").strip()
+    provider = os.getenv("NINA_STORYBOARD_PROVIDER", DEFAULT_PROVIDER).strip().lower()
+    if provider not in ("siliconflow", "openai"):
+        raise StoryboardError("NINA_STORYBOARD_PROVIDER deve ser siliconflow ou openai")
+    keyname = "SILICONFLOW_API_KEY" if provider == "siliconflow" else "OPENAI_API_KEY"
+    key = os.getenv(keyname, "").strip()
     if not key:
-        raise StoryboardError("OPENAI_API_KEY ausente para criar prompts antes da SiliconFlow")
+        raise StoryboardError(f"{keyname} ausente para criar prompts de imagens")
+    endpoint = ("https://api.siliconflow.com/v1/chat/completions" if provider == "siliconflow"
+                else "https://api.openai.com/v1/chat/completions")
     roteiro = [
         {"indice": i, "fala": str(b.get("fala", ""))}
         for i, b in enumerate(ep.get("batidas", []))
@@ -67,11 +74,13 @@ def _pedir_plano(ep: dict, cenas: list[dict], model: str) -> dict:
     payload = {
         "model": model,
         "temperature": 0.3,
-        "max_tokens": 4600,
-        "response_format": {
+        "max_tokens": 6500,
+        # Modelos Qwen do SiliconFlow suportam JSON object; não usar json_schema
+        # no endpoint SiliconFlow para não receber erro 400.
+        "response_format": ({"type": "json_object"} if provider == "siliconflow" else {
             "type": "json_schema",
             "json_schema": {"name": "nina_storyboard", "strict": True, "schema": _schema()},
-        },
+        }),
         "messages": [
             {"role": "system", "content": (
                 "Você é diretora de arte para uma série brasileira 2D de histórias FICTÍCIAS. "
@@ -92,13 +101,15 @@ def _pedir_plano(ep: dict, cenas: list[dict], model: str) -> dict:
                 "para os personagens principais, fictícios e adultos, e ambiente "
                 "recorrente, sem contradizer os detalhes explícitos do texto; "
                 "não transforme personagens em Nina apresentadora. "
+                "Em cada visual, inclua literalmente a ancora_sugerida da cena na descrição. "
                 "As imagens NÃO devem conter qualquer texto, letras, placas, "
                 "logotipos ou balões. Responda APENAS JSON conforme o esquema."
             )},
             {"role": "user", "content": json.dumps({
                 "titulo": str(ep.get("titulo", "")),
                 "roteiro": roteiro,
-                "cenas": [{"index": s["scene"], "trecho": str(s["text"])}
+                "cenas": [{"index": s["scene"], "trecho": str(s["text"]),
+                           "ancora_sugerida": " ".join(str(s["text"]).split()[:4])}
                           for s in cenas],
                 "orientacao": "Antecipação no começo, mas não revele o desfecho nas imagens anteriores.",
             }, ensure_ascii=False)},
@@ -106,7 +117,7 @@ def _pedir_plano(ep: dict, cenas: list[dict], model: str) -> dict:
     }
     try:
         resp = requests.post(
-            "https://api.openai.com/v1/chat/completions",
+            endpoint,
             headers={"Authorization": "Bearer " + key, "Content-Type": "application/json"},
             json=payload, timeout=(15, 110),
         )
@@ -164,9 +175,12 @@ def preparar(ep: dict, cenas: list[dict], pasta: Path, style: str,
         strict = os.environ.get("NINA_REQUIRE_AI_STORYBOARD", "0").strip().lower() in ("1", "true", "sim")
     if strict and len(cenas) != 10:
         raise StoryboardError("Instagram exige 10 cenas planejadas ANTES de cobrar imagens")
+    provider = os.getenv("NINA_STORYBOARD_PROVIDER", DEFAULT_PROVIDER).strip().lower()
     model = os.getenv("NINA_STORYBOARD_MODEL", DEFAULT_MODEL)
+    if provider not in ("siliconflow", "openai"):
+        raise StoryboardError("Provedor de storyboard desconhecido")
     fingerprint = hashlib.sha256(json.dumps({
-        "versao": VERSAO, "modelo": model, "estilo": style,
+        "versao": VERSAO, "provedor": provider, "modelo": model, "estilo": style,
         "roteiro": [str(b.get("fala", "")) for b in ep.get("batidas", [])],
         "cenas": [{"index": s["scene"], "text": s["text"]} for s in cenas],
     }, ensure_ascii=False, sort_keys=True).encode()).hexdigest()
@@ -175,18 +189,28 @@ def preparar(ep: dict, cenas: list[dict], pasta: Path, style: str,
     if saved.exists():
         try:
             anterior = json.loads(saved.read_text(encoding="utf-8"))
-            if anterior.get("hash") == fingerprint and anterior.get("modo") == "openai_roteiro":
+            modo_esperado = provider + "_roteiro"
+            if anterior.get("hash") == fingerprint and anterior.get("modo") == modo_esperado:
                 prompts = _validar_plano(anterior["plano"], cenas, style)
-                resultado = (prompts, "openai_roteiro", anterior["plano"])
+                resultado = (prompts, modo_esperado, anterior["plano"])
         except (ValueError, KeyError, TypeError):
             pass
     if resultado is None:
         usar_ia = os.getenv("NINA_USE_AI_STORYBOARD", "0").strip().lower() in ("1", "true", "sim")
         if planner is not None or strict or usar_ia:
             try:
-                plano = planner(ep, cenas, model) if planner is not None else _pedir_plano(ep, cenas, model)
-                prompts = _validar_plano(plano, cenas, style)
-                resultado = (prompts, "openai_roteiro", plano)
+                # Valide TODAS as cenas antes da primeira geração de imagem paga.
+                # Uma resposta parcial do modelo pode ser corrigida na segunda
+                # tentativa; nunca passar prompts sem as dez âncoras verificadas.
+                for tentativa in range(2):
+                    plano = planner(ep, cenas, model) if planner is not None else _pedir_plano(ep, cenas, model)
+                    try:
+                        prompts = _validar_plano(plano, cenas, style)
+                        resultado = (prompts, provider + "_roteiro", plano)
+                        break
+                    except StoryboardError:
+                        if tentativa == 1:
+                            raise
             except StoryboardError:
                 if strict:
                     raise
@@ -195,7 +219,9 @@ def preparar(ep: dict, cenas: list[dict], pasta: Path, style: str,
                 raise StoryboardError("Storyboard obrigatório ausente: imagens SiliconFlow bloqueadas")
             resultado = ([_fallback(s, style) for s in cenas], "roteiro_local", None)
     prompts, modo, plano = resultado
-    documento = {"versao": VERSAO, "hash": fingerprint, "modelo": model if modo == "openai_roteiro" else None,
+    documento = {"versao": VERSAO, "hash": fingerprint,
+                 "modelo": model if modo.endswith("_roteiro") and modo != "roteiro_local" else None,
+                 "provedor": provider if modo != "roteiro_local" else "local",
                  "modo": modo, "quantidade": len(prompts), "plano": plano,
                  "prompts": prompts}
     saved.write_text(json.dumps(documento, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -204,4 +230,5 @@ def preparar(ep: dict, cenas: list[dict], pasta: Path, style: str,
         scene["storyboard_mode"] = modo
         scene["storyboard_version"] = VERSAO
     return cenas, {"modo": modo, "cenas": len(prompts), "versao": VERSAO,
-                   "hash": fingerprint, "modelo": documento["modelo"]}
+                   "hash": fingerprint, "modelo": documento["modelo"],
+                   "provedor": documento["provedor"]}
