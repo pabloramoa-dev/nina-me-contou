@@ -243,7 +243,8 @@ def preparar(ep, segs, assets, pasta, generator=None):
                 source = 'generated'
             name = f'visual-scene-{scene["scene"]:02d}.png'
             (assets/name).write_bytes(data)
-            scene.update(status=source, mode='story_frame_image', asset=name)
+            scene.update(status=source, mode='story_frame_image', asset=name,
+                         image_provider=cfg['image_provider'] if source in ('generated', 'cache') else 'approved_asset')
             for i in scene['beats']:
                 mapping[i] = name
         except Exception as exc:
