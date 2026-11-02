@@ -208,6 +208,12 @@ def preparar(ep, segs, assets, pasta, generator=None):
     scenes = planejar(ep, segs, cfg)
     assets, pasta = Path(assets), Path(pasta)
     assets.mkdir(parents=True, exist_ok=True)
+    # O storyboard gera e valida todos os prompts ANTES de qualquer cobrança.
+    try:
+        from .storyboard_prompts import preparar as planejar_prompts
+    except ImportError:
+        from storyboard_prompts import preparar as planejar_prompts
+    scenes, storyboard = planejar_prompts(ep, scenes, pasta, STYLE)
     cache = pasta/'visual_cache'
     cache.mkdir(parents=True, exist_ok=True)
     mapping = {}
@@ -291,6 +297,7 @@ def preparar(ep, segs, assets, pasta, generator=None):
             scene.update(status='fallback', mode='story_frame_text', error=reason)
             print(f'visual scene {scene["scene"]}: {reason}; fallback={cfg["fallback"]}', flush=True)
     report = {'config': cfg, 'requested': len(scenes), 'ready': sum(s['status'] != 'fallback' for s in scenes),
-              'fallbacks': sum(s['status'] == 'fallback' for s in scenes), 'scenes': scenes}
+              'fallbacks': sum(s['status'] == 'fallback' for s in scenes),
+              'storyboard': storyboard, 'scenes': scenes}
     (pasta/'visual_images.json').write_text(json.dumps(report, ensure_ascii=False, indent=2))
     return mapping, report
