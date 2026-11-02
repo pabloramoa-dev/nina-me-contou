@@ -215,8 +215,11 @@ def planejar_quadros(ep,segs,dur,intervalo=7.0):
     return frames
 
 
-def preparar_quadros(ep,segs,dur,public,base_assets=None,visual_report=None,intervalo=7.0):
+def preparar_quadros(ep,segs,dur,public,base_assets=None,visual_report=None,intervalo=7.0,strict_siliconflow=False):
     """Grava imagens em public/nina-cinema; referencias aprovadas tem precedencia."""
+    if strict_siliconflow:
+        from motor.siliconflow_policy import validar_relatorio
+        validar_relatorio(visual_report or {})
     public=Path(public)
     destino=public/"nina-cinema"
     destino.mkdir(parents=True,exist_ok=True)
@@ -239,9 +242,21 @@ def preparar_quadros(ep,segs,dur,public,base_assets=None,visual_report=None,inte
         dest=destino/file
         match=next(((name,status) for a,b,name,status in ilustracoes
                     if a<=spec["start"]<b),None)
+        if strict_siliconflow and match is None:
+            # O quadro continua exibindo uma imagem SiliconFlow: nenhuma
+            # lacuna da timeline vira arte local gerada em CPU.
+            anterior=[(a,name,status) for a,b,name,status in ilustracoes
+                      if a<=spec["start"]]
+            if anterior:
+                _,nome,status=max(anterior,key=lambda item:item[0])
+                match=(nome,status)
+            elif ilustracoes:
+                match=(ilustracoes[0][2],ilustracoes[0][3])
         if match and base_assets and (Path(base_assets)/match[0]).is_file():
             shutil.copyfile(Path(base_assets)/match[0],dest)
             origin="approved" if match[1]=="approved_asset" else match[1]
+        elif strict_siliconflow:
+            raise ValueError(f"Quadro {spec['scene']} sem arquivo SiliconFlow: {match}")
         else:
             dest.write_bytes(render(spec,ep))
             origin="cinematic_cpu"
