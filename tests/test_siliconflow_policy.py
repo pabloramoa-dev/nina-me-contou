@@ -9,6 +9,7 @@ from unittest.mock import patch
 from PIL import Image
 
 from motor.cinematic_story_art import preparar_quadros
+from src import fila
 from motor.siliconflow_policy import (
     SiliconFlowObrigatoria, validar_configuracao, validar_relatorio,
     validar_quadros, validar_metadados, validar_arquivo_publicacao,
@@ -102,6 +103,25 @@ class PoliticaInstagram(unittest.TestCase):
             self.assertEqual(len(frames), 6)
             self.assertEqual(validar_quadros(frames), 6)
             self.assertTrue(all((Path(tmp) / "public" / f["src"]).is_file() for f in frames))
+
+    def test_fila_nao_publica_reel_sem_validacao(self):
+        meta = metadados()
+        with tempfile.TemporaryDirectory() as tmp:
+            reels = Path(tmp)
+            (reels / "ep113.mp4").write_bytes(b"mp4 ficticio de teste")
+            (reels / "ep113.hash").write_text("hash-valido", encoding="utf-8")
+            (reels / "ep113-capa.jpg").write_bytes(b"capa teste")
+            with patch.object(fila.config, "REELS", reels), patch.object(
+                fila, "assinatura", return_value="hash-valido"
+            ):
+                self.assertFalse(fila.pronto("ep113"))
+                (reels / "ep113-render.json").write_text(
+                    json.dumps(meta), encoding="utf-8")
+                self.assertTrue(fila.pronto("ep113"))
+                meta["siliconflow_quadros_locais"] = 1
+                (reels / "ep113-render.json").write_text(
+                    json.dumps(meta), encoding="utf-8")
+                self.assertFalse(fila.pronto("ep113"))
 
     def test_remotion_interrompe_se_faltar_imagem(self):
         r = relatorio()
