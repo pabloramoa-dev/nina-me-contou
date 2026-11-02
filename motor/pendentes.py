@@ -18,7 +18,11 @@ def selecionar(alvo_prontos: int = 8, limite: int = 8) -> list[Path]:
     prontos = fila.completos_prontos()
     faltam = max(0, alvo_prontos - len(prontos))
     escolhidos: list[Path] = []
-    for n in fila.episodios():
+    # Pedidos manuais inéditos entram primeiro; preserva a ordem normal dos demais.
+    ordem = sorted(fila.episodios(), key=lambda n: (
+        not fila.carregar_ep(f"ep{n:03d}").get("producao_prioritaria", False), n
+    ))
+    for n in ordem:
         if not faltam or len(escolhidos) >= limite:
             break
         ep_id = f"ep{n:03d}"
