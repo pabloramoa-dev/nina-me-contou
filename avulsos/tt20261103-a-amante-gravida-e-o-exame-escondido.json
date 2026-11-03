@@ -1,0 +1,144 @@
+{
+  "id": "tt20261103-a-amante-gravida-e-o-exame-escondido",
+  "avulso": true,
+  "parte": "unica",
+  "titulo": "A AMANTE GRÁVIDA E O EXAME ESCONDIDO",
+  "temporada": "Nina Me Contou — especial completo",
+  "cenario": "noite",
+  "visual_style": "cinematic_2d",
+  "voice_engine": "kokoro",
+  "kokoro_voice": "pf_dora",
+  "kokoro_speed": 1.02,
+  "visual_images": {
+    "auto_visual_images": true,
+    "hide_inner_caption_when_image": true,
+    "bottom_caption_only": true,
+    "min_images": 10,
+    "max_images": 10,
+    "target_images": 10,
+    "image_provider": "siliconflow",
+    "image_model": "black-forest-labs/FLUX.1-schnell",
+    "fallback": "story_frame_text"
+  },
+  "batidas": [
+    {
+      "fala": "Ela ouviu que a amante do marido estava grávida e quase soltou uma risada. Não por achar graça da traição. É que Clara guardava um exame capaz de desmentir aquela história. Só que, se mostrasse o papel, colocaria em risco o maior segredo da própria casa.",
+      "expr": "chocada",
+      "foto": "woman medical envelope",
+      "zoom": true
+    },
+    {
+      "fala": "Rafael chegou numa terça-feira, largou as chaves na mesa e confessou: 'Eu tive um caso com a Bianca. Ela diz que espera um filho meu.' Depois chorou, pediu perdão e jurou que terminaria tudo. Clara ficou imóvel, segurando uma xícara de café que já estava fria.",
+      "expr": "desconfiada",
+      "foto": "husband confession kitchen",
+      "zoom": false
+    },
+    {
+      "fala": "Quatro anos antes, durante a tentativa de engravidar, Clara recebera o resultado de um exame de fertilidade de Rafael. O médico explicara que havia um problema sério e que seriam necessárias outras avaliações. Ela escondeu o laudo e disse ao marido que estava tudo bem.",
+      "expr": "triste",
+      "foto": "fertility doctor clinic",
+      "zoom": false
+    },
+    {
+      "fala": "Na mesma época, Clara também tinha traído Rafael. Os dois filhos que ele criava com tanto carinho não eram biologicamente dele. Ela sabia disso por exames de DNA guardados numa caixa de documentos. Cada aniversário em família tornava a mentira mais difícil de carregar.",
+      "expr": "triste",
+      "foto": "family portraits documents",
+      "zoom": false
+    },
+    {
+      "fala": "Quando Bianca telefonou, Rafael colocou a chamada no viva-voz. Ela dizia que estava grávida e precisava que ele assumisse a responsabilidade. Clara engoliu a raiva e fez uma única pergunta: 'Você aceita esclarecer a paternidade com um exame, quando for possível?' Do outro lado, houve silêncio.",
+      "expr": "desconfiada",
+      "foto": "speakerphone kitchen",
+      "zoom": true
+    },
+    {
+      "fala": "Bianca respondeu que não queria ser tratada como mentirosa. Rafael saiu para conversar com ela, e Clara correu até o armário. Encontrou o envelope do exame antigo e, logo abaixo, dois documentos que jamais deveria ter escondido. As mãos tremiam quando ela viu as fotografias dos filhos.",
+      "expr": "chocada",
+      "foto": "medical envelope drawer",
+      "zoom": false
+    },
+    {
+      "fala": "Naquela noite, Clara decidiu parar de inventar desculpas. Sentou com Rafael e revelou primeiro o antigo resultado de fertilidade. Ele ficou confuso, porque um diagnóstico não significava impossibilidade absoluta de ter filhos. Então ela colocou os outros exames sobre a mesa e confessou a verdade sobre as crianças.",
+      "expr": "chocada",
+      "foto": "paternity documents table",
+      "zoom": true
+    },
+    {
+      "fala": "Rafael não gritou. Perguntou apenas por que ela tinha deixado que ele vivesse tantos anos sem saber. Clara assumiu a traição e a mentira. Os dois procuraram orientação para confirmar os fatos com segurança. Enquanto isso, Bianca concordou em esclarecer quem era o pai do bebê.",
+      "expr": "triste",
+      "foto": "husband sad couch",
+      "zoom": false
+    },
+    {
+      "fala": "Meses depois, veio a resposta: o bebê de Bianca não era de Rafael. E os exames sobre os dois filhos de Clara também confirmaram que ele não era o pai biológico. A mentira da amante tinha caído, mas a de Clara já havia destruído a confiança do casamento.",
+      "expr": "chocada",
+      "foto": "medical results office",
+      "zoom": true
+    },
+    {
+      "fala": "Rafael decidiu se separar de Clara. Mas deixou uma coisa clara: o amor pelos filhos que criou não desaparecia com um resultado de laboratório. Com orientação, os dois organizaram como cuidar das crianças. E Nina pergunta: para você, qual foi a maior traição dessa história?",
+      "expr": "triste",
+      "foto": "father with children park",
+      "zoom": false
+    }
+  ],
+  "storyboard_preparado": {
+    "personagens": "Clara: mulher adulta de 34 anos, pele morena clara, cabelo castanho ondulado até os ombros e blusa verde-petróleo. Rafael: homem adulto de 38 anos, pele morena, cabelo preto curto e barba discreta, camisa azul. Bianca: mulher adulta de 30 anos, ruiva com cabelo preso e casaco bege. Apartamento brasileiro simples, mesa de madeira, luz natural. Estilo editorial de revistinha moderna 2D, contornos limpos e expressivos.",
+    "cenas": [
+      {
+        "index": 0,
+        "ancora": "guardava um exame capaz de desmentir",
+        "visual": "Plano fechado cinematográfico de Clara em uma cozinha pequena, expressão de choque e dúvida, segurando discretamente um envelope fechado junto ao peito. No fundo desfocado está Rafael de cabeça baixa; ela guardava um exame capaz de desmentir a gravidez atribuída a ele. Luz fria de fim de tarde."
+      },
+      {
+        "index": 1,
+        "ancora": "largou as chaves na mesa",
+        "visual": "Plano médio lateral na mesa da cozinha: Rafael, abatido, largou as chaves na mesa, enquanto Clara congela com uma xícara de café nas mãos. Celular apagado perto do casal, porta de entrada entreaberta. Enquadramento de novela com contraste suave e expressões intensas."
+      },
+      {
+        "index": 2,
+        "ancora": "Ela escondeu o laudo",
+        "visual": "Flashback na recepção de clínica de fertilidade: Clara, muito tensa, confere uma pasta médica e guarda discretamente um documento dentro da bolsa; Ela escondeu o laudo enquanto Rafael permanece sentado longe, distraído. Luz branca clínica, cadeiras azuis, composição diagonal."
+      },
+      {
+        "index": 3,
+        "ancora": "dois filhos que ele criava",
+        "visual": "Clara sozinha num quarto com uma caixa de documentos aberta, duas fotografias de família sem detalhes legíveis e exames guardados. Ela pensa nos dois filhos que ele criava e encara as fotos com expressão de culpa. Perspectiva de cima da caixa, luz íntima de abajur."
+      },
+      {
+        "index": 4,
+        "ancora": "Rafael colocou a chamada no viva-voz",
+        "visual": "Plano sobre a mesa: Rafael colocou a chamada no viva-voz, com um celular iluminado entre ele e Clara; ela se inclina e faz uma pergunta séria, enquanto Rafael aperta as mãos ansioso. Ambiente doméstico noturno, drama realista, foco nos rostos, nenhum símbolo de aplicativo reconhecível."
+      },
+      {
+        "index": 5,
+        "ancora": "Encontrou o envelope do exame antigo",
+        "visual": "Clara ajoelhada diante de armário no corredor, gaveta aberta, Encontrou o envelope do exame antigo e dois outros documentos discretos. Sua mão treme perto de fotos emolduradas no móvel. Ângulo baixo dinâmico, corredor pouco iluminado, sensação visual de urgência."
+      },
+      {
+        "index": 6,
+        "ancora": "colocou os outros exames sobre a mesa",
+        "visual": "Confronto na sala: Clara colocou os outros exames sobre a mesa, olhando nos olhos de Rafael, que empalidece sentado no sofá. Três folhas viradas com o verso à mostra, sem conteúdo legível. Close emocional dos dois adultos, iluminação de abajur e sombras moderadas."
+      },
+      {
+        "index": 7,
+        "ancora": "Rafael não gritou",
+        "visual": "Plano aberto silencioso da sala: Rafael não gritou, ficou sentado com os cotovelos nos joelhos e olhar perdido, enquanto Clara à distância permanece de pé, arrependida, sem toque físico. Móveis cotidianos e espaço vazio entre eles, composição que revela o rompimento da confiança."
+      },
+      {
+        "index": 8,
+        "ancora": "Meses depois, veio a resposta",
+        "visual": "Meses depois, veio a resposta: Clara e Rafael, em uma sala discreta de atendimento, observam envelopes de resultados sobre a mesa sem palavras legíveis. Rafael baixa o olhar e Clara segura as próprias mãos; ao fundo uma janela com luz da manhã. Cena sóbria de revelação."
+      },
+      {
+        "index": 9,
+        "ancora": "o amor pelos filhos que criou",
+        "visual": "Desfecho em parque ensolarado: Rafael caminha ao lado de duas crianças vistas apenas de costas, com atenção e carinho de pai, representando o amor pelos filhos que criou; Clara observa a pequena distância, todos vestidos de forma cotidiana. Clima delicado de continuidade familiar, sem indicar reconciliação."
+      }
+    ]
+  },
+  "fim": "A VERDADE NÃO FICA ESCONDIDA PARA SEMPRE",
+  "legenda_post": "A AMANTE DISSE QUE ESTAVA GRÁVIDA… MAS A ESPOSA ESCONDIA UM EXAME QUE MUDAVA TUDO. 😳📄 E o segredo dos dois filhos era ainda maior! Você perdoaria alguma dessas mentiras? História fictícia. #NinaMeContou #Storytime #Fofoca #Reviravolta #Historias",
+  "legenda_tiktok": "A amante estava grávida, mas a esposa escondia um exame! 😱 Quando a verdade apareceu, ninguém estava preparado para o segredo dos dois filhos. Qual mentira foi pior? História fictícia. #NinaMeContou #Fofoca #Storytime #PlotTwist #Historias",
+  "gancho_antecipacao_versao": "nina-antecipacao-20261102-v2"
+}
