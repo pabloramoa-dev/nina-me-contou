@@ -205,6 +205,24 @@ def preparar(ep: dict, cenas: list[dict], pasta: Path, style: str,
         strict = os.environ.get("NINA_REQUIRE_AI_STORYBOARD", "0").strip().lower() in ("1", "true", "sim")
     if strict and len(cenas) != 10:
         raise StoryboardError("Instagram exige 10 cenas planejadas ANTES de cobrar imagens")
+    # Pré-produção editorial guardada no próprio episódio: validar TODAS as
+    # 10 âncoras e prompts, sem refazer prompts pagos ao iniciar a renderização.
+    # A geração das imagens continua obrigatoriamente na SiliconFlow.
+    preparado = ep.get("storyboard_preparado")
+    if preparado is not None:
+        prompts = _validar_plano(preparado, cenas, style)
+        modo = "banco_historias"
+        doc = {"versao": VERSAO, "modo": modo, "quantidade": len(prompts),
+               "provedor": "banco_local", "modelo": None, "plano": preparado,
+               "prompts": prompts}
+        (pasta / "prompts_planejados.json").write_text(
+            json.dumps(doc, ensure_ascii=False, indent=2), encoding="utf-8")
+        for scene, prompt in zip(cenas, prompts):
+            scene["prompt"] = prompt
+            scene["storyboard_mode"] = modo
+            scene["storyboard_version"] = VERSAO
+        return cenas, {"modo": modo, "cenas": len(prompts),
+                       "versao": VERSAO, "provedor": "banco_local", "modelo": None}
     provider = os.getenv("NINA_STORYBOARD_PROVIDER", DEFAULT_PROVIDER).strip().lower()
     model = os.getenv("NINA_STORYBOARD_MODEL", DEFAULT_MODEL)
     if provider not in ("siliconflow", "openai"):
