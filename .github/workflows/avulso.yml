@@ -128,6 +128,8 @@ jobs:
           SILICONFLOW_API_KEY: ${{ secrets.SILICONFLOW_API_KEY }}
           NINA_ALLOW_PAID_IMAGE_API: "1"
           NINA_REQUIRE_SILICONFLOW: "1"
+          NINA_REQUIRE_AI_STORYBOARD: "1"
+          NINA_USE_AI_STORYBOARD: "1"
           NINA_STORYBOARD_PROVIDER: "siliconflow"
           NINA_MOTOR: "hyperframes"
           NINA_FINAL_COMPOSITOR: "remotion"
@@ -145,6 +147,9 @@ jobs:
           print("SiliconFlow: 10 imagens confirmadas")
           PY
           mkdir -p out
+          cp "saida/$ID/render.json" "out/$ID-render.json"
+          cp "saida/$ID/visual_images.json" "out/$ID-visual-images.json"
+          cp "saida/$ID/prompts_planejados.json" "out/$ID-prompts-planejados.json"
           cp "saida/$ID/$ID.mp4" "out/$ID.mp4"
           python -c "from PIL import Image;Image.open('saida/$ID/capa.png').convert('RGB').save('out/$ID-capa.jpg',quality=90)"
           python motor/story.py "out/$ID.mp4" "out/$ID-story.mp4"
