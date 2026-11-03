@@ -3,7 +3,7 @@ import {AbsoluteFill, Audio, Img, OffthreadVideo, interpolate, spring, staticFil
 
 type Scene = {start:number;end:number;title:string;fala:string;expr:string};
 export type VisualFrame = {start:number;end:number;src:string;origin?:string};
-export type NinaProps = {durationFrames:number;scenes:Scene[];visuals?:VisualFrame[]};
+export type NinaProps = {durationFrames:number;scenes:Scene[];visuals?:VisualFrame[];experimentalOpuscar?:boolean};
 const clamp=(n:number,min:number,max:number)=>Math.max(min,Math.min(max,n));
 const selectedWords=(s:string,progress:number)=>{
   const words=s.split(/\s+/).filter(Boolean);
@@ -14,7 +14,7 @@ const selectedWords=(s:string,progress:number)=>{
 };
 const accents=['#f5b94f','#d9858d','#86b3a0','#f1bb64','#dd9cb0','#79b7b2'];
 
-export const NinaUpgrade:React.FC<NinaProps>=({scenes,visuals=[]})=>{
+export const NinaUpgrade:React.FC<NinaProps>=({scenes,visuals=[],experimentalOpuscar=false})=>{
  const frame=useCurrentFrame();const {fps,durationInFrames}=useVideoConfig();const t=frame/fps;
  const index=Math.max(0,scenes.findIndex(s=>t>=s.start&&t<s.end));
  const scene=scenes[index]??scenes[0];
@@ -24,7 +24,10 @@ export const NinaUpgrade:React.FC<NinaProps>=({scenes,visuals=[]})=>{
  const leaving=clamp((scene.end-t)*2.5,0,1);
  const panelScale=interpolate(appearing,[0,1],[0.76,1])*interpolate(leaving,[0,1],[0.96,1]);
  const panelY=interpolate(appearing,[0,1],[-95,0]);
- const baseZoom=1.03+0.016*Math.sin(t*.48)+(index===3?.035:0);
+ // Opuscar: camera decidida pela timeline real; nenhuma aleatoriedade por frame.
+ const expressive=/chocad|surpres|brav|desconfiad|ironic/.test((scene.expr||'').toLowerCase());
+ const reactionPulse=experimentalOpuscar&&expressive?.042*Math.exp(-3.2*elapsed):0;
+ const baseZoom=1.03+0.016*Math.sin(t*.48)+(index===3?.035:0)+reactionPulse;
  const baseX=12*Math.sin(t*.36);
  const caption=selectedWords(scene.fala,progress);
  const textAppear=spring({frame:(elapsed-.1)*fps,fps,config:{damping:18}});
@@ -33,10 +36,10 @@ export const NinaUpgrade:React.FC<NinaProps>=({scenes,visuals=[]})=>{
  const pictureDuration=picture?Math.max(.15,picture.end-picture.start):1;
  const pictureElapsed=picture?clamp(t-picture.start,0,pictureDuration):0;
  const pictureProgress=pictureElapsed/pictureDuration;
- const pictureFade=picture?Math.min(1,pictureElapsed/.28,(picture.end-t)/.25):0;
- const pictureScale=1.04+.065*pictureProgress;
- const pictureX=picture?((visuals.indexOf(picture)%2===0?-1:1)*26*(pictureProgress-.5)):0;
- const pictureY=11*Math.sin(pictureProgress*Math.PI);
+ const pictureFade=picture?Math.min(1,pictureElapsed/(experimentalOpuscar?.17:.28),(picture.end-t)/(experimentalOpuscar?.2:.25)):0;
+ const pictureScale=(experimentalOpuscar?1.075:1.04)+(experimentalOpuscar?.11:.065)*pictureProgress;
+ const pictureX=picture?((visuals.indexOf(picture)%2===0?-1:1)*(experimentalOpuscar?41:26)*(pictureProgress-.5)):0;
+ const pictureY=(experimentalOpuscar?17:11)*Math.sin(pictureProgress*Math.PI);
  const endFade=interpolate(frame,[durationInFrames-18,durationInFrames-1],[1,0],{extrapolateLeft:'clamp',extrapolateRight:'clamp'});
  return <AbsoluteFill style={{backgroundColor:'#e9d7bc',fontFamily:'Arial, sans-serif',overflow:'hidden',opacity:endFade}}>
    {/* Personagem e lip-sync oficiais renderizados em Manim, não uma imitação da Nina. */}
@@ -57,13 +60,28 @@ export const NinaUpgrade:React.FC<NinaProps>=({scenes,visuals=[]})=>{
    {picture ? <div style={{position:'absolute',top:205,left:50,width:980,height:660,
      overflow:'hidden',background:'#f6e8d6',border:'6px solid #34283a',
      borderRadius:26,boxShadow:'14px 17px 0 #38253b55',boxSizing:'border-box',
-     opacity:clamp(pictureFade,0,1)}}>
+     opacity:clamp(pictureFade,0,1),
+     transform:experimentalOpuscar?`translateY(${(1-pictureFade)*12}px)`:undefined}}>
+      {/* Opuscar: plano difuso desacoplado do primeiro plano, sem outra API/imagem. */}
+      {experimentalOpuscar?<Img src={staticFile(picture.src)} style={{position:'absolute',inset:0,
+        width:'100%',height:'100%',objectFit:'cover',filter:'blur(16px) saturate(.82)',opacity:.36,
+        transform:`translate(${-pictureX*.38}px,${-pictureY*.45}px) scale(1.22)`}}/>:null}
       <Img src={staticFile(picture.src)} style={{width:'100%',height:'100%',
         objectFit:'cover',objectPosition:'center',
         transform:`translate(${pictureX}px,${pictureY}px) scale(${pictureScale})`,
         transformOrigin:'50% 48%'}} />
       <div style={{position:'absolute',inset:0,pointerEvents:'none',
-        background:'linear-gradient(180deg,transparent 70%,#1d233322 100%)'}} />
+        background:'linear-gradient(180deg,transparent 65%,#1d233344 100%)'}} />
+      {experimentalOpuscar?<>
+        {/* Luz de entrada curta e progresso continuo sincronizados a cue da imagem. */}
+        <div style={{position:'absolute',inset:0,pointerEvents:'none',
+          background:'linear-gradient(115deg,transparent 22%,#fff2c366 49%,transparent 75%)',
+          opacity:Math.max(0,1-pictureElapsed/.85)*.58,
+          transform:`translateX(${interpolate(clamp(pictureElapsed/.85,0,1),[0,1],[-600,690])}px)`}}/>
+        <div style={{position:'absolute',left:0,bottom:0,height:7,
+          width:`${Math.min(100,100*pictureProgress)}%`,background:accent,
+          boxShadow:`0 0 9px ${accent}`}} />
+      </>:null}
    </div> : null}
    {!picture ? <>
    {/* Cartão original serve de fallback sem sobrepor a apresentadora. */}
