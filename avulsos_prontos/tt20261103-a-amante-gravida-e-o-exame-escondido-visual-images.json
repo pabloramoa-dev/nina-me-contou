@@ -1,0 +1,201 @@
+{
+  "config": {
+    "auto_visual_images": true,
+    "hide_inner_caption_when_image": true,
+    "bottom_caption_only": true,
+    "min_images": 10,
+    "max_images": 10,
+    "target_images": 10,
+    "image_model": "black-forest-labs/FLUX.1-schnell",
+    "image_quality": "medium",
+    "image_size": "768x512",
+    "image_background": "opaque",
+    "image_timeout_seconds": 180,
+    "image_retries": 0,
+    "fallback": "story_frame_text",
+    "image_provider": "siliconflow"
+  },
+  "requested": 10,
+  "ready": 10,
+  "fallbacks": 0,
+  "storyboard": {
+    "modo": "banco_historias",
+    "cenas": 10,
+    "versao": "nina-storyboard-20261102-v3-ficha-curta",
+    "provedor": "banco_local",
+    "modelo": null
+  },
+  "scenes": [
+    {
+      "scene": 0,
+      "beats": [
+        0
+      ],
+      "start": 0.0,
+      "end": 14.373,
+      "text": "Ela ouviu que a amante do marido estava grávida e quase soltou uma risada. Não por achar graça da traição. É que Clara guardava um exame capaz de desmentir aquela história. Só que, se mostrasse o papel, colocaria em risco o maior segredo da própria casa.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Clara: mulher adulta de 34 anos, pele morena clara, cabelo castanho ondulado até os ombros e blusa verde-petróleo. Rafael: homem adulto de 38 anos, pele morena, cabelo preto curto e barba discreta, camisa azul. Bianca: mulher adulta de 30 anos, ruiva com cabelo preso e casaco bege. Apartamento brasileiro simples, mesa de madeira, luz natural. Estilo editorial de revistinha moderna 2D, contornos limpos e expressivos.\nCENA ATUAL 1/10: Plano fechado cinematográfico de Clara em uma cozinha pequena, expressão de choque e dúvida, segurando discretamente um envelope fechado junto ao peito. No fundo desfocado está Rafael de cabeça baixa; ela guardava um exame capaz de desmentir a gravidez atribuída a ele. Luz fria de fim de tarde.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): guardava um exame capaz de desmentir\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "banco_historias",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "7e69be6c0bd7de0b4a14466adf5503f3608752281b1c7572e60ddbb612fc0194",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-00.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 1,
+      "beats": [
+        1
+      ],
+      "start": 14.373,
+      "end": 28.617,
+      "text": "Rafael chegou numa terça-feira, largou as chaves na mesa e confessou: 'Eu tive um caso com a Bianca. Ela diz que espera um filho meu.' Depois chorou, pediu perdão e jurou que terminaria tudo. Clara ficou imóvel, segurando uma xícara de café que já estava fria.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Clara: mulher adulta de 34 anos, pele morena clara, cabelo castanho ondulado até os ombros e blusa verde-petróleo. Rafael: homem adulto de 38 anos, pele morena, cabelo preto curto e barba discreta, camisa azul. Bianca: mulher adulta de 30 anos, ruiva com cabelo preso e casaco bege. Apartamento brasileiro simples, mesa de madeira, luz natural. Estilo editorial de revistinha moderna 2D, contornos limpos e expressivos.\nCENA ATUAL 2/10: Plano médio lateral na mesa da cozinha: Rafael, abatido, largou as chaves na mesa, enquanto Clara congela com uma xícara de café nas mãos. Celular apagado perto do casal, porta de entrada entreaberta. Enquadramento de novela com contraste suave e expressões intensas.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): largou as chaves na mesa\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "banco_historias",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "95ed46f56d6aebbbcdd161d046d93a7ee147fe7b10ffa8169a8245639bd45a4d",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-01.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 2,
+      "beats": [
+        2
+      ],
+      "start": 28.617,
+      "end": 44.227,
+      "text": "Quatro anos antes, durante a tentativa de engravidar, Clara recebera o resultado de um exame de fertilidade de Rafael. O médico explicara que havia um problema sério e que seriam necessárias outras avaliações. Ela escondeu o laudo e disse ao marido que estava tudo bem.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Clara: mulher adulta de 34 anos, pele morena clara, cabelo castanho ondulado até os ombros e blusa verde-petróleo. Rafael: homem adulto de 38 anos, pele morena, cabelo preto curto e barba discreta, camisa azul. Bianca: mulher adulta de 30 anos, ruiva com cabelo preso e casaco bege. Apartamento brasileiro simples, mesa de madeira, luz natural. Estilo editorial de revistinha moderna 2D, contornos limpos e expressivos.\nCENA ATUAL 3/10: Flashback na recepção de clínica de fertilidade: Clara, muito tensa, confere uma pasta médica e guarda discretamente um documento dentro da bolsa; Ela escondeu o laudo enquanto Rafael permanece sentado longe, distraído. Luz branca clínica, cadeiras azuis, composição diagonal.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): Ela escondeu o laudo\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "banco_historias",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "31189d5b6c5d30a7a0bae6292884b163a15acfd473644d4ee86098b0a1aa005f",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-02.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 3,
+      "beats": [
+        3
+      ],
+      "start": 44.227,
+      "end": 60.264,
+      "text": "Na mesma época, Clara também tinha traído Rafael. Os dois filhos que ele criava com tanto carinho não eram biologicamente dele. Ela sabia disso por exames de DNA guardados numa caixa de documentos. Cada aniversário em família tornava a mentira mais difícil de carregar.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Clara: mulher adulta de 34 anos, pele morena clara, cabelo castanho ondulado até os ombros e blusa verde-petróleo. Rafael: homem adulto de 38 anos, pele morena, cabelo preto curto e barba discreta, camisa azul. Bianca: mulher adulta de 30 anos, ruiva com cabelo preso e casaco bege. Apartamento brasileiro simples, mesa de madeira, luz natural. Estilo editorial de revistinha moderna 2D, contornos limpos e expressivos.\nCENA ATUAL 4/10: Clara sozinha num quarto com uma caixa de documentos aberta, duas fotografias de família sem detalhes legíveis e exames guardados. Ela pensa nos dois filhos que ele criava e encara as fotos com expressão de culpa. Perspectiva de cima da caixa, luz íntima de abajur.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): dois filhos que ele criava\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "banco_historias",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "cc9e8b799925834ac5d38f7a57279440766af84463b36c62331bff55cd3591be",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-03.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 4,
+      "beats": [
+        4
+      ],
+      "start": 60.264,
+      "end": 76.77,
+      "text": "Quando Bianca telefonou, Rafael colocou a chamada no viva-voz. Ela dizia que estava grávida e precisava que ele assumisse a responsabilidade. Clara engoliu a raiva e fez uma única pergunta: 'Você aceita esclarecer a paternidade com um exame, quando for possível?' Do outro lado, houve silêncio.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Clara: mulher adulta de 34 anos, pele morena clara, cabelo castanho ondulado até os ombros e blusa verde-petróleo. Rafael: homem adulto de 38 anos, pele morena, cabelo preto curto e barba discreta, camisa azul. Bianca: mulher adulta de 30 anos, ruiva com cabelo preso e casaco bege. Apartamento brasileiro simples, mesa de madeira, luz natural. Estilo editorial de revistinha moderna 2D, contornos limpos e expressivos.\nCENA ATUAL 5/10: Plano sobre a mesa: Rafael colocou a chamada no viva-voz, com um celular iluminado entre ele e Clara; ela se inclina e faz uma pergunta séria, enquanto Rafael aperta as mãos ansioso. Ambiente doméstico noturno, drama realista, foco nos rostos, nenhum símbolo de aplicativo reconhecível.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): Rafael colocou a chamada no viva-voz\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "banco_historias",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "b729bf58b08726d543104ca99b3657ad173134cd9252d91f0c215ba031950bc9",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-04.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 5,
+      "beats": [
+        5
+      ],
+      "start": 76.77,
+      "end": 93.084,
+      "text": "Bianca respondeu que não queria ser tratada como mentirosa. Rafael saiu para conversar com ela, e Clara correu até o armário. Encontrou o envelope do exame antigo e, logo abaixo, dois documentos que jamais deveria ter escondido. As mãos tremiam quando ela viu as fotografias dos filhos.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Clara: mulher adulta de 34 anos, pele morena clara, cabelo castanho ondulado até os ombros e blusa verde-petróleo. Rafael: homem adulto de 38 anos, pele morena, cabelo preto curto e barba discreta, camisa azul. Bianca: mulher adulta de 30 anos, ruiva com cabelo preso e casaco bege. Apartamento brasileiro simples, mesa de madeira, luz natural. Estilo editorial de revistinha moderna 2D, contornos limpos e expressivos.\nCENA ATUAL 6/10: Clara ajoelhada diante de armário no corredor, gaveta aberta, Encontrou o envelope do exame antigo e dois outros documentos discretos. Sua mão treme perto de fotos emolduradas no móvel. Ângulo baixo dinâmico, corredor pouco iluminado, sensação visual de urgência.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): Encontrou o envelope do exame antigo\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "banco_historias",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "95cee516ec44082abe2021c25333c772681acff7255a63a1b44c796e6e3982da",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-05.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 6,
+      "beats": [
+        6
+      ],
+      "start": 93.084,
+      "end": 112.001,
+      "text": "Naquela noite, Clara decidiu parar de inventar desculpas. Sentou com Rafael e revelou primeiro o antigo resultado de fertilidade. Ele ficou confuso, porque um diagnóstico não significava impossibilidade absoluta de ter filhos. Então ela colocou os outros exames sobre a mesa e confessou a verdade sobre as crianças.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Clara: mulher adulta de 34 anos, pele morena clara, cabelo castanho ondulado até os ombros e blusa verde-petróleo. Rafael: homem adulto de 38 anos, pele morena, cabelo preto curto e barba discreta, camisa azul. Bianca: mulher adulta de 30 anos, ruiva com cabelo preso e casaco bege. Apartamento brasileiro simples, mesa de madeira, luz natural. Estilo editorial de revistinha moderna 2D, contornos limpos e expressivos.\nCENA ATUAL 7/10: Confronto na sala: Clara colocou os outros exames sobre a mesa, olhando nos olhos de Rafael, que empalidece sentado no sofá. Três folhas viradas com o verso à mostra, sem conteúdo legível. Close emocional dos dois adultos, iluminação de abajur e sombras moderadas.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): colocou os outros exames sobre a mesa\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "banco_historias",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "a2d4371d2e7d881c1910e64c0afc30ddced9b3b212a065c674007707a4a03636",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-06.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 7,
+      "beats": [
+        7
+      ],
+      "start": 112.001,
+      "end": 127.547,
+      "text": "Rafael não gritou. Perguntou apenas por que ela tinha deixado que ele vivesse tantos anos sem saber. Clara assumiu a traição e a mentira. Os dois procuraram orientação para confirmar os fatos com segurança. Enquanto isso, Bianca concordou em esclarecer quem era o pai do bebê.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Clara: mulher adulta de 34 anos, pele morena clara, cabelo castanho ondulado até os ombros e blusa verde-petróleo. Rafael: homem adulto de 38 anos, pele morena, cabelo preto curto e barba discreta, camisa azul. Bianca: mulher adulta de 30 anos, ruiva com cabelo preso e casaco bege. Apartamento brasileiro simples, mesa de madeira, luz natural. Estilo editorial de revistinha moderna 2D, contornos limpos e expressivos.\nCENA ATUAL 8/10: Plano aberto silencioso da sala: Rafael não gritou, ficou sentado com os cotovelos nos joelhos e olhar perdido, enquanto Clara à distância permanece de pé, arrependida, sem toque físico. Móveis cotidianos e espaço vazio entre eles, composição que revela o rompimento da confiança.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): Rafael não gritou\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "banco_historias",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "522190ff8d52b2c3d963b14cd4189dbe65dba3c543112f5381bd9d4a35cf3c43",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-07.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 8,
+      "beats": [
+        8
+      ],
+      "start": 127.547,
+      "end": 141.919,
+      "text": "Meses depois, veio a resposta: o bebê de Bianca não era de Rafael. E os exames sobre os dois filhos de Clara também confirmaram que ele não era o pai biológico. A mentira da amante tinha caído, mas a de Clara já havia destruído a confiança do casamento.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Clara: mulher adulta de 34 anos, pele morena clara, cabelo castanho ondulado até os ombros e blusa verde-petróleo. Rafael: homem adulto de 38 anos, pele morena, cabelo preto curto e barba discreta, camisa azul. Bianca: mulher adulta de 30 anos, ruiva com cabelo preso e casaco bege. Apartamento brasileiro simples, mesa de madeira, luz natural. Estilo editorial de revistinha moderna 2D, contornos limpos e expressivos.\nCENA ATUAL 9/10: Meses depois, veio a resposta: Clara e Rafael, em uma sala discreta de atendimento, observam envelopes de resultados sobre a mesa sem palavras legíveis. Rafael baixa o olhar e Clara segura as próprias mãos; ao fundo uma janela com luz da manhã. Cena sóbria de revelação.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): Meses depois, veio a resposta\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "banco_historias",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "496391b8e80b8c773d1261c86f3a3a400c91cc709dde6483e5088a6ab1f3efc5",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-08.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 9,
+      "beats": [
+        9,
+        10
+      ],
+      "start": 141.919,
+      "end": 161.214,
+      "text": "Rafael decidiu se separar de Clara. Mas deixou uma coisa clara: o amor pelos filhos que criou não desaparecia com um resultado de laboratório. Com orientação, os dois organizaram como cuidar das crianças. E Nina pergunta: para você, qual foi a maior traição dessa história? Me segue pra não perder a próxima. Amanhã tem história nova.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Clara: mulher adulta de 34 anos, pele morena clara, cabelo castanho ondulado até os ombros e blusa verde-petróleo. Rafael: homem adulto de 38 anos, pele morena, cabelo preto curto e barba discreta, camisa azul. Bianca: mulher adulta de 30 anos, ruiva com cabelo preso e casaco bege. Apartamento brasileiro simples, mesa de madeira, luz natural. Estilo editorial de revistinha moderna 2D, contornos limpos e expressivos.\nCENA ATUAL 10/10: Desfecho em parque ensolarado: Rafael caminha ao lado de duas crianças vistas apenas de costas, com atenção e carinho de pai, representando o amor pelos filhos que criou; Clara observa a pequena distância, todos vestidos de forma cotidiana. Clima delicado de continuidade familiar, sem indicar reconciliação.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): o amor pelos filhos que criou\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "banco_historias",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "8f423509885acf51646937f7e8ed06c1685135750710f674a16c94a8ecf9bc29",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-09.png",
+      "image_provider": "siliconflow"
+    }
+  ]
+}
