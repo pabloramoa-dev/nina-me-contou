@@ -1,0 +1,131 @@
+{
+  "id": "nina-20261103-o-bolo-que-entregou-o-noivo",
+  "avulso": true,
+  "parte": "unica",
+  "titulo": "O BOLO QUE ENTREGOU O NOIVO",
+  "temporada": "Nina — episódios avulsos",
+  "cenario": "tarde",
+  "voice_engine": "kokoro",
+  "kokoro_voice": "pf_dora",
+  "kokoro_speed": 1.02,
+  "visual_images": {
+    "image_provider": "siliconflow",
+    "auto_visual_images": true,
+    "min_images": 10,
+    "max_images": 10,
+    "target_images": 10,
+    "hide_inner_caption_when_image": true,
+    "bottom_caption_only": true
+  },
+  "visual_style": "cinematic_2d",
+  "batidas": [
+    {
+      "fala": "No aniversário da sogra, Paula cortou o bolo e encontrou uma aliança numa caixinha ao lado. Mas o bilhete dizia 'para Vanessa, minha noiva'. O problema? O noivo de Paula se chamava André.",
+      "expr": "chocada",
+      "arte": [
+        "bolo"
+      ]
+    },
+    {
+      "fala": "E olha que Paula nem estava desconfiada. Ela e André viviam juntos havia quatro anos, economizando para casar no civil. A festa daquele domingo seria pequena: família, refrigerante, bolo e conversa na varanda.",
+      "expr": "neutra",
+      "arte": [
+        "calendario"
+      ]
+    },
+    {
+      "fala": "A caixa apareceu misturada com as encomendas da confeitaria. A sogra jurou que não sabia de nada. Mas quando André viu o nome Vanessa, tentou recolher o bilhete depressa demais.",
+      "expr": "desconfiada",
+      "arte": [
+        "foto"
+      ]
+    },
+    {
+      "fala": "Paula fingiu que acreditou na história dele: 'deve ter sido uma troca de pedidos'. Só que percebeu uma coisa estranha. No fundo da caixinha havia uma etiqueta com o telefone de André.",
+      "expr": "chocada",
+      "arte": [
+        "celular"
+      ]
+    },
+    {
+      "fala": "Na segunda-feira, ela ligou para a confeitaria sem contar quem era. Pediu para confirmar o pedido da caixinha e ouviu: 'Foi retirado pelo senhor André, junto com o bolo do pedido da Vanessa'.",
+      "expr": "desconfiada",
+      "arte": [
+        "conversa"
+      ]
+    },
+    {
+      "fala": "A atendente não deu mais detalhes, mas um recibo tinha ficado preso na sacola. Nele apareciam duas datas: a festa da sogra e um jantar de noivado marcado para quinta-feira, num restaurante do centro.",
+      "expr": "neutra",
+      "arte": [
+        "recibo"
+      ]
+    },
+    {
+      "fala": "Paula não fez escândalo. Mandou uma mensagem para Vanessa, usando o contato que encontrou no comprovante compartilhado da encomenda. 'Oi, acho que nossas encomendas foram misturadas. Você conhece um André?'",
+      "expr": "neutra",
+      "arte": [
+        "celular"
+      ]
+    },
+    {
+      "fala": "Vanessa respondeu com uma fotografia: ela e André sorrindo diante de uma vitrine de alianças. Disse que estavam juntos fazia dez meses e que ele morava sozinho. Paula sentiu o chão fugir, mas continuou a conversa.",
+      "expr": "chocada",
+      "arte": [
+        "foto"
+      ]
+    },
+    {
+      "fala": "As duas se encontraram numa cafeteria. Paula mostrou fotos da casa onde vivia com André. Vanessa mostrou as mensagens em que ele inventava viagens para justificar os sumiços aos fins de semana.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ]
+    },
+    {
+      "fala": "Foi então que apareceu a pior coincidência: André dizia a ambas que precisava economizar para o casamento. Tinha pedido ajuda financeira para mobiliar um apartamento que nem existia. As duas guardaram os comprovantes.",
+      "expr": "chocada",
+      "arte": [
+        "manchete"
+      ]
+    },
+    {
+      "fala": "Na quinta-feira, André chegou ao restaurante segurando flores e procurando Vanessa. A mesa estava reservada, sim. Só que na cadeira ao lado dela estava Paula, com o bilhete da caixinha em cima do prato.",
+      "expr": "desconfiada",
+      "arte": [
+        "mesa"
+      ]
+    },
+    {
+      "fala": "Ele tentou dizer que tudo era um mal-entendido. Paula perguntou por que o telefone dele estava na etiqueta. Vanessa perguntou por que ele dizia morar sozinho. André não conseguiu responder a nenhuma das duas.",
+      "expr": "ironica",
+      "arte": [
+        "conversa"
+      ]
+    },
+    {
+      "fala": "As duas devolveram a aliança, encerraram os relacionamentos e decidiram verificar juntas o dinheiro que tinham emprestado. Cada uma seguiu sua vida. André perdeu as duas, e nem o jantar conseguiu salvar.",
+      "expr": "neutra",
+      "arte": [
+        "anel"
+      ]
+    },
+    {
+      "fala": "Uma semana depois, Paula voltou à confeitaria para agradecer pela ajuda. A atendente brincou: 'Desculpa pela troca de sacolas'. Paula respondeu: 'Não se desculpe. Aquela caixa me economizou um casamento inteiro'.",
+      "expr": "ironica",
+      "arte": [
+        "bolo"
+      ]
+    },
+    {
+      "fala": "E agora me conta: se você encontrasse uma aliança para outra mulher dentro das encomendas da sua festa, perguntava na hora ou investigava primeiro? Quero saber nos comentários!",
+      "expr": "ironica",
+      "arte": [
+        "manchete"
+      ]
+    }
+  ],
+  "fim": "O BOLO REVELOU TUDO",
+  "legenda_post": "Ela só queria comemorar o aniversário da sogra, mas uma caixinha de aliança no meio das encomendas entregou o segredo do noivo! 😳🎂 Você investigaria ou confrontaria na hora? História fictícia. #NinaMeContou #Storytime #Fofoca #Reviravolta #Historias",
+  "revisao": "historia-inedita-parte-unica-20261103"
+}

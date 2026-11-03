@@ -128,8 +128,9 @@ jobs:
           SILICONFLOW_API_KEY: ${{ secrets.SILICONFLOW_API_KEY }}
           NINA_ALLOW_PAID_IMAGE_API: "1"
           NINA_REQUIRE_SILICONFLOW: "1"
-          NINA_REQUIRE_STORED_PROMPTS: "1"
-          NINA_USE_AI_STORYBOARD: "0"
+          NINA_REQUIRE_STORED_PROMPTS: "0"
+          NINA_REQUIRE_AI_STORYBOARD: "1"
+          NINA_USE_AI_STORYBOARD: "1"
           NINA_STORYBOARD_PROVIDER: "siliconflow"
           NINA_MOTOR: "hyperframes"
           NINA_FINAL_COMPOSITOR: "remotion"
