@@ -5,6 +5,7 @@ on:
       - experimento/nina-opuscar-piloto-20261102
     paths:
       - '.github/workflows/nina-opuscar-piloto.yml'
+      - 'pilotos/nina-opuscar-piloto-20261102.json'
   workflow_dispatch:
 
 permissions:
@@ -44,9 +45,13 @@ jobs:
           ep=json.loads(Path('pilotos/nina-opuscar-piloto-20261102.json').read_text())
           assert ep['id']=='nina-opuscar-piloto-20261102'
           assert ep['voice_engine']=='kokoro' and ep['kokoro_voice']=='pf_dora'
-          assert ep['visual_style']=='cinematic_2d' and len(ep['batidas'])==10
+          assert ep['visual_style']=='cinematic_2d' and len(ep['batidas'])==11
           assert 'experimentalOpuscar' in Path('video/remotion/src/NinaUpgrade.tsx').read_text()
-          print('Roteiro piloto isolado e opt-in verificados')
+          from motor.visual_images import config, planejar
+          segs=[{'ini':i*5.0,'fim':(i+1)*5.0} for i in range(len(ep['batidas']))]
+          planejadas=planejar(ep,segs,config(ep))
+          assert len(planejadas)==10, f'Esperadas 10 cenas SiliconFlow, recebidas {len(planejadas)}'
+          print('Roteiro isolado, 10 cenas com CTA separado e opt-in verificados')
           PY
       - name: Compilar Remotion (sem render e sem API)
         run: |
