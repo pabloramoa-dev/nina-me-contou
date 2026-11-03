@@ -1,0 +1,147 @@
+name: Nina - piloto visual Opuscar (nao publicar)
+on:
+  push:
+    branches:
+      - experimento/nina-opuscar-piloto-20261102
+    paths:
+      - '.github/workflows/nina-opuscar-piloto.yml'
+      - 'pilotos/nina-opuscar-piloto-20261102.json'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+concurrency:
+  group: nina-opuscar-piloto-20261102
+  cancel-in-progress: false
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          sparse-checkout: |
+            motor
+            video/remotion
+            tests
+            pilotos
+          sparse-checkout-cone-mode: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Testar compatibilidade (sem cobrar API)
+        run: |
+          python -m pip install pillow requests
+          python -m unittest discover -s tests -p test_remotion_prod.py -v
+          python -m unittest discover -s tests -p test_nina_cinema2d.py -v
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          ep=json.loads(Path('pilotos/nina-opuscar-piloto-20261102.json').read_text())
+          assert ep['id']=='nina-opuscar-piloto-20261102'
+          assert ep['voice_engine']=='kokoro' and ep['kokoro_voice']=='pf_dora'
+          assert ep['visual_style']=='cinematic_2d' and len(ep['batidas'])==11
+          assert 'experimentalOpuscar' in Path('video/remotion/src/NinaUpgrade.tsx').read_text()
+          from motor.visual_images import config, planejar
+          segs=[{'ini':i*5.0,'fim':(i+1)*5.0} for i in range(len(ep['batidas']))]
+          planejadas=planejar(ep,segs,config(ep))
+          assert len(planejadas)==10, f'Esperadas 10 cenas SiliconFlow, recebidas {len(planejadas)}'
+          print('Roteiro isolado, 10 cenas com CTA separado e opt-in verificados')
+          PY
+      - name: Compilar Remotion (sem render e sem API)
+        run: |
+          npm install --prefix video/remotion --no-audit --no-fund
+          cd video/remotion
+          npx --no-install remotion bundle src/index.ts /tmp/nina-opuscar-bundle --log=error
+
+  renderizar:
+    needs: validar
+    if: github.repository == 'pabloramoa-dev/nina-me-contou' && github.ref == 'refs/heads/experimento/nina-opuscar-piloto-20261102'
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          sparse-checkout: |
+            .github
+            motor
+            video
+            tools
+            src
+            tests
+            pilotos
+            requirements-estudio.txt
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Dependencias da renderizacao CPU
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg pkg-config libcairo2-dev libpango1.0-dev espeak-ng fonts-dejavu-core
+          pip install -r requirements-estudio.txt
+      - uses: ./.github/actions/setup-hyperframes
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/dvh_kokoro
+          key: ${{ runner.os }}-${{ runner.arch }}-cache-kokoro-nina-v1
+      - name: Verificar SiliconFlow sem expor token
+        env:
+          SILICONFLOW_API_KEY: ${{ secrets.SILICONFLOW_API_KEY }}
+        run: |
+          test -n "$SILICONFLOW_API_KEY" || { echo '::error::SILICONFLOW_API_KEY ausente'; exit 1; }
+      - name: Criar um unico MP4 com 10 imagens pagas, Kokoro Dora e Opuscar
+        env:
+          SILICONFLOW_API_KEY: ${{ secrets.SILICONFLOW_API_KEY }}
+          NINA_OPUSCAR_PILOT: '1'
+          NINA_REQUIRE_SILICONFLOW: '1'
+          NINA_REQUIRE_AI_STORYBOARD: '1'
+          NINA_STORYBOARD_PROVIDER: 'siliconflow'
+          NINA_STORYBOARD_MODEL: 'Qwen/Qwen3-30B-A3B-Instruct-2507'
+          NINA_ALLOW_PAID_IMAGE_API: '1'
+          NINA_IMAGE_RETRIES: '0'
+          NINA_TARGET_IMAGES: '10'
+          NINA_MAX_IMAGES: '10'
+          NINA_FINAL_COMPOSITOR: 'remotion'
+          NINA_MOTOR: 'hyperframes'
+        run: |
+          python motor/produzir.py pilotos/nina-opuscar-piloto-20261102.json
+      - name: QA de video e imagens - falhar se faltar alguma
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from motor.siliconflow_policy import validar_relatorio, validar_metadados
+          p=Path('saida/nina-opuscar-piloto-20261102')
+          rel=json.loads((p/'visual_images.json').read_text(encoding='utf-8'))
+          meta=json.loads((p/'render.json').read_text(encoding='utf-8'))
+          props=json.loads((p/'remotion-props.json').read_text(encoding='utf-8'))
+          validar_relatorio(rel)
+          validar_metadados(meta)
+          assert props['experimentalOpuscar'] is True, 'Modo Opuscar nao aplicado'
+          assert len(props['visuals'])>0, 'Faltou sequencia de cenas'
+          mp4=p/'nina-opuscar-piloto-20261102.mp4'
+          assert mp4.stat().st_size>100_000, 'MP4 ausente/invalido'
+          print('Piloto valido: Nina original, remotion Opuscar, 10 imagens SiliconFlow, sem publicacao')
+          PY
+          ffprobe -v error -show_entries format=duration,size -of json saida/nina-opuscar-piloto-20261102/nina-opuscar-piloto-20261102.mp4
+      - name: Disponibilizar MP4 e ficha de comparacao
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: nina-opuscar-piloto-20261102
+          retention-days: 7
+          if-no-files-found: warn
+          path: |
+            saida/nina-opuscar-piloto-20261102/*.mp4
+            saida/nina-opuscar-piloto-20261102/render.json
+            saida/nina-opuscar-piloto-20261102/remotion-props.json
+            saida/nina-opuscar-piloto-20261102/visual_images.json
+            saida/nina-opuscar-piloto-20261102/prompts_planejados.json
+            saida/nina-opuscar-piloto-20261102/legenda.txt

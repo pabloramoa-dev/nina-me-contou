@@ -81,6 +81,9 @@ def finalizar(ep, pasta, raiz):
     if exige_silicon:
         validar_quadros(frames)
     props = montar_props(ep, segs, duration, visual_frames=frames)
+    # Piloto isolado: efeito visual opcional; jamais ativado em producao por padrao.
+    if os.environ.get('NINA_OPUSCAR_PILOT', '0').strip().lower() in ('1', 'true', 'sim'):
+        props['experimentalOpuscar'] = True
     propsfile = pasta / "remotion-props.json"
     propsfile.write_text(json.dumps(props, ensure_ascii=False, indent=2), encoding="utf-8")
     # Instala em diretório separado: NÃO substitui nem altera o HyperFrames.
