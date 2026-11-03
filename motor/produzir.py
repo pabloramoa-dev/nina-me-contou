@@ -47,6 +47,9 @@ def main():
     ep = garantir_cta(antecipar(json.load(open(ep_json, encoding="utf-8"))))
     from visual_images import preparar_roteiro, config as visual_config
     ep = preparar_roteiro(ep)
+    if os.getenv('NINA_REQUIRE_STORED_PROMPTS', '1') == '1':
+        from prompts_banco import carregar
+        carregar(ep)  # Falha antes de voz, render ou cobrança se o banco estiver desatualizado.
     ep['visual_images'] = visual_config(ep)
     from siliconflow_policy import validar_configuracao
     validar_configuracao(ep['visual_images'], ep)

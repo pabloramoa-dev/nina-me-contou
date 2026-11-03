@@ -195,6 +195,12 @@ def preparar(ep: dict, cenas: list[dict], pasta: Path, style: str,
     pasta.mkdir(parents=True, exist_ok=True)
     if not cenas:
         return cenas, {"modo": "sem_cenas", "cenas": 0, "versao": VERSAO}
+    if os.getenv('NINA_REQUIRE_STORED_PROMPTS', '1') == '1' and planner is None:
+        try:
+            from .prompts_banco import preparar as banco_preparar
+        except ImportError:
+            from prompts_banco import preparar as banco_preparar
+        return banco_preparar(ep, cenas, pasta)
     if strict is None:
         strict = os.environ.get("NINA_REQUIRE_AI_STORYBOARD", "0").strip().lower() in ("1", "true", "sim")
     if strict and len(cenas) != 10:
