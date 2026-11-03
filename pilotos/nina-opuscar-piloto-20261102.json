@@ -1,0 +1,54 @@
+{
+  "id": "nina-opuscar-piloto-20261102",
+  "avulso": true,
+  "titulo": "O PRESENTE ESCONDIDO",
+  "cenario": "tarde",
+  "voice_engine": "kokoro",
+  "kokoro_voice": "pf_dora",
+  "visual_style": "cinematic_2d",
+  "batidas": [
+    {
+      "fala": "Ela viu uma mensagem no celular do marido. Quase terminou o casamento por causa de um embrulho.",
+      "expr": "desconfiada"
+    },
+    {
+      "fala": "Marina estava no sofá quando a tela acendeu: amanhã, no mesmo lugar. Não conta para ela.",
+      "expr": "chocada"
+    },
+    {
+      "fala": "Do outro lado da sala, Rafael guardou uma caixinha no bolso e saiu assobiando.",
+      "expr": "desconfiada"
+    },
+    {
+      "fala": "Marina seguiu o marido até uma cafeteria. Ele estava sentado com uma mulher de vestido amarelo.",
+      "expr": "brava"
+    },
+    {
+      "fala": "Ela respirou fundo e entrou. Os dois esconderam uma sacola debaixo da mesa.",
+      "expr": "chocada"
+    },
+    {
+      "fala": "Marina cruzou os braços: pode mostrar. Eu já vi tudo. Rafael ficou vermelho.",
+      "expr": "brava"
+    },
+    {
+      "fala": "A mulher abriu a sacola. Dentro havia uma foto antiga de Marina abraçada à avó.",
+      "expr": "chocada"
+    },
+    {
+      "fala": "Ela era restauradora. Rafael queria recuperar a única fotografia que a esposa tinha com a avó.",
+      "expr": "neutra"
+    },
+    {
+      "fala": "Marina abraçou o marido chorando. Depois apontou para a caixinha: e essa? Ele sorriu: o colar dela.",
+      "expr": "neutra"
+    },
+    {
+      "fala": "A suspeita acabou num abraço. Mas esconder presente por mensagem é pedir confusão! Segue a Nina para mais histórias.",
+      "expr": "ironica"
+    }
+  ],
+  "fim": "UM PRESENTE, DEZ SUSPEITAS",
+  "legenda_post": "Ela achou que tinha descoberto uma traição… e encontrou uma lembrança da avó. História fictícia. #NinaMeContou #Storytime #Revistinha",
+  "piloto_visual": "Opuscar: parallax deterministico, camera por expressao, luz de entrada e progresso da cena; sem publicacao"
+}
