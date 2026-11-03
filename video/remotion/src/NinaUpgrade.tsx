@@ -26,7 +26,7 @@ export const NinaUpgrade:React.FC<NinaProps>=({scenes,visuals=[],experimentalOpu
  const panelY=interpolate(appearing,[0,1],[-95,0]);
  // Opuscar: camera decidida pela timeline real; nenhuma aleatoriedade por frame.
  const expressive=/chocad|surpres|brav|desconfiad|ironic/.test((scene.expr||'').toLowerCase());
- const reactionPulse=experimentalOpuscar&&expressive?.042*Math.exp(-3.2*elapsed):0;
+ const reactionPulse=experimentalOpuscar&&expressive ? 0.042*Math.exp(-3.2*elapsed):0;
  const baseZoom=1.03+0.016*Math.sin(t*.48)+(index===3?.035:0)+reactionPulse;
  const baseX=12*Math.sin(t*.36);
  const caption=selectedWords(scene.fala,progress);
@@ -36,8 +36,8 @@ export const NinaUpgrade:React.FC<NinaProps>=({scenes,visuals=[],experimentalOpu
  const pictureDuration=picture?Math.max(.15,picture.end-picture.start):1;
  const pictureElapsed=picture?clamp(t-picture.start,0,pictureDuration):0;
  const pictureProgress=pictureElapsed/pictureDuration;
- const pictureFade=picture?Math.min(1,pictureElapsed/(experimentalOpuscar?.17:.28),(picture.end-t)/(experimentalOpuscar?.2:.25)):0;
- const pictureScale=(experimentalOpuscar?1.075:1.04)+(experimentalOpuscar?.11:.065)*pictureProgress;
+ const pictureFade=picture?Math.min(1,pictureElapsed/(experimentalOpuscar ? 0.17 : 0.28),(picture.end-t)/(experimentalOpuscar ? 0.2 : 0.25)):0;
+ const pictureScale=(experimentalOpuscar?1.075:1.04)+(experimentalOpuscar ? 0.11 : 0.065)*pictureProgress;
  const pictureX=picture?((visuals.indexOf(picture)%2===0?-1:1)*(experimentalOpuscar?41:26)*(pictureProgress-.5)):0;
  const pictureY=(experimentalOpuscar?17:11)*Math.sin(pictureProgress*Math.PI);
  const endFade=interpolate(frame,[durationInFrames-18,durationInFrames-1],[1,0],{extrapolateLeft:'clamp',extrapolateRight:'clamp'});
