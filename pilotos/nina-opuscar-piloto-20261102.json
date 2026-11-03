@@ -44,8 +44,16 @@
       "expr": "neutra"
     },
     {
-      "fala": "A suspeita acabou num abraço. Mas esconder presente por mensagem é pedir confusão! Segue a Nina para mais histórias.",
+      "fala": "A suspeita acabou num abraço. Mas esconder presente por mensagem é pedir confusão!",
       "expr": "ironica"
+    },
+    {
+      "fala": "Segue a Nina para mais histórias.",
+      "expr": "ironica",
+      "arte": [
+        "seguir",
+        "SIGA A NINA"
+      ]
     }
   ],
   "fim": "UM PRESENTE, DEZ SUSPEITAS",
