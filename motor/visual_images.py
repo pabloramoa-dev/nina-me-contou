@@ -76,7 +76,8 @@ def preparar_roteiro(ep):
     if not cfg['auto_visual_images']:
         return out
     beats = out['batidas']
-    while len(beats) < cfg['min_images']:
+    required = 11 if os.getenv('NINA_REQUIRE_STORED_PROMPTS', '1') == '1' else cfg['min_images']
+    while len(beats) < required:
         choices = [i for i, b in enumerate(beats) if len(b['fala'].split()) >= 8]
         if not choices:
             break  # tiny scripts cannot support four meaningful scenes
@@ -99,6 +100,12 @@ def planejar(ep, segs, cfg=None):
     cfg = cfg or config(ep)
     if not cfg['auto_visual_images']:
         return []
+    if os.getenv('NINA_REQUIRE_STORED_PROMPTS', '1') == '1':
+        try:
+            from .prompts_banco import planejar as banco_planejar
+        except ImportError:
+            from prompts_banco import planejar as banco_planejar
+        return banco_planejar(ep, segs)
     beats = ep['batidas']
     count = min(len(beats), cfg['target_images'])
     # Each beat is a narrative unit. Merge adjacent shortest units until budget fits.
