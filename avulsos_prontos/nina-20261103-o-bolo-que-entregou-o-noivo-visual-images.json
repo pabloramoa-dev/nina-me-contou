@@ -1,0 +1,207 @@
+{
+  "config": {
+    "auto_visual_images": true,
+    "hide_inner_caption_when_image": true,
+    "bottom_caption_only": true,
+    "min_images": 10,
+    "max_images": 10,
+    "target_images": 10,
+    "image_model": "black-forest-labs/FLUX.1-schnell",
+    "image_quality": "medium",
+    "image_size": "768x512",
+    "image_background": "opaque",
+    "image_timeout_seconds": 180,
+    "image_retries": 0,
+    "fallback": "story_frame_text",
+    "image_provider": "siliconflow"
+  },
+  "requested": 10,
+  "ready": 10,
+  "fallbacks": 0,
+  "storyboard": {
+    "modo": "siliconflow_roteiro",
+    "cenas": 10,
+    "versao": "nina-storyboard-20261102-v3-ficha-curta",
+    "hash": "882f3106eeab6ad4368ed8373f0405b85760d86aadb6708301e284cd4a633787",
+    "modelo": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "provedor": "siliconflow"
+  },
+  "scenes": [
+    {
+      "scene": 0,
+      "beats": [
+        0
+      ],
+      "start": 0.0,
+      "end": 8.613,
+      "text": "No aniversário da sogra, Paula encontrou uma aliança junto do bolo. Mas o bilhete dizia: 'Para Vanessa, minha noiva'. E o noivo de Paula se chamava André.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Paula: mulher de 32 anos, cabelo castanho curto, olhos escuros, expressão serena com traços de determinação; veste blusa de algodão e jeans. André: homem de 34 anos, cabelo escuro penteado para trás, olhar direto, camisa social aberta no colarinho; sempre com ar de controle. Ambientes recorrentes: apartamento com decoração minimalista, cozinha com pia de granito, sala com sofá cinza e quadros emoldurados.\nCENA ATUAL 1/10: Plano médio em sala de jantar decorada com balões e toalha de mesa estampada. Paula, de blusa branca e jeans, segura uma caixinha de bolo aberta, com aliança dourada no centro. Seu rosto mostra surpresa, olhos fixos no bilhete que segura. Luz suave de lâmpada de teto, sombras leves no rosto. A frase 'No aniversário da sogra,' está escrita em um cartão no fundo da mesa.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): No aniversário da sogra,\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "siliconflow_roteiro",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "230b5b6c6e001b90f4cd494a0d892843a690fa42ca035123e26faf68146585a1",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-00.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 1,
+      "beats": [
+        1,
+        2
+      ],
+      "start": 8.613,
+      "end": 24.814,
+      "text": "Paula e André viviam juntos havia quatro anos. Economizavam para casar no civil. A festa daquele domingo era simples, só com a família. A caixinha apareceu misturada com as encomendas da confeitaria. Quando André viu o nome Vanessa, tentou esconder o bilhete depressa demais.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Paula: mulher de 32 anos, cabelo castanho curto, olhos escuros, expressão serena com traços de determinação; veste blusa de algodão e jeans. André: homem de 34 anos, cabelo escuro penteado para trás, olhar direto, camisa social aberta no colarinho; sempre com ar de controle. Ambientes recorrentes: apartamento com decoração minimalista, cozinha com pia de granito, sala com sofá cinza e quadros emoldurados.\nCENA ATUAL 2/10: Plano fechado em cima da mesa de cozinha. André, de camisa social, tenta esconder um bilhete dentro da caixa de papelão com o nome 'Vanessa'. Sua mão treme levemente. Paula, de costas para ele, olha para o bolo com expressão de dúvida. Luz natural da janela, reflexo de um relógio de parede ao fundo. A frase 'Paula e André viviam' está escrita em um caderno aberto na mesa.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): Paula e André viviam\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "siliconflow_roteiro",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "9b076a100b7be4ea99b30791601e0ca15fc0108134d6142d81d1010dc2986687",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-01.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 2,
+      "beats": [
+        3,
+        4
+      ],
+      "start": 24.814,
+      "end": 40.269,
+      "text": "Ele alegou uma troca de pedidos. Paula fingiu acreditar. Só que a etiqueta no fundo da caixa trazia o telefone de André. Na manhã seguinte, Paula ligou para a confeitaria. A atendente confirmou: André retirara a caixinha junto do bolo reservado para Vanessa.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Paula: mulher de 32 anos, cabelo castanho curto, olhos escuros, expressão serena com traços de determinação; veste blusa de algodão e jeans. André: homem de 34 anos, cabelo escuro penteado para trás, olhar direto, camisa social aberta no colarinho; sempre com ar de controle. Ambientes recorrentes: apartamento com decoração minimalista, cozinha com pia de granito, sala com sofá cinza e quadros emoldurados.\nCENA ATUAL 3/10: Plano médio em sala de estar. Paula segura o telefone, ouvindo a atendente da confeitaria. Seu rosto mostra concentração, dedo apontando para um recibo na mesa. André, ao fundo, tenta pegar o bilhete, mas ela o afasta com o olhar. Luz fria de abajur, sombras alongadas no chão. A frase 'Ele alegou uma troca' está escrita em um papel sobre a mesinha.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): Ele alegou uma troca\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "siliconflow_roteiro",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "f01246d8eff616b4054969573ae5375fbebe13dcdd5d3cbf641d296e2b8a4188",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-02.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 3,
+      "beats": [
+        5,
+        6
+      ],
+      "start": 40.269,
+      "end": 55.851,
+      "text": "Na sacola, Paula achou um recibo com outra data: quinta-feira, jantar de noivado num restaurante do centro. Ela fotografou tudo. Paula conseguiu falar com Vanessa pelo contato da encomenda. Mandou uma pergunta curta: 'Você conhece um André que trabalha com vendas?'",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Paula: mulher de 32 anos, cabelo castanho curto, olhos escuros, expressão serena com traços de determinação; veste blusa de algodão e jeans. André: homem de 34 anos, cabelo escuro penteado para trás, olhar direto, camisa social aberta no colarinho; sempre com ar de controle. Ambientes recorrentes: apartamento com decoração minimalista, cozinha com pia de granito, sala com sofá cinza e quadros emoldurados.\nCENA ATUAL 4/10: Plano fechado sobre uma sacola de papel com o nome da confeitaria. Paula, de blusa cinza, tira um recibo com data em destaque: 'quinta-feira, jantar de noivado'. Seu dedo aponta para o local no papel. Luz de luz solar fraca entrando pela janela. A frase 'Na sacola, Paula achou' está escrita em um envelope aberto ao lado.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): Na sacola, Paula achou\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "siliconflow_roteiro",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "48c4327c919ed339bdec697050034340bdc400c9162e66ab711945ef6f4b88ac",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-03.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 4,
+      "beats": [
+        7,
+        8
+      ],
+      "start": 55.851,
+      "end": 73.205,
+      "text": "Vanessa respondeu com uma foto dos dois escolhendo alianças. Namoravam havia dez meses. Ele dizia morar sozinho e viajar muito a trabalho. As duas se encontraram numa cafeteria. Paula mostrou fotografias da casa onde vivia com André. Vanessa mostrou mensagens cheias de desculpas sobre viagens.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Paula: mulher de 32 anos, cabelo castanho curto, olhos escuros, expressão serena com traços de determinação; veste blusa de algodão e jeans. André: homem de 34 anos, cabelo escuro penteado para trás, olhar direto, camisa social aberta no colarinho; sempre com ar de controle. Ambientes recorrentes: apartamento com decoração minimalista, cozinha com pia de granito, sala com sofá cinza e quadros emoldurados.\nCENA ATUAL 5/10: Plano médio em cafeteria. Paula, de cabelo solto, segura o celular com uma foto de dois pessoas escolhendo alianças. Vanessa, de óculos redondos e blusa vermelha, olha para a tela com expressão tensa. Luz quente de lâmpadas penduradas, reflexo de copos de café na mesa. A frase 'Vanessa respondeu com uma' está escrita em um caderno aberto entre elas.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): Vanessa respondeu com uma\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "siliconflow_roteiro",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "08b082dd2e0936d1b987f7d28bfba60295aa22d6e84e50010e90dde44db1eb00",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-04.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 5,
+      "beats": [
+        9
+      ],
+      "start": 73.205,
+      "end": 82.393,
+      "text": "A pior descoberta veio nos comprovantes: André pedira dinheiro às duas para mobiliar um apartamento que nem existia. As duas decidiram guardar tudo.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Paula: mulher de 32 anos, cabelo castanho curto, olhos escuros, expressão serena com traços de determinação; veste blusa de algodão e jeans. André: homem de 34 anos, cabelo escuro penteado para trás, olhar direto, camisa social aberta no colarinho; sempre com ar de controle. Ambientes recorrentes: apartamento com decoração minimalista, cozinha com pia de granito, sala com sofá cinza e quadros emoldurados.\nCENA ATUAL 6/10: Plano fechado sobre uma pilha de comprovantes em cima de uma mesa de madeira. Um recibo com o valor 'R$ 12.500' e o nome 'André' em destaque. Paula e Vanessa, de frente uma para a outra, olham para os papéis com expressão de choque. Luz de lâmpada de teto, sombras profundas. A frase 'A pior descoberta veio' está escrita em um papel dobrado no canto.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): A pior descoberta veio\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "siliconflow_roteiro",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "ad1b5ce4210dc805f22d1f67d42223345326b76d2e82e617d6a6c6cbd6eac4e5",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-05.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 6,
+      "beats": [
+        10,
+        11
+      ],
+      "start": 82.393,
+      "end": 99.405,
+      "text": "Na quinta-feira, André chegou ao restaurante com flores. Vanessa esperava à mesa. Mas Paula também estava lá, com o bilhete da caixinha. Ele falou em mal-entendido. Paula apontou o telefone na etiqueta. Vanessa perguntou por que ele mentia sobre morar sozinho. André ficou sem resposta.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Paula: mulher de 32 anos, cabelo castanho curto, olhos escuros, expressão serena com traços de determinação; veste blusa de algodão e jeans. André: homem de 34 anos, cabelo escuro penteado para trás, olhar direto, camisa social aberta no colarinho; sempre com ar de controle. Ambientes recorrentes: apartamento com decoração minimalista, cozinha com pia de granito, sala com sofá cinza e quadros emoldurados.\nCENA ATUAL 7/10: Plano médio em restaurante elegante. André, de terno escuro, entrega flores a Vanessa, que sorri. Paula, de vestido preto, entra pela porta com o bilhete da caixinha na mão. Seu olhar é firme, direto para André. Luz dourada de velas, reflexo de espelhos no teto. A frase 'Na quinta-feira, André chegou' está escrita em um menu aberto sobre a mesa.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): Na quinta-feira, André chegou\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "siliconflow_roteiro",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "0dfe4bb09fec4f94c31b5dea3b06e4e9d6cb140505252bfb33294b98be15b27e",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-06.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 7,
+      "beats": [
+        12
+      ],
+      "start": 99.405,
+      "end": 108.615,
+      "text": "As duas devolveram a aliança, encerraram os relacionamentos e decidiram cobrar explicações sobre o dinheiro. André perdeu as duas e ainda pagou o jantar.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Paula: mulher de 32 anos, cabelo castanho curto, olhos escuros, expressão serena com traços de determinação; veste blusa de algodão e jeans. André: homem de 34 anos, cabelo escuro penteado para trás, olhar direto, camisa social aberta no colarinho; sempre com ar de controle. Ambientes recorrentes: apartamento com decoração minimalista, cozinha com pia de granito, sala com sofá cinza e quadros emoldurados.\nCENA ATUAL 8/10: Plano fechado sobre uma mesa de restaurante. As duas alianças douradas estão no centro, lado a lado. Paula e Vanessa, de costas uma para a outra, seguram um envelope com o nome 'André'. Seus rostos mostram decisão. Luz de velas tremulante, sombras longas. A frase 'As duas devolveram a' está escrita em um recibo dobrado ao lado.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): As duas devolveram a\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "siliconflow_roteiro",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "fb4508b32e8d5717053f61cbe83d44aee5405c27cfb39fde7ed7f50bc73bbe63",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-07.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 8,
+      "beats": [
+        13
+      ],
+      "start": 108.615,
+      "end": 117.697,
+      "text": "Uma semana depois, Paula agradeceu à confeiteira. A moça pediu desculpas pela troca. Paula respondeu: 'Aquela caixa me economizou um casamento inteiro!'",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Paula: mulher de 32 anos, cabelo castanho curto, olhos escuros, expressão serena com traços de determinação; veste blusa de algodão e jeans. André: homem de 34 anos, cabelo escuro penteado para trás, olhar direto, camisa social aberta no colarinho; sempre com ar de controle. Ambientes recorrentes: apartamento com decoração minimalista, cozinha com pia de granito, sala com sofá cinza e quadros emoldurados.\nCENA ATUAL 9/10: Plano médio em confeitaria. Paula, de blusa branca, sorri para a atendente, que segura um cartão de desculpas. A caixa de bolo está sobre o balcão, com o nome 'Vanessa' visível. Luz natural da vitrine, reflexo de um relógio de parede. A frase 'Uma semana depois, Paula' está escrita em um caderno aberto na mesa.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): Uma semana depois, Paula\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "siliconflow_roteiro",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "e92964424ec0a16ae8bedb2cee165f2ddbae01dcf756f7b8e0a33a29a6c65f4d",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-08.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 9,
+      "beats": [
+        14,
+        15
+      ],
+      "start": 117.697,
+      "end": 129.611,
+      "text": "E você? Se encontrasse uma aliança destinada a outra mulher na sua festa, perguntaria na hora ou investigaria primeiro? Conta nos comentários! Me segue pra não perder a próxima. Amanhã tem história nova.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Paula: mulher de 32 anos, cabelo castanho curto, olhos escuros, expressão serena com traços de determinação; veste blusa de algodão e jeans. André: homem de 34 anos, cabelo escuro penteado para trás, olhar direto, camisa social aberta no colarinho; sempre com ar de controle. Ambientes recorrentes: apartamento com decoração minimalista, cozinha com pia de granito, sala com sofá cinza e quadros emoldurados.\nCENA ATUAL 10/10: Plano fechado sobre uma mesa de madeira rústica. Um celular com tela apagada está no centro. Ao fundo, uma janela com luz do entardecer. Nenhuma pessoa visível. A frase 'E você? Se encontrasse' está escrita em um papel dobrado ao lado do celular.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): E você? Se encontrasse\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "siliconflow_roteiro",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "f169c45f41f1cc511ef9ad557fd2e8029209b0fd9cd5f265bffd5a210823df8c",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-09.png",
+      "image_provider": "siliconflow"
+    }
+  ]
+}

@@ -1,0 +1,203 @@
+{
+  "config": {
+    "auto_visual_images": true,
+    "hide_inner_caption_when_image": true,
+    "bottom_caption_only": true,
+    "min_images": 4,
+    "max_images": 10,
+    "target_images": 10,
+    "image_model": "black-forest-labs/FLUX.1-schnell",
+    "image_quality": "medium",
+    "image_size": "768x512",
+    "image_background": "opaque",
+    "image_timeout_seconds": 180,
+    "image_retries": 0,
+    "fallback": "story_frame_text",
+    "image_provider": "siliconflow"
+  },
+  "requested": 10,
+  "ready": 10,
+  "fallbacks": 0,
+  "storyboard": {
+    "modo": "siliconflow_roteiro",
+    "cenas": 10,
+    "versao": "nina-storyboard-20261102-v3-ficha-curta",
+    "hash": "91d6d78b23c4477226034414ffde13322ed2bebed4fd9fde71bac05cacc44da6",
+    "modelo": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "provedor": "siliconflow"
+  },
+  "scenes": [
+    {
+      "scene": 0,
+      "beats": [
+        0
+      ],
+      "start": 0.0,
+      "end": 5.157,
+      "text": "Ela falou mal da própria chefe por dois minutos. Mas o que áudio tinha a ver com isso?",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Camila: mulher de 32 anos, cabelo castanho curto, olhos escuros, expressão cansada, veste blusa cinza e calça jeans; chefe: mulher de 45 anos, cabelo preto curto, olhar firme, veste terninho azul-marinho com camisa branca; ambiente recorrente: apartamento simples com luz quente, mesa de centro com copo de água e celular, e escritório com paredes cinza e plantas em vasos.\nCENA ATUAL 1/10: Close na boca de Camila, em penumbra, com o celular na mão, enquanto fala com voz tensa: 'Ela falou mal da'. Iluminação fraca, fundo desfocado com sombras no sofá, expressão de frustração.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): Ela falou mal da\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "siliconflow_roteiro",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "7f7ddb63ef05ce83f4436225671219bc08812b19f167809ca30fa5e7c510ab7a",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-00.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 1,
+      "beats": [
+        1
+      ],
+      "start": 5.157,
+      "end": 11.359,
+      "text": "Camila chegou em casa depois de um dia péssimo no trabalho e decidiu desabafar com a melhor amiga.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Camila: mulher de 32 anos, cabelo castanho curto, olhos escuros, expressão cansada, veste blusa cinza e calça jeans; chefe: mulher de 45 anos, cabelo preto curto, olhar firme, veste terninho azul-marinho com camisa branca; ambiente recorrente: apartamento simples com luz quente, mesa de centro com copo de água e celular, e escritório com paredes cinza e plantas em vasos.\nCENA ATUAL 2/10: Plano médio de Camila entrando no apartamento, com mochila pesada, olhar baixo e roupas amassadas. A porta se fecha atrás dela. Luz do corredor ilumina o rosto cansado. 'Camila chegou em casa' está presente no gesto de tirar o casaco.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): Camila chegou em casa\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "siliconflow_roteiro",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "40611190562b5770a9d40ea51ff8840d4a875ff51a9e9fb085832a0f9ed557ed",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-01.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 2,
+      "beats": [
+        2
+      ],
+      "start": 11.359,
+      "end": 17.347,
+      "text": "Ela reclamou da reunião, do serviço e disse que a chefe era a pessoa mais difícil que já tinha conhecido.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Camila: mulher de 32 anos, cabelo castanho curto, olhos escuros, expressão cansada, veste blusa cinza e calça jeans; chefe: mulher de 45 anos, cabelo preto curto, olhar firme, veste terninho azul-marinho com camisa branca; ambiente recorrente: apartamento simples com luz quente, mesa de centro com copo de água e celular, e escritório com paredes cinza e plantas em vasos.\nCENA ATUAL 3/10: Close na mão de Camila segurando o celular, com a tela exibindo um áudio gravado. Seu dedo pressiona o botão de enviar. Expressão de alívio misturada com culpa. 'Ela reclamou da reunião,' é visível no movimento do dedo e na tela do celular.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): Ela reclamou da reunião,\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "siliconflow_roteiro",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "8a8122e80bcd360fe226648e9ea6c1804ab6d8d531874c1914aa1cbacce586be",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-02.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 3,
+      "beats": [
+        3
+      ],
+      "start": 17.347,
+      "end": 23.592,
+      "text": "Terminou o áudio, apertou enviar e colocou o celular na mesa. Dois minutos depois, chegou uma resposta.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Camila: mulher de 32 anos, cabelo castanho curto, olhos escuros, expressão cansada, veste blusa cinza e calça jeans; chefe: mulher de 45 anos, cabelo preto curto, olhar firme, veste terninho azul-marinho com camisa branca; ambiente recorrente: apartamento simples com luz quente, mesa de centro com copo de água e celular, e escritório com paredes cinza e plantas em vasos.\nCENA ATUAL 4/10: Plano fechado no celular sobre a mesa de centro, com o ícone de envio piscando. A mão de Camila se afasta. A luz do abajur projeta uma sombra alongada. 'Terminou o áudio, apertou' está no momento exato do toque no botão.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): Terminou o áudio, apertou\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "siliconflow_roteiro",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "e082495be70a4e5730ca71c418a5769543731f5e021ec1e935cdd7f9cfae9a2f",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-03.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 4,
+      "beats": [
+        4,
+        5
+      ],
+      "start": 23.592,
+      "end": 31.089,
+      "text": "Só que não era da amiga. Era da chefe. Camila ficou gelada. Já estava imaginando até como seria procurar outro emprego.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Camila: mulher de 32 anos, cabelo castanho curto, olhos escuros, expressão cansada, veste blusa cinza e calça jeans; chefe: mulher de 45 anos, cabelo preto curto, olhar firme, veste terninho azul-marinho com camisa branca; ambiente recorrente: apartamento simples com luz quente, mesa de centro com copo de água e celular, e escritório com paredes cinza e plantas em vasos.\nCENA ATUAL 5/10: Close no rosto de Camila, paralisado, olhos arregalados, enquanto o celular vibra na mesa. A tela mostra uma mensagem de uma conta desconhecida. 'Só que não era' é capturado no choque do olhar.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): Só que não era\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "siliconflow_roteiro",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "563b19ece8af2f6e7be3875e5372288af0fd5bd9647557ea0cf063d1562b4976",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-04.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 5,
+      "beats": [
+        6
+      ],
+      "start": 31.089,
+      "end": 36.502,
+      "text": "Então abriu a mensagem. A chefe escreveu: eu ouvi tudo. E sabe o pior? Você tem razão.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Camila: mulher de 32 anos, cabelo castanho curto, olhos escuros, expressão cansada, veste blusa cinza e calça jeans; chefe: mulher de 45 anos, cabelo preto curto, olhar firme, veste terninho azul-marinho com camisa branca; ambiente recorrente: apartamento simples com luz quente, mesa de centro com copo de água e celular, e escritório com paredes cinza e plantas em vasos.\nCENA ATUAL 6/10: Plano médio de Camila com o celular na mão, dedos trêmulos, abrindo a mensagem. A tela exibe: 'eu ouvi tudo. E sabe o pior? Você tem razão.' Expressão de choque e surpresa. 'Então abriu a mensagem.' está no gesto de deslizar o dedo na tela.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): Então abriu a mensagem.\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "siliconflow_roteiro",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "b24b84fe9c48b3dea57e36f16bc334ea92c80e63d6875a20898e727dae0753fc",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-05.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 6,
+      "beats": [
+        7
+      ],
+      "start": 36.502,
+      "end": 41.424,
+      "text": "No dia seguinte, em vez de uma demissão, Camila recebeu um pedido de desculpas.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Camila: mulher de 32 anos, cabelo castanho curto, olhos escuros, expressão cansada, veste blusa cinza e calça jeans; chefe: mulher de 45 anos, cabelo preto curto, olhar firme, veste terninho azul-marinho com camisa branca; ambiente recorrente: apartamento simples com luz quente, mesa de centro com copo de água e celular, e escritório com paredes cinza e plantas em vasos.\nCENA ATUAL 7/10: Plano médio no escritório: Camila sentada à mesa, recebendo um envelope branco da chefe. A chefe está em pé, olhando para ela com expressão sincera. 'No dia seguinte, em' é visível no momento do entrega do documento.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): No dia seguinte, em\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "siliconflow_roteiro",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "7f67519c71bea8513dd11d2f3d949fb037e93ab75667b4c871a756527fd18624",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-06.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 7,
+      "beats": [
+        8
+      ],
+      "start": 41.424,
+      "end": 47.413,
+      "text": "A chefe admitiu que estava cobrando demais da equipe e disse que precisava mudar a forma de trabalhar.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Camila: mulher de 32 anos, cabelo castanho curto, olhos escuros, expressão cansada, veste blusa cinza e calça jeans; chefe: mulher de 45 anos, cabelo preto curto, olhar firme, veste terninho azul-marinho com camisa branca; ambiente recorrente: apartamento simples com luz quente, mesa de centro com copo de água e celular, e escritório com paredes cinza e plantas em vasos.\nCENA ATUAL 8/10: Close na chefe, de pé diante da equipe, com mãos apoiadas na mesa, olhando para baixo com humildade. A luz do sol entra pela janela, iluminando seu rosto. 'A chefe admitiu que' está no gesto de baixar a cabeça.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): A chefe admitiu que\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "siliconflow_roteiro",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "41131fc733a24b01091142f92a47bdb8642fbed9326b98994f065c73e6658c6c",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-07.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 8,
+      "beats": [
+        9
+      ],
+      "start": 47.413,
+      "end": 52.42,
+      "text": "Às vezes, um erro coloca para fora uma verdade que ninguém tinha coragem de dizer.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Camila: mulher de 32 anos, cabelo castanho curto, olhos escuros, expressão cansada, veste blusa cinza e calça jeans; chefe: mulher de 45 anos, cabelo preto curto, olhar firme, veste terninho azul-marinho com camisa branca; ambiente recorrente: apartamento simples com luz quente, mesa de centro com copo de água e celular, e escritório com paredes cinza e plantas em vasos.\nCENA ATUAL 9/10: Plano geral do escritório vazio ao fim do dia. Uma cadeira está virada para trás, com um celular ligado no modo de áudio. A tela mostra a palavra 'erro' no aplicativo. 'Às vezes, um erro' é sugerido pelo objeto e silêncio.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): Às vezes, um erro\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "siliconflow_roteiro",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "237eab34331d20928550f5b96a9a648c1c50fd160892c0c4e9c4a1afc6af5c1e",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-08.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 9,
+      "beats": [
+        10,
+        11
+      ],
+      "start": 52.42,
+      "end": 60.237,
+      "text": "E você? Tentaria apagar o áudio ou fingiria que nada aconteceu? Me segue pra não perder a próxima. Amanhã tem história nova.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Camila: mulher de 32 anos, cabelo castanho curto, olhos escuros, expressão cansada, veste blusa cinza e calça jeans; chefe: mulher de 45 anos, cabelo preto curto, olhar firme, veste terninho azul-marinho com camisa branca; ambiente recorrente: apartamento simples com luz quente, mesa de centro com copo de água e celular, e escritório com paredes cinza e plantas em vasos.\nCENA ATUAL 10/10: Close no celular de Camila sobre a mesa, tela apagada, com o dedo pairando sobre o botão de exclusão. A luz do abajur reflete no vidro. 'E você? Tentaria apagar' está no gesto hesitante de tocar a tela.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): E você? Tentaria apagar\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "siliconflow_roteiro",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "5c92b8c8bf67e8760c8cb47c0a502c920e9c08a4de56910dc57d68fcd3318cbd",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-09.png",
+      "image_provider": "siliconflow"
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "config": {
+    "auto_visual_images": true,
+    "hide_inner_caption_when_image": true,
+    "bottom_caption_only": true,
+    "min_images": 4,
+    "max_images": 10,
+    "target_images": 10,
+    "image_model": "black-forest-labs/FLUX.1-schnell",
+    "image_quality": "medium",
+    "image_size": "768x512",
+    "image_background": "opaque",
+    "image_timeout_seconds": 180,
+    "image_retries": 0,
+    "fallback": "story_frame_text",
+    "image_provider": "siliconflow"
+  },
+  "requested": 10,
+  "ready": 10,
+  "fallbacks": 0,
+  "storyboard": {
+    "modo": "siliconflow_roteiro",
+    "cenas": 10,
+    "versao": "nina-storyboard-20261102-v3-ficha-curta",
+    "hash": "b6a42a3d61b0f71a3e281f861e7886dfab2874adb2bd574d931db2aa553d2d7a",
+    "modelo": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "provedor": "siliconflow"
+  },
+  "scenes": [
+    {
+      "scene": 0,
+      "beats": [
+        0
+      ],
+      "start": 0.0,
+      "end": 5.434,
+      "text": "Ela recebeu flores no aniversário de casamento. Mas o que casamento tinha a ver com isso?",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Renata, 40 anos, cabelo castanho curto e ondulado, olhos escuros e expressão serena; Sérgio, 42 anos, barba rala, camisa social aberta no colarinho, olhar evasivo. Ambientes recorrentes: sala de jantar com mesa de madeira escura, cortinas de linho branco, luz suave de abajur de metal.\nCENA ATUAL 1/10: Close na mão de Renata segurando um buquê de rosas vermelhas, luz suave do sol da manhã entrando pela janela, expressão de surpresa no rosto, fundo desfocado de uma sala de estar simples, ângulo baixo, iluminação natural e suave, com a âncora 'Ela recebeu flores no' presente no canto inferior direito da cena.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): Ela recebeu flores no\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "siliconflow_roteiro",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "d2a107ebe3346d2f4a92363415f6c3fa5d95a487b080a87af57ae03a569ade3f",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-00.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 1,
+      "beats": [
+        1,
+        2
+      ],
+      "start": 5.434,
+      "end": 14.339,
+      "text": "Quem me mandou foi a Renata, quarenta anos, casada com o Sérgio há doze. O Sérgio nunca foi de dar flor. Doze anos, e ela contava nos dedos as vezes.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Renata, 40 anos, cabelo castanho curto e ondulado, olhos escuros e expressão serena; Sérgio, 42 anos, barba rala, camisa social aberta no colarinho, olhar evasivo. Ambientes recorrentes: sala de jantar com mesa de madeira escura, cortinas de linho branco, luz suave de abajur de metal.\nCENA ATUAL 2/10: Plano médio de Renata sentada na mesa da cozinha, segurando um celular com a tela iluminada, olhar fixo no aparelho, cabelo solto, vestido de algodão azul claro, fundo com armários brancos, luz fria do teto, ângulo frontal, iluminação neutra, com a âncora 'Quem me mandou foi' gravada discretamente no canto inferior esquerdo.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): Quem me mandou foi\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "siliconflow_roteiro",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "1f3cdb2e7de92319b2e4a7946c27618e14fb74d9677e2075d9116531888a77ab",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-01.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 2,
+      "beats": [
+        3,
+        4,
+        5
+      ],
+      "start": 14.339,
+      "end": 26.524,
+      "text": "Por isso ela estranhou quando o entregador tocou a campainha de manhã cedo. Um buquê enorme. Rosas vermelhas. E um cartãozinho preso no laço. No cartão estava escrito: obrigado pela melhor noite da minha vida.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Renata, 40 anos, cabelo castanho curto e ondulado, olhos escuros e expressão serena; Sérgio, 42 anos, barba rala, camisa social aberta no colarinho, olhar evasivo. Ambientes recorrentes: sala de jantar com mesa de madeira escura, cortinas de linho branco, luz suave de abajur de metal.\nCENA ATUAL 3/10: Close no rosto de Renata parada na porta da casa, olhos arregalados, mãos segurando a maçaneta, entrega de um buquê enorme de rosas vermelhas sendo entregue por um entregador com uniforme azul, luz natural do amanhecer, fundo com portão de ferro, ângulo ligeiramente baixo, iluminação clara e realista, com a âncora 'Por isso ela estranhou' no canto inferior direito.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): Por isso ela estranhou\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "siliconflow_roteiro",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "ddaced834756bf060d7724f373671dac25c839a9b425bc4580fd1e6f22ea31aa",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-02.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 3,
+      "beats": [
+        6,
+        7
+      ],
+      "start": 26.524,
+      "end": 36.219,
+      "text": "Só que aniversário de casamento é jantar em casa. Eles nem tinham saído. Ela virou o cartão. Atrás, o endereço de entrega. Rua das Acácias, número quarenta.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Renata, 40 anos, cabelo castanho curto e ondulado, olhos escuros e expressão serena; Sérgio, 42 anos, barba rala, camisa social aberta no colarinho, olhar evasivo. Ambientes recorrentes: sala de jantar com mesa de madeira escura, cortinas de linho branco, luz suave de abajur de metal.\nCENA ATUAL 4/10: Plano médio de Renata virando um cartãozinho com a mão trêmula, olhar fixo no texto 'obrigado pela melhor noite da minha vida', fundo da mesa de jantar com pratos vazios, luz quente do abajur, expressão de choque, ângulo ligeiramente baixo, iluminação cálida e intensa, com a âncora 'Só que aniversário de' no canto inferior esquerdo.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): Só que aniversário de\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "siliconflow_roteiro",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "283cb2cf1beafe1ea6da994e411fed70d880a6bebf3017d7b42ebd2f13164ac7",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-03.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 4,
+      "beats": [
+        8,
+        9
+      ],
+      "start": 36.219,
+      "end": 44.143,
+      "text": "A casa dela é na Rua das Acácias. Número catorze. A floricultura tinha errado. Invertido os números. Quatro e um, um e quatro.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Renata, 40 anos, cabelo castanho curto e ondulado, olhos escuros e expressão serena; Sérgio, 42 anos, barba rala, camisa social aberta no colarinho, olhar evasivo. Ambientes recorrentes: sala de jantar com mesa de madeira escura, cortinas de linho branco, luz suave de abajur de metal.\nCENA ATUAL 5/10: Plano geral da fachada de uma casa de dois andares com portão de madeira, número 14 em algarismos pretos, janelas com cortinas brancas, luz do sol da manhã, Renata olhando para o número da casa com expressão de dúvida, mãos apoiadas na cintura, ângulo lateral, iluminação natural e suave, com a âncora 'A casa dela é' gravada no canto inferior direito.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): A casa dela é\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "siliconflow_roteiro",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "4122d2f56f15222a84f73f1dd30d4e29ffeb0bf1efdf723b3228eacc58aad281",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-04.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 5,
+      "beats": [
+        10
+      ],
+      "start": 44.143,
+      "end": 49.385,
+      "text": "E no número quarenta mora a Cláudia. A vizinha que o Sérgio sempre diz que é muito chata.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Renata, 40 anos, cabelo castanho curto e ondulado, olhos escuros e expressão serena; Sérgio, 42 anos, barba rala, camisa social aberta no colarinho, olhar evasivo. Ambientes recorrentes: sala de jantar com mesa de madeira escura, cortinas de linho branco, luz suave de abajur de metal.\nCENA ATUAL 6/10: Close na fachada de uma casa com número 40, portão de ferro com grades, janela com cortina vermelha, Renata segurando um cartão com o endereço escrito, olhar fixo na casa, expressão de consternação, luz do fim da tarde, ângulo baixo, iluminação dramática e contrastada, com a âncora 'E no número quarenta' no canto inferior esquerdo.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): E no número quarenta\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "siliconflow_roteiro",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "19b941d8afdc2087fa902ebdea61e757e86542b6efc16aba39b4e7ed4ab3b236",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-05.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 6,
+      "beats": [
+        11,
+        12
+      ],
+      "start": 49.385,
+      "end": 58.631,
+      "text": "A Renata ligou pra floricultura fingindo que era a dona do pedido. A atendente confirmou tudo. Pedido feito ontem. Pago no cartão. Em nome de Sérgio.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Renata, 40 anos, cabelo castanho curto e ondulado, olhos escuros e expressão serena; Sérgio, 42 anos, barba rala, camisa social aberta no colarinho, olhar evasivo. Ambientes recorrentes: sala de jantar com mesa de madeira escura, cortinas de linho branco, luz suave de abajur de metal.\nCENA ATUAL 7/10: Plano médio de Renata falando ao telefone, expressão concentrada, dedos apertando o celular com força, fundo com parede de azulejo branco, luz fria do teto, cabelo preso em um rabo de cavalo, ângulo frontal, iluminação neutra, com a âncora 'A Renata ligou pra' no canto inferior direito.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): A Renata ligou pra\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "siliconflow_roteiro",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "315378dfaf036c2bbcbe8613251e3914884c90e7e1d073719eddd5235a3c6204",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-06.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 7,
+      "beats": [
+        13,
+        14
+      ],
+      "start": 58.631,
+      "end": 67.75,
+      "text": "Ela não jogou fora. Arrumou as rosas num vaso, bem no meio da mesa do jantar. E deixou o cartãozinho encostado no vaso. Virado pra cadeira dele.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Renata, 40 anos, cabelo castanho curto e ondulado, olhos escuros e expressão serena; Sérgio, 42 anos, barba rala, camisa social aberta no colarinho, olhar evasivo. Ambientes recorrentes: sala de jantar com mesa de madeira escura, cortinas de linho branco, luz suave de abajur de metal.\nCENA ATUAL 8/10: Plano médio de Renata arrumando rosas vermelhas num vaso de cerâmica branca, colocando-o no centro da mesa de jantar, cartãozinho encostado ao vaso, virado para a cadeira vazia, luz quente do abajur, expressão calma e calculista, ângulo ligeiramente baixo, iluminação cálida e intensa, com a âncora 'Ela não jogou fora.' no canto inferior esquerdo.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): Ela não jogou fora.\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "siliconflow_roteiro",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "f64d5874eb6903fab3d0232df6e3af03ad5eea28bd66a30e7ea6aa6379f5dbfc",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-07.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 8,
+      "beats": [
+        15,
+        16
+      ],
+      "start": 67.75,
+      "end": 75.61,
+      "text": "O Sérgio chegou às oito. Olhou as flores. Olhou o cartão. E ficou branco. Ela só perguntou: quer que eu leve pra vizinha, ou você leva?",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Renata, 40 anos, cabelo castanho curto e ondulado, olhos escuros e expressão serena; Sérgio, 42 anos, barba rala, camisa social aberta no colarinho, olhar evasivo. Ambientes recorrentes: sala de jantar com mesa de madeira escura, cortinas de linho branco, luz suave de abajur de metal.\nCENA ATUAL 9/10: Plano médio de Sérgio parado na porta da sala, olhar fixo nas rosas e no cartão, rosto pálido, mãos segurando o casaco, expressão de choque, luz do abajur projetando sombras no rosto, fundo com mesa de jantar iluminada, ângulo frontal, iluminação dramática e tensa, com a âncora 'O Sérgio chegou às' no canto inferior direito.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): O Sérgio chegou às\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "siliconflow_roteiro",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "e5fcc7009189db53787fa6b15d0e68006a7f3a47115b0c05eb49cc31464a6477",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-08.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 9,
+      "beats": [
+        17,
+        18
+      ],
+      "start": 75.61,
+      "end": 84.857,
+      "text": "E você? No lugar dela, entregava as flores ou entregava as malas dele? Me conta aqui embaixo. Me segue pra não perder a próxima. Amanhã tem história nova.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Renata, 40 anos, cabelo castanho curto e ondulado, olhos escuros e expressão serena; Sérgio, 42 anos, barba rala, camisa social aberta no colarinho, olhar evasivo. Ambientes recorrentes: sala de jantar com mesa de madeira escura, cortinas de linho branco, luz suave de abajur de metal.\nCENA ATUAL 10/10: Close na mesa de jantar, vaso com rosas vermelhas no centro, cartãozinho virado para a cadeira vazia, cadeira empurrada para trás, luz suave do abajur projetando sombras no chão, fundo desfocado com silhueta de Renata de costas, olhar fixo no vaso, ângulo baixo, iluminação cálida e introspectiva, com a âncora 'E você? No lugar' no canto inferior esquerdo.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): E você? No lugar\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "siliconflow_roteiro",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "88423bf638fbc1d7480a69316293773881af335ac098c0ce24872c545c49d781",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-09.png",
+      "image_provider": "siliconflow"
+    }
+  ]
+}
