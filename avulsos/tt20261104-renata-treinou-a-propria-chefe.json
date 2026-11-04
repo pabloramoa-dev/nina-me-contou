@@ -1,0 +1,146 @@
+{
+  "id": "tt20261104-renata-treinou-a-propria-chefe",
+  "avulso": true,
+  "parte": "unica",
+  "titulo": "ELA TREINOU A COLEGA QUE ROUBOU SUA PROMOÇÃO",
+  "temporada": "Nina Me Contou — episódio avulso completo",
+  "cenario": "tarde",
+  "visual_style": "cinematic_2d",
+  "voice_engine": "kokoro",
+  "kokoro_voice": "pf_dora",
+  "kokoro_speed": 1.02,
+  "visual_images": {
+    "auto_visual_images": true,
+    "hide_inner_caption_when_image": true,
+    "bottom_caption_only": true,
+    "min_images": 10,
+    "max_images": 10,
+    "target_images": 10,
+    "image_provider": "siliconflow",
+    "image_model": "black-forest-labs/FLUX.1-schnell",
+    "fallback": "story_frame_text"
+  },
+  "batidas": [
+    {
+      "fala": "Renata recebeu a funcionária nova com um sorriso e passou semanas ensinando tudo. Mal imaginava que, pouco depois, aquela colega seria anunciada como sua chefe. Só que relatórios esquecidos numa pasta antiga mudariam o rumo dessa história.",
+      "expr": "chocada",
+      "zoom": true,
+      "foto": false
+    },
+    {
+      "fala": "Renata trabalhava havia seis anos no escritório. Quando Camila chegou sem conhecer o sistema, ela puxou uma cadeira, abriu dois computadores e explicou as tarefas, os clientes e o acompanhamento de cada projeto. Queria que a novata se sentisse acolhida.",
+      "expr": "neutra",
+      "zoom": false,
+      "foto": false
+    },
+    {
+      "fala": "Camila anotava orientações com atenção, tirava dúvidas e pedia modelos de relatórios antigos. Renata compartilhava planilhas e explicava até os atalhos mais simples. Os colegas brincavam que aquela era a aula mais completa que alguém poderia receber no primeiro mês.",
+      "expr": "neutra",
+      "zoom": false,
+      "foto": false
+    },
+    {
+      "fala": "Numa segunda-feira, Renata abriu o e-mail e levou um susto. A direção anunciava Camila como nova gerente de projetos. Pior: Renata passaria a responder a ela. Não havia avaliação, conversa anterior ou qualquer explicação sobre a escolha.",
+      "expr": "chocada",
+      "zoom": true,
+      "foto": false
+    },
+    {
+      "fala": "Na véspera, Camila conversara reservadamente com o diretor. Mostrou resultados excelentes, gráficos e apresentações de projetos que, segundo ela, demonstravam sua capacidade de liderança. O diretor não percebeu um detalhe: aqueles números tinham uma história muito anterior à chegada dela.",
+      "expr": "desconfiada",
+      "zoom": false,
+      "foto": false
+    },
+    {
+      "fala": "Renata decidiu não fazer escândalo. Reuniu relatórios de projetos antigos, atas de reunião, datas de entrega e versões salvas com seu nome. Cada documento mostrava como as análises tinham sido construídas, corrigidas e apresentadas meses antes de Camila entrar na empresa.",
+      "expr": "desconfiada",
+      "zoom": false,
+      "foto": false
+    },
+    {
+      "fala": "Quando o diretor comparou os arquivos numa reunião, ficou em silêncio. As tabelas eram praticamente idênticas. Os registros mostravam quem elaborara o trabalho original e quando. Ele entendeu que promovera uma pessoa com base em resultados que não eram dela.",
+      "expr": "chocada",
+      "zoom": true,
+      "foto": false
+    },
+    {
+      "fala": "Camila ficou constrangida diante das descobertas. Tentou dizer que apenas organizara os materiais, mas o diretor perguntou por que não havia creditado Renata. Ela não conseguiu explicar. Renata não comemorou: queria reconhecimento, não a humilhação de ninguém.",
+      "expr": "chocada",
+      "zoom": true,
+      "foto": false
+    },
+    {
+      "fala": "O diretor pediu desculpas e ofereceu a Renata uma nova posição na empresa. Mas, naquela mesma semana, ela recebera uma proposta de outra organização, com autonomia para conduzir seus projetos. Depois de pensar bastante, decidiu aceitar o novo caminho.",
+      "expr": "neutra",
+      "zoom": true,
+      "foto": false
+    },
+    {
+      "fala": "Na sexta-feira, Renata se despediu da equipe com serenidade. Agradeceu a quem esteve ao seu lado e desejou sucesso a Camila. Saiu sem discutir ou levantar a voz. Às vezes, provar seu valor é importante; escolher onde ele será respeitado é ainda mais.",
+      "expr": "neutra",
+      "zoom": false,
+      "foto": false
+    }
+  ],
+  "storyboard_preparado": {
+    "personagens": "Renata: brasileira adulta de 34 anos, pele morena, cabelo castanho-escuro ondulado até os ombros, blazer azul-marinho, blusa creme e brincos dourados. Camila: adulta jovem, cabelo castanho-cacheado preso em coque, suéter rosa e crachá azul, depois promovida a gerente. Diretor: homem maduro, cabelo e barba grisalhos, óculos, terno grafite e gravata vinho. Escritório moderno brasileiro com divisórias de vidro, plantas e computadores; revistinha moderna 2D, contornos expressivos, cores quentes.",
+    "cenas": [
+      {
+        "index": 0,
+        "ancora": "Renata recebeu a funcionária nova",
+        "visual": "Enquadramento aberto e acolhedor, Renata sorrindo enquanto recebe Camila com caderno na mão no escritório iluminado, plantas verdes, mesas e colegas ao fundo. Mostrar o momento em que Renata recebeu a funcionária nova. Arte 2D moderna, sem letreiros, sem legenda ou texto."
+      },
+      {
+        "index": 1,
+        "ancora": "abriu dois computadores e explicou",
+        "visual": "Plano médio ao lado de duas telas de computador, Renata aponta para as tarefas, Camila observa atentamente e aprende, clima cordial, luz natural de janela. Mostrar o momento em que abriu dois computadores e explicou. Arte 2D moderna, sem letreiros, sem legenda ou texto."
+      },
+      {
+        "index": 2,
+        "ancora": "Camila anotava orientações com atenção",
+        "visual": "Close da novata Camila com suéter rosa e cabelo cacheado preso, fazendo anotações no caderno, Renata ao lado indicando um item da mesa. Mostrar o momento em que Camila anotava orientações com atenção. Arte 2D moderna, sem letreiros, sem legenda ou texto."
+      },
+      {
+        "index": 3,
+        "ancora": "Renata abriu o e-mail",
+        "visual": "Plano fechado de Renata sentada à mesa, assustada ao ler um e-mail no monitor aceso; postura de surpresa, ambiente corporativo moderno. Mostrar o momento em que Renata abriu o e-mail. Arte 2D moderna, sem letreiros, sem legenda ou texto."
+      },
+      {
+        "index": 4,
+        "ancora": "Camila conversara reservadamente com o diretor",
+        "visual": "Plano cinematográfico numa sala de vidro reservada, Camila já promovida a gerente, mostrando uma apresentação ao diretor e conversando discretamente. Mostrar o momento em que Camila conversara reservadamente com o diretor. Arte 2D moderna, sem letreiros, sem legenda ou texto."
+      },
+      {
+        "index": 5,
+        "ancora": "Reuniu relatórios de projetos antigos",
+        "visual": "Renata determinada organizando pastas e relatórios de projetos antigos sobre mesa de trabalho, conferindo datas e páginas em um arquivo físico. Mostrar o momento em que Reuniu relatórios de projetos antigos. Arte 2D moderna, sem letreiros, sem legenda ou texto."
+      },
+      {
+        "index": 6,
+        "ancora": "diretor comparou os arquivos numa reunião",
+        "visual": "Diretor maduro de barba grisalha e óculos compara relatórios impressos e digitais durante reunião com Renata e Camila, concentração séria. Mostrar o momento em que diretor comparou os arquivos numa reunião. Arte 2D moderna, sem letreiros, sem legenda ou texto."
+      },
+      {
+        "index": 7,
+        "ancora": "Camila ficou constrangida diante das descobertas",
+        "visual": "Camila, a nova gerente, constrangida diante das descobertas durante reunião, diretor sério e Renata serena, relatórios abertos sobre a mesa. Mostrar o momento em que Camila ficou constrangida diante das descobertas. Arte 2D moderna, sem letreiros, sem legenda ou texto."
+      },
+      {
+        "index": 8,
+        "ancora": "recebera uma proposta de outra organização",
+        "visual": "Renata sentada em escritório elegante, emocionada e aliviada recebendo uma carta de proposta de trabalho, envelope e notebook na mesa. Mostrar o momento em que recebera uma proposta de outra organização. Arte 2D moderna, sem letreiros, sem legenda ou texto."
+      },
+      {
+        "index": 9,
+        "ancora": "Renata se despediu da equipe com serenidade",
+        "visual": "Renata de bolsa ao ombro despedindo-se da equipe com serenidade perto da porta de vidro do escritório, colegas olhando, luz quente de fim de tarde. Mostrar o momento em que Renata se despediu da equipe com serenidade. Arte 2D moderna, sem letreiros, sem legenda ou texto."
+      }
+    ]
+  },
+  "fim": "ELA ENSINOU TUDO — MAS NÃO DEU SUA HISTÓRIA DE PRESENTE",
+  "legenda_post": "Ela treinou a colega nova, mas um e-mail anunciou a novata como sua chefe. 😳 Os arquivos antigos revelaram de quem era o trabalho! Você teria ficado na empresa? História fictícia. #NinaMeContou #Storytime #Trabalho #Reviravolta #Historias",
+  "legenda_tiktok": "Ela ensinou TUDO para a novata... que virou sua CHEFE! 😳 Uma pasta de projetos antigos mudou a situação. Você faria o que Renata fez? História fictícia. #NinaMeContou #Storytime #FofocaCorporativa #PlotTwist #Trabalho",
+  "gancho_antecipacao_versao": "nina-antecipacao-20261102-v2",
+  "gancho_versao": "gancho-descoberta-20261026-v1",
+  "gancho_modelo": "abertura_direta_existente"
+}
