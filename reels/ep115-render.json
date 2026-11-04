@@ -1,8 +1,8 @@
 {
   "motor": "remotion",
-  "versao": "nina-hyperframes-12-antecipacao-storyboard-siliconflow",
+  "versao": "nina-hyperframes-13-prompts-banco-historias",
   "fotos": 0,
-  "duracao": 155.43333333333334,
+  "duracao": 155.63333333333333,
   "resolucao": [
     1080,
     1920
@@ -23,9 +23,9 @@
   "direcao_automatica": true,
   "gestos_distintos": 5,
   "qualidade_tecnica": true,
-  "storyboard_mode": "siliconflow_roteiro",
+  "storyboard_mode": "banco_historias",
   "storyboard_scenes": 10,
-  "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+  "storyboard_version": "banco-historias-v2",
   "gancho_antecipacao_versao": "nina-antecipacao-20261102-v2",
   "gancho_antecipacao_modelo": "antecipacao_pergunta_concreta",
   "motor_base": "hyperframes",
