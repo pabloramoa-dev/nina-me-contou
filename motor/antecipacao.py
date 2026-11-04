@@ -19,6 +19,26 @@ GENERICA = re.compile(r"^(?:hoje vou|vou te contar|essa história começa|"
 FIM = re.compile(r"\b(?:no fim|no final|acabou|terminou|resolveram|"
                  r"decidiram encerrar|desfecho|me segue)\b", re.I)
 RX_SENTENCA = re.compile(r"(?<=[.!?])\s+")
+FATO_NOME = re.compile(r"\b(?:foto|recibo|mensagem|bilhete|chave|áudio|vídeo|video|reserva|bolo|"
+                       r"casamento|documento)\b", re.I)
+# Segunda chance, só quando FATO não acha nada: objetos concretos no plural e
+# outros itens que os roteiros automáticos usam como pista.
+FATO_EXTRA = re.compile(r"\b(?:fotos|recibos|mensagens|bilhetes|chaves|áudios|vídeos|documentos|"
+                        r"etiquetas?|perfil|convites?|caixas?|malas?|cartas?|anéis|anel|"
+                        r"celular|e-mails?|print|prints|comprovantes?|ingressos?|passagens?|"
+                        r"rascunhos?|contrato|extrato|presentes?|caderno|diário|endereço|"
+                        r"senha|pacote|encomenda|câmera|gravação|planilha|cartão|nota|cadeira|lista|discos)\b", re.I)
+
+
+FEMININOS = {"foto", "mensagem", "chave", "reserva", "fotos", "mensagens", "chaves", "etiqueta", "etiquetas", "caixa", "caixas", "mala",
+             "malas", "carta", "cartas", "passagem", "passagens", "senha", "câmera",
+             "gravação", "planilha", "nota", "encomenda", "cadeira", "lista"}
+
+
+def _com_artigo(palavra: str) -> str:
+    plural = palavra.endswith("s") and palavra not in {"diário"}
+    art = ("as" if plural else "a") if palavra in FEMININOS else ("os" if plural else "o")
+    return f"{art} {palavra} {'tinham' if plural else 'tinha'}"
 
 
 def _frase(fala: str) -> str:
@@ -55,13 +75,21 @@ def antecipar(ep: dict) -> dict:
                           r"(?:[\wÀ-ÿ]+)(?:\s+[\wÀ-ÿ]+)?", trecho, re.I)
         if pista:
             ancora = pista.group(0).rstrip(".,;:")
+            ancora = re.sub(r"\s+(?:e|de|da|do|que|com|em|na|no|a|o|para|pra)$", "", ancora, flags=re.I)
             pergunta = f"Mas por que apareceu {ancora}?"
             modelo = "antecipacao_pista_concreta"
         else:
-            nome = FATO.search(trecho)
-            if not nome:
-                raise ValueError("História sem pista específica para criar antecipação")
-            pergunta = f"Mas o que {nome.group(0).lower()} tinha a ver com isso?"
+            # Prefere um substantivo concreto ("a foto", "o recibo"); numerais e
+            # pronomes ("dois", "outra") geravam "Mas o que dois tinha a ver...".
+            trecho_todo = " ".join(str(b.get("fala", "")) for b in bats[1:-1])
+            nome = (FATO_NOME.search(trecho) or FATO_EXTRA.search(trecho)
+                    or FATO_NOME.search(trecho_todo) or FATO_EXTRA.search(trecho_todo)
+                    )
+            if nome:
+                pergunta = f"Mas o que {_com_artigo(nome.group(0).lower())} a ver com isso?"
+            else:
+                # Sem objeto concreto citado: pergunta neutra, sem inventar pista.
+                pergunta = "Mas ninguém imaginava o que estava por trás disso."
             modelo = "antecipacao_pergunta_concreta"
         novo = inicio.rstrip(".!?") + ". " + pergunta
         if len(novo.split()) > 43:

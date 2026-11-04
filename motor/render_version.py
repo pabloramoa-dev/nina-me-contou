@@ -20,7 +20,17 @@ def versao():
     cfg=json.loads(Path(__file__).with_name("visual_images.json").read_text())
     for key in tuple(cfg):
         if "NINA_"+key.upper() in os.environ:
-            cfg[key]=os.environ["NINA_"+key.upper()]
+            bruto=os.environ["NINA_"+key.upper()]
+            # Normaliza pelo tipo do JSON: '10' do workflow == 10 do arquivo.
+            # Sem isso o .hash gravado no render nunca batia com o da fila e
+            # todo vídeo pronto era considerado desatualizado (re-render infinito).
+            padrao=cfg[key]
+            if isinstance(padrao,bool):
+                cfg[key]=str(bruto).strip().lower() in ('1','true','sim','yes')
+            elif isinstance(padrao,int):
+                cfg[key]=int(bruto)
+            else:
+                cfg[key]=bruto
     fingerprint=hashlib.sha256(json.dumps(cfg,sort_keys=True).encode()).hexdigest()[:10]
     import sys
     root = Path(__file__).resolve().parents[1]

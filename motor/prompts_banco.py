@@ -4,11 +4,14 @@ import json
 from pathlib import Path
 
 BANCO = Path(__file__).with_name('prompts_banco.json')
-VERSAO = 'banco-historias-v1'
+VERSAO = 'banco-historias-v2'
 
 
 def assinatura(ep):
-    dados = {'titulo': ep.get('titulo', ''), 'batidas': ep['batidas']}
+    # Só o texto falado define o roteiro. Campos visuais acrescentados durante o
+    # render (arte automática, _visual_auto, foto, tela, destaque) não podem
+    # invalidar o banco: era isso que travava ~200 roteiros no CI.
+    dados = {'titulo': ep.get('titulo', ''), 'falas': [str(b.get('fala', '')) for b in ep['batidas']]}
     return hashlib.sha256(json.dumps(dados, ensure_ascii=False, sort_keys=True).encode()).hexdigest()
 
 
@@ -25,7 +28,9 @@ def carregar(ep):
         if s['scene'] != i or not s['beats'] or not 90 <= len(s['prompt']) <= 2400:
             raise ValueError('Cena pré-cadastrada inválida')
         trecho = ' '.join(ep['batidas'][k]['fala'] for k in s['beats'])
-        if s['text'] != trecho or s['ancora'] not in trecho or s['ancora'] not in s['prompt']:
+        # A âncora prova que a cena é deste trecho; o prompt em si pode estar em
+        # inglês (o FLUX entende melhor) e não precisa repetir a frase em PT.
+        if s['text'] != trecho or s['ancora'] not in trecho:
             raise ValueError('Prompt não corresponde à cena do roteiro')
         indices.extend(s['beats'])
     if indices != list(range(len(ep['batidas']))):

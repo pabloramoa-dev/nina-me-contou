@@ -10,7 +10,7 @@
   "image_size": "768x512",
   "image_background": "opaque",
   "image_timeout_seconds": 180,
-  "image_retries": 0,
+  "image_retries": 2,
   "fallback": "story_frame_text",
   "image_provider": "siliconflow"
 }

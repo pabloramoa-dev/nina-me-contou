@@ -26,13 +26,15 @@ def prepared(path):
 def test_acervo_completo_e_prompts_validos(monkeypatch):
     monkeypatch.setenv('NINA_REQUIRE_STORED_PROMPTS', '1')
     files = sorted((ROOT/'episodios').glob('*.json')) + sorted((ROOT/'avulsos').glob('*.json'))
-    assert len(files) == 369
+    assert len(files) == 372
     for path in files:
         ep = prepared(path)
         item = B.carregar(ep)
         assert len(item['cenas']) == 10
         for s in item['cenas']:
-            assert s['ancora'] in s['prompt']
+            assert s['ancora'] in s['text']
+            if s.get('origem') == 'manual_en':
+                assert s['prompt'].startswith('Colorful 2D')
 
 
 def test_sem_chamada_de_modelo_textual_e_tempos_reais(tmp_path, monkeypatch):
@@ -86,3 +88,33 @@ def test_dez_imagens_e_procedencia_preservada(tmp_path, monkeypatch):
     assert len({call.args[0] for call in gerar.call_args_list}) == 10
     assert len(mapping) == len(ep['batidas'])
     assert validar_relatorio(report) == 10
+
+
+def test_campos_visuais_do_render_nao_invalidam_banco(monkeypatch):
+    """hyperframes.enriquecer_visuais acrescenta 'arte'/_visual_auto às batidas
+    antes de planejar as imagens; isso não pode quebrar a busca no banco."""
+    monkeypatch.setenv('NINA_REQUIRE_STORED_PROMPTS', '1')
+    ep = prepared(ROOT/'episodios/ep113.json')
+    for b in ep['batidas']:
+        b['arte'] = ['foto']
+        b['_visual_auto'] = True
+    assert len(B.carregar(ep)['cenas']) == 10
+
+
+def test_episodios_da_fila_tem_prompts_manuais_em_ingles(monkeypatch):
+    monkeypatch.setenv('NINA_REQUIRE_STORED_PROMPTS', '1')
+    for arq in sorted((ROOT/'motor'/'prompts_episodios').glob('ep*.json')):
+        ep = prepared(ROOT/'episodios'/arq.name)
+        cenas = B.carregar(ep)['cenas']
+        assert all(s['origem'] == 'manual_en' for s in cenas), arq.name
+
+
+def test_hash_do_render_igual_ao_da_fila(monkeypatch):
+    """O workflow de render passa NINA_* como texto; a fila roda sem elas."""
+    sys.path.insert(0, str(ROOT))
+    from motor.render_version import versao
+    sem_env = versao()
+    monkeypatch.setenv('NINA_IMAGE_RETRIES', '2')
+    monkeypatch.setenv('NINA_TARGET_IMAGES', '10')
+    monkeypatch.setenv('NINA_MAX_IMAGES', '10')
+    assert versao() == sem_env

@@ -15,6 +15,42 @@ from cta import garantir_cta, eh_cta
 from visual_images import preparar_roteiro, STYLE
 from prompts_banco import assinatura, BANCO, VERSAO
 
+MANUAIS = ROOT/'motor'/'prompts_episodios'
+# Estilo em inglês: o FLUX.1-schnell da SiliconFlow segue inglês muito melhor
+# do que português. Nenhum texto do roteiro em PT vai para a imagem.
+STYLE_EN = ('Style: modern editorial comic-magazine illustration, colorful 2D digital art, clean '
+            'rounded outlines, expressive faces, cinematic framing, full illustrated background, '
+            'horizontal composition, subject centered with safe margins, warm palette of coral, '
+            'gold, teal and cream. Fictional adults only. ')
+NEGATIVO_EN = (' No text, no letters, no words, no captions, no speech bubbles, no numbers, '
+               'no logos, no watermark, no frame or border, no collage, single scene. '
+               'No nudity, no sexual content, no gore, no graphic violence. Not a photo, not anime.')
+SHOTS_EN = ['Wide establishing shot', 'Medium shot', 'Close-up on the main reaction',
+            'Side angle on the action', 'Over-the-shoulder shot', 'Detail shot of the key object or gesture',
+            'Three-quarter medium shot', 'Expressive close-up', 'Group shot of the resolution',
+            'Final shot of the outcome']
+
+
+def carregar_manual(ep_id):
+    arq = MANUAIS/f'{ep_id}.json'
+    if not arq.exists():
+        return None
+    dados = json.loads(arq.read_text(encoding='utf-8'))
+    if len(dados.get('cenas', [])) != 10:
+        raise ValueError(f'{arq.name}: são exigidas 10 cenas manuais')
+    return dados
+
+
+def prompt_manual(dados, n):
+    # A cena vem PRIMEIRO: o FLUX.1-schnell lê no máximo ~256 tokens; o que
+    # passar disso é cortado. Assim o corte só atinge as restrições finais.
+    cena = dados['cenas'][n].strip().rstrip('.')
+    return ('Colorful 2D editorial comic illustration, no text. ' + SHOTS_EN[n] + ' (scene ' + str(n+1) + ' of 10): ' + cena + '. '
+            + 'Characters, same look in every scene: ' + dados['personagens'].strip().rstrip('.') + '. '
+            + 'Setting: ' + dados.get('cenario', '').strip().rstrip('.') + '. '
+            + STYLE_EN + NEGATIVO_EN.strip())
+
+
 PLANOS = ['Plano geral de apresentação', 'Plano médio dos personagens',
           'Close da reação principal', 'Enquadramento lateral da ação',
           'Plano sobre o ombro', 'Detalhe do gesto ou objeto citado',
@@ -22,7 +58,7 @@ PLANOS = ['Plano geral de apresentação', 'Plano médio dos personagens',
           'Plano conjunto da resolução', 'Plano final do desfecho']
 
 
-def compilar(ep):
+def compilar(ep, manual=None):
     bats = ep['batidas']
     groups = [[i] for i in range(len(bats)) if not eh_cta(bats[i])]
     if len(groups) < 10:
@@ -48,9 +84,21 @@ def compilar(ep):
                   'Se a fala for uma reflexão, mostre a reação dos envolvidos no ambiente já estabelecido, sem inventar provas ou eventos. '
                   'Nina é narradora fora de quadro. Não desenhe convites a seguir ou comentar. '
                   'Uma única cena, sem colagem nem revelação de acontecimentos posteriores.')
+        origem = 'compilado'
+        if manual:
+            prompt = prompt_manual(manual, n)
+            origem = 'manual_en'
         if len(prompt)>2400: raise ValueError('Prompt longo')
-        cenas.append({'scene':n,'beats':inds,'text':text,'ancora':anchor,'prompt':prompt})
+        cenas.append({'scene':n,'beats':inds,'text':text,'ancora':anchor,'prompt':prompt,'origem':origem})
     return {'titulo':ep.get('titulo',''),'id':ep['id'],'cenas':cenas}
+
+
+def preparar_ep(raw):
+    try:
+        antecipado = antecipar(raw)
+    except ValueError:
+        antecipado = raw
+    return preparar_roteiro(garantir_cta(antecipado))
 
 
 def main():
@@ -67,11 +115,13 @@ def main():
                     erros.append({'arquivo':str(path.relative_to(ROOT)),'erro':str(exc)})
                     antecipado = raw
                 ep=preparar_roteiro(garantir_cta(antecipado))
-                rows[assinatura(ep)]=dict(compilar(ep), arquivo=str(path.relative_to(ROOT)))
+                manual = carregar_manual(ep['id']) if folder == 'episodios' else None
+                rows[assinatura(ep)]=dict(compilar(ep, manual), arquivo=str(path.relative_to(ROOT)))
                 fontes.append(str(path.relative_to(ROOT)))
             except ValueError as e:
                 erros.append({'arquivo':str(path.relative_to(ROOT)),'erro':str(e)})
     BANCO.write_text(json.dumps({'versao':VERSAO,'roteiros':rows,'bloqueados':erros},ensure_ascii=False,indent=2)+'\n')
-    print(json.dumps({'roteiros':len(rows),'prompts':10*len(rows),'bloqueados':erros},ensure_ascii=False,indent=2))
+    manuais = sum(1 for r in rows.values() if r['cenas'][0].get('origem') == 'manual_en')
+    print(json.dumps({'roteiros':len(rows),'prompts':10*len(rows),'manuais':manuais,'bloqueados':erros},ensure_ascii=False,indent=2))
 
 if __name__=='__main__': main()
