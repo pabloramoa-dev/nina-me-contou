@@ -1,0 +1,153 @@
+{
+  "id": "nina-20261104-o-chefe-e-a-bandeirada",
+  "avulso": true,
+  "parte": "unica",
+  "titulo": "A BRONCA DAS CINCO E QUINZE",
+  "temporada": "Nina — episódios avulsos",
+  "cenario": "tarde",
+  "voice_engine": "kokoro",
+  "kokoro_voice": "pf_dora",
+  "kokoro_speed": 1.02,
+  "visual_images": {
+    "image_provider": "siliconflow",
+    "auto_visual_images": true,
+    "min_images": 10,
+    "max_images": 10,
+    "target_images": 10,
+    "hide_inner_caption_when_image": true,
+    "bottom_caption_only": true
+  },
+  "visual_style": "cinematic_2d",
+  "gancho_antecipacao_versao": "nina-antecipacao-20261102-v2",
+  "gancho_antecipacao_modelo": "antecipacao_existente_validada",
+  "storyboard_preparado": {
+    "personagens": "Lucas é um funcionário fictício adulto de 29 anos, pele morena clara, cabelo castanho curto, camisa azul de manga comprida e calça escura, mochila preta. Roberto é seu chefe, adulto de 52 anos, cabelo grisalho penteado de lado, camisa branca, gravata vinho, calça cinza. Escritório brasileiro atual, mesas claras, computadores, corredor e sala do chefe com janela. Visual igual nas dez cenas.",
+    "cenas": [
+      {
+        "index": 0,
+        "ancora": "Na segunda-feira, Lucas saiu",
+        "visual": "Na segunda-feira, Lucas saiu do escritório pontualmente, com mochila escura no ombro e postura tranquila; relógio analógico na parede indica o fim do expediente, colegas trabalhando ao fundo. Plano médio cinematográfico, luz de fim de tarde, clima de rotina."
+      },
+      {
+        "index": 1,
+        "ancora": "Lucas era daqueles funcionários",
+        "visual": "Lucas era daqueles funcionários cuidadosos: diante do computador, ele termina pedidos e organiza documentos numa mesa impecável, concentrado, sem pressa. Plano lateral aberto, escritório contemporâneo iluminado, pasta fechada junto do teclado."
+      },
+      {
+        "index": 2,
+        "ancora": "Na manhã seguinte, seu Roberto",
+        "visual": "Na manhã seguinte, seu Roberto chama Lucas para conversar; Roberto atrás da mesa de madeira, braços apoiados e expressão séria; Lucas de pé, sobrancelhas erguidas, surpreso com a cobrança. Plano e contraplano em composição única, janela lateral e luz suave."
+      },
+      {
+        "index": 3,
+        "ancora": "O rapaz perguntou",
+        "visual": "O rapaz perguntou se havia tarefas pendentes: Lucas faz gesto discreto na direção do relógio na parede; Roberto cruza os braços, inclina o corpo e tenta justificar a reclamação. Plano médio de ambos no gabinete, expressão de impaciência do chefe e perplexidade do funcionário."
+      },
+      {
+        "index": 4,
+        "ancora": "Lucas respirou fundo, sem",
+        "visual": "Lucas respirou fundo, sem perder a calma: ele abre uma mão e questiona Roberto educadamente; Roberto fica sem palavras, olha para os documentos sobre a mesa e evita contato visual. Enquadramento cinematográfico próximo, pausa cômica evidente, escritório ao fundo."
+      },
+      {
+        "index": 5,
+        "ancora": "O chefe fechou a cara",
+        "visual": "O chefe fechou a cara quando Lucas propôs chegar atrasado para demonstrar que não tinha pressa: Roberto parece indignado, com uma sobrancelha levantada; Lucas responde com leve ironia e serenidade. Plano médio na sala, contraste entre as expressões e gestos."
+      },
+      {
+        "index": 6,
+        "ancora": "Na quarta, Lucas trabalhou",
+        "visual": "Na quarta, Lucas trabalhou normalmente até encerrar suas tarefas, colocou a mochila sobre o ombro e atravessou o corredor em direção à sala do chefe. Ilustrar Lucas de costas em três quartos, porta do gabinete à frente, relógio analógico ao fundo e sensação divertida de expectativa."
+      },
+      {
+        "index": 7,
+        "ancora": "Ele bateu e perguntou",
+        "visual": "Ele bateu e perguntou se deveria esperar mais quinze minutos; Lucas, educado, está parado à porta do gabinete com a mochila. Roberto, atrás da mesa, perde a postura austera e cai na risada. Plano aberto, gestos naturais e luz acolhedora."
+      },
+      {
+        "index": 8,
+        "ancora": "E não parou por aí",
+        "visual": "E não parou por aí: Roberto passa ao lado da mesa de Lucas pouco antes do fim do expediente, sorrindo e provocando amistosamente; Lucas responde com expressão divertida enquanto colegas observam e riem ao fundo. Plano médio lateral, atmosfera leve de escritório."
+      },
+      {
+        "index": 9,
+        "ancora": "A melhor parte é que",
+        "visual": "A melhor parte é que todos ficaram de bom humor: Lucas deixa o escritório satisfeito e Roberto acena sorrindo da porta, colega ao fundo. Composição humorística com pequeno grafismo de bandeira quadriculada evocando uma corrida, sem desenhar palavras ou números."
+      }
+    ]
+  },
+  "batidas": [
+    {
+      "fala": "Na segunda-feira, Lucas saiu do escritório às cinco em ponto, no horário combinado. Mas na terça o chefe chamou o rapaz para reclamar que, às cinco e quinze, a mesa dele já estava vazia. E o que Lucas respondeu transformou uma simples bronca numa piada de escritório.",
+      "expr": "desconfiada",
+      "arte": [
+        "relogio"
+      ]
+    },
+    {
+      "fala": "Lucas era daqueles funcionários que não deixavam nada pela metade. Chegava no horário, organizava pedidos, respondia mensagens e terminava tudo antes de ir embora. Naquela segunda, conferiu suas entregas, guardou a mochila e saiu sem imaginar que tinha feito algo de errado.",
+      "expr": "neutra",
+      "arte": [
+        "mesa"
+      ]
+    },
+    {
+      "fala": "Na manhã seguinte, seu Roberto chamou Lucas à sala. Perguntou sério: 'Que horas você saiu ontem?' Lucas respondeu: 'Cinco.' Roberto retrucou: 'Pois passei na sua mesa às cinco e quinze e você já não estava lá.' Lucas piscou, tentando entender onde estava o problema.",
+      "expr": "chocada",
+      "arte": [
+        "conversa"
+      ]
+    },
+    {
+      "fala": "O rapaz perguntou: 'Deixei algum trabalho pendente?' Roberto disse: 'Não.' Lucas insistiu: 'Então meu horário não termina às cinco?' O chefe concordou, mas cruzou os braços: 'Achei estranho você ir embora com tanta pressa. É uma questão de comprometimento.' Nossa, eu já teria pedido um dicionário!",
+      "expr": "desconfiada",
+      "arte": [
+        "relogio"
+      ]
+    },
+    {
+      "fala": "Lucas respirou fundo, sem levantar a voz. 'Mas se terminei minhas tarefas e cumpri meu horário, o senhor queria que eu ficasse fazendo o quê? Decorando a cadeira?' Roberto ficou em silêncio, olhando os papéis sobre a mesa. Foi aí que a conversa ficou ainda melhor.",
+      "expr": "ironica",
+      "arte": [
+        "conversa"
+      ]
+    },
+    {
+      "fala": "Lucas continuou: 'Entendi. Então amanhã eu chego quinze minutos atrasado, pra mostrar que não estou com pressa de ir embora.' O chefe fechou a cara: 'Você está sendo irônico.' Lucas respondeu, bem calmo: 'Não, senhor. Estou tentando entender qual é a regra.' E saiu da sala.",
+      "expr": "ironica",
+      "arte": [
+        "conversa"
+      ]
+    },
+    {
+      "fala": "Na quarta, Lucas trabalhou normalmente. Terminou as últimas tarefas, respondeu os e-mails e esperou dar cinco horas. Quando o relógio marcou o fim do expediente, colocou a mochila no ombro. Só que, em vez de ir para a porta de saída, caminhou direto até a sala do chefe.",
+      "expr": "desconfiada",
+      "arte": [
+        "porta"
+      ]
+    },
+    {
+      "fala": "Ele bateu e perguntou com a maior educação: 'Seu Roberto, posso ir embora ou o senhor prefere que eu fique aqui olhando para o relógio por mais quinze minutos?' O chefe tentou manter a cara séria, mas começou a rir. 'Vai pra casa, rapaz!' Lucas agradeceu e saiu satisfeito.",
+      "expr": "ironica",
+      "arte": [
+        "porta"
+      ]
+    },
+    {
+      "fala": "E não parou por aí. Agora, todo dia, às quatro e cinquenta e cinco, Roberto passa pela mesa e pergunta: 'E aí, Lucas, já está aquecendo o motor?' Lucas responde, sem perder o ritmo: 'Ainda não, chefe. Só estou esperando a bandeirada!' Os colegas já dão risada antes mesmo da resposta.",
+      "expr": "ironica",
+      "arte": [
+        "conversa"
+      ]
+    },
+    {
+      "fala": "A melhor parte é que ninguém precisou trabalhar de graça para provar dedicação. Lucas continuou entregando tudo direitinho, e Roberto aprendeu a brincar com o próprio exagero. Agora me digam: vocês acham que Lucas fez bem em responder ou era melhor ficar quieto? Quero ver essa discussão nos comentários!",
+      "expr": "ironica",
+      "arte": [
+        "manchete"
+      ]
+    }
+  ],
+  "fim": "JA ESTA AQUECENDO O MOTOR?",
+  "legenda_post": "O funcionário saiu às cinco, no horário certo, e levou bronca porque o chefe passou na mesa às 5h15! 😂 A resposta virou piada no escritório. Você acha que ele respondeu bem ou era melhor não discutir? História adaptada para ficção. #NinaMeContou #HumorNoTrabalho #Storytime #Chefe #VidaDeCLT",
+  "revisao": "avulso-20261104-storyboard-10-prompts-preparados-siliconflow"
+}
