@@ -50,7 +50,20 @@ jobs:
           sys.path.insert(0, "motor")
           from render_version import versao
           import json
+          # Em push, produzir somente os roteiros avulsos adicionados/alterados.
+          # Evita rerenderizar todo o acervo por causa de uma única história.
+          selecionados = None
+          if os.getenv("GITHUB_EVENT_NAME") == "push":
+              with open(os.environ["GITHUB_EVENT_PATH"], encoding="utf-8") as event_file:
+                  evento = json.load(event_file)
+              commits = evento.get("commits") or [evento.get("head_commit") or {}]
+              selecionados = set()
+              for commit in commits:
+                  selecionados.update(commit.get("added") or [])
+                  selecionados.update(commit.get("modified") or [])
           for f in sorted(glob.glob("avulsos/*.json")):
+              if selecionados is not None and f not in selecionados:
+                  continue
               i = os.path.splitext(os.path.basename(f))[0]
               registro = f"conteudo/tiktok_metricool/{i}.json"
               if os.path.exists(registro):
