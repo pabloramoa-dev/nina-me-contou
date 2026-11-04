@@ -42,6 +42,7 @@ jobs:
             avulsos
             avulsos_fast
             motor
+            tools
             tests
             conteudo
       - uses: actions/setup-python@v5
@@ -49,15 +50,20 @@ jobs:
           python-version: "3.12"
       - name: Garantir 30 dias de roteiros
         run: |
+          pip install -q requests pillow
           python -m unittest discover -s tests -p test_ganchos.py -v
           python -m unittest discover -s tests -p test_episodio_unico.py -v
           python motor/normalizar_ganchos.py
           python motor/gerar_roteiros.py --alvo 60
+          # Roteiro novo sem os 10 prompts trava o render: recompila o banco
+          # (prompts manuais em motor/prompts_episodios/ têm prioridade).
+          python tools/preparar_banco_prompts.py > /tmp/banco.json
+          python -c "import json;d=json.load(open('/tmp/banco.json'));print('banco:',d['roteiros'],'roteiros,',d['manuais'],'manuais,',len(d['bloqueados']),'bloqueados')"
       - name: Persistir a reserva anual
         run: |
           git config user.name "nina-bot"
           git config user.email "actions@github.com"
-          git add episodios/ avulsos/ avulsos_fast/ conteudo/geracao_anual.json
+          git add episodios/ avulsos/ avulsos_fast/ conteudo/geracao_anual.json motor/prompts_banco.json
           if git diff --cached --quiet; then
             echo "Reserva de roteiros já está no alvo."
             exit 0
@@ -86,6 +92,7 @@ jobs:
           python-version: "3.11"
       - id: l
         run: |
+          pip install -q requests pillow
           LIM="${{ inputs.limite || '8' }}"
           python motor/pendentes.py --rel --alvo-prontos 8 --limite "$LIM" > /tmp/p.txt
           cat /tmp/p.txt
@@ -142,7 +149,7 @@ jobs:
           NINA_REQUIRE_STORED_PROMPTS: "1"
           NINA_STORYBOARD_PROVIDER: 'siliconflow'
           NINA_STORYBOARD_MODEL: 'Qwen/Qwen3-30B-A3B-Instruct-2507'
-          NINA_IMAGE_RETRIES: '0'
+          NINA_IMAGE_RETRIES: '2'   # erro 5xx/429 passageiro não pode derrubar o episódio inteiro
           NINA_TARGET_IMAGES: '10'
           NINA_MAX_IMAGES: '10'
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}   # opcional (fotos "banco"); sem ela usa Openverse CC0
