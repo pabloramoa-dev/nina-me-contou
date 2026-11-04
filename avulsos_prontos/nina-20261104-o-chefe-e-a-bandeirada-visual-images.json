@@ -1,0 +1,201 @@
+{
+  "config": {
+    "auto_visual_images": true,
+    "hide_inner_caption_when_image": true,
+    "bottom_caption_only": true,
+    "min_images": 10,
+    "max_images": 10,
+    "target_images": 10,
+    "image_model": "black-forest-labs/FLUX.1-schnell",
+    "image_quality": "medium",
+    "image_size": "768x512",
+    "image_background": "opaque",
+    "image_timeout_seconds": 180,
+    "image_retries": 0,
+    "fallback": "story_frame_text",
+    "image_provider": "siliconflow"
+  },
+  "requested": 10,
+  "ready": 10,
+  "fallbacks": 0,
+  "storyboard": {
+    "modo": "banco_historias",
+    "cenas": 10,
+    "versao": "nina-storyboard-20261102-v3-ficha-curta",
+    "provedor": "banco_local",
+    "modelo": null
+  },
+  "scenes": [
+    {
+      "scene": 0,
+      "beats": [
+        0
+      ],
+      "start": 0.0,
+      "end": 14.778,
+      "text": "Na segunda-feira, Lucas saiu do escritório às cinco em ponto, no horário combinado. Mas na terça o chefe chamou o rapaz para reclamar que, às cinco e quinze, a mesa dele já estava vazia. E o que Lucas respondeu transformou uma simples bronca numa piada de escritório.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Lucas é um funcionário fictício adulto de 29 anos, pele morena clara, cabelo castanho curto, camisa azul de manga comprida e calça escura, mochila preta. Roberto é seu chefe, adulto de 52 anos, cabelo grisalho penteado de lado, camisa branca, gravata vinho, calça cinza. Escritório brasileiro atual, mesas claras, computadores, corredor e sala do chefe com janela. Visual igual nas dez cenas.\nCENA ATUAL 1/10: Na segunda-feira, Lucas saiu do escritório pontualmente, com mochila escura no ombro e postura tranquila; relógio analógico na parede indica o fim do expediente, colegas trabalhando ao fundo. Plano médio cinematográfico, luz de fim de tarde, clima de rotina.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): Na segunda-feira, Lucas saiu\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "banco_historias",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "74e340faea3d0548659fa40dedba0dcfadd60374cdcf57f31a6bfae2dd6657b1",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-00.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 1,
+      "beats": [
+        1
+      ],
+      "start": 14.778,
+      "end": 30.601,
+      "text": "Lucas era daqueles funcionários que não deixavam nada pela metade. Chegava no horário, organizava pedidos, respondia mensagens e terminava tudo antes de ir embora. Naquela segunda, conferiu suas entregas, guardou a mochila e saiu sem imaginar que tinha feito algo de errado.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Lucas é um funcionário fictício adulto de 29 anos, pele morena clara, cabelo castanho curto, camisa azul de manga comprida e calça escura, mochila preta. Roberto é seu chefe, adulto de 52 anos, cabelo grisalho penteado de lado, camisa branca, gravata vinho, calça cinza. Escritório brasileiro atual, mesas claras, computadores, corredor e sala do chefe com janela. Visual igual nas dez cenas.\nCENA ATUAL 2/10: Lucas era daqueles funcionários cuidadosos: diante do computador, ele termina pedidos e organiza documentos numa mesa impecável, concentrado, sem pressa. Plano lateral aberto, escritório contemporâneo iluminado, pasta fechada junto do teclado.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): Lucas era daqueles funcionários\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "banco_historias",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "de79af9aefadb1b0798d3b67c22f68c0f6ce1e00c123f24838e7248ec41362d4",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-01.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 2,
+      "beats": [
+        2
+      ],
+      "start": 30.601,
+      "end": 45.102,
+      "text": "Na manhã seguinte, seu Roberto chamou Lucas à sala. Perguntou sério: 'Que horas você saiu ontem?' Lucas respondeu: 'Cinco.' Roberto retrucou: 'Pois passei na sua mesa às cinco e quinze e você já não estava lá.' Lucas piscou, tentando entender onde estava o problema.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Lucas é um funcionário fictício adulto de 29 anos, pele morena clara, cabelo castanho curto, camisa azul de manga comprida e calça escura, mochila preta. Roberto é seu chefe, adulto de 52 anos, cabelo grisalho penteado de lado, camisa branca, gravata vinho, calça cinza. Escritório brasileiro atual, mesas claras, computadores, corredor e sala do chefe com janela. Visual igual nas dez cenas.\nCENA ATUAL 3/10: Na manhã seguinte, seu Roberto chama Lucas para conversar; Roberto atrás da mesa de madeira, braços apoiados e expressão séria; Lucas de pé, sobrancelhas erguidas, surpreso com a cobrança. Plano e contraplano em composição única, janela lateral e luz suave.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): Na manhã seguinte, seu Roberto\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "banco_historias",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "75c086d699b97c8508ee4af57c6b5859f70416d1c504d792d875f8aeaa10d959",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-02.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 3,
+      "beats": [
+        3
+      ],
+      "start": 45.102,
+      "end": 61.224,
+      "text": "O rapaz perguntou: 'Deixei algum trabalho pendente?' Roberto disse: 'Não.' Lucas insistiu: 'Então meu horário não termina às cinco?' O chefe concordou, mas cruzou os braços: 'Achei estranho você ir embora com tanta pressa. É uma questão de comprometimento.' Nossa, eu já teria pedido um dicionário!",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Lucas é um funcionário fictício adulto de 29 anos, pele morena clara, cabelo castanho curto, camisa azul de manga comprida e calça escura, mochila preta. Roberto é seu chefe, adulto de 52 anos, cabelo grisalho penteado de lado, camisa branca, gravata vinho, calça cinza. Escritório brasileiro atual, mesas claras, computadores, corredor e sala do chefe com janela. Visual igual nas dez cenas.\nCENA ATUAL 4/10: O rapaz perguntou se havia tarefas pendentes: Lucas faz gesto discreto na direção do relógio na parede; Roberto cruza os braços, inclina o corpo e tenta justificar a reclamação. Plano médio de ambos no gabinete, expressão de impaciência do chefe e perplexidade do funcionário.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): O rapaz perguntou\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "banco_historias",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "20f758c266a77c3fad547e1c05cfa769bb5202be9ec125c9f1eb6774f6a95667",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-03.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 4,
+      "beats": [
+        4
+      ],
+      "start": 61.224,
+      "end": 75.383,
+      "text": "Lucas respirou fundo, sem levantar a voz. 'Mas se terminei minhas tarefas e cumpri meu horário, o senhor queria que eu ficasse fazendo o quê? Decorando a cadeira?' Roberto ficou em silêncio, olhando os papéis sobre a mesa. Foi aí que a conversa ficou ainda melhor.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Lucas é um funcionário fictício adulto de 29 anos, pele morena clara, cabelo castanho curto, camisa azul de manga comprida e calça escura, mochila preta. Roberto é seu chefe, adulto de 52 anos, cabelo grisalho penteado de lado, camisa branca, gravata vinho, calça cinza. Escritório brasileiro atual, mesas claras, computadores, corredor e sala do chefe com janela. Visual igual nas dez cenas.\nCENA ATUAL 5/10: Lucas respirou fundo, sem perder a calma: ele abre uma mão e questiona Roberto educadamente; Roberto fica sem palavras, olha para os documentos sobre a mesa e evita contato visual. Enquadramento cinematográfico próximo, pausa cômica evidente, escritório ao fundo.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): Lucas respirou fundo, sem\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "banco_historias",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "01fa658fc09b22a4658a03980e010fd51a26e525f93995a46e1534f4294b4c12",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-04.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 5,
+      "beats": [
+        5
+      ],
+      "start": 75.383,
+      "end": 90.567,
+      "text": "Lucas continuou: 'Entendi. Então amanhã eu chego quinze minutos atrasado, pra mostrar que não estou com pressa de ir embora.' O chefe fechou a cara: 'Você está sendo irônico.' Lucas respondeu, bem calmo: 'Não, senhor. Estou tentando entender qual é a regra.' E saiu da sala.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Lucas é um funcionário fictício adulto de 29 anos, pele morena clara, cabelo castanho curto, camisa azul de manga comprida e calça escura, mochila preta. Roberto é seu chefe, adulto de 52 anos, cabelo grisalho penteado de lado, camisa branca, gravata vinho, calça cinza. Escritório brasileiro atual, mesas claras, computadores, corredor e sala do chefe com janela. Visual igual nas dez cenas.\nCENA ATUAL 6/10: O chefe fechou a cara quando Lucas propôs chegar atrasado para demonstrar que não tinha pressa: Roberto parece indignado, com uma sobrancelha levantada; Lucas responde com leve ironia e serenidade. Plano médio na sala, contraste entre as expressões e gestos.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): O chefe fechou a cara\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "banco_historias",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "363ae5d087d8040ed7563c639f3e346bf9fd7e53f20df78cbde5d7eff0aed468",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-05.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 6,
+      "beats": [
+        6
+      ],
+      "start": 90.567,
+      "end": 105.281,
+      "text": "Na quarta, Lucas trabalhou normalmente. Terminou as últimas tarefas, respondeu os e-mails e esperou dar cinco horas. Quando o relógio marcou o fim do expediente, colocou a mochila no ombro. Só que, em vez de ir para a porta de saída, caminhou direto até a sala do chefe.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Lucas é um funcionário fictício adulto de 29 anos, pele morena clara, cabelo castanho curto, camisa azul de manga comprida e calça escura, mochila preta. Roberto é seu chefe, adulto de 52 anos, cabelo grisalho penteado de lado, camisa branca, gravata vinho, calça cinza. Escritório brasileiro atual, mesas claras, computadores, corredor e sala do chefe com janela. Visual igual nas dez cenas.\nCENA ATUAL 7/10: Na quarta, Lucas trabalhou normalmente até encerrar suas tarefas, colocou a mochila sobre o ombro e atravessou o corredor em direção à sala do chefe. Ilustrar Lucas de costas em três quartos, porta do gabinete à frente, relógio analógico ao fundo e sensação divertida de expectativa.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): Na quarta, Lucas trabalhou\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "banco_historias",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "bbb51e93f22bd691ea80de0e488d696d919ddaef84b32399449ba0a270629308",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-06.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 7,
+      "beats": [
+        7
+      ],
+      "start": 105.281,
+      "end": 120.464,
+      "text": "Ele bateu e perguntou com a maior educação: 'Seu Roberto, posso ir embora ou o senhor prefere que eu fique aqui olhando para o relógio por mais quinze minutos?' O chefe tentou manter a cara séria, mas começou a rir. 'Vai pra casa, rapaz!' Lucas agradeceu e saiu satisfeito.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Lucas é um funcionário fictício adulto de 29 anos, pele morena clara, cabelo castanho curto, camisa azul de manga comprida e calça escura, mochila preta. Roberto é seu chefe, adulto de 52 anos, cabelo grisalho penteado de lado, camisa branca, gravata vinho, calça cinza. Escritório brasileiro atual, mesas claras, computadores, corredor e sala do chefe com janela. Visual igual nas dez cenas.\nCENA ATUAL 8/10: Ele bateu e perguntou se deveria esperar mais quinze minutos; Lucas, educado, está parado à porta do gabinete com a mochila. Roberto, atrás da mesa, perde a postura austera e cai na risada. Plano aberto, gestos naturais e luz acolhedora.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): Ele bateu e perguntou\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "banco_historias",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "e6e1910b5bb6176e9bbbe39d1b9b297d252006656cada70adf72c2031d3888e0",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-07.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 8,
+      "beats": [
+        8
+      ],
+      "start": 120.464,
+      "end": 136.031,
+      "text": "E não parou por aí. Agora, todo dia, às quatro e cinquenta e cinco, Roberto passa pela mesa e pergunta: 'E aí, Lucas, já está aquecendo o motor?' Lucas responde, sem perder o ritmo: 'Ainda não, chefe. Só estou esperando a bandeirada!' Os colegas já dão risada antes mesmo da resposta.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Lucas é um funcionário fictício adulto de 29 anos, pele morena clara, cabelo castanho curto, camisa azul de manga comprida e calça escura, mochila preta. Roberto é seu chefe, adulto de 52 anos, cabelo grisalho penteado de lado, camisa branca, gravata vinho, calça cinza. Escritório brasileiro atual, mesas claras, computadores, corredor e sala do chefe com janela. Visual igual nas dez cenas.\nCENA ATUAL 9/10: E não parou por aí: Roberto passa ao lado da mesa de Lucas pouco antes do fim do expediente, sorrindo e provocando amistosamente; Lucas responde com expressão divertida enquanto colegas observam e riem ao fundo. Plano médio lateral, atmosfera leve de escritório.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): E não parou por aí\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "banco_historias",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "7b593d8e289f8428c119d5b2b94073616529334f7db88de6594a07b446e7db16",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-08.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 9,
+      "beats": [
+        9,
+        10
+      ],
+      "start": 136.031,
+      "end": 156.969,
+      "text": "A melhor parte é que ninguém precisou trabalhar de graça para provar dedicação. Lucas continuou entregando tudo direitinho, e Roberto aprendeu a brincar com o próprio exagero. Agora me digam: vocês acham que Lucas fez bem em responder ou era melhor ficar quieto? Quero ver essa discussão nos comentários! Me segue pra não perder a próxima. Amanhã tem história nova.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Lucas é um funcionário fictício adulto de 29 anos, pele morena clara, cabelo castanho curto, camisa azul de manga comprida e calça escura, mochila preta. Roberto é seu chefe, adulto de 52 anos, cabelo grisalho penteado de lado, camisa branca, gravata vinho, calça cinza. Escritório brasileiro atual, mesas claras, computadores, corredor e sala do chefe com janela. Visual igual nas dez cenas.\nCENA ATUAL 10/10: A melhor parte é que todos ficaram de bom humor: Lucas deixa o escritório satisfeito e Roberto acena sorrindo da porta, colega ao fundo. Composição humorística com pequeno grafismo de bandeira quadriculada evocando uma corrida, sem desenhar palavras ou números.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): A melhor parte é que\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "banco_historias",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "7aefca969bfa921a7df0309a37acae928a8d2ca5feb7863bc20169ad239050df",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-09.png",
+      "image_provider": "siliconflow"
+    }
+  ]
+}
