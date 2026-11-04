@@ -67,7 +67,7 @@ jobs:
               assunto = subprocess.check_output(
                   ["git", "log", "-1", "--pretty=%s"], text=True
               ).strip()
-              pedido = re.search(r"\\[avulso:([a-z0-9-]+)\\]", assunto)
+              pedido = re.search(r"\[avulso:([a-z0-9-]+)\]", assunto)
               if pedido:
                   alvo = f"avulsos/{pedido.group(1)}.json"
                   if not os.path.isfile(alvo):
