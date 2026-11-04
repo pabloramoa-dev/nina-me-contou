@@ -61,6 +61,18 @@ jobs:
               for commit in commits:
                   selecionados.update(commit.get("added") or [])
                   selecionados.update(commit.get("modified") or [])
+              # Alguns pushes via a API nao trazem a lista de arquivos no evento.
+              # Uma mensagem explicita [avulso:ID] permite selecionar UM roteiro.
+              import re, subprocess
+              assunto = subprocess.check_output(
+                  ["git", "log", "-1", "--pretty=%s"], text=True
+              ).strip()
+              pedido = re.search(r"\\[avulso:([a-z0-9-]+)\\]", assunto)
+              if pedido:
+                  alvo = f"avulsos/{pedido.group(1)}.json"
+                  if not os.path.isfile(alvo):
+                      raise FileNotFoundError(f"Roteiro solicitado nao existe: {alvo}")
+                  selecionados = {alvo}
           for f in sorted(glob.glob("avulsos/*.json")):
               if selecionados is not None and f not in selecionados:
                   continue
