@@ -403,5 +403,10 @@
     "comprimido": true,
     "description_message_id": 68,
     "entregue_em": "2026-11-05T16:59:18Z"
+  },
+  "ep117": {
+    "hash": "169cf6eff2c94d6e197730c532c80851a123c1bed24871c0746ca42228a7ec94",
+    "status": "sending_video",
+    "tentativas_incertas": 0
   }
 }
