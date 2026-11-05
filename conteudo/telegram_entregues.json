@@ -426,11 +426,12 @@
   },
   "ep119": {
     "hash": "1525d44a0cb121b46ed46821afe937ac0feb489d9366715845076284a41e447c",
-    "status": "sending_description",
-    "tentativas_incertas": 0,
+    "status": "complete",
     "telegram_message_id": 73,
     "file_id": "BQACAgEAAxkDAANJauy2ina5llw6mDyJ1jiwrFvOlLYAAn8LAAK9sGFHBN2k8xKI3WU9BA",
     "file_size": 37189887,
-    "comprimido": true
+    "comprimido": true,
+    "description_message_id": 74,
+    "entregue_em": "2026-11-05T17:02:07Z"
   }
 }
