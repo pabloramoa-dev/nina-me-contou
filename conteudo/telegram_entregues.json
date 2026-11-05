@@ -496,7 +496,11 @@
   },
   "ep187": {
     "hash": "e85157d6c4ed2dcaa72ea27467f2ba9168fe6907241a01cbfe16b8f7098e1ab4",
-    "status": "sending_video",
-    "tentativas_incertas": 0
+    "status": "video_sent",
+    "tentativas_incertas": 0,
+    "telegram_message_id": 91,
+    "file_id": "BQACAgEAAxkDAANbauzQ9VMvCCJ-bby7wYuanW5C_KgAAssLAAK9sGFHC7VXB9_NMJc9BA",
+    "file_size": 44123869,
+    "comprimido": true
   }
 }
