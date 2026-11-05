@@ -24,7 +24,7 @@ import requests
 
 ROOT = Path(__file__).resolve().parents[1]
 RECIBOS = ROOT / "conteudo" / "telegram_entregues.json"
-RX_MP4 = re.compile(r"^ep\d{3,}-p[12]\.mp4$")
+RX_MP4 = re.compile(r"^ep\d{3,}(?:-p[12])?\.mp4$")
 MAX_UPLOAD = 49_000_000  # margem de segurança para o limite padrão de 50 MB dos bots
 
 
@@ -273,8 +273,12 @@ def main() -> int:
     parser.add_argument("--dry-run", action="store_true", help="Mostra legendas sem enviar")
     parser.add_argument("--persist-receipts", action="store_true")
     parser.add_argument("--limit", type=int, default=0)
+    parser.add_argument("--only-unicos", action="store_true",
+                        help="Entrega somente episodios completos atuais (epNNN.mp4)")
     args = parser.parse_args()
-    videos = sorted(p for p in args.video_dir.glob("*.mp4") if RX_MP4.fullmatch(p.name))
+    videos = sorted(p for p in args.video_dir.glob("*.mp4")
+                    if RX_MP4.fullmatch(p.name)
+                    and (not args.only_unicos or re.fullmatch(r"ep\d{3,}", p.stem)))
     if not videos:
         print("Nenhum MP4 novo para enviar ao Telegram.")
         return 0
@@ -304,6 +308,10 @@ def main() -> int:
               "Envie /start para o bot acima no Telegram e rode de novo.")
         return 1
 
+    # Somente videos com comprovacao de 10 imagens pagas podem ser entregues.
+    sys.path.insert(0, str(ROOT))
+    from motor.siliconflow_policy import validar_arquivo_publicacao
+
     recebidos = recibos_ler()
     enviados = 0
     falhas: list[str] = []
@@ -321,6 +329,8 @@ def main() -> int:
                 # O MP4 só existe em reels/ depois que o render terminou e foi
                 # gravado; ainda assim confere áudio, vídeo e duração.
                 validar_mp4(video)
+                if re.fullmatch(r"ep\d{3,}", video.stem) and not validar_arquivo_publicacao(video.parent, video.stem):
+                    raise RuntimeError(f"{video.name}: sem comprovacao das 10 imagens SiliconFlow; entrega bloqueada")
                 if entregar(video, token, chat_id, recebidos, args.persist_receipts, Path(tmp)):
                     enviados += 1
             except Exception as exc:  # um vídeo com problema não trava os outros
