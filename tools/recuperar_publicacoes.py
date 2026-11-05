@@ -61,7 +61,17 @@ def executar() -> int:
                           "motivo": "Publicacao desativada ou ensaio"}, ensure_ascii=False))
         return 0
 
-    # Prioriza a distribuicao ao longo do dia, mas recupera atrasos a noite.
+    # Não adianta os vídeos extras: 10h/14h/18h servem para recuperar
+    # horários perdidos, não para antecipar o Reel de 12h/16h/20h.
+    if agora.hour < 21:
+        devidos = sum(agora.hour >= hora for hora in (8, 12, 16, 20))
+        if len(feitos) >= devidos:
+            print(json.dumps({"ok": True, "dia": str(dia), "reels": len(feitos),
+                              "motivo": "Publicacoes em dia para o horario atual"},
+                             ensure_ascii=False))
+            return 0
+
+    # Um por tentativa durante o dia; à noite recupera os faltantes.
     limite = 1 if agora.hour < 21 else META_DIARIA - len(feitos)
     for tentativa in range(limite):
         if datetime.now(fila.BRT).date() != dia:
@@ -90,8 +100,15 @@ def executar() -> int:
             time.sleep(60)
 
     feitos = publicados_no_dia(dia)
-    print(json.dumps({"ok": True, "dia": str(dia), "reels": len(feitos),
-                      "faltam": max(0, META_DIARIA - len(feitos))}, ensure_ascii=False))
+    faltam = max(0, META_DIARIA - len(feitos))
+    print(json.dumps({"ok": faltam == 0, "dia": str(dia), "reels": len(feitos),
+                      "faltam": faltam}, ensure_ascii=False))
+    # A última checagem do dia (23h37 BRT) deve falhar visivelmente
+    # se a fila ficou vazia. Antes disso, as próximas tentativas recuperam.
+    if faltam and datetime.now(fila.BRT).hour >= 23:
+        print(f"::error::Nina: meta de {META_DIARIA} Reels nao cumprida; faltam {faltam}. "
+              "Verifique os renders SiliconFlow e a fila do Instagram.")
+        return 1
     return 0
 
 
