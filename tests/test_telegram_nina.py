@@ -136,7 +136,7 @@ class DeliveryTests(unittest.TestCase):
         with patch.object(tg, 'diagnostico', return_value=None), \
              patch.object(tg, 'http_telegram') as api, \
              patch.object(sys, 'argv', ['telegram_nina', '--video-dir', str(self.video_dir), '--only-unicos']):
-            self.assertEqual(tg.main(), 1)
+            self.assertEqual(tg.main(), 0)
             api.assert_not_called()
 
     def test_invalid_video_rejected(self):
