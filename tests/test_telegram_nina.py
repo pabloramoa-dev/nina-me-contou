@@ -107,6 +107,38 @@ class DeliveryTests(unittest.TestCase):
             {'message_id': 1, 'video': {'file_id': 'v', 'file_size': 10}}, {'message_id': 2}]):
             self.assertEqual(self.run_delivery(), 0)
         self.assertEqual(json.loads(self.receipts.read_text())['ep045-p1']['status'], 'complete')
+    def test_parte_unica_entregue_sem_partes_antigas(self):
+        unico = self.video_dir / 'ep200.mp4'
+        unico.write_bytes(self.video.read_bytes())
+        (self.root / 'episodios/ep200.json').write_text(json.dumps({
+            'titulo': 'Historia completa', 'parte': 'unica', 'legenda_post': 'Fim da historia. #ninamecontou'}))
+        with patch.object(tg, 'diagnostico', return_value=None), \
+             patch('motor.siliconflow_policy.validar_arquivo_publicacao', return_value=True) as prova, \
+             patch.object(tg, 'http_telegram', side_effect=[
+                 {'message_id': 100, 'document': {'file_id': 'file200', 'file_size': unico.stat().st_size}},
+                 {'message_id': 101}
+             ]) as api, \
+             patch.object(sys, 'argv', ['telegram_nina', '--video-dir', str(self.video_dir),
+                                        '--only-unicos', '--limit', '1']):
+            self.assertEqual(tg.main(), 0)
+            self.assertEqual(api.call_count, 2)
+            prova.assert_called_once_with(self.video_dir, 'ep200')
+        recibos = json.loads(self.receipts.read_text())
+        self.assertIn('ep200', recibos)
+        self.assertNotIn('ep045-p1', recibos)
+        self.assertEqual(recibos['ep200']['status'], 'complete')
+
+    def test_parte_unica_sem_siliconflow_nao_e_enviada(self):
+        unico = self.video_dir / 'ep201.mp4'
+        unico.write_bytes(self.video.read_bytes())
+        (self.root / 'episodios/ep201.json').write_text(json.dumps({
+            'titulo': 'Sem imagens', 'parte': 'unica'}))
+        with patch.object(tg, 'diagnostico', return_value=None), \
+             patch.object(tg, 'http_telegram') as api, \
+             patch.object(sys, 'argv', ['telegram_nina', '--video-dir', str(self.video_dir), '--only-unicos']):
+            self.assertEqual(tg.main(), 1)
+            api.assert_not_called()
+
     def test_invalid_video_rejected(self):
         self.video.write_bytes(b'x' * 2048)
         with patch.object(tg, 'http_telegram') as api:
