@@ -185,12 +185,54 @@ jobs:
           cp -a entrega_nina/. reels/
       - name: Conferir a fila
         run: python -m src.fila || true
-      - name: Gravar no repositório
+      - name: Gravar no repositório sem conflito com publicações simultâneas
         run: |
           git config user.name "nina-bot"
           git config user.email "actions@github.com"
-          git add reels/
-          git diff --cached --quiet && exit 0
-          git commit -m "estúdio: episódios renderizados [skip ci]"
-          for i in 1 2 3; do git pull --rebase && git push && exit 0; sleep 5; done
+          # Guarde os artifacts em entrega_nina/ (fora do Git). Em cada tentativa,
+          # atualize a main primeiro, revalide a versão e SÓ ENTÃO aplique os MP4s.
+          # Evita conflitos de rebase e não restaura mídia já publicada/limpa.
+          for i in 1 2 3 4 5; do
+            git fetch origin main
+            git reset --hard origin/main
+            python - <<'PY'
+          import json
+          import re
+          import shutil
+          from pathlib import Path
+          from src.fila import assinatura, ja_publicado
+          from motor.siliconflow_policy import validar_metadados
+          origem = Path("entrega_nina")
+          destino = Path("reels")
+          destino.mkdir(exist_ok=True)
+          gravados = []
+          for mp4 in sorted(origem.glob("ep*.mp4")):
+              ep_id = mp4.stem
+              if not re.fullmatch(r"ep\d{3,}", ep_id):
+                  continue
+              render = origem / (ep_id + "-render.json")
+              hashfile = origem / (ep_id + ".hash")
+              capa = origem / (ep_id + "-capa.jpg")
+              if not (render.exists() and hashfile.exists() and capa.exists()):
+                  raise RuntimeError(f"{ep_id}: artifact sem manifesto, hash ou capa")
+              if ja_publicado(ep_id) or hashfile.read_text().strip() != assinatura(ep_id):
+                  print(f"Ignorando {ep_id}: publicado ou versão anterior")
+                  continue
+              validar_metadados(json.loads(render.read_text(encoding="utf-8")))
+              for arq in origem.iterdir():
+                  if arq.is_file() and (arq.name.startswith(ep_id + ".") or arq.name.startswith(ep_id + "-")):
+                      shutil.copy2(arq, destino / arq.name)
+              gravados.append(ep_id)
+          print("Episódios SiliconFlow preparados:", gravados)
+          PY
+            git add reels/
+            if git diff --cached --quiet; then
+              echo "Nenhuma mídia nova válida para registrar."
+              exit 0
+            fi
+            git commit -m "estúdio: episódios renderizados [skip ci]"
+            if git push origin HEAD:main; then exit 0; fi
+            echo "Main mudou durante a gravação; reaplicando artifacts no HEAD atual."
+            sleep 5
+          done
           exit 1
