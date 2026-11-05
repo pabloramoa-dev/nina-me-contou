@@ -496,11 +496,12 @@
   },
   "ep187": {
     "hash": "e85157d6c4ed2dcaa72ea27467f2ba9168fe6907241a01cbfe16b8f7098e1ab4",
-    "status": "sending_description",
-    "tentativas_incertas": 0,
+    "status": "complete",
     "telegram_message_id": 91,
     "file_id": "BQACAgEAAxkDAANbauzQ9VMvCCJ-bby7wYuanW5C_KgAAssLAAK9sGFHC7VXB9_NMJc9BA",
     "file_size": 44123869,
-    "comprimido": true
+    "comprimido": true,
+    "description_message_id": 92,
+    "entregue_em": "2026-11-05T18:54:51Z"
   }
 }
