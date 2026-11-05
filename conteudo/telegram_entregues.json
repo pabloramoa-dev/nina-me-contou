@@ -446,11 +446,12 @@
   },
   "ep121": {
     "hash": "9c10646d0941926902abef7312e5c65577d6eeee0f0e3214c2df3d48c8b1cfa9",
-    "status": "sending_description",
-    "tentativas_incertas": 0,
+    "status": "complete",
     "telegram_message_id": 81,
     "file_id": "BQACAgEAAxkDAANRauzHFnBD_NjaEPbaXbNeFGx86IMAAq8LAAK9sGFH_JpD-bmFTdI9BA",
     "file_size": 37468209,
-    "comprimido": true
+    "comprimido": true,
+    "description_message_id": 82,
+    "entregue_em": "2026-11-05T18:12:43Z"
   }
 }
