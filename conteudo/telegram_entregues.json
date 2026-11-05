@@ -466,11 +466,12 @@
   },
   "ep123": {
     "hash": "3a0f227b57e249df22aa9425e351725183d308d9897b38d48b0061ed08645092",
-    "status": "sending_description",
-    "tentativas_incertas": 0,
+    "status": "complete",
     "telegram_message_id": 85,
     "file_id": "BQACAgEAAxkDAANVauzHcPwmVQrttXGXY2eLNgMs9E0AArILAAK9sGFHCB4wMNqzBM89BA",
     "file_size": 34924657,
-    "comprimido": true
+    "comprimido": true,
+    "description_message_id": 86,
+    "entregue_em": "2026-11-05T18:14:12Z"
   }
 }
