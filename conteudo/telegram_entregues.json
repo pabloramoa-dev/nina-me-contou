@@ -456,11 +456,12 @@
   },
   "ep122": {
     "hash": "1d5952ba8ef871cf65081012887665f44441d24371a8d5444686a9802ad4e9d1",
-    "status": "sending_description",
-    "tentativas_incertas": 0,
+    "status": "complete",
     "telegram_message_id": 83,
     "file_id": "BQACAgEAAxkDAANTauzHROPmFpUw4g0xIKS8dCaqQAkAArELAAK9sGFHOhkS6d-lA0o9BA",
     "file_size": 36869413,
-    "comprimido": true
+    "comprimido": true,
+    "description_message_id": 84,
+    "entregue_em": "2026-11-05T18:13:29Z"
   }
 }
