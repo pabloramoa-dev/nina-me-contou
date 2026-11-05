@@ -446,7 +446,7 @@
   },
   "ep121": {
     "hash": "9c10646d0941926902abef7312e5c65577d6eeee0f0e3214c2df3d48c8b1cfa9",
-    "status": "video_sent",
+    "status": "sending_description",
     "tentativas_incertas": 0,
     "telegram_message_id": 81,
     "file_id": "BQACAgEAAxkDAANRauzHFnBD_NjaEPbaXbNeFGx86IMAAq8LAAK9sGFH_JpD-bmFTdI9BA",
