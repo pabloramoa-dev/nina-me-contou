@@ -416,7 +416,11 @@
   },
   "ep118": {
     "hash": "97c63e550ebbf217cdada9c83a4be9448bf828e0423bb946a6da67ad77798a7d",
-    "status": "sending_video",
-    "tentativas_incertas": 0
+    "status": "video_sent",
+    "tentativas_incertas": 0,
+    "telegram_message_id": 71,
+    "file_id": "BQACAgEAAxkDAANHauy2U1fl4I3Va83OaXIOKzupjPMAAn4LAAK9sGFHCVICp0O30Q09BA",
+    "file_size": 38807114,
+    "comprimido": true
   }
 }
