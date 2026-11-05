@@ -386,11 +386,12 @@
   },
   "ep115": {
     "hash": "fec111679124f0d7766c3297c1f4ea1f6b56f8398fddb7473e7e632077b725ad",
-    "status": "sending_description",
-    "tentativas_incertas": 0,
+    "status": "complete",
     "telegram_message_id": 65,
     "file_id": "BQACAgEAAxkDAANBauy0m3PcBbqZi3gMF6GIhGEyc4AAAnYLAAK9sGFHnl20xQuBTzw9BA",
     "file_size": 37007311,
-    "comprimido": true
+    "comprimido": true,
+    "description_message_id": 66,
+    "entregue_em": "2026-11-05T16:53:52Z"
   }
 }
