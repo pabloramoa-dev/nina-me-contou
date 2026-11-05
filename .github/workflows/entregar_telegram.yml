@@ -1,6 +1,11 @@
 name: Entregar MP4 Nina no Telegram
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/telegram_nina.py'
+      - '.github/workflows/entregar_telegram.yml'
   workflow_run:
     workflows: ['Produzir episódios']
     types: [completed]
@@ -23,7 +28,7 @@ concurrency:
 jobs:
   entregar:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
         with:
@@ -37,9 +42,11 @@ jobs:
           python -m pip install requests
           git config user.name nina-bot
           git config user.email actions@github.com
+      - name: Testar compatibilidade com episodios unicos
+        run: python -m unittest discover -s tests -p test_telegram_nina.py -v
       - name: Enviar arquivos completos e registrar cada etapa
         env:
           TELEGRAM_BOT_TOKEN_NINA: ${{ secrets.TELEGRAM_BOT_TOKEN_NINA }}
           TELEGRAM_CHAT_ID_NINA: ${{ secrets.TELEGRAM_CHAT_ID_NINA }}
-          LIMITE: ${{ inputs.limite || '0' }}
-        run: python tools/telegram_nina.py --video-dir reels --persist-receipts --limit "$LIMITE"
+          LIMITE: ${{ inputs.limite || '4' }}
+        run: python tools/telegram_nina.py --video-dir reels --only-unicos --persist-receipts --limit "$LIMITE"
