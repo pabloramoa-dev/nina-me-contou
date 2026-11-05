@@ -279,6 +279,18 @@ def main() -> int:
     videos = sorted(p for p in args.video_dir.glob("*.mp4")
                     if RX_MP4.fullmatch(p.name)
                     and (not args.only_unicos or re.fullmatch(r"ep\d{3,}", p.stem)))
+    if args.only_unicos:
+        # A fila histórica contém episódios anteriores à política de 10 imagens.
+        # Nunca enviá-los nem deixá-los ocupar vagas de vídeos novos válidos.
+        sys.path.insert(0, str(ROOT))
+        from motor.siliconflow_policy import validar_arquivo_publicacao
+        aprovados = []
+        for video in videos:
+            if validar_arquivo_publicacao(video.parent, video.stem):
+                aprovados.append(video)
+            else:
+                print(f"::warning::Ignorando {video.name}: sem 10 imagens SiliconFlow confirmadas")
+        videos = aprovados
     if not videos:
         print("Nenhum MP4 novo para enviar ao Telegram.")
         return 0
@@ -329,7 +341,8 @@ def main() -> int:
                 # O MP4 só existe em reels/ depois que o render terminou e foi
                 # gravado; ainda assim confere áudio, vídeo e duração.
                 validar_mp4(video)
-                if re.fullmatch(r"ep\d{3,}", video.stem) and not validar_arquivo_publicacao(video.parent, video.stem):
+                if (not args.only_unicos and re.fullmatch(r"ep\d{3,}", video.stem)
+                        and not validar_arquivo_publicacao(video.parent, video.stem)):
                     raise RuntimeError(f"{video.name}: sem comprovacao das 10 imagens SiliconFlow; entrega bloqueada")
                 if entregar(video, token, chat_id, recebidos, args.persist_receipts, Path(tmp)):
                     enviados += 1
