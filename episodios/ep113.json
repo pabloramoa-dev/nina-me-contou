@@ -18,17 +18,6 @@
    ]
   },
   {
-   "fala": "A protagonista desta história é Cecília. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
-   "expr": "neutra",
-   "arte": [
-    "celular"
-   ],
-   "destaque": [
-    "protagonista",
-    "história"
-   ]
-  },
-  {
    "fala": "Ela não falava com nenhum dos dois havia dois anos, desde que uma mudança de cidade acabou misturando despedidas e mágoas.",
    "expr": "neutra",
    "arte": [
@@ -51,17 +40,6 @@
    ]
   },
   {
-   "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
-   "expr": "desconfiada",
-   "arte": [
-    "manchete_v"
-   ],
-   "destaque": [
-    "detalhe",
-    "parecia"
-   ]
-  },
-  {
    "fala": "A amiga escreveu: você foi a primeira pessoa que acreditou que eu podia recomeçar; por isso precisava te contar pessoalmente.",
    "expr": "ironica",
    "arte": [
@@ -73,33 +51,6 @@
    ]
   },
   {
-   "fala": "E aqui começa a parte mais surpreendente: Cecília decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": [
-    "começa",
-    "surpreendente:"
-   ]
-  },
-  {
-   "fala": "E enquanto a história avançava, uma pergunta ficava no ar: o que mudou de fato? A resposta dependia menos do susto inicial e mais das atitudes seguintes.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": []
-  },
-  {
-   "fala": "Quem acompanha uma história assim sabe que nem toda surpresa é uma confirmação. É preciso esperar os detalhes se revelarem antes de escolher um lado.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": []
-  },
-  {
    "fala": "Cecília descobriu que os dois só se conheceram meses depois do término, numa campanha de arrecadação do bairro.",
    "expr": "neutra",
    "arte": [
@@ -108,33 +59,6 @@
    "destaque": [
     "Cecília",
     "descobriu"
-   ]
-  },
-  {
-   "fala": "A Nina conta isso porque uma pista isolada pode parecer definitiva. Mas, quando a conversa avança, até o detalhe que parecia mais óbvio ganha outro sentido.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": []
-  },
-  {
-   "fala": "Ninguém precisava transformar a situação num espetáculo. O que faltava era ouvir a explicação inteira e separar o que alguém imaginou daquilo que realmente aconteceu.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": []
-  },
-  {
-   "fala": "Não foi uma resposta que chegou pronta. Primeiro vieram dúvidas, depois uma conversa desconfortável e, só então, a informação que faltava para entender o que estava acontecendo.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": [
-    "resposta",
-    "chegou"
    ]
   },
   {
@@ -160,18 +84,7 @@
    ]
   },
   {
-   "fala": "Quem estava envolvido teve de assumir as próprias escolhas. E foi justamente nessa conversa, sem plateia, que a história ganhou outra direção.",
-   "expr": "ironica",
-   "arte": [
-    "celular"
-   ],
-   "destaque": [
-    "estava",
-    "envolvido"
-   ]
-  },
-  {
-   "fala": "Anos depois elas voltaram a conversar sem forçar intimidade. Algumas amizades mudam de formato; isso não apaga o que foram.",
+   "fala": "Anos depois elas voltaram a conversar sem forçar intimidade.",
    "expr": "neutra",
    "arte": [
     "conversa"
@@ -182,15 +95,20 @@
    ]
   },
   {
-   "fala": "Se fosse com você, teria reagido como Cecília ou feito diferente? Me conta, porque eu quero saber o que vocês acharam dessa virada.",
+   "fala": "Algumas amizades mudam de formato; isso não apaga o que foram.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": []
+  },
+  {
+   "fala": "E você, teria feito o mesmo que Cecília?",
    "expr": "neutra",
    "arte": [
     "foto"
    ],
-   "destaque": [
-    "reagido",
-    "Cecília"
-   ]
+   "destaque": []
   }
  ],
  "fim": "HISTÓRIA COMPLETA",
@@ -203,5 +121,7 @@
  ],
  "formato": "historia_unica_3min",
  "gancho_versao": "gancho-descoberta-20261026-v1",
- "gancho_modelo": "abertura_direta_existente"
+ "gancho_modelo": "abertura_direta_existente",
+ "revisao_clareza": "nina-clareza-20261106-v1",
+ "estrutura": "gancho-inicio-meio-revelacao-desfecho"
 }

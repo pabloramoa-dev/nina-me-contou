@@ -18,17 +18,6 @@
    ]
   },
   {
-   "fala": "A protagonista desta história é Luana. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
-   "expr": "neutra",
-   "arte": [
-    "celular"
-   ],
-   "destaque": [
-    "protagonista",
-    "história"
-   ]
-  },
-  {
    "fala": "Ela e o noivo juntaram imagens de viagens, erros de cozinha e mensagens engraçadas para mostrar aos convidados.",
    "expr": "neutra",
    "arte": [
@@ -40,7 +29,7 @@
    ]
   },
   {
-   "fala": "No ensaio, tudo funcionou. Na festa, o primeiro slide exibiu os dois numa praça, anos antes de começarem a namorar.",
+   "fala": "No ensaio, tudo funcionou.",
    "expr": "neutra",
    "arte": [
     "foto"
@@ -51,15 +40,12 @@
    ]
   },
   {
-   "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
-   "expr": "desconfiada",
+   "fala": "Na festa, o primeiro slide exibiu os dois numa praça, anos antes de começarem a namorar.",
+   "expr": "neutra",
    "arte": [
-    "manchete_v"
+    "foto"
    ],
-   "destaque": [
-    "detalhe",
-    "parecia"
-   ]
+   "destaque": []
   },
   {
    "fala": "Luana quase mandou desligar o projetor quando percebeu uma legenda escrita à mão: vocês já se encontraram antes.",
@@ -73,33 +59,6 @@
    ]
   },
   {
-   "fala": "E aqui começa a parte mais surpreendente: Luana decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": [
-    "começa",
-    "surpreendente:"
-   ]
-  },
-  {
-   "fala": "A Nina conta isso porque uma pista isolada pode parecer definitiva. Mas, quando a conversa avança, até o detalhe que parecia mais óbvio ganha outro sentido.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": []
-  },
-  {
-   "fala": "O curioso é como os detalhes se encaixam depois que alguém resolve perguntar, em vez de simplesmente adivinhar. Uma palavra fora do lugar pode mudar toda a interpretação.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": []
-  },
-  {
    "fala": "A foto tinha sido feita por uma vizinha durante uma campanha de doação de livros; os dois aparecem ao fundo, em filas diferentes.",
    "expr": "neutra",
    "arte": [
@@ -108,33 +67,6 @@
    "destaque": [
     "vizinha",
     "durante"
-   ]
-  },
-  {
-   "fala": "O silêncio também estava pesando. Não por revelar uma resposta, mas porque deixou cada dúvida crescer até parecer maior que os próprios acontecimentos.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": []
-  },
-  {
-   "fala": "Antes de tomar uma decisão, era preciso entender a ordem das coisas. Um detalhe contado fora de contexto pode fazer uma história parecer completamente diferente.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": []
-  },
-  {
-   "fala": "Não foi uma resposta que chegou pronta. Primeiro vieram dúvidas, depois uma conversa desconfortável e, só então, a informação que faltava para entender o que estava acontecendo.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": [
-    "resposta",
-    "chegou"
    ]
   },
   {
@@ -160,17 +92,6 @@
    ]
   },
   {
-   "fala": "Quem estava envolvido teve de assumir as próprias escolhas. E foi justamente nessa conversa, sem plateia, que a história ganhou outra direção.",
-   "expr": "ironica",
-   "arte": [
-    "celular"
-   ],
-   "destaque": [
-    "estava",
-    "envolvido"
-   ]
-  },
-  {
    "fala": "A apresentação terminou com uma lembrança: às vezes uma história começa antes mesmo de os protagonistas perceberem.",
    "expr": "neutra",
    "arte": [
@@ -182,15 +103,12 @@
    ]
   },
   {
-   "fala": "Se fosse com você, teria reagido como Luana ou feito diferente? Me conta, porque eu quero saber o que vocês acharam dessa virada.",
+   "fala": "E você, teria feito o mesmo que Luana?",
    "expr": "neutra",
    "arte": [
     "foto"
    ],
-   "destaque": [
-    "reagido",
-    "diferente?"
-   ]
+   "destaque": []
   }
  ],
  "fim": "HISTÓRIA COMPLETA",
@@ -203,5 +121,7 @@
  ],
  "formato": "historia_unica_3min",
  "gancho_versao": "gancho-descoberta-20261026-v1",
- "gancho_modelo": "abertura_direta_existente"
+ "gancho_modelo": "abertura_direta_existente",
+ "revisao_clareza": "nina-clareza-20261106-v1",
+ "estrutura": "gancho-inicio-meio-revelacao-desfecho"
 }

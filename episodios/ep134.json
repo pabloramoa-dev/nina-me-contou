@@ -18,17 +18,6 @@
    ]
   },
   {
-   "fala": "A protagonista desta história é Elisa. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
-   "expr": "neutra",
-   "arte": [
-    "celular"
-   ],
-   "destaque": [
-    "protagonista",
-    "história"
-   ]
-  },
-  {
    "fala": "O dono queria reformar o espaço e tratou os ensaios semanais dos moradores como um detalhe sem importância.",
    "expr": "neutra",
    "arte": [
@@ -51,17 +40,6 @@
    ]
   },
   {
-   "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
-   "expr": "desconfiada",
-   "arte": [
-    "manchete_v"
-   ],
-   "destaque": [
-    "detalhe",
-    "parecia"
-   ]
-  },
-  {
    "fala": "Na visita marcada para discutir a reforma, o proprietário viu um piano coberto e perguntou quem ainda tocava naquele lugar.",
    "expr": "ironica",
    "arte": [
@@ -73,33 +51,6 @@
    ]
   },
   {
-   "fala": "E aqui começa a parte mais surpreendente: Elisa decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": [
-    "começa",
-    "surpreendente:"
-   ]
-  },
-  {
-   "fala": "A Nina conta isso porque uma pista isolada pode parecer definitiva. Mas, quando a conversa avança, até o detalhe que parecia mais óbvio ganha outro sentido.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": []
-  },
-  {
-   "fala": "O curioso é como os detalhes se encaixam depois que alguém resolve perguntar, em vez de simplesmente adivinhar. Uma palavra fora do lugar pode mudar toda a interpretação.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": []
-  },
-  {
    "fala": "Elisa mostrou gravações de apresentações feitas para arrecadar livros e materiais escolares, inclusive uma com a mãe dele quando jovem.",
    "expr": "neutra",
    "arte": [
@@ -108,25 +59,6 @@
    "destaque": [
     "mostrou",
     "gravações"
-   ]
-  },
-  {
-   "fala": "Antes de tomar uma decisão, era preciso entender a ordem das coisas. Um detalhe contado fora de contexto pode fazer uma história parecer completamente diferente.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": []
-  },
-  {
-   "fala": "Não foi uma resposta que chegou pronta. Primeiro vieram dúvidas, depois uma conversa desconfortável e, só então, a informação que faltava para entender o que estava acontecendo.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": [
-    "resposta",
-    "chegou"
    ]
   },
   {
@@ -152,18 +84,7 @@
    ]
   },
   {
-   "fala": "Quem estava envolvido teve de assumir as próprias escolhas. E foi justamente nessa conversa, sem plateia, que a história ganhou outra direção.",
-   "expr": "ironica",
-   "arte": [
-    "celular"
-   ],
-   "destaque": [
-    "estava",
-    "envolvido"
-   ]
-  },
-  {
-   "fala": "O coral voltou a ensaiar com metade das cadeiras. Na primeira música, o dono sentou na última fila, sem pedir lugar de destaque.",
+   "fala": "O coral voltou a ensaiar com metade das cadeiras.",
    "expr": "neutra",
    "arte": [
     "conversa"
@@ -174,15 +95,20 @@
    ]
   },
   {
-   "fala": "Se fosse com você, teria reagido como Elisa ou feito diferente? Me conta, porque eu quero saber o que vocês acharam dessa virada.",
+   "fala": "Na primeira música, o dono sentou na última fila, sem pedir lugar de destaque.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": []
+  },
+  {
+   "fala": "E você, teria feito o mesmo que Elisa?",
    "expr": "neutra",
    "arte": [
     "foto"
    ],
-   "destaque": [
-    "reagido",
-    "diferente?"
-   ]
+   "destaque": []
   }
  ],
  "fim": "HISTÓRIA COMPLETA",
@@ -195,5 +121,7 @@
  ],
  "formato": "historia_unica_3min",
  "gancho_versao": "gancho-descoberta-20261026-v1",
- "gancho_modelo": "abertura_direta_existente"
+ "gancho_modelo": "abertura_direta_existente",
+ "revisao_clareza": "nina-clareza-20261106-v1",
+ "estrutura": "gancho-inicio-meio-revelacao-desfecho"
 }

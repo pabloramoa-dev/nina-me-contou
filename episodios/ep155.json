@@ -7,18 +7,7 @@
  "cenario": "tarde",
  "batidas": [
   {
-   "fala": "A data mostrava um casamento anterior que ele nunca havia mencionado com clareza.",
-   "expr": "chocada",
-   "arte": [
-    "titulo"
-   ],
-   "destaque": [
-    "mostrava",
-    "casamento"
-   ]
-  },
-  {
-   "fala": "Essa é a história de Natália. Natália encontrou uma certidão antiga enquanto organizava os papéis do noivo.",
+   "fala": "Natália encontrou uma certidão antiga enquanto organizava os papéis do noivo.",
    "expr": "neutra",
    "arte": [
     "conversa",
@@ -30,15 +19,23 @@
    ]
   },
   {
-   "fala": "Até ali, os detalhes pareciam desconectados. Mas uma pergunta simples fez a situação ficar muito menos tranquila do que parecia à primeira vista.",
+   "fala": "A data mostrava um casamento anterior que ele nunca havia mencionado com clareza.",
+   "expr": "chocada",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "mostrava",
+    "casamento"
+   ]
+  },
+  {
+   "fala": "Ela quis entender a situação antes de decidir o que fazer.",
    "expr": "triste",
    "arte": [
     "celular"
    ],
-   "destaque": [
-    "detalhes",
-    "pareciam"
-   ]
+   "destaque": []
   },
   {
    "fala": "Ela pediu que ele explicasse por que dizia nunca ter sido casado.",
@@ -52,16 +49,13 @@
    ]
   },
   {
-   "fala": "Foi nesse momento que Natália decidiu não aceitar apenas rumores. Ela precisava descobrir o que realmente tinha acontecido, antes que alguém tirasse conclusões por ela.",
+   "fala": "Ainda faltava esclarecer o que tinha acontecido.",
    "expr": "desconfiada",
    "arte": [
     "manchete_v",
     "UMA NOVA PISTA"
    ],
-   "destaque": [
-    "momento",
-    "Natália"
-   ]
+   "destaque": []
   },
   {
    "fala": "Ele admitiu que fora casado por pouco tempo e que tinha vergonha de ter terminado sem conversar com a família.",
@@ -75,41 +69,6 @@
    ]
   },
   {
-   "fala": "O silêncio também estava pesando. Não por revelar uma resposta, mas porque deixou cada dúvida crescer até parecer maior que os próprios acontecimentos.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": []
-  },
-  {
-   "fala": "E tinha uma coisa importante naquela história: não era possível voltar no tempo e apagar o que já tinha sido dito. Restava descobrir o que fazer com a verdade.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": []
-  },
-  {
-   "fala": "Até aquele momento, cada pessoa enxergava só um pedaço do que aconteceu. A diferença começou quando as versões foram colocadas lado a lado, sem atalhos.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": []
-  },
-  {
-   "fala": "A conversa começou cheia de justificativas e pausas, como se ninguém quisesse ser a primeira pessoa a contar a parte mais importante.",
-   "expr": "neutra",
-   "arte": [
-    "coracao"
-   ],
-   "destaque": [
-    "conversa",
-    "começou"
-   ]
-  },
-  {
    "fala": "Natália quis entender também se o divórcio estava formalizado, antes de continuar os próprios planos.",
    "expr": "triste",
    "arte": [
@@ -118,41 +77,6 @@
    "destaque": [
     "Natália",
     "entender"
-   ]
-  },
-  {
-   "fala": "A cada pergunta, surgia um novo ângulo da mesma situação. E o que parecia apenas uma coincidência começou a exigir uma conversa de verdade.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": []
-  },
-  {
-   "fala": "O mais difícil não era encontrar outro indício. Era aceitar que os fatos pediam calma, mesmo com tanta coisa parecendo urgente naquela hora.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": []
-  },
-  {
-   "fala": "Só que nenhuma explicação resolve tudo automaticamente. Depois da descoberta ainda vêm as conversas, as escolhas e as consequências para quem estava envolvido.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": []
-  },
-  {
-   "fala": "Ninguém ali tinha uma solução pronta. Os envolvidos precisaram reconhecer o que sabiam, o que estavam escondendo e o que cada um realmente podia decidir.",
-   "expr": "neutra",
-   "arte": [
-    "foto"
-   ],
-   "destaque": [
-    "Ninguém",
-    "solução"
    ]
   },
   {
@@ -168,17 +92,6 @@
    ]
   },
   {
-   "fala": "E foi aí que o rumo da conversa mudou: não bastava explicar o passado, também era preciso assumir responsabilidade pelo que aconteceria depois.",
-   "expr": "ironica",
-   "arte": [
-    "notificacao"
-   ],
-   "destaque": [
-    "conversa",
-    "bastava"
-   ]
-  },
-  {
    "fala": "A data da cerimônia mudou, mas os dois aprenderam que passado escondido não desaparece por silêncio.",
    "expr": "neutra",
    "arte": [
@@ -190,16 +103,13 @@
    ]
   },
   {
-   "fala": "Se você estivesse no lugar de Natália, faria a mesma escolha? Eu quero saber nos comentários, porque a parte mais interessante é o que a gente aprende com o final.",
+   "fala": "E você, teria feito o mesmo que Natália?",
    "expr": "neutra",
    "arte": [
     "conversa",
     "NATÁLIA"
    ],
-   "destaque": [
-    "estivesse",
-    "Natália,"
-   ]
+   "destaque": []
   }
  ],
  "fim": "HISTÓRIA COMPLETA",
@@ -212,5 +122,7 @@
  ],
  "formato": "historia_unica_3min",
  "gancho_versao": "gancho-descoberta-20261026-v1",
- "gancho_modelo": "abertura_direta_existente"
+ "gancho_modelo": "abertura_direta_existente",
+ "revisao_clareza": "nina-clareza-20261106-v1",
+ "estrutura": "gancho-inicio-meio-revelacao-desfecho"
 }

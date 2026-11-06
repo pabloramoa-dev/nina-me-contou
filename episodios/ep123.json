@@ -18,15 +18,12 @@
    ]
   },
   {
-   "fala": "A protagonista desta história é Camila. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
+   "fala": "Ela quis entender a situação antes de decidir o que fazer.",
    "expr": "neutra",
    "arte": [
     "celular"
    ],
-   "destaque": [
-    "protagonista",
-    "história"
-   ]
+   "destaque": []
   },
   {
    "fala": "Os dois combinaram um café num jardim e ele insistiu em sentar perto de flores, mesmo com o vento mudando toda hora.",
@@ -51,17 +48,6 @@
    ]
   },
   {
-   "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
-   "expr": "desconfiada",
-   "arte": [
-    "manchete_v"
-   ],
-   "destaque": [
-    "detalhe",
-    "parecia"
-   ]
-  },
-  {
    "fala": "O rapaz contou que costumava visitar aquele jardim com a avó e que voltara para entregar mudas que ela havia cultivado.",
    "expr": "ironica",
    "arte": [
@@ -73,33 +59,6 @@
    ]
   },
   {
-   "fala": "E aqui começa a parte mais surpreendente: Camila decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": [
-    "começa",
-    "surpreendente:"
-   ]
-  },
-  {
-   "fala": "Quem acompanha uma história assim sabe que nem toda surpresa é uma confirmação. É preciso esperar os detalhes se revelarem antes de escolher um lado.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": []
-  },
-  {
-   "fala": "Antes de tomar uma decisão, era preciso entender a ordem das coisas. Um detalhe contado fora de contexto pode fazer uma história parecer completamente diferente.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": []
-  },
-  {
    "fala": "Camila encontrou a jardineira responsável e soube que o jardim estava prestes a perder as flores por falta de voluntários.",
    "expr": "neutra",
    "arte": [
@@ -108,25 +67,6 @@
    "destaque": [
     "Camila",
     "encontrou"
-   ]
-  },
-  {
-   "fala": "A Nina conta isso porque uma pista isolada pode parecer definitiva. Mas, quando a conversa avança, até o detalhe que parecia mais óbvio ganha outro sentido.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": []
-  },
-  {
-   "fala": "Não foi uma resposta que chegou pronta. Primeiro vieram dúvidas, depois uma conversa desconfortável e, só então, a informação que faltava para entender o que estava acontecendo.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": [
-    "resposta",
-    "chegou"
    ]
   },
   {
@@ -152,17 +92,6 @@
    ]
   },
   {
-   "fala": "Quem estava envolvido teve de assumir as próprias escolhas. E foi justamente nessa conversa, sem plateia, que a história ganhou outra direção.",
-   "expr": "ironica",
-   "arte": [
-    "celular"
-   ],
-   "destaque": [
-    "estava",
-    "envolvido"
-   ]
-  },
-  {
    "fala": "Meses depois, Camila disse que o melhor encontro não foi o café, mas descobrir alguém que cumpria uma promessa pequena.",
    "expr": "neutra",
    "arte": [
@@ -174,15 +103,12 @@
    ]
   },
   {
-   "fala": "Se fosse com você, teria reagido como Camila ou feito diferente? Me conta, porque eu quero saber o que vocês acharam dessa virada.",
+   "fala": "E você, teria feito o mesmo que Camila?",
    "expr": "neutra",
    "arte": [
     "foto"
    ],
-   "destaque": [
-    "reagido",
-    "Camila"
-   ]
+   "destaque": []
   }
  ],
  "fim": "HISTÓRIA COMPLETA",
@@ -195,5 +121,7 @@
  ],
  "formato": "historia_unica_3min",
  "gancho_versao": "gancho-descoberta-20261026-v1",
- "gancho_modelo": "abertura_direta_existente"
+ "gancho_modelo": "abertura_direta_existente",
+ "revisao_clareza": "nina-clareza-20261106-v1",
+ "estrutura": "gancho-inicio-meio-revelacao-desfecho"
 }

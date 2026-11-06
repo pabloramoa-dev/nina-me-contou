@@ -7,18 +7,7 @@
  "cenario": "tarde",
  "batidas": [
   {
-   "fala": "O casal tinha concordado com uma lista pequena, e ninguém mencionara aquele convite.",
-   "expr": "chocada",
-   "arte": [
-    "titulo"
-   ],
-   "destaque": [
-    "concordado",
-    "pequena,"
-   ]
-  },
-  {
-   "fala": "Essa é a história de Renata. Renata encontrou o nome da ex-noiva do marido num cartão da mesa principal da recepção.",
+   "fala": "Renata encontrou o nome da ex-noiva do marido num cartão da mesa principal da recepção.",
    "expr": "neutra",
    "arte": [
     "conversa",
@@ -30,15 +19,23 @@
    ]
   },
   {
-   "fala": "Até ali, os detalhes pareciam desconectados. Mas uma pergunta simples fez a situação ficar muito menos tranquila do que parecia à primeira vista.",
+   "fala": "O casal tinha concordado com uma lista pequena, e ninguém mencionara aquele convite.",
+   "expr": "chocada",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "concordado",
+    "pequena,"
+   ]
+  },
+  {
+   "fala": "Ela quis entender a situação antes de decidir o que fazer.",
    "expr": "triste",
    "arte": [
     "celular"
    ],
-   "destaque": [
-    "detalhes",
-    "pareciam"
-   ]
+   "destaque": []
   },
   {
    "fala": "A cerimonialista mostrou que a inclusão partira de um parente que achava a antiga relação uma amizade de família.",
@@ -52,16 +49,13 @@
    ]
   },
   {
-   "fala": "Foi nesse momento que Renata decidiu não aceitar apenas rumores. Ela precisava descobrir o que realmente tinha acontecido, antes que alguém tirasse conclusões por ela.",
+   "fala": "Ainda faltava esclarecer o que tinha acontecido.",
    "expr": "desconfiada",
    "arte": [
     "manchete_v",
     "UMA NOVA PISTA"
    ],
-   "destaque": [
-    "momento",
-    "decidiu"
-   ]
+   "destaque": []
   },
   {
    "fala": "Renata pediu que o marido conversasse com os pais antes que a convidada chegasse.",
@@ -75,41 +69,6 @@
    ]
   },
   {
-   "fala": "E tinha uma coisa importante naquela história: não era possível voltar no tempo e apagar o que já tinha sido dito. Restava descobrir o que fazer com a verdade.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": []
-  },
-  {
-   "fala": "Até aquele momento, cada pessoa enxergava só um pedaço do que aconteceu. A diferença começou quando as versões foram colocadas lado a lado, sem atalhos.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": []
-  },
-  {
-   "fala": "E enquanto a história avançava, uma pergunta ficava no ar: o que mudou de fato? A resposta dependia menos do susto inicial e mais das atitudes seguintes.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": []
-  },
-  {
-   "fala": "A conversa começou cheia de justificativas e pausas, como se ninguém quisesse ser a primeira pessoa a contar a parte mais importante.",
-   "expr": "neutra",
-   "arte": [
-    "coracao"
-   ],
-   "destaque": [
-    "conversa",
-    "começou"
-   ]
-  },
-  {
    "fala": "Descobriram que a ex tinha recusado o convite desde o início; alguém mantivera seu nome ali por provocação.",
    "expr": "triste",
    "arte": [
@@ -118,33 +77,6 @@
    "destaque": [
     "Descobriram",
     "recusado"
-   ]
-  },
-  {
-   "fala": "A cada pergunta, surgia um novo ângulo da mesma situação. E o que parecia apenas uma coincidência começou a exigir uma conversa de verdade.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": []
-  },
-  {
-   "fala": "O mais difícil não era encontrar outro indício. Era aceitar que os fatos pediam calma, mesmo com tanta coisa parecendo urgente naquela hora.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": []
-  },
-  {
-   "fala": "Ninguém ali tinha uma solução pronta. Os envolvidos precisaram reconhecer o que sabiam, o que estavam escondendo e o que cada um realmente podia decidir.",
-   "expr": "neutra",
-   "arte": [
-    "foto"
-   ],
-   "destaque": [
-    "Ninguém",
-    "solução"
    ]
   },
   {
@@ -160,17 +92,6 @@
    ]
   },
   {
-   "fala": "E foi aí que o rumo da conversa mudou: não bastava explicar o passado, também era preciso assumir responsabilidade pelo que aconteceria depois.",
-   "expr": "ironica",
-   "arte": [
-    "notificacao"
-   ],
-   "destaque": [
-    "conversa",
-    "bastava"
-   ]
-  },
-  {
    "fala": "A festa começou com atraso, mas sem exigir que Renata fingisse não ter visto a provocação.",
    "expr": "neutra",
    "arte": [
@@ -182,27 +103,13 @@
    ]
   },
   {
-   "fala": "Se você estivesse no lugar de Renata, faria a mesma escolha? Eu quero saber nos comentários, porque a parte mais interessante é o que a gente aprende com o final.",
+   "fala": "E você, teria feito o mesmo que Renata?",
    "expr": "neutra",
    "arte": [
     "conversa",
     "RENATA"
    ],
-   "destaque": [
-    "estivesse",
-    "Renata,"
-   ]
-  },
-  {
-   "fala": "No fim, a conversa trouxe consequências reais. As pessoas envolvidas precisaram assumir suas escolhas e decidir como seguir, sem deixar perguntas essenciais sem resposta.",
-   "expr": "neutra",
-   "arte": [
-    "manchete_v",
-    "O DESFECHO"
-   ],
-   "destaque": [
-    "escolhas"
-   ]
+   "destaque": []
   }
  ],
  "fim": "HISTÓRIA COMPLETA",
@@ -215,5 +122,7 @@
  ],
  "formato": "historia_unica_3min",
  "gancho_versao": "gancho-descoberta-20261026-v1",
- "gancho_modelo": "abertura_direta_existente"
+ "gancho_modelo": "abertura_direta_existente",
+ "revisao_clareza": "nina-clareza-20261106-v1",
+ "estrutura": "gancho-inicio-meio-revelacao-desfecho"
 }

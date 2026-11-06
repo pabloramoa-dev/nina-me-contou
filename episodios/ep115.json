@@ -18,17 +18,6 @@
    ]
   },
   {
-   "fala": "A protagonista desta história é Mirela. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
-   "expr": "neutra",
-   "arte": [
-    "celular"
-   ],
-   "destaque": [
-    "protagonista",
-    "história"
-   ]
-  },
-  {
    "fala": "No aniversário da sogra, ele fez piada dizendo que Mirela nunca ajudava em casa, diante de uma mesa cheia de convidados.",
    "expr": "neutra",
    "arte": [
@@ -40,25 +29,23 @@
    ]
   },
   {
-   "fala": "Ela não discutiu na hora. Naquela noite abriu o caderno e percebeu que havia desistido de contar o próprio esforço.",
+   "fala": "Ela não discutiu na hora.",
    "expr": "neutra",
    "arte": [
     "foto"
    ],
    "destaque": [
-    "discutiu",
-    "Naquela"
+    "discutiu"
    ]
   },
   {
-   "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
-   "expr": "desconfiada",
+   "fala": "Naquela noite abriu o caderno e percebeu que havia desistido de contar o próprio esforço.",
+   "expr": "neutra",
    "arte": [
-    "manchete_v"
+    "foto"
    ],
    "destaque": [
-    "detalhe",
-    "parecia"
+    "Naquela"
    ]
   },
   {
@@ -73,33 +60,6 @@
    ]
   },
   {
-   "fala": "E aqui começa a parte mais surpreendente: Mirela decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": [
-    "começa",
-    "surpreendente:"
-   ]
-  },
-  {
-   "fala": "Até aquele momento, cada pessoa enxergava só um pedaço do que aconteceu. A diferença começou quando as versões foram colocadas lado a lado, sem atalhos.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": []
-  },
-  {
-   "fala": "E enquanto a história avançava, uma pergunta ficava no ar: o que mudou de fato? A resposta dependia menos do susto inicial e mais das atitudes seguintes.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": []
-  },
-  {
    "fala": "Mirela respondeu que ninguém precisava de uma planilha para reconhecer respeito e que não aceitaria mais humilhação pública.",
    "expr": "neutra",
    "arte": [
@@ -108,25 +68,6 @@
    "destaque": [
     "Mirela",
     "respondeu"
-   ]
-  },
-  {
-   "fala": "A cada pergunta, surgia um novo ângulo da mesma situação. E o que parecia apenas uma coincidência começou a exigir uma conversa de verdade.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": []
-  },
-  {
-   "fala": "Não foi uma resposta que chegou pronta. Primeiro vieram dúvidas, depois uma conversa desconfortável e, só então, a informação que faltava para entender o que estava acontecendo.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": [
-    "resposta",
-    "chegou"
    ]
   },
   {
@@ -152,17 +93,6 @@
    ]
   },
   {
-   "fala": "Quem estava envolvido teve de assumir as próprias escolhas. E foi justamente nessa conversa, sem plateia, que a história ganhou outra direção.",
-   "expr": "ironica",
-   "arte": [
-    "celular"
-   ],
-   "destaque": [
-    "estava",
-    "envolvido"
-   ]
-  },
-  {
    "fala": "O marido aceitou procurar ajuda para mudar a relação, mas a decisão dela não ficou condicionada a uma promessa bonita.",
    "expr": "neutra",
    "arte": [
@@ -174,26 +104,12 @@
    ]
   },
   {
-   "fala": "Se fosse com você, teria reagido como Mirela ou feito diferente? Me conta, porque eu quero saber o que vocês acharam dessa virada.",
+   "fala": "E você, teria feito o mesmo que Mirela?",
    "expr": "neutra",
    "arte": [
     "foto"
    ],
-   "destaque": [
-    "reagido",
-    "Mirela"
-   ]
-  },
-  {
-   "fala": "No fim, a conversa trouxe consequências reais. As pessoas envolvidas precisaram assumir suas escolhas e decidir como seguir, sem deixar perguntas essenciais sem resposta.",
-   "expr": "neutra",
-   "arte": [
-    "manchete_v",
-    "O DESFECHO"
-   ],
-   "destaque": [
-    "escolhas"
-   ]
+   "destaque": []
   }
  ],
  "fim": "HISTÓRIA COMPLETA",
@@ -206,5 +122,7 @@
  ],
  "formato": "historia_unica_3min",
  "gancho_versao": "gancho-descoberta-20261026-v1",
- "gancho_modelo": "abertura_direta_existente"
+ "gancho_modelo": "abertura_direta_existente",
+ "revisao_clareza": "nina-clareza-20261106-v1",
+ "estrutura": "gancho-inicio-meio-revelacao-desfecho"
 }

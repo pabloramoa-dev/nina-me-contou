@@ -7,18 +7,7 @@
  "cenario": "tarde",
  "batidas": [
   {
-   "fala": "Uma vizinha comentou que ouvira passos durante a tarde e pensou que fosse mudança.",
-   "expr": "chocada",
-   "arte": [
-    "titulo"
-   ],
-   "destaque": [
-    "vizinha",
-    "comentou"
-   ]
-  },
-  {
-   "fala": "Essa é a história de Sabrina. Sabrina voltou de viagem e encontrou os móveis da sala em outros lugares, sem ter autorizado ninguém a entrar.",
+   "fala": "Sabrina voltou de viagem e encontrou os móveis da sala em outros lugares, sem ter autorizado ninguém a entrar.",
    "expr": "neutra",
    "arte": [
     "conversa",
@@ -30,15 +19,23 @@
    ]
   },
   {
-   "fala": "Até ali, os detalhes pareciam desconectados. Mas uma pergunta simples fez a situação ficar muito menos tranquila do que parecia à primeira vista.",
+   "fala": "Uma vizinha comentou que ouvira passos durante a tarde e pensou que fosse mudança.",
+   "expr": "chocada",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "vizinha",
+    "comentou"
+   ]
+  },
+  {
+   "fala": "Ela quis entender a situação antes de decidir o que fazer.",
    "expr": "triste",
    "arte": [
     "celular"
    ],
-   "destaque": [
-    "detalhes",
-    "pareciam"
-   ]
+   "destaque": []
   },
   {
    "fala": "Sabrina verificou se houve algum problema no imóvel e procurou o responsável pela manutenção do prédio.",
@@ -52,16 +49,13 @@
    ]
   },
   {
-   "fala": "Foi nesse momento que Sabrina decidiu não aceitar apenas rumores. Ela precisava descobrir o que realmente tinha acontecido, antes que alguém tirasse conclusões por ela.",
+   "fala": "Ainda faltava esclarecer o que tinha acontecido.",
    "expr": "desconfiada",
    "arte": [
     "manchete_v",
     "UMA NOVA PISTA"
    ],
-   "destaque": [
-    "momento",
-    "Sabrina"
-   ]
+   "destaque": []
   },
   {
    "fala": "Descobriu que o síndico tinha autorizado um reparo emergencial de infiltração e que móveis foram afastados para proteger o piso.",
@@ -75,41 +69,6 @@
    ]
   },
   {
-   "fala": "Quem acompanha uma história assim sabe que nem toda surpresa é uma confirmação. É preciso esperar os detalhes se revelarem antes de escolher um lado.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": []
-  },
-  {
-   "fala": "Antes de tomar uma decisão, era preciso entender a ordem das coisas. Um detalhe contado fora de contexto pode fazer uma história parecer completamente diferente.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": []
-  },
-  {
-   "fala": "O silêncio também estava pesando. Não por revelar uma resposta, mas porque deixou cada dúvida crescer até parecer maior que os próprios acontecimentos.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": []
-  },
-  {
-   "fala": "A conversa começou cheia de justificativas e pausas, como se ninguém quisesse ser a primeira pessoa a contar a parte mais importante.",
-   "expr": "neutra",
-   "arte": [
-    "coracao"
-   ],
-   "destaque": [
-    "conversa",
-    "começou"
-   ]
-  },
-  {
    "fala": "Faltou comunicação formal sobre o serviço, e Sabrina exigiu explicações e registros.",
    "expr": "triste",
    "arte": [
@@ -118,33 +77,6 @@
    "destaque": [
     "comunicação",
     "serviço,"
-   ]
-  },
-  {
-   "fala": "O curioso é como os detalhes se encaixam depois que alguém resolve perguntar, em vez de simplesmente adivinhar. Uma palavra fora do lugar pode mudar toda a interpretação.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": []
-  },
-  {
-   "fala": "A Nina conta isso porque uma pista isolada pode parecer definitiva. Mas, quando a conversa avança, até o detalhe que parecia mais óbvio ganha outro sentido.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": []
-  },
-  {
-   "fala": "Ninguém ali tinha uma solução pronta. Os envolvidos precisaram reconhecer o que sabiam, o que estavam escondendo e o que cada um realmente podia decidir.",
-   "expr": "neutra",
-   "arte": [
-    "foto"
-   ],
-   "destaque": [
-    "Ninguém",
-    "solução"
    ]
   },
   {
@@ -160,17 +92,6 @@
    ]
   },
   {
-   "fala": "E foi aí que o rumo da conversa mudou: não bastava explicar o passado, também era preciso assumir responsabilidade pelo que aconteceria depois.",
-   "expr": "ironica",
-   "arte": [
-    "notificacao"
-   ],
-   "destaque": [
-    "conversa",
-    "bastava"
-   ]
-  },
-  {
    "fala": "A casa voltou ao normal, mas Sabrina passou a saber o que exigir antes de cada reparo.",
    "expr": "neutra",
    "arte": [
@@ -182,16 +103,13 @@
    ]
   },
   {
-   "fala": "Se você estivesse no lugar de Sabrina, faria a mesma escolha? Eu quero saber nos comentários, porque a parte mais interessante é o que a gente aprende com o final.",
+   "fala": "E você, teria feito o mesmo que Sabrina?",
    "expr": "neutra",
    "arte": [
     "conversa",
     "SABRINA"
    ],
-   "destaque": [
-    "estivesse",
-    "Sabrina,"
-   ]
+   "destaque": []
   }
  ],
  "fim": "HISTÓRIA COMPLETA",
@@ -204,5 +122,7 @@
  ],
  "formato": "historia_unica_3min",
  "gancho_versao": "gancho-descoberta-20261026-v1",
- "gancho_modelo": "abertura_direta_existente"
+ "gancho_modelo": "abertura_direta_existente",
+ "revisao_clareza": "nina-clareza-20261106-v1",
+ "estrutura": "gancho-inicio-meio-revelacao-desfecho"
 }

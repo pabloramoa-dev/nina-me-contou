@@ -18,15 +18,12 @@
    ]
   },
   {
-   "fala": "A protagonista desta história é Tereza. E o que aconteceu depois não tem nada de conto de fadas: tem escolhas, conversas difíceis e uma pista que ninguém esperava.",
+   "fala": "Ela quis entender a situação antes de decidir o que fazer.",
    "expr": "neutra",
    "arte": [
     "celular"
    ],
-   "destaque": [
-    "protagonista",
-    "história"
-   ]
+   "destaque": []
   },
   {
    "fala": "Os convidados acharam que era uma fantasia, mas ele respondia a qualquer pergunta com a mesma frase: faz parte do trabalho.",
@@ -51,17 +48,6 @@
    ]
   },
   {
-   "fala": "O detalhe parecia pequeno à primeira vista. Só que, quando alguém puxou o assunto mais uma vez, a explicação mudou e deixou todo mundo com mais perguntas.",
-   "expr": "desconfiada",
-   "arte": [
-    "manchete_v"
-   ],
-   "destaque": [
-    "detalhe",
-    "parecia"
-   ]
-  },
-  {
    "fala": "Tereza reconheceu o desenho: era o logotipo do clube de robótica da escola onde ela tinha estudado anos antes.",
    "expr": "ironica",
    "arte": [
@@ -73,33 +59,6 @@
    ]
   },
   {
-   "fala": "E aqui começa a parte mais surpreendente: Tereza decidiu não tirar conclusões antes de descobrir quem realmente estava por trás daquela situação.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": [
-    "começa",
-    "surpreendente:"
-   ]
-  },
-  {
-   "fala": "E tinha uma coisa importante naquela história: não era possível voltar no tempo e apagar o que já tinha sido dito. Restava descobrir o que fazer com a verdade.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": []
-  },
-  {
-   "fala": "Até aquele momento, cada pessoa enxergava só um pedaço do que aconteceu. A diferença começou quando as versões foram colocadas lado a lado, sem atalhos.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": []
-  },
-  {
    "fala": "O fotógrafo era um ex-aluno que ajudava a turma a arrecadar fundos para uma exposição de invenções feitas pelos estudantes.",
    "expr": "neutra",
    "arte": [
@@ -108,25 +67,6 @@
    "destaque": [
     "fotógrafo",
     "ex-aluno"
-   ]
-  },
-  {
-   "fala": "O mais difícil não era encontrar outro indício. Era aceitar que os fatos pediam calma, mesmo com tanta coisa parecendo urgente naquela hora.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": []
-  },
-  {
-   "fala": "Não foi uma resposta que chegou pronta. Primeiro vieram dúvidas, depois uma conversa desconfortável e, só então, a informação que faltava para entender o que estava acontecendo.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": [
-    "resposta",
-    "chegou"
    ]
   },
   {
@@ -152,17 +92,6 @@
    ]
   },
   {
-   "fala": "Quem estava envolvido teve de assumir as próprias escolhas. E foi justamente nessa conversa, sem plateia, que a história ganhou outra direção.",
-   "expr": "ironica",
-   "arte": [
-    "celular"
-   ],
-   "destaque": [
-    "estava",
-    "envolvido"
-   ]
-  },
-  {
    "fala": "Tereza disse que o acessório mais estranho da festa conseguiu o que muitos discursos não fazem: todo mundo perguntou sobre a escola.",
    "expr": "neutra",
    "arte": [
@@ -174,15 +103,12 @@
    ]
   },
   {
-   "fala": "Se fosse com você, teria reagido como Tereza ou feito diferente? Me conta, porque eu quero saber o que vocês acharam dessa virada.",
+   "fala": "E você, teria feito o mesmo que Tereza?",
    "expr": "neutra",
    "arte": [
     "foto"
    ],
-   "destaque": [
-    "reagido",
-    "Tereza"
-   ]
+   "destaque": []
   }
  ],
  "fim": "HISTÓRIA COMPLETA",
@@ -195,5 +121,7 @@
  ],
  "formato": "historia_unica_3min",
  "gancho_versao": "gancho-descoberta-20261026-v1",
- "gancho_modelo": "abertura_direta_existente"
+ "gancho_modelo": "abertura_direta_existente",
+ "revisao_clareza": "nina-clareza-20261106-v1",
+ "estrutura": "gancho-inicio-meio-revelacao-desfecho"
 }

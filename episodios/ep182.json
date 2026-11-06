@@ -7,18 +7,7 @@
  "cenario": "tarde",
  "batidas": [
   {
-   "fala": "Em todas havia uma borda irregular e uma pequena marca feita com caneta azul.",
-   "expr": "chocada",
-   "arte": [
-    "titulo"
-   ],
-   "destaque": [
-    "irregular",
-    "pequena"
-   ]
-  },
-  {
-   "fala": "Essa é a história de Vera. Vera percebeu que alguém tinha sido recortado de muitas fotografias do álbum da família.",
+   "fala": "Vera percebeu que alguém tinha sido recortado de muitas fotografias do álbum da família.",
    "expr": "neutra",
    "arte": [
     "conversa",
@@ -30,15 +19,23 @@
    ]
   },
   {
-   "fala": "Até ali, os detalhes pareciam desconectados. Mas uma pergunta simples fez a situação ficar muito menos tranquila do que parecia à primeira vista.",
+   "fala": "Em todas havia uma borda irregular e uma pequena marca feita com caneta azul.",
+   "expr": "chocada",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [
+    "irregular",
+    "pequena"
+   ]
+  },
+  {
+   "fala": "Ela quis entender a situação antes de decidir o que fazer.",
    "expr": "triste",
    "arte": [
     "celular"
    ],
-   "destaque": [
-    "detalhes",
-    "pareciam"
-   ]
+   "destaque": []
   },
   {
    "fala": "Ela perguntou aos parentes mais velhos antes de inventar uma história de traição ou abandono.",
@@ -52,16 +49,13 @@
    ]
   },
   {
-   "fala": "Foi nesse momento que Vera decidiu não aceitar apenas rumores. Ela precisava descobrir o que realmente tinha acontecido, antes que alguém tirasse conclusões por ela.",
+   "fala": "Ainda faltava esclarecer o que tinha acontecido.",
    "expr": "desconfiada",
    "arte": [
     "manchete_v",
     "UMA NOVA PISTA"
    ],
-   "destaque": [
-    "momento",
-    "decidiu"
-   ]
+   "destaque": []
   },
   {
    "fala": "A pessoa retirada era um antigo fotógrafo de eventos que pedia cópias com exclusividade e nunca autorizara divulgação.",
@@ -75,41 +69,6 @@
    ]
   },
   {
-   "fala": "A Nina conta isso porque uma pista isolada pode parecer definitiva. Mas, quando a conversa avança, até o detalhe que parecia mais óbvio ganha outro sentido.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": []
-  },
-  {
-   "fala": "O curioso é como os detalhes se encaixam depois que alguém resolve perguntar, em vez de simplesmente adivinhar. Uma palavra fora do lugar pode mudar toda a interpretação.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": []
-  },
-  {
-   "fala": "Só que nenhuma explicação resolve tudo automaticamente. Depois da descoberta ainda vêm as conversas, as escolhas e as consequências para quem estava envolvido.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": []
-  },
-  {
-   "fala": "A conversa começou cheia de justificativas e pausas, como se ninguém quisesse ser a primeira pessoa a contar a parte mais importante.",
-   "expr": "neutra",
-   "arte": [
-    "coracao"
-   ],
-   "destaque": [
-    "conversa",
-    "começou"
-   ]
-  },
-  {
    "fala": "A avó havia cortado as fotos para montar um mural doméstico depois de uma discussão comercial.",
    "expr": "triste",
    "arte": [
@@ -118,41 +77,6 @@
    "destaque": [
     "cortado",
     "doméstico"
-   ]
-  },
-  {
-   "fala": "E tinha uma coisa importante naquela história: não era possível voltar no tempo e apagar o que já tinha sido dito. Restava descobrir o que fazer com a verdade.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": []
-  },
-  {
-   "fala": "O silêncio também estava pesando. Não por revelar uma resposta, mas porque deixou cada dúvida crescer até parecer maior que os próprios acontecimentos.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": []
-  },
-  {
-   "fala": "Antes de tomar uma decisão, era preciso entender a ordem das coisas. Um detalhe contado fora de contexto pode fazer uma história parecer completamente diferente.",
-   "expr": "neutra",
-   "arte": [
-    "conversa"
-   ],
-   "destaque": []
-  },
-  {
-   "fala": "Ninguém ali tinha uma solução pronta. Os envolvidos precisaram reconhecer o que sabiam, o que estavam escondendo e o que cada um realmente podia decidir.",
-   "expr": "neutra",
-   "arte": [
-    "foto"
-   ],
-   "destaque": [
-    "Ninguém",
-    "solução"
    ]
   },
   {
@@ -168,17 +92,6 @@
    ]
   },
   {
-   "fala": "E foi aí que o rumo da conversa mudou: não bastava explicar o passado, também era preciso assumir responsabilidade pelo que aconteceria depois.",
-   "expr": "ironica",
-   "arte": [
-    "notificacao"
-   ],
-   "destaque": [
-    "conversa",
-    "bastava"
-   ]
-  },
-  {
    "fala": "O mistério revelou mais sobre memórias incompletas do que sobre segredos familiares.",
    "expr": "neutra",
    "arte": [
@@ -190,16 +103,13 @@
    ]
   },
   {
-   "fala": "Se você estivesse no lugar de Vera, faria a mesma escolha? Eu quero saber nos comentários, porque a parte mais interessante é o que a gente aprende com o final.",
+   "fala": "E você, teria feito o mesmo que Vera?",
    "expr": "neutra",
    "arte": [
     "conversa",
     "VERA"
    ],
-   "destaque": [
-    "estivesse",
-    "escolha?"
-   ]
+   "destaque": []
   }
  ],
  "fim": "HISTÓRIA COMPLETA",
@@ -212,5 +122,7 @@
  ],
  "formato": "historia_unica_3min",
  "gancho_versao": "gancho-descoberta-20261026-v1",
- "gancho_modelo": "abertura_direta_existente"
+ "gancho_modelo": "abertura_direta_existente",
+ "revisao_clareza": "nina-clareza-20261106-v1",
+ "estrutura": "gancho-inicio-meio-revelacao-desfecho"
 }
