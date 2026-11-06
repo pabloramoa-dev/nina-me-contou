@@ -1,0 +1,164 @@
+{
+  "id": "nina-20261106-o-vestido-cancelado-pela-sogra",
+  "avulso": true,
+  "parte": "unica",
+  "titulo": "O VESTIDO QUE A SOGRA CANCELOU",
+  "temporada": "Nina — histórias claras de teste",
+  "cenario": "tarde",
+  "voice_engine": "kokoro",
+  "kokoro_voice": "pf_dora",
+  "kokoro_speed": 0.94,
+  "visual_style": "cinematic_2d",
+  "visual_images": {
+    "image_provider": "siliconflow",
+    "auto_visual_images": true,
+    "min_images": 10,
+    "max_images": 10,
+    "target_images": 10,
+    "hide_inner_caption_when_image": true,
+    "bottom_caption_only": true
+  },
+  "batidas": [
+    {
+      "fala": "Camila foi buscar seu vestido de noiva. Mas a loja avisou que a encomenda tinha sido cancelada. O casamento seria em dez dias. E o nome de quem pediu o cancelamento deixou Camila sem acreditar.",
+      "expr": "chocada",
+      "arte": [
+        "vestido"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "Camila e Daniel planejavam uma cerimônia pequena, só com parentes próximos. Eles juntaram dinheiro durante um ano. Dona Sônia, mãe de Daniel, ofereceu pagar o sinal do vestido como presente. Camila aceitou, agradecida.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "Sônia sonhava com uma festa enorme, mas o casal preferia algo simples. Ela insistia em mudar o salão e aumentar a lista de convidados. Camila sempre respondia com carinho: a decisão já estava tomada.",
+      "expr": "desconfiada",
+      "arte": [
+        "foto"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "Numa terça-feira, Camila chegou à loja para a última prova. A atendente procurou o pedido no computador e explicou: o sinal tinha sido devolvido. A própria Dona Sônia solicitou o cancelamento dois dias antes.",
+      "expr": "chocada",
+      "arte": [
+        "celular"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "Camila ligou para Sônia ainda na calçada. A sogra não negou. Disse que, sem o vestido, talvez os dois adiassem o casamento e aceitassem fazer a festa grande que ela queria. Camila ficou magoada.",
+      "expr": "triste",
+      "arte": [
+        "celular"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "Naquela noite, Camila contou tudo a Daniel. Ele telefonou para a mãe e explicou, com calma, que o dinheiro era um presente, não uma autorização para escolher por eles. Sônia desligou sem responder.",
+      "expr": "brava",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "No dia seguinte, veio outra notícia ruim: o vestido original já tinha sido reservado para outra cliente. Camila quase chorou. Mas a costureira mostrou um modelo diferente, bonito e disponível, que poderia ajustar antes da cerimônia.",
+      "expr": "surpresa",
+      "arte": [
+        "vestido"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "Camila e Daniel voltaram juntos à loja. Decidiram pagar o novo vestido com as próprias economias. A cerimônia continuaria na mesma data. Eles avisaram a Sônia que ela seria bem-vinda, desde que respeitasse as escolhas do casal.",
+      "expr": "neutra",
+      "arte": [
+        "foto"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "Dois dias depois, Sônia procurou Camila para pedir desculpas. Admitiu que tentou controlar uma decisão que não era dela. Camila aceitou conversar, mas deixou claro: dali em diante, nenhum presente poderia vir acompanhado de exigências.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "destaque": []
+    },
+    {
+      "fala": "No dia do casamento, Camila entrou usando o vestido novo. Daniel se emocionou quando a viu. Sônia assistiu à cerimônia, sem interferir em nada. Depois, abraçou os dois. E você: teria mantido a data do casamento ou adiado tudo?",
+      "expr": "emocionada",
+      "arte": [
+        "casamento"
+      ],
+      "destaque": []
+    }
+  ],
+  "fim": "O CASAMENTO ACONTECEU",
+  "legenda_post": "Ela chegou para experimentar o vestido de noiva e descobriu que a sogra tinha cancelado a encomenda! 😳👰‍♀️ O motivo deixou a família sem reação. Você manteria o casamento ou adiaria? História fictícia. #NinaMeContou #Storytime #Historias #Fofoca #Reviravolta",
+  "legenda_tiktok": "A sogra cancelou o vestido de noiva 10 dias antes do casamento… mas a noiva teve uma resposta inesperada. 👰‍♀️ O que você faria? História fictícia. #NinaMeContou #HistoriaCompleta #Storytime #Fofoca",
+  "storyboard_preparado": {
+    "personagens": "Camila: mulher adulta brasileira de 29 anos, pele morena clara, cabelo castanho cacheado na altura dos ombros, blusa coral e calça bege; no casamento usa vestido branco simples. Daniel: homem adulto de 31 anos, cabelo preto curto e camisa azul; no casamento usa terno azul. Sônia: senhora adulta de 58 anos, cabelo grisalho curto, óculos e blusa verde. Atendente e costureira: mulheres adultas da boutique, em roupas profissionais discretas. Boutique aconchegante e apartamento simples; casamento pequeno em salão claro.",
+    "cenas": [
+      {
+        "index": 0,
+        "ancora": "Camila foi buscar seu",
+        "visual": "Camila foi buscar seu. Na boutique de vestidos de noiva, Camila ouve a notícia do pedido cancelado enquanto olha o cabide vazio atrás do balcão. Enquadramento plano geral; arte 2D de revista, luz natural, gestos e expressões coerentes, sem qualquer texto ou letras."
+      },
+      {
+        "index": 1,
+        "ancora": "Camila e Daniel planejavam",
+        "visual": "Camila e Daniel planejavam. No apartamento simples do casal, Camila e Daniel conversam animados sobre a festa pequena, enquanto Sônia entrega a Camila um envelope com o sinal do vestido. Enquadramento plano médio; arte 2D de revista, luz natural, gestos e expressões coerentes, sem qualquer texto ou letras."
+      },
+      {
+        "index": 2,
+        "ancora": "Sônia sonhava com uma",
+        "visual": "Sônia sonhava com uma. Na sala de casa, Sônia aponta para um catálogo de festas grandes, enquanto Camila e Daniel demonstram preferência pela celebração simples. Enquadramento plano conjunto; arte 2D de revista, luz natural, gestos e expressões coerentes, sem qualquer texto ou letras."
+      },
+      {
+        "index": 3,
+        "ancora": "Numa terça-feira, Camila chegou",
+        "visual": "Numa terça-feira, Camila chegou. Na loja, a atendente consulta o computador e mostra a Camila que a reserva foi cancelada e o pagamento devolvido. Enquadramento plano sobre o ombro; arte 2D de revista, luz natural, gestos e expressões coerentes, sem qualquer texto ou letras."
+      },
+      {
+        "index": 4,
+        "ancora": "Camila ligou para Sônia",
+        "visual": "Camila ligou para Sônia. Camila está na calçada diante da boutique com o celular no ouvido, abatida ao ouvir Sônia, que aparece em casa atendendo à ligação. Enquadramento close no rosto; arte 2D de revista, luz natural, gestos e expressões coerentes, sem qualquer texto ou letras."
+      },
+      {
+        "index": 5,
+        "ancora": "Naquela noite, Camila contou",
+        "visual": "Naquela noite, Camila contou. À noite, na cozinha do apartamento, Camila conta a Daniel o que aconteceu; ele segura o celular para ligar à mãe, com expressão séria. Enquadramento plano médio lateral; arte 2D de revista, luz natural, gestos e expressões coerentes, sem qualquer texto ou letras."
+      },
+      {
+        "index": 6,
+        "ancora": "No dia seguinte, veio",
+        "visual": "No dia seguinte, veio. Na boutique, o cabide do vestido original está vazio; uma costureira apresenta a Camila um novo vestido branco simples e elegante. Enquadramento plano de detalhe; arte 2D de revista, luz natural, gestos e expressões coerentes, sem qualquer texto ou letras."
+      },
+      {
+        "index": 7,
+        "ancora": "Camila e Daniel voltaram",
+        "visual": "Camila e Daniel voltaram. De volta à loja, Camila e Daniel escolhem juntos o vestido alternativo e conversam frente ao espelho, confiantes na decisão. Enquadramento plano aberto com espelho; arte 2D de revista, luz natural, gestos e expressões coerentes, sem qualquer texto ou letras."
+      },
+      {
+        "index": 8,
+        "ancora": "Dois dias depois, Sônia",
+        "visual": "Dois dias depois, Sônia. Na varanda iluminada pela manhã, Sônia pede desculpas a Camila em uma conversa reservada; ambas demonstram emoções reais e respeito. Enquadramento close em duas personagens; arte 2D de revista, luz natural, gestos e expressões coerentes, sem qualquer texto ou letras."
+      },
+      {
+        "index": 9,
+        "ancora": "No dia do casamento,",
+        "visual": "No dia do casamento,. No dia do casamento, Camila entra com o vestido alternativo, Daniel emocionado a espera no pequeno salão, e Sônia assiste discretamente com familiares. Enquadramento plano geral emotivo; arte 2D de revista, luz natural, gestos e expressões coerentes, sem qualquer texto ou letras."
+      }
+    ]
+  },
+  "revisao": "piloto-clareza-e-voz-20261106",
+  "gancho_versao": "gancho-descoberta-20261026-v1",
+  "gancho_modelo": "abertura_direta_existente"
+}
