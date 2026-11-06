@@ -476,7 +476,7 @@
   },
   "ep124": {
     "hash": "847b4566355ac9564e0c9e213c9f78d9a59d152a742bfd18f150572fe03cfd87",
-    "status": "video_sent",
+    "status": "sending_description",
     "tentativas_incertas": 0,
     "telegram_message_id": 105,
     "file_id": "BQACAgEAAxkDAANpau5k5oOHMIX99T7sEZcXJslYSIEAAn8IAAIW-3lHHeZ3MCti9tE9BA",
