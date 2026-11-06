@@ -22,23 +22,6 @@ RX_PARTE = re.compile(
 )
 RX_CTA = re.compile(r"\bme\s+segue\b|\bsiga\s+a\s+nina\b|\bsegue\s+a\s+nina\b", re.I)
 
-# Passagens de transição sem novos fatos inventados sobre os personagens.
-# Servem para dar ritmo à narração; não substituem as cenas e o desfecho.
-PONTES = [
-    "O curioso é como os detalhes se encaixam depois que alguém resolve perguntar, em vez de simplesmente adivinhar. Uma palavra fora do lugar pode mudar toda a interpretação.",
-    "Até aquele momento, cada pessoa enxergava só um pedaço do que aconteceu. A diferença começou quando as versões foram colocadas lado a lado, sem atalhos.",
-    "A Nina conta isso porque uma pista isolada pode parecer definitiva. Mas, quando a conversa avança, até o detalhe que parecia mais óbvio ganha outro sentido.",
-    "E tinha uma coisa importante naquela história: não era possível voltar no tempo e apagar o que já tinha sido dito. Restava descobrir o que fazer com a verdade.",
-    "Ninguém precisava transformar a situação num espetáculo. O que faltava era ouvir a explicação inteira e separar o que alguém imaginou daquilo que realmente aconteceu.",
-    "O silêncio também estava pesando. Não por revelar uma resposta, mas porque deixou cada dúvida crescer até parecer maior que os próprios acontecimentos.",
-    "A cada pergunta, surgia um novo ângulo da mesma situação. E o que parecia apenas uma coincidência começou a exigir uma conversa de verdade.",
-    "Antes de tomar uma decisão, era preciso entender a ordem das coisas. Um detalhe contado fora de contexto pode fazer uma história parecer completamente diferente.",
-    "O mais difícil não era encontrar outro indício. Era aceitar que os fatos pediam calma, mesmo com tanta coisa parecendo urgente naquela hora.",
-    "Quem acompanha uma história assim sabe que nem toda surpresa é uma confirmação. É preciso esperar os detalhes se revelarem antes de escolher um lado.",
-    "Só que nenhuma explicação resolve tudo automaticamente. Depois da descoberta ainda vêm as conversas, as escolhas e as consequências para quem estava envolvido.",
-    "E enquanto a história avançava, uma pergunta ficava no ar: o que mudou de fato? A resposta dependia menos do susto inicial e mais das atitudes seguintes.",
-]
-
 def _texto(batida: dict) -> str:
     return str(batida.get("fala", "")).strip()
 
@@ -71,10 +54,10 @@ def _palavras(batidas: list[dict]) -> int:
     return sum(len(_texto(b).split()) for b in batidas)
 
 def consolidar(p1: dict, p2: dict, alvo_palavras: int = 385) -> dict:
-    """Conecta abertura, desenvolvimento, revelação e encerramento.
+    """Conecta abertura, desenvolvimento, revelação e encerramento sem enchimento.
 
-    A duração exata depende da voz do sintetizador, mas ~385 palavras, mais
-    pausas e CTA, corresponde a aproximadamente três minutos.
+    O parâmetro alvo_palavras fica disponível para compatibilidade; a duração
+    agora acompanha os acontecimentos reais, não frases genéricas.
     """
     if p1.get("ep") != p2.get("ep"):
         raise ValueError("Partes pertencem a episódios diferentes")
@@ -90,31 +73,9 @@ def consolidar(p1: dict, p2: dict, alvo_palavras: int = 385) -> dict:
     # A primeira cena termina em suspense interno, mas o mesmo vídeo já entrega
     # a descoberta e um desfecho. Os ganchos 'volte na parte 1/2' são descartados.
     batidas = inicio + fim
-    usadas: set[str] = set()
-    i = 0
-    while _palavras(batidas) < alvo_palavras and i < len(PONTES):
-        ponte = _ponte(n, i)
-        i += 1
-        if ponte["fala"] in usadas:
-            continue
-        usadas.add(ponte["fala"])
-        # Passagens distribuídas ao longo da história, nunca depois do final.
-        lugar = min(max(2, len(batidas) // 2), len(batidas) - 2)
-        if i % 2 == 0:
-            lugar = min(lugar + 2, len(batidas) - 2)
-        batidas.insert(lugar, ponte)
+    # Sem pontes genéricas: cada batida precisa mostrar um fato da história.
 
-    # Fecha a história antes do convite final (incluído pelo motor/cta.py).
-    if not any(k in " ".join(_texto(b).lower() for b in fim)
-               for k in ("decidiu", "descobriu", "resolveu", "aconteceu", "terminou",
-                         "conseguiu", "encontrou", "admitiu", "voltou", "escolheu")):
-        batidas.append({
-            "fala": "No fim, a conversa trouxe consequências reais. As pessoas envolvidas "
-                    "precisaram assumir suas escolhas e decidir como seguir, sem deixar "
-                    "perguntas essenciais sem resposta.",
-            "expr": "neutra", "arte": ["manchete_v", "O DESFECHO"],
-            "destaque": ["escolhas"],
-        })
+    # O final precisa vir dos fatos do roteiro, nunca de um parágrafo padrão.
     titulo = str(p1.get("titulo") or p2.get("titulo") or f"Episódio {n}")
     gancho = _texto(inicio[0])
     legenda = (

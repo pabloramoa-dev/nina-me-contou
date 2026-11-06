@@ -53,6 +53,9 @@ jobs:
           pip install -q requests pillow
           python -m unittest discover -s tests -p test_ganchos.py -v
           python -m unittest discover -s tests -p test_episodio_unico.py -v
+          python -m unittest discover -s tests -p test_revisar_historias.py -v
+          python motor/revisar_historias.py --aplicar > /tmp/revisao-nina.json
+          python -c "import json; d=json.load(open('/tmp/revisao-nina.json')); print('Revisão Nina:',d['total'],'roteiros analisados,',d['revisados'],'revisados,',len(d['revisao_manual']),'pendências manuais')"
           python motor/normalizar_ganchos.py
           python motor/gerar_roteiros.py --alvo 60
           # Roteiro novo sem os 10 prompts trava o render: recompila o banco

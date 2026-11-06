@@ -1,7 +1,7 @@
 """Versão visual/voz usada pelo estúdio e pela fila; não carrega o renderizador."""
 import os,json,hashlib
 from pathlib import Path
-HYPERFRAMES_VERSION = 'nina-hyperframes-13-prompts-banco-historias'
+HYPERFRAMES_VERSION = 'nina-hyperframes-14-clareza-narracao'
 def versao():
     motor = os.environ.get('NINA_MOTOR', 'hyperframes')
     if motor not in ('hyperframes', 'manim'):
@@ -42,7 +42,7 @@ def versao():
     # vídeos ainda não publicados (src/fila.py mantém o histórico intacto).
     compositor = os.environ.get("NINA_FINAL_COMPOSITOR", "remotion")
     voz = os.environ.get("NINA_VOICE_ENGINE", "kokoro")
-    speed = os.environ.get("NINA_KOKORO_SPEED", "1.02")
+    speed = os.environ.get("NINA_KOKORO_SPEED", "0.94")
     voice_name = os.environ.get("NINA_KOKORO_VOICE", "pf_dora")
     visual = hashlib.sha256()
     prod = root / "video" / "remotion"

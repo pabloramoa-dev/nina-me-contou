@@ -65,7 +65,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("roteiro", help="txt: uma batida de narração por linha")
     ap.add_argument("--voz", default="pm_alex", help="pm_alex | pm_santa | pf_dora")
-    ap.add_argument("--speed", type=float, default=1.0)
+    ap.add_argument("--speed", type=float, default=0.94)
     ap.add_argument("--gap", type=float, default=0.35, help="silêncio entre batidas (s)")
     ap.add_argument("--out", default="narracao.wav")
     ap.add_argument("--seg-json", default=None, help="grava boundaries p/ a timeline")

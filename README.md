@@ -41,7 +41,7 @@ workflow **Publicar Reel** em modo de ensaio (`dry_run=true`).
 ## Voz principal da Nina (aprovada em 23/10/2026)
 
 A voz principal agora é **Kokoro Dora (`pf_dora`)**, em português brasileiro,
-com velocidade **1.02**, executada localmente no GitHub Actions, sem depender
+com velocidade **0.94**, executada localmente no GitHub Actions, sem depender
 do serviço Edge TTS. O código `motor/gerar_voz_kokoro.py` é a fonte padrão;
 `NINA_VOICE_ENGINE=thalita` ou `voice_engine` no roteiro são opções explícitas
 de reversão. A narração continua passando pelo master de áudio e o Rhubarb.
@@ -160,3 +160,7 @@ também utiliza o novo estilo nos quadros locais de reserva.
 
 O movimento e feito na camera sobre ilustracoes 2D, nao e
 animacao independente de braços/pernas dos personagens secundarios.
+
+## Clareza da narração (06/11/2026)
+
+O estúdio usa a mesma voz Kokoro Dora (`pf_dora`), com velocidade padrão **0.94** e pausas entre cenas de **0,36 s**. O roteiro prevalece sobre a meta de duração: episódios não recebem parágrafos de enchimento apenas para chegar a três minutos. A revisão conservadora em `motor/revisar_historias.py` remove repetições, mantém fatos e desfechos, exige dez cenas para o banco SiliconFlow e sinaliza casos que precisam de edição humana. O job de abastecimento aplica a revisão aos episódios completos armazenados antes de recompilar os dez prompts de cada roteiro; os vídeos já publicados não entram novamente na fila.

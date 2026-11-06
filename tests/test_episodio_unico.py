@@ -64,10 +64,12 @@ class EpisodioUnicoTest(unittest.TestCase):
             ep = json.loads((base / "ep112.json").read_text(encoding="utf-8"))
             self.assertEqual(ep["parte"], "unica")
 
-    def test_roteiro_curto_ganha_passagens_de_ligacao(self):
+    def test_roteiro_curto_nao_ganha_enchimento_generico(self):
         ep = consolidar(self.p1, self.p2)
-        palavras = sum(len(b["fala"].split()) for b in ep["batidas"])
-        self.assertGreaterEqual(palavras, 380)
+        narracao = " ".join(b["fala"] for b in ep["batidas"])
+        self.assertNotIn("O curioso é como os detalhes", narracao)
+        self.assertIn("guardada por engano", narracao)
+        self.assertIn("esclareceram o mal-entendido", narracao)
 
 
 if __name__ == "__main__":

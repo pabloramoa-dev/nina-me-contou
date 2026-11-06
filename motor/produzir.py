@@ -21,7 +21,7 @@ import argparse, json, os, shutil, subprocess, sys
 
 MOTOR = os.path.dirname(os.path.abspath(__file__))
 RAIZ = os.path.dirname(MOTOR)
-VOZ, RATE, GAP = "pt-BR-ThalitaNeural", "-6%", 0.25
+VOZ, RATE, GAP = "pt-BR-ThalitaNeural", "-6%", 0.36
 # Master da voz: motor/audio_fx.py (Spotify Pedalboard; cai no ffmpeg se faltar)
 
 
@@ -58,7 +58,7 @@ def main():
     ep["voice_engine"] = str(ep.get("voice_engine") or os.environ.get("NINA_VOICE_ENGINE", "kokoro")).lower()
     if ep["voice_engine"] == "kokoro":
         ep.setdefault("kokoro_voice", os.environ.get("NINA_KOKORO_VOICE", "pf_dora"))
-        ep.setdefault("kokoro_speed", float(os.environ.get("NINA_KOKORO_SPEED", "1.02")))
+        ep["kokoro_speed"] = float(os.environ.get("NINA_KOKORO_SPEED", "0.94"))
     ep["_render_version"] = versao()
     usa_hf = os.environ.get("NINA_MOTOR", "hyperframes") == "hyperframes"
     pasta = os.path.join(RAIZ, "saida", ep["id"])
@@ -97,7 +97,7 @@ def main():
                 print("::warning::Thalita indisponível; usando Kokoro pf_dora como fallback local.", flush=True)
                 sh([sys.executable, os.path.join(MOTOR, "gerar_voz_kokoro.py"), P("roteiro.txt"),
                     "--voz", os.environ.get("NINA_KOKORO_FALLBACK_VOICE", "pf_dora"),
-                    "--speed", os.environ.get("NINA_KOKORO_FALLBACK_SPEED", "1.02"),
+                    "--speed", os.environ.get("NINA_KOKORO_FALLBACK_SPEED", "0.94"),
                     "--gap", str(GAP), "--out", P("bruta.wav"), "--seg-json", P("segs.json")])
                 with open(P("voz_fallback.json"), "w", encoding="utf-8") as f:
                     json.dump({"motor":"kokoro","voz":os.environ.get("NINA_KOKORO_FALLBACK_VOICE","pf_dora"),
