@@ -455,14 +455,9 @@
     "entregue_em": "2026-11-06T23:37:44Z"
   },
   "ep122": {
-    "hash": "1d5952ba8ef871cf65081012887665f44441d24371a8d5444686a9802ad4e9d1",
-    "status": "complete",
-    "telegram_message_id": 83,
-    "file_id": "BQACAgEAAxkDAANTauzHROPmFpUw4g0xIKS8dCaqQAkAArELAAK9sGFHOhkS6d-lA0o9BA",
-    "file_size": 36869413,
-    "comprimido": true,
-    "description_message_id": 84,
-    "entregue_em": "2026-11-05T18:13:29Z"
+    "hash": "6c229e4d069fa2cb8bffdf36d27c88ee3d929a4db60d15d060a5ea34b2dd0661",
+    "status": "sending_video",
+    "tentativas_incertas": 0
   },
   "ep123": {
     "hash": "3a0f227b57e249df22aa9425e351725183d308d9897b38d48b0061ed08645092",
