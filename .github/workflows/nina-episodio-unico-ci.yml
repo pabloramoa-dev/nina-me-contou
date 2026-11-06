@@ -45,6 +45,7 @@ jobs:
           python -m unittest discover -s tests -p test_episodio_unico.py -v
       - name: Verificar seleção da fila
         run: |
+          python -m pip install -q requests pillow
           python motor/gerar_roteiros.py --alvo 60
           python motor/pendentes.py --rel --alvo-prontos 8 --limite 8 > /tmp/nina_selecao.txt
           cat /tmp/nina_selecao.txt
