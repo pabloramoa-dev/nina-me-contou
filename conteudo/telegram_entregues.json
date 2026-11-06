@@ -506,8 +506,12 @@
   },
   "ep125": {
     "hash": "443eaabc6cbeeb6bab321ea292c3ee3c04f40b8970a03f5bd6108a402eb947bb",
-    "status": "sending_video",
-    "tentativas_incertas": 0
+    "status": "video_sent",
+    "tentativas_incertas": 0,
+    "telegram_message_id": 107,
+    "file_id": "BQACAgEAAxkDAANrau5k9E07b8LYw-i6ZIF5PdgJoyQAAoAIAAIW-3lHJLZn6t9YV1A9BA",
+    "file_size": 27199293,
+    "comprimido": false
   },
   "ep126": {
     "hash": "e355914d2dec38307e2ba89df6789c9339889ce916cdae8b441e42446f175a3f",
