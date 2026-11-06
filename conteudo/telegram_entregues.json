@@ -526,7 +526,11 @@
   },
   "ep127": {
     "hash": "e79ff29d03c5db8738c10811c064f01eeb85dc16fd72dcb57618848b8a213888",
-    "status": "sending_video",
-    "tentativas_incertas": 0
+    "status": "video_sent",
+    "tentativas_incertas": 0,
+    "telegram_message_id": 97,
+    "file_id": "BQACAgEAAxkDAANhau5TMQtFZ9tK9dYvVsPTEYKUVtYAAl4IAAIW-3lHPq8kdQKGIQc9BA",
+    "file_size": 37354607,
+    "comprimido": true
   }
 }
