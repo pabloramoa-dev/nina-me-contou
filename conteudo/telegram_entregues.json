@@ -496,7 +496,7 @@
   },
   "ep187": {
     "hash": "dfc265e5edf4da8591a102283207edcf548214b50bc36ff6453dadb1d76f6023",
-    "status": "video_sent",
+    "status": "sending_description",
     "tentativas_incertas": 0,
     "telegram_message_id": 113,
     "file_id": "BQACAgEAAxkDAANxau5lRS_bajyEzaGdEvuhTihtAuYAAoMIAAIW-3lHXEY91ClEN1E9BA",
