@@ -526,7 +526,7 @@
   },
   "ep127": {
     "hash": "746eab404d5f37dec694ef140eb900bd621c81abbb74601daa79061001612778",
-    "status": "video_sent",
+    "status": "sending_description",
     "tentativas_incertas": 0,
     "telegram_message_id": 111,
     "file_id": "BQACAgEAAxkDAANvau5lDMtNxVa3S7nbUu2BzXNJaeUAAoIIAAIW-3lHUcCHJVyNxLM9BA",
