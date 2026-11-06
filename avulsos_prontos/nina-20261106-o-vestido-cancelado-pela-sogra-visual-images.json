@@ -1,0 +1,201 @@
+{
+  "config": {
+    "auto_visual_images": true,
+    "hide_inner_caption_when_image": true,
+    "bottom_caption_only": true,
+    "min_images": 10,
+    "max_images": 10,
+    "target_images": 10,
+    "image_model": "black-forest-labs/FLUX.1-schnell",
+    "image_quality": "medium",
+    "image_size": "768x512",
+    "image_background": "opaque",
+    "image_timeout_seconds": 180,
+    "image_retries": 2,
+    "fallback": "story_frame_text",
+    "image_provider": "siliconflow"
+  },
+  "requested": 10,
+  "ready": 10,
+  "fallbacks": 0,
+  "storyboard": {
+    "modo": "banco_historias",
+    "cenas": 10,
+    "versao": "nina-storyboard-20261102-v3-ficha-curta",
+    "provedor": "banco_local",
+    "modelo": null
+  },
+  "scenes": [
+    {
+      "scene": 0,
+      "beats": [
+        0
+      ],
+      "start": 0.0,
+      "end": 12.413,
+      "text": "Camila foi buscar seu vestido de noiva. Mas a loja avisou que a encomenda tinha sido cancelada. O casamento seria em dez dias. E o nome de quem pediu o cancelamento deixou Camila sem acreditar.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Camila: mulher adulta brasileira de 29 anos, pele morena clara, cabelo castanho cacheado na altura dos ombros, blusa coral e calça bege; no casamento usa vestido branco simples. Daniel: homem adulto de 31 anos, cabelo preto curto e camisa azul; no casamento usa terno azul. Sônia: senhora adulta de 58 anos, cabelo grisalho curto, óculos e blusa verde. Atendente e costureira: mulheres adultas da boutique, em roupas profissionais discretas. Boutique aconchegante e apartamento simples; casamento pequeno em salão claro.\nCENA ATUAL 1/10: Camila foi buscar seu. Na boutique de vestidos de noiva, Camila ouve a notícia do pedido cancelado enquanto olha o cabide vazio atrás do balcão. Enquadramento plano geral; arte 2D de revista, luz natural, gestos e expressões coerentes, sem qualquer texto ou letras.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): Camila foi buscar seu\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "banco_historias",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "29ce2eeb3676e521ecff0caf254c49633c1cafdf12f0125f16638a6e3fc0f638",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-00.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 1,
+      "beats": [
+        1
+      ],
+      "start": 12.413,
+      "end": 26.128,
+      "text": "Camila e Daniel planejavam uma cerimônia pequena, só com parentes próximos. Eles juntaram dinheiro durante um ano. Dona Sônia, mãe de Daniel, ofereceu pagar o sinal do vestido como presente. Camila aceitou, agradecida.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Camila: mulher adulta brasileira de 29 anos, pele morena clara, cabelo castanho cacheado na altura dos ombros, blusa coral e calça bege; no casamento usa vestido branco simples. Daniel: homem adulto de 31 anos, cabelo preto curto e camisa azul; no casamento usa terno azul. Sônia: senhora adulta de 58 anos, cabelo grisalho curto, óculos e blusa verde. Atendente e costureira: mulheres adultas da boutique, em roupas profissionais discretas. Boutique aconchegante e apartamento simples; casamento pequeno em salão claro.\nCENA ATUAL 2/10: Camila e Daniel planejavam. No apartamento simples do casal, Camila e Daniel conversam animados sobre a festa pequena, enquanto Sônia entrega a Camila um envelope com o sinal do vestido. Enquadramento plano médio; arte 2D de revista, luz natural, gestos e expressões coerentes, sem qualquer texto ou letras.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): Camila e Daniel planejavam\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "banco_historias",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "3ae99f6a0f8d72422749549fe38c006a75dcc8d7070e0affcd43ddcece708ac2",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-01.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 2,
+      "beats": [
+        2
+      ],
+      "start": 26.128,
+      "end": 38.755,
+      "text": "Sônia sonhava com uma festa enorme, mas o casal preferia algo simples. Ela insistia em mudar o salão e aumentar a lista de convidados. Camila sempre respondia com carinho: a decisão já estava tomada.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Camila: mulher adulta brasileira de 29 anos, pele morena clara, cabelo castanho cacheado na altura dos ombros, blusa coral e calça bege; no casamento usa vestido branco simples. Daniel: homem adulto de 31 anos, cabelo preto curto e camisa azul; no casamento usa terno azul. Sônia: senhora adulta de 58 anos, cabelo grisalho curto, óculos e blusa verde. Atendente e costureira: mulheres adultas da boutique, em roupas profissionais discretas. Boutique aconchegante e apartamento simples; casamento pequeno em salão claro.\nCENA ATUAL 3/10: Sônia sonhava com uma. Na sala de casa, Sônia aponta para um catálogo de festas grandes, enquanto Camila e Daniel demonstram preferência pela celebração simples. Enquadramento plano conjunto; arte 2D de revista, luz natural, gestos e expressões coerentes, sem qualquer texto ou letras.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): Sônia sonhava com uma\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "banco_historias",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "af38fcb9830479741c41260e7e6d40eb25b80e10580f795e970ecd7792f47938",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-02.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 3,
+      "beats": [
+        3
+      ],
+      "start": 38.755,
+      "end": 51.893,
+      "text": "Numa terça-feira, Camila chegou à loja para a última prova. A atendente procurou o pedido no computador e explicou: o sinal tinha sido devolvido. A própria Dona Sônia solicitou o cancelamento dois dias antes.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Camila: mulher adulta brasileira de 29 anos, pele morena clara, cabelo castanho cacheado na altura dos ombros, blusa coral e calça bege; no casamento usa vestido branco simples. Daniel: homem adulto de 31 anos, cabelo preto curto e camisa azul; no casamento usa terno azul. Sônia: senhora adulta de 58 anos, cabelo grisalho curto, óculos e blusa verde. Atendente e costureira: mulheres adultas da boutique, em roupas profissionais discretas. Boutique aconchegante e apartamento simples; casamento pequeno em salão claro.\nCENA ATUAL 4/10: Numa terça-feira, Camila chegou. Na loja, a atendente consulta o computador e mostra a Camila que a reserva foi cancelada e o pagamento devolvido. Enquadramento plano sobre o ombro; arte 2D de revista, luz natural, gestos e expressões coerentes, sem qualquer texto ou letras.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): Numa terça-feira, Camila chegou\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "banco_historias",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "01bf68368d3d1ded7984d99f2cbf8b595fcd3a031071be8e1e8caec5d6c01263",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-03.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 4,
+      "beats": [
+        4
+      ],
+      "start": 51.893,
+      "end": 64.136,
+      "text": "Camila ligou para Sônia ainda na calçada. A sogra não negou. Disse que, sem o vestido, talvez os dois adiassem o casamento e aceitassem fazer a festa grande que ela queria. Camila ficou magoada.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Camila: mulher adulta brasileira de 29 anos, pele morena clara, cabelo castanho cacheado na altura dos ombros, blusa coral e calça bege; no casamento usa vestido branco simples. Daniel: homem adulto de 31 anos, cabelo preto curto e camisa azul; no casamento usa terno azul. Sônia: senhora adulta de 58 anos, cabelo grisalho curto, óculos e blusa verde. Atendente e costureira: mulheres adultas da boutique, em roupas profissionais discretas. Boutique aconchegante e apartamento simples; casamento pequeno em salão claro.\nCENA ATUAL 5/10: Camila ligou para Sônia. Camila está na calçada diante da boutique com o celular no ouvido, abatida ao ouvir Sônia, que aparece em casa atendendo à ligação. Enquadramento close no rosto; arte 2D de revista, luz natural, gestos e expressões coerentes, sem qualquer texto ou letras.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): Camila ligou para Sônia\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "banco_historias",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "215aef5b787cd49353c56bb0b31605b3c42e0ba2733b026ab90b367d9fcac3b7",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-04.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 5,
+      "beats": [
+        5
+      ],
+      "start": 64.136,
+      "end": 75.909,
+      "text": "Naquela noite, Camila contou tudo a Daniel. Ele telefonou para a mãe e explicou, com calma, que o dinheiro era um presente, não uma autorização para escolher por eles. Sônia desligou sem responder.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Camila: mulher adulta brasileira de 29 anos, pele morena clara, cabelo castanho cacheado na altura dos ombros, blusa coral e calça bege; no casamento usa vestido branco simples. Daniel: homem adulto de 31 anos, cabelo preto curto e camisa azul; no casamento usa terno azul. Sônia: senhora adulta de 58 anos, cabelo grisalho curto, óculos e blusa verde. Atendente e costureira: mulheres adultas da boutique, em roupas profissionais discretas. Boutique aconchegante e apartamento simples; casamento pequeno em salão claro.\nCENA ATUAL 6/10: Naquela noite, Camila contou. À noite, na cozinha do apartamento, Camila conta a Daniel o que aconteceu; ele segura o celular para ligar à mãe, com expressão séria. Enquadramento plano médio lateral; arte 2D de revista, luz natural, gestos e expressões coerentes, sem qualquer texto ou letras.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): Naquela noite, Camila contou\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "banco_historias",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "5ef6b16bfe4036d55c4e189000750f0316997346bb377c02b7fab66b9744d906",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-05.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 6,
+      "beats": [
+        6
+      ],
+      "start": 75.909,
+      "end": 90.264,
+      "text": "No dia seguinte, veio outra notícia ruim: o vestido original já tinha sido reservado para outra cliente. Camila quase chorou. Mas a costureira mostrou um modelo diferente, bonito e disponível, que poderia ajustar antes da cerimônia.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Camila: mulher adulta brasileira de 29 anos, pele morena clara, cabelo castanho cacheado na altura dos ombros, blusa coral e calça bege; no casamento usa vestido branco simples. Daniel: homem adulto de 31 anos, cabelo preto curto e camisa azul; no casamento usa terno azul. Sônia: senhora adulta de 58 anos, cabelo grisalho curto, óculos e blusa verde. Atendente e costureira: mulheres adultas da boutique, em roupas profissionais discretas. Boutique aconchegante e apartamento simples; casamento pequeno em salão claro.\nCENA ATUAL 7/10: No dia seguinte, veio. Na boutique, o cabide do vestido original está vazio; uma costureira apresenta a Camila um novo vestido branco simples e elegante. Enquadramento plano de detalhe; arte 2D de revista, luz natural, gestos e expressões coerentes, sem qualquer texto ou letras.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): No dia seguinte, veio\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "banco_historias",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "cb391522f2e9607dde7dcf755e1a33a51f5e557200fbe9797f24edea944b2e37",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-06.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 7,
+      "beats": [
+        7
+      ],
+      "start": 90.264,
+      "end": 104.619,
+      "text": "Camila e Daniel voltaram juntos à loja. Decidiram pagar o novo vestido com as próprias economias. A cerimônia continuaria na mesma data. Eles avisaram a Sônia que ela seria bem-vinda, desde que respeitasse as escolhas do casal.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Camila: mulher adulta brasileira de 29 anos, pele morena clara, cabelo castanho cacheado na altura dos ombros, blusa coral e calça bege; no casamento usa vestido branco simples. Daniel: homem adulto de 31 anos, cabelo preto curto e camisa azul; no casamento usa terno azul. Sônia: senhora adulta de 58 anos, cabelo grisalho curto, óculos e blusa verde. Atendente e costureira: mulheres adultas da boutique, em roupas profissionais discretas. Boutique aconchegante e apartamento simples; casamento pequeno em salão claro.\nCENA ATUAL 8/10: Camila e Daniel voltaram. De volta à loja, Camila e Daniel escolhem juntos o vestido alternativo e conversam frente ao espelho, confiantes na decisão. Enquadramento plano aberto com espelho; arte 2D de revista, luz natural, gestos e expressões coerentes, sem qualquer texto ou letras.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): Camila e Daniel voltaram\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "banco_historias",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "656dbd437141d13853e714f145c422e0193fe8829a059f921d17ec690c34c9c6",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-07.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 8,
+      "beats": [
+        8
+      ],
+      "start": 104.619,
+      "end": 119.336,
+      "text": "Dois dias depois, Sônia procurou Camila para pedir desculpas. Admitiu que tentou controlar uma decisão que não era dela. Camila aceitou conversar, mas deixou claro: dali em diante, nenhum presente poderia vir acompanhado de exigências.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Camila: mulher adulta brasileira de 29 anos, pele morena clara, cabelo castanho cacheado na altura dos ombros, blusa coral e calça bege; no casamento usa vestido branco simples. Daniel: homem adulto de 31 anos, cabelo preto curto e camisa azul; no casamento usa terno azul. Sônia: senhora adulta de 58 anos, cabelo grisalho curto, óculos e blusa verde. Atendente e costureira: mulheres adultas da boutique, em roupas profissionais discretas. Boutique aconchegante e apartamento simples; casamento pequeno em salão claro.\nCENA ATUAL 9/10: Dois dias depois, Sônia. Na varanda iluminada pela manhã, Sônia pede desculpas a Camila em uma conversa reservada; ambas demonstram emoções reais e respeito. Enquadramento close em duas personagens; arte 2D de revista, luz natural, gestos e expressões coerentes, sem qualquer texto ou letras.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): Dois dias depois, Sônia\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "banco_historias",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "0602f2d9489ae7070c48927c3407b6a7b701d7656885e97eb55a9f65bceb032b",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-08.png",
+      "image_provider": "siliconflow"
+    },
+    {
+      "scene": 9,
+      "beats": [
+        9,
+        10
+      ],
+      "start": 119.336,
+      "end": 137.443,
+      "text": "No dia do casamento, Camila entrou usando o vestido novo. Daniel se emocionou quando a viu. Sônia assistiu à cerimônia, sem interferir em nada. Depois, abraçou os dois. E você: teria mantido a data do casamento ou adiado tudo? Me segue pra não perder a próxima. Amanhã tem história nova.",
+      "prompt": "Ilustração editorial moderna em estilo revistinha digital, comic magazine, arte 2D colorida com contornos nítidos e arredondados, desenho de revista contemporânea, expressões marcantes e enquadramento cinematográfico simples. NÃO é fotografia nem anime realista. Cenário ilustrado completo, composição HORIZONTAL 3:2, assunto principal no centro com margens para corte seguro. Paleta alegre: coral, dourado, azul-petróleo, creme, harmonizada entre todas as cenas. Personagens fictícios adultos, traços e roupas constantes dentro do episódio; eles não são a apresentadora Nina. Evitar repetição de ícones genéricos. Não ilustrar atos sexuais, nudez, violência gráfica ou conteúdo explícito. Não incluir letras, legendas, títulos, números, balões, marcas, molduras ou logotipos. Imagem opaca, sem transparência, sem bordas de cartão. \nPERSONAGENS / AMBIENTES CONSISTENTES: Camila: mulher adulta brasileira de 29 anos, pele morena clara, cabelo castanho cacheado na altura dos ombros, blusa coral e calça bege; no casamento usa vestido branco simples. Daniel: homem adulto de 31 anos, cabelo preto curto e camisa azul; no casamento usa terno azul. Sônia: senhora adulta de 58 anos, cabelo grisalho curto, óculos e blusa verde. Atendente e costureira: mulheres adultas da boutique, em roupas profissionais discretas. Boutique aconchegante e apartamento simples; casamento pequeno em salão claro.\nCENA ATUAL 10/10: No dia do casamento,. No dia do casamento, Camila entra com o vestido alternativo, Daniel emocionado a espera no pequeno salão, e Sônia assiste discretamente com familiares. Enquadramento plano geral emotivo; arte 2D de revista, luz natural, gestos e expressões coerentes, sem qualquer texto ou letras.\nÂNCORA DO ROTEIRO (ilustrar este acontecimento): No dia do casamento,\nUma única cena, sem flashforward, sem colagens, sem palavras na imagem.",
+      "storyboard_mode": "banco_historias",
+      "storyboard_version": "nina-storyboard-20261102-v3-ficha-curta",
+      "request_hash": "a448db2010537da3cc78086a98bf0bc7134ffa1f6998b713e468b73de6c33d9a",
+      "status": "generated",
+      "mode": "story_frame_image",
+      "asset": "visual-scene-09.png",
+      "image_provider": "siliconflow"
+    }
+  ]
+}
