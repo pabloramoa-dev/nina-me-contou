@@ -516,12 +516,13 @@
   },
   "ep126": {
     "hash": "9359f28031d84566e2fc35ad9269f6589dc18dba1f2f7d28a9adf307c23da0ff",
-    "status": "sending_description",
-    "tentativas_incertas": 0,
+    "status": "complete",
     "telegram_message_id": 109,
     "file_id": "BQACAgEAAxkDAANtau5lAAGVaunU30D6Oj35nE_mJAtoAAKBCAACFvt5R7fTfojPwi_2PQQ",
     "file_size": 28416901,
-    "comprimido": false
+    "comprimido": false,
+    "description_message_id": 110,
+    "entregue_em": "2026-11-06T23:38:45Z"
   },
   "ep127": {
     "hash": "e79ff29d03c5db8738c10811c064f01eeb85dc16fd72dcb57618848b8a213888",
