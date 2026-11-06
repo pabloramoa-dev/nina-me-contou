@@ -1,15 +1,15 @@
 {
   "motor": "remotion",
-  "versao": "nina-hyperframes-13-prompts-banco-historias",
+  "versao": "nina-hyperframes-14-clareza-narracao",
   "fotos": 0,
-  "duracao": 188.13333333333333,
+  "duracao": 198.23333333333332,
   "resolucao": [
     1080,
     1920
   ],
   "fps": 30,
   "voz": "pf_dora",
-  "audio": "ffmpeg",
+  "audio": "pedalboard",
   "sfx": 78,
   "visual": "v4",
   "lip": "rhubarb",
@@ -32,12 +32,12 @@
   "versao_final": "nina-remotion-aprovado-legenda-inferior-v1",
   "legenda": "solta_sem_faixa_inferior",
   "estilo_cenas": "cinematic_2d",
-  "cenas_cinema_2d": 27,
+  "cenas_cinema_2d": 29,
   "intervalo_cinema_2d_segundos": 7,
   "siliconflow_confirmado": true,
   "siliconflow_provedor": "siliconflow",
   "siliconflow_modelo": "black-forest-labs/FLUX.1-schnell",
   "siliconflow_ilustracoes": 10,
-  "siliconflow_quadros": 27,
+  "siliconflow_quadros": 29,
   "siliconflow_quadros_locais": 0
 }
