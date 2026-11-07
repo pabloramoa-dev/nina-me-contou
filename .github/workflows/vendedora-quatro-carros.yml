@@ -1,0 +1,60 @@
+name: Vendedora - Quatro carros reais - base Manim Kokoro SEM PUBLICAR
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - piloto/nina-vendedora-preta-20261106
+    paths:
+      - 'pilotos/nina_vendedora/vitrine_4_carros.py'
+      - 'pilotos/nina_vendedora/roteiro_4_carros.txt'
+      - '.github/workflows/vendedora-quatro-carros.yml'
+permissions:
+  contents: read
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 80
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          sparse-checkout: |
+            pilotos/nina_vendedora
+            motor
+          sparse-checkout-cone-mode: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install Manim and Kokoro voice engine
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg espeak-ng pkg-config libcairo2-dev libpango1.0-dev fonts-dejavu-core
+          python -m pip install --disable-pip-version-check manim==0.20.1 kokoro-onnx soundfile numpy Pillow
+      - name: Narracao feminina Kokoro e lip sync
+        run: |
+          mkdir -p out
+          python motor/gerar_voz_kokoro.py pilotos/nina_vendedora/roteiro_4_carros.txt --voz pf_dora --speed 0.95 --gap 0.25 --out out/narracao.wav --seg-json out/segs.json
+          python motor/lipsync_amplitude.py out/narracao.wav out/lip.json 24
+      - name: Manim character animation and green photo slots
+        env:
+          PASTA_VENDEDORA: out
+        run: |
+          manim -ql -r 720,1280 --fps 24 --media_dir media -o vendedora_base_4_carros.mp4 pilotos/nina_vendedora/vitrine_4_carros.py Vitrine4Carros
+          find media -type f -name 'vendedora_base_4_carros.mp4' -exec cp {} out/sem_audio.mp4 \;
+          test -s out/sem_audio.mp4
+      - name: Mux Kokoro and validate
+        run: |
+          ffmpeg -y -v error -i out/sem_audio.mp4 -i out/narracao.wav -map 0:v:0 -map 1:a:0 -c:v copy -c:a aac -b:a 160k -af apad -shortest -movflags +faststart out/vendedora_base_4_carros.mp4
+          test -s out/vendedora_base_4_carros.mp4
+          ffprobe -v error -show_entries stream=codec_type,width,height -of json out/vendedora_base_4_carros.mp4
+          ffmpeg -v error -i out/vendedora_base_4_carros.mp4 -f null -
+      - name: Artifact for local montage with user photos, no publication
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: vendedora-base-quatro-carros-manim-kokoro
+          path: |
+            out/vendedora_base_4_carros.mp4
+            out/narracao.wav
+            out/segs.json
+          retention-days: 7
