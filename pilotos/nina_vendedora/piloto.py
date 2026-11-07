@@ -198,7 +198,6 @@ class VendedoraCarros(Scene):
         preco=tarjeta("VALOR DE EXEMPLO",largura=3.55,altura=1.02,
                       fundo=OURO,cor=MARINHO_ESCURO,tam=22).move_to([1.89,-2.52,0])
         self.add(ano,km,preco)
-        self.add(texto("DADOS DE DEMONSTRAÇÃO",15,CARMIM).move_to([1.89,-3.31,0]))
 
         # Identificação discreta, sem tarja atravessando o corpo.
         self.add(tarjeta("A VENDEDORA",largura=2.55,altura=.57,
