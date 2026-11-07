@@ -108,7 +108,7 @@ def produto_arte(d):
     label.move_to([0,.28,0])
     g.add(label)
     if g.height>3.70:g.scale_to_fit_height(3.70)
-    return g.move_to([-1.65,2.85,0])
+    return g.move_to([-1.65,2.32,0])
 
 def legenda(fala):
     words=fala.split();lines=[];buf=""
