@@ -1,0 +1,72 @@
+name: Nina Vendedora - Piloto Supermercado 10 Ofertas - SEM PUBLICAR
+on:
+  workflow_dispatch:
+  push:
+    branches: [piloto/nina-vendedora-mercado-20261107]
+    paths:
+      - 'pilotos/nina_vendedora_supermercado/**'
+      - '.github/workflows/nina-vendedora-supermercado.yml'
+permissions:
+  contents: read
+jobs:
+  renderizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 100
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          sparse-checkout: |
+            motor
+            pilotos/nina_vendedora_supermercado
+          sparse-checkout-cone-mode: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verificar dados e sintaxe
+        run: |
+          python -m py_compile pilotos/nina_vendedora_supermercado/piloto.py
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path('pilotos/nina_vendedora_supermercado/itens.json').read_text())
+          falas=[x for x in Path('pilotos/nina_vendedora_supermercado/roteiro.txt').read_text().splitlines() if x.strip()]
+          assert len(d)==10 and len(falas)==12
+          assert all(i['preco'].startswith('R$ ') for i in d)
+          print('Validado: 10 itens, 12 falas e preços ilustrativos.')
+          PY
+      - name: Instalar Manim e voz neural Kokoro
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg espeak-ng pkg-config libcairo2-dev libpango1.0-dev fonts-dejavu-core
+          python -m pip install --disable-pip-version-check manim==0.20.1 kokoro-onnx soundfile numpy Pillow
+      - name: Narracao da Nina Vendedora e labios sincronizados
+        run: |
+          mkdir -p out
+          python motor/gerar_voz_kokoro.py pilotos/nina_vendedora_supermercado/roteiro.txt --voz pf_dora --speed 0.98 --gap 0.27 --out out/narracao.wav --seg-json out/segs.json
+          python motor/lipsync_amplitude.py out/narracao.wav out/lip.json 24
+      - name: Animar Nina em Manim
+        env:
+          PASTA_SUPERMERCADO: out
+        run: |
+          manim -ql -r 720,1280 --fps 24 --media_dir media -o nina_supermercado_sem_audio.mp4 pilotos/nina_vendedora_supermercado/piloto.py Supermercado
+          find media -type f -name 'nina_supermercado_sem_audio.mp4' -exec cp {} out/sem_audio.mp4 \;
+          test -s out/sem_audio.mp4
+      - name: Inserir audio e verificar MP4
+        run: |
+          ffmpeg -y -v error -i out/sem_audio.mp4 -i out/narracao.wav -map 0:v:0 -map 1:a:0 -c:v copy -c:a aac -b:a 160k -af apad -shortest -movflags +faststart out/Nina_Vendedora_10_Ofertas.mp4
+          test -s out/Nina_Vendedora_10_Ofertas.mp4
+          ffprobe -v error -show_entries format=duration,size -show_entries stream=codec_type,width,height -of json out/Nina_Vendedora_10_Ofertas.mp4
+          ffmpeg -v error -i out/Nina_Vendedora_10_Ofertas.mp4 -f null -
+          ffmpeg -y -v error -ss 12 -i out/Nina_Vendedora_10_Ofertas.mp4 -frames:v 1 out/capa.jpg
+      - name: Entregar o MP4 como artifact (sem publicacao)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Nina-Vendedora-10-Ofertas-Manim-Kokoro
+          path: |
+            out/Nina_Vendedora_10_Ofertas.mp4
+            out/capa.jpg
+            out/narracao.wav
+            out/segs.json
+          retention-days: 7

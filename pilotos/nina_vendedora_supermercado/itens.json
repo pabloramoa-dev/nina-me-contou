@@ -1,0 +1,82 @@
+[
+  {
+    "nome": "ARROZ BRANCO",
+    "unidade": "PACOTE 5 KG",
+    "preco": "R$ 22,90",
+    "tipo": "saco",
+    "cor": "#eac750",
+    "rotulo": "ARROZ"
+  },
+  {
+    "nome": "FEIJÃO CARIOCA",
+    "unidade": "PACOTE 1 KG",
+    "preco": "R$ 6,49",
+    "tipo": "saco",
+    "cor": "#a65e3c",
+    "rotulo": "FEIJÃO"
+  },
+  {
+    "nome": "ÓLEO DE SOJA",
+    "unidade": "GARRAFA 900 ML",
+    "preco": "R$ 5,99",
+    "tipo": "garrafa",
+    "cor": "#e5c53f",
+    "rotulo": "ÓLEO"
+  },
+  {
+    "nome": "LEITE INTEGRAL",
+    "unidade": "CAIXA 1 L",
+    "preco": "R$ 4,29",
+    "tipo": "caixa",
+    "cor": "#5e9dd2",
+    "rotulo": "LEITE"
+  },
+  {
+    "nome": "CAFÉ TORRADO",
+    "unidade": "PACOTE 500 G",
+    "preco": "R$ 19,90",
+    "tipo": "saco",
+    "cor": "#713c34",
+    "rotulo": "CAFÉ"
+  },
+  {
+    "nome": "AÇÚCAR CRISTAL",
+    "unidade": "PACOTE 5 KG",
+    "preco": "R$ 15,90",
+    "tipo": "saco",
+    "cor": "#5b9cca",
+    "rotulo": "AÇÚCAR"
+  },
+  {
+    "nome": "MACARRÃO ESPAGUETE",
+    "unidade": "PACOTE 500 G",
+    "preco": "R$ 3,49",
+    "tipo": "macarrao",
+    "cor": "#db804b",
+    "rotulo": "MASSA"
+  },
+  {
+    "nome": "DETERGENTE NEUTRO",
+    "unidade": "FRASCO 500 ML",
+    "preco": "R$ 2,19",
+    "tipo": "garrafa",
+    "cor": "#5bb9aa",
+    "rotulo": "LIMPEZA"
+  },
+  {
+    "nome": "SABÃO EM PÓ",
+    "unidade": "PACOTE 800 G",
+    "preco": "R$ 9,90",
+    "tipo": "caixa",
+    "cor": "#5486d2",
+    "rotulo": "SABÃO"
+  },
+  {
+    "nome": "PAPEL HIGIÊNICO",
+    "unidade": "PACOTE 12 ROLOS",
+    "preco": "R$ 15,90",
+    "tipo": "rolos",
+    "cor": "#8cb9e7",
+    "rotulo": "PAPEL"
+  }
+]
