@@ -533,5 +533,10 @@
     "comprimido": false,
     "description_message_id": 112,
     "entregue_em": "2026-11-06T23:38:57Z"
+  },
+  "ep128": {
+    "hash": "0d80853fe173e2b860e774ba07f7bfff940cb7500b45823002f31dd86cbbd75c",
+    "status": "sending_video",
+    "tentativas_incertas": 0
   }
 }
