@@ -1,4 +1,4 @@
-name: Piloto Nina vendedora - Manim + Kokoro (SEM PUBLICAR)
+name: Vendedora - Manim + Kokoro - piloto (SEM PUBLICAR)
 on:
   workflow_dispatch:
   push:
@@ -7,10 +7,8 @@ on:
     paths:
       - 'pilotos/nina_vendedora/**'
       - '.github/workflows/piloto-nina-vendedora.yml'
-
 permissions:
   contents: read
-
 jobs:
   renderizar:
     runs-on: ubuntu-latest
@@ -26,37 +24,36 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Preparar ambiente Manim e sintetizador Kokoro
+      - name: Preparar Manim e Kokoro
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg espeak-ng pkg-config libcairo2-dev libpango1.0-dev fonts-dejavu-core
           python -m pip install --disable-pip-version-check manim==0.20.1 kokoro-onnx soundfile numpy Pillow
-      - name: Voz feminina Kokoro pf_dora (sem voz robótica)
+      - name: Gerar locucao feminina Kokoro
         run: |
           mkdir -p out
           python motor/gerar_voz_kokoro.py pilotos/nina_vendedora/roteiro.txt --voz pf_dora --speed 0.95 --gap 0.25 --out out/narracao.wav --seg-json out/segs.json
           python motor/lipsync_amplitude.py out/narracao.wav out/lip.json 24
-      - name: Manim - Nina original com cabelo preto, gestos e painel de veículos
+      - name: Renderizar Vendedora vetorial no estudio claro
         env:
           PASTA_VENDEDORA: out
         run: |
-          manim -ql -r 720,1280 --fps 24 --media_dir media -o piloto_nina_vendedora.mp4 pilotos/nina_vendedora/piloto.py VendedoraCarros
-          find media -type f -name 'piloto_nina_vendedora.mp4' -print
-          find media -type f -name 'piloto_nina_vendedora.mp4' -exec cp {} out/sem_audio.mp4 \;
+          manim -ql -r 720,1280 --fps 24 --media_dir media -o vendedora_estudio_claro.mp4 pilotos/nina_vendedora/piloto.py VendedoraCarros
+          find media -type f -name 'vendedora_estudio_claro.mp4' -exec cp {} out/sem_audio.mp4 \;
           test -s out/sem_audio.mp4
-      - name: Sincronizar narração do Kokoro e validar vídeo
+      - name: Sincronizar audio Kokoro e validar MP4
         run: |
-          ffmpeg -y -v error -i out/sem_audio.mp4 -i out/narracao.wav -map 0:v:0 -map 1:a:0 -c:v copy -c:a aac -b:a 160k -af apad -shortest -movflags +faststart out/nina_vendedora_piloto.mp4
-          test -s out/nina_vendedora_piloto.mp4
-          ffprobe -v error -show_entries stream=codec_type,width,height -of json out/nina_vendedora_piloto.mp4
-          ffmpeg -v error -i out/nina_vendedora_piloto.mp4 -f null -
-      - name: Entregar apenas artefato (nunca publicar no Instagram)
+          ffmpeg -y -v error -i out/sem_audio.mp4 -i out/narracao.wav -map 0:v:0 -map 1:a:0 -c:v copy -c:a aac -b:a 160k -af apad -shortest -movflags +faststart out/vendedora_estudio_claro.mp4
+          test -s out/vendedora_estudio_claro.mp4
+          ffprobe -v error -show_entries stream=codec_type,width,height -of json out/vendedora_estudio_claro.mp4
+          ffmpeg -v error -i out/vendedora_estudio_claro.mp4 -f null -
+      - name: Anexar apenas resultado, SEM publicar
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: nina-vendedora-manim-kokoro-piloto
+          name: vendedora-estudio-claro-manim-kokoro
           path: |
-            out/nina_vendedora_piloto.mp4
+            out/vendedora_estudio_claro.mp4
             out/narracao.wav
             out/segs.json
             out/lip.json
