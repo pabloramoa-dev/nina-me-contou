@@ -38,7 +38,7 @@ LIP=json.loads((P/"lip.json").read_text(encoding="utf-8"))
 NOMES=["RENAULT KWID BRANCO","RENAULT KWID BRANCO","JEEP COMPASS PRETO",
        "HONDA HR-V VINHO","CHEVROLET TRACKER","QUATRO CARROS • UMA VITRINE"]
 
-DADOS=[null,{"ano":"2022","motor":"1.0 FLEX","cambio":"MANUAL","km":"39 MIL","preco":"R$ 43.900"},{"ano":"2017","motor":"2.0 FLEX","cambio":"AUTOM.","km":"82 MIL","preco":"R$ 87.900"},{"ano":"2019","motor":"1.8 FLEX","cambio":"CVT","km":"63 MIL","preco":"R$ 92.900"},{"ano":"2024","motor":"1.0 TURBO","cambio":"AUTOM.","km":"24 MIL","preco":"R$ 116.900"}]
+DADOS=[None,{"ano":"2022","motor":"1.0 FLEX","cambio":"MANUAL","km":"39 MIL","preco":"R$ 43.900"},{"ano":"2017","motor":"2.0 FLEX","cambio":"AUTOM.","km":"82 MIL","preco":"R$ 87.900"},{"ano":"2019","motor":"1.8 FLEX","cambio":"CVT","km":"63 MIL","preco":"R$ 92.900"},{"ano":"2024","motor":"1.0 TURBO","cambio":"AUTOM.","km":"24 MIL","preco":"R$ 116.900"}]
 
 def txt(s,size=25,color=TINTA):
     return Text(s,font="DejaVu Sans",weight=BOLD,font_size=size,color=color)
