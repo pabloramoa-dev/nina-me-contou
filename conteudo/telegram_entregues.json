@@ -546,11 +546,12 @@
   },
   "ep129": {
     "hash": "fb07d5076f96d142872fdb413ef2c1db58fd9346e10c7e9ba74e8160cd719b4e",
-    "status": "sending_description",
-    "tentativas_incertas": 0,
+    "status": "complete",
     "telegram_message_id": 117,
     "file_id": "BQACAgEAAxkDAAN1au-Pw32n7vS8wH_8MASpQ3RMrT0AAkcIAAIW-4FHUgABasx0nHaxPQQ",
     "file_size": 25609728,
-    "comprimido": false
+    "comprimido": false,
+    "description_message_id": 118,
+    "entregue_em": "2026-11-07T20:53:27Z"
   }
 }
