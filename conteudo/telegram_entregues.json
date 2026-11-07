@@ -543,5 +543,10 @@
     "comprimido": false,
     "description_message_id": 116,
     "entregue_em": "2026-11-07T02:44:59Z"
+  },
+  "ep129": {
+    "hash": "fb07d5076f96d142872fdb413ef2c1db58fd9346e10c7e9ba74e8160cd719b4e",
+    "status": "sending_video",
+    "tentativas_incertas": 0
   }
 }
