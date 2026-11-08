@@ -566,7 +566,11 @@
   },
   "ep131": {
     "hash": "ccf40309dcb56f5285a7889f669ff7add2ba5e156c55ae3527005da62d18b243",
-    "status": "sending_video",
-    "tentativas_incertas": 0
+    "status": "video_sent",
+    "tentativas_incertas": 0,
+    "telegram_message_id": 121,
+    "file_id": "BQACAgEAAxkDAAN5au_f-32KHte8f5JwdvWXJzrjtI8AAiQHAAJ0GoFHbDQVcCrk7kQ9BA",
+    "file_size": 27945699,
+    "comprimido": false
   }
 }
