@@ -556,7 +556,11 @@
   },
   "ep130": {
     "hash": "24bd44a4c61cb4fbcb9f002c22c1485d7d485584a71e9d9e84f41cec2ac560e8",
-    "status": "sending_video",
-    "tentativas_incertas": 0
+    "status": "video_sent",
+    "tentativas_incertas": 0,
+    "telegram_message_id": 119,
+    "file_id": "BQACAgEAAxkDAAN3au_f8mc1QVbZsAAB5aJCBr2vpYhcAAIjBwACdBqBR61oDu3-a9nwPQQ",
+    "file_size": 27757677,
+    "comprimido": false
   }
 }
