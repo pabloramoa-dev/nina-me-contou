@@ -576,7 +576,7 @@
   },
   "ep132": {
     "hash": "44230a0d2ea661ac7edc43b32dca9ad2b862d6b19f3b7e4c272df568dba12760",
-    "status": "video_sent",
+    "status": "sending_description",
     "tentativas_incertas": 0,
     "telegram_message_id": 123,
     "file_id": "BQACAgEAAxkDAAN7au_gBHJ9idJdM-2U-ODWkvZxzxgAAiUHAAJ0GoFH7UBNUPqZqQ49BA",
