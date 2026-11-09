@@ -606,7 +606,11 @@
   },
   "ep135": {
     "hash": "b64eab3b97489149e501ed50ca8670fd6739e256507ad15786ec5398ca32f3c9",
-    "status": "sending_video",
-    "tentativas_incertas": 0
+    "status": "video_sent",
+    "tentativas_incertas": 0,
+    "telegram_message_id": 129,
+    "file_id": "BQACAgEAAxkDAAOBavEuYNuUBhfsWkRyVNj5kiWUShUAApoIAAJ0GolHt750KMvv0E89BA",
+    "file_size": 29744327,
+    "comprimido": false
   }
 }
