@@ -596,11 +596,12 @@
   },
   "ep134": {
     "hash": "c526b704d480ee7a1e6972a241ed38d1de50fa547afa8d48202ca05be944f266",
-    "status": "sending_description",
-    "tentativas_incertas": 0,
+    "status": "complete",
     "telegram_message_id": 127,
     "file_id": "BQACAgEAAxkDAAN_avEuVnGqSSAqlMv1TotsbaUkr08AApkIAAJ0GolHpNySsAt0mZk9BA",
     "file_size": 30392771,
-    "comprimido": false
+    "comprimido": false,
+    "description_message_id": 128,
+    "entregue_em": "2026-11-09T02:22:18Z"
   }
 }
