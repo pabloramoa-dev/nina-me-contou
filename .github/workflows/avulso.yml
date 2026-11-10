@@ -14,9 +14,9 @@ on:
 
 concurrency:
   group: nina-avulso-v3
-  # Cada execução lista TODOS os avulsos ainda sem saída válida. Se uma versão
-  # mais nova do motor chega, cancela a antiga e reprocessa o conjunto pendente.
-  cancel-in-progress: true
+  # Evitar que um novo roteiro cancele o vídeo avulso já em produção.
+  # Novas execuções aguardam a anterior terminar para preservar o MP4.
+  cancel-in-progress: false
 
 permissions:
   contents: write
