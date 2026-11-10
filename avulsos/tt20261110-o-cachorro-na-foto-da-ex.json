@@ -1,0 +1,159 @@
+{
+  "id": "tt20261110-o-cachorro-na-foto-da-ex",
+  "avulso": true,
+  "parte": "unica",
+  "titulo": "O CACHORRO NA FOTO DA EX",
+  "temporada": "Nina Me Contou — episódio avulso completo",
+  "cenario": "tarde",
+  "visual_style": "cinematic_2d",
+  "voice_engine": "kokoro",
+  "kokoro_voice": "pf_dora",
+  "kokoro_speed": 0.94,
+  "visual_images": {
+    "auto_visual_images": true,
+    "hide_inner_caption_when_image": true,
+    "bottom_caption_only": true,
+    "min_images": 10,
+    "max_images": 10,
+    "target_images": 10,
+    "image_provider": "siliconflow",
+    "image_model": "black-forest-labs/FLUX.1-schnell",
+    "fallback": "story_frame_text"
+  },
+  "batidas": [
+    {
+      "fala": "A mentira de Marcelo não apareceu numa mensagem romântica. Apareceu numa foto de cachorro. Júlia estava passando pelos stories quando viu Nino, o vira-lata que ela e o marido tinham adotado, deitado num sofá desconhecido. A foto era da Laura, ex-namorada de Marcelo. E a coleira vermelha não deixava dúvida.",
+      "expr": "chocada",
+      "zoom": true,
+      "foto": false
+    },
+    {
+      "fala": "Pra entender, Júlia e Marcelo estavam casados havia quatro anos. Os dois trabalhavam fora e combinavam que, nas quintas-feiras, Marcelo levaria Nino para uma creche de animais. Ele sempre voltava dizendo que o cachorro tinha brincado o dia inteiro. Júlia nunca imaginou que aquele detalhe pudesse esconder outra história.",
+      "expr": "neutra",
+      "zoom": false,
+      "foto": false
+    },
+    {
+      "fala": "Na foto de Laura, Nino dormia perto de uma manta azul. Júlia reconheceu até o pingente torto em formato de osso, que ela mesma colocara na coleira. Primeiro pensou que fosse uma foto antiga. Mas a manta era nova, e a publicação tinha acabado de aparecer naquela manhã.",
+      "expr": "desconfiada",
+      "zoom": true,
+      "foto": false
+    },
+    {
+      "fala": "Ela ligou para a creche, tentando entender. A atendente consultou a agenda e respondeu com toda a calma: Nino ia às segundas e quartas. Às quintas, não havia nenhuma reserva em nome dele. Júlia agradeceu, desligou e ficou olhando para a tela. Era a primeira mentira comprovada.",
+      "expr": "desconfiada",
+      "zoom": false,
+      "foto": false
+    },
+    {
+      "fala": "Em vez de discutir no impulso, Júlia mandou uma mensagem para Laura: 'Desculpa perguntar, mas esse cachorro é meu. Como ele foi parar aí?' Laura demorou alguns minutos para responder. Quando respondeu, foi pior do que Júlia esperava: 'Seu? O Marcelo me disse que o Nino era dele.'",
+      "expr": "chocada",
+      "zoom": true,
+      "foto": false
+    },
+    {
+      "fala": "Júlia pediu que Laura explicasse. A moça contou que tinha reatado o namoro com Marcelo três meses antes. Segundo ele, o casamento já tinha acabado e ele estava morando sozinho. Toda quinta-feira, Marcelo aparecia com Nino para passar a tarde no apartamento dela. Laura também estava sendo enganada.",
+      "expr": "chocada",
+      "zoom": false,
+      "foto": false
+    },
+    {
+      "fala": "As duas se encontraram numa cafeteria. Não houve gritaria. Júlia mostrou uma foto recente do aniversário de casamento; Laura mostrou mensagens em que Marcelo dizia estar solteiro. As datas batiam. Era o mesmo homem, contando duas versões incompatíveis da própria vida, enquanto levava o mesmo cachorro de uma casa para outra.",
+      "expr": "desconfiada",
+      "zoom": true,
+      "foto": false
+    },
+    {
+      "fala": "À noite, Marcelo entrou em casa com as chaves e perguntou por que Júlia estava tão quieta. Ela colocou a fotografia de Nino sobre a mesa e perguntou só uma coisa: 'Há quantas quintas-feiras você mente pra mim?' Marcelo tentou falar em mal-entendido, mas parou quando percebeu que ela já tinha conversado com Laura.",
+      "expr": "chocada",
+      "zoom": true,
+      "foto": false
+    },
+    {
+      "fala": "Ele admitiu que tinha retomado o relacionamento com a ex e escondido tudo. Pediu perdão e disse que não queria perder o casamento. Júlia respondeu que precisava de distância para decidir seus próximos passos. Laura também encerrou a relação. As duas não fizeram amizade de novela; simplesmente escolheram não participar da mentira.",
+      "expr": "triste",
+      "zoom": false,
+      "foto": false
+    },
+    {
+      "fala": "Na quinta-feira seguinte, Nino ficou em casa com Júlia, dormindo no seu velho tapete. A coleira vermelha continuava a mesma. O que tinha mudado era a confiança. E agora me conta: você teria chamado a ex para conversar, como Júlia fez, ou teria confrontado Marcelo logo depois de ver a foto?",
+      "expr": "neutra",
+      "zoom": false,
+      "foto": false
+    }
+  ],
+  "storyboard_preparado": {
+    "personagens": "Júlia: mulher brasileira adulta de 32 anos, pele morena clara, cabelo castanho escuro ondulado na altura dos ombros, blusa verde-petróleo e jeans. Marcelo: homem brasileiro adulto de 35 anos, cabelo preto curto, barba aparada, camisa azul-clara. Laura: mulher brasileira adulta de 33 anos, cabelo castanho-ruivo preso, blusa terracota e calça bege. Nino: vira-lata pequeno, pelo caramelo e branco, coleira VERMELHA com pingente de osso levemente torto, sempre o mesmo animal. Casa de Júlia com cozinha simples e tapete cinza; apartamento de Laura com sofá bege e manta azul. Ilustração editorial 2D estilo revistinha moderna, traço limpo, expressões claras, luz cinematográfica, sem texto.",
+    "cenas": [
+      {
+        "index": 0,
+        "ancora": "uma foto de cachorro",
+        "visual": "Close dramático de um smartphone nas mãos de Júlia mostrando uma foto ilustrada do cachorro Nino no sofá azul, Júlia com expressão de surpresa; nenhuma interface legível, foco na coleira vermelha de Nino. Ilustração editorial colorida, composição horizontal 3:2, sem letras, sem legendas, sem logos e sem marcas."
+      },
+      {
+        "index": 1,
+        "ancora": "Júlia e Marcelo estavam casados",
+        "visual": "Plano aberto de sala brasileira acolhedora com Júlia e Marcelo ao lado de Nino, cachorro vira-lata pequeno de pelo caramelo e branco, coleira vermelha com pingente de osso, rotina doméstica matinal. Ilustração editorial colorida, composição horizontal 3:2, sem letras, sem legendas, sem logos e sem marcas."
+      },
+      {
+        "index": 2,
+        "ancora": "Nino dormia perto de uma manta azul",
+        "visual": "Close cinematográfico do cachorro Nino dormindo tranquilo sobre manta azul em sofá bege no apartamento de Laura, pingente de osso torto e coleira vermelha bem visíveis. Ilustração editorial colorida, composição horizontal 3:2, sem letras, sem legendas, sem logos e sem marcas."
+      },
+      {
+        "index": 3,
+        "ancora": "Ela ligou para a creche",
+        "visual": "Júlia sozinha ao telefone na cozinha de apartamento, expressão séria, pequeno calendário sobre mesa indicando a rotina da creche sem letras ou números legíveis, luz natural. Ilustração editorial colorida, composição horizontal 3:2, sem letras, sem legendas, sem logos e sem marcas."
+      },
+      {
+        "index": 4,
+        "ancora": "Júlia mandou uma mensagem para Laura",
+        "visual": "Júlia sentada no sofá digitando mensagem no smartphone, com Nino caramelo e branco perto dos pés, clima de expectativa e dúvida, balões de conversa abstratos sem texto. Ilustração editorial colorida, composição horizontal 3:2, sem letras, sem legendas, sem logos e sem marcas."
+      },
+      {
+        "index": 5,
+        "ancora": "Laura contou que tinha reatado",
+        "visual": "Laura, mulher adulta de cabelo castanho-ruivo preso, em seu apartamento com manta azul no sofá, chocada ao receber mensagem no smartphone, Nino ao seu lado, sem texto. Ilustração editorial colorida, composição horizontal 3:2, sem letras, sem legendas, sem logos e sem marcas."
+      },
+      {
+        "index": 6,
+        "ancora": "As duas se encontraram numa cafeteria",
+        "visual": "Júlia e Laura frente a frente numa cafeteria brasileira tranquila, mostrando fotos e mensagens em seus celulares, expressões de descoberta e seriedade, enquadramento lateral. Ilustração editorial colorida, composição horizontal 3:2, sem letras, sem legendas, sem logos e sem marcas."
+      },
+      {
+        "index": 7,
+        "ancora": "Marcelo entrou em casa com as chaves",
+        "visual": "Marcelo chegando à cozinha de casa à noite, segurando chaves, Júlia à mesa mostrando o celular com fotografia do cachorro, distância emocional entre os dois, luz de teto. Ilustração editorial colorida, composição horizontal 3:2, sem letras, sem legendas, sem logos e sem marcas."
+      },
+      {
+        "index": 8,
+        "ancora": "Ele admitiu que tinha retomado",
+        "visual": "Júlia sentada perto da janela, pensativa porém firme, Marcelo ao fundo perto da porta com olhar de arrependimento, plano emocional não violento e sem gestos de confronto. Ilustração editorial colorida, composição horizontal 3:2, sem letras, sem legendas, sem logos e sem marcas."
+      },
+      {
+        "index": 9,
+        "ancora": "Na quinta-feira seguinte, Nino ficou em casa",
+        "visual": "Júlia em casa numa tarde ensolarada, Nino dormindo em tapete antigo, ela sentada numa poltrona ao lado, coleira vermelha visível, tom de recomeço e tranquilidade. Ilustração editorial colorida, composição horizontal 3:2, sem letras, sem legendas, sem logos e sem marcas."
+      }
+    ]
+  },
+  "fim": "UMA COLEIRA VERMELHA. DUAS VERSÕES DA MESMA VIDA.",
+  "legenda_post": "Ela descobriu uma mentira do marido por causa da foto do próprio cachorro no perfil da EX! 🐶😳 E quando ligou para a creche, a história piorou. Você conversaria com a ex ou confrontaria o marido primeiro? História fictícia. Me manda sua história no direct! #NinaMeContou #Storytime #Reviravolta #Fofoca #Historias",
+  "legenda_tiktok": "O cachorro apareceu no story da EX do marido! 🐶😱 A coleira vermelha entregou uma mentira de meses. Você chamaria a ex pra conversar? História fictícia. #NinaMeContou #Storytime #Fofoca #PlotTwist #Historias",
+  "gancho_antecipacao_versao": "nina-antecipacao-20261102-v2",
+  "gancho_versao": "gancho-descoberta-20261026-v1",
+  "gancho_modelo": "abertura_direta_existente",
+  "referencias_visuais": [
+    "Close dramático de um smartphone nas mãos de Júlia mostrando uma foto ilustrada do cachorro Nino no sofá azul, Júlia com expressão de surpresa; nenhuma interface legível, foco na coleira vermelha de Nino.",
+    "Plano aberto de sala brasileira acolhedora com Júlia e Marcelo ao lado de Nino, cachorro vira-lata pequeno de pelo caramelo e branco, coleira vermelha com pingente de osso, rotina doméstica matinal.",
+    "Close cinematográfico do cachorro Nino dormindo tranquilo sobre manta azul em sofá bege no apartamento de Laura, pingente de osso torto e coleira vermelha bem visíveis.",
+    "Júlia sozinha ao telefone na cozinha de apartamento, expressão séria, pequeno calendário sobre mesa indicando a rotina da creche sem letras ou números legíveis, luz natural.",
+    "Júlia sentada no sofá digitando mensagem no smartphone, com Nino caramelo e branco perto dos pés, clima de expectativa e dúvida, balões de conversa abstratos sem texto.",
+    "Laura, mulher adulta de cabelo castanho-ruivo preso, em seu apartamento com manta azul no sofá, chocada ao receber mensagem no smartphone, Nino ao seu lado, sem texto.",
+    "Júlia e Laura frente a frente numa cafeteria brasileira tranquila, mostrando fotos e mensagens em seus celulares, expressões de descoberta e seriedade, enquadramento lateral.",
+    "Marcelo chegando à cozinha de casa à noite, segurando chaves, Júlia à mesa mostrando o celular com fotografia do cachorro, distância emocional entre os dois, luz de teto.",
+    "Júlia sentada perto da janela, pensativa porém firme, Marcelo ao fundo perto da porta com olhar de arrependimento, plano emocional não violento e sem gestos de confronto.",
+    "Júlia em casa numa tarde ensolarada, Nino dormindo em tapete antigo, ela sentada numa poltrona ao lado, coleira vermelha visível, tom de recomeço e tranquilidade."
+  ],
+  "producao_solicitada": "renderizacao_avulsa_exclusiva"
+}
