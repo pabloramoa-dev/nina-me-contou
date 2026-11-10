@@ -626,11 +626,12 @@
   },
   "ep137": {
     "hash": "057c2faac5f4bb6ea1ff72b5add21c529412ab2077b366b876f7fdacd1ff53cd",
-    "status": "sending_description",
-    "tentativas_incertas": 0,
+    "status": "complete",
     "telegram_message_id": 133,
     "file_id": "BQACAgEAAxkDAAOFavJqWY71cP6hvAZXmK1vYOCcEvoAAjYIAALL8JFHdrz90dXMfqM9BA",
     "file_size": 24184209,
-    "comprimido": false
+    "comprimido": false,
+    "description_message_id": 134,
+    "entregue_em": "2026-11-10T00:50:38Z"
   }
 }
