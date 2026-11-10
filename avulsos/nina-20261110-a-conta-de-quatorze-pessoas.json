@@ -1,0 +1,168 @@
+{
+  "id": "nina-20261110-a-conta-de-quatorze-pessoas",
+  "avulso": true,
+  "parte": "unica",
+  "titulo": "A CONTA DE QUATORZE PESSOAS",
+  "temporada": "Nina Me Contou — história avulsa original",
+  "cenario": "tarde",
+  "voice_engine": "kokoro",
+  "kokoro_voice": "pf_dora",
+  "kokoro_speed": 0.94,
+  "visual_style": "cinematic_2d",
+  "visual_images": {
+    "image_provider": "siliconflow",
+    "image_model": "black-forest-labs/FLUX.1-schnell",
+    "auto_visual_images": true,
+    "min_images": 10,
+    "max_images": 10,
+    "target_images": 10,
+    "hide_inner_caption_when_image": true,
+    "bottom_caption_only": true
+  },
+  "batidas": [
+    {
+      "fala": "Lívia recebeu a conta de catorze pessoas. Só que ela tinha ido ao aniversário da prima como convidada. Quando o garçom colocou a maquininha na frente dela, todos ficaram em silêncio. E a explicação de Roberta foi pior que a própria conta.",
+      "expr": "chocada",
+      "arte": [
+        "conversa"
+      ],
+      "foto": false
+    },
+    {
+      "fala": "Naquele sábado, Roberta chamou a família para jantar num restaurante do bairro. Ela faria trinta anos e queria uma noite simples. Lívia confirmou presença e perguntou se precisava levar alguma coisa. A prima respondeu que bastava aparecer.",
+      "expr": "neutra",
+      "arte": [
+        "bolo"
+      ],
+      "foto": false
+    },
+    {
+      "fala": "Dois dias antes, Roberta mandou uma mensagem pedindo ajuda com o bolo. Lívia respondeu: 'Posso levar o bolo, sim'. Comprou um bolo de chocolate e chegou cedo para entregar à equipe da cozinha. Ninguém falou sobre pagar o jantar.",
+      "expr": "neutra",
+      "arte": [
+        "celular"
+      ],
+      "foto": false
+    },
+    {
+      "fala": "A mesa estava animada. Havia catorze convidados, flores simples e fotos no celular. Lívia sentou perto da tia, conversou bastante e achou tudo normal. Até que, depois dos parabéns, Roberta chamou o garçom e apontou discretamente para a cadeira da prima.",
+      "expr": "desconfiada",
+      "arte": [
+        "mesa"
+      ],
+      "foto": false
+    },
+    {
+      "fala": "O garçom trouxe a conta inteira para Lívia. Ela perguntou, baixinho, se tinha havido um engano. Roberta respondeu na frente de todos: 'Ué, você disse que ia ajudar na festa'. Lívia olhou para o bolo e depois para o valor da conta.",
+      "expr": "chocada",
+      "arte": [
+        "relogio"
+      ],
+      "foto": false
+    },
+    {
+      "fala": "Ela pegou o celular e abriu a conversa. Mostrou a mensagem completa: tinha oferecido levar o bolo, não bancar o restaurante. Roberta tentou explicar que entendeu a palavra 'ajudar' de outro jeito. Os convidados começaram a perceber o mal-entendido.",
+      "expr": "desconfiada",
+      "arte": [
+        "celular"
+      ],
+      "foto": false
+    },
+    {
+      "fala": "Marcos, o gerente, aproximou-se para saber se estava tudo bem. Lívia explicou que não tinha autorizado aquela despesa. Ele respondeu com calma que a conta poderia ser dividida por pessoa, sem nenhum problema. Assim ninguém precisava pagar por uma promessa que nunca fez.",
+      "expr": "neutra",
+      "arte": [
+        "conversa"
+      ],
+      "foto": false
+    },
+    {
+      "fala": "Roberta ficou vermelha, mas não teve como discutir com a conversa aberta na tela. Pediu desculpas à prima e admitiu que deveria ter perguntado antes. Os outros convidados se organizaram, cada um pagou o que consumiu e a noite terminou sem mais cobrança.",
+      "expr": "surpresa",
+      "arte": [
+        "conversa"
+      ],
+      "foto": false
+    },
+    {
+      "fala": "Quando saíram do restaurante, Roberta alcançou Lívia na calçada. Disse que estava envergonhada por ter colocado a prima naquela situação. Lívia aceitou o pedido de desculpas, mas deixou uma coisa clara: ninguém pode transformar um favor em obrigação sem combinar.",
+      "expr": "neutra",
+      "arte": [
+        "porta"
+      ],
+      "foto": false
+    },
+    {
+      "fala": "No dia seguinte, Roberta agradeceu pelo bolo no grupo da família. Dessa vez, sem indiretas. Lívia respondeu com um coração e seguiu a vida. Porque ajudar é bonito, mas decidir pelo bolso dos outros não é. Manda pra quem já viveu uma saia justa assim.",
+      "expr": "ironica",
+      "arte": [
+        "celular"
+      ],
+      "foto": false
+    }
+  ],
+  "storyboard_preparado": {
+    "personagens": "Personagens ficcionais adultos brasileiros. Lívia: 32 anos, pele morena clara, cabelo preto liso até os ombros, blusa mostarda, calça jeans e bolsa preta. Roberta: 30 anos, pele clara, cabelo castanho cacheado preso, vestido verde escuro e brincos dourados. Marcos: gerente de 45 anos, cabelo grisalho curto, camisa branca com avental cinza. Garçom: adulto de camisa branca e avental preto. Tia e convidados: adultos com roupas de passeio. Restaurante brasileiro aconchegante com mesas de madeira, flores pequenas e iluminação quente. Bolo de chocolate sempre igual. Manter figurinos, rostos e cenários consistentes nas dez cenas.",
+    "cenas": [
+      {
+        "index": 0,
+        "ancora": "Lívia recebeu a conta de",
+        "visual": "Lívia recebeu a conta de — No restaurante familiar, o garçom mostra uma conta longa a Lívia assustada, enquanto a prima Roberta e os convidados ficam calados ao redor da mesa. Plano médio, expressão forte, luz de restaurante noturno. Ilustração digital 2D em estilo revistinha moderna, enquadramento cinematográfico horizontal, cores quentes, sem palavras nas artes."
+      },
+      {
+        "index": 1,
+        "ancora": "Naquele sábado, Roberta chamou a",
+        "visual": "Naquele sábado, Roberta chamou a — Roberta conversa ao celular perto da entrada do restaurante iluminado e espera a chegada dos familiares; Lívia, ao fundo, confirma presença. Ambiente acolhedor, plano aberto, alegria de aniversário. Ilustração digital 2D em estilo revistinha moderna, enquadramento cinematográfico horizontal, cores quentes, sem palavras nas artes."
+      },
+      {
+        "index": 2,
+        "ancora": "Dois dias antes, Roberta mandou",
+        "visual": "Dois dias antes, Roberta mandou — Lívia aparece em casa conferindo o celular; depois segura uma caixa com bolo de chocolate pronta para levar à comemoração. Sem mensagens legíveis, iluminação doméstica natural, plano médio. Ilustração digital 2D em estilo revistinha moderna, enquadramento cinematográfico horizontal, cores quentes, sem palavras nas artes."
+      },
+      {
+        "index": 3,
+        "ancora": "A mesa estava animada. Havia",
+        "visual": "A mesa estava animada. Havia — Os catorze convidados adultos conversam ao redor de mesa com flores e um bolo de chocolate, Lívia sentada perto de uma tia, Roberta de frente; após os parabéns, Roberta chama o garçom com um gesto discreto. Ilustração digital 2D em estilo revistinha moderna, enquadramento cinematográfico horizontal, cores quentes, sem palavras nas artes."
+      },
+      {
+        "index": 4,
+        "ancora": "O garçom trouxe a conta",
+        "visual": "O garçom trouxe a conta — Na mesa do restaurante, o garçom coloca uma conta extensa ao lado do prato de Lívia, surpresa, enquanto Roberta aponta discretamente para ela; os demais convidados param de conversar. Close emocional. Ilustração digital 2D em estilo revistinha moderna, enquadramento cinematográfico horizontal, cores quentes, sem palavras nas artes."
+      },
+      {
+        "index": 5,
+        "ancora": "Ela pegou o celular e",
+        "visual": "Ela pegou o celular e — Lívia mostra a tela do celular sem texto legível à prima Roberta, com o bolo de chocolate ao fundo, enquanto os convidados percebem que a conta foi atribuída a ela por um mal-entendido. Plano sobre o ombro. Ilustração digital 2D em estilo revistinha moderna, enquadramento cinematográfico horizontal, cores quentes, sem palavras nas artes."
+      },
+      {
+        "index": 6,
+        "ancora": "Marcos, o gerente, aproximou-se para",
+        "visual": "Marcos, o gerente, aproximou-se para — O gerente Marcos, de avental escuro, ouve Lívia com atenção ao lado da mesa, enquanto segura uma pasta de contas e sugere separar os pagamentos. Roberta observa, constrangida. Plano americano, luz quente. Ilustração digital 2D em estilo revistinha moderna, enquadramento cinematográfico horizontal, cores quentes, sem palavras nas artes."
+      },
+      {
+        "index": 7,
+        "ancora": "Roberta ficou vermelha, mas não",
+        "visual": "Roberta ficou vermelha, mas não — Roberta admite o engano diante de Lívia e dos convidados; o garçom recebe pagamentos separados em vez de cobrar Lívia sozinha. Expressões realistas, clima que começa a melhorar. Ilustração digital 2D em estilo revistinha moderna, enquadramento cinematográfico horizontal, cores quentes, sem palavras nas artes."
+      },
+      {
+        "index": 8,
+        "ancora": "Quando saíram do restaurante, Roberta",
+        "visual": "Quando saíram do restaurante, Roberta — Na calçada diante da fachada iluminada, Roberta se desculpa com a prima Lívia, que ouve com firmeza e serenidade, segurando a bolsa e o celular. Plano médio noturno, linguagem corporal respeitosa. Ilustração digital 2D em estilo revistinha moderna, enquadramento cinematográfico horizontal, cores quentes, sem palavras nas artes."
+      },
+      {
+        "index": 9,
+        "ancora": "No dia seguinte, Roberta agradeceu",
+        "visual": "No dia seguinte, Roberta agradeceu — Lívia, em casa com uma xícara na mão, lê uma mensagem no celular, sem palavras visíveis; imagem pequena de bolo de chocolate sobre a bancada e expressão de alívio. Final leve e caloroso. Ilustração digital 2D em estilo revistinha moderna, enquadramento cinematográfico horizontal, cores quentes, sem palavras nas artes."
+      }
+    ]
+  },
+  "fim": "UM FAVOR NÃO É UM CHEQUE EM BRANCO",
+  "legenda_post": "A aniversariante convidou 14 pessoas, mas mandou entregar a conta INTEIRA para a prima! 😳🍰 Tudo começou com uma mensagem sobre um bolo. Manda pra quem já passou por uma situação dessas. História fictícia. #NinaMeContou #Storytime #Familia #Reviravolta #Historias",
+  "legenda_tiktok": "ELA FOI CONVIDADA… E RECEBEU A CONTA DE 14 PESSOAS! 😳🍰 O motivo estava numa mensagem sobre o bolo. Manda pra quem já virou o 'patrocinador' da família sem combinar! História fictícia. #NinaMeContou #Storytime #HistoriaCompleta #Familia",
+  "gancho_antecipacao_versao": "nina-antecipacao-20261102-v2",
+  "gancho_antecipacao_modelo": "antecipacao_existente_validada",
+  "gancho_versao": "gancho-descoberta-20261026-v1",
+  "gancho_modelo": "abertura_direta_existente",
+  "revisao": "episodio-original-com-prompts-ancorados-20261110",
+  "producao_solicitada": "renderizacao_avulsa_exclusiva"
+}
