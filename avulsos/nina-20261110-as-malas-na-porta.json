@@ -1,0 +1,168 @@
+{
+  "id": "nina-20261110-as-malas-na-porta",
+  "avulso": true,
+  "parte": "unica",
+  "titulo": "AS MALAS NA PORTA DA MINHA CASA",
+  "temporada": "Nina Me Contou — episódio inédito",
+  "cenario": "tarde",
+  "voice_engine": "kokoro",
+  "kokoro_voice": "pf_dora",
+  "kokoro_speed": 0.94,
+  "visual_style": "cinematic_2d",
+  "visual_images": {
+    "image_provider": "siliconflow",
+    "image_model": "black-forest-labs/FLUX.1-schnell",
+    "auto_visual_images": true,
+    "min_images": 10,
+    "max_images": 10,
+    "target_images": 10,
+    "hide_inner_caption_when_image": true,
+    "bottom_caption_only": true
+  },
+  "gancho_antecipacao_versao": "nina-antecipacao-20261102-v2",
+  "gancho_antecipacao_modelo": "antecipacao_existente_validada",
+  "gancho_versao": "gancho-descoberta-20261026-v1",
+  "gancho_modelo": "abertura_direta_existente",
+  "batidas": [
+    {
+      "fala": "Paula voltou de viagem e encontrou duas malas na porta do seu apartamento. Um casal disse que tinha alugado o lugar por três noites. Os dois mostraram uma reserva verdadeira. Mas Paula nunca colocou a casa para alugar. Então, quem tinha entregue a chave?",
+      "expr": "chocada",
+      "arte": [
+        "porta"
+      ],
+      "foto": false
+    },
+    {
+      "fala": "Paula morava sozinha naquele apartamento havia cinco anos. Na sexta-feira, viajou para visitar a mãe em outra cidade. Antes de sair, pediu à irmã mais nova, Bianca, que passasse lá no sábado para regar as plantas. Era um favor de rotina.",
+      "expr": "neutra",
+      "arte": [
+        "chave"
+      ],
+      "foto": false
+    },
+    {
+      "fala": "Bianca tinha uma cópia da chave porque às vezes ajudava a irmã. Paula confiava nela completamente. Só que a viagem acabou um dia antes do previsto. No domingo à tarde, Paula chegou em casa com uma mochila e aquela surpresa no corredor.",
+      "expr": "desconfiada",
+      "arte": [
+        "mala"
+      ],
+      "foto": false
+    },
+    {
+      "fala": "O casal se chamava Elisa e André. Eles estavam animados com o fim de semana na cidade. Mostraram as fotos do anúncio e o endereço. Paula reconheceu a própria sala, o sofá azul e até as almofadas que havia comprado no mês anterior.",
+      "expr": "chocada",
+      "arte": [
+        "celular"
+      ],
+      "foto": false
+    },
+    {
+      "fala": "Paula respirou fundo e explicou que havia um engano. Os visitantes também ficaram assustados: tinham pago pela estadia e não sabiam de nada. O porteiro, chamado Sérgio, ouviu a conversa e lembrou de um detalhe importante sobre quem havia levado os hóspedes até a porta.",
+      "expr": "desconfiada",
+      "arte": [
+        "conversa"
+      ],
+      "foto": false
+    },
+    {
+      "fala": "Sérgio contou que Bianca aparecera pouco antes com aquele casal. Ela dissera que estava ajudando a organizar a chegada de visitas. Paula pegou o celular e ligou para a irmã. Bianca demorou a atender. Quando ouviu a pergunta sobre o aluguel, ficou em silêncio.",
+      "expr": "chocada",
+      "arte": [
+        "celular"
+      ],
+      "foto": false
+    },
+    {
+      "fala": "Meia hora depois, Bianca apareceu no prédio e contou a verdade. Tinha oferecido o apartamento sem pedir autorização. Disse que estava com contas atrasadas e achou que Paula só voltaria na segunda-feira. Paula respondeu: precisar de ajuda não dava a ninguém o direito de decidir sobre a casa dela.",
+      "expr": "brava",
+      "arte": [
+        "conversa"
+      ],
+      "foto": false
+    },
+    {
+      "fala": "Elisa e André perceberam que as duas irmãs estavam discutindo algo sério. Paula pediu desculpas pelo transtorno, embora não tivesse criado a situação. O casal falou com a plataforma, a reserva foi cancelada e eles encontraram outra hospedagem para aquela noite.",
+      "expr": "triste",
+      "arte": [
+        "celular"
+      ],
+      "foto": false
+    },
+    {
+      "fala": "Bianca prometeu assumir qualquer diferença de custo da hospedagem e devolver o que fosse necessário. Paula não gritou nem fingiu que nada tinha acontecido. Disse que continuava amando a irmã, mas que a confiança levaria tempo para ser reconstruída. Depois, pediu de volta a cópia da chave.",
+      "expr": "neutra",
+      "arte": [
+        "chave"
+      ],
+      "foto": false
+    },
+    {
+      "fala": "Na semana seguinte, Bianca começou a cumprir o combinado e pediu desculpas de novo, dessa vez sem inventar justificativas. Paula aceitou conversar, mas deixou um limite muito claro: favor não é autorização. E você, se uma irmã alugasse sua casa sem avisar, conseguiria perdoar?",
+      "expr": "emocionada",
+      "arte": [
+        "porta"
+      ],
+      "foto": false
+    }
+  ],
+  "storyboard_preparado": {
+    "personagens": "Todos personagens fictícios e adultos, brasileiros. Paula: 34 anos, pele morena clara, cabelo preto cacheado preso, camiseta amarela, calça jeans e mochila azul. Bianca: 29 anos, pele morena clara, cabelo castanho liso até os ombros, blusa lilás e calça escura. Elisa: 35 anos, cabelo ruivo ondulado, camiseta verde, mala vermelha. André: 37 anos, cabelo preto curto, camisa azul, mala cinza. Sérgio: porteiro de 55 anos, cabelo grisalho, camisa social branca. Cenários recorrentes: apartamento claro de Paula com sofá azul e plantas, corredor e portaria de prédio no Brasil. Ilustração editorial moderna 2D com continuidade visual, expressões realistas e sem letras ou palavras legíveis.",
+    "cenas": [
+      {
+        "index": 0,
+        "ancora": "Paula voltou de viagem",
+        "visual": "Corredor de prédio residencial brasileiro: Paula chegando com mochila e expressão de espanto diante de duas malas grandes; Elisa e André ao lado da porta do apartamento, segurando celular com reserva visual sem texto legível. Plano cinematográfico expressivo. Arte 2D estilo revistinha moderna, cenário e figurinos consistentes, luz cinematográfica, sem legendas, sem letras, sem marca d'água."
+      },
+      {
+        "index": 1,
+        "ancora": "Paula morava sozinha",
+        "visual": "Paula em sua sala de sofá azul, regando uma planta enquanto conversa por telefone com Bianca; mala pequena pronta perto da porta, luz de sexta-feira. Plano aberto, ambiente doméstico aconchegante. Arte 2D estilo revistinha moderna, cenário e figurinos consistentes, luz cinematográfica, sem legendas, sem letras, sem marca d'água."
+      },
+      {
+        "index": 2,
+        "ancora": "Bianca tinha uma cópia",
+        "visual": "Bianca segura uma cópia de chave perto de vasos e do sofá azul do apartamento de Paula; ao fundo, Paula aparece chegando inesperadamente no corredor com mochila. Composição que mostra o contraste entre a confiança e o imprevisto. Arte 2D estilo revistinha moderna, cenário e figurinos consistentes, luz cinematográfica, sem legendas, sem letras, sem marca d'água."
+      },
+      {
+        "index": 3,
+        "ancora": "O casal se chamava",
+        "visual": "Elisa e André mostram o celular com fotografias do mesmo sofá azul do apartamento, Paula aponta chocada para a sala que aparece pela porta entreaberta. Enquadramento sobre o ombro, sem texto legível na tela. Arte 2D estilo revistinha moderna, cenário e figurinos consistentes, luz cinematográfica, sem legendas, sem letras, sem marca d'água."
+      },
+      {
+        "index": 4,
+        "ancora": "Paula respirou fundo",
+        "visual": "Portaria iluminada do edifício: porteiro Sérgio fala com Paula e o casal assustado, gesticulando com respeito para esclarecer o ocorrido. Malas no corredor ao fundo, plano de grupo. Arte 2D estilo revistinha moderna, cenário e figurinos consistentes, luz cinematográfica, sem legendas, sem letras, sem marca d'água."
+      },
+      {
+        "index": 5,
+        "ancora": "Sérgio contou que Bianca",
+        "visual": "Paula em primeiro plano fazendo uma ligação no corredor; Bianca aparece em um quadro visual separado atendendo o telefone de casa, hesitante. Expressões tensas e iluminação natural, sem texto. Arte 2D estilo revistinha moderna, cenário e figurinos consistentes, luz cinematográfica, sem legendas, sem letras, sem marca d'água."
+      },
+      {
+        "index": 6,
+        "ancora": "Meia hora depois",
+        "visual": "Bianca, de blusa lilás, confessa a verdade de cabeça baixa na portaria, enquanto Paula, de camiseta amarela, responde séria; Sérgio distante atrás do balcão. Plano médio dramático, gestos contidos. Arte 2D estilo revistinha moderna, cenário e figurinos consistentes, luz cinematográfica, sem legendas, sem letras, sem marca d'água."
+      },
+      {
+        "index": 7,
+        "ancora": "Elisa e André perceberam",
+        "visual": "Elisa e André sentados no saguão com as malas enquanto procuram outra hospedagem pelo celular; Paula conversa com eles, solidária, perto de plantas e sofás da portaria. Iluminação suave e clima de resolução. Arte 2D estilo revistinha moderna, cenário e figurinos consistentes, luz cinematográfica, sem legendas, sem letras, sem marca d'água."
+      },
+      {
+        "index": 8,
+        "ancora": "Bianca prometeu assumir",
+        "visual": "As duas irmãs diante da porta do apartamento: Bianca entrega a cópia da chave e ouve Paula estabelecer limites; feições tristes, mas sem hostilidade; destaque visual para a chave entre as mãos. Arte 2D estilo revistinha moderna, cenário e figurinos consistentes, luz cinematográfica, sem legendas, sem letras, sem marca d'água."
+      },
+      {
+        "index": 9,
+        "ancora": "Na semana seguinte",
+        "visual": "Uma semana depois, Paula e Bianca conversam à mesa da cozinha com xícaras de café, expressão de reconciliação cautelosa, sofá azul visível ao fundo; clima de confiança a reconstruir. Arte 2D estilo revistinha moderna, cenário e figurinos consistentes, luz cinematográfica, sem legendas, sem letras, sem marca d'água."
+      }
+    ]
+  },
+  "fim": "FAVOR NÃO É AUTORIZAÇÃO",
+  "legenda_post": "Ela chegou de viagem e encontrou duas malas na porta de casa. 😳 Um casal tinha reservado o apartamento dela, mas Paula nunca anunciou o imóvel! O que você faria se descobrisse quem entregou a chave? História fictícia. #NinaMeContou #Storytime #Historias #Reviravolta #Fofoca",
+  "legenda_tiktok": "DUAS MALAS na porta e uma reserva de três noites… 😳 Só que o apartamento nem estava para alugar! Você perdoaria a irmã? História fictícia. #NinaMeContou #HistoriaCompleta #Storytime #PlotTwist #Historias",
+  "revisao": "roteiro-original-20261110-dez-cenas-voz-pausada-siliconflow",
+  "producao_solicitada": "renderizacao_avulsa_exclusiva"
+}
