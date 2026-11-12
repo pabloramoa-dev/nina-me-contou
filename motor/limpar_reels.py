@@ -20,7 +20,7 @@ from pathlib import Path
 RAIZ = Path(__file__).resolve().parents[1]
 REELS = RAIZ / "reels"
 PUBLICADOS = RAIZ / "conteudo" / "publicados.json"
-RX = re.compile(r"^(ep\d{3}(?:-p[12])?)(?=\.|-)")
+RX = re.compile(r"^(ep\d{3,}(?:-p[12])?)(?=\.|-)")
 
 
 def publicados() -> set[str]:
@@ -54,7 +54,7 @@ def _tem(grupos: dict[str, list[Path]], ep_id: str, sufixo: str) -> bool:
 def selecionar_mantidos(alvo: int, feitos: set[str], grupos: dict[str, list[Path]]) -> set[str]:
     """Só os futuros epNNN entram no estoque. Preserva o registro histórico."""
     disponiveis = sorted(ep_id for ep_id in grupos
-                         if re.fullmatch(r"ep\d{3}", ep_id)
+                         if re.fullmatch(r"ep\d{3,}", ep_id)
                          and all(x not in feitos for x in
                                  (ep_id, ep_id + "-p1", ep_id + "-p2"))
                          and _tem(grupos, ep_id, ".mp4")
