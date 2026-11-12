@@ -31,6 +31,12 @@ def eh_cta(b: dict) -> bool:
 def garantir_cta(ep: dict) -> dict:
     ep = copy.deepcopy(ep)
     bats = [b for b in ep["batidas"] if not eh_cta(b)]
+    if ep.get("formato") == "lista_3_sinais":
+        bats.append({"fala": "Manda pra quem merece relações com respeito.",
+                     "expr": "ironica", "arte": ["seguir", "MANDA PRA QUEM PRECISA"],
+                     "destaque": ["manda"]})
+        ep["batidas"] = bats
+        return ep
     if ep.get("avulso") or ep.get("parte") == "unica":
         bats.append({"fala": CTA_AVULSO, "expr": "ironica", "arte": ["seguir", PLACA_AVULSO],
                      "destaque": ["segue", "próxima."]})
