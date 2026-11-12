@@ -1,102 +1,104 @@
 {
-  "id": "nina-teste-3-sinais-amizade-20261111",
-  "avulso": true,
-  "parte": "unica",
-  "formato": "lista_3_sinais",
-  "titulo": "3 SINAIS DE UMA AMIZADE QUE DESGASTA",
-  "temporada": "Nina — 3 sinais",
-  "cenario": "tarde",
-  "voice_engine": "kokoro",
-  "kokoro_voice": "pf_dora",
-  "kokoro_speed": 0.94,
-  "visual_style": "cinematic_2d",
-  "visual_images": {
-    "image_provider": "siliconflow",
-    "image_model": "black-forest-labs/FLUX.1-schnell",
-    "auto_visual_images": true,
-    "min_images": 10,
-    "max_images": 10,
-    "target_images": 10,
-    "hide_inner_caption_when_image": true,
-    "bottom_caption_only": true
+ "id": "nina-teste-3-sinais-amizade-20261111",
+ "avulso": true,
+ "parte": "unica",
+ "formato": "lista_3_sinais",
+ "titulo": "3 SINAIS DE UMA AMIZADE QUE DESGASTA",
+ "temporada": "Nina — 3 sinais",
+ "cenario": "tarde",
+ "voice_engine": "kokoro",
+ "kokoro_voice": "pf_dora",
+ "kokoro_speed": 0.94,
+ "visual_style": "cinematic_2d",
+ "visual_images": {
+  "image_provider": "siliconflow",
+  "image_model": "black-forest-labs/FLUX.1-schnell",
+  "auto_visual_images": true,
+  "min_images": 10,
+  "max_images": 10,
+  "target_images": 10,
+  "hide_inner_caption_when_image": true,
+  "bottom_caption_only": true
+ },
+ "batidas": [
+  {
+   "fala": "Três sinais de que uma amizade pode estar te desgastando.",
+   "expr": "desconfiada",
+   "arte": [
+    "titulo"
+   ],
+   "hf": {
+    "titulo": "3 SINAIS",
+    "selo": "NINA ME CONTOU"
+   }
   },
-  "batidas": [
-    {
-      "fala": "Três sinais de que uma amizade pode estar te desgastando.",
-      "expr": "desconfiada",
-      "arte": [
-        "titulo"
-      ],
-      "hf": {
-        "titulo": "3 SINAIS",
-        "selo": "NINA ME CONTOU"
-      }
-    },
-    {
-      "fala": "Primeiro sinal.",
-      "expr": "ironica",
-      "arte": [
-        "interrogacao"
-      ]
-    },
-    {
-      "fala": "A pessoa só aparece quando precisa de ajuda.",
-      "expr": "neutra",
-      "arte": [
-        "celular"
-      ]
-    },
-    {
-      "fala": "Segundo sinal.",
-      "expr": "ironica",
-      "arte": [
-        "interrogacao"
-      ]
-    },
-    {
-      "fala": "Ela transforma suas conquistas em piada.",
-      "expr": "desconfiada",
-      "arte": [
-        "conversa"
-      ]
-    },
-    {
-      "fala": "Terceiro sinal.",
-      "expr": "ironica",
-      "arte": [
-        "interrogacao"
-      ]
-    },
-    {
-      "fala": "Você explica que alguma brincadeira machucou.",
-      "expr": "triste",
-      "arte": [
-        "conversa"
-      ]
-    },
-    {
-      "fala": "Mas a brincadeira continua, mesmo assim.",
-      "expr": "desconfiada",
-      "arte": [
-        "celular"
-      ]
-    },
-    {
-      "fala": "Um sinal isolado não define ninguém.",
-      "expr": "neutra",
-      "arte": [
-        "coracao"
-      ]
-    },
-    {
-      "fala": "Observe o padrão, converse e coloque seus limites.",
-      "expr": "ironica",
-      "arte": [
-        "conversa"
-      ]
-    }
-  ],
-  "fim": "MANDA PRA QUEM PRECISA",
-  "legenda_post": "3 SINAIS DE QUE UMA AMIZADE TE DESGASTA\n\n1. Só aparece quando precisa de favor.\n2. Diminui suas conquistas.\n3. Insiste em brincadeiras que você pediu para parar.\n\nUm comportamento isolado não define ninguém. Observe padrões e converse.\n\nManda pra quem merece amizades com respeito.\n\n#ninamecontou #3sinais #amizade #relacionamentos",
-  "legenda_tiktok": "Três sinais de uma amizade que está te desgastando. Manda pra quem merece respeito. #ninamecontou #amizade #3sinais"
+  {
+   "fala": "Primeiro sinal.",
+   "expr": "ironica",
+   "arte": [
+    "interrogacao"
+   ]
+  },
+  {
+   "fala": "A pessoa só aparece quando precisa de ajuda.",
+   "expr": "neutra",
+   "arte": [
+    "celular"
+   ]
+  },
+  {
+   "fala": "Segundo sinal.",
+   "expr": "ironica",
+   "arte": [
+    "interrogacao"
+   ]
+  },
+  {
+   "fala": "Ela transforma suas conquistas em piada.",
+   "expr": "desconfiada",
+   "arte": [
+    "conversa"
+   ]
+  },
+  {
+   "fala": "Terceiro sinal.",
+   "expr": "ironica",
+   "arte": [
+    "interrogacao"
+   ]
+  },
+  {
+   "fala": "Você explica que alguma brincadeira machucou.",
+   "expr": "triste",
+   "arte": [
+    "conversa"
+   ]
+  },
+  {
+   "fala": "Mas a brincadeira continua, mesmo assim.",
+   "expr": "desconfiada",
+   "arte": [
+    "celular"
+   ]
+  },
+  {
+   "fala": "Um sinal isolado não define ninguém.",
+   "expr": "neutra",
+   "arte": [
+    "coracao"
+   ]
+  },
+  {
+   "fala": "Observe o padrão, converse e coloque seus limites.",
+   "expr": "ironica",
+   "arte": [
+    "conversa"
+   ]
+  }
+ ],
+ "fim": "MANDA PRA QUEM PRECISA",
+ "legenda_post": "3 SINAIS DE QUE UMA AMIZADE TE DESGASTA\n\n1. Só aparece quando precisa de favor.\n2. Diminui suas conquistas.\n3. Insiste em brincadeiras que você pediu para parar.\n\nUm comportamento isolado não define ninguém. Observe padrões e converse.\n\nManda pra quem merece amizades com respeito.\n\n#ninamecontou #3sinais #amizade #relacionamentos",
+ "legenda_tiktok": "Três sinais de uma amizade que está te desgastando. Manda pra quem merece respeito. #ninamecontou #amizade #3sinais",
+ "gancho_versao": "gancho-descoberta-20261026-v1",
+ "gancho_modelo": "abertura_direta_existente"
 }
