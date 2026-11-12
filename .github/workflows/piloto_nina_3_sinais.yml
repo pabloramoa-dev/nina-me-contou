@@ -70,7 +70,9 @@ jobs:
           NINA_STORYBOARD_PROVIDER: 'siliconflow'
           NINA_TARGET_IMAGES: '10'
           NINA_MAX_IMAGES: '10'
-          NINA_IMAGE_RETRIES: '2'
+          NINA_IMAGE_RETRIES: '1'
+          NINA_IMAGE_TIMEOUT_SECONDS: '90'
+          NINA_IMAGE_MODEL: 'black-forest-labs/FLUX.1-dev'
           NINA_MOTOR: 'hyperframes'
           NINA_FINAL_COMPOSITOR: 'remotion'
           NINA_VOICE_ENGINE: 'kokoro'
@@ -78,6 +80,21 @@ jobs:
           NINA_KOKORO_SPEED: '0.94'
           NINA_MAX_DUR: '59'
         run: |
+          # Preflight real da API para não aguardar 10 cenas se o provedor está instável.
+          python - <<'PY'
+          import os, requests, sys
+          url='https://api.siliconflow.com/v1/images/generations'
+          payload={'model': os.environ['NINA_IMAGE_MODEL'],
+                   'prompt':'Original illustration of a small peaceful Brazilian living room, clean editorial comic magazine style, coral and teal accents, no text, no people.',
+                   'image_size':'768x512'}
+          try:
+              res=requests.post(url,headers={'Authorization':'Bearer '+os.environ['SILICONFLOW_API_KEY']},json=payload,timeout=(15,60))
+              print('Preflight SiliconFlow modelo alternativo HTTP:',res.status_code)
+              if res.status_code!=200: sys.exit(1)
+          except requests.RequestException as exc:
+              print('Preflight SiliconFlow indisponível:',type(exc).__name__)
+              sys.exit(1)
+          PY
           # Banco local determinístico: âncoras literais por fala, 10 cenas.
           # O render oficial segue obrigando exatamente 10 imagens SiliconFlow.
           python tools/preparar_banco_prompts.py
