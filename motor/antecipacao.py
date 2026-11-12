@@ -47,6 +47,11 @@ def _frase(fala: str) -> str:
 
 def antecipar(ep: dict) -> dict:
     out = copy.deepcopy(ep)
+    if out.get("formato") == "lista_3_sinais":
+        # Preserva o gancho original da lista e informa a versao ao portao de qualidade.
+        out["gancho_antecipacao_versao"] = VERSAO
+        out["gancho_antecipacao_modelo"] = "lista_curta_gancho_proprio"
+        return out
     bats = out.get("batidas")
     if (not isinstance(bats, list) or len(bats) < 5 or
         not (out.get("parte") == "unica" or out.get("avulso")) or
