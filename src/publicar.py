@@ -1,9 +1,9 @@
-"""Publica o Reel do horário (e o Story, às 8h e às 20h).
+"""Publica os Reels da Nina nos horários 9h, 12h e 15h (Story às 9h).
 
-    python -m src.publicar --horario manha      # 08h: Reel + Story
+    python -m src.publicar --horario manha      # 09h: Reel + Story
     python -m src.publicar --horario almoco     # 12h: Reel
-    python -m src.publicar --horario tarde      # 16h: Reel
-    python -m src.publicar --horario noite      # 20h: Reel + Story
+    python -m src.publicar --horario tarde      # 15h: Reel
+    # Listas rápidas no almoço e tarde, história longa só de manhã.
 
 A ordem é de episódios completos e inéditos, sem parte 1/parte 2.
 Com DRY_RUN=true ou PUBLICAR_ATIVO=false, faz tudo menos publicar.
