@@ -11,9 +11,9 @@ EPISODIOS = RAIZ / "episodios"
 REELS = RAIZ / "reels"
 PUBLICADOS_JSON = RAIZ / "conteudo" / "publicados.json"
 
-RESERVA_MINIMA = 8        # 8 vídeos completos prontos; abaixo disso abre alerta
-HORARIOS = {"manha": "08h", "almoco": "12h", "tarde": "16h", "noite": "20h"}
-COM_STORY = {"manha", "noite"}   # esses horários também vão pros Stories
+RESERVA_MINIMA = 8        # reserva mista: 4 historias + 4 listas curtas
+HORARIOS = {"manha": "09h", "almoco": "12h", "tarde": "15h"}
+COM_STORY = {"manha"}            # apenas a historia longa matinal
 DURACAO_MIN_S = 135.0  # perto dos 3 minutos, com variação de ritmo
 DURACAO_MAX_S = 225.0
 
