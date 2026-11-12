@@ -17,6 +17,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          sparse-checkout: |
+            /motor/listas_virais.py
+            /motor/antecipacao.py
+            /motor/cta.py
+            /motor/pendentes.py
+            /src/
+            /tools/recuperar_publicacoes.py
+            /tests/test_listas_virais.py
+          sparse-checkout-cone-mode: false
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
