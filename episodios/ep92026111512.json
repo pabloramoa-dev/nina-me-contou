@@ -1,0 +1,137 @@
+{
+ "id": "ep92026111512",
+ "parte": "unica",
+ "formato": "lista_3_sinais",
+ "horario_destino": "12h",
+ "data_editorial": "2026-11-15",
+ "titulo": "3 SINAIS DE QUE UMA RELAÇÃO MERECE MAIS CONFIANÇA",
+ "temporada": "Listas rápidas",
+ "cenario": "tarde",
+ "batidas": [
+  {
+   "fala": "Três sinais de que uma relação merece mais confiança.",
+   "expr": "ironica",
+   "arte": [
+    "titulo"
+   ],
+   "destaque": [],
+   "hf": {
+    "titulo": "3 SINAIS",
+    "selo": "NINA EM 30 SEGUNDOS"
+   }
+  },
+  {
+   "fala": "Um.",
+   "expr": "neutra",
+   "arte": [
+    "interrogacao"
+   ],
+   "destaque": [],
+   "hf": {
+    "titulo": "",
+    "selo": "NINA EM 30 SEGUNDOS"
+   }
+  },
+  {
+   "fala": "Pequenos acordos são esquecidos.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [],
+   "hf": {
+    "titulo": "SINAL 1",
+    "selo": "NINA EM 30 SEGUNDOS"
+   }
+  },
+  {
+   "fala": "Dois.",
+   "expr": "neutra",
+   "arte": [
+    "interrogacao"
+   ],
+   "destaque": [],
+   "hf": {
+    "titulo": "",
+    "selo": "NINA EM 30 SEGUNDOS"
+   }
+  },
+  {
+   "fala": "Informações importantes são omitidas.",
+   "expr": "neutra",
+   "arte": [
+    "celular"
+   ],
+   "destaque": [],
+   "hf": {
+    "titulo": "SINAL 2",
+    "selo": "NINA EM 30 SEGUNDOS"
+   }
+  },
+  {
+   "fala": "Três.",
+   "expr": "neutra",
+   "arte": [
+    "interrogacao"
+   ],
+   "destaque": [],
+   "hf": {
+    "titulo": "",
+    "selo": "NINA EM 30 SEGUNDOS"
+   }
+  },
+  {
+   "fala": "O combinado não é confirmado depois.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [],
+   "hf": {
+    "titulo": "SINAL 3",
+    "selo": "NINA EM 30 SEGUNDOS"
+   }
+  },
+  {
+   "fala": "Se isso acontece sempre,",
+   "expr": "neutra",
+   "arte": [
+    "relogio"
+   ],
+   "destaque": [],
+   "hf": {
+    "titulo": "",
+    "selo": "NINA EM 30 SEGUNDOS"
+   }
+  },
+  {
+   "fala": "vale conversar com calma.",
+   "expr": "neutra",
+   "arte": [
+    "conversa"
+   ],
+   "destaque": [],
+   "hf": {
+    "titulo": "",
+    "selo": "NINA EM 30 SEGUNDOS"
+   }
+  },
+  {
+   "fala": "Um sinal sozinho não define ninguém.",
+   "expr": "ironica",
+   "arte": [
+    "coracao"
+   ],
+   "destaque": [],
+   "hf": {
+    "titulo": "",
+    "selo": "NINA EM 30 SEGUNDOS"
+   }
+  }
+ ],
+ "fim": "COMPARTILHE",
+ "legenda_post": "3 SINAIS DE QUE UMA RELAÇÃO MERECE MAIS CONFIANÇA\n\n1. Pequenos acordos são esquecidos.\n2. Informações importantes são omitidas.\n3. O combinado não é confirmado depois.\n\nSão comportamentos para observar e conversar, não provas sobre uma pessoa. Manda pra quem merece relações com mais respeito.\n\n#ninamecontou #3sinais #amizade #relacionamentos #reflexao",
+ "legenda_tiktok": "3 SINAIS DE QUE UMA RELAÇÃO MERECE MAIS CONFIANÇA\n\n1. Pequenos acordos são esquecidos.\n2. Informações importantes são omitidas.\n3. O combinado não é confirmado depois.\n\nSão comportamentos para observar e conversar, não provas sobre uma pessoa. Manda pra quem merece relações com mais respeito.\n\n#ninamecontou #3sinais #amizade #relacionamentos #reflexao",
+ "gerado_automaticamente": true,
+ "referencia_editorial": "Pesquisa sobre retenção/compartilhamento de Reels e comunicação saudável; ver docs/listas-virais.md"
+}
