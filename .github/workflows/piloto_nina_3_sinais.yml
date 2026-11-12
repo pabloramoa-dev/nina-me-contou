@@ -64,9 +64,9 @@ jobs:
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
           NINA_ALLOW_PAID_IMAGE_API: '1'
           NINA_REQUIRE_SILICONFLOW: '1'
-          NINA_REQUIRE_STORED_PROMPTS: '0'
-          NINA_REQUIRE_AI_STORYBOARD: '1'
-          NINA_USE_AI_STORYBOARD: '1'
+          NINA_REQUIRE_STORED_PROMPTS: '1'
+          NINA_REQUIRE_AI_STORYBOARD: '0'
+          NINA_USE_AI_STORYBOARD: '0'
           NINA_STORYBOARD_PROVIDER: 'siliconflow'
           NINA_TARGET_IMAGES: '10'
           NINA_MAX_IMAGES: '10'
@@ -78,6 +78,9 @@ jobs:
           NINA_KOKORO_SPEED: '0.94'
           NINA_MAX_DUR: '59'
         run: |
+          # Banco local determinístico: âncoras literais por fala, 10 cenas.
+          # O render oficial segue obrigando exatamente 10 imagens SiliconFlow.
+          python tools/preparar_banco_prompts.py
           python motor/produzir.py avulsos/nina-teste-3-sinais-amizade-20261111.json
           python - <<'PY'
           import json, subprocess
