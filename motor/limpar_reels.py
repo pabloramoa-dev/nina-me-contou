@@ -59,7 +59,22 @@ def selecionar_mantidos(alvo: int, feitos: set[str], grupos: dict[str, list[Path
                                  (ep_id, ep_id + "-p1", ep_id + "-p2"))
                          and _tem(grupos, ep_id, ".mp4")
                          and _tem(grupos, ep_id, "-capa.jpg"))
-    return set(disponiveis[:alvo])
+    # Os formatos precisam ter vagas próprias no estoque; um lote de longos
+    # não pode levar à remoção de curtos ainda aguardando o Instagram.
+    curtos, longos = [], []
+    for ep_id in disponiveis:
+        roteiro = RAIZ / "episodios" / f"{ep_id}.json"
+        try:
+            ep = json.loads(roteiro.read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            ep = {}
+        (curtos if ep.get("formato") == "lista_3_sinais" else longos).append(ep_id)
+    metade = max(1, alvo // 2)
+    mantidos = set(curtos[:metade] + longos[:max(1, alvo - metade)])
+    if len(mantidos) < alvo:
+        mantidos.update(x for x in disponiveis if x not in mantidos
+                        and len(mantidos) < alvo)
+    return mantidos
 
 
 def limpar(alvo: int = 8, simular: bool = False) -> dict:
