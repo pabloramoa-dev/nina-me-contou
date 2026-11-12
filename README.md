@@ -1,11 +1,22 @@
-# Nina Me Contou — episódios únicos de ~3 minutos
+# Nina Me Contou — história às 9h e listas curtas às 12h e 15h
 
-Canal @ninamecontou. A partir desta atualização, **cada vídeo conta uma
-história ficcional inteira**, com gancho no início, desenvolvimento, revelação
-e desfecho no próprio Reel. **Não existem mais publicações 'parte 1' e 'parte 2'.**
-A meta anterior de 4 Reels diários às 8h, 12h, 16h e 20h (Brasília) continua:
-agora são 4 **histórias diferentes e completas** por dia. O Reel das 8h e
-das 20h também gera um recorte de até 59 segundos para Stories.
+Canal @ninamecontou. **Nova programação a partir de 12/11/2026 (Brasília):**
+
+- **9h:** uma história inédita completa de aproximadamente três minutos, com Reel + Story.
+- **12h:** um Reel original "Nina: 3 sinais de que..." de 20–30 segundos.
+- **15h:** outra lista viral curta de amizades, convivência ou relacionamentos, 20–45 segundos.
+
+As listas curtas têm limite rígido de **menos de 60 segundos**, abertura imediata,
+três sinais observáveis, legenda clara e uma chamada final para enviar a alguém.
+Elas usam a **mesma Nina, voz Kokoro, HyperFrames, Remotion e dez imagens SiliconFlow**.
+Os roteiros curtos são criados automaticamente por `motor/listas_virais.py`,
+sem repetir temas no período de dez dias. O tipo de episódio é isolado por
+horário na fila. Confira [docs/listas-virais.md](docs/listas-virais.md).
+
+## Histórico do formato de histórias
+
+As instruções abaixo documentam a evolução do motor de histórias longas.
+Os horários antigos mencionados em versões anteriores não valem mais.
 
 ## Como funciona
 
@@ -17,7 +28,7 @@ das 20h também gera um recorte de até 59 segundos para Stories.
 2. Os pares históricos ficam intactos como arquivo. Histórias com qualquer
    parte já publicada ficam **fora** da fila nova (evita republicação).
 3. Os episódios totalmente novos passam a ser escritos diretamente como
-   `epNNN.json`. O plano anual prevê 1.460 histórias/ano a 4 vídeos/dia.
+   `epNNN.json`. O plano anual histórico previa 1.460 histórias/ano; a grade atual usa uma história longa por dia.
    A reserva mantém 60 roteiros (~15 dias).
 4. O estúdio gera **um MP4 por história**, voz Kokoro Dora, Nina/HyperFrames,
    acabamento Remotion, imagens de apoio, legendas inferiores, capa e Story.

@@ -40,11 +40,19 @@ def produzivel(arq: Path) -> bool:
 def selecionar(alvo_prontos: int = 8, limite: int = 8) -> list[Path]:
     feitos = fila.ids_publicados()
     prontos = fila.completos_prontos()
-    faltam = max(0, alvo_prontos - len(prontos))
+    # Reserva equilibrada: historias longas nao ocupam as vagas dos curtos.
+    total = {True: 0, False: 0}
+    for n in prontos:
+        tipo = fila.carregar_ep(f"ep{n:03d}").get("formato") == "lista_3_sinais"
+        total[tipo] += 1
+    metade = max(4, alvo_prontos // 2)
+    metas = {True: metade, False: max(4, alvo_prontos - metade)}
+    faltam = sum(max(0, metas[t] - total[t]) for t in (True, False))
     escolhidos: list[Path] = []
     # Pedidos manuais inéditos entram primeiro; preserva a ordem normal dos demais.
     ordem = sorted(fila.episodios(), key=lambda n: (
-        not fila.carregar_ep(f"ep{n:03d}").get("producao_prioritaria", False), n
+        not fila.carregar_ep(f"ep{n:03d}").get("producao_prioritaria", False),
+        fila.carregar_ep(f"ep{n:03d}").get("formato") != "lista_3_sinais", n
     ))
     for n in ordem:
         if not faltam or len(escolhidos) >= limite:
@@ -53,9 +61,14 @@ def selecionar(alvo_prontos: int = 8, limite: int = 8) -> list[Path]:
         if fila.ja_publicado(ep_id, feitos) or n in prontos:
             continue
         arq = RAIZ / "episodios" / f"{ep_id}.json"
-        if arq.exists() and fila.desatualizado(ep_id) and produzivel(arq):
-            escolhidos.append(arq)
-            faltam -= 1
+        if arq.exists() and fila.desatualizado(ep_id):
+            curto = fila.carregar_ep(ep_id).get("formato") == "lista_3_sinais"
+            if total[curto] >= metas[curto]:
+                continue
+            if produzivel(arq):
+                escolhidos.append(arq)
+                total[curto] += 1
+                faltam -= 1
     return escolhidos
 
 

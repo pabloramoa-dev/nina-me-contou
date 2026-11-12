@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 from pathlib import Path
 from datetime import datetime, timezone
 
@@ -114,8 +115,9 @@ def _salvar(path: Path, dados):
 def _nums_existentes() -> list[int]:
     nums = []
     for p in EP_DIR.glob("ep*.json"):
-        if p.stem.startswith("ep") and p.stem[2:5].isdigit():
-            nums.append(int(p.stem[2:5]))
+        m = re.fullmatch(r"ep(\d{3})", p.stem)
+        if m:
+            nums.append(int(m.group(1)))
     return sorted(set(nums))
 
 def _publicados() -> set[str]:

@@ -1,9 +1,9 @@
-"""Publica o Reel do horário (e o Story, às 8h e às 20h).
+"""Publica os Reels da Nina nos horários 9h, 12h e 15h (Story às 9h).
 
-    python -m src.publicar --horario manha      # 08h: Reel + Story
+    python -m src.publicar --horario manha      # 09h: Reel + Story
     python -m src.publicar --horario almoco     # 12h: Reel
-    python -m src.publicar --horario tarde      # 16h: Reel
-    python -m src.publicar --horario noite      # 20h: Reel + Story
+    python -m src.publicar --horario tarde      # 15h: Reel
+    # Listas rápidas no almoço e tarde, história longa só de manhã.
 
 A ordem é de episódios completos e inéditos, sem parte 1/parte 2.
 Com DRY_RUN=true ou PUBLICAR_ATIVO=false, faz tudo menos publicar.
@@ -48,6 +48,9 @@ def main() -> int:
     rel = {"horario": config.HORARIOS[a.horario], "id": ep_id, "titulo": ep["titulo"],
            "parte": ep.get("parte", "unica"), "video": video, "capa": capa, "story": com_story,
            "duracao": round(fila.duracao(config.REELS / f"{ep_id}.mp4"), 1)}
+    limite = (15.0, 59.9) if ep.get("formato") == "lista_3_sinais" else (config.DURACAO_MIN_S, config.DURACAO_MAX_S)
+    if not limite[0] <= rel["duracao"] <= limite[1]:
+        raise RuntimeError("Video fora do limite de duracao permitido para o formato")
 
     if cfg.dry_run or not cfg.publicar_ativo:
         rel.update(ok=True, ensaio=True,
@@ -70,7 +73,7 @@ def main() -> int:
                 raise
             rel["reconciliado_apos_erro"] = True
         confirm_send(config.RAIZ, ep_id, media_id)
-    fila.gravar_publicado(ep_id, media_id, dry=False)
+    fila.gravar_publicado(ep_id, media_id, dry=False, horario=a.horario)
     rel.update(ok=True, media_id=media_id)
 
     if com_story:
