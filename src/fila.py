@@ -16,7 +16,7 @@ from motor.render_version import versao
 from motor.siliconflow_policy import validar_arquivo_publicacao
 
 BRT = timezone(timedelta(hours=-3))
-RX = re.compile(r"^ep(\d{3})$")
+RX = re.compile(r"^ep(\d{3,})$")
 
 
 def ler_publicados() -> list[dict]:
@@ -25,10 +25,13 @@ def ler_publicados() -> list[dict]:
     return []
 
 
-def gravar_publicado(ep_id: str, media_id: str | None, dry: bool) -> None:
+def gravar_publicado(ep_id: str, media_id: str | None, dry: bool, horario: str | None = None) -> None:
     pub = ler_publicados()
-    pub.append({"id": ep_id, "media_id": media_id,
-                "quando": datetime.now(BRT).isoformat(timespec="minutes"), "ensaio": dry})
+    registro = {"id": ep_id, "media_id": media_id,
+                "quando": datetime.now(BRT).isoformat(timespec="minutes"), "ensaio": dry}
+    if horario:
+        registro["horario"] = horario
+    pub.append(registro)
     config.PUBLICADOS_JSON.write_text(json.dumps(pub, ensure_ascii=False, indent=1), encoding="utf-8")
 
 
@@ -79,9 +82,13 @@ def completos_prontos() -> list[int]:
 
 
 def proximo(horario: str | None = None) -> str | None:
-    """Um único vídeo completo por horário; não existe mais continuação."""
-    prontos = completos_prontos()
-    return f"ep{prontos[0]:03d}" if prontos else None
+    """9h: historias longas. 12h e 15h: listas curtas, nunca misturar."""
+    curto = horario in {"almoco", "tarde"}
+    for n in completos_prontos():
+        ep_id = f"ep{n:03d}"
+        if (carregar_ep(ep_id).get("formato") == "lista_3_sinais") == curto:
+            return ep_id
+    return None
 
 
 def duracao(caminho) -> float:
@@ -97,7 +104,13 @@ def lint() -> dict:
         ep = carregar_ep(ep_id)
         if ep.get("parte") != "unica":
             problemas.append(f"{ep_id}: episódio não está marcado como parte única")
-        if "História de ficção" not in ep.get("legenda_post", ""):
+        curto = ep.get("formato") == "lista_3_sinais"
+        if curto:
+            if "não provas" not in ep.get("legenda_post", ""):
+                problemas.append(f"{ep_id}: lista sem ressalva de contexto")
+            if len(ep.get("batidas", [])) != 10:
+                problemas.append(f"{ep_id}: lista deve conter dez batidas curtas")
+        elif "História de ficção" not in ep.get("legenda_post", ""):
             problemas.append(f"{ep_id}: legenda sem o aviso de ficção")
         if len(ep.get("legenda_post", "")) > 2200:
             problemas.append(f"{ep_id}: legenda passa de 2200 caracteres")
@@ -107,8 +120,9 @@ def lint() -> dict:
         mp4 = config.REELS / f"{ep_id}.mp4"
         if mp4.exists():
             d = duracao(mp4)
-            if not config.DURACAO_MIN_S <= d <= config.DURACAO_MAX_S:
-                problemas.append(f"{ep_id}: duração {d:.1f}s fora do alvo de ~3 min")
+            minimo, maximo = (15.0, 59.9) if curto else (config.DURACAO_MIN_S, config.DURACAO_MAX_S)
+            if not minimo <= d <= maximo:
+                problemas.append(f"{ep_id}: duração {d:.1f}s fora da faixa {minimo}-{maximo}s")
     prontos = completos_prontos()
     return {"episodios": len(episodios()), "prontos_nao_publicados": len(prontos),
             "reserva_ok": len(prontos) >= config.RESERVA_MINIMA, "problemas": problemas}
