@@ -1,7 +1,8 @@
 """Tratamento de áudio da Nina com Spotify Pedalboard.
 
-- masterizar_voz(): cadeia de estúdio para a Thalita (limpa graves, dá presença,
-  compressão suave, ambiência curtinha de varanda e limitador). Mantém WAV mono
+- masterizar_voz(): cadeia de estúdio para a voz da Nina (de-esser, tira o som de
+  caixa e o anasalado, dicção clara, compressão suave, ambiência curtinha de
+  varanda e limitador suave, sem estourar picos). Mantém WAV mono
   44,1 kHz 16-bit e a MESMA duração da narração bruta, então segs.json e o lip
   sync continuam válidos.
 - tratar_trilha() / ducking(): deixa a trilha abafada e abaixa sozinha quando a
@@ -24,11 +25,21 @@ import tempfile
 import numpy as np
 import soundfile as sf
 
-# Mesma cadeia da voz, em ffmpeg (fallback)
-MASTER_FFMPEG = ("highpass=f=85,lowshelf=f=220:g=-1.5,equalizer=f=3200:t=q:w=0.8:g=2.5,"
-                 "highshelf=f=9500:g=1.5,"
-                 "acompressor=threshold=-19dB:ratio=2.8:attack=5:release=120,"
-                 "aecho=1.0:1.0:23|41:0.045|0.025,volume=2dB")
+# Equalização da voz da Nina (feminina). Mesma curva nas duas cadeias:
+#   90 Hz   passa-altas: tira ronco e estalo de grave
+#   190 Hz  +1,0 dB: um pouco de calor, voz menos fina
+#   480 Hz  -2,0 dB: tira o som "de caixa"
+#   1 kHz   -1,5 dB: tira o tom anasalado
+#   3,4 kHz +2,0 dB (largo): dicção clara no alto-falante do celular
+#   7 kHz   +2,0 dB (prateleira): um pouco de ar, sem chiar (o de-esser segura o "s")
+#   12 kHz  passa-baixas: corta o resíduo metálico do TTS
+# Depois: compressão suave e ambiência curtinha de varanda.
+MASTER_FFMPEG = ("highpass=f=90,equalizer=f=190:t=q:w=0.9:g=1.0,"
+                 "equalizer=f=480:t=q:w=1.1:g=-2.0,equalizer=f=1000:t=q:w=1.2:g=-1.5,"
+                 "equalizer=f=3400:t=q:w=0.7:g=2.0,highshelf=f=7000:g=2.0,lowpass=f=12000,"
+                 "acompressor=threshold=-21dB:ratio=2.2:attack=10:release=150,"
+                 "aecho=1.0:1.0:23|41:0.035|0.018")
+RMS_VOZ = -13.0                      # nível da fala (dB RMS) antes do limitador suave
 TETO_VOZ = 10 ** (-1.5 / 20)
 TETO_MIX = 10 ** (-1.5 / 20)
 
@@ -61,34 +72,65 @@ def disponivel() -> bool:
 
 def cadeia_voz():
     return pb.Pedalboard([
-        pb.HighpassFilter(cutoff_frequency_hz=85),
-        pb.LowShelfFilter(cutoff_frequency_hz=220, gain_db=-1.5, q=0.7),   # tira o "embolado"
-        pb.PeakFilter(cutoff_frequency_hz=3200, gain_db=2.5, q=0.8),       # presença
-        pb.HighShelfFilter(cutoff_frequency_hz=9500, gain_db=1.5, q=0.7),  # brilho
-        pb.Compressor(threshold_db=-19, ratio=2.8, attack_ms=5, release_ms=120),
-        pb.Reverb(room_size=0.14, damping=0.7, wet_level=0.045, dry_level=1.0, width=0.0),
-        pb.Gain(gain_db=2.0),
-        pb.Limiter(threshold_db=-1.5, release_ms=80),
+        pb.HighpassFilter(cutoff_frequency_hz=90),
+        pb.PeakFilter(cutoff_frequency_hz=190, gain_db=1.0, q=0.9),      # calor
+        pb.PeakFilter(cutoff_frequency_hz=480, gain_db=-2.0, q=1.1),     # tira o som "de caixa"
+        pb.PeakFilter(cutoff_frequency_hz=1000, gain_db=-1.5, q=1.2),    # tira o anasalado
+        pb.PeakFilter(cutoff_frequency_hz=3400, gain_db=2.0, q=0.7),     # dicção
+        pb.HighShelfFilter(cutoff_frequency_hz=7000, gain_db=2.0, q=0.7),  # ar
+        pb.LowpassFilter(cutoff_frequency_hz=12000),                     # resíduo metálico do TTS
+        pb.Compressor(threshold_db=-21, ratio=2.2, attack_ms=10, release_ms=150),
+        pb.Reverb(room_size=0.14, damping=0.75, wet_level=0.035, dry_level=1.0, width=0.0),
     ])
+
+
+def deesser(x, sr, lo=5800.0, hi=11500.0, limiar=0.55, max_db=6.0):
+    """De-esser: abaixa só a faixa do chiado, e só nos instantes em que o "s" domina.
+
+    Compara a energia da faixa 6–11 kHz com a da voz inteira; por ser relativo,
+    funciona igual em qualquer volume. Fase linear (FFT) e mesma duração."""
+    n = len(x)
+    if n < sr // 10:
+        return x
+    X = np.fft.rfft(x)
+    f = np.fft.rfftfreq(n, 1 / sr)
+    sobe = np.clip((f - lo * 0.85) / (lo * 0.15), 0, 1)
+    desce = np.clip((hi * 1.15 - f) / (hi * 0.15), 0, 1)
+    faixa = np.fft.irfft(X * (0.5 - 0.5 * np.cos(np.pi * sobe)) * (0.5 - 0.5 * np.cos(np.pi * desce)), n)
+
+    def rms(s, ms):
+        k = max(1, int(sr * ms / 1000))
+        c = np.cumsum(np.concatenate([[0.0], s.astype(np.float64) ** 2]))
+        m = (c[k:] - c[:-k]) / k
+        return np.sqrt(np.pad(m, (k // 2, n - len(m) - k // 2), mode="edge"))
+
+    ef, et = rms(faixa, 8), rms(x, 8) + 1e-6
+    razao = ef / et
+    g = np.where(razao > limiar, (limiar / np.maximum(razao, 1e-6)) ** 1.2, 1.0)
+    g = np.maximum(g, 10 ** (-max_db / 20))
+    k = max(1, int(sr * 0.006))                     # suaviza o ganho (6 ms)
+    g = np.convolve(np.pad(g, (k // 2, k - 1 - k // 2), mode="edge"), np.ones(k) / k, mode="valid")
+    return x - faixa * (1 - g)
 
 
 def masterizar_voz(entrada, saida) -> str:
     audio, sr = sf.read(str(entrada), dtype="float32", always_2d=True)
-    mono = audio.mean(axis=1)
+    mono = deesser(audio.mean(axis=1).astype(np.float64), sr)
     if pb is None:
         with tempfile.TemporaryDirectory() as tmp:
-            bruto = os.path.join(tmp, "m.wav")
-            subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(entrada), "-ac", "1",
+            limpo, bruto = os.path.join(tmp, "d.wav"), os.path.join(tmp, "m.wav")
+            sf.write(limpo, mono, sr, subtype="FLOAT")
+            subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", limpo, "-ac", "1",
                             "-af", MASTER_FFMPEG, "-ar", str(sr), "-c:a", "pcm_f32le", bruto], check=True)
             out, _ = sf.read(bruto, dtype="float64")
-        out = np.pad(out, (0, max(0, len(mono) - len(out))))[: len(mono)]   # mesma duração
-        out = _nivelar(out, -14.0, TETO_VOZ)
-        sf.write(str(saida), out, sr, subtype="PCM_16")
-        return "ffmpeg"
-    out = cadeia_voz()(mono[np.newaxis, :], sr)[0][: len(mono)]
-    out = np.clip(out, -1.0, 1.0)
+        motor = "ffmpeg"
+    else:
+        out = cadeia_voz()(mono.astype(np.float32)[np.newaxis, :], sr)[0].astype(np.float64)
+        motor = "pedalboard"
+    out = np.pad(out, (0, max(0, len(mono) - len(out))))[: len(mono)]       # mesma duração
+    out = _nivelar(out, RMS_VOZ, TETO_VOZ)
     sf.write(str(saida), out, sr, subtype="PCM_16")
-    return "pedalboard"
+    return motor
 
 
 def _nivelar(x, rms_db, teto):
