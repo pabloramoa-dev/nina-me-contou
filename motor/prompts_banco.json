@@ -35973,7 +35973,7 @@
     },
     "08373c20a691a2435214aa75090fac45cf1e2cfaac9ec9b586347c4f70f4442f": {
       "titulo": "3 SINAIS DE QUE UMA AMIZADE MUDOU DE FASE",
-      "id": "ep92026111315",
+      "id": "ep92026112912",
       "cenas": [
         {
           "scene": 0,
@@ -36077,11 +36077,11 @@
           "origem": "compilado"
         }
       ],
-      "arquivo": "episodios/ep92026111315.json"
+      "arquivo": "episodios/ep92026112912.json"
     },
     "c9edc002c876d00f68d69b9f01ee5d5651fe21dc7eb163c7e3a507481b768f61": {
       "titulo": "3 SINAIS DE QUE UMA CRÍTICA PASSOU DO PONTO",
-      "id": "ep92026111412",
+      "id": "ep92026112915",
       "cenas": [
         {
           "scene": 0,
@@ -36185,7 +36185,7 @@
           "origem": "compilado"
         }
       ],
-      "arquivo": "episodios/ep92026111412.json"
+      "arquivo": "episodios/ep92026112915.json"
     },
     "eb38bacf08c4db74601ceb38df7de1b6832ab33702aa1e52da87c96381812be4": {
       "titulo": "3 SINAIS DE QUE SEUS LIMITES ESTÃO FICANDO CLAROS",
