@@ -36837,7 +36837,7 @@
     },
     "68de378157280363547ca8652e0babf3a341cf43527bd96d07e4d720852ecb01": {
       "titulo": "3 SINAIS DE QUE VOCÊ ENCONTROU UMA BOA AMIZADE",
-      "id": "ep92026111715",
+      "id": "ep92026120312",
       "cenas": [
         {
           "scene": 0,
@@ -36941,11 +36941,11 @@
           "origem": "compilado"
         }
       ],
-      "arquivo": "episodios/ep92026111715.json"
+      "arquivo": "episodios/ep92026120312.json"
     },
     "ca44a8c1e2079734f3db973a71172a708c83bcd895fa912534b97863aa59b64e": {
       "titulo": "3 SINAIS DE QUE UM SEGREDO VIROU FOFOCA",
-      "id": "ep92026111812",
+      "id": "ep92026120315",
       "cenas": [
         {
           "scene": 0,
@@ -37049,7 +37049,7 @@
           "origem": "compilado"
         }
       ],
-      "arquivo": "episodios/ep92026111812.json"
+      "arquivo": "episodios/ep92026120315.json"
     },
     "44e12852b64bc8e8c91f0280d26a7a96d25832707dd5f64bf679c46e61cf09b8": {
       "titulo": "3 SINAIS DE QUE VOCÊ MERECE CONVERSAS MAIS CLARAS",
